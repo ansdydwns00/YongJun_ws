@@ -16,7 +16,7 @@
 ```
 $ git clone https://github.com/ansdydwns00/YongJun_ws.git
 
-# [Yolov8](https://github.com/kirkfreire/yolov8_ros2) 
+# Yolov8
 $ cd YongJun_ws/src
 $ pip3 install -r YOLO/Yolov8/requirements.txt
 $ cd ../
@@ -30,3 +30,7 @@ $ rosdep install --from-paths src --ignore-src -y
 # Before build, remove build, install, log folder
 $ colcon build --symlink-install 
 ```
+
+## Reference
+[Yolov8](https://github.com/kirkfreire/yolov8_ros2) 
+[USB_CAM](https://github.com/ros-drivers/usb_cam)
