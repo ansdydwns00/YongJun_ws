@@ -1,1 +1,7 @@
-src 폴더 내 pkg들의 src 이하 부분이 push되지 않는 문제
+ 
+
+### 작업 환경 
+```
+# Ubuntu 20.04 
+# ROS2 - foxy version
+```
