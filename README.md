@@ -16,7 +16,7 @@
 ```
 $ git clone https://github.com/ansdydwns00/YongJun_ws.git
 
-# Yolov8
+# [Yolov8](https://github.com/kirkfreire/yolov8_ros2) 
 $ cd YongJun_ws/src
 $ pip3 install -r YOLO/Yolov8/requirements.txt
 $ cd ../
