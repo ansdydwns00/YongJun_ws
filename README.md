@@ -9,5 +9,15 @@
 
 # Ubuntu 20.04.6 LTS 
 # ROS2 - foxy version
-# 
+```
+
+
+## Installation Dependency
+```
+$ git clone
+$ cd YongJun_ws/src
+$ pip3 install -r YOLO/Yolov8/requirements.txt
+$ cd ../
+$ rosdep install --from-paths src --ignore-src -r -y
+$ colcon build --symlink-install
 ```
