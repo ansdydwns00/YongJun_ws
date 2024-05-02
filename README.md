@@ -1,6 +1,6 @@
  
 
-### 작업 환경 
+## Development Environment 
 ```
 # Intel i7-9700 CPU 3.60Hz x 8
 # NVIDIA GeForce GTX 1660 Ti
