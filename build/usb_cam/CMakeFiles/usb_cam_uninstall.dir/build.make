@@ -43,7 +43,7 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/yong/YongJun_ws/src/sensor/src/usb_cam
+CMAKE_SOURCE_DIR = /home/yong/YongJun_ws/src/sensor/usb_cam
 
 # The top-level build directory on which CMake was run.
 CMAKE_BINARY_DIR = /home/yong/YongJun_ws/build/usb_cam
@@ -71,6 +71,6 @@ CMakeFiles/usb_cam_uninstall.dir/clean:
 .PHONY : CMakeFiles/usb_cam_uninstall.dir/clean
 
 CMakeFiles/usb_cam_uninstall.dir/depend:
-	cd /home/yong/YongJun_ws/build/usb_cam && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/yong/YongJun_ws/src/sensor/src/usb_cam /home/yong/YongJun_ws/src/sensor/src/usb_cam /home/yong/YongJun_ws/build/usb_cam /home/yong/YongJun_ws/build/usb_cam /home/yong/YongJun_ws/build/usb_cam/CMakeFiles/usb_cam_uninstall.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/yong/YongJun_ws/build/usb_cam && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/yong/YongJun_ws/src/sensor/usb_cam /home/yong/YongJun_ws/src/sensor/usb_cam /home/yong/YongJun_ws/build/usb_cam /home/yong/YongJun_ws/build/usb_cam /home/yong/YongJun_ws/build/usb_cam/CMakeFiles/usb_cam_uninstall.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/usb_cam_uninstall.dir/depend
 

@@ -1,5 +1,5 @@
 # CMake generated Testfile for 
-# Source directory: /home/yong/YongJun_ws/src/yolov8_ros/src/yolov8_ros/yolov8_bringup
+# Source directory: /home/yong/YongJun_ws/src/YOLO/Yolov8/yolov8_bringup
 # Build directory: /home/yong/YongJun_ws/build/yolov8_bringup
 # 
 # This file includes the relevant testing commands required for 

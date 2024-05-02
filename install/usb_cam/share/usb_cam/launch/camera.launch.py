@@ -1,1 +1,1 @@
-/home/yong/YongJun_ws/src/sensor/src/usb_cam/launch/camera.launch.py
+/home/yong/YongJun_ws/src/sensor/usb_cam/launch/camera.launch.py

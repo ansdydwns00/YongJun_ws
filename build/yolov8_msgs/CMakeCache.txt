@@ -439,7 +439,7 @@ std_msgs_DIR:PATH=/opt/ros/foxy/share/std_msgs/cmake
 yolov8_msgs_BINARY_DIR:STATIC=/home/yong/YongJun_ws/build/yolov8_msgs
 
 //Value Computed by CMake
-yolov8_msgs_SOURCE_DIR:STATIC=/home/yong/YongJun_ws/src/yolov8_ros/src/yolov8_ros/yolov8_msgs
+yolov8_msgs_SOURCE_DIR:STATIC=/home/yong/YongJun_ws/src/YOLO/Yolov8/yolov8_msgs
 
 //Dependencies for the target
 yolov8_msgs__python_LIB_DEPENDS:STATIC=general;yolov8_msgs__rosidl_generator_c;general;/usr/lib/x86_64-linux-gnu/libpython3.8.so;general;yolov8_msgs__rosidl_typesupport_c;general;/opt/ros/foxy/share/std_msgs/cmake/../../../lib/libstd_msgs__python.so;general;/opt/ros/foxy/share/builtin_interfaces/cmake/../../../lib/libbuiltin_interfaces__python.so;general;/opt/ros/foxy/share/geometry_msgs/cmake/../../../lib/libgeometry_msgs__python.so;
@@ -559,7 +559,7 @@ CMAKE_GENERATOR_PLATFORM:INTERNAL=
 CMAKE_GENERATOR_TOOLSET:INTERNAL=
 //Source directory with the top level CMakeLists.txt file for this
 // project
-CMAKE_HOME_DIRECTORY:INTERNAL=/home/yong/YongJun_ws/src/yolov8_ros/src/yolov8_ros/yolov8_msgs
+CMAKE_HOME_DIRECTORY:INTERNAL=/home/yong/YongJun_ws/src/YOLO/Yolov8/yolov8_msgs
 //Install .so files without execute permission.
 CMAKE_INSTALL_SO_NO_EXE:INTERNAL=1
 //ADVANCED property for variable: CMAKE_LINKER

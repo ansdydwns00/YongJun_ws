@@ -1,4 +1,4 @@
-# Install script for directory: /home/yong/YongJun_ws/src/yolov8_ros/src/yolov8_ros/yolov8_msgs
+# Install script for directory: /home/yong/YongJun_ws/src/YOLO/Yolov8/yolov8_msgs
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)

@@ -290,7 +290,7 @@ ament_cmake_version_DIR:PATH=/opt/ros/foxy/share/ament_cmake_version/cmake
 yolov8_bringup_BINARY_DIR:STATIC=/home/yong/YongJun_ws/build/yolov8_bringup
 
 //Value Computed by CMake
-yolov8_bringup_SOURCE_DIR:STATIC=/home/yong/YongJun_ws/src/yolov8_ros/src/yolov8_ros/yolov8_bringup
+yolov8_bringup_SOURCE_DIR:STATIC=/home/yong/YongJun_ws/src/YOLO/Yolov8/yolov8_bringup
 
 
 ########################
@@ -377,7 +377,7 @@ CMAKE_GENERATOR_PLATFORM:INTERNAL=
 CMAKE_GENERATOR_TOOLSET:INTERNAL=
 //Source directory with the top level CMakeLists.txt file for this
 // project
-CMAKE_HOME_DIRECTORY:INTERNAL=/home/yong/YongJun_ws/src/yolov8_ros/src/yolov8_ros/yolov8_bringup
+CMAKE_HOME_DIRECTORY:INTERNAL=/home/yong/YongJun_ws/src/YOLO/Yolov8/yolov8_bringup
 //Install .so files without execute permission.
 CMAKE_INSTALL_SO_NO_EXE:INTERNAL=1
 //ADVANCED property for variable: CMAKE_LINKER

@@ -43,7 +43,7 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/yong/YongJun_ws/src/sensor/src/usb_cam
+CMAKE_SOURCE_DIR = /home/yong/YongJun_ws/src/sensor/usb_cam
 
 # The top-level build directory on which CMake was run.
 CMAKE_BINARY_DIR = /home/yong/YongJun_ws/build/usb_cam
@@ -58,17 +58,17 @@ include CMakeFiles/test_pixel_formats.dir/progress.make
 include CMakeFiles/test_pixel_formats.dir/flags.make
 
 CMakeFiles/test_pixel_formats.dir/test/test_pixel_formats.cpp.o: CMakeFiles/test_pixel_formats.dir/flags.make
-CMakeFiles/test_pixel_formats.dir/test/test_pixel_formats.cpp.o: /home/yong/YongJun_ws/src/sensor/src/usb_cam/test/test_pixel_formats.cpp
+CMakeFiles/test_pixel_formats.dir/test/test_pixel_formats.cpp.o: /home/yong/YongJun_ws/src/sensor/usb_cam/test/test_pixel_formats.cpp
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/yong/YongJun_ws/build/usb_cam/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/test_pixel_formats.dir/test/test_pixel_formats.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/test_pixel_formats.dir/test/test_pixel_formats.cpp.o -c /home/yong/YongJun_ws/src/sensor/src/usb_cam/test/test_pixel_formats.cpp
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/test_pixel_formats.dir/test/test_pixel_formats.cpp.o -c /home/yong/YongJun_ws/src/sensor/usb_cam/test/test_pixel_formats.cpp
 
 CMakeFiles/test_pixel_formats.dir/test/test_pixel_formats.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/test_pixel_formats.dir/test/test_pixel_formats.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/yong/YongJun_ws/src/sensor/src/usb_cam/test/test_pixel_formats.cpp > CMakeFiles/test_pixel_formats.dir/test/test_pixel_formats.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/yong/YongJun_ws/src/sensor/usb_cam/test/test_pixel_formats.cpp > CMakeFiles/test_pixel_formats.dir/test/test_pixel_formats.cpp.i
 
 CMakeFiles/test_pixel_formats.dir/test/test_pixel_formats.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/test_pixel_formats.dir/test/test_pixel_formats.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/yong/YongJun_ws/src/sensor/src/usb_cam/test/test_pixel_formats.cpp -o CMakeFiles/test_pixel_formats.dir/test/test_pixel_formats.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/yong/YongJun_ws/src/sensor/usb_cam/test/test_pixel_formats.cpp -o CMakeFiles/test_pixel_formats.dir/test/test_pixel_formats.cpp.s
 
 # Object files for target test_pixel_formats
 test_pixel_formats_OBJECTS = \
@@ -144,6 +144,6 @@ CMakeFiles/test_pixel_formats.dir/clean:
 .PHONY : CMakeFiles/test_pixel_formats.dir/clean
 
 CMakeFiles/test_pixel_formats.dir/depend:
-	cd /home/yong/YongJun_ws/build/usb_cam && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/yong/YongJun_ws/src/sensor/src/usb_cam /home/yong/YongJun_ws/src/sensor/src/usb_cam /home/yong/YongJun_ws/build/usb_cam /home/yong/YongJun_ws/build/usb_cam /home/yong/YongJun_ws/build/usb_cam/CMakeFiles/test_pixel_formats.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/yong/YongJun_ws/build/usb_cam && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/yong/YongJun_ws/src/sensor/usb_cam /home/yong/YongJun_ws/src/sensor/usb_cam /home/yong/YongJun_ws/build/usb_cam /home/yong/YongJun_ws/build/usb_cam /home/yong/YongJun_ws/build/usb_cam/CMakeFiles/test_pixel_formats.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/test_pixel_formats.dir/depend
 

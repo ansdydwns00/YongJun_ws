@@ -43,7 +43,7 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/yong/YongJun_ws/src/yolov8_ros/src/yolov8_ros/yolov8_msgs
+CMAKE_SOURCE_DIR = /home/yong/YongJun_ws/src/YOLO/Yolov8/yolov8_msgs
 
 # The top-level build directory on which CMake was run.
 CMAKE_BINARY_DIR = /home/yong/YongJun_ws/build/yolov8_msgs
@@ -406,6 +406,6 @@ CMakeFiles/yolov8_msgs__rosidl_typesupport_cpp.dir/depend: rosidl_typesupport_cp
 CMakeFiles/yolov8_msgs__rosidl_typesupport_cpp.dir/depend: rosidl_typesupport_cpp/yolov8_msgs/msg/key_point3_d_array__type_support.cpp
 CMakeFiles/yolov8_msgs__rosidl_typesupport_cpp.dir/depend: rosidl_typesupport_cpp/yolov8_msgs/msg/detection__type_support.cpp
 CMakeFiles/yolov8_msgs__rosidl_typesupport_cpp.dir/depend: rosidl_typesupport_cpp/yolov8_msgs/msg/detection_array__type_support.cpp
-	cd /home/yong/YongJun_ws/build/yolov8_msgs && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/yong/YongJun_ws/src/yolov8_ros/src/yolov8_ros/yolov8_msgs /home/yong/YongJun_ws/src/yolov8_ros/src/yolov8_ros/yolov8_msgs /home/yong/YongJun_ws/build/yolov8_msgs /home/yong/YongJun_ws/build/yolov8_msgs /home/yong/YongJun_ws/build/yolov8_msgs/CMakeFiles/yolov8_msgs__rosidl_typesupport_cpp.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/yong/YongJun_ws/build/yolov8_msgs && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/yong/YongJun_ws/src/YOLO/Yolov8/yolov8_msgs /home/yong/YongJun_ws/src/YOLO/Yolov8/yolov8_msgs /home/yong/YongJun_ws/build/yolov8_msgs /home/yong/YongJun_ws/build/yolov8_msgs /home/yong/YongJun_ws/build/yolov8_msgs/CMakeFiles/yolov8_msgs__rosidl_typesupport_cpp.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/yolov8_msgs__rosidl_typesupport_cpp.dir/depend
 

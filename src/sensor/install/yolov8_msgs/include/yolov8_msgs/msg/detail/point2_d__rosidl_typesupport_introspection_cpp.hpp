@@ -1,1 +1,0 @@
-/home/yong/sensor/build/yolov8_msgs/rosidl_typesupport_introspection_cpp/yolov8_msgs/msg/detail/point2_d__rosidl_typesupport_introspection_cpp.hpp

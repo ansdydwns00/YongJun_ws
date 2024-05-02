@@ -48,7 +48,7 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/yong/YongJun_ws/src/sensor/src/usb_cam
+CMAKE_SOURCE_DIR = /home/yong/YongJun_ws/src/sensor/usb_cam
 
 # The top-level build directory on which CMake was run.
 CMAKE_BINARY_DIR = /home/yong/YongJun_ws/build/usb_cam

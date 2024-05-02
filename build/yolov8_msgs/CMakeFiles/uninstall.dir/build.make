@@ -43,7 +43,7 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/yong/YongJun_ws/src/yolov8_ros/src/yolov8_ros/yolov8_msgs
+CMAKE_SOURCE_DIR = /home/yong/YongJun_ws/src/YOLO/Yolov8/yolov8_msgs
 
 # The top-level build directory on which CMake was run.
 CMAKE_BINARY_DIR = /home/yong/YongJun_ws/build/yolov8_msgs
@@ -67,6 +67,6 @@ CMakeFiles/uninstall.dir/clean:
 .PHONY : CMakeFiles/uninstall.dir/clean
 
 CMakeFiles/uninstall.dir/depend:
-	cd /home/yong/YongJun_ws/build/yolov8_msgs && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/yong/YongJun_ws/src/yolov8_ros/src/yolov8_ros/yolov8_msgs /home/yong/YongJun_ws/src/yolov8_ros/src/yolov8_ros/yolov8_msgs /home/yong/YongJun_ws/build/yolov8_msgs /home/yong/YongJun_ws/build/yolov8_msgs /home/yong/YongJun_ws/build/yolov8_msgs/CMakeFiles/uninstall.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/yong/YongJun_ws/build/yolov8_msgs && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/yong/YongJun_ws/src/YOLO/Yolov8/yolov8_msgs /home/yong/YongJun_ws/src/YOLO/Yolov8/yolov8_msgs /home/yong/YongJun_ws/build/yolov8_msgs /home/yong/YongJun_ws/build/yolov8_msgs /home/yong/YongJun_ws/build/yolov8_msgs/CMakeFiles/uninstall.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/uninstall.dir/depend
 

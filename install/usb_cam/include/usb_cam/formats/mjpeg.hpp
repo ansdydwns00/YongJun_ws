@@ -1,1 +1,1 @@
-/home/yong/YongJun_ws/src/sensor/src/usb_cam/include/usb_cam/formats/mjpeg.hpp
+/home/yong/YongJun_ws/src/sensor/usb_cam/include/usb_cam/formats/mjpeg.hpp

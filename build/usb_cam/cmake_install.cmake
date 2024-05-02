@@ -1,4 +1,4 @@
-# Install script for directory: /home/yong/YongJun_ws/src/sensor/src/usb_cam
+# Install script for directory: /home/yong/YongJun_ws/src/sensor/usb_cam
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)

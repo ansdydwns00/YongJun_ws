@@ -6,5 +6,5 @@ CXX_FLAGS = -fPIC   -Wall -Wextra -Wpedantic -Werror -std=gnu++17
 
 CXX_DEFINES = -Dusb_cam_EXPORTS
 
-CXX_INCLUDES = -I/home/yong/YongJun_ws/src/sensor/src/usb_cam/include -isystem /usr/include/opencv4 
+CXX_INCLUDES = -I/home/yong/YongJun_ws/src/sensor/usb_cam/include -isystem /usr/include/opencv4 
 

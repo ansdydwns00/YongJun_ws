@@ -1,1 +1,0 @@
-/home/yong/sensor/src/usb_cam/scripts/show_image.py

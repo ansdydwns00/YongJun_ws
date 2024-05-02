@@ -6,5 +6,5 @@ CXX_FLAGS = -fPIC   -Wall -Wextra -Wpedantic -Werror -std=gnu++17
 
 CXX_DEFINES = -DDEFAULT_RMW_IMPLEMENTATION=rmw_fastrtps_cpp -DRCUTILS_ENABLE_FAULT_INJECTION -DSPDLOG_COMPILED_LIB -Dusb_cam_node_EXPORTS
 
-CXX_INCLUDES = -I/home/yong/YongJun_ws/src/sensor/src/usb_cam/include -isystem /opt/ros/foxy/include -isystem /opt/ros/foxy/opt/yaml_cpp_vendor/include -isystem /usr/include/opencv4 
+CXX_INCLUDES = -I/home/yong/YongJun_ws/src/sensor/usb_cam/include -isystem /opt/ros/foxy/include -isystem /opt/ros/foxy/opt/yaml_cpp_vendor/include -isystem /usr/include/opencv4 
 

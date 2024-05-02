@@ -311,49 +311,49 @@ message(STATUS "Execute custom install script")
 # begin of custom install code
 
 # install(FILES "/home/yong/YongJun_ws/build/yolov8_msgs/ament_cmake_index/share/ament_index/resource_index/rosidl_interfaces/yolov8_msgs" "DESTINATION" "share/ament_index/resource_index/rosidl_interfaces")
-ament_cmake_symlink_install_files("/home/yong/YongJun_ws/src/yolov8_ros/src/yolov8_ros/yolov8_msgs" FILES "/home/yong/YongJun_ws/build/yolov8_msgs/ament_cmake_index/share/ament_index/resource_index/rosidl_interfaces/yolov8_msgs" "DESTINATION" "share/ament_index/resource_index/rosidl_interfaces")
+ament_cmake_symlink_install_files("/home/yong/YongJun_ws/src/YOLO/Yolov8/yolov8_msgs" FILES "/home/yong/YongJun_ws/build/yolov8_msgs/ament_cmake_index/share/ament_index/resource_index/rosidl_interfaces/yolov8_msgs" "DESTINATION" "share/ament_index/resource_index/rosidl_interfaces")
 
 # install(DIRECTORY "/home/yong/YongJun_ws/build/yolov8_msgs/rosidl_generator_c/yolov8_msgs/" "DESTINATION" "include/yolov8_msgs" "PATTERN" "*.h")
-ament_cmake_symlink_install_directory("/home/yong/YongJun_ws/src/yolov8_ros/src/yolov8_ros/yolov8_msgs" DIRECTORY "/home/yong/YongJun_ws/build/yolov8_msgs/rosidl_generator_c/yolov8_msgs/" "DESTINATION" "include/yolov8_msgs" "PATTERN" "*.h")
+ament_cmake_symlink_install_directory("/home/yong/YongJun_ws/src/YOLO/Yolov8/yolov8_msgs" DIRECTORY "/home/yong/YongJun_ws/build/yolov8_msgs/rosidl_generator_c/yolov8_msgs/" "DESTINATION" "include/yolov8_msgs" "PATTERN" "*.h")
 
 # install(FILES "/opt/ros/foxy/lib/python3.8/site-packages/ament_package/template/environment_hook/library_path.sh" "DESTINATION" "share/yolov8_msgs/environment")
-ament_cmake_symlink_install_files("/home/yong/YongJun_ws/src/yolov8_ros/src/yolov8_ros/yolov8_msgs" FILES "/opt/ros/foxy/lib/python3.8/site-packages/ament_package/template/environment_hook/library_path.sh" "DESTINATION" "share/yolov8_msgs/environment")
+ament_cmake_symlink_install_files("/home/yong/YongJun_ws/src/YOLO/Yolov8/yolov8_msgs" FILES "/opt/ros/foxy/lib/python3.8/site-packages/ament_package/template/environment_hook/library_path.sh" "DESTINATION" "share/yolov8_msgs/environment")
 
 # install(FILES "/home/yong/YongJun_ws/build/yolov8_msgs/ament_cmake_environment_hooks/library_path.dsv" "DESTINATION" "share/yolov8_msgs/environment")
-ament_cmake_symlink_install_files("/home/yong/YongJun_ws/src/yolov8_ros/src/yolov8_ros/yolov8_msgs" FILES "/home/yong/YongJun_ws/build/yolov8_msgs/ament_cmake_environment_hooks/library_path.dsv" "DESTINATION" "share/yolov8_msgs/environment")
+ament_cmake_symlink_install_files("/home/yong/YongJun_ws/src/YOLO/Yolov8/yolov8_msgs" FILES "/home/yong/YongJun_ws/build/yolov8_msgs/ament_cmake_environment_hooks/library_path.dsv" "DESTINATION" "share/yolov8_msgs/environment")
 
 # install(DIRECTORY "/home/yong/YongJun_ws/build/yolov8_msgs/rosidl_typesupport_fastrtps_c/yolov8_msgs/" "DESTINATION" "include/yolov8_msgs" "PATTERN_EXCLUDE" "*.cpp")
-ament_cmake_symlink_install_directory("/home/yong/YongJun_ws/src/yolov8_ros/src/yolov8_ros/yolov8_msgs" DIRECTORY "/home/yong/YongJun_ws/build/yolov8_msgs/rosidl_typesupport_fastrtps_c/yolov8_msgs/" "DESTINATION" "include/yolov8_msgs" "PATTERN_EXCLUDE" "*.cpp")
+ament_cmake_symlink_install_directory("/home/yong/YongJun_ws/src/YOLO/Yolov8/yolov8_msgs" DIRECTORY "/home/yong/YongJun_ws/build/yolov8_msgs/rosidl_typesupport_fastrtps_c/yolov8_msgs/" "DESTINATION" "include/yolov8_msgs" "PATTERN_EXCLUDE" "*.cpp")
 
 # install("TARGETS" "yolov8_msgs__rosidl_typesupport_fastrtps_c" "ARCHIVE_DESTINATION" "lib" "LIBRARY_DESTINATION" "lib" "RUNTIME_DESTINATION" "bin")
 include("/home/yong/YongJun_ws/build/yolov8_msgs/ament_cmake_symlink_install_targets_0_${CMAKE_INSTALL_CONFIG_NAME}.cmake")
 
 # install(DIRECTORY "/home/yong/YongJun_ws/build/yolov8_msgs/rosidl_typesupport_fastrtps_cpp/yolov8_msgs/" "DESTINATION" "include/yolov8_msgs" "PATTERN_EXCLUDE" "*.cpp")
-ament_cmake_symlink_install_directory("/home/yong/YongJun_ws/src/yolov8_ros/src/yolov8_ros/yolov8_msgs" DIRECTORY "/home/yong/YongJun_ws/build/yolov8_msgs/rosidl_typesupport_fastrtps_cpp/yolov8_msgs/" "DESTINATION" "include/yolov8_msgs" "PATTERN_EXCLUDE" "*.cpp")
+ament_cmake_symlink_install_directory("/home/yong/YongJun_ws/src/YOLO/Yolov8/yolov8_msgs" DIRECTORY "/home/yong/YongJun_ws/build/yolov8_msgs/rosidl_typesupport_fastrtps_cpp/yolov8_msgs/" "DESTINATION" "include/yolov8_msgs" "PATTERN_EXCLUDE" "*.cpp")
 
 # install("TARGETS" "yolov8_msgs__rosidl_typesupport_fastrtps_cpp" "ARCHIVE_DESTINATION" "lib" "LIBRARY_DESTINATION" "lib" "RUNTIME_DESTINATION" "bin")
 include("/home/yong/YongJun_ws/build/yolov8_msgs/ament_cmake_symlink_install_targets_1_${CMAKE_INSTALL_CONFIG_NAME}.cmake")
 
 # install(DIRECTORY "/home/yong/YongJun_ws/build/yolov8_msgs/rosidl_typesupport_introspection_c/yolov8_msgs/" "DESTINATION" "include/yolov8_msgs" "PATTERN" "*.h")
-ament_cmake_symlink_install_directory("/home/yong/YongJun_ws/src/yolov8_ros/src/yolov8_ros/yolov8_msgs" DIRECTORY "/home/yong/YongJun_ws/build/yolov8_msgs/rosidl_typesupport_introspection_c/yolov8_msgs/" "DESTINATION" "include/yolov8_msgs" "PATTERN" "*.h")
+ament_cmake_symlink_install_directory("/home/yong/YongJun_ws/src/YOLO/Yolov8/yolov8_msgs" DIRECTORY "/home/yong/YongJun_ws/build/yolov8_msgs/rosidl_typesupport_introspection_c/yolov8_msgs/" "DESTINATION" "include/yolov8_msgs" "PATTERN" "*.h")
 
 # install(DIRECTORY "/home/yong/YongJun_ws/build/yolov8_msgs/rosidl_generator_cpp/yolov8_msgs/" "DESTINATION" "include/yolov8_msgs" "PATTERN" "*.hpp")
-ament_cmake_symlink_install_directory("/home/yong/YongJun_ws/src/yolov8_ros/src/yolov8_ros/yolov8_msgs" DIRECTORY "/home/yong/YongJun_ws/build/yolov8_msgs/rosidl_generator_cpp/yolov8_msgs/" "DESTINATION" "include/yolov8_msgs" "PATTERN" "*.hpp")
+ament_cmake_symlink_install_directory("/home/yong/YongJun_ws/src/YOLO/Yolov8/yolov8_msgs" DIRECTORY "/home/yong/YongJun_ws/build/yolov8_msgs/rosidl_generator_cpp/yolov8_msgs/" "DESTINATION" "include/yolov8_msgs" "PATTERN" "*.hpp")
 
 # install(DIRECTORY "/home/yong/YongJun_ws/build/yolov8_msgs/rosidl_typesupport_introspection_cpp/yolov8_msgs/" "DESTINATION" "include/yolov8_msgs" "PATTERN" "*.hpp")
-ament_cmake_symlink_install_directory("/home/yong/YongJun_ws/src/yolov8_ros/src/yolov8_ros/yolov8_msgs" DIRECTORY "/home/yong/YongJun_ws/build/yolov8_msgs/rosidl_typesupport_introspection_cpp/yolov8_msgs/" "DESTINATION" "include/yolov8_msgs" "PATTERN" "*.hpp")
+ament_cmake_symlink_install_directory("/home/yong/YongJun_ws/src/YOLO/Yolov8/yolov8_msgs" DIRECTORY "/home/yong/YongJun_ws/build/yolov8_msgs/rosidl_typesupport_introspection_cpp/yolov8_msgs/" "DESTINATION" "include/yolov8_msgs" "PATTERN" "*.hpp")
 
 # install(FILES "/home/yong/YongJun_ws/build/yolov8_msgs/ament_cmake_environment_hooks/pythonpath.sh" "DESTINATION" "share/yolov8_msgs/environment")
-ament_cmake_symlink_install_files("/home/yong/YongJun_ws/src/yolov8_ros/src/yolov8_ros/yolov8_msgs" FILES "/home/yong/YongJun_ws/build/yolov8_msgs/ament_cmake_environment_hooks/pythonpath.sh" "DESTINATION" "share/yolov8_msgs/environment")
+ament_cmake_symlink_install_files("/home/yong/YongJun_ws/src/YOLO/Yolov8/yolov8_msgs" FILES "/home/yong/YongJun_ws/build/yolov8_msgs/ament_cmake_environment_hooks/pythonpath.sh" "DESTINATION" "share/yolov8_msgs/environment")
 
 # install(FILES "/home/yong/YongJun_ws/build/yolov8_msgs/ament_cmake_environment_hooks/pythonpath.dsv" "DESTINATION" "share/yolov8_msgs/environment")
-ament_cmake_symlink_install_files("/home/yong/YongJun_ws/src/yolov8_ros/src/yolov8_ros/yolov8_msgs" FILES "/home/yong/YongJun_ws/build/yolov8_msgs/ament_cmake_environment_hooks/pythonpath.dsv" "DESTINATION" "share/yolov8_msgs/environment")
+ament_cmake_symlink_install_files("/home/yong/YongJun_ws/src/YOLO/Yolov8/yolov8_msgs" FILES "/home/yong/YongJun_ws/build/yolov8_msgs/ament_cmake_environment_hooks/pythonpath.dsv" "DESTINATION" "share/yolov8_msgs/environment")
 
 # install(FILES "/home/yong/YongJun_ws/build/yolov8_msgs/rosidl_generator_py/yolov8_msgs/__init__.py" "DESTINATION" "lib/python3.8/site-packages/yolov8_msgs")
-ament_cmake_symlink_install_files("/home/yong/YongJun_ws/src/yolov8_ros/src/yolov8_ros/yolov8_msgs" FILES "/home/yong/YongJun_ws/build/yolov8_msgs/rosidl_generator_py/yolov8_msgs/__init__.py" "DESTINATION" "lib/python3.8/site-packages/yolov8_msgs")
+ament_cmake_symlink_install_files("/home/yong/YongJun_ws/src/YOLO/Yolov8/yolov8_msgs" FILES "/home/yong/YongJun_ws/build/yolov8_msgs/rosidl_generator_py/yolov8_msgs/__init__.py" "DESTINATION" "lib/python3.8/site-packages/yolov8_msgs")
 
 # install(DIRECTORY "/home/yong/YongJun_ws/build/yolov8_msgs/rosidl_generator_py/yolov8_msgs/msg/" "DESTINATION" "lib/python3.8/site-packages/yolov8_msgs/msg" "PATTERN" "*.py")
-ament_cmake_symlink_install_directory("/home/yong/YongJun_ws/src/yolov8_ros/src/yolov8_ros/yolov8_msgs" DIRECTORY "/home/yong/YongJun_ws/build/yolov8_msgs/rosidl_generator_py/yolov8_msgs/msg/" "DESTINATION" "lib/python3.8/site-packages/yolov8_msgs/msg" "PATTERN" "*.py")
+ament_cmake_symlink_install_directory("/home/yong/YongJun_ws/src/YOLO/Yolov8/yolov8_msgs" DIRECTORY "/home/yong/YongJun_ws/build/yolov8_msgs/rosidl_generator_py/yolov8_msgs/msg/" "DESTINATION" "lib/python3.8/site-packages/yolov8_msgs/msg" "PATTERN" "*.py")
 
 # install("TARGETS" "yolov8_msgs__rosidl_typesupport_fastrtps_c__pyext" "DESTINATION" "lib/python3.8/site-packages/yolov8_msgs")
 include("/home/yong/YongJun_ws/build/yolov8_msgs/ament_cmake_symlink_install_targets_2_${CMAKE_INSTALL_CONFIG_NAME}.cmake")
@@ -368,136 +368,136 @@ include("/home/yong/YongJun_ws/build/yolov8_msgs/ament_cmake_symlink_install_tar
 include("/home/yong/YongJun_ws/build/yolov8_msgs/ament_cmake_symlink_install_targets_5_${CMAKE_INSTALL_CONFIG_NAME}.cmake")
 
 # install(FILES "/home/yong/YongJun_ws/build/yolov8_msgs/rosidl_adapter/yolov8_msgs/msg/Point2D.idl" "DESTINATION" "share/yolov8_msgs/msg")
-ament_cmake_symlink_install_files("/home/yong/YongJun_ws/src/yolov8_ros/src/yolov8_ros/yolov8_msgs" FILES "/home/yong/YongJun_ws/build/yolov8_msgs/rosidl_adapter/yolov8_msgs/msg/Point2D.idl" "DESTINATION" "share/yolov8_msgs/msg")
+ament_cmake_symlink_install_files("/home/yong/YongJun_ws/src/YOLO/Yolov8/yolov8_msgs" FILES "/home/yong/YongJun_ws/build/yolov8_msgs/rosidl_adapter/yolov8_msgs/msg/Point2D.idl" "DESTINATION" "share/yolov8_msgs/msg")
 
 # install(FILES "/home/yong/YongJun_ws/build/yolov8_msgs/rosidl_adapter/yolov8_msgs/msg/Vector2.idl" "DESTINATION" "share/yolov8_msgs/msg")
-ament_cmake_symlink_install_files("/home/yong/YongJun_ws/src/yolov8_ros/src/yolov8_ros/yolov8_msgs" FILES "/home/yong/YongJun_ws/build/yolov8_msgs/rosidl_adapter/yolov8_msgs/msg/Vector2.idl" "DESTINATION" "share/yolov8_msgs/msg")
+ament_cmake_symlink_install_files("/home/yong/YongJun_ws/src/YOLO/Yolov8/yolov8_msgs" FILES "/home/yong/YongJun_ws/build/yolov8_msgs/rosidl_adapter/yolov8_msgs/msg/Vector2.idl" "DESTINATION" "share/yolov8_msgs/msg")
 
 # install(FILES "/home/yong/YongJun_ws/build/yolov8_msgs/rosidl_adapter/yolov8_msgs/msg/Pose2D.idl" "DESTINATION" "share/yolov8_msgs/msg")
-ament_cmake_symlink_install_files("/home/yong/YongJun_ws/src/yolov8_ros/src/yolov8_ros/yolov8_msgs" FILES "/home/yong/YongJun_ws/build/yolov8_msgs/rosidl_adapter/yolov8_msgs/msg/Pose2D.idl" "DESTINATION" "share/yolov8_msgs/msg")
+ament_cmake_symlink_install_files("/home/yong/YongJun_ws/src/YOLO/Yolov8/yolov8_msgs" FILES "/home/yong/YongJun_ws/build/yolov8_msgs/rosidl_adapter/yolov8_msgs/msg/Pose2D.idl" "DESTINATION" "share/yolov8_msgs/msg")
 
 # install(FILES "/home/yong/YongJun_ws/build/yolov8_msgs/rosidl_adapter/yolov8_msgs/msg/BoundingBox2D.idl" "DESTINATION" "share/yolov8_msgs/msg")
-ament_cmake_symlink_install_files("/home/yong/YongJun_ws/src/yolov8_ros/src/yolov8_ros/yolov8_msgs" FILES "/home/yong/YongJun_ws/build/yolov8_msgs/rosidl_adapter/yolov8_msgs/msg/BoundingBox2D.idl" "DESTINATION" "share/yolov8_msgs/msg")
+ament_cmake_symlink_install_files("/home/yong/YongJun_ws/src/YOLO/Yolov8/yolov8_msgs" FILES "/home/yong/YongJun_ws/build/yolov8_msgs/rosidl_adapter/yolov8_msgs/msg/BoundingBox2D.idl" "DESTINATION" "share/yolov8_msgs/msg")
 
 # install(FILES "/home/yong/YongJun_ws/build/yolov8_msgs/rosidl_adapter/yolov8_msgs/msg/BoundingBox3D.idl" "DESTINATION" "share/yolov8_msgs/msg")
-ament_cmake_symlink_install_files("/home/yong/YongJun_ws/src/yolov8_ros/src/yolov8_ros/yolov8_msgs" FILES "/home/yong/YongJun_ws/build/yolov8_msgs/rosidl_adapter/yolov8_msgs/msg/BoundingBox3D.idl" "DESTINATION" "share/yolov8_msgs/msg")
+ament_cmake_symlink_install_files("/home/yong/YongJun_ws/src/YOLO/Yolov8/yolov8_msgs" FILES "/home/yong/YongJun_ws/build/yolov8_msgs/rosidl_adapter/yolov8_msgs/msg/BoundingBox3D.idl" "DESTINATION" "share/yolov8_msgs/msg")
 
 # install(FILES "/home/yong/YongJun_ws/build/yolov8_msgs/rosidl_adapter/yolov8_msgs/msg/Mask.idl" "DESTINATION" "share/yolov8_msgs/msg")
-ament_cmake_symlink_install_files("/home/yong/YongJun_ws/src/yolov8_ros/src/yolov8_ros/yolov8_msgs" FILES "/home/yong/YongJun_ws/build/yolov8_msgs/rosidl_adapter/yolov8_msgs/msg/Mask.idl" "DESTINATION" "share/yolov8_msgs/msg")
+ament_cmake_symlink_install_files("/home/yong/YongJun_ws/src/YOLO/Yolov8/yolov8_msgs" FILES "/home/yong/YongJun_ws/build/yolov8_msgs/rosidl_adapter/yolov8_msgs/msg/Mask.idl" "DESTINATION" "share/yolov8_msgs/msg")
 
 # install(FILES "/home/yong/YongJun_ws/build/yolov8_msgs/rosidl_adapter/yolov8_msgs/msg/KeyPoint2D.idl" "DESTINATION" "share/yolov8_msgs/msg")
-ament_cmake_symlink_install_files("/home/yong/YongJun_ws/src/yolov8_ros/src/yolov8_ros/yolov8_msgs" FILES "/home/yong/YongJun_ws/build/yolov8_msgs/rosidl_adapter/yolov8_msgs/msg/KeyPoint2D.idl" "DESTINATION" "share/yolov8_msgs/msg")
+ament_cmake_symlink_install_files("/home/yong/YongJun_ws/src/YOLO/Yolov8/yolov8_msgs" FILES "/home/yong/YongJun_ws/build/yolov8_msgs/rosidl_adapter/yolov8_msgs/msg/KeyPoint2D.idl" "DESTINATION" "share/yolov8_msgs/msg")
 
 # install(FILES "/home/yong/YongJun_ws/build/yolov8_msgs/rosidl_adapter/yolov8_msgs/msg/KeyPoint2DArray.idl" "DESTINATION" "share/yolov8_msgs/msg")
-ament_cmake_symlink_install_files("/home/yong/YongJun_ws/src/yolov8_ros/src/yolov8_ros/yolov8_msgs" FILES "/home/yong/YongJun_ws/build/yolov8_msgs/rosidl_adapter/yolov8_msgs/msg/KeyPoint2DArray.idl" "DESTINATION" "share/yolov8_msgs/msg")
+ament_cmake_symlink_install_files("/home/yong/YongJun_ws/src/YOLO/Yolov8/yolov8_msgs" FILES "/home/yong/YongJun_ws/build/yolov8_msgs/rosidl_adapter/yolov8_msgs/msg/KeyPoint2DArray.idl" "DESTINATION" "share/yolov8_msgs/msg")
 
 # install(FILES "/home/yong/YongJun_ws/build/yolov8_msgs/rosidl_adapter/yolov8_msgs/msg/KeyPoint3D.idl" "DESTINATION" "share/yolov8_msgs/msg")
-ament_cmake_symlink_install_files("/home/yong/YongJun_ws/src/yolov8_ros/src/yolov8_ros/yolov8_msgs" FILES "/home/yong/YongJun_ws/build/yolov8_msgs/rosidl_adapter/yolov8_msgs/msg/KeyPoint3D.idl" "DESTINATION" "share/yolov8_msgs/msg")
+ament_cmake_symlink_install_files("/home/yong/YongJun_ws/src/YOLO/Yolov8/yolov8_msgs" FILES "/home/yong/YongJun_ws/build/yolov8_msgs/rosidl_adapter/yolov8_msgs/msg/KeyPoint3D.idl" "DESTINATION" "share/yolov8_msgs/msg")
 
 # install(FILES "/home/yong/YongJun_ws/build/yolov8_msgs/rosidl_adapter/yolov8_msgs/msg/KeyPoint3DArray.idl" "DESTINATION" "share/yolov8_msgs/msg")
-ament_cmake_symlink_install_files("/home/yong/YongJun_ws/src/yolov8_ros/src/yolov8_ros/yolov8_msgs" FILES "/home/yong/YongJun_ws/build/yolov8_msgs/rosidl_adapter/yolov8_msgs/msg/KeyPoint3DArray.idl" "DESTINATION" "share/yolov8_msgs/msg")
+ament_cmake_symlink_install_files("/home/yong/YongJun_ws/src/YOLO/Yolov8/yolov8_msgs" FILES "/home/yong/YongJun_ws/build/yolov8_msgs/rosidl_adapter/yolov8_msgs/msg/KeyPoint3DArray.idl" "DESTINATION" "share/yolov8_msgs/msg")
 
 # install(FILES "/home/yong/YongJun_ws/build/yolov8_msgs/rosidl_adapter/yolov8_msgs/msg/Detection.idl" "DESTINATION" "share/yolov8_msgs/msg")
-ament_cmake_symlink_install_files("/home/yong/YongJun_ws/src/yolov8_ros/src/yolov8_ros/yolov8_msgs" FILES "/home/yong/YongJun_ws/build/yolov8_msgs/rosidl_adapter/yolov8_msgs/msg/Detection.idl" "DESTINATION" "share/yolov8_msgs/msg")
+ament_cmake_symlink_install_files("/home/yong/YongJun_ws/src/YOLO/Yolov8/yolov8_msgs" FILES "/home/yong/YongJun_ws/build/yolov8_msgs/rosidl_adapter/yolov8_msgs/msg/Detection.idl" "DESTINATION" "share/yolov8_msgs/msg")
 
 # install(FILES "/home/yong/YongJun_ws/build/yolov8_msgs/rosidl_adapter/yolov8_msgs/msg/DetectionArray.idl" "DESTINATION" "share/yolov8_msgs/msg")
-ament_cmake_symlink_install_files("/home/yong/YongJun_ws/src/yolov8_ros/src/yolov8_ros/yolov8_msgs" FILES "/home/yong/YongJun_ws/build/yolov8_msgs/rosidl_adapter/yolov8_msgs/msg/DetectionArray.idl" "DESTINATION" "share/yolov8_msgs/msg")
+ament_cmake_symlink_install_files("/home/yong/YongJun_ws/src/YOLO/Yolov8/yolov8_msgs" FILES "/home/yong/YongJun_ws/build/yolov8_msgs/rosidl_adapter/yolov8_msgs/msg/DetectionArray.idl" "DESTINATION" "share/yolov8_msgs/msg")
 
-# install(FILES "/home/yong/YongJun_ws/src/yolov8_ros/src/yolov8_ros/yolov8_msgs/msg/Point2D.msg" "DESTINATION" "share/yolov8_msgs/msg")
-ament_cmake_symlink_install_files("/home/yong/YongJun_ws/src/yolov8_ros/src/yolov8_ros/yolov8_msgs" FILES "/home/yong/YongJun_ws/src/yolov8_ros/src/yolov8_ros/yolov8_msgs/msg/Point2D.msg" "DESTINATION" "share/yolov8_msgs/msg")
+# install(FILES "/home/yong/YongJun_ws/src/YOLO/Yolov8/yolov8_msgs/msg/Point2D.msg" "DESTINATION" "share/yolov8_msgs/msg")
+ament_cmake_symlink_install_files("/home/yong/YongJun_ws/src/YOLO/Yolov8/yolov8_msgs" FILES "/home/yong/YongJun_ws/src/YOLO/Yolov8/yolov8_msgs/msg/Point2D.msg" "DESTINATION" "share/yolov8_msgs/msg")
 
-# install(FILES "/home/yong/YongJun_ws/src/yolov8_ros/src/yolov8_ros/yolov8_msgs/msg/Vector2.msg" "DESTINATION" "share/yolov8_msgs/msg")
-ament_cmake_symlink_install_files("/home/yong/YongJun_ws/src/yolov8_ros/src/yolov8_ros/yolov8_msgs" FILES "/home/yong/YongJun_ws/src/yolov8_ros/src/yolov8_ros/yolov8_msgs/msg/Vector2.msg" "DESTINATION" "share/yolov8_msgs/msg")
+# install(FILES "/home/yong/YongJun_ws/src/YOLO/Yolov8/yolov8_msgs/msg/Vector2.msg" "DESTINATION" "share/yolov8_msgs/msg")
+ament_cmake_symlink_install_files("/home/yong/YongJun_ws/src/YOLO/Yolov8/yolov8_msgs" FILES "/home/yong/YongJun_ws/src/YOLO/Yolov8/yolov8_msgs/msg/Vector2.msg" "DESTINATION" "share/yolov8_msgs/msg")
 
-# install(FILES "/home/yong/YongJun_ws/src/yolov8_ros/src/yolov8_ros/yolov8_msgs/msg/Pose2D.msg" "DESTINATION" "share/yolov8_msgs/msg")
-ament_cmake_symlink_install_files("/home/yong/YongJun_ws/src/yolov8_ros/src/yolov8_ros/yolov8_msgs" FILES "/home/yong/YongJun_ws/src/yolov8_ros/src/yolov8_ros/yolov8_msgs/msg/Pose2D.msg" "DESTINATION" "share/yolov8_msgs/msg")
+# install(FILES "/home/yong/YongJun_ws/src/YOLO/Yolov8/yolov8_msgs/msg/Pose2D.msg" "DESTINATION" "share/yolov8_msgs/msg")
+ament_cmake_symlink_install_files("/home/yong/YongJun_ws/src/YOLO/Yolov8/yolov8_msgs" FILES "/home/yong/YongJun_ws/src/YOLO/Yolov8/yolov8_msgs/msg/Pose2D.msg" "DESTINATION" "share/yolov8_msgs/msg")
 
-# install(FILES "/home/yong/YongJun_ws/src/yolov8_ros/src/yolov8_ros/yolov8_msgs/msg/BoundingBox2D.msg" "DESTINATION" "share/yolov8_msgs/msg")
-ament_cmake_symlink_install_files("/home/yong/YongJun_ws/src/yolov8_ros/src/yolov8_ros/yolov8_msgs" FILES "/home/yong/YongJun_ws/src/yolov8_ros/src/yolov8_ros/yolov8_msgs/msg/BoundingBox2D.msg" "DESTINATION" "share/yolov8_msgs/msg")
+# install(FILES "/home/yong/YongJun_ws/src/YOLO/Yolov8/yolov8_msgs/msg/BoundingBox2D.msg" "DESTINATION" "share/yolov8_msgs/msg")
+ament_cmake_symlink_install_files("/home/yong/YongJun_ws/src/YOLO/Yolov8/yolov8_msgs" FILES "/home/yong/YongJun_ws/src/YOLO/Yolov8/yolov8_msgs/msg/BoundingBox2D.msg" "DESTINATION" "share/yolov8_msgs/msg")
 
-# install(FILES "/home/yong/YongJun_ws/src/yolov8_ros/src/yolov8_ros/yolov8_msgs/msg/BoundingBox3D.msg" "DESTINATION" "share/yolov8_msgs/msg")
-ament_cmake_symlink_install_files("/home/yong/YongJun_ws/src/yolov8_ros/src/yolov8_ros/yolov8_msgs" FILES "/home/yong/YongJun_ws/src/yolov8_ros/src/yolov8_ros/yolov8_msgs/msg/BoundingBox3D.msg" "DESTINATION" "share/yolov8_msgs/msg")
+# install(FILES "/home/yong/YongJun_ws/src/YOLO/Yolov8/yolov8_msgs/msg/BoundingBox3D.msg" "DESTINATION" "share/yolov8_msgs/msg")
+ament_cmake_symlink_install_files("/home/yong/YongJun_ws/src/YOLO/Yolov8/yolov8_msgs" FILES "/home/yong/YongJun_ws/src/YOLO/Yolov8/yolov8_msgs/msg/BoundingBox3D.msg" "DESTINATION" "share/yolov8_msgs/msg")
 
-# install(FILES "/home/yong/YongJun_ws/src/yolov8_ros/src/yolov8_ros/yolov8_msgs/msg/Mask.msg" "DESTINATION" "share/yolov8_msgs/msg")
-ament_cmake_symlink_install_files("/home/yong/YongJun_ws/src/yolov8_ros/src/yolov8_ros/yolov8_msgs" FILES "/home/yong/YongJun_ws/src/yolov8_ros/src/yolov8_ros/yolov8_msgs/msg/Mask.msg" "DESTINATION" "share/yolov8_msgs/msg")
+# install(FILES "/home/yong/YongJun_ws/src/YOLO/Yolov8/yolov8_msgs/msg/Mask.msg" "DESTINATION" "share/yolov8_msgs/msg")
+ament_cmake_symlink_install_files("/home/yong/YongJun_ws/src/YOLO/Yolov8/yolov8_msgs" FILES "/home/yong/YongJun_ws/src/YOLO/Yolov8/yolov8_msgs/msg/Mask.msg" "DESTINATION" "share/yolov8_msgs/msg")
 
-# install(FILES "/home/yong/YongJun_ws/src/yolov8_ros/src/yolov8_ros/yolov8_msgs/msg/KeyPoint2D.msg" "DESTINATION" "share/yolov8_msgs/msg")
-ament_cmake_symlink_install_files("/home/yong/YongJun_ws/src/yolov8_ros/src/yolov8_ros/yolov8_msgs" FILES "/home/yong/YongJun_ws/src/yolov8_ros/src/yolov8_ros/yolov8_msgs/msg/KeyPoint2D.msg" "DESTINATION" "share/yolov8_msgs/msg")
+# install(FILES "/home/yong/YongJun_ws/src/YOLO/Yolov8/yolov8_msgs/msg/KeyPoint2D.msg" "DESTINATION" "share/yolov8_msgs/msg")
+ament_cmake_symlink_install_files("/home/yong/YongJun_ws/src/YOLO/Yolov8/yolov8_msgs" FILES "/home/yong/YongJun_ws/src/YOLO/Yolov8/yolov8_msgs/msg/KeyPoint2D.msg" "DESTINATION" "share/yolov8_msgs/msg")
 
-# install(FILES "/home/yong/YongJun_ws/src/yolov8_ros/src/yolov8_ros/yolov8_msgs/msg/KeyPoint2DArray.msg" "DESTINATION" "share/yolov8_msgs/msg")
-ament_cmake_symlink_install_files("/home/yong/YongJun_ws/src/yolov8_ros/src/yolov8_ros/yolov8_msgs" FILES "/home/yong/YongJun_ws/src/yolov8_ros/src/yolov8_ros/yolov8_msgs/msg/KeyPoint2DArray.msg" "DESTINATION" "share/yolov8_msgs/msg")
+# install(FILES "/home/yong/YongJun_ws/src/YOLO/Yolov8/yolov8_msgs/msg/KeyPoint2DArray.msg" "DESTINATION" "share/yolov8_msgs/msg")
+ament_cmake_symlink_install_files("/home/yong/YongJun_ws/src/YOLO/Yolov8/yolov8_msgs" FILES "/home/yong/YongJun_ws/src/YOLO/Yolov8/yolov8_msgs/msg/KeyPoint2DArray.msg" "DESTINATION" "share/yolov8_msgs/msg")
 
-# install(FILES "/home/yong/YongJun_ws/src/yolov8_ros/src/yolov8_ros/yolov8_msgs/msg/KeyPoint3D.msg" "DESTINATION" "share/yolov8_msgs/msg")
-ament_cmake_symlink_install_files("/home/yong/YongJun_ws/src/yolov8_ros/src/yolov8_ros/yolov8_msgs" FILES "/home/yong/YongJun_ws/src/yolov8_ros/src/yolov8_ros/yolov8_msgs/msg/KeyPoint3D.msg" "DESTINATION" "share/yolov8_msgs/msg")
+# install(FILES "/home/yong/YongJun_ws/src/YOLO/Yolov8/yolov8_msgs/msg/KeyPoint3D.msg" "DESTINATION" "share/yolov8_msgs/msg")
+ament_cmake_symlink_install_files("/home/yong/YongJun_ws/src/YOLO/Yolov8/yolov8_msgs" FILES "/home/yong/YongJun_ws/src/YOLO/Yolov8/yolov8_msgs/msg/KeyPoint3D.msg" "DESTINATION" "share/yolov8_msgs/msg")
 
-# install(FILES "/home/yong/YongJun_ws/src/yolov8_ros/src/yolov8_ros/yolov8_msgs/msg/KeyPoint3DArray.msg" "DESTINATION" "share/yolov8_msgs/msg")
-ament_cmake_symlink_install_files("/home/yong/YongJun_ws/src/yolov8_ros/src/yolov8_ros/yolov8_msgs" FILES "/home/yong/YongJun_ws/src/yolov8_ros/src/yolov8_ros/yolov8_msgs/msg/KeyPoint3DArray.msg" "DESTINATION" "share/yolov8_msgs/msg")
+# install(FILES "/home/yong/YongJun_ws/src/YOLO/Yolov8/yolov8_msgs/msg/KeyPoint3DArray.msg" "DESTINATION" "share/yolov8_msgs/msg")
+ament_cmake_symlink_install_files("/home/yong/YongJun_ws/src/YOLO/Yolov8/yolov8_msgs" FILES "/home/yong/YongJun_ws/src/YOLO/Yolov8/yolov8_msgs/msg/KeyPoint3DArray.msg" "DESTINATION" "share/yolov8_msgs/msg")
 
-# install(FILES "/home/yong/YongJun_ws/src/yolov8_ros/src/yolov8_ros/yolov8_msgs/msg/Detection.msg" "DESTINATION" "share/yolov8_msgs/msg")
-ament_cmake_symlink_install_files("/home/yong/YongJun_ws/src/yolov8_ros/src/yolov8_ros/yolov8_msgs" FILES "/home/yong/YongJun_ws/src/yolov8_ros/src/yolov8_ros/yolov8_msgs/msg/Detection.msg" "DESTINATION" "share/yolov8_msgs/msg")
+# install(FILES "/home/yong/YongJun_ws/src/YOLO/Yolov8/yolov8_msgs/msg/Detection.msg" "DESTINATION" "share/yolov8_msgs/msg")
+ament_cmake_symlink_install_files("/home/yong/YongJun_ws/src/YOLO/Yolov8/yolov8_msgs" FILES "/home/yong/YongJun_ws/src/YOLO/Yolov8/yolov8_msgs/msg/Detection.msg" "DESTINATION" "share/yolov8_msgs/msg")
 
-# install(FILES "/home/yong/YongJun_ws/src/yolov8_ros/src/yolov8_ros/yolov8_msgs/msg/DetectionArray.msg" "DESTINATION" "share/yolov8_msgs/msg")
-ament_cmake_symlink_install_files("/home/yong/YongJun_ws/src/yolov8_ros/src/yolov8_ros/yolov8_msgs" FILES "/home/yong/YongJun_ws/src/yolov8_ros/src/yolov8_ros/yolov8_msgs/msg/DetectionArray.msg" "DESTINATION" "share/yolov8_msgs/msg")
+# install(FILES "/home/yong/YongJun_ws/src/YOLO/Yolov8/yolov8_msgs/msg/DetectionArray.msg" "DESTINATION" "share/yolov8_msgs/msg")
+ament_cmake_symlink_install_files("/home/yong/YongJun_ws/src/YOLO/Yolov8/yolov8_msgs" FILES "/home/yong/YongJun_ws/src/YOLO/Yolov8/yolov8_msgs/msg/DetectionArray.msg" "DESTINATION" "share/yolov8_msgs/msg")
 
 # install(FILES "/home/yong/YongJun_ws/build/yolov8_msgs/ament_cmake_index/share/ament_index/resource_index/package_run_dependencies/yolov8_msgs" "DESTINATION" "share/ament_index/resource_index/package_run_dependencies")
-ament_cmake_symlink_install_files("/home/yong/YongJun_ws/src/yolov8_ros/src/yolov8_ros/yolov8_msgs" FILES "/home/yong/YongJun_ws/build/yolov8_msgs/ament_cmake_index/share/ament_index/resource_index/package_run_dependencies/yolov8_msgs" "DESTINATION" "share/ament_index/resource_index/package_run_dependencies")
+ament_cmake_symlink_install_files("/home/yong/YongJun_ws/src/YOLO/Yolov8/yolov8_msgs" FILES "/home/yong/YongJun_ws/build/yolov8_msgs/ament_cmake_index/share/ament_index/resource_index/package_run_dependencies/yolov8_msgs" "DESTINATION" "share/ament_index/resource_index/package_run_dependencies")
 
 # install(FILES "/home/yong/YongJun_ws/build/yolov8_msgs/ament_cmake_index/share/ament_index/resource_index/parent_prefix_path/yolov8_msgs" "DESTINATION" "share/ament_index/resource_index/parent_prefix_path")
-ament_cmake_symlink_install_files("/home/yong/YongJun_ws/src/yolov8_ros/src/yolov8_ros/yolov8_msgs" FILES "/home/yong/YongJun_ws/build/yolov8_msgs/ament_cmake_index/share/ament_index/resource_index/parent_prefix_path/yolov8_msgs" "DESTINATION" "share/ament_index/resource_index/parent_prefix_path")
+ament_cmake_symlink_install_files("/home/yong/YongJun_ws/src/YOLO/Yolov8/yolov8_msgs" FILES "/home/yong/YongJun_ws/build/yolov8_msgs/ament_cmake_index/share/ament_index/resource_index/parent_prefix_path/yolov8_msgs" "DESTINATION" "share/ament_index/resource_index/parent_prefix_path")
 
 # install(FILES "/opt/ros/foxy/share/ament_cmake_core/cmake/environment_hooks/environment/ament_prefix_path.sh" "DESTINATION" "share/yolov8_msgs/environment")
-ament_cmake_symlink_install_files("/home/yong/YongJun_ws/src/yolov8_ros/src/yolov8_ros/yolov8_msgs" FILES "/opt/ros/foxy/share/ament_cmake_core/cmake/environment_hooks/environment/ament_prefix_path.sh" "DESTINATION" "share/yolov8_msgs/environment")
+ament_cmake_symlink_install_files("/home/yong/YongJun_ws/src/YOLO/Yolov8/yolov8_msgs" FILES "/opt/ros/foxy/share/ament_cmake_core/cmake/environment_hooks/environment/ament_prefix_path.sh" "DESTINATION" "share/yolov8_msgs/environment")
 
 # install(FILES "/home/yong/YongJun_ws/build/yolov8_msgs/ament_cmake_environment_hooks/ament_prefix_path.dsv" "DESTINATION" "share/yolov8_msgs/environment")
-ament_cmake_symlink_install_files("/home/yong/YongJun_ws/src/yolov8_ros/src/yolov8_ros/yolov8_msgs" FILES "/home/yong/YongJun_ws/build/yolov8_msgs/ament_cmake_environment_hooks/ament_prefix_path.dsv" "DESTINATION" "share/yolov8_msgs/environment")
+ament_cmake_symlink_install_files("/home/yong/YongJun_ws/src/YOLO/Yolov8/yolov8_msgs" FILES "/home/yong/YongJun_ws/build/yolov8_msgs/ament_cmake_environment_hooks/ament_prefix_path.dsv" "DESTINATION" "share/yolov8_msgs/environment")
 
 # install(FILES "/opt/ros/foxy/share/ament_cmake_core/cmake/environment_hooks/environment/path.sh" "DESTINATION" "share/yolov8_msgs/environment")
-ament_cmake_symlink_install_files("/home/yong/YongJun_ws/src/yolov8_ros/src/yolov8_ros/yolov8_msgs" FILES "/opt/ros/foxy/share/ament_cmake_core/cmake/environment_hooks/environment/path.sh" "DESTINATION" "share/yolov8_msgs/environment")
+ament_cmake_symlink_install_files("/home/yong/YongJun_ws/src/YOLO/Yolov8/yolov8_msgs" FILES "/opt/ros/foxy/share/ament_cmake_core/cmake/environment_hooks/environment/path.sh" "DESTINATION" "share/yolov8_msgs/environment")
 
 # install(FILES "/home/yong/YongJun_ws/build/yolov8_msgs/ament_cmake_environment_hooks/path.dsv" "DESTINATION" "share/yolov8_msgs/environment")
-ament_cmake_symlink_install_files("/home/yong/YongJun_ws/src/yolov8_ros/src/yolov8_ros/yolov8_msgs" FILES "/home/yong/YongJun_ws/build/yolov8_msgs/ament_cmake_environment_hooks/path.dsv" "DESTINATION" "share/yolov8_msgs/environment")
+ament_cmake_symlink_install_files("/home/yong/YongJun_ws/src/YOLO/Yolov8/yolov8_msgs" FILES "/home/yong/YongJun_ws/build/yolov8_msgs/ament_cmake_environment_hooks/path.dsv" "DESTINATION" "share/yolov8_msgs/environment")
 
 # install(FILES "/home/yong/YongJun_ws/build/yolov8_msgs/ament_cmake_environment_hooks/local_setup.bash" "DESTINATION" "share/yolov8_msgs")
-ament_cmake_symlink_install_files("/home/yong/YongJun_ws/src/yolov8_ros/src/yolov8_ros/yolov8_msgs" FILES "/home/yong/YongJun_ws/build/yolov8_msgs/ament_cmake_environment_hooks/local_setup.bash" "DESTINATION" "share/yolov8_msgs")
+ament_cmake_symlink_install_files("/home/yong/YongJun_ws/src/YOLO/Yolov8/yolov8_msgs" FILES "/home/yong/YongJun_ws/build/yolov8_msgs/ament_cmake_environment_hooks/local_setup.bash" "DESTINATION" "share/yolov8_msgs")
 
 # install(FILES "/home/yong/YongJun_ws/build/yolov8_msgs/ament_cmake_environment_hooks/local_setup.sh" "DESTINATION" "share/yolov8_msgs")
-ament_cmake_symlink_install_files("/home/yong/YongJun_ws/src/yolov8_ros/src/yolov8_ros/yolov8_msgs" FILES "/home/yong/YongJun_ws/build/yolov8_msgs/ament_cmake_environment_hooks/local_setup.sh" "DESTINATION" "share/yolov8_msgs")
+ament_cmake_symlink_install_files("/home/yong/YongJun_ws/src/YOLO/Yolov8/yolov8_msgs" FILES "/home/yong/YongJun_ws/build/yolov8_msgs/ament_cmake_environment_hooks/local_setup.sh" "DESTINATION" "share/yolov8_msgs")
 
 # install(FILES "/home/yong/YongJun_ws/build/yolov8_msgs/ament_cmake_environment_hooks/local_setup.zsh" "DESTINATION" "share/yolov8_msgs")
-ament_cmake_symlink_install_files("/home/yong/YongJun_ws/src/yolov8_ros/src/yolov8_ros/yolov8_msgs" FILES "/home/yong/YongJun_ws/build/yolov8_msgs/ament_cmake_environment_hooks/local_setup.zsh" "DESTINATION" "share/yolov8_msgs")
+ament_cmake_symlink_install_files("/home/yong/YongJun_ws/src/YOLO/Yolov8/yolov8_msgs" FILES "/home/yong/YongJun_ws/build/yolov8_msgs/ament_cmake_environment_hooks/local_setup.zsh" "DESTINATION" "share/yolov8_msgs")
 
 # install(FILES "/home/yong/YongJun_ws/build/yolov8_msgs/ament_cmake_environment_hooks/local_setup.dsv" "DESTINATION" "share/yolov8_msgs")
-ament_cmake_symlink_install_files("/home/yong/YongJun_ws/src/yolov8_ros/src/yolov8_ros/yolov8_msgs" FILES "/home/yong/YongJun_ws/build/yolov8_msgs/ament_cmake_environment_hooks/local_setup.dsv" "DESTINATION" "share/yolov8_msgs")
+ament_cmake_symlink_install_files("/home/yong/YongJun_ws/src/YOLO/Yolov8/yolov8_msgs" FILES "/home/yong/YongJun_ws/build/yolov8_msgs/ament_cmake_environment_hooks/local_setup.dsv" "DESTINATION" "share/yolov8_msgs")
 
 # install(FILES "/home/yong/YongJun_ws/build/yolov8_msgs/ament_cmake_environment_hooks/package.dsv" "DESTINATION" "share/yolov8_msgs")
-ament_cmake_symlink_install_files("/home/yong/YongJun_ws/src/yolov8_ros/src/yolov8_ros/yolov8_msgs" FILES "/home/yong/YongJun_ws/build/yolov8_msgs/ament_cmake_environment_hooks/package.dsv" "DESTINATION" "share/yolov8_msgs")
+ament_cmake_symlink_install_files("/home/yong/YongJun_ws/src/YOLO/Yolov8/yolov8_msgs" FILES "/home/yong/YongJun_ws/build/yolov8_msgs/ament_cmake_environment_hooks/package.dsv" "DESTINATION" "share/yolov8_msgs")
 
 # install(FILES "/home/yong/YongJun_ws/build/yolov8_msgs/ament_cmake_index/share/ament_index/resource_index/packages/yolov8_msgs" "DESTINATION" "share/ament_index/resource_index/packages")
-ament_cmake_symlink_install_files("/home/yong/YongJun_ws/src/yolov8_ros/src/yolov8_ros/yolov8_msgs" FILES "/home/yong/YongJun_ws/build/yolov8_msgs/ament_cmake_index/share/ament_index/resource_index/packages/yolov8_msgs" "DESTINATION" "share/ament_index/resource_index/packages")
+ament_cmake_symlink_install_files("/home/yong/YongJun_ws/src/YOLO/Yolov8/yolov8_msgs" FILES "/home/yong/YongJun_ws/build/yolov8_msgs/ament_cmake_index/share/ament_index/resource_index/packages/yolov8_msgs" "DESTINATION" "share/ament_index/resource_index/packages")
 
 # install(FILES "/home/yong/YongJun_ws/build/yolov8_msgs/rosidl_cmake/rosidl_cmake-extras.cmake" "DESTINATION" "share/yolov8_msgs/cmake")
-ament_cmake_symlink_install_files("/home/yong/YongJun_ws/src/yolov8_ros/src/yolov8_ros/yolov8_msgs" FILES "/home/yong/YongJun_ws/build/yolov8_msgs/rosidl_cmake/rosidl_cmake-extras.cmake" "DESTINATION" "share/yolov8_msgs/cmake")
+ament_cmake_symlink_install_files("/home/yong/YongJun_ws/src/YOLO/Yolov8/yolov8_msgs" FILES "/home/yong/YongJun_ws/build/yolov8_msgs/rosidl_cmake/rosidl_cmake-extras.cmake" "DESTINATION" "share/yolov8_msgs/cmake")
 
 # install(FILES "/home/yong/YongJun_ws/build/yolov8_msgs/ament_cmake_export_dependencies/ament_cmake_export_dependencies-extras.cmake" "DESTINATION" "share/yolov8_msgs/cmake")
-ament_cmake_symlink_install_files("/home/yong/YongJun_ws/src/yolov8_ros/src/yolov8_ros/yolov8_msgs" FILES "/home/yong/YongJun_ws/build/yolov8_msgs/ament_cmake_export_dependencies/ament_cmake_export_dependencies-extras.cmake" "DESTINATION" "share/yolov8_msgs/cmake")
+ament_cmake_symlink_install_files("/home/yong/YongJun_ws/src/YOLO/Yolov8/yolov8_msgs" FILES "/home/yong/YongJun_ws/build/yolov8_msgs/ament_cmake_export_dependencies/ament_cmake_export_dependencies-extras.cmake" "DESTINATION" "share/yolov8_msgs/cmake")
 
 # install(FILES "/home/yong/YongJun_ws/build/yolov8_msgs/ament_cmake_export_libraries/ament_cmake_export_libraries-extras.cmake" "DESTINATION" "share/yolov8_msgs/cmake")
-ament_cmake_symlink_install_files("/home/yong/YongJun_ws/src/yolov8_ros/src/yolov8_ros/yolov8_msgs" FILES "/home/yong/YongJun_ws/build/yolov8_msgs/ament_cmake_export_libraries/ament_cmake_export_libraries-extras.cmake" "DESTINATION" "share/yolov8_msgs/cmake")
+ament_cmake_symlink_install_files("/home/yong/YongJun_ws/src/YOLO/Yolov8/yolov8_msgs" FILES "/home/yong/YongJun_ws/build/yolov8_msgs/ament_cmake_export_libraries/ament_cmake_export_libraries-extras.cmake" "DESTINATION" "share/yolov8_msgs/cmake")
 
 # install(FILES "/home/yong/YongJun_ws/build/yolov8_msgs/ament_cmake_export_targets/ament_cmake_export_targets-extras.cmake" "DESTINATION" "share/yolov8_msgs/cmake")
-ament_cmake_symlink_install_files("/home/yong/YongJun_ws/src/yolov8_ros/src/yolov8_ros/yolov8_msgs" FILES "/home/yong/YongJun_ws/build/yolov8_msgs/ament_cmake_export_targets/ament_cmake_export_targets-extras.cmake" "DESTINATION" "share/yolov8_msgs/cmake")
+ament_cmake_symlink_install_files("/home/yong/YongJun_ws/src/YOLO/Yolov8/yolov8_msgs" FILES "/home/yong/YongJun_ws/build/yolov8_msgs/ament_cmake_export_targets/ament_cmake_export_targets-extras.cmake" "DESTINATION" "share/yolov8_msgs/cmake")
 
 # install(FILES "/home/yong/YongJun_ws/build/yolov8_msgs/ament_cmake_export_include_directories/ament_cmake_export_include_directories-extras.cmake" "DESTINATION" "share/yolov8_msgs/cmake")
-ament_cmake_symlink_install_files("/home/yong/YongJun_ws/src/yolov8_ros/src/yolov8_ros/yolov8_msgs" FILES "/home/yong/YongJun_ws/build/yolov8_msgs/ament_cmake_export_include_directories/ament_cmake_export_include_directories-extras.cmake" "DESTINATION" "share/yolov8_msgs/cmake")
+ament_cmake_symlink_install_files("/home/yong/YongJun_ws/src/YOLO/Yolov8/yolov8_msgs" FILES "/home/yong/YongJun_ws/build/yolov8_msgs/ament_cmake_export_include_directories/ament_cmake_export_include_directories-extras.cmake" "DESTINATION" "share/yolov8_msgs/cmake")
 
 # install(FILES "/home/yong/YongJun_ws/build/yolov8_msgs/rosidl_cmake/rosidl_cmake_export_typesupport_libraries-extras.cmake" "DESTINATION" "share/yolov8_msgs/cmake")
-ament_cmake_symlink_install_files("/home/yong/YongJun_ws/src/yolov8_ros/src/yolov8_ros/yolov8_msgs" FILES "/home/yong/YongJun_ws/build/yolov8_msgs/rosidl_cmake/rosidl_cmake_export_typesupport_libraries-extras.cmake" "DESTINATION" "share/yolov8_msgs/cmake")
+ament_cmake_symlink_install_files("/home/yong/YongJun_ws/src/YOLO/Yolov8/yolov8_msgs" FILES "/home/yong/YongJun_ws/build/yolov8_msgs/rosidl_cmake/rosidl_cmake_export_typesupport_libraries-extras.cmake" "DESTINATION" "share/yolov8_msgs/cmake")
 
 # install(FILES "/home/yong/YongJun_ws/build/yolov8_msgs/rosidl_cmake/rosidl_cmake_export_typesupport_targets-extras.cmake" "DESTINATION" "share/yolov8_msgs/cmake")
-ament_cmake_symlink_install_files("/home/yong/YongJun_ws/src/yolov8_ros/src/yolov8_ros/yolov8_msgs" FILES "/home/yong/YongJun_ws/build/yolov8_msgs/rosidl_cmake/rosidl_cmake_export_typesupport_targets-extras.cmake" "DESTINATION" "share/yolov8_msgs/cmake")
+ament_cmake_symlink_install_files("/home/yong/YongJun_ws/src/YOLO/Yolov8/yolov8_msgs" FILES "/home/yong/YongJun_ws/build/yolov8_msgs/rosidl_cmake/rosidl_cmake_export_typesupport_targets-extras.cmake" "DESTINATION" "share/yolov8_msgs/cmake")
 
 # install(FILES "/home/yong/YongJun_ws/build/yolov8_msgs/ament_cmake_core/yolov8_msgsConfig.cmake" "/home/yong/YongJun_ws/build/yolov8_msgs/ament_cmake_core/yolov8_msgsConfig-version.cmake" "DESTINATION" "share/yolov8_msgs/cmake")
-ament_cmake_symlink_install_files("/home/yong/YongJun_ws/src/yolov8_ros/src/yolov8_ros/yolov8_msgs" FILES "/home/yong/YongJun_ws/build/yolov8_msgs/ament_cmake_core/yolov8_msgsConfig.cmake" "/home/yong/YongJun_ws/build/yolov8_msgs/ament_cmake_core/yolov8_msgsConfig-version.cmake" "DESTINATION" "share/yolov8_msgs/cmake")
+ament_cmake_symlink_install_files("/home/yong/YongJun_ws/src/YOLO/Yolov8/yolov8_msgs" FILES "/home/yong/YongJun_ws/build/yolov8_msgs/ament_cmake_core/yolov8_msgsConfig.cmake" "/home/yong/YongJun_ws/build/yolov8_msgs/ament_cmake_core/yolov8_msgsConfig-version.cmake" "DESTINATION" "share/yolov8_msgs/cmake")
 
-# install(FILES "/home/yong/YongJun_ws/src/yolov8_ros/src/yolov8_ros/yolov8_msgs/package.xml" "DESTINATION" "share/yolov8_msgs")
-ament_cmake_symlink_install_files("/home/yong/YongJun_ws/src/yolov8_ros/src/yolov8_ros/yolov8_msgs" FILES "/home/yong/YongJun_ws/src/yolov8_ros/src/yolov8_ros/yolov8_msgs/package.xml" "DESTINATION" "share/yolov8_msgs")
+# install(FILES "/home/yong/YongJun_ws/src/YOLO/Yolov8/yolov8_msgs/package.xml" "DESTINATION" "share/yolov8_msgs")
+ament_cmake_symlink_install_files("/home/yong/YongJun_ws/src/YOLO/Yolov8/yolov8_msgs" FILES "/home/yong/YongJun_ws/src/YOLO/Yolov8/yolov8_msgs/package.xml" "DESTINATION" "share/yolov8_msgs")
