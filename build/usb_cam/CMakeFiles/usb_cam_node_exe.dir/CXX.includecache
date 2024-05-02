@@ -6,7 +6,7 @@
 
 #IncludeRegexTransform: 
 
-/home/yong/YongJun_ws/YongJun/build/usb_cam/rclcpp_components/node_main_usb_cam_node_exe.cpp
+/home/yong/YongJun_ws/build/usb_cam/rclcpp_components/node_main_usb_cam_node_exe.cpp
 memory
 -
 string
@@ -14,13 +14,13 @@ string
 vector
 -
 class_loader/class_loader.hpp
-/home/yong/YongJun_ws/YongJun/build/usb_cam/rclcpp_components/class_loader/class_loader.hpp
+/home/yong/YongJun_ws/build/usb_cam/rclcpp_components/class_loader/class_loader.hpp
 rclcpp/rclcpp.hpp
-/home/yong/YongJun_ws/YongJun/build/usb_cam/rclcpp_components/rclcpp/rclcpp.hpp
+/home/yong/YongJun_ws/build/usb_cam/rclcpp_components/rclcpp/rclcpp.hpp
 rclcpp_components/node_factory.hpp
-/home/yong/YongJun_ws/YongJun/build/usb_cam/rclcpp_components/rclcpp_components/node_factory.hpp
+/home/yong/YongJun_ws/build/usb_cam/rclcpp_components/rclcpp_components/node_factory.hpp
 rclcpp_components/node_factory_template.hpp
-/home/yong/YongJun_ws/YongJun/build/usb_cam/rclcpp_components/rclcpp_components/node_factory_template.hpp
+/home/yong/YongJun_ws/build/usb_cam/rclcpp_components/rclcpp_components/node_factory_template.hpp
 
 /opt/ros/foxy/include/builtin_interfaces/msg/detail/duration__builder.hpp
 builtin_interfaces/msg/detail/duration__struct.hpp

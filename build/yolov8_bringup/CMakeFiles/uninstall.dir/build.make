@@ -43,10 +43,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/yong/YongJun_ws/YongJun/src/yolov8_ros/src/yolov8_ros/yolov8_bringup
+CMAKE_SOURCE_DIR = /home/yong/YongJun_ws/src/yolov8_ros/src/yolov8_ros/yolov8_bringup
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/yong/YongJun_ws/YongJun/build/yolov8_bringup
+CMAKE_BINARY_DIR = /home/yong/YongJun_ws/build/yolov8_bringup
 
 # Utility rule file for uninstall.
 
@@ -67,6 +67,6 @@ CMakeFiles/uninstall.dir/clean:
 .PHONY : CMakeFiles/uninstall.dir/clean
 
 CMakeFiles/uninstall.dir/depend:
-	cd /home/yong/YongJun_ws/YongJun/build/yolov8_bringup && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/yong/YongJun_ws/YongJun/src/yolov8_ros/src/yolov8_ros/yolov8_bringup /home/yong/YongJun_ws/YongJun/src/yolov8_ros/src/yolov8_ros/yolov8_bringup /home/yong/YongJun_ws/YongJun/build/yolov8_bringup /home/yong/YongJun_ws/YongJun/build/yolov8_bringup /home/yong/YongJun_ws/YongJun/build/yolov8_bringup/CMakeFiles/uninstall.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/yong/YongJun_ws/build/yolov8_bringup && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/yong/YongJun_ws/src/yolov8_ros/src/yolov8_ros/yolov8_bringup /home/yong/YongJun_ws/src/yolov8_ros/src/yolov8_ros/yolov8_bringup /home/yong/YongJun_ws/build/yolov8_bringup /home/yong/YongJun_ws/build/yolov8_bringup /home/yong/YongJun_ws/build/yolov8_bringup/CMakeFiles/uninstall.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/uninstall.dir/depend
 

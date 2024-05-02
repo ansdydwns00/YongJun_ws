@@ -6,5 +6,5 @@ CXX_FLAGS =   -Wall -Wextra -Wpedantic -Werror -std=gnu++17
 
 CXX_DEFINES = 
 
-CXX_INCLUDES = -I/opt/ros/foxy/src/gtest_vendor/include -I/home/yong/YongJun_ws/YongJun/src/sensor/src/usb_cam/include -isystem /usr/include/opencv4 
+CXX_INCLUDES = -I/opt/ros/foxy/src/gtest_vendor/include -I/home/yong/YongJun_ws/src/sensor/src/usb_cam/include -isystem /usr/include/opencv4 
 

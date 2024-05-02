@@ -1,1 +1,1 @@
-/home/yong/YongJun_ws/YongJun/build/yolov8_msgs/rosidl_generator_c/yolov8_msgs/msg/key_point3_d.h
+/home/yong/YongJun_ws/build/yolov8_msgs/rosidl_generator_c/yolov8_msgs/msg/key_point3_d.h

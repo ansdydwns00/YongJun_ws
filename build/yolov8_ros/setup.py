@@ -1,1 +1,1 @@
-/home/yong/YongJun_ws/YongJun/src/yolov8_ros/src/yolov8_ros/yolov8_ros/setup.py
+/home/yong/YongJun_ws/src/yolov8_ros/src/yolov8_ros/yolov8_ros/setup.py

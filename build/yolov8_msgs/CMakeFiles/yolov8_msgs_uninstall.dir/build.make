@@ -43,10 +43,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/yong/YongJun_ws/YongJun/src/yolov8_ros/src/yolov8_ros/yolov8_msgs
+CMAKE_SOURCE_DIR = /home/yong/YongJun_ws/src/yolov8_ros/src/yolov8_ros/yolov8_msgs
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/yong/YongJun_ws/YongJun/build/yolov8_msgs
+CMAKE_BINARY_DIR = /home/yong/YongJun_ws/build/yolov8_msgs
 
 # Utility rule file for yolov8_msgs_uninstall.
 
@@ -54,7 +54,7 @@ CMAKE_BINARY_DIR = /home/yong/YongJun_ws/YongJun/build/yolov8_msgs
 include CMakeFiles/yolov8_msgs_uninstall.dir/progress.make
 
 CMakeFiles/yolov8_msgs_uninstall:
-	/usr/bin/cmake -P /home/yong/YongJun_ws/YongJun/build/yolov8_msgs/ament_cmake_uninstall_target/ament_cmake_uninstall_target.cmake
+	/usr/bin/cmake -P /home/yong/YongJun_ws/build/yolov8_msgs/ament_cmake_uninstall_target/ament_cmake_uninstall_target.cmake
 
 yolov8_msgs_uninstall: CMakeFiles/yolov8_msgs_uninstall
 yolov8_msgs_uninstall: CMakeFiles/yolov8_msgs_uninstall.dir/build.make
@@ -71,6 +71,6 @@ CMakeFiles/yolov8_msgs_uninstall.dir/clean:
 .PHONY : CMakeFiles/yolov8_msgs_uninstall.dir/clean
 
 CMakeFiles/yolov8_msgs_uninstall.dir/depend:
-	cd /home/yong/YongJun_ws/YongJun/build/yolov8_msgs && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/yong/YongJun_ws/YongJun/src/yolov8_ros/src/yolov8_ros/yolov8_msgs /home/yong/YongJun_ws/YongJun/src/yolov8_ros/src/yolov8_ros/yolov8_msgs /home/yong/YongJun_ws/YongJun/build/yolov8_msgs /home/yong/YongJun_ws/YongJun/build/yolov8_msgs /home/yong/YongJun_ws/YongJun/build/yolov8_msgs/CMakeFiles/yolov8_msgs_uninstall.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/yong/YongJun_ws/build/yolov8_msgs && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/yong/YongJun_ws/src/yolov8_ros/src/yolov8_ros/yolov8_msgs /home/yong/YongJun_ws/src/yolov8_ros/src/yolov8_ros/yolov8_msgs /home/yong/YongJun_ws/build/yolov8_msgs /home/yong/YongJun_ws/build/yolov8_msgs /home/yong/YongJun_ws/build/yolov8_msgs/CMakeFiles/yolov8_msgs_uninstall.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/yolov8_msgs_uninstall.dir/depend
 

@@ -1,1 +1,1 @@
-/home/yong/YongJun_ws/YongJun/build/yolov8_msgs/rosidl_generator_cpp/yolov8_msgs/msg/detail/point2_d__struct.hpp
+/home/yong/YongJun_ws/build/yolov8_msgs/rosidl_generator_cpp/yolov8_msgs/msg/detail/point2_d__struct.hpp

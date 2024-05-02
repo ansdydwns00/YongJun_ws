@@ -6,5 +6,5 @@ C_FLAGS = -fPIC   -Wall -Wextra
 
 C_DEFINES = -DRCUTILS_ENABLE_FAULT_INJECTION -DROS_PACKAGE_NAME=\"yolov8_msgs\" -Dyolov8_msgs__python_EXPORTS
 
-C_INCLUDES = -I/home/yong/YongJun_ws/YongJun/build/yolov8_msgs/rosidl_generator_c -I/home/yong/YongJun_ws/YongJun/build/yolov8_msgs/rosidl_generator_py -I/usr/include/python3.8 -I/home/yong/YongJun_ws/YongJun/build/yolov8_msgs/rosidl_typesupport_c -isystem /opt/ros/foxy/include 
+C_INCLUDES = -I/home/yong/YongJun_ws/build/yolov8_msgs/rosidl_generator_c -I/home/yong/YongJun_ws/build/yolov8_msgs/rosidl_generator_py -I/usr/include/python3.8 -I/home/yong/YongJun_ws/build/yolov8_msgs/rosidl_typesupport_c -isystem /opt/ros/foxy/include 
 
