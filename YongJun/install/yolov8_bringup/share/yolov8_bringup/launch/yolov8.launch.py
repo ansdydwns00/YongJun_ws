@@ -1,1 +1,0 @@
-/home/yong/YongJun/src/yolov8_ros/src/yolov8_ros/yolov8_bringup/launch/yolov8.launch.py

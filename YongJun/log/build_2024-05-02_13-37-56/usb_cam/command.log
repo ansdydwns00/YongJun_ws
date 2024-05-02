@@ -1,6 +1,0 @@
-Invoking command in '/home/yong/YongJun/build/usb_cam': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake /home/yong/YongJun/src/sensor/src/usb_cam -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/yong/YongJun/install/usb_cam
-Invoked command in '/home/yong/YongJun/build/usb_cam' returned '0': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake /home/yong/YongJun/src/sensor/src/usb_cam -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/yong/YongJun/install/usb_cam
-Invoking command in '/home/yong/YongJun/build/usb_cam': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake --build /home/yong/YongJun/build/usb_cam -- -j8 -l8
-Invoked command in '/home/yong/YongJun/build/usb_cam' returned '0': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake --build /home/yong/YongJun/build/usb_cam -- -j8 -l8
-Invoking command in '/home/yong/YongJun/build/usb_cam': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake --install /home/yong/YongJun/build/usb_cam
-Invoked command in '/home/yong/YongJun/build/usb_cam' returned '0': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake --install /home/yong/YongJun/build/usb_cam
