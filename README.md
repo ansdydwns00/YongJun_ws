@@ -14,10 +14,12 @@
 
 ## Installation Dependency
 ```
-$ git clone
+$ git clone https://github.com/ansdydwns00/YongJun_ws.git
 $ cd YongJun_ws/src
 $ pip3 install -r YOLO/Yolov8/requirements.txt
 $ cd ../
 $ rosdep install --from-paths src --ignore-src -r -y
-$ colcon build --symlink-install
+
+# Before build, remove build, install, log folder
+$ colcon build --symlink-install 
 ```
