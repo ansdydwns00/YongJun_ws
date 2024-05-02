@@ -1,0 +1,17 @@
+{
+  "package_name": "yolov8_msgs",
+  "non_idl_tuples": [
+    "/home/yong/YongJun/src/yolov8_ros/src/yolov8_ros/yolov8_msgs:msg/Point2D.msg",
+    "/home/yong/YongJun/src/yolov8_ros/src/yolov8_ros/yolov8_msgs:msg/Vector2.msg",
+    "/home/yong/YongJun/src/yolov8_ros/src/yolov8_ros/yolov8_msgs:msg/Pose2D.msg",
+    "/home/yong/YongJun/src/yolov8_ros/src/yolov8_ros/yolov8_msgs:msg/BoundingBox2D.msg",
+    "/home/yong/YongJun/src/yolov8_ros/src/yolov8_ros/yolov8_msgs:msg/BoundingBox3D.msg",
+    "/home/yong/YongJun/src/yolov8_ros/src/yolov8_ros/yolov8_msgs:msg/Mask.msg",
+    "/home/yong/YongJun/src/yolov8_ros/src/yolov8_ros/yolov8_msgs:msg/KeyPoint2D.msg",
+    "/home/yong/YongJun/src/yolov8_ros/src/yolov8_ros/yolov8_msgs:msg/KeyPoint2DArray.msg",
+    "/home/yong/YongJun/src/yolov8_ros/src/yolov8_ros/yolov8_msgs:msg/KeyPoint3D.msg",
+    "/home/yong/YongJun/src/yolov8_ros/src/yolov8_ros/yolov8_msgs:msg/KeyPoint3DArray.msg",
+    "/home/yong/YongJun/src/yolov8_ros/src/yolov8_ros/yolov8_msgs:msg/Detection.msg",
+    "/home/yong/YongJun/src/yolov8_ros/src/yolov8_ros/yolov8_msgs:msg/DetectionArray.msg"
+  ]
+}

@@ -1,0 +1,4 @@
+source;share/usb_cam/local_setup.bash
+source;share/usb_cam/local_setup.dsv
+source;share/usb_cam/local_setup.sh
+source;share/usb_cam/local_setup.zsh

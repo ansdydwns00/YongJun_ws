@@ -1,0 +1,16 @@
+package.xml
+setup.cfg
+setup.py
+resource/yolov8_ros
+yolov8_ros/__init__.py
+yolov8_ros/debug_node.py
+yolov8_ros/detect_3d_node.py
+yolov8_ros/tracking_node.py
+yolov8_ros/yolov8_node.py
+yolov8_ros.egg-info/PKG-INFO
+yolov8_ros.egg-info/SOURCES.txt
+yolov8_ros.egg-info/dependency_links.txt
+yolov8_ros.egg-info/entry_points.txt
+yolov8_ros.egg-info/requires.txt
+yolov8_ros.egg-info/top_level.txt
+yolov8_ros.egg-info/zip-safe

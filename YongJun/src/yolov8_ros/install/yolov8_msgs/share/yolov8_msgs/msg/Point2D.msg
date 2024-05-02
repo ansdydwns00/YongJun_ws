@@ -1,0 +1,1 @@
+/home/yong/yolov8_ros/src/yolov8_ros/yolov8_msgs/msg/Point2D.msg

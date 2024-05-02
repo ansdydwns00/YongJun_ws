@@ -1,0 +1,49 @@
+[0.598s] Invoking command in '/home/yong/yolov8_ros/src/yolov8_ros/yolov8_ros': PYTHONPATH=/home/yong/yolov8_ros/build/yolov8_ros/prefix_override:/home/yong/yolov8_ros/install/yolov8_ros/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../../../build/yolov8_ros build --build-base /home/yong/yolov8_ros/build/yolov8_ros/build install --record /home/yong/yolov8_ros/build/yolov8_ros/install.log --single-version-externally-managed install_data
+[0.775s] running egg_info
+[0.776s] creating ../../../build/yolov8_ros/yolov8_ros.egg-info
+[0.776s] writing ../../../build/yolov8_ros/yolov8_ros.egg-info/PKG-INFO
+[0.776s] writing dependency_links to ../../../build/yolov8_ros/yolov8_ros.egg-info/dependency_links.txt
+[0.776s] writing entry points to ../../../build/yolov8_ros/yolov8_ros.egg-info/entry_points.txt
+[0.776s] writing requirements to ../../../build/yolov8_ros/yolov8_ros.egg-info/requires.txt
+[0.776s] writing top-level names to ../../../build/yolov8_ros/yolov8_ros.egg-info/top_level.txt
+[0.777s] writing manifest file '../../../build/yolov8_ros/yolov8_ros.egg-info/SOURCES.txt'
+[0.801s] reading manifest file '../../../build/yolov8_ros/yolov8_ros.egg-info/SOURCES.txt'
+[0.802s] writing manifest file '../../../build/yolov8_ros/yolov8_ros.egg-info/SOURCES.txt'
+[0.802s] running build
+[0.802s] running build_py
+[0.802s] creating /home/yong/yolov8_ros/build/yolov8_ros/build
+[0.802s] creating /home/yong/yolov8_ros/build/yolov8_ros/build/lib
+[0.802s] creating /home/yong/yolov8_ros/build/yolov8_ros/build/lib/yolov8_ros
+[0.802s] copying yolov8_ros/detect_3d_node.py -> /home/yong/yolov8_ros/build/yolov8_ros/build/lib/yolov8_ros
+[0.802s] copying yolov8_ros/__init__.py -> /home/yong/yolov8_ros/build/yolov8_ros/build/lib/yolov8_ros
+[0.802s] copying yolov8_ros/tracking_node.py -> /home/yong/yolov8_ros/build/yolov8_ros/build/lib/yolov8_ros
+[0.802s] copying yolov8_ros/yolov8_node.py -> /home/yong/yolov8_ros/build/yolov8_ros/build/lib/yolov8_ros
+[0.802s] copying yolov8_ros/debug_node.py -> /home/yong/yolov8_ros/build/yolov8_ros/build/lib/yolov8_ros
+[0.802s] running install
+[0.803s] running install_lib
+[0.803s] creating /home/yong/yolov8_ros/install/yolov8_ros/lib/python3.8/site-packages/yolov8_ros
+[0.804s] copying /home/yong/yolov8_ros/build/yolov8_ros/build/lib/yolov8_ros/detect_3d_node.py -> /home/yong/yolov8_ros/install/yolov8_ros/lib/python3.8/site-packages/yolov8_ros
+[0.804s] copying /home/yong/yolov8_ros/build/yolov8_ros/build/lib/yolov8_ros/__init__.py -> /home/yong/yolov8_ros/install/yolov8_ros/lib/python3.8/site-packages/yolov8_ros
+[0.804s] copying /home/yong/yolov8_ros/build/yolov8_ros/build/lib/yolov8_ros/tracking_node.py -> /home/yong/yolov8_ros/install/yolov8_ros/lib/python3.8/site-packages/yolov8_ros
+[0.804s] copying /home/yong/yolov8_ros/build/yolov8_ros/build/lib/yolov8_ros/yolov8_node.py -> /home/yong/yolov8_ros/install/yolov8_ros/lib/python3.8/site-packages/yolov8_ros
+[0.804s] copying /home/yong/yolov8_ros/build/yolov8_ros/build/lib/yolov8_ros/debug_node.py -> /home/yong/yolov8_ros/install/yolov8_ros/lib/python3.8/site-packages/yolov8_ros
+[0.804s] byte-compiling /home/yong/yolov8_ros/install/yolov8_ros/lib/python3.8/site-packages/yolov8_ros/detect_3d_node.py to detect_3d_node.cpython-38.pyc
+[0.806s] byte-compiling /home/yong/yolov8_ros/install/yolov8_ros/lib/python3.8/site-packages/yolov8_ros/__init__.py to __init__.cpython-38.pyc
+[0.806s] byte-compiling /home/yong/yolov8_ros/install/yolov8_ros/lib/python3.8/site-packages/yolov8_ros/tracking_node.py to tracking_node.cpython-38.pyc
+[0.807s] byte-compiling /home/yong/yolov8_ros/install/yolov8_ros/lib/python3.8/site-packages/yolov8_ros/yolov8_node.py to yolov8_node.cpython-38.pyc
+[0.808s] byte-compiling /home/yong/yolov8_ros/install/yolov8_ros/lib/python3.8/site-packages/yolov8_ros/debug_node.py to debug_node.cpython-38.pyc
+[0.809s] running install_data
+[0.809s] creating /home/yong/yolov8_ros/install/yolov8_ros/share/ament_index
+[0.809s] creating /home/yong/yolov8_ros/install/yolov8_ros/share/ament_index/resource_index
+[0.809s] creating /home/yong/yolov8_ros/install/yolov8_ros/share/ament_index/resource_index/packages
+[0.809s] copying resource/yolov8_ros -> /home/yong/yolov8_ros/install/yolov8_ros/share/ament_index/resource_index/packages
+[0.809s] copying package.xml -> /home/yong/yolov8_ros/install/yolov8_ros/share/yolov8_ros
+[0.809s] running install_egg_info
+[0.810s] Copying ../../../build/yolov8_ros/yolov8_ros.egg-info to /home/yong/yolov8_ros/install/yolov8_ros/lib/python3.8/site-packages/yolov8_ros-0.0.0-py3.8.egg-info
+[0.811s] running install_scripts
+[0.822s] Installing debug_node script to /home/yong/yolov8_ros/install/yolov8_ros/lib/yolov8_ros
+[0.822s] Installing detect_3d_node script to /home/yong/yolov8_ros/install/yolov8_ros/lib/yolov8_ros
+[0.822s] Installing tracking_node script to /home/yong/yolov8_ros/install/yolov8_ros/lib/yolov8_ros
+[0.822s] Installing yolov8_node script to /home/yong/yolov8_ros/install/yolov8_ros/lib/yolov8_ros
+[0.822s] writing list of installed files to '/home/yong/yolov8_ros/build/yolov8_ros/install.log'
+[0.836s] Invoked command in '/home/yong/yolov8_ros/src/yolov8_ros/yolov8_ros' returned '0': PYTHONPATH=/home/yong/yolov8_ros/build/yolov8_ros/prefix_override:/home/yong/yolov8_ros/install/yolov8_ros/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../../../build/yolov8_ros build --build-base /home/yong/yolov8_ros/build/yolov8_ros/build install --record /home/yong/yolov8_ros/build/yolov8_ros/install.log --single-version-externally-managed install_data

@@ -1,0 +1,95 @@
+[0.193s] Invoking command in '/home/yong/sensor/build/usb_cam': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/yong/sensor/install/yolov8_ros:/home/yong/sensor/install/yolov5_ros2:/home/yong/sensor/install/yolov5_ros:/opt/ros/foxy /usr/bin/cmake /home/yong/sensor/src/usb_cam -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/yong/sensor/install/usb_cam
+[0.203s] -- Found ament_cmake_auto: 0.9.12 (/opt/ros/foxy/share/ament_cmake_auto/cmake)
+[0.220s] -- Using PYTHON_EXECUTABLE: /usr/bin/python3
+[0.365s] -- Override CMake install command with custom implementation using symlinks instead of copying resources
+[0.443s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.446s] -- Found rosidl_adapter: 1.3.1 (/opt/ros/foxy/share/rosidl_adapter/cmake)
+[0.530s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.568s] -- Found rmw_implementation_cmake: 1.0.4 (/opt/ros/foxy/share/rmw_implementation_cmake/cmake)
+[0.569s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[0.853s] -- Setting yaml-cpp_DIR to: '/opt/ros/foxy/share/yaml_cpp_vendor/cmake/../../../opt/yaml_cpp_vendor/lib/cmake/yaml-cpp'
+[1.000s] -- Found ament_lint_auto: 0.9.8 (/opt/ros/foxy/share/ament_lint_auto/cmake)
+[1.005s] -- Found gtest sources under '/opt/ros/foxy/src/gtest_vendor': C++ tests using 'Google Test' will be built
+[1.015s] -- Added test 'copyright' to check source files copyright and LICENSE
+[1.019s] -- Added test 'cppcheck' to perform static code analysis on C / C++ code
+[1.019s] -- Configured cppcheck include dirs: /home/yong/sensor/src/usb_cam/include
+[1.019s] -- Configured cppcheck exclude dirs and/or files: 
+[1.021s] -- Added test 'cpplint' to check C / C++ code against the Google style
+[1.021s] -- Configured cpplint exclude dirs and/or files: 
+[1.022s] -- Added test 'flake8' to check Python code syntax and style conventions
+[1.023s] -- Added test 'lint_cmake' to check CMake code style
+[1.023s] -- Added test 'pep257' to check Python code against some of the style conventions in PEP 257
+[1.025s] -- Added test 'uncrustify' to check C / C++ code style
+[1.025s] -- Configured uncrustify additional arguments: 
+[1.026s] -- Added test 'xmllint' to check XML markup files
+[1.029s] -- Configuring done
+[1.059s] -- Generating done
+[1.061s] -- Build files have been written to: /home/yong/sensor/build/usb_cam
+[1.067s] Invoked command in '/home/yong/sensor/build/usb_cam' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/yong/sensor/install/yolov8_ros:/home/yong/sensor/install/yolov5_ros2:/home/yong/sensor/install/yolov5_ros:/opt/ros/foxy /usr/bin/cmake /home/yong/sensor/src/usb_cam -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/yong/sensor/install/usb_cam
+[1.069s] Invoking command in '/home/yong/sensor/build/usb_cam': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/yong/sensor/install/yolov8_ros:/home/yong/sensor/install/yolov5_ros2:/home/yong/sensor/install/yolov5_ros:/opt/ros/foxy /usr/bin/cmake --build /home/yong/sensor/build/usb_cam -- -j8 -l8
+[1.104s] [ 28%] Built target gtest
+[1.104s] [ 28%] Built target gtest_main
+[1.107s] [ 35%] [32mBuilding CXX object CMakeFiles/usb_cam_node_exe.dir/rclcpp_components/node_main_usb_cam_node_exe.cpp.o[0m
+[1.108s] [ 50%] Built target usb_cam
+[1.122s] [ 57%] [32mBuilding CXX object CMakeFiles/test_usb_cam_utils.dir/test/test_usb_cam_utils.cpp.o[0m
+[1.128s] [ 71%] [32mBuilding CXX object CMakeFiles/usb_cam_node.dir/src/ros2/usb_cam_node.cpp.o[0m
+[1.128s] [ 71%] [32mBuilding CXX object CMakeFiles/test_pixel_formats.dir/test/test_pixel_formats.cpp.o[0m
+[2.289s] [ 78%] [32m[1mLinking CXX executable test_usb_cam_utils[0m
+[2.410s] [ 78%] Built target test_usb_cam_utils
+[2.598s] [ 85%] [32m[1mLinking CXX executable test_pixel_formats[0m
+[2.713s] [ 85%] Built target test_pixel_formats
+[2.727s] [ 92%] [32m[1mLinking CXX executable usb_cam_node_exe[0m
+[2.819s] [ 92%] Built target usb_cam_node_exe
+[5.541s] [100%] [32m[1mLinking CXX shared library libusb_cam_node.so[0m
+[5.780s] [100%] Built target usb_cam_node
+[5.788s] Invoked command in '/home/yong/sensor/build/usb_cam' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/yong/sensor/install/yolov8_ros:/home/yong/sensor/install/yolov5_ros2:/home/yong/sensor/install/yolov5_ros:/opt/ros/foxy /usr/bin/cmake --build /home/yong/sensor/build/usb_cam -- -j8 -l8
+[5.808s] Invoking command in '/home/yong/sensor/build/usb_cam': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/yong/sensor/install/yolov8_ros:/home/yong/sensor/install/yolov5_ros2:/home/yong/sensor/install/yolov5_ros:/opt/ros/foxy /usr/bin/cmake --install /home/yong/sensor/build/usb_cam
+[5.814s] -- Install configuration: ""
+[5.814s] -- Execute custom install script
+[5.814s] -- Symlinking: /home/yong/sensor/install/usb_cam/share/usb_cam/environment/library_path.sh
+[5.820s] -- Symlinking: /home/yong/sensor/install/usb_cam/share/usb_cam/environment/library_path.dsv
+[5.825s] -- Symlinking: /home/yong/sensor/install/usb_cam/lib/usb_cam/usb_cam_node_exe
+[5.831s] -- Symlinking: /home/yong/sensor/install/usb_cam/lib/usb_cam/show_image.py
+[5.836s] -- Symlinking: /home/yong/sensor/install/usb_cam/lib/libusb_cam.so
+[5.842s] -- Symlinking: /home/yong/sensor/install/usb_cam/lib/libusb_cam_node.so
+[5.848s] -- Symlinking: /home/yong/sensor/install/usb_cam/include/usb_cam/constants.hpp
+[5.853s] -- Symlinking: /home/yong/sensor/install/usb_cam/include/usb_cam/conversions.hpp
+[5.859s] -- Symlinking: /home/yong/sensor/install/usb_cam/include/usb_cam/formats/av_pixel_format_helper.hpp
+[5.865s] -- Symlinking: /home/yong/sensor/install/usb_cam/include/usb_cam/formats/m420.hpp
+[5.870s] -- Symlinking: /home/yong/sensor/install/usb_cam/include/usb_cam/formats/mjpeg.hpp
+[5.875s] -- Symlinking: /home/yong/sensor/install/usb_cam/include/usb_cam/formats/mono.hpp
+[5.881s] -- Symlinking: /home/yong/sensor/install/usb_cam/include/usb_cam/formats/pixel_format_base.hpp
+[5.886s] -- Symlinking: /home/yong/sensor/install/usb_cam/include/usb_cam/formats/rgb.hpp
+[5.891s] -- Symlinking: /home/yong/sensor/install/usb_cam/include/usb_cam/formats/utils.hpp
+[5.896s] -- Symlinking: /home/yong/sensor/install/usb_cam/include/usb_cam/formats/uyvy.hpp
+[5.902s] -- Symlinking: /home/yong/sensor/install/usb_cam/include/usb_cam/formats/yuyv.hpp
+[5.907s] -- Symlinking: /home/yong/sensor/install/usb_cam/include/usb_cam/usb_cam.hpp
+[5.912s] -- Symlinking: /home/yong/sensor/install/usb_cam/include/usb_cam/usb_cam_node.hpp
+[5.918s] -- Symlinking: /home/yong/sensor/install/usb_cam/include/usb_cam/utils.hpp
+[5.923s] -- Up-to-date symlink: /home/yong/sensor/install/usb_cam/lib/libusb_cam_node.so
+[5.924s] -- Symlinking: /home/yong/sensor/install/usb_cam/share/usb_cam/launch/__init__.py
+[5.929s] -- Symlinking: /home/yong/sensor/install/usb_cam/share/usb_cam/launch/camera.launch.py
+[5.934s] -- Symlinking: /home/yong/sensor/install/usb_cam/share/usb_cam/launch/camera_config.py
+[5.940s] -- Symlinking: /home/yong/sensor/install/usb_cam/share/usb_cam/config/camera_info.yaml
+[5.945s] -- Symlinking: /home/yong/sensor/install/usb_cam/share/usb_cam/config/params_1.yaml
+[5.951s] -- Symlinking: /home/yong/sensor/install/usb_cam/share/usb_cam/config/params_2.yaml
+[5.956s] -- Symlinking: /home/yong/sensor/install/usb_cam/share/ament_index/resource_index/package_run_dependencies/usb_cam
+[5.961s] -- Symlinking: /home/yong/sensor/install/usb_cam/share/ament_index/resource_index/parent_prefix_path/usb_cam
+[5.967s] -- Symlinking: /home/yong/sensor/install/usb_cam/share/usb_cam/environment/ament_prefix_path.sh
+[5.972s] -- Symlinking: /home/yong/sensor/install/usb_cam/share/usb_cam/environment/ament_prefix_path.dsv
+[5.977s] -- Symlinking: /home/yong/sensor/install/usb_cam/share/usb_cam/environment/path.sh
+[5.983s] -- Symlinking: /home/yong/sensor/install/usb_cam/share/usb_cam/environment/path.dsv
+[5.988s] -- Symlinking: /home/yong/sensor/install/usb_cam/share/usb_cam/local_setup.bash
+[5.993s] -- Symlinking: /home/yong/sensor/install/usb_cam/share/usb_cam/local_setup.sh
+[5.999s] -- Symlinking: /home/yong/sensor/install/usb_cam/share/usb_cam/local_setup.zsh
+[6.004s] -- Symlinking: /home/yong/sensor/install/usb_cam/share/usb_cam/local_setup.dsv
+[6.009s] -- Symlinking: /home/yong/sensor/install/usb_cam/share/usb_cam/package.dsv
+[6.015s] -- Symlinking: /home/yong/sensor/install/usb_cam/share/ament_index/resource_index/packages/usb_cam
+[6.020s] -- Symlinking: /home/yong/sensor/install/usb_cam/share/ament_index/resource_index/rclcpp_components/usb_cam
+[6.026s] -- Symlinking: /home/yong/sensor/install/usb_cam/share/usb_cam/cmake/ament_cmake_export_libraries-extras.cmake
+[6.031s] -- Symlinking: /home/yong/sensor/install/usb_cam/share/usb_cam/cmake/ament_cmake_export_dependencies-extras.cmake
+[6.037s] -- Symlinking: /home/yong/sensor/install/usb_cam/share/usb_cam/cmake/ament_cmake_export_include_directories-extras.cmake
+[6.042s] -- Symlinking: /home/yong/sensor/install/usb_cam/share/usb_cam/cmake/usb_camConfig.cmake
+[6.047s] -- Symlinking: /home/yong/sensor/install/usb_cam/share/usb_cam/cmake/usb_camConfig-version.cmake
+[6.053s] -- Symlinking: /home/yong/sensor/install/usb_cam/share/usb_cam/package.xml
+[6.060s] Invoked command in '/home/yong/sensor/build/usb_cam' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/yong/sensor/install/yolov8_ros:/home/yong/sensor/install/yolov5_ros2:/home/yong/sensor/install/yolov5_ros:/opt/ros/foxy /usr/bin/cmake --install /home/yong/sensor/build/usb_cam

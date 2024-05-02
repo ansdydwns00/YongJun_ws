@@ -1,0 +1,237 @@
+[0.000000] (-) TimerEvent: {}
+[0.000078] (usb_cam) JobQueued: {'identifier': 'usb_cam', 'dependencies': OrderedDict()}
+[0.000099] (usb_cam) JobStarted: {'identifier': 'usb_cam'}
+[0.006362] (usb_cam) JobProgress: {'identifier': 'usb_cam', 'progress': 'cmake'}
+[0.006777] (usb_cam) Command: {'cmd': ['/usr/bin/cmake', '/home/yong/sensor/src/usb_cam', '-DCMAKE_INSTALL_PREFIX=/home/yong/sensor/install/usb_cam'], 'cwd': '/home/yong/sensor/build/usb_cam', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'yong'), ('LC_TIME', 'ko_KR.UTF-8'), ('SSH_AGENT_PID', '1096'), ('XDG_SESSION_TYPE', 'x11'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/yong/sensor/install/yolov8_msgs/lib:/home/yong/sensor/install/usb_cam/lib:/home/yong/sensor/install/boundingboxes/lib:/home/yong/sensor/install/bboxes_ex_msgs/lib:/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib/x86_64-linux-gnu:/opt/ros/foxy/lib'), ('HOME', '/home/yong'), ('OLDPWD', '/home/yong/sensor/src'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('LC_MONETARY', 'ko_KR.UTF-8'), ('MANAGERPID', '962'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('TERMINATOR_DBUS_NAME', 'net.tenshu.Terminator21a9d5db22c73a993ff0b42f64b396873'), ('GIO_LAUNCHED_DESKTOP_FILE_PID', '2102'), ('IM_CONFIG_PHASE', '1'), ('COLCON_PREFIX_PATH', '/home/yong/sensor/install'), ('ROS_DISTRO', 'foxy'), ('LOGNAME', 'yong'), ('JOURNAL_STREAM', '8:38430'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'yong'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('WINDOWPATH', '2'), ('PATH', '/opt/ros/foxy/bin:/home/yong/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('SESSION_MANAGER', 'local/Yong:@/tmp/.ICE-unix/1162,unix/Yong:/tmp/.ICE-unix/1162'), ('INVOCATION_ID', '563206dea89144c7b038c2655c06222f'), ('XDG_MENU_PREFIX', 'gnome-'), ('LC_ADDRESS', 'ko_KR.UTF-8'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('TERMINATOR_DBUS_PATH', '/net/tenshu/Terminator2'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('LC_TELEPHONE', 'ko_KR.UTF-8'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/yong/sensor/install/yolov8_bringup:/home/yong/sensor/install/yolov8_ros:/home/yong/sensor/install/yolov8_msgs:/home/yong/sensor/install/yolov5_ros2:/home/yong/sensor/install/yolov5_ros:/home/yong/sensor/install/usb_cam:/home/yong/sensor/install/boundingboxes:/home/yong/sensor/install/bboxes_ex_msgs:/opt/ros/foxy'), ('SHELL', '/bin/bash'), ('LC_NAME', 'ko_KR.UTF-8'), ('TERMINATOR_UUID', 'urn:uuid:3cb49621-5438-4168-8d91-66194d5c4086'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'ko_KR.UTF-8'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('LC_IDENTIFICATION', 'ko_KR.UTF-8'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/yong/sensor/build/usb_cam'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/yong/sensor/install/yolov8_ros/lib/python3.8/site-packages:/home/yong/sensor/install/yolov8_msgs/lib/python3.8/site-packages:/home/yong/sensor/build/yolov5_ros2:/home/yong/sensor/install/yolov5_ros2/lib/python3.8/site-packages:/home/yong/sensor/build/yolov5_ros:/home/yong/sensor/install/yolov5_ros/lib/python3.8/site-packages:/home/yong/sensor/install/boundingboxes/lib/python3.8/site-packages:/home/yong/sensor/install/bboxes_ex_msgs/lib/python3.8/site-packages:/opt/ros/foxy/lib/python3.8/site-packages'), ('LC_NUMERIC', 'ko_KR.UTF-8'), ('LC_PAPER', 'ko_KR.UTF-8'), ('COLCON', '1'), ('VTE_VERSION', '6003'), ('CMAKE_PREFIX_PATH', '/home/yong/sensor/install/yolov8_bringup:/home/yong/sensor/install/yolov8_msgs:/home/yong/sensor/install/usb_cam:/home/yong/sensor/install/boundingboxes:/home/yong/sensor/install/bboxes_ex_msgs:/home/yong/sensor/install/yolov8_ros:/home/yong/sensor/install/yolov5_ros2:/home/yong/sensor/install/yolov5_ros:/opt/ros/foxy')]), 'shell': False}
+[0.042795] (usb_cam) StdoutLine: {'line': b'-- The C compiler identification is GNU 9.4.0\n'}
+[0.077367] (usb_cam) StdoutLine: {'line': b'-- The CXX compiler identification is GNU 9.4.0\n'}
+[0.080601] (usb_cam) StdoutLine: {'line': b'-- Check for working C compiler: /usr/bin/cc\n'}
+[0.099626] (-) TimerEvent: {}
+[0.124943] (usb_cam) StdoutLine: {'line': b'-- Check for working C compiler: /usr/bin/cc -- works\n'}
+[0.125665] (usb_cam) StdoutLine: {'line': b'-- Detecting C compiler ABI info\n'}
+[0.180158] (usb_cam) StdoutLine: {'line': b'-- Detecting C compiler ABI info - done\n'}
+[0.192705] (usb_cam) StdoutLine: {'line': b'-- Detecting C compile features\n'}
+[0.193079] (usb_cam) StdoutLine: {'line': b'-- Detecting C compile features - done\n'}
+[0.195512] (usb_cam) StdoutLine: {'line': b'-- Check for working CXX compiler: /usr/bin/c++\n'}
+[0.199717] (-) TimerEvent: {}
+[0.259147] (usb_cam) StdoutLine: {'line': b'-- Check for working CXX compiler: /usr/bin/c++ -- works\n'}
+[0.259976] (usb_cam) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info\n'}
+[0.299830] (-) TimerEvent: {}
+[0.317847] (usb_cam) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info - done\n'}
+[0.328677] (usb_cam) StdoutLine: {'line': b'-- Detecting CXX compile features\n'}
+[0.329158] (usb_cam) StdoutLine: {'line': b'-- Detecting CXX compile features - done\n'}
+[0.330912] (usb_cam) StdoutLine: {'line': b'-- Found ament_cmake_auto: 0.9.12 (/opt/ros/foxy/share/ament_cmake_auto/cmake)\n'}
+[0.352031] (usb_cam) StdoutLine: {'line': b'-- Found PythonInterp: /usr/bin/python3 (found suitable version "3.8.10", minimum required is "3") \n'}
+[0.352213] (usb_cam) StdoutLine: {'line': b'-- Using PYTHON_EXECUTABLE: /usr/bin/python3\n'}
+[0.399932] (-) TimerEvent: {}
+[0.500137] (-) TimerEvent: {}
+[0.589795] (usb_cam) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[0.593780] (usb_cam) StdoutLine: {'line': b'-- Found rosidl_adapter: 1.3.1 (/opt/ros/foxy/share/rosidl_adapter/cmake)\n'}
+[0.600221] (-) TimerEvent: {}
+[0.639525] (usb_cam) StdoutLine: {'line': b'-- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "1.1.1f")  \n'}
+[0.659124] (usb_cam) StdoutLine: {'line': b'-- Found FastRTPS: /opt/ros/foxy/include  \n'}
+[0.700337] (-) TimerEvent: {}
+[0.711518] (usb_cam) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[0.756645] (usb_cam) StdoutLine: {'line': b'-- Found rmw_implementation_cmake: 1.0.4 (/opt/ros/foxy/share/rmw_implementation_cmake/cmake)\n'}
+[0.758503] (usb_cam) StdoutLine: {'line': b"-- Using RMW implementation 'rmw_fastrtps_cpp' as default\n"}
+[0.759577] (usb_cam) StdoutLine: {'line': b'-- Looking for pthread.h\n'}
+[0.800445] (-) TimerEvent: {}
+[0.804551] (usb_cam) StdoutLine: {'line': b'-- Looking for pthread.h - found\n'}
+[0.804723] (usb_cam) StdoutLine: {'line': b'-- Performing Test CMAKE_HAVE_LIBC_PTHREAD\n'}
+[0.851521] (usb_cam) StdoutLine: {'line': b'-- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Failed\n'}
+[0.851804] (usb_cam) StdoutLine: {'line': b'-- Looking for pthread_create in pthreads\n'}
+[0.888517] (usb_cam) StdoutLine: {'line': b'-- Looking for pthread_create in pthreads - not found\n'}
+[0.888714] (usb_cam) StdoutLine: {'line': b'-- Looking for pthread_create in pthread\n'}
+[0.900546] (-) TimerEvent: {}
+[0.938658] (usb_cam) StdoutLine: {'line': b'-- Looking for pthread_create in pthread - found\n'}
+[0.939402] (usb_cam) StdoutLine: {'line': b'-- Found Threads: TRUE  \n'}
+[1.000644] (-) TimerEvent: {}
+[1.100842] (-) TimerEvent: {}
+[1.201044] (-) TimerEvent: {}
+[1.258259] (usb_cam) StdoutLine: {'line': b"-- Setting yaml-cpp_DIR to: '/opt/ros/foxy/share/yaml_cpp_vendor/cmake/../../../opt/yaml_cpp_vendor/lib/cmake/yaml-cpp'\n"}
+[1.301131] (-) TimerEvent: {}
+[1.355458] (usb_cam) StdoutLine: {'line': b'-- Found OpenCV: /usr (found version "4.2.0") \n'}
+[1.357673] (usb_cam) StdoutLine: {'line': b'-- Found PkgConfig: /usr/bin/pkg-config (found version "0.29.1") \n'}
+[1.358427] (usb_cam) StdoutLine: {'line': b"-- Checking for module 'libavcodec'\n"}
+[1.367569] (usb_cam) StdoutLine: {'line': b'--   Found libavcodec, version 58.54.100\n'}
+[1.389629] (usb_cam) StdoutLine: {'line': b"-- Checking for module 'libavutil'\n"}
+[1.398278] (usb_cam) StdoutLine: {'line': b'--   Found libavutil, version 56.31.100\n'}
+[1.401227] (-) TimerEvent: {}
+[1.419044] (usb_cam) StdoutLine: {'line': b"-- Checking for module 'libswscale'\n"}
+[1.427722] (usb_cam) StdoutLine: {'line': b'--   Found libswscale, version 5.5.100\n'}
+[1.499226] (usb_cam) StdoutLine: {'line': b'-- Found ament_lint_auto: 0.9.8 (/opt/ros/foxy/share/ament_lint_auto/cmake)\n'}
+[1.501312] (-) TimerEvent: {}
+[1.515286] (usb_cam) StdoutLine: {'line': b"-- Found gtest sources under '/opt/ros/foxy/src/gtest_vendor': C++ tests using 'Google Test' will be built\n"}
+[1.517426] (usb_cam) StdoutLine: {'line': b'-- Check if compiler accepts -pthread\n'}
+[1.563955] (usb_cam) StdoutLine: {'line': b'-- Check if compiler accepts -pthread - yes\n'}
+[1.570345] (usb_cam) StdoutLine: {'line': b"-- Added test 'copyright' to check source files copyright and LICENSE\n"}
+[1.573097] (usb_cam) StdoutLine: {'line': b"-- Added test 'cppcheck' to perform static code analysis on C / C++ code\n"}
+[1.573373] (usb_cam) StdoutLine: {'line': b'-- Configured cppcheck include dirs: /home/yong/sensor/src/usb_cam/include\n'}
+[1.573452] (usb_cam) StdoutLine: {'line': b'-- Configured cppcheck exclude dirs and/or files: \n'}
+[1.575892] (usb_cam) StdoutLine: {'line': b"-- Added test 'cpplint' to check C / C++ code against the Google style\n"}
+[1.575969] (usb_cam) StdoutLine: {'line': b'-- Configured cpplint exclude dirs and/or files: \n'}
+[1.576639] (usb_cam) StdoutLine: {'line': b"-- Added test 'flake8' to check Python code syntax and style conventions\n"}
+[1.577609] (usb_cam) StdoutLine: {'line': b"-- Added test 'lint_cmake' to check CMake code style\n"}
+[1.578325] (usb_cam) StdoutLine: {'line': b"-- Added test 'pep257' to check Python code against some of the style conventions in PEP 257\n"}
+[1.580810] (usb_cam) StdoutLine: {'line': b"-- Added test 'uncrustify' to check C / C++ code style\n"}
+[1.580888] (usb_cam) StdoutLine: {'line': b'-- Configured uncrustify additional arguments: \n'}
+[1.581546] (usb_cam) StdoutLine: {'line': b"-- Added test 'xmllint' to check XML markup files\n"}
+[1.584987] (usb_cam) StdoutLine: {'line': b'-- Configuring done\n'}
+[1.601364] (-) TimerEvent: {}
+[1.617726] (usb_cam) StdoutLine: {'line': b'-- Generating done\n'}
+[1.619165] (usb_cam) StdoutLine: {'line': b'-- Build files have been written to: /home/yong/sensor/build/usb_cam\n'}
+[1.625363] (usb_cam) CommandEnded: {'returncode': 0}
+[1.627159] (usb_cam) JobProgress: {'identifier': 'usb_cam', 'progress': 'build'}
+[1.627282] (usb_cam) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/yong/sensor/build/usb_cam', '--', '-j8', '-l8'], 'cwd': '/home/yong/sensor/build/usb_cam', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'yong'), ('LC_TIME', 'ko_KR.UTF-8'), ('SSH_AGENT_PID', '1096'), ('XDG_SESSION_TYPE', 'x11'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/yong/sensor/install/yolov8_msgs/lib:/home/yong/sensor/install/usb_cam/lib:/home/yong/sensor/install/boundingboxes/lib:/home/yong/sensor/install/bboxes_ex_msgs/lib:/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib/x86_64-linux-gnu:/opt/ros/foxy/lib'), ('HOME', '/home/yong'), ('OLDPWD', '/home/yong/sensor/src'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('LC_MONETARY', 'ko_KR.UTF-8'), ('MANAGERPID', '962'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('TERMINATOR_DBUS_NAME', 'net.tenshu.Terminator21a9d5db22c73a993ff0b42f64b396873'), ('GIO_LAUNCHED_DESKTOP_FILE_PID', '2102'), ('IM_CONFIG_PHASE', '1'), ('COLCON_PREFIX_PATH', '/home/yong/sensor/install'), ('ROS_DISTRO', 'foxy'), ('LOGNAME', 'yong'), ('JOURNAL_STREAM', '8:38430'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'yong'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('WINDOWPATH', '2'), ('PATH', '/opt/ros/foxy/bin:/home/yong/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('SESSION_MANAGER', 'local/Yong:@/tmp/.ICE-unix/1162,unix/Yong:/tmp/.ICE-unix/1162'), ('INVOCATION_ID', '563206dea89144c7b038c2655c06222f'), ('XDG_MENU_PREFIX', 'gnome-'), ('LC_ADDRESS', 'ko_KR.UTF-8'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('TERMINATOR_DBUS_PATH', '/net/tenshu/Terminator2'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('LC_TELEPHONE', 'ko_KR.UTF-8'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/yong/sensor/install/yolov8_bringup:/home/yong/sensor/install/yolov8_ros:/home/yong/sensor/install/yolov8_msgs:/home/yong/sensor/install/yolov5_ros2:/home/yong/sensor/install/yolov5_ros:/home/yong/sensor/install/usb_cam:/home/yong/sensor/install/boundingboxes:/home/yong/sensor/install/bboxes_ex_msgs:/opt/ros/foxy'), ('SHELL', '/bin/bash'), ('LC_NAME', 'ko_KR.UTF-8'), ('TERMINATOR_UUID', 'urn:uuid:3cb49621-5438-4168-8d91-66194d5c4086'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'ko_KR.UTF-8'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('LC_IDENTIFICATION', 'ko_KR.UTF-8'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/yong/sensor/build/usb_cam'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/yong/sensor/install/yolov8_ros/lib/python3.8/site-packages:/home/yong/sensor/install/yolov8_msgs/lib/python3.8/site-packages:/home/yong/sensor/build/yolov5_ros2:/home/yong/sensor/install/yolov5_ros2/lib/python3.8/site-packages:/home/yong/sensor/build/yolov5_ros:/home/yong/sensor/install/yolov5_ros/lib/python3.8/site-packages:/home/yong/sensor/install/boundingboxes/lib/python3.8/site-packages:/home/yong/sensor/install/bboxes_ex_msgs/lib/python3.8/site-packages:/opt/ros/foxy/lib/python3.8/site-packages'), ('LC_NUMERIC', 'ko_KR.UTF-8'), ('LC_PAPER', 'ko_KR.UTF-8'), ('COLCON', '1'), ('VTE_VERSION', '6003'), ('CMAKE_PREFIX_PATH', '/home/yong/sensor/install/yolov8_bringup:/home/yong/sensor/install/yolov8_msgs:/home/yong/sensor/install/usb_cam:/home/yong/sensor/install/boundingboxes:/home/yong/sensor/install/bboxes_ex_msgs:/home/yong/sensor/install/yolov8_ros:/home/yong/sensor/install/yolov5_ros2:/home/yong/sensor/install/yolov5_ros:/opt/ros/foxy')]), 'shell': False}
+[1.654045] (usb_cam) StdoutLine: {'line': b'\x1b[35m\x1b[1mScanning dependencies of target usb_cam_node_exe\x1b[0m\n'}
+[1.654323] (usb_cam) StdoutLine: {'line': b'\x1b[35m\x1b[1mScanning dependencies of target gtest_main\x1b[0m\n'}
+[1.654408] (usb_cam) StdoutLine: {'line': b'\x1b[35m\x1b[1mScanning dependencies of target usb_cam\x1b[0m\n'}
+[1.654589] (usb_cam) StdoutLine: {'line': b'\x1b[35m\x1b[1mScanning dependencies of target gtest\x1b[0m\n'}
+[1.667685] (usb_cam) StdoutLine: {'line': b'[ 14%] \x1b[32mBuilding CXX object gtest/CMakeFiles/gtest_main.dir/src/gtest_main.cc.o\x1b[0m\n'}
+[1.667813] (usb_cam) StdoutLine: {'line': b'[ 14%] \x1b[32mBuilding CXX object gtest/CMakeFiles/gtest.dir/src/gtest-all.cc.o\x1b[0m\n'}
+[1.691968] (usb_cam) StdoutLine: {'line': b'[ 21%] \x1b[32mBuilding CXX object CMakeFiles/usb_cam.dir/src/usb_cam.cpp.o\x1b[0m\n'}
+[1.701458] (-) TimerEvent: {}
+[1.710444] (usb_cam) StdoutLine: {'line': b'[ 28%] \x1b[32mBuilding CXX object CMakeFiles/usb_cam_node_exe.dir/rclcpp_components/node_main_usb_cam_node_exe.cpp.o\x1b[0m\n'}
+[1.801568] (-) TimerEvent: {}
+[1.901797] (-) TimerEvent: {}
+[2.002041] (-) TimerEvent: {}
+[2.102268] (-) TimerEvent: {}
+[2.202494] (-) TimerEvent: {}
+[2.302725] (-) TimerEvent: {}
+[2.402959] (-) TimerEvent: {}
+[2.472322] (usb_cam) StdoutLine: {'line': b'[ 35%] \x1b[32m\x1b[1mLinking CXX static library libgtest_main.a\x1b[0m\n'}
+[2.494142] (usb_cam) StdoutLine: {'line': b'[ 35%] Built target gtest_main\n'}
+[2.503069] (-) TimerEvent: {}
+[2.603302] (-) TimerEvent: {}
+[2.703532] (-) TimerEvent: {}
+[2.803764] (-) TimerEvent: {}
+[2.903997] (-) TimerEvent: {}
+[3.004228] (-) TimerEvent: {}
+[3.104431] (-) TimerEvent: {}
+[3.204658] (-) TimerEvent: {}
+[3.229592] (usb_cam) StdoutLine: {'line': b'[ 42%] \x1b[32m\x1b[1mLinking CXX shared library libusb_cam.so\x1b[0m\n'}
+[3.250643] (usb_cam) StdoutLine: {'line': b'[ 50%] \x1b[32m\x1b[1mLinking CXX executable usb_cam_node_exe\x1b[0m\n'}
+[3.304783] (-) TimerEvent: {}
+[3.345162] (usb_cam) StdoutLine: {'line': b'[ 50%] Built target usb_cam_node_exe\n'}
+[3.363191] (usb_cam) StdoutLine: {'line': b'[ 50%] Built target usb_cam\n'}
+[3.370012] (usb_cam) StdoutLine: {'line': b'\x1b[35m\x1b[1mScanning dependencies of target usb_cam_node\x1b[0m\n'}
+[3.404887] (-) TimerEvent: {}
+[3.412721] (usb_cam) StdoutLine: {'line': b'[ 57%] \x1b[32mBuilding CXX object CMakeFiles/usb_cam_node.dir/src/ros2/usb_cam_node.cpp.o\x1b[0m\n'}
+[3.504999] (-) TimerEvent: {}
+[3.605222] (-) TimerEvent: {}
+[3.705495] (-) TimerEvent: {}
+[3.805729] (-) TimerEvent: {}
+[3.905952] (-) TimerEvent: {}
+[4.006178] (-) TimerEvent: {}
+[4.106411] (-) TimerEvent: {}
+[4.197342] (usb_cam) StdoutLine: {'line': b'[ 64%] \x1b[32m\x1b[1mLinking CXX static library libgtest.a\x1b[0m\n'}
+[4.206515] (-) TimerEvent: {}
+[4.229587] (usb_cam) StdoutLine: {'line': b'[ 64%] Built target gtest\n'}
+[4.236869] (usb_cam) StdoutLine: {'line': b'\x1b[35m\x1b[1mScanning dependencies of target test_usb_cam_utils\x1b[0m\n'}
+[4.237145] (usb_cam) StdoutLine: {'line': b'\x1b[35m\x1b[1mScanning dependencies of target test_pixel_formats\x1b[0m\n'}
+[4.246757] (usb_cam) StdoutLine: {'line': b'[ 71%] \x1b[32mBuilding CXX object CMakeFiles/test_usb_cam_utils.dir/test/test_usb_cam_utils.cpp.o\x1b[0m\n'}
+[4.257665] (usb_cam) StdoutLine: {'line': b'[ 78%] \x1b[32mBuilding CXX object CMakeFiles/test_pixel_formats.dir/test/test_pixel_formats.cpp.o\x1b[0m\n'}
+[4.306631] (-) TimerEvent: {}
+[4.406864] (-) TimerEvent: {}
+[4.507091] (-) TimerEvent: {}
+[4.607318] (-) TimerEvent: {}
+[4.707556] (-) TimerEvent: {}
+[4.807764] (-) TimerEvent: {}
+[4.908024] (-) TimerEvent: {}
+[5.008261] (-) TimerEvent: {}
+[5.108496] (-) TimerEvent: {}
+[5.208729] (-) TimerEvent: {}
+[5.308968] (-) TimerEvent: {}
+[5.343101] (usb_cam) StdoutLine: {'line': b'[ 85%] \x1b[32m\x1b[1mLinking CXX executable test_usb_cam_utils\x1b[0m\n'}
+[5.409084] (-) TimerEvent: {}
+[5.454127] (usb_cam) StdoutLine: {'line': b'[ 85%] Built target test_usb_cam_utils\n'}
+[5.509201] (-) TimerEvent: {}
+[5.609448] (-) TimerEvent: {}
+[5.617388] (usb_cam) StdoutLine: {'line': b'[ 92%] \x1b[32m\x1b[1mLinking CXX executable test_pixel_formats\x1b[0m\n'}
+[5.709554] (-) TimerEvent: {}
+[5.721263] (usb_cam) StdoutLine: {'line': b'[ 92%] Built target test_pixel_formats\n'}
+[5.809657] (-) TimerEvent: {}
+[5.909884] (-) TimerEvent: {}
+[6.010115] (-) TimerEvent: {}
+[6.110350] (-) TimerEvent: {}
+[6.210580] (-) TimerEvent: {}
+[6.310807] (-) TimerEvent: {}
+[6.411034] (-) TimerEvent: {}
+[6.511257] (-) TimerEvent: {}
+[6.611477] (-) TimerEvent: {}
+[6.711696] (-) TimerEvent: {}
+[6.811918] (-) TimerEvent: {}
+[6.912139] (-) TimerEvent: {}
+[7.012361] (-) TimerEvent: {}
+[7.112582] (-) TimerEvent: {}
+[7.212819] (-) TimerEvent: {}
+[7.313036] (-) TimerEvent: {}
+[7.413305] (-) TimerEvent: {}
+[7.513525] (-) TimerEvent: {}
+[7.613750] (-) TimerEvent: {}
+[7.713980] (-) TimerEvent: {}
+[7.762778] (usb_cam) StdoutLine: {'line': b'[100%] \x1b[32m\x1b[1mLinking CXX shared library libusb_cam_node.so\x1b[0m\n'}
+[7.814089] (-) TimerEvent: {}
+[7.914316] (-) TimerEvent: {}
+[8.002457] (usb_cam) StdoutLine: {'line': b'[100%] Built target usb_cam_node\n'}
+[8.008884] (usb_cam) CommandEnded: {'returncode': 0}
+[8.014422] (-) TimerEvent: {}
+[8.029753] (usb_cam) JobProgress: {'identifier': 'usb_cam', 'progress': 'install'}
+[8.036418] (usb_cam) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/yong/sensor/build/usb_cam'], 'cwd': '/home/yong/sensor/build/usb_cam', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'yong'), ('LC_TIME', 'ko_KR.UTF-8'), ('SSH_AGENT_PID', '1096'), ('XDG_SESSION_TYPE', 'x11'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/yong/sensor/install/yolov8_msgs/lib:/home/yong/sensor/install/usb_cam/lib:/home/yong/sensor/install/boundingboxes/lib:/home/yong/sensor/install/bboxes_ex_msgs/lib:/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib/x86_64-linux-gnu:/opt/ros/foxy/lib'), ('HOME', '/home/yong'), ('OLDPWD', '/home/yong/sensor/src'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('LC_MONETARY', 'ko_KR.UTF-8'), ('MANAGERPID', '962'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('TERMINATOR_DBUS_NAME', 'net.tenshu.Terminator21a9d5db22c73a993ff0b42f64b396873'), ('GIO_LAUNCHED_DESKTOP_FILE_PID', '2102'), ('IM_CONFIG_PHASE', '1'), ('COLCON_PREFIX_PATH', '/home/yong/sensor/install'), ('ROS_DISTRO', 'foxy'), ('LOGNAME', 'yong'), ('JOURNAL_STREAM', '8:38430'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'yong'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('WINDOWPATH', '2'), ('PATH', '/opt/ros/foxy/bin:/home/yong/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('SESSION_MANAGER', 'local/Yong:@/tmp/.ICE-unix/1162,unix/Yong:/tmp/.ICE-unix/1162'), ('INVOCATION_ID', '563206dea89144c7b038c2655c06222f'), ('XDG_MENU_PREFIX', 'gnome-'), ('LC_ADDRESS', 'ko_KR.UTF-8'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('TERMINATOR_DBUS_PATH', '/net/tenshu/Terminator2'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('LC_TELEPHONE', 'ko_KR.UTF-8'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/yong/sensor/install/yolov8_bringup:/home/yong/sensor/install/yolov8_ros:/home/yong/sensor/install/yolov8_msgs:/home/yong/sensor/install/yolov5_ros2:/home/yong/sensor/install/yolov5_ros:/home/yong/sensor/install/usb_cam:/home/yong/sensor/install/boundingboxes:/home/yong/sensor/install/bboxes_ex_msgs:/opt/ros/foxy'), ('SHELL', '/bin/bash'), ('LC_NAME', 'ko_KR.UTF-8'), ('TERMINATOR_UUID', 'urn:uuid:3cb49621-5438-4168-8d91-66194d5c4086'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'ko_KR.UTF-8'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('LC_IDENTIFICATION', 'ko_KR.UTF-8'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/yong/sensor/build/usb_cam'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/yong/sensor/install/yolov8_ros/lib/python3.8/site-packages:/home/yong/sensor/install/yolov8_msgs/lib/python3.8/site-packages:/home/yong/sensor/build/yolov5_ros2:/home/yong/sensor/install/yolov5_ros2/lib/python3.8/site-packages:/home/yong/sensor/build/yolov5_ros:/home/yong/sensor/install/yolov5_ros/lib/python3.8/site-packages:/home/yong/sensor/install/boundingboxes/lib/python3.8/site-packages:/home/yong/sensor/install/bboxes_ex_msgs/lib/python3.8/site-packages:/opt/ros/foxy/lib/python3.8/site-packages'), ('LC_NUMERIC', 'ko_KR.UTF-8'), ('LC_PAPER', 'ko_KR.UTF-8'), ('COLCON', '1'), ('VTE_VERSION', '6003'), ('CMAKE_PREFIX_PATH', '/home/yong/sensor/install/yolov8_bringup:/home/yong/sensor/install/yolov8_msgs:/home/yong/sensor/install/usb_cam:/home/yong/sensor/install/boundingboxes:/home/yong/sensor/install/bboxes_ex_msgs:/home/yong/sensor/install/yolov8_ros:/home/yong/sensor/install/yolov5_ros2:/home/yong/sensor/install/yolov5_ros:/opt/ros/foxy')]), 'shell': False}
+[8.041932] (usb_cam) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[8.042126] (usb_cam) StdoutLine: {'line': b'-- Installing: /home/yong/sensor/install/usb_cam/share/usb_cam/environment/library_path.sh\n'}
+[8.042200] (usb_cam) StdoutLine: {'line': b'-- Installing: /home/yong/sensor/install/usb_cam/share/usb_cam/environment/library_path.dsv\n'}
+[8.042313] (usb_cam) StdoutLine: {'line': b'-- Installing: /home/yong/sensor/install/usb_cam/lib/usb_cam/usb_cam_node_exe\n'}
+[8.042542] (usb_cam) StdoutLine: {'line': b'-- Set runtime path of "/home/yong/sensor/install/usb_cam/lib/usb_cam/usb_cam_node_exe" to ""\n'}
+[8.042675] (usb_cam) StdoutLine: {'line': b'-- Installing: /home/yong/sensor/install/usb_cam/lib/usb_cam/show_image.py\n'}
+[8.042729] (usb_cam) StdoutLine: {'line': b'-- Installing: /home/yong/sensor/install/usb_cam/lib/libusb_cam.so\n'}
+[8.043065] (usb_cam) StdoutLine: {'line': b'-- Installing: /home/yong/sensor/install/usb_cam/lib/libusb_cam_node.so\n'}
+[8.044640] (usb_cam) StdoutLine: {'line': b'-- Set runtime path of "/home/yong/sensor/install/usb_cam/lib/libusb_cam_node.so" to ""\n'}
+[8.044778] (usb_cam) StdoutLine: {'line': b'-- Installing: /home/yong/sensor/install/usb_cam/include\n'}
+[8.044900] (usb_cam) StdoutLine: {'line': b'-- Installing: /home/yong/sensor/install/usb_cam/include/usb_cam\n'}
+[8.044974] (usb_cam) StdoutLine: {'line': b'-- Installing: /home/yong/sensor/install/usb_cam/include/usb_cam/usb_cam.hpp\n'}
+[8.045035] (usb_cam) StdoutLine: {'line': b'-- Installing: /home/yong/sensor/install/usb_cam/include/usb_cam/formats\n'}
+[8.045095] (usb_cam) StdoutLine: {'line': b'-- Installing: /home/yong/sensor/install/usb_cam/include/usb_cam/formats/pixel_format_base.hpp\n'}
+[8.045163] (usb_cam) StdoutLine: {'line': b'-- Installing: /home/yong/sensor/install/usb_cam/include/usb_cam/formats/mono.hpp\n'}
+[8.045221] (usb_cam) StdoutLine: {'line': b'-- Installing: /home/yong/sensor/install/usb_cam/include/usb_cam/formats/mjpeg.hpp\n'}
+[8.045329] (usb_cam) StdoutLine: {'line': b'-- Installing: /home/yong/sensor/install/usb_cam/include/usb_cam/formats/yuyv.hpp\n'}
+[8.045417] (usb_cam) StdoutLine: {'line': b'-- Installing: /home/yong/sensor/install/usb_cam/include/usb_cam/formats/av_pixel_format_helper.hpp\n'}
+[8.045466] (usb_cam) StdoutLine: {'line': b'-- Installing: /home/yong/sensor/install/usb_cam/include/usb_cam/formats/rgb.hpp\n'}
+[8.045513] (usb_cam) StdoutLine: {'line': b'-- Installing: /home/yong/sensor/install/usb_cam/include/usb_cam/formats/utils.hpp\n'}
+[8.045572] (usb_cam) StdoutLine: {'line': b'-- Installing: /home/yong/sensor/install/usb_cam/include/usb_cam/formats/uyvy.hpp\n'}
+[8.045617] (usb_cam) StdoutLine: {'line': b'-- Installing: /home/yong/sensor/install/usb_cam/include/usb_cam/formats/m420.hpp\n'}
+[8.045663] (usb_cam) StdoutLine: {'line': b'-- Installing: /home/yong/sensor/install/usb_cam/include/usb_cam/constants.hpp\n'}
+[8.045711] (usb_cam) StdoutLine: {'line': b'-- Installing: /home/yong/sensor/install/usb_cam/include/usb_cam/utils.hpp\n'}
+[8.045770] (usb_cam) StdoutLine: {'line': b'-- Installing: /home/yong/sensor/install/usb_cam/include/usb_cam/usb_cam_node.hpp\n'}
+[8.045835] (usb_cam) StdoutLine: {'line': b'-- Installing: /home/yong/sensor/install/usb_cam/include/usb_cam/conversions.hpp\n'}
+[8.045893] (usb_cam) StdoutLine: {'line': b'-- Up-to-date: /home/yong/sensor/install/usb_cam/lib/libusb_cam_node.so\n'}
+[8.045958] (usb_cam) StdoutLine: {'line': b'-- Installing: /home/yong/sensor/install/usb_cam/share/usb_cam/launch\n'}
+[8.046005] (usb_cam) StdoutLine: {'line': b'-- Installing: /home/yong/sensor/install/usb_cam/share/usb_cam/launch/__init__.py\n'}
+[8.046064] (usb_cam) StdoutLine: {'line': b'-- Installing: /home/yong/sensor/install/usb_cam/share/usb_cam/launch/camera_config.py\n'}
+[8.046108] (usb_cam) StdoutLine: {'line': b'-- Installing: /home/yong/sensor/install/usb_cam/share/usb_cam/launch/camera.launch.py\n'}
+[8.046154] (usb_cam) StdoutLine: {'line': b'-- Installing: /home/yong/sensor/install/usb_cam/share/usb_cam/config\n'}
+[8.046210] (usb_cam) StdoutLine: {'line': b'-- Installing: /home/yong/sensor/install/usb_cam/share/usb_cam/config/camera_info.yaml\n'}
+[8.046257] (usb_cam) StdoutLine: {'line': b'-- Installing: /home/yong/sensor/install/usb_cam/share/usb_cam/config/params_1.yaml\n'}
+[8.046304] (usb_cam) StdoutLine: {'line': b'-- Installing: /home/yong/sensor/install/usb_cam/share/usb_cam/config/params_2.yaml\n'}
+[8.046350] (usb_cam) StdoutLine: {'line': b'-- Installing: /home/yong/sensor/install/usb_cam/share/ament_index/resource_index/package_run_dependencies/usb_cam\n'}
+[8.046413] (usb_cam) StdoutLine: {'line': b'-- Installing: /home/yong/sensor/install/usb_cam/share/ament_index/resource_index/parent_prefix_path/usb_cam\n'}
+[8.046471] (usb_cam) StdoutLine: {'line': b'-- Installing: /home/yong/sensor/install/usb_cam/share/usb_cam/environment/ament_prefix_path.sh\n'}
+[8.046526] (usb_cam) StdoutLine: {'line': b'-- Installing: /home/yong/sensor/install/usb_cam/share/usb_cam/environment/ament_prefix_path.dsv\n'}
+[8.046588] (usb_cam) StdoutLine: {'line': b'-- Installing: /home/yong/sensor/install/usb_cam/share/usb_cam/environment/path.sh\n'}
+[8.046635] (usb_cam) StdoutLine: {'line': b'-- Installing: /home/yong/sensor/install/usb_cam/share/usb_cam/environment/path.dsv\n'}
+[8.046699] (usb_cam) StdoutLine: {'line': b'-- Installing: /home/yong/sensor/install/usb_cam/share/usb_cam/local_setup.bash\n'}
+[8.046745] (usb_cam) StdoutLine: {'line': b'-- Installing: /home/yong/sensor/install/usb_cam/share/usb_cam/local_setup.sh\n'}
+[8.046800] (usb_cam) StdoutLine: {'line': b'-- Installing: /home/yong/sensor/install/usb_cam/share/usb_cam/local_setup.zsh\n'}
+[8.046861] (usb_cam) StdoutLine: {'line': b'-- Installing: /home/yong/sensor/install/usb_cam/share/usb_cam/local_setup.dsv\n'}
+[8.046922] (usb_cam) StdoutLine: {'line': b'-- Installing: /home/yong/sensor/install/usb_cam/share/usb_cam/package.dsv\n'}
+[8.046983] (usb_cam) StdoutLine: {'line': b'-- Installing: /home/yong/sensor/install/usb_cam/share/ament_index/resource_index/packages/usb_cam\n'}
+[8.047067] (usb_cam) StdoutLine: {'line': b'-- Installing: /home/yong/sensor/install/usb_cam/share/ament_index/resource_index/rclcpp_components/usb_cam\n'}
+[8.047160] (usb_cam) StdoutLine: {'line': b'-- Installing: /home/yong/sensor/install/usb_cam/share/usb_cam/cmake/ament_cmake_export_libraries-extras.cmake\n'}
+[8.047236] (usb_cam) StdoutLine: {'line': b'-- Installing: /home/yong/sensor/install/usb_cam/share/usb_cam/cmake/ament_cmake_export_dependencies-extras.cmake\n'}
+[8.047310] (usb_cam) StdoutLine: {'line': b'-- Installing: /home/yong/sensor/install/usb_cam/share/usb_cam/cmake/ament_cmake_export_include_directories-extras.cmake\n'}
+[8.047385] (usb_cam) StdoutLine: {'line': b'-- Installing: /home/yong/sensor/install/usb_cam/share/usb_cam/cmake/usb_camConfig.cmake\n'}
+[8.047444] (usb_cam) StdoutLine: {'line': b'-- Installing: /home/yong/sensor/install/usb_cam/share/usb_cam/cmake/usb_camConfig-version.cmake\n'}
+[8.047505] (usb_cam) StdoutLine: {'line': b'-- Installing: /home/yong/sensor/install/usb_cam/share/usb_cam/package.xml\n'}
+[8.048728] (usb_cam) CommandEnded: {'returncode': 0}
+[8.083467] (usb_cam) JobEnded: {'identifier': 'usb_cam', 'rc': 0}
+[8.083868] (-) EventReactorShutdown: {}
