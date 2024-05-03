@@ -31,6 +31,25 @@ $ rosdep install --from-paths src --ignore-src -y
 $ colcon build --symlink-install 
 ```
 
+
+
+## USB_CAM
+```
+# usb_cam launch
+$ cd YongJun_ws
+$ source install/setup.bash
+$ ros2 launch usb_cam camera.launch.py
+
+```
+
+
+
+
+
+
+
+
+
 ## Reference
 [Yolov8](https://github.com/kirkfreire/yolov8_ros2) 
 
