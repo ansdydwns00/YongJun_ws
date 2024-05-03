@@ -49,10 +49,22 @@ $ sudo apt install guvcview
 $ guvcview
 ```
 
+## YOLOV8
+```
+# Yolov8 launch
+$ cd YongJun_ws
+$ source install/setup.bash
+$ ros2 launch yolov8_bringup yolov8.launch.py
+
+```
 
 
 
-https://github.com/ansdydwns00/YongJun_ws/assets/81146105/460990c9-9470-48f6-a297-1dbcd4251f06
+
+
+
+https://github.com/ansdydwns00/YongJun_ws/assets/81146105/5b0c084b-5386-486c-bef9-30e43c3b9cea
+
 
 
 
