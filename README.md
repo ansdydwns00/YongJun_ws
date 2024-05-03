@@ -43,6 +43,18 @@ $ ros2 launch usb_cam camera.launch.py
 ```
 
 
+If you want setting camera config
+```
+$ sudo apt install guvcview
+$ guvcview
+```
+
+
+
+
+https://github.com/ansdydwns00/YongJun_ws/assets/81146105/460990c9-9470-48f6-a297-1dbcd4251f06
+
+
 
 
 
