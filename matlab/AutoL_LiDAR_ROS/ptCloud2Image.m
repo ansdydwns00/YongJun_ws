@@ -4,21 +4,21 @@ udpObj = udpport("datagram","LocalPort",5001,"OutputDatagramSize",1330);
 
 %% Camera Connection
 
-load("results_Final.mat");           %라이다 카메라 칼리브레이션 파일
+load("results_Final.mat");            % 라이다 카메라 칼리브레이션 파일
 load("cameraParams_Final.mat");       % 카메라 칼리브레이션 파일
 
 %% Node 
 
-AutoL_lidar = ros2node("/AutoL_lidar");
-
-lidarPub = ros2publisher(AutoL_lidar,'/scan','sensor_msgs/PointCloud2');
-lidarPubMsg = ros2message('sensor_msgs/PointCloud2');
-lidarPubMsg.header.frame_id = 'lidar_frame';
+% AutoL_lidar = ros2node("/AutoL_lidar");
+% 
+% lidarPub = ros2publisher(AutoL_lidar,'/scan','sensor_msgs/PointCloud2');
+% lidarPubMsg = ros2message('sensor_msgs/PointCloud2');
+% lidarPubMsg.header.frame_id = 'lidar_frame';
 
 
 Matlab = ros2node("/MatlabNode");
 
-lidarSub = ros2subscriber(Matlab,'/scan','sensor_msgs/PointCloud2');
+% lidarSub = ros2subscriber(Matlab,'/scan','sensor_msgs/PointCloud2');
 imageSub = ros2subscriber(Matlab,'/camera1/image_raw','sensor_msgs/Image');
 
 %% Packet Data parsing 
@@ -58,8 +58,8 @@ while true
         
 
         % publish point cloud msg
-        lidarPubMsg = rosWriteXYZ(lidarPubMsg,points);
-        send(lidarPub,lidarPubMsg); 
+        % lidarPubMsg = rosWriteXYZ(lidarPubMsg,points);
+        % send(lidarPub,lidarPubMsg); 
        
         % [x,y,z] -> point cloud 생성
         ptCloud = pointCloud(points);
