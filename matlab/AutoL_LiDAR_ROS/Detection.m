@@ -5,21 +5,11 @@ clear; clc
 % % ros2 node 
 Matlab = ros2node("/MatlabNode");
  
-% AutoL_lidar = ros2node("/AutoL_lidar");
- 
-% % ros2 publish  
-% lidarPub = ros2publisher(AutoL_lidar,'/scan','sensor_msgs/PointCloud2');
-% lidarPubMsg = ros2message('sensor_msgs/PointCloud2');
-% 
-% % ros2 subscribe
-% lidarSub = ros2subscriber(Matlab,'/scan','sensor_msgs/PointCloud2'); 
+% ros2 subscribe
 imageSub = ros2subscriber(Matlab,'/camera1/image_raw','sensor_msgs/Image');
-
 %% Sensor Connection
 % ---------------------------------------------------------------------------
-% ---------------------------------------------------------------------------
 %                              LiDAR Connection 
-% ---------------------------------------------------------------------------
 % ---------------------------------------------------------------------------
 udpObj = udpport("byte","LocalPort",5001,"ByteOrder","little-endian");
 
@@ -68,9 +58,8 @@ player = pcplayer([0 10],[-3 3],[-2 2]);
 % 입력 buffer 제거
 flush(udpObj,"input")
 
-% tic
+tic
 while true
-    tic
     % ---------------------------------------------------------------------------
     %                         One Packet get  
     % ---------------------------------------------------------------------------
@@ -140,16 +129,16 @@ while true
 
                 distance = helperComputeDistance(ptCloud, bboxesLidar);
  
-                % deleteCuboid(player.Axes);
-                % cuboidInfo = getCuboidInfo(bboxesLidar);
-                % drawCuboid(player.Axes, cuboidInfo, 'red');
-                showShape("cuboid",bboxesLidar,'Parent',player.Axes,"Opacity",0.15,"Color",'red');
+                deleteCuboid(player.Axes);
+                cuboidInfo = getCuboidInfo(bboxesLidar);
+                drawCuboid(player.Axes, cuboidInfo, 'red');
+                % showShape("cuboid",bboxesLidar,'Parent',player.Axes,"Opacity",0.15,"Color",'red');
                 img = insertTrackBoxes(img, bboxes, distance);
     
                 bboxesLidar = [];
             end 
         else
-            % deleteCuboid(player.Axes);
+            deleteCuboid(player.Axes);
         end
         
         view(player,ptCloud);
@@ -158,7 +147,13 @@ while true
         % parameter 초기화
         i = 1;
         points = zeros(22784,3);
-        toc;
+     
+
+        % Display Rendering rate 
+        frameCount = frameCount + 1;
+        elapsedTime = toc;
+        frameRate = frameCount / elapsedTime;
+        fprintf("Rendering rate: %f hz\n",frameRate);
     end   
 end
 %%

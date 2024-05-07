@@ -40,7 +40,6 @@ while runLoop
         
         bbox = [x-w/2, y-h/2, w, h];
         bboxes = [bboxes; bbox];
-
     end
 
     yolo_img = insertText(yolo_img,[1,1],sprintf("FPS %2.2f",fps),"FontSize",24,"BoxColor","white");

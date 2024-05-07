@@ -1,14 +1,15 @@
-function [xyzCoords, isValid] = AutoL_parsing(packetData) %#codegen
+function [xyzCoords, isValid] = AutoL_parsing(packetData,reset_flag) %#codegen
     
     % Initialize of persistent parameters
     persistent points
     persistent i
 
-    if isempty(points)
+    if isempty(points) || reset_flag == 0
         points = zeros(22784,3);
         i = 1;
     end
     
+
     % Extract one packet
     [payload,top_bottom_flag,dataType] = packet_extract(packetData);
     
