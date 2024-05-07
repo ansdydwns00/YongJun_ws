@@ -1,0 +1,41 @@
+function ros2msg = yolov8_msgs_msg_DetectionArray_1To2_Converter(message,ros2msg)
+%yolov8_msgs_msg_DetectionArray_1To2_Converter passes data of ROS message to ROS 2 message.
+% Copyright 2019 The MathWorks, Inc.
+ros2msg.header.stamp.sec = message.Header.Stamp.Sec;
+ros2msg.header.stamp.nanosec = message.Header.Stamp.Nsec;
+ros2msg.header.frame_id = message.Header.FrameId;
+ros2msg.detections.class_id = message.Detections.ClassId;
+ros2msg.detections.class_name = message.Detections.ClassName;
+ros2msg.detections.score = message.Detections.Score;
+ros2msg.detections.id = message.Detections.Id;
+ros2msg.detections.bbox.center.position.x = message.Detections.Bbox.Center.Position.X;
+ros2msg.detections.bbox.center.position.y = message.Detections.Bbox.Center.Position.Y;
+ros2msg.detections.bbox.center.theta = message.Detections.Bbox.Center.Theta;
+ros2msg.detections.bbox.size.x = message.Detections.Bbox.Size.X;
+ros2msg.detections.bbox.size.y = message.Detections.Bbox.Size.Y;
+ros2msg.detections.bbox3d.center.position.x = message.Detections.Bbox3d.Center.Position.X;
+ros2msg.detections.bbox3d.center.position.y = message.Detections.Bbox3d.Center.Position.Y;
+ros2msg.detections.bbox3d.center.position.z = message.Detections.Bbox3d.Center.Position.Z;
+ros2msg.detections.bbox3d.center.orientation.x = message.Detections.Bbox3d.Center.Orientation.X;
+ros2msg.detections.bbox3d.center.orientation.y = message.Detections.Bbox3d.Center.Orientation.Y;
+ros2msg.detections.bbox3d.center.orientation.z = message.Detections.Bbox3d.Center.Orientation.Z;
+ros2msg.detections.bbox3d.center.orientation.w = message.Detections.Bbox3d.Center.Orientation.W;
+ros2msg.detections.bbox3d.size.x = message.Detections.Bbox3d.Size.X;
+ros2msg.detections.bbox3d.size.y = message.Detections.Bbox3d.Size.Y;
+ros2msg.detections.bbox3d.size.z = message.Detections.Bbox3d.Size.Z;
+ros2msg.detections.bbox3d.frame_id = message.Detections.Bbox3d.FrameId;
+ros2msg.detections.mask.height = message.Detections.Mask.Height;
+ros2msg.detections.mask.width = message.Detections.Mask.Width;
+ros2msg.detections.mask.data.x = message.Detections.Mask.Data.X;
+ros2msg.detections.mask.data.y = message.Detections.Mask.Data.Y;
+ros2msg.detections.keypoints.data.id = message.Detections.Keypoints.Data.Id;
+ros2msg.detections.keypoints.data.point.x = message.Detections.Keypoints.Data.Point.X;
+ros2msg.detections.keypoints.data.point.y = message.Detections.Keypoints.Data.Point.Y;
+ros2msg.detections.keypoints.data.score = message.Detections.Keypoints.Data.Score;
+ros2msg.detections.keypoints3d.data.id = message.Detections.Keypoints3d.Data.Id;
+ros2msg.detections.keypoints3d.data.point.x = message.Detections.Keypoints3d.Data.Point.X;
+ros2msg.detections.keypoints3d.data.point.y = message.Detections.Keypoints3d.Data.Point.Y;
+ros2msg.detections.keypoints3d.data.point.z = message.Detections.Keypoints3d.Data.Point.Z;
+ros2msg.detections.keypoints3d.data.score = message.Detections.Keypoints3d.Data.Score;
+ros2msg.detections.keypoints3d.frame_id = message.Detections.Keypoints3d.FrameId;
+end

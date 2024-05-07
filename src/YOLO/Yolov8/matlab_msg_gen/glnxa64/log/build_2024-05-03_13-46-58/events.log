@@ -1,0 +1,742 @@
+[0.000000] (-) TimerEvent: {}
+[0.000104] (yolov8_msgs) JobQueued: {'identifier': 'yolov8_msgs', 'dependencies': OrderedDict()}
+[0.000138] (yolov8_msgs) JobStarted: {'identifier': 'yolov8_msgs'}
+[0.024912] (yolov8_msgs) JobProgress: {'identifier': 'yolov8_msgs', 'progress': 'cmake'}
+[0.025200] (yolov8_msgs) Command: {'cmd': ['/usr/local/MATLAB/R2023b/bin/glnxa64/cmake/bin/cmake', '/home/yong/YongJun_ws/src/YOLO/Yolov8/matlab_msg_gen/glnxa64/src/yolov8_msgs', '-DCMAKE_BUILD_TYPE=Release', '-DCMAKE_SHARED_LINKER_FLAGS=-Wl,-no-as-needed', '-DBUILD_TESTING=OFF', '-DALIAS_ROS2_TF2=1', '-DCMAKE_CXX_FLAGS_RELEASE=-O0', '-G', 'Ninja', '-DCMAKE_INSTALL_PREFIX=/home/yong/YongJun_ws/src/YOLO/Yolov8/matlab_msg_gen/glnxa64/install'], 'cwd': '/home/yong/YongJun_ws/src/YOLO/Yolov8/matlab_msg_gen/glnxa64/build/yolov8_msgs', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('ARCH', 'glnxa64'), ('CUSTOM_LD_LIBRARY_PATH', ''), ('USER', 'yong'), ('LOCAL_PYTHON_VENV_PATH', '/home/yong/.matlab/R2023b/ros2/glnxa64/venv'), ('MEMKIND_HEAP_MANAGER', 'TBB'), ('CUSTOM_AMENT_PREFIX_PATH', '/usr/local/MATLAB/R2023b/sys/ros2/glnxa64/ros2'), ('SSH_AGENT_PID', '1232'), ('XDG_SESSION_TYPE', 'x11'), ('KMP_HANDLE_SIGNALS', '0'), ('SHLVL', '2'), ('ICU_TIMEZONE_FILES_DIR', '/usr/local/MATLAB/R2023b/bin/icutzdata'), ('LD_LIBRARY_PATH', ':/usr/local/MATLAB/R2023b/sys/ros2/glnxa64/ros2/lib:/usr/local/MATLAB/R2023b/sys/os/glnxa64:/usr/local/MATLAB/R2023b/bin/glnxa64:/home/yong/.MathWorks/cRdHyR7QwVUi_xWfrkSUa0wupotHwscVQEmScJoFWX4/bin/glnxa64:/usr/local/MATLAB/R2023b/extern/lib/glnxa64:/usr/local/MATLAB/R2023b/cefclient/sys/os/glnxa64:/usr/local/MATLAB/R2023b/runtime/glnxa64:/usr/local/MATLAB/R2023b/sys/java/jre/glnxa64/jre/lib/amd64/native_threads:/usr/local/MATLAB/R2023b/sys/java/jre/glnxa64/jre/lib/amd64/server'), ('BASEMATLABPATH', ''), ('HOME', '/home/yong'), ('AUTOMOUNT_MAP', ''), ('OLDPWD', '/usr/local/MATLAB/R2023b'), ('DESKTOP_SESSION', 'ubuntu'), ('MW_LD_SHIM', '/usr/local/MATLAB/R2023b/bin/glnxa64/ld_shim.so.2.31.ubuntu_20_04'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', ''), ('PS1', '(venv)'), ('LIBVA_MESSAGING_LEVEL', '0'), ('MANAGERPID', '1108'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('TERMINATOR_DBUS_NAME', 'net.tenshu.Terminator21a9d5db22c73a993ff0b42f64b396873'), ('GIO_LAUNCHED_DESKTOP_FILE_PID', '2052'), ('CUSTOM_SITE_PACKAGES_PATH', ''), ('IM_CONFIG_PHASE', '1'), ('COLCON_PREFIX_PATH', '/usr/local/MATLAB/R2023b/sys/ros2/glnxa64/ros2:/usr/local/MATLAB/R2023b/sys/ros2/glnxa64/ros2'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'yong'), ('JOURNAL_STREAM', '8:37739'), ('_', '/home/yong/.matlab/R2023b/ros2/glnxa64/venv/bin/colcon'), ('PKG_CONFIG_PATH', '/usr/local/MATLAB/R2023b/sys/ros2/glnxa64/ros2/lib/pkgconfig'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'yong'), ('TERM', 'dumb'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('WINDOWPATH', '2'), ('PATH', '/usr/local/MATLAB/R2023b/bin/glnxa64/cmake/bin::/usr/local/MATLAB/R2023b/sys/ros2/glnxa64/ros2/bin:/home/yong/.matlab/R2023b/ros2/glnxa64/venv/bin:/home/yong/.matlab/R2023b/ros2/glnxa64/venv/bin:/usr/local/MATLAB/R2023b/toolbox/shared/coder/ninja/glnxa64:/home/yong/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('SESSION_MANAGER', 'local/Yong:@/tmp/.ICE-unix/1279,unix/Yong:/tmp/.ICE-unix/1279'), ('INVOCATION_ID', '7b324249d4b742a0ac467c093e8fd076'), ('XDG_MENU_PREFIX', 'gnome-'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('TOOLBOX', '/usr/local/MATLAB/R2023b/toolbox'), ('MKL_DOMAIN_NUM_THREADS', ''), ('KMP_INIT_AT_FORK', 'false'), ('DISPLAY', ':0'), ('TERMINATOR_DBUS_PATH', '/net/tenshu/Terminator2'), ('LD_PRELOAD', ''), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('PRE_LD_PRELOAD', ''), ('RMW_IMPLEMENTATION', ''), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/usr/local/MATLAB/R2023b/sys/ros2/glnxa64/ros2:/usr/local/MATLAB/R2023b/sys/ros2/glnxa64/ros2'), ('SHELL', '/bin/bash'), ('TERMINATOR_UUID', 'urn:uuid:71d10f79-4adb-478c-9cc3-4c5a1ad84126'), ('CMAKE_PATH', '/usr/local/MATLAB/R2023b/bin/glnxa64/cmake/bin'), ('XFILESEARCHPATH', '/usr/local/MATLAB/R2023b/sys/java/jre/glnxa64/jre/lib/locale/%L/%T/%N%S:'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('OSG_LD_LIBRARY_PATH', '/usr/local/MATLAB/R2023b/sys/openscenegraph/lib/glnxa64'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('VIRTUAL_ENV', '/home/yong/.matlab/R2023b/ros2/glnxa64/venv'), ('CUSTOM_PATH', ''), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/yong/YongJun_ws/src/YOLO/Yolov8/matlab_msg_gen/glnxa64/build/yolov8_msgs'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('DYLD_LIBRARY_PATH', ':/usr/local/MATLAB/R2023b/sys/ros2/glnxa64/ros2/lib:'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('MKL_NUM_THREADS', ''), ('MW_PATCH_OFFSETS', '0000104000000050'), ('PYTHONPATH', ':/usr/local/MATLAB/R2023b/sys/ros2/glnxa64/ros2/lib/python3.9/site-packages:/home/yong/.matlab/R2023b/ros2/glnxa64/venv/lib/python3.9/site-packages:'), ('LC_NUMERIC', 'C'), ('COLCON', '1'), ('VTE_VERSION', '6003'), ('CMAKE_PREFIX_PATH', '/usr/local/MATLAB/R2023b/sys/ros2/glnxa64/ros2:/usr/local/MATLAB/R2023b/sys/ros2/glnxa64/ros2')]), 'shell': False}
+[0.099470] (-) TimerEvent: {}
+[0.105706] (yolov8_msgs) StdoutLine: {'line': b'-- The C compiler identification is GNU 9.4.0\n'}
+[0.173574] (yolov8_msgs) StdoutLine: {'line': b'-- The CXX compiler identification is GNU 9.4.0\n'}
+[0.182549] (yolov8_msgs) StdoutLine: {'line': b'-- Detecting C compiler ABI info\n'}
+[0.199526] (-) TimerEvent: {}
+[0.215492] (yolov8_msgs) StdoutLine: {'line': b'-- Detecting C compiler ABI info - done\n'}
+[0.222676] (yolov8_msgs) StdoutLine: {'line': b'-- Check for working C compiler: /usr/bin/cc - skipped\n'}
+[0.222994] (yolov8_msgs) StdoutLine: {'line': b'-- Detecting C compile features\n'}
+[0.223420] (yolov8_msgs) StdoutLine: {'line': b'-- Detecting C compile features - done\n'}
+[0.226462] (yolov8_msgs) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info\n'}
+[0.266136] (yolov8_msgs) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info - done\n'}
+[0.273413] (yolov8_msgs) StdoutLine: {'line': b'-- Check for working CXX compiler: /usr/bin/c++ - skipped\n'}
+[0.273659] (yolov8_msgs) StdoutLine: {'line': b'-- Detecting CXX compile features\n'}
+[0.274032] (yolov8_msgs) StdoutLine: {'line': b'-- Detecting CXX compile features - done\n'}
+[0.281373] (yolov8_msgs) StdoutLine: {'line': b'-- Found ament_cmake: 1.3.3 (/usr/local/MATLAB/R2023b/sys/ros2/glnxa64/ros2/share/ament_cmake/cmake)\n'}
+[0.299616] (-) TimerEvent: {}
+[0.399863] (-) TimerEvent: {}
+[0.500099] (-) TimerEvent: {}
+[0.600337] (-) TimerEvent: {}
+[0.700574] (-) TimerEvent: {}
+[0.800805] (-) TimerEvent: {}
+[0.901041] (-) TimerEvent: {}
+[0.961999] (yolov8_msgs) StdoutLine: {'line': b'-- Found Python3: /home/yong/.matlab/R2023b/ros2/glnxa64/venv/bin/python3.9 (found version "3.9.19") found components: Interpreter \n'}
+[1.001119] (-) TimerEvent: {}
+[1.026638] (yolov8_msgs) StdoutLine: {'line': b'-- Found ament_cmake_ros: 0.10.0 (/usr/local/MATLAB/R2023b/sys/ros2/glnxa64/ros2/share/ament_cmake_ros/cmake)\n'}
+[1.034389] (yolov8_msgs) StdoutLine: {'line': b'-- Found rosidl_typesupport_c: 2.0.0 (/usr/local/MATLAB/R2023b/sys/ros2/glnxa64/ros2/share/rosidl_typesupport_c/cmake)\n'}
+[1.035104] (yolov8_msgs) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[1.041661] (yolov8_msgs) StdoutLine: {'line': b'-- Found rosidl_adapter: 3.1.4 (/usr/local/MATLAB/R2023b/sys/ros2/glnxa64/ros2/share/rosidl_adapter/cmake)\n'}
+[1.087088] (yolov8_msgs) StdoutLine: {'line': b'-- Found rosidl_typesupport_cpp: 2.0.0 (/usr/local/MATLAB/R2023b/sys/ros2/glnxa64/ros2/share/rosidl_typesupport_cpp/cmake)\n'}
+[1.087711] (yolov8_msgs) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[1.101208] (-) TimerEvent: {}
+[1.122266] (yolov8_msgs) StdoutLine: {'line': b'-- Found rosidl_default_generators: 1.2.0 (/usr/local/MATLAB/R2023b/sys/ros2/glnxa64/ros2/share/rosidl_default_generators/cmake)\n'}
+[1.126068] (yolov8_msgs) StdoutLine: {'line': b'-- Found class_loader: 2.2.0 (/usr/local/MATLAB/R2023b/sys/ros2/glnxa64/ros2/share/class_loader/cmake)\n'}
+[1.130667] (yolov8_msgs) StdoutLine: {'line': b'-- Found geometry_msgs: 4.2.3 (/usr/local/MATLAB/R2023b/sys/ros2/glnxa64/ros2/share/geometry_msgs/cmake)\n'}
+[1.201313] (-) TimerEvent: {}
+[1.252670] (yolov8_msgs) StdoutLine: {'line': b'-- Found rclcpp: 16.0.3 (/usr/local/MATLAB/R2023b/sys/ros2/glnxa64/ros2/share/rclcpp/cmake)\n'}
+[1.301422] (-) TimerEvent: {}
+[1.312246] (yolov8_msgs) StdoutLine: {'line': b'-- Found rmw_implementation_cmake: 6.1.1 (/usr/local/MATLAB/R2023b/sys/ros2/glnxa64/ros2/share/rmw_implementation_cmake/cmake)\n'}
+[1.314772] (yolov8_msgs) StdoutLine: {'line': b'-- Found rmw_fastrtps_cpp: 6.2.2 (/usr/local/MATLAB/R2023b/sys/ros2/glnxa64/ros2/share/rmw_fastrtps_cpp/cmake)\n'}
+[1.380204] (yolov8_msgs) StdoutLine: {'line': b'-- Found FastRTPS: /usr/local/MATLAB/R2023b/sys/ros2/glnxa64/ros2/include  \n'}
+[1.401530] (-) TimerEvent: {}
+[1.408688] (yolov8_msgs) StdoutLine: {'line': b"-- Using RMW implementation 'rmw_fastrtps_cpp' as default\n"}
+[1.416175] (yolov8_msgs) StdoutLine: {'line': b'-- Performing Test CMAKE_HAVE_LIBC_PTHREAD\n'}
+[1.456106] (yolov8_msgs) StdoutLine: {'line': b'-- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Failed\n'}
+[1.456299] (yolov8_msgs) StdoutLine: {'line': b'-- Looking for pthread_create in pthreads\n'}
+[1.482213] (yolov8_msgs) StdoutLine: {'line': b'-- Looking for pthread_create in pthreads - not found\n'}
+[1.482397] (yolov8_msgs) StdoutLine: {'line': b'-- Looking for pthread_create in pthread\n'}
+[1.501643] (-) TimerEvent: {}
+[1.517019] (yolov8_msgs) StdoutLine: {'line': b'-- Looking for pthread_create in pthread - found\n'}
+[1.517846] (yolov8_msgs) StdoutLine: {'line': b'-- Found Threads: TRUE  \n'}
+[1.601749] (-) TimerEvent: {}
+[1.701968] (-) TimerEvent: {}
+[1.802181] (-) TimerEvent: {}
+[1.902401] (-) TimerEvent: {}
+[2.002663] (-) TimerEvent: {}
+[2.029501] (yolov8_msgs) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[2.102750] (-) TimerEvent: {}
+[2.202974] (-) TimerEvent: {}
+[2.245928] (yolov8_msgs) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[2.255388] (yolov8_msgs) StdoutLine: {'line': b'-- Configuring done\n'}
+[2.286301] (yolov8_msgs) StdoutLine: {'line': b'-- Generating done\n'}
+[2.294400] (yolov8_msgs) StdoutLine: {'line': b'-- Build files have been written to: /home/yong/YongJun_ws/src/YOLO/Yolov8/matlab_msg_gen/glnxa64/build/yolov8_msgs\n'}
+[2.302050] (yolov8_msgs) CommandEnded: {'returncode': 0}
+[2.303788] (yolov8_msgs) JobProgress: {'identifier': 'yolov8_msgs', 'progress': 'build'}
+[2.303886] (-) TimerEvent: {}
+[2.304048] (yolov8_msgs) Command: {'cmd': ['/usr/local/MATLAB/R2023b/bin/glnxa64/cmake/bin/cmake', '--build', '/home/yong/YongJun_ws/src/YOLO/Yolov8/matlab_msg_gen/glnxa64/build/yolov8_msgs', '--', '-j8', '-l8'], 'cwd': '/home/yong/YongJun_ws/src/YOLO/Yolov8/matlab_msg_gen/glnxa64/build/yolov8_msgs', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('ARCH', 'glnxa64'), ('CUSTOM_LD_LIBRARY_PATH', ''), ('USER', 'yong'), ('LOCAL_PYTHON_VENV_PATH', '/home/yong/.matlab/R2023b/ros2/glnxa64/venv'), ('MEMKIND_HEAP_MANAGER', 'TBB'), ('CUSTOM_AMENT_PREFIX_PATH', '/usr/local/MATLAB/R2023b/sys/ros2/glnxa64/ros2'), ('SSH_AGENT_PID', '1232'), ('XDG_SESSION_TYPE', 'x11'), ('KMP_HANDLE_SIGNALS', '0'), ('SHLVL', '2'), ('ICU_TIMEZONE_FILES_DIR', '/usr/local/MATLAB/R2023b/bin/icutzdata'), ('LD_LIBRARY_PATH', ':/usr/local/MATLAB/R2023b/sys/ros2/glnxa64/ros2/lib:/usr/local/MATLAB/R2023b/sys/os/glnxa64:/usr/local/MATLAB/R2023b/bin/glnxa64:/home/yong/.MathWorks/cRdHyR7QwVUi_xWfrkSUa0wupotHwscVQEmScJoFWX4/bin/glnxa64:/usr/local/MATLAB/R2023b/extern/lib/glnxa64:/usr/local/MATLAB/R2023b/cefclient/sys/os/glnxa64:/usr/local/MATLAB/R2023b/runtime/glnxa64:/usr/local/MATLAB/R2023b/sys/java/jre/glnxa64/jre/lib/amd64/native_threads:/usr/local/MATLAB/R2023b/sys/java/jre/glnxa64/jre/lib/amd64/server'), ('BASEMATLABPATH', ''), ('HOME', '/home/yong'), ('AUTOMOUNT_MAP', ''), ('OLDPWD', '/usr/local/MATLAB/R2023b'), ('DESKTOP_SESSION', 'ubuntu'), ('MW_LD_SHIM', '/usr/local/MATLAB/R2023b/bin/glnxa64/ld_shim.so.2.31.ubuntu_20_04'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', ''), ('PS1', '(venv)'), ('LIBVA_MESSAGING_LEVEL', '0'), ('MANAGERPID', '1108'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('TERMINATOR_DBUS_NAME', 'net.tenshu.Terminator21a9d5db22c73a993ff0b42f64b396873'), ('GIO_LAUNCHED_DESKTOP_FILE_PID', '2052'), ('CUSTOM_SITE_PACKAGES_PATH', ''), ('IM_CONFIG_PHASE', '1'), ('COLCON_PREFIX_PATH', '/usr/local/MATLAB/R2023b/sys/ros2/glnxa64/ros2:/usr/local/MATLAB/R2023b/sys/ros2/glnxa64/ros2'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'yong'), ('JOURNAL_STREAM', '8:37739'), ('_', '/home/yong/.matlab/R2023b/ros2/glnxa64/venv/bin/colcon'), ('PKG_CONFIG_PATH', '/usr/local/MATLAB/R2023b/sys/ros2/glnxa64/ros2/lib/pkgconfig'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'yong'), ('TERM', 'dumb'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('WINDOWPATH', '2'), ('PATH', '/usr/local/MATLAB/R2023b/bin/glnxa64/cmake/bin::/usr/local/MATLAB/R2023b/sys/ros2/glnxa64/ros2/bin:/home/yong/.matlab/R2023b/ros2/glnxa64/venv/bin:/home/yong/.matlab/R2023b/ros2/glnxa64/venv/bin:/usr/local/MATLAB/R2023b/toolbox/shared/coder/ninja/glnxa64:/home/yong/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('SESSION_MANAGER', 'local/Yong:@/tmp/.ICE-unix/1279,unix/Yong:/tmp/.ICE-unix/1279'), ('INVOCATION_ID', '7b324249d4b742a0ac467c093e8fd076'), ('XDG_MENU_PREFIX', 'gnome-'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('TOOLBOX', '/usr/local/MATLAB/R2023b/toolbox'), ('MKL_DOMAIN_NUM_THREADS', ''), ('KMP_INIT_AT_FORK', 'false'), ('DISPLAY', ':0'), ('TERMINATOR_DBUS_PATH', '/net/tenshu/Terminator2'), ('LD_PRELOAD', ''), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('PRE_LD_PRELOAD', ''), ('RMW_IMPLEMENTATION', ''), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/usr/local/MATLAB/R2023b/sys/ros2/glnxa64/ros2:/usr/local/MATLAB/R2023b/sys/ros2/glnxa64/ros2'), ('SHELL', '/bin/bash'), ('TERMINATOR_UUID', 'urn:uuid:71d10f79-4adb-478c-9cc3-4c5a1ad84126'), ('CMAKE_PATH', '/usr/local/MATLAB/R2023b/bin/glnxa64/cmake/bin'), ('XFILESEARCHPATH', '/usr/local/MATLAB/R2023b/sys/java/jre/glnxa64/jre/lib/locale/%L/%T/%N%S:'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('OSG_LD_LIBRARY_PATH', '/usr/local/MATLAB/R2023b/sys/openscenegraph/lib/glnxa64'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('VIRTUAL_ENV', '/home/yong/.matlab/R2023b/ros2/glnxa64/venv'), ('CUSTOM_PATH', ''), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/yong/YongJun_ws/src/YOLO/Yolov8/matlab_msg_gen/glnxa64/build/yolov8_msgs'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('DYLD_LIBRARY_PATH', ':/usr/local/MATLAB/R2023b/sys/ros2/glnxa64/ros2/lib:'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('MKL_NUM_THREADS', ''), ('MW_PATCH_OFFSETS', '0000104000000050'), ('PYTHONPATH', ':/usr/local/MATLAB/R2023b/sys/ros2/glnxa64/ros2/lib/python3.9/site-packages:/home/yong/.matlab/R2023b/ros2/glnxa64/venv/lib/python3.9/site-packages:'), ('LC_NUMERIC', 'C'), ('COLCON', '1'), ('VTE_VERSION', '6003'), ('CMAKE_PREFIX_PATH', '/usr/local/MATLAB/R2023b/sys/ros2/glnxa64/ros2:/usr/local/MATLAB/R2023b/sys/ros2/glnxa64/ros2')]), 'shell': False}
+[2.403994] (-) TimerEvent: {}
+[2.504220] (-) TimerEvent: {}
+[2.604421] (-) TimerEvent: {}
+[2.704626] (-) TimerEvent: {}
+[2.804832] (-) TimerEvent: {}
+[2.905028] (-) TimerEvent: {}
+[2.984382] (yolov8_msgs) StdoutLine: {'line': b'[1/112] Generating C++ code for ROS interfaces\n'}
+[3.005104] (-) TimerEvent: {}
+[3.037630] (yolov8_msgs) StdoutLine: {'line': b'[2/112] Generating C code for ROS interfaces\n'}
+[3.105193] (-) TimerEvent: {}
+[3.120737] (yolov8_msgs) StdoutLine: {'line': b'[3/112] Building C object CMakeFiles/yolov8_msgs__rosidl_generator_c.dir/rosidl_generator_c/yolov8_msgs/msg/detail/bounding_box2_d__functions.c.o\n'}
+[3.120976] (yolov8_msgs) StdoutLine: {'line': b'[4/112] Building C object CMakeFiles/yolov8_msgs__rosidl_generator_c.dir/rosidl_generator_c/yolov8_msgs/msg/detail/key_point2_d__functions.c.o\n'}
+[3.125797] (yolov8_msgs) StdoutLine: {'line': b'[5/112] Building C object CMakeFiles/yolov8_msgs__rosidl_generator_c.dir/rosidl_generator_c/yolov8_msgs/msg/detail/detection_array__functions.c.o\n'}
+[3.127793] (yolov8_msgs) StdoutLine: {'line': b'[6/112] Building C object CMakeFiles/yolov8_msgs__rosidl_generator_c.dir/rosidl_generator_c/yolov8_msgs/msg/detail/detection__functions.c.o\n'}
+[3.131124] (yolov8_msgs) StdoutLine: {'line': b'[7/112] Building C object CMakeFiles/yolov8_msgs__rosidl_generator_c.dir/rosidl_generator_c/yolov8_msgs/msg/detail/bounding_box3_d__functions.c.o\n'}
+[3.183820] (yolov8_msgs) StdoutLine: {'line': b'[8/112] Building C object CMakeFiles/yolov8_msgs__rosidl_generator_c.dir/rosidl_generator_c/yolov8_msgs/msg/detail/key_point3_d__functions.c.o\n'}
+[3.187890] (yolov8_msgs) StdoutLine: {'line': b'[9/112] Building C object CMakeFiles/yolov8_msgs__rosidl_generator_c.dir/rosidl_generator_c/yolov8_msgs/msg/detail/key_point2_d_array__functions.c.o\n'}
+[3.190810] (yolov8_msgs) StdoutLine: {'line': b'[10/112] Building C object CMakeFiles/yolov8_msgs__rosidl_generator_c.dir/rosidl_generator_c/yolov8_msgs/msg/detail/key_point3_d_array__functions.c.o\n'}
+[3.193572] (yolov8_msgs) StdoutLine: {'line': b'[11/112] Building C object CMakeFiles/yolov8_msgs__rosidl_generator_c.dir/rosidl_generator_c/yolov8_msgs/msg/detail/point2_d__functions.c.o\n'}
+[3.200968] (yolov8_msgs) StdoutLine: {'line': b'[12/112] Building C object CMakeFiles/yolov8_msgs__rosidl_generator_c.dir/rosidl_generator_c/yolov8_msgs/msg/detail/mask__functions.c.o\n'}
+[3.205299] (-) TimerEvent: {}
+[3.245547] (yolov8_msgs) StdoutLine: {'line': b'[13/112] Building C object CMakeFiles/yolov8_msgs__rosidl_generator_c.dir/rosidl_generator_c/yolov8_msgs/msg/detail/vector2__functions.c.o\n'}
+[3.245673] (yolov8_msgs) StdoutLine: {'line': b'[14/112] Building C object CMakeFiles/yolov8_msgs__rosidl_generator_c.dir/rosidl_generator_c/yolov8_msgs/msg/detail/pose2_d__functions.c.o\n'}
+[3.259871] (yolov8_msgs) StdoutLine: {'line': b'[15/112] Linking C shared library libyolov8_msgs__rosidl_generator_c.so\n'}
+[3.305401] (-) TimerEvent: {}
+[3.405654] (-) TimerEvent: {}
+[3.472604] (yolov8_msgs) StdoutLine: {'line': b'[16/112] Generating C++ type support dispatch for ROS interfaces\n'}
+[3.505735] (-) TimerEvent: {}
+[3.562495] (yolov8_msgs) StdoutLine: {'line': b'[17/112] Generating C++ introspection for ROS interfaces\n'}
+[3.605817] (-) TimerEvent: {}
+[3.622693] (yolov8_msgs) StdoutLine: {'line': b'[18/112] Generating C++ type support for eProsima Fast-RTPS\n'}
+[3.705898] (-) TimerEvent: {}
+[3.712394] (yolov8_msgs) StdoutLine: {'line': b'[19/112] Building CXX object CMakeFiles/yolov8_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/yolov8_msgs/msg/bounding_box2_d__type_support.cpp.o\n'}
+[3.715335] (yolov8_msgs) StdoutLine: {'line': b'[20/112] Building CXX object CMakeFiles/yolov8_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/yolov8_msgs/msg/detection__type_support.cpp.o\n'}
+[3.731480] (yolov8_msgs) StdoutLine: {'line': b'[21/112] Building CXX object CMakeFiles/yolov8_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/yolov8_msgs/msg/bounding_box3_d__type_support.cpp.o\n'}
+[3.769358] (yolov8_msgs) StdoutLine: {'line': b'[22/112] Generating C type support dispatch for ROS interfaces\n'}
+[3.787935] (yolov8_msgs) StdoutLine: {'line': b'[23/112] Building CXX object CMakeFiles/yolov8_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/yolov8_msgs/msg/bounding_box2_d__type_support.cpp.o\n'}
+[3.805847] (yolov8_msgs) StdoutLine: {'line': b'[24/112] Building CXX object CMakeFiles/yolov8_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/yolov8_msgs/msg/bounding_box3_d__type_support.cpp.o\n'}
+[3.805970] (-) TimerEvent: {}
+[3.825979] (yolov8_msgs) StdoutLine: {'line': b'[25/112] Building CXX object CMakeFiles/yolov8_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/yolov8_msgs/msg/detection__type_support.cpp.o\n'}
+[3.845462] (yolov8_msgs) StdoutLine: {'line': b'[26/112] Building CXX object CMakeFiles/yolov8_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/yolov8_msgs/msg/detection_array__type_support.cpp.o\n'}
+[3.858534] (yolov8_msgs) StdoutLine: {'line': b'[27/112] Generating C introspection for ROS interfaces\n'}
+[3.864300] (yolov8_msgs) StdoutLine: {'line': b'[28/112] Building CXX object CMakeFiles/yolov8_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/yolov8_msgs/msg/key_point2_d__type_support.cpp.o\n'}
+[3.891111] (yolov8_msgs) StdoutLine: {'line': b'[29/112] Building C object CMakeFiles/yolov8_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/yolov8_msgs/msg/detail/bounding_box2_d__type_support.c.o\n'}
+[3.894650] (yolov8_msgs) StdoutLine: {'line': b'[30/112] Building C object CMakeFiles/yolov8_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/yolov8_msgs/msg/detail/bounding_box3_d__type_support.c.o\n'}
+[3.901688] (yolov8_msgs) StdoutLine: {'line': b'[31/112] Building CXX object CMakeFiles/yolov8_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/yolov8_msgs/msg/detail/bounding_box2_d__type_support.cpp.o\n'}
+[3.906089] (-) TimerEvent: {}
+[3.924222] (yolov8_msgs) StdoutLine: {'line': b'[32/112] Building C object CMakeFiles/yolov8_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/yolov8_msgs/msg/detail/detection__type_support.c.o\n'}
+[3.927505] (yolov8_msgs) StdoutLine: {'line': b'[33/112] Generating C type support for eProsima Fast-RTPS\n'}
+[3.936263] (yolov8_msgs) StdoutLine: {'line': b'[34/112] Building C object CMakeFiles/yolov8_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/yolov8_msgs/msg/detail/detection_array__type_support.c.o\n'}
+[3.947164] (yolov8_msgs) StdoutLine: {'line': b'[35/112] Building C object CMakeFiles/yolov8_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/yolov8_msgs/msg/detail/key_point2_d__type_support.c.o\n'}
+[3.957091] (yolov8_msgs) StdoutLine: {'line': b'[36/112] Building C object CMakeFiles/yolov8_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/yolov8_msgs/msg/detail/key_point2_d_array__type_support.c.o\n'}
+[3.972242] (yolov8_msgs) StdoutLine: {'line': b'[37/112] Building CXX object CMakeFiles/yolov8_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/yolov8_msgs/msg/detail/dds_fastrtps/bounding_box2_d__type_support.cpp.o\n'}
+[4.006182] (-) TimerEvent: {}
+[4.065354] (yolov8_msgs) StdoutLine: {'line': b'[38/112] Building CXX object CMakeFiles/yolov8_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/yolov8_msgs/msg/detail/dds_fastrtps/bounding_box3_d__type_support.cpp.o\n'}
+[4.106277] (-) TimerEvent: {}
+[4.144591] (yolov8_msgs) StdoutLine: {'line': b'[39/112] Building CXX object CMakeFiles/yolov8_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/yolov8_msgs/msg/detail/dds_fastrtps/detection__type_support.cpp.o\n'}
+[4.183485] (yolov8_msgs) StdoutLine: {'line': b'[40/112] Building CXX object CMakeFiles/yolov8_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/yolov8_msgs/msg/detail/dds_fastrtps/detection_array__type_support.cpp.o\n'}
+[4.206993] (-) TimerEvent: {}
+[4.244092] (yolov8_msgs) StdoutLine: {'line': b'[41/112] Building CXX object CMakeFiles/yolov8_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/yolov8_msgs/msg/detail/detection__type_support_c.cpp.o\n'}
+[4.258327] (yolov8_msgs) StdoutLine: {'line': b'[42/112] Building CXX object CMakeFiles/yolov8_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/yolov8_msgs/msg/detail/bounding_box3_d__type_support_c.cpp.o\n'}
+[4.278005] (yolov8_msgs) StdoutLine: {'line': b'[43/112] Building CXX object CMakeFiles/yolov8_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/yolov8_msgs/msg/detail/detection_array__type_support_c.cpp.o\n'}
+[4.306951] (-) TimerEvent: {}
+[4.308098] (yolov8_msgs) StdoutLine: {'line': b'[44/112] Building CXX object CMakeFiles/yolov8_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/yolov8_msgs/msg/detail/key_point2_d__type_support_c.cpp.o\n'}
+[4.348472] (yolov8_msgs) StdoutLine: {'line': b'[45/112] Building CXX object CMakeFiles/yolov8_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/yolov8_msgs/msg/detail/bounding_box2_d__type_support_c.cpp.o\n'}
+[4.377768] (yolov8_msgs) StdoutLine: {'line': b'[46/112] Building CXX object CMakeFiles/yolov8_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/yolov8_msgs/msg/detail/key_point2_d_array__type_support_c.cpp.o\n'}
+[4.379003] (yolov8_msgs) StdoutLine: {'line': b'[47/112] Building C object CMakeFiles/yolov8_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/yolov8_msgs/msg/detail/key_point3_d__type_support.c.o\n'}
+[4.407671] (-) TimerEvent: {}
+[4.411658] (yolov8_msgs) StdoutLine: {'line': b'[48/112] Building C object CMakeFiles/yolov8_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/yolov8_msgs/msg/detail/mask__type_support.c.o\n'}
+[4.428690] (yolov8_msgs) StdoutLine: {'line': b'[49/112] Building C object CMakeFiles/yolov8_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/yolov8_msgs/msg/detail/key_point3_d_array__type_support.c.o\n'}
+[4.446764] (yolov8_msgs) StdoutLine: {'line': b'[50/112] Building C object CMakeFiles/yolov8_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/yolov8_msgs/msg/detail/point2_d__type_support.c.o\n'}
+[4.456189] (yolov8_msgs) StdoutLine: {'line': b'[51/112] Building C object CMakeFiles/yolov8_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/yolov8_msgs/msg/detail/pose2_d__type_support.c.o\n'}
+[4.471151] (yolov8_msgs) StdoutLine: {'line': b'[52/112] Building CXX object CMakeFiles/yolov8_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/yolov8_msgs/msg/detail/key_point3_d__type_support_c.cpp.o\n'}
+[4.478744] (yolov8_msgs) StdoutLine: {'line': b'[53/112] Building C object CMakeFiles/yolov8_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/yolov8_msgs/msg/detail/vector2__type_support.c.o\n'}
+[4.493506] (yolov8_msgs) StdoutLine: {'line': b'[54/112] Building CXX object CMakeFiles/yolov8_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/yolov8_msgs/msg/key_point3_d__type_support.cpp.o\n'}
+[4.494746] (yolov8_msgs) StdoutLine: {'line': b'[55/112] Building CXX object CMakeFiles/yolov8_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/yolov8_msgs/msg/key_point2_d_array__type_support.cpp.o\n'}
+[4.496275] (yolov8_msgs) StdoutLine: {'line': b'[56/112] Linking C shared library libyolov8_msgs__rosidl_typesupport_introspection_c.so\n'}
+[4.507762] (-) TimerEvent: {}
+[4.513712] (yolov8_msgs) StdoutLine: {'line': b'[57/112] Building CXX object CMakeFiles/yolov8_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/yolov8_msgs/msg/detail/key_point3_d_array__type_support_c.cpp.o\n'}
+[4.514302] (yolov8_msgs) StdoutLine: {'line': b'[58/112] Building CXX object CMakeFiles/yolov8_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/yolov8_msgs/msg/key_point3_d_array__type_support.cpp.o\n'}
+[4.514582] (yolov8_msgs) StdoutLine: {'line': b'[59/112] Building CXX object CMakeFiles/yolov8_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/yolov8_msgs/msg/mask__type_support.cpp.o\n'}
+[4.526939] (yolov8_msgs) StdoutLine: {'line': b'[60/112] Building CXX object CMakeFiles/yolov8_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/yolov8_msgs/msg/point2_d__type_support.cpp.o\n'}
+[4.527513] (yolov8_msgs) StdoutLine: {'line': b'[61/112] Building CXX object CMakeFiles/yolov8_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/yolov8_msgs/msg/detail/mask__type_support_c.cpp.o\n'}
+[4.531906] (yolov8_msgs) StdoutLine: {'line': b'[62/112] Building CXX object CMakeFiles/yolov8_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/yolov8_msgs/msg/vector2__type_support.cpp.o\n'}
+[4.549259] (yolov8_msgs) StdoutLine: {'line': b'[63/112] Building CXX object CMakeFiles/yolov8_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/yolov8_msgs/msg/pose2_d__type_support.cpp.o\n'}
+[4.550040] (yolov8_msgs) StdoutLine: {'line': b'[64/112] Building CXX object CMakeFiles/yolov8_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/yolov8_msgs/msg/detail/pose2_d__type_support_c.cpp.o\n'}
+[4.552972] (yolov8_msgs) StdoutLine: {'line': b'[65/112] Building CXX object CMakeFiles/yolov8_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/yolov8_msgs/msg/detail/point2_d__type_support_c.cpp.o\n'}
+[4.583598] (yolov8_msgs) StdoutLine: {'line': b'[66/112] Building CXX object CMakeFiles/yolov8_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/yolov8_msgs/msg/detail/vector2__type_support_c.cpp.o\n'}
+[4.597845] (yolov8_msgs) StdoutLine: {'line': b'[67/112] Linking CXX shared library libyolov8_msgs__rosidl_typesupport_c.so\n'}
+[4.607874] (-) TimerEvent: {}
+[4.651546] (yolov8_msgs) StdoutLine: {'line': b'[68/112] Linking CXX shared library libyolov8_msgs__rosidl_typesupport_fastrtps_c.so\n'}
+[4.707969] (-) TimerEvent: {}
+[4.808210] (-) TimerEvent: {}
+[4.840986] (yolov8_msgs) StdoutLine: {'line': b'[69/112] Building CXX object CMakeFiles/yolov8_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/yolov8_msgs/msg/detail/dds_fastrtps/key_point2_d__type_support.cpp.o\n'}
+[4.855717] (yolov8_msgs) StdoutLine: {'line': b'[70/112] Building CXX object CMakeFiles/yolov8_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/yolov8_msgs/msg/detail/dds_fastrtps/key_point3_d__type_support.cpp.o\n'}
+[4.880559] (yolov8_msgs) StdoutLine: {'line': b'[71/112] Building CXX object CMakeFiles/yolov8_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/yolov8_msgs/msg/detail/dds_fastrtps/key_point2_d_array__type_support.cpp.o\n'}
+[4.892464] (yolov8_msgs) StdoutLine: {'line': b'[72/112] Building CXX object CMakeFiles/yolov8_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/yolov8_msgs/msg/detail/dds_fastrtps/point2_d__type_support.cpp.o\n'}
+[4.908314] (-) TimerEvent: {}
+[4.928787] (yolov8_msgs) StdoutLine: {'line': b'[73/112] Building CXX object CMakeFiles/yolov8_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/yolov8_msgs/msg/detail/dds_fastrtps/key_point3_d_array__type_support.cpp.o\n'}
+[4.940121] (yolov8_msgs) StdoutLine: {'line': b'[74/112] Building CXX object CMakeFiles/yolov8_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/yolov8_msgs/msg/detail/dds_fastrtps/mask__type_support.cpp.o\n'}
+[4.955950] (yolov8_msgs) StdoutLine: {'line': b'[75/112] Building CXX object CMakeFiles/yolov8_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/yolov8_msgs/msg/detail/dds_fastrtps/pose2_d__type_support.cpp.o\n'}
+[5.008721] (-) TimerEvent: {}
+[5.028596] (yolov8_msgs) StdoutLine: {'line': b'[76/112] Building CXX object CMakeFiles/yolov8_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/yolov8_msgs/msg/detail/dds_fastrtps/vector2__type_support.cpp.o\n'}
+[5.095187] (yolov8_msgs) StdoutLine: {'line': b'[77/112] Linking CXX shared library libyolov8_msgs__rosidl_typesupport_fastrtps_cpp.so\n'}
+[5.108813] (-) TimerEvent: {}
+[5.175375] (yolov8_msgs) StdoutLine: {'line': b'[78/112] Building CXX object CMakeFiles/yolov8_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/yolov8_msgs/msg/detail/bounding_box3_d__type_support.cpp.o\n'}
+[5.208913] (-) TimerEvent: {}
+[5.221791] (yolov8_msgs) StdoutLine: {'line': b'[79/112] Building CXX object CMakeFiles/yolov8_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/yolov8_msgs/msg/detail/key_point2_d__type_support.cpp.o\n'}
+[5.256182] (yolov8_msgs) StdoutLine: {'line': b'[80/112] Building CXX object CMakeFiles/yolov8_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/yolov8_msgs/msg/detail/detection__type_support.cpp.o\n'}
+[5.303509] (yolov8_msgs) StdoutLine: {'line': b'[81/112] Building CXX object CMakeFiles/yolov8_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/yolov8_msgs/msg/detail/key_point3_d__type_support.cpp.o\n'}
+[5.309000] (-) TimerEvent: {}
+[5.318663] (yolov8_msgs) StdoutLine: {'line': b'[82/112] Building CXX object CMakeFiles/yolov8_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/yolov8_msgs/msg/detail/key_point2_d_array__type_support.cpp.o\n'}
+[5.361123] (yolov8_msgs) StdoutLine: {'line': b'[83/112] Building CXX object CMakeFiles/yolov8_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/yolov8_msgs/msg/detail/key_point3_d_array__type_support.cpp.o\n'}
+[5.375045] (yolov8_msgs) StdoutLine: {'line': b'[84/112] Building CXX object CMakeFiles/yolov8_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/yolov8_msgs/msg/detail/detection_array__type_support.cpp.o\n'}
+[5.409089] (-) TimerEvent: {}
+[5.463708] (yolov8_msgs) StdoutLine: {'line': b'[85/112] Building CXX object CMakeFiles/yolov8_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/yolov8_msgs/msg/detail/mask__type_support.cpp.o\n'}
+[5.499112] (yolov8_msgs) StdoutLine: {'line': b'[86/112] Building CXX object CMakeFiles/yolov8_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/yolov8_msgs/msg/detail/point2_d__type_support.cpp.o\n'}
+[5.509177] (-) TimerEvent: {}
+[5.540273] (yolov8_msgs) StdoutLine: {'line': b'[87/112] Building CXX object CMakeFiles/yolov8_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/yolov8_msgs/msg/key_point2_d__type_support.cpp.o\n'}
+[5.545793] (yolov8_msgs) StdoutLine: {'line': b'[88/112] Building CXX object CMakeFiles/yolov8_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/yolov8_msgs/msg/detection_array__type_support.cpp.o\n'}
+[5.560795] (yolov8_msgs) StdoutLine: {'line': b'[89/112] Building CXX object CMakeFiles/yolov8_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/yolov8_msgs/msg/detail/pose2_d__type_support.cpp.o\n'}
+[5.589626] (yolov8_msgs) StdoutLine: {'line': b'[90/112] Building CXX object CMakeFiles/yolov8_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/yolov8_msgs/msg/key_point2_d_array__type_support.cpp.o\n'}
+[5.598631] (yolov8_msgs) StdoutLine: {'line': b'[91/112] Building CXX object CMakeFiles/yolov8_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/yolov8_msgs/msg/detail/vector2__type_support.cpp.o\n'}
+[5.609271] (-) TimerEvent: {}
+[5.632478] (yolov8_msgs) StdoutLine: {'line': b'[92/112] Building CXX object CMakeFiles/yolov8_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/yolov8_msgs/msg/key_point3_d__type_support.cpp.o\n'}
+[5.666610] (yolov8_msgs) StdoutLine: {'line': b'[93/112] Linking CXX shared library libyolov8_msgs__rosidl_typesupport_introspection_cpp.so\n'}
+[5.709373] (-) TimerEvent: {}
+[5.710414] (yolov8_msgs) StdoutLine: {'line': b'[94/112] Building CXX object CMakeFiles/yolov8_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/yolov8_msgs/msg/key_point3_d_array__type_support.cpp.o\n'}
+[5.720680] (yolov8_msgs) StdoutLine: {'line': b'[95/112] Building CXX object CMakeFiles/yolov8_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/yolov8_msgs/msg/mask__type_support.cpp.o\n'}
+[5.778907] (yolov8_msgs) StdoutLine: {'line': b'[96/112] Building CXX object CMakeFiles/yolov8_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/yolov8_msgs/msg/point2_d__type_support.cpp.o\n'}
+[5.786613] (yolov8_msgs) StdoutLine: {'line': b'[97/112] Building CXX object CMakeFiles/yolov8_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/yolov8_msgs/msg/vector2__type_support.cpp.o\n'}
+[5.809454] (-) TimerEvent: {}
+[5.815729] (yolov8_msgs) StdoutLine: {'line': b'[98/112] Building CXX object CMakeFiles/yolov8_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/yolov8_msgs/msg/pose2_d__type_support.cpp.o\n'}
+[5.858075] (yolov8_msgs) StdoutLine: {'line': b'[99/112] Linking CXX shared library libyolov8_msgs__rosidl_typesupport_cpp.so\n'}
+[5.909544] (-) TimerEvent: {}
+[6.009797] (-) TimerEvent: {}
+[6.110072] (-) TimerEvent: {}
+[6.210345] (-) TimerEvent: {}
+[6.310622] (-) TimerEvent: {}
+[6.410894] (-) TimerEvent: {}
+[6.511207] (-) TimerEvent: {}
+[6.611492] (-) TimerEvent: {}
+[6.711771] (-) TimerEvent: {}
+[6.812065] (-) TimerEvent: {}
+[6.912336] (-) TimerEvent: {}
+[7.012620] (-) TimerEvent: {}
+[7.112888] (-) TimerEvent: {}
+[7.213160] (-) TimerEvent: {}
+[7.313472] (-) TimerEvent: {}
+[7.413752] (-) TimerEvent: {}
+[7.514031] (-) TimerEvent: {}
+[7.614314] (-) TimerEvent: {}
+[7.714606] (-) TimerEvent: {}
+[7.814888] (-) TimerEvent: {}
+[7.915247] (-) TimerEvent: {}
+[8.015519] (-) TimerEvent: {}
+[8.115792] (-) TimerEvent: {}
+[8.216098] (-) TimerEvent: {}
+[8.316365] (-) TimerEvent: {}
+[8.416628] (-) TimerEvent: {}
+[8.523288] (-) TimerEvent: {}
+[8.623634] (-) TimerEvent: {}
+[8.723866] (-) TimerEvent: {}
+[8.824099] (-) TimerEvent: {}
+[8.924343] (-) TimerEvent: {}
+[9.024581] (-) TimerEvent: {}
+[9.124818] (-) TimerEvent: {}
+[9.225057] (-) TimerEvent: {}
+[9.325294] (-) TimerEvent: {}
+[9.425538] (-) TimerEvent: {}
+[9.525787] (-) TimerEvent: {}
+[9.626059] (-) TimerEvent: {}
+[9.726297] (-) TimerEvent: {}
+[9.826535] (-) TimerEvent: {}
+[9.926770] (-) TimerEvent: {}
+[10.027002] (-) TimerEvent: {}
+[10.127235] (-) TimerEvent: {}
+[10.227458] (-) TimerEvent: {}
+[10.327690] (-) TimerEvent: {}
+[10.427935] (-) TimerEvent: {}
+[10.528177] (-) TimerEvent: {}
+[10.628416] (-) TimerEvent: {}
+[10.728657] (-) TimerEvent: {}
+[10.828901] (-) TimerEvent: {}
+[10.929153] (-) TimerEvent: {}
+[11.029411] (-) TimerEvent: {}
+[11.129688] (-) TimerEvent: {}
+[11.229939] (-) TimerEvent: {}
+[11.330193] (-) TimerEvent: {}
+[11.430479] (-) TimerEvent: {}
+[11.530764] (-) TimerEvent: {}
+[11.631054] (-) TimerEvent: {}
+[11.738371] (-) TimerEvent: {}
+[11.841286] (-) TimerEvent: {}
+[11.941577] (-) TimerEvent: {}
+[12.041813] (-) TimerEvent: {}
+[12.142086] (-) TimerEvent: {}
+[12.242397] (-) TimerEvent: {}
+[12.342664] (-) TimerEvent: {}
+[12.442918] (-) TimerEvent: {}
+[12.543279] (-) TimerEvent: {}
+[12.643531] (-) TimerEvent: {}
+[12.743782] (-) TimerEvent: {}
+[12.844037] (-) TimerEvent: {}
+[12.944298] (-) TimerEvent: {}
+[13.044569] (-) TimerEvent: {}
+[13.144840] (-) TimerEvent: {}
+[13.245115] (-) TimerEvent: {}
+[13.345384] (-) TimerEvent: {}
+[13.445611] (-) TimerEvent: {}
+[13.545840] (-) TimerEvent: {}
+[13.646494] (-) TimerEvent: {}
+[13.746733] (-) TimerEvent: {}
+[13.846959] (-) TimerEvent: {}
+[13.947326] (-) TimerEvent: {}
+[14.047562] (-) TimerEvent: {}
+[14.147788] (-) TimerEvent: {}
+[14.248007] (-) TimerEvent: {}
+[14.348857] (-) TimerEvent: {}
+[14.450005] (-) TimerEvent: {}
+[14.550265] (-) TimerEvent: {}
+[14.617763] (yolov8_msgs) StdoutLine: {'line': b'[100/112] Building CXX object CMakeFiles/yolov8_msgs_matlab.dir/src/yolov8_msgs_BoundingBox2D_message.cpp.o\n'}
+[14.650363] (-) TimerEvent: {}
+[14.684658] (yolov8_msgs) StdoutLine: {'line': b'[101/112] Building CXX object CMakeFiles/yolov8_msgs_matlab.dir/src/yolov8_msgs_KeyPoint2DArray_message.cpp.o\n'}
+[14.750455] (-) TimerEvent: {}
+[14.837394] (yolov8_msgs) StdoutLine: {'line': b'[102/112] Building CXX object CMakeFiles/yolov8_msgs_matlab.dir/src/yolov8_msgs_BoundingBox3D_message.cpp.o\n'}
+[14.850612] (-) TimerEvent: {}
+[14.855949] (yolov8_msgs) StdoutLine: {'line': b'[103/112] Building CXX object CMakeFiles/yolov8_msgs_matlab.dir/src/yolov8_msgs_KeyPoint3DArray_message.cpp.o\n'}
+[14.909110] (yolov8_msgs) StdoutLine: {'line': b'[104/112] Building CXX object CMakeFiles/yolov8_msgs_matlab.dir/src/yolov8_msgs_KeyPoint2D_message.cpp.o\n'}
+[14.950640] (-) TimerEvent: {}
+[15.023452] (yolov8_msgs) StdoutLine: {'line': b'[105/112] Building CXX object CMakeFiles/yolov8_msgs_matlab.dir/src/yolov8_msgs_KeyPoint3D_message.cpp.o\n'}
+[15.050740] (-) TimerEvent: {}
+[15.127776] (yolov8_msgs) StdoutLine: {'line': b'[106/112] Building CXX object CMakeFiles/yolov8_msgs_matlab.dir/src/yolov8_msgs_Detection_message.cpp.o\n'}
+[15.151260] (-) TimerEvent: {}
+[15.203793] (yolov8_msgs) StdoutLine: {'line': b'[107/112] Building CXX object CMakeFiles/yolov8_msgs_matlab.dir/src/yolov8_msgs_DetectionArray_message.cpp.o\n'}
+[15.251350] (-) TimerEvent: {}
+[15.351608] (-) TimerEvent: {}
+[15.451859] (-) TimerEvent: {}
+[15.552110] (-) TimerEvent: {}
+[15.652353] (-) TimerEvent: {}
+[15.752595] (-) TimerEvent: {}
+[15.852834] (-) TimerEvent: {}
+[15.953035] (-) TimerEvent: {}
+[16.053272] (-) TimerEvent: {}
+[16.153523] (-) TimerEvent: {}
+[16.253766] (-) TimerEvent: {}
+[16.354008] (-) TimerEvent: {}
+[16.454255] (-) TimerEvent: {}
+[16.554474] (-) TimerEvent: {}
+[16.654696] (-) TimerEvent: {}
+[16.754936] (-) TimerEvent: {}
+[16.855176] (-) TimerEvent: {}
+[16.955428] (-) TimerEvent: {}
+[17.055646] (-) TimerEvent: {}
+[17.155895] (-) TimerEvent: {}
+[17.256128] (-) TimerEvent: {}
+[17.356399] (-) TimerEvent: {}
+[17.456639] (-) TimerEvent: {}
+[17.556888] (-) TimerEvent: {}
+[17.657118] (-) TimerEvent: {}
+[17.757353] (-) TimerEvent: {}
+[17.857603] (-) TimerEvent: {}
+[17.957840] (-) TimerEvent: {}
+[18.058059] (-) TimerEvent: {}
+[18.158300] (-) TimerEvent: {}
+[18.258550] (-) TimerEvent: {}
+[18.358803] (-) TimerEvent: {}
+[18.459030] (-) TimerEvent: {}
+[18.559274] (-) TimerEvent: {}
+[18.659518] (-) TimerEvent: {}
+[18.759738] (-) TimerEvent: {}
+[18.859973] (-) TimerEvent: {}
+[18.960196] (-) TimerEvent: {}
+[19.060441] (-) TimerEvent: {}
+[19.160682] (-) TimerEvent: {}
+[19.260922] (-) TimerEvent: {}
+[19.361147] (-) TimerEvent: {}
+[19.461396] (-) TimerEvent: {}
+[19.561654] (-) TimerEvent: {}
+[19.661920] (-) TimerEvent: {}
+[19.762150] (-) TimerEvent: {}
+[19.862365] (-) TimerEvent: {}
+[19.962576] (-) TimerEvent: {}
+[20.062788] (-) TimerEvent: {}
+[20.163025] (-) TimerEvent: {}
+[20.263255] (-) TimerEvent: {}
+[20.363460] (-) TimerEvent: {}
+[20.463686] (-) TimerEvent: {}
+[20.563930] (-) TimerEvent: {}
+[20.664148] (-) TimerEvent: {}
+[20.764382] (-) TimerEvent: {}
+[20.864597] (-) TimerEvent: {}
+[20.964826] (-) TimerEvent: {}
+[21.065000] (-) TimerEvent: {}
+[21.165205] (-) TimerEvent: {}
+[21.265438] (-) TimerEvent: {}
+[21.365678] (-) TimerEvent: {}
+[21.465907] (-) TimerEvent: {}
+[21.566136] (-) TimerEvent: {}
+[21.666368] (-) TimerEvent: {}
+[21.766573] (-) TimerEvent: {}
+[21.866780] (-) TimerEvent: {}
+[21.967011] (-) TimerEvent: {}
+[22.067250] (-) TimerEvent: {}
+[22.167467] (-) TimerEvent: {}
+[22.267809] (-) TimerEvent: {}
+[22.368099] (-) TimerEvent: {}
+[22.468357] (-) TimerEvent: {}
+[22.497463] (yolov8_msgs) StdoutLine: {'line': b'[108/112] Building CXX object CMakeFiles/yolov8_msgs_matlab.dir/src/yolov8_msgs_Point2D_message.cpp.o\n'}
+[22.568483] (-) TimerEvent: {}
+[22.605323] (yolov8_msgs) StdoutLine: {'line': b'[109/112] Building CXX object CMakeFiles/yolov8_msgs_matlab.dir/src/yolov8_msgs_Vector2_message.cpp.o\n'}
+[22.668604] (-) TimerEvent: {}
+[22.768852] (-) TimerEvent: {}
+[22.840456] (yolov8_msgs) StdoutLine: {'line': b'[110/112] Building CXX object CMakeFiles/yolov8_msgs_matlab.dir/src/yolov8_msgs_Pose2D_message.cpp.o\n'}
+[22.862670] (yolov8_msgs) StdoutLine: {'line': b'[111/112] Building CXX object CMakeFiles/yolov8_msgs_matlab.dir/src/yolov8_msgs_Mask_message.cpp.o\n'}
+[22.868960] (-) TimerEvent: {}
+[22.969190] (-) TimerEvent: {}
+[23.069429] (-) TimerEvent: {}
+[23.169664] (-) TimerEvent: {}
+[23.269903] (-) TimerEvent: {}
+[23.370151] (-) TimerEvent: {}
+[23.470405] (-) TimerEvent: {}
+[23.570638] (-) TimerEvent: {}
+[23.670867] (-) TimerEvent: {}
+[23.771102] (-) TimerEvent: {}
+[23.871331] (-) TimerEvent: {}
+[23.971565] (-) TimerEvent: {}
+[24.071801] (-) TimerEvent: {}
+[24.172028] (-) TimerEvent: {}
+[24.272231] (-) TimerEvent: {}
+[24.372465] (-) TimerEvent: {}
+[24.472694] (-) TimerEvent: {}
+[24.572961] (-) TimerEvent: {}
+[24.673217] (-) TimerEvent: {}
+[24.773450] (-) TimerEvent: {}
+[24.873675] (-) TimerEvent: {}
+[24.973907] (-) TimerEvent: {}
+[25.074142] (-) TimerEvent: {}
+[25.174375] (-) TimerEvent: {}
+[25.274606] (-) TimerEvent: {}
+[25.374834] (-) TimerEvent: {}
+[25.475066] (-) TimerEvent: {}
+[25.511803] (yolov8_msgs) StdoutLine: {'line': b'[112/112] Linking CXX shared library libyolov8_msgs_matlab.so\n'}
+[25.512722] (yolov8_msgs) CommandEnded: {'returncode': 0}
+[25.524684] (yolov8_msgs) JobProgress: {'identifier': 'yolov8_msgs', 'progress': 'install'}
+[25.528245] (yolov8_msgs) Command: {'cmd': ['/usr/local/MATLAB/R2023b/bin/glnxa64/cmake/bin/cmake', '--install', '/home/yong/YongJun_ws/src/YOLO/Yolov8/matlab_msg_gen/glnxa64/build/yolov8_msgs'], 'cwd': '/home/yong/YongJun_ws/src/YOLO/Yolov8/matlab_msg_gen/glnxa64/build/yolov8_msgs', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('ARCH', 'glnxa64'), ('CUSTOM_LD_LIBRARY_PATH', ''), ('USER', 'yong'), ('LOCAL_PYTHON_VENV_PATH', '/home/yong/.matlab/R2023b/ros2/glnxa64/venv'), ('MEMKIND_HEAP_MANAGER', 'TBB'), ('CUSTOM_AMENT_PREFIX_PATH', '/usr/local/MATLAB/R2023b/sys/ros2/glnxa64/ros2'), ('SSH_AGENT_PID', '1232'), ('XDG_SESSION_TYPE', 'x11'), ('KMP_HANDLE_SIGNALS', '0'), ('SHLVL', '2'), ('ICU_TIMEZONE_FILES_DIR', '/usr/local/MATLAB/R2023b/bin/icutzdata'), ('LD_LIBRARY_PATH', ':/usr/local/MATLAB/R2023b/sys/ros2/glnxa64/ros2/lib:/usr/local/MATLAB/R2023b/sys/os/glnxa64:/usr/local/MATLAB/R2023b/bin/glnxa64:/home/yong/.MathWorks/cRdHyR7QwVUi_xWfrkSUa0wupotHwscVQEmScJoFWX4/bin/glnxa64:/usr/local/MATLAB/R2023b/extern/lib/glnxa64:/usr/local/MATLAB/R2023b/cefclient/sys/os/glnxa64:/usr/local/MATLAB/R2023b/runtime/glnxa64:/usr/local/MATLAB/R2023b/sys/java/jre/glnxa64/jre/lib/amd64/native_threads:/usr/local/MATLAB/R2023b/sys/java/jre/glnxa64/jre/lib/amd64/server'), ('BASEMATLABPATH', ''), ('HOME', '/home/yong'), ('AUTOMOUNT_MAP', ''), ('OLDPWD', '/usr/local/MATLAB/R2023b'), ('DESKTOP_SESSION', 'ubuntu'), ('MW_LD_SHIM', '/usr/local/MATLAB/R2023b/bin/glnxa64/ld_shim.so.2.31.ubuntu_20_04'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', ''), ('PS1', '(venv)'), ('LIBVA_MESSAGING_LEVEL', '0'), ('MANAGERPID', '1108'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('TERMINATOR_DBUS_NAME', 'net.tenshu.Terminator21a9d5db22c73a993ff0b42f64b396873'), ('GIO_LAUNCHED_DESKTOP_FILE_PID', '2052'), ('CUSTOM_SITE_PACKAGES_PATH', ''), ('IM_CONFIG_PHASE', '1'), ('COLCON_PREFIX_PATH', '/usr/local/MATLAB/R2023b/sys/ros2/glnxa64/ros2:/usr/local/MATLAB/R2023b/sys/ros2/glnxa64/ros2'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'yong'), ('JOURNAL_STREAM', '8:37739'), ('_', '/home/yong/.matlab/R2023b/ros2/glnxa64/venv/bin/colcon'), ('PKG_CONFIG_PATH', '/usr/local/MATLAB/R2023b/sys/ros2/glnxa64/ros2/lib/pkgconfig'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'yong'), ('TERM', 'dumb'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('WINDOWPATH', '2'), ('PATH', '/usr/local/MATLAB/R2023b/bin/glnxa64/cmake/bin::/usr/local/MATLAB/R2023b/sys/ros2/glnxa64/ros2/bin:/home/yong/.matlab/R2023b/ros2/glnxa64/venv/bin:/home/yong/.matlab/R2023b/ros2/glnxa64/venv/bin:/usr/local/MATLAB/R2023b/toolbox/shared/coder/ninja/glnxa64:/home/yong/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('SESSION_MANAGER', 'local/Yong:@/tmp/.ICE-unix/1279,unix/Yong:/tmp/.ICE-unix/1279'), ('INVOCATION_ID', '7b324249d4b742a0ac467c093e8fd076'), ('XDG_MENU_PREFIX', 'gnome-'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('TOOLBOX', '/usr/local/MATLAB/R2023b/toolbox'), ('MKL_DOMAIN_NUM_THREADS', ''), ('KMP_INIT_AT_FORK', 'false'), ('DISPLAY', ':0'), ('TERMINATOR_DBUS_PATH', '/net/tenshu/Terminator2'), ('LD_PRELOAD', ''), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('PRE_LD_PRELOAD', ''), ('RMW_IMPLEMENTATION', ''), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/usr/local/MATLAB/R2023b/sys/ros2/glnxa64/ros2:/usr/local/MATLAB/R2023b/sys/ros2/glnxa64/ros2'), ('SHELL', '/bin/bash'), ('TERMINATOR_UUID', 'urn:uuid:71d10f79-4adb-478c-9cc3-4c5a1ad84126'), ('CMAKE_PATH', '/usr/local/MATLAB/R2023b/bin/glnxa64/cmake/bin'), ('XFILESEARCHPATH', '/usr/local/MATLAB/R2023b/sys/java/jre/glnxa64/jre/lib/locale/%L/%T/%N%S:'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('OSG_LD_LIBRARY_PATH', '/usr/local/MATLAB/R2023b/sys/openscenegraph/lib/glnxa64'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('VIRTUAL_ENV', '/home/yong/.matlab/R2023b/ros2/glnxa64/venv'), ('CUSTOM_PATH', ''), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/yong/YongJun_ws/src/YOLO/Yolov8/matlab_msg_gen/glnxa64/build/yolov8_msgs'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('DYLD_LIBRARY_PATH', ':/usr/local/MATLAB/R2023b/sys/ros2/glnxa64/ros2/lib:'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('MKL_NUM_THREADS', ''), ('MW_PATCH_OFFSETS', '0000104000000050'), ('PYTHONPATH', ':/usr/local/MATLAB/R2023b/sys/ros2/glnxa64/ros2/lib/python3.9/site-packages:/home/yong/.matlab/R2023b/ros2/glnxa64/venv/lib/python3.9/site-packages:'), ('LC_NUMERIC', 'C'), ('COLCON', '1'), ('VTE_VERSION', '6003'), ('CMAKE_PREFIX_PATH', '/usr/local/MATLAB/R2023b/sys/ros2/glnxa64/ros2:/usr/local/MATLAB/R2023b/sys/ros2/glnxa64/ros2')]), 'shell': False}
+[25.530481] (yolov8_msgs) StdoutLine: {'line': b'-- Install configuration: "Release"\n'}
+[25.530638] (yolov8_msgs) StdoutLine: {'line': b'-- Installing: /home/yong/YongJun_ws/src/YOLO/Yolov8/matlab_msg_gen/glnxa64/install/share/ament_index/resource_index/rosidl_interfaces/yolov8_msgs\n'}
+[25.530796] (yolov8_msgs) StdoutLine: {'line': b'-- Installing: /home/yong/YongJun_ws/src/YOLO/Yolov8/matlab_msg_gen/glnxa64/install/include/yolov8_msgs/yolov8_msgs\n'}
+[25.530916] (yolov8_msgs) StdoutLine: {'line': b'-- Installing: /home/yong/YongJun_ws/src/YOLO/Yolov8/matlab_msg_gen/glnxa64/install/include/yolov8_msgs/yolov8_msgs/msg\n'}
+[25.530971] (yolov8_msgs) StdoutLine: {'line': b'-- Installing: /home/yong/YongJun_ws/src/YOLO/Yolov8/matlab_msg_gen/glnxa64/install/include/yolov8_msgs/yolov8_msgs/msg/key_point2_d.h\n'}
+[25.531022] (yolov8_msgs) StdoutLine: {'line': b'-- Installing: /home/yong/YongJun_ws/src/YOLO/Yolov8/matlab_msg_gen/glnxa64/install/include/yolov8_msgs/yolov8_msgs/msg/detection_array.h\n'}
+[25.531070] (yolov8_msgs) StdoutLine: {'line': b'-- Installing: /home/yong/YongJun_ws/src/YOLO/Yolov8/matlab_msg_gen/glnxa64/install/include/yolov8_msgs/yolov8_msgs/msg/detection.h\n'}
+[25.531148] (yolov8_msgs) StdoutLine: {'line': b'-- Installing: /home/yong/YongJun_ws/src/YOLO/Yolov8/matlab_msg_gen/glnxa64/install/include/yolov8_msgs/yolov8_msgs/msg/rosidl_generator_c__visibility_control.h\n'}
+[25.531207] (yolov8_msgs) StdoutLine: {'line': b'-- Installing: /home/yong/YongJun_ws/src/YOLO/Yolov8/matlab_msg_gen/glnxa64/install/include/yolov8_msgs/yolov8_msgs/msg/point2_d.h\n'}
+[25.531270] (yolov8_msgs) StdoutLine: {'line': b'-- Installing: /home/yong/YongJun_ws/src/YOLO/Yolov8/matlab_msg_gen/glnxa64/install/include/yolov8_msgs/yolov8_msgs/msg/key_point3_d_array.h\n'}
+[25.531338] (yolov8_msgs) StdoutLine: {'line': b'-- Installing: /home/yong/YongJun_ws/src/YOLO/Yolov8/matlab_msg_gen/glnxa64/install/include/yolov8_msgs/yolov8_msgs/msg/mask.h\n'}
+[25.531386] (yolov8_msgs) StdoutLine: {'line': b'-- Installing: /home/yong/YongJun_ws/src/YOLO/Yolov8/matlab_msg_gen/glnxa64/install/include/yolov8_msgs/yolov8_msgs/msg/vector2.h\n'}
+[25.531450] (yolov8_msgs) StdoutLine: {'line': b'-- Installing: /home/yong/YongJun_ws/src/YOLO/Yolov8/matlab_msg_gen/glnxa64/install/include/yolov8_msgs/yolov8_msgs/msg/pose2_d.h\n'}
+[25.531498] (yolov8_msgs) StdoutLine: {'line': b'-- Installing: /home/yong/YongJun_ws/src/YOLO/Yolov8/matlab_msg_gen/glnxa64/install/include/yolov8_msgs/yolov8_msgs/msg/bounding_box2_d.h\n'}
+[25.531565] (yolov8_msgs) StdoutLine: {'line': b'-- Installing: /home/yong/YongJun_ws/src/YOLO/Yolov8/matlab_msg_gen/glnxa64/install/include/yolov8_msgs/yolov8_msgs/msg/key_point2_d_array.h\n'}
+[25.531624] (yolov8_msgs) StdoutLine: {'line': b'-- Installing: /home/yong/YongJun_ws/src/YOLO/Yolov8/matlab_msg_gen/glnxa64/install/include/yolov8_msgs/yolov8_msgs/msg/detail\n'}
+[25.531672] (yolov8_msgs) StdoutLine: {'line': b'-- Installing: /home/yong/YongJun_ws/src/YOLO/Yolov8/matlab_msg_gen/glnxa64/install/include/yolov8_msgs/yolov8_msgs/msg/detail/bounding_box2_d__struct.h\n'}
+[25.531719] (yolov8_msgs) StdoutLine: {'line': b'-- Installing: /home/yong/YongJun_ws/src/YOLO/Yolov8/matlab_msg_gen/glnxa64/install/include/yolov8_msgs/yolov8_msgs/msg/detail/key_point3_d_array__struct.h\n'}
+[25.531778] (yolov8_msgs) StdoutLine: {'line': b'-- Installing: /home/yong/YongJun_ws/src/YOLO/Yolov8/matlab_msg_gen/glnxa64/install/include/yolov8_msgs/yolov8_msgs/msg/detail/bounding_box3_d__type_support.h\n'}
+[25.531857] (yolov8_msgs) StdoutLine: {'line': b'-- Installing: /home/yong/YongJun_ws/src/YOLO/Yolov8/matlab_msg_gen/glnxa64/install/include/yolov8_msgs/yolov8_msgs/msg/detail/vector2__functions.h\n'}
+[25.531924] (yolov8_msgs) StdoutLine: {'line': b'-- Installing: /home/yong/YongJun_ws/src/YOLO/Yolov8/matlab_msg_gen/glnxa64/install/include/yolov8_msgs/yolov8_msgs/msg/detail/detection__functions.h\n'}
+[25.531971] (yolov8_msgs) StdoutLine: {'line': b'-- Installing: /home/yong/YongJun_ws/src/YOLO/Yolov8/matlab_msg_gen/glnxa64/install/include/yolov8_msgs/yolov8_msgs/msg/detail/key_point2_d__type_support.h\n'}
+[25.532017] (yolov8_msgs) StdoutLine: {'line': b'-- Installing: /home/yong/YongJun_ws/src/YOLO/Yolov8/matlab_msg_gen/glnxa64/install/include/yolov8_msgs/yolov8_msgs/msg/detail/key_point3_d__functions.h\n'}
+[25.532064] (yolov8_msgs) StdoutLine: {'line': b'-- Installing: /home/yong/YongJun_ws/src/YOLO/Yolov8/matlab_msg_gen/glnxa64/install/include/yolov8_msgs/yolov8_msgs/msg/detail/mask__type_support.h\n'}
+[25.532111] (yolov8_msgs) StdoutLine: {'line': b'-- Installing: /home/yong/YongJun_ws/src/YOLO/Yolov8/matlab_msg_gen/glnxa64/install/include/yolov8_msgs/yolov8_msgs/msg/detail/mask__functions.c\n'}
+[25.532181] (yolov8_msgs) StdoutLine: {'line': b'-- Installing: /home/yong/YongJun_ws/src/YOLO/Yolov8/matlab_msg_gen/glnxa64/install/include/yolov8_msgs/yolov8_msgs/msg/detail/vector2__type_support.h\n'}
+[25.532229] (yolov8_msgs) StdoutLine: {'line': b'-- Installing: /home/yong/YongJun_ws/src/YOLO/Yolov8/matlab_msg_gen/glnxa64/install/include/yolov8_msgs/yolov8_msgs/msg/detail/key_point2_d__functions.c\n'}
+[25.532276] (yolov8_msgs) StdoutLine: {'line': b'-- Installing: /home/yong/YongJun_ws/src/YOLO/Yolov8/matlab_msg_gen/glnxa64/install/include/yolov8_msgs/yolov8_msgs/msg/detail/detection_array__functions.c\n'}
+[25.532322] (yolov8_msgs) StdoutLine: {'line': b'-- Installing: /home/yong/YongJun_ws/src/YOLO/Yolov8/matlab_msg_gen/glnxa64/install/include/yolov8_msgs/yolov8_msgs/msg/detail/bounding_box3_d__functions.h\n'}
+[25.532368] (yolov8_msgs) StdoutLine: {'line': b'-- Installing: /home/yong/YongJun_ws/src/YOLO/Yolov8/matlab_msg_gen/glnxa64/install/include/yolov8_msgs/yolov8_msgs/msg/detail/point2_d__struct.h\n'}
+[25.532415] (yolov8_msgs) StdoutLine: {'line': b'-- Installing: /home/yong/YongJun_ws/src/YOLO/Yolov8/matlab_msg_gen/glnxa64/install/include/yolov8_msgs/yolov8_msgs/msg/detail/detection__struct.h\n'}
+[25.532491] (yolov8_msgs) StdoutLine: {'line': b'-- Installing: /home/yong/YongJun_ws/src/YOLO/Yolov8/matlab_msg_gen/glnxa64/install/include/yolov8_msgs/yolov8_msgs/msg/detail/vector2__struct.h\n'}
+[25.532548] (yolov8_msgs) StdoutLine: {'line': b'-- Installing: /home/yong/YongJun_ws/src/YOLO/Yolov8/matlab_msg_gen/glnxa64/install/include/yolov8_msgs/yolov8_msgs/msg/detail/detection__functions.c\n'}
+[25.532595] (yolov8_msgs) StdoutLine: {'line': b'-- Installing: /home/yong/YongJun_ws/src/YOLO/Yolov8/matlab_msg_gen/glnxa64/install/include/yolov8_msgs/yolov8_msgs/msg/detail/point2_d__functions.h\n'}
+[25.532662] (yolov8_msgs) StdoutLine: {'line': b'-- Installing: /home/yong/YongJun_ws/src/YOLO/Yolov8/matlab_msg_gen/glnxa64/install/include/yolov8_msgs/yolov8_msgs/msg/detail/pose2_d__struct.h\n'}
+[25.532710] (yolov8_msgs) StdoutLine: {'line': b'-- Installing: /home/yong/YongJun_ws/src/YOLO/Yolov8/matlab_msg_gen/glnxa64/install/include/yolov8_msgs/yolov8_msgs/msg/detail/point2_d__type_support.h\n'}
+[25.532778] (yolov8_msgs) StdoutLine: {'line': b'-- Installing: /home/yong/YongJun_ws/src/YOLO/Yolov8/matlab_msg_gen/glnxa64/install/include/yolov8_msgs/yolov8_msgs/msg/detail/key_point2_d__struct.h\n'}
+[25.532833] (yolov8_msgs) StdoutLine: {'line': b'-- Installing: /home/yong/YongJun_ws/src/YOLO/Yolov8/matlab_msg_gen/glnxa64/install/include/yolov8_msgs/yolov8_msgs/msg/detail/detection_array__functions.h\n'}
+[25.532941] (yolov8_msgs) StdoutLine: {'line': b'-- Installing: /home/yong/YongJun_ws/src/YOLO/Yolov8/matlab_msg_gen/glnxa64/install/include/yolov8_msgs/yolov8_msgs/msg/detail/key_point2_d_array__type_support.h\n'}
+[25.532994] (yolov8_msgs) StdoutLine: {'line': b'-- Installing: /home/yong/YongJun_ws/src/YOLO/Yolov8/matlab_msg_gen/glnxa64/install/include/yolov8_msgs/yolov8_msgs/msg/detail/key_point3_d_array__functions.h\n'}
+[25.533069] (yolov8_msgs) StdoutLine: {'line': b'-- Installing: /home/yong/YongJun_ws/src/YOLO/Yolov8/matlab_msg_gen/glnxa64/install/include/yolov8_msgs/yolov8_msgs/msg/detail/bounding_box3_d__struct.h\n'}
+[25.533175] (yolov8_msgs) StdoutLine: {'line': b'-- Installing: /home/yong/YongJun_ws/src/YOLO/Yolov8/matlab_msg_gen/glnxa64/install/include/yolov8_msgs/yolov8_msgs/msg/detail/key_point2_d_array__struct.h\n'}
+[25.533231] (yolov8_msgs) StdoutLine: {'line': b'-- Installing: /home/yong/YongJun_ws/src/YOLO/Yolov8/matlab_msg_gen/glnxa64/install/include/yolov8_msgs/yolov8_msgs/msg/detail/detection__type_support.h\n'}
+[25.533278] (yolov8_msgs) StdoutLine: {'line': b'-- Installing: /home/yong/YongJun_ws/src/YOLO/Yolov8/matlab_msg_gen/glnxa64/install/include/yolov8_msgs/yolov8_msgs/msg/detail/pose2_d__type_support.h\n'}
+[25.533325] (yolov8_msgs) StdoutLine: {'line': b'-- Installing: /home/yong/YongJun_ws/src/YOLO/Yolov8/matlab_msg_gen/glnxa64/install/include/yolov8_msgs/yolov8_msgs/msg/detail/key_point2_d__functions.h\n'}
+[25.533372] (yolov8_msgs) StdoutLine: {'line': b'-- Installing: /home/yong/YongJun_ws/src/YOLO/Yolov8/matlab_msg_gen/glnxa64/install/include/yolov8_msgs/yolov8_msgs/msg/detail/key_point3_d_array__type_support.h\n'}
+[25.533419] (yolov8_msgs) StdoutLine: {'line': b'-- Installing: /home/yong/YongJun_ws/src/YOLO/Yolov8/matlab_msg_gen/glnxa64/install/include/yolov8_msgs/yolov8_msgs/msg/detail/key_point3_d_array__functions.c\n'}
+[25.533467] (yolov8_msgs) StdoutLine: {'line': b'-- Installing: /home/yong/YongJun_ws/src/YOLO/Yolov8/matlab_msg_gen/glnxa64/install/include/yolov8_msgs/yolov8_msgs/msg/detail/pose2_d__functions.c\n'}
+[25.533514] (yolov8_msgs) StdoutLine: {'line': b'-- Installing: /home/yong/YongJun_ws/src/YOLO/Yolov8/matlab_msg_gen/glnxa64/install/include/yolov8_msgs/yolov8_msgs/msg/detail/bounding_box2_d__functions.h\n'}
+[25.533561] (yolov8_msgs) StdoutLine: {'line': b'-- Installing: /home/yong/YongJun_ws/src/YOLO/Yolov8/matlab_msg_gen/glnxa64/install/include/yolov8_msgs/yolov8_msgs/msg/detail/key_point2_d_array__functions.c\n'}
+[25.533608] (yolov8_msgs) StdoutLine: {'line': b'-- Installing: /home/yong/YongJun_ws/src/YOLO/Yolov8/matlab_msg_gen/glnxa64/install/include/yolov8_msgs/yolov8_msgs/msg/detail/bounding_box2_d__type_support.h\n'}
+[25.533675] (yolov8_msgs) StdoutLine: {'line': b'-- Installing: /home/yong/YongJun_ws/src/YOLO/Yolov8/matlab_msg_gen/glnxa64/install/include/yolov8_msgs/yolov8_msgs/msg/detail/key_point3_d__struct.h\n'}
+[25.533725] (yolov8_msgs) StdoutLine: {'line': b'-- Installing: /home/yong/YongJun_ws/src/YOLO/Yolov8/matlab_msg_gen/glnxa64/install/include/yolov8_msgs/yolov8_msgs/msg/detail/bounding_box2_d__functions.c\n'}
+[25.533772] (yolov8_msgs) StdoutLine: {'line': b'-- Installing: /home/yong/YongJun_ws/src/YOLO/Yolov8/matlab_msg_gen/glnxa64/install/include/yolov8_msgs/yolov8_msgs/msg/detail/key_point2_d_array__functions.h\n'}
+[25.533819] (yolov8_msgs) StdoutLine: {'line': b'-- Installing: /home/yong/YongJun_ws/src/YOLO/Yolov8/matlab_msg_gen/glnxa64/install/include/yolov8_msgs/yolov8_msgs/msg/detail/point2_d__functions.c\n'}
+[25.533865] (yolov8_msgs) StdoutLine: {'line': b'-- Installing: /home/yong/YongJun_ws/src/YOLO/Yolov8/matlab_msg_gen/glnxa64/install/include/yolov8_msgs/yolov8_msgs/msg/detail/mask__functions.h\n'}
+[25.533911] (yolov8_msgs) StdoutLine: {'line': b'-- Installing: /home/yong/YongJun_ws/src/YOLO/Yolov8/matlab_msg_gen/glnxa64/install/include/yolov8_msgs/yolov8_msgs/msg/detail/detection_array__struct.h\n'}
+[25.533958] (yolov8_msgs) StdoutLine: {'line': b'-- Installing: /home/yong/YongJun_ws/src/YOLO/Yolov8/matlab_msg_gen/glnxa64/install/include/yolov8_msgs/yolov8_msgs/msg/detail/vector2__functions.c\n'}
+[25.534005] (yolov8_msgs) StdoutLine: {'line': b'-- Installing: /home/yong/YongJun_ws/src/YOLO/Yolov8/matlab_msg_gen/glnxa64/install/include/yolov8_msgs/yolov8_msgs/msg/detail/detection_array__type_support.h\n'}
+[25.534053] (yolov8_msgs) StdoutLine: {'line': b'-- Installing: /home/yong/YongJun_ws/src/YOLO/Yolov8/matlab_msg_gen/glnxa64/install/include/yolov8_msgs/yolov8_msgs/msg/detail/bounding_box3_d__functions.c\n'}
+[25.534120] (yolov8_msgs) StdoutLine: {'line': b'-- Installing: /home/yong/YongJun_ws/src/YOLO/Yolov8/matlab_msg_gen/glnxa64/install/include/yolov8_msgs/yolov8_msgs/msg/detail/mask__struct.h\n'}
+[25.534169] (yolov8_msgs) StdoutLine: {'line': b'-- Installing: /home/yong/YongJun_ws/src/YOLO/Yolov8/matlab_msg_gen/glnxa64/install/include/yolov8_msgs/yolov8_msgs/msg/detail/pose2_d__functions.h\n'}
+[25.534215] (yolov8_msgs) StdoutLine: {'line': b'-- Installing: /home/yong/YongJun_ws/src/YOLO/Yolov8/matlab_msg_gen/glnxa64/install/include/yolov8_msgs/yolov8_msgs/msg/detail/key_point3_d__type_support.h\n'}
+[25.534262] (yolov8_msgs) StdoutLine: {'line': b'-- Installing: /home/yong/YongJun_ws/src/YOLO/Yolov8/matlab_msg_gen/glnxa64/install/include/yolov8_msgs/yolov8_msgs/msg/detail/key_point3_d__functions.c\n'}
+[25.534355] (yolov8_msgs) StdoutLine: {'line': b'-- Installing: /home/yong/YongJun_ws/src/YOLO/Yolov8/matlab_msg_gen/glnxa64/install/include/yolov8_msgs/yolov8_msgs/msg/key_point3_d.h\n'}
+[25.534403] (yolov8_msgs) StdoutLine: {'line': b'-- Installing: /home/yong/YongJun_ws/src/YOLO/Yolov8/matlab_msg_gen/glnxa64/install/include/yolov8_msgs/yolov8_msgs/msg/bounding_box3_d.h\n'}
+[25.534460] (yolov8_msgs) StdoutLine: {'line': b'-- Installing: /home/yong/YongJun_ws/src/YOLO/Yolov8/matlab_msg_gen/glnxa64/install/share/yolov8_msgs/environment/library_path.sh\n'}
+[25.534527] (yolov8_msgs) StdoutLine: {'line': b'-- Installing: /home/yong/YongJun_ws/src/YOLO/Yolov8/matlab_msg_gen/glnxa64/install/share/yolov8_msgs/environment/library_path.dsv\n'}
+[25.534593] (yolov8_msgs) StdoutLine: {'line': b'-- Installing: /home/yong/YongJun_ws/src/YOLO/Yolov8/matlab_msg_gen/glnxa64/install/lib/libyolov8_msgs__rosidl_generator_c.so\n'}
+[25.534641] (yolov8_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/yong/YongJun_ws/src/YOLO/Yolov8/matlab_msg_gen/glnxa64/install/include/yolov8_msgs/yolov8_msgs\n'}
+[25.534708] (yolov8_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/yong/YongJun_ws/src/YOLO/Yolov8/matlab_msg_gen/glnxa64/install/include/yolov8_msgs/yolov8_msgs/msg\n'}
+[25.534756] (yolov8_msgs) StdoutLine: {'line': b'-- Installing: /home/yong/YongJun_ws/src/YOLO/Yolov8/matlab_msg_gen/glnxa64/install/include/yolov8_msgs/yolov8_msgs/msg/rosidl_typesupport_fastrtps_c__visibility_control.h\n'}
+[25.534806] (yolov8_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/yong/YongJun_ws/src/YOLO/Yolov8/matlab_msg_gen/glnxa64/install/include/yolov8_msgs/yolov8_msgs/msg/detail\n'}
+[25.534879] (yolov8_msgs) StdoutLine: {'line': b'-- Installing: /home/yong/YongJun_ws/src/YOLO/Yolov8/matlab_msg_gen/glnxa64/install/include/yolov8_msgs/yolov8_msgs/msg/detail/key_point2_d__rosidl_typesupport_fastrtps_c.h\n'}
+[25.534937] (yolov8_msgs) StdoutLine: {'line': b'-- Installing: /home/yong/YongJun_ws/src/YOLO/Yolov8/matlab_msg_gen/glnxa64/install/include/yolov8_msgs/yolov8_msgs/msg/detail/key_point3_d__rosidl_typesupport_fastrtps_c.h\n'}
+[25.534984] (yolov8_msgs) StdoutLine: {'line': b'-- Installing: /home/yong/YongJun_ws/src/YOLO/Yolov8/matlab_msg_gen/glnxa64/install/include/yolov8_msgs/yolov8_msgs/msg/detail/mask__rosidl_typesupport_fastrtps_c.h\n'}
+[25.535031] (yolov8_msgs) StdoutLine: {'line': b'-- Installing: /home/yong/YongJun_ws/src/YOLO/Yolov8/matlab_msg_gen/glnxa64/install/include/yolov8_msgs/yolov8_msgs/msg/detail/detection_array__rosidl_typesupport_fastrtps_c.h\n'}
+[25.535078] (yolov8_msgs) StdoutLine: {'line': b'-- Installing: /home/yong/YongJun_ws/src/YOLO/Yolov8/matlab_msg_gen/glnxa64/install/include/yolov8_msgs/yolov8_msgs/msg/detail/detection__rosidl_typesupport_fastrtps_c.h\n'}
+[25.535125] (yolov8_msgs) StdoutLine: {'line': b'-- Installing: /home/yong/YongJun_ws/src/YOLO/Yolov8/matlab_msg_gen/glnxa64/install/include/yolov8_msgs/yolov8_msgs/msg/detail/key_point2_d_array__rosidl_typesupport_fastrtps_c.h\n'}
+[25.535172] (yolov8_msgs) StdoutLine: {'line': b'-- Installing: /home/yong/YongJun_ws/src/YOLO/Yolov8/matlab_msg_gen/glnxa64/install/include/yolov8_msgs/yolov8_msgs/msg/detail/point2_d__rosidl_typesupport_fastrtps_c.h\n'}
+[25.535219] (yolov8_msgs) StdoutLine: {'line': b'-- Installing: /home/yong/YongJun_ws/src/YOLO/Yolov8/matlab_msg_gen/glnxa64/install/include/yolov8_msgs/yolov8_msgs/msg/detail/bounding_box3_d__rosidl_typesupport_fastrtps_c.h\n'}
+[25.535266] (yolov8_msgs) StdoutLine: {'line': b'-- Installing: /home/yong/YongJun_ws/src/YOLO/Yolov8/matlab_msg_gen/glnxa64/install/include/yolov8_msgs/yolov8_msgs/msg/detail/pose2_d__rosidl_typesupport_fastrtps_c.h\n'}
+[25.535312] (yolov8_msgs) StdoutLine: {'line': b'-- Installing: /home/yong/YongJun_ws/src/YOLO/Yolov8/matlab_msg_gen/glnxa64/install/include/yolov8_msgs/yolov8_msgs/msg/detail/vector2__rosidl_typesupport_fastrtps_c.h\n'}
+[25.535359] (yolov8_msgs) StdoutLine: {'line': b'-- Installing: /home/yong/YongJun_ws/src/YOLO/Yolov8/matlab_msg_gen/glnxa64/install/include/yolov8_msgs/yolov8_msgs/msg/detail/key_point3_d_array__rosidl_typesupport_fastrtps_c.h\n'}
+[25.535408] (yolov8_msgs) StdoutLine: {'line': b'-- Installing: /home/yong/YongJun_ws/src/YOLO/Yolov8/matlab_msg_gen/glnxa64/install/include/yolov8_msgs/yolov8_msgs/msg/detail/bounding_box2_d__rosidl_typesupport_fastrtps_c.h\n'}
+[25.535455] (yolov8_msgs) StdoutLine: {'line': b'-- Installing: /home/yong/YongJun_ws/src/YOLO/Yolov8/matlab_msg_gen/glnxa64/install/lib/libyolov8_msgs__rosidl_typesupport_fastrtps_c.so\n'}
+[25.535500] (yolov8_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/yong/YongJun_ws/src/YOLO/Yolov8/matlab_msg_gen/glnxa64/install/include/yolov8_msgs/yolov8_msgs\n'}
+[25.535558] (yolov8_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/yong/YongJun_ws/src/YOLO/Yolov8/matlab_msg_gen/glnxa64/install/include/yolov8_msgs/yolov8_msgs/msg\n'}
+[25.535604] (yolov8_msgs) StdoutLine: {'line': b'-- Installing: /home/yong/YongJun_ws/src/YOLO/Yolov8/matlab_msg_gen/glnxa64/install/include/yolov8_msgs/yolov8_msgs/msg/rosidl_typesupport_introspection_c__visibility_control.h\n'}
+[25.535650] (yolov8_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/yong/YongJun_ws/src/YOLO/Yolov8/matlab_msg_gen/glnxa64/install/include/yolov8_msgs/yolov8_msgs/msg/detail\n'}
+[25.535697] (yolov8_msgs) StdoutLine: {'line': b'-- Installing: /home/yong/YongJun_ws/src/YOLO/Yolov8/matlab_msg_gen/glnxa64/install/include/yolov8_msgs/yolov8_msgs/msg/detail/key_point3_d_array__rosidl_typesupport_introspection_c.h\n'}
+[25.535790] (yolov8_msgs) StdoutLine: {'line': b'-- Installing: /home/yong/YongJun_ws/src/YOLO/Yolov8/matlab_msg_gen/glnxa64/install/include/yolov8_msgs/yolov8_msgs/msg/detail/bounding_box2_d__rosidl_typesupport_introspection_c.h\n'}
+[25.535839] (yolov8_msgs) StdoutLine: {'line': b'-- Installing: /home/yong/YongJun_ws/src/YOLO/Yolov8/matlab_msg_gen/glnxa64/install/include/yolov8_msgs/yolov8_msgs/msg/detail/key_point2_d__type_support.c\n'}
+[25.535886] (yolov8_msgs) StdoutLine: {'line': b'-- Installing: /home/yong/YongJun_ws/src/YOLO/Yolov8/matlab_msg_gen/glnxa64/install/include/yolov8_msgs/yolov8_msgs/msg/detail/detection__type_support.c\n'}
+[25.535933] (yolov8_msgs) StdoutLine: {'line': b'-- Installing: /home/yong/YongJun_ws/src/YOLO/Yolov8/matlab_msg_gen/glnxa64/install/include/yolov8_msgs/yolov8_msgs/msg/detail/key_point2_d__rosidl_typesupport_introspection_c.h\n'}
+[25.535980] (yolov8_msgs) StdoutLine: {'line': b'-- Installing: /home/yong/YongJun_ws/src/YOLO/Yolov8/matlab_msg_gen/glnxa64/install/include/yolov8_msgs/yolov8_msgs/msg/detail/key_point2_d_array__rosidl_typesupport_introspection_c.h\n'}
+[25.536028] (yolov8_msgs) StdoutLine: {'line': b'-- Installing: /home/yong/YongJun_ws/src/YOLO/Yolov8/matlab_msg_gen/glnxa64/install/include/yolov8_msgs/yolov8_msgs/msg/detail/detection__rosidl_typesupport_introspection_c.h\n'}
+[25.536074] (yolov8_msgs) StdoutLine: {'line': b'-- Installing: /home/yong/YongJun_ws/src/YOLO/Yolov8/matlab_msg_gen/glnxa64/install/include/yolov8_msgs/yolov8_msgs/msg/detail/vector2__type_support.c\n'}
+[25.536120] (yolov8_msgs) StdoutLine: {'line': b'-- Installing: /home/yong/YongJun_ws/src/YOLO/Yolov8/matlab_msg_gen/glnxa64/install/include/yolov8_msgs/yolov8_msgs/msg/detail/point2_d__rosidl_typesupport_introspection_c.h\n'}
+[25.536167] (yolov8_msgs) StdoutLine: {'line': b'-- Installing: /home/yong/YongJun_ws/src/YOLO/Yolov8/matlab_msg_gen/glnxa64/install/include/yolov8_msgs/yolov8_msgs/msg/detail/mask__rosidl_typesupport_introspection_c.h\n'}
+[25.536213] (yolov8_msgs) StdoutLine: {'line': b'-- Installing: /home/yong/YongJun_ws/src/YOLO/Yolov8/matlab_msg_gen/glnxa64/install/include/yolov8_msgs/yolov8_msgs/msg/detail/key_point3_d__type_support.c\n'}
+[25.536292] (yolov8_msgs) StdoutLine: {'line': b'-- Installing: /home/yong/YongJun_ws/src/YOLO/Yolov8/matlab_msg_gen/glnxa64/install/include/yolov8_msgs/yolov8_msgs/msg/detail/bounding_box2_d__type_support.c\n'}
+[25.536340] (yolov8_msgs) StdoutLine: {'line': b'-- Installing: /home/yong/YongJun_ws/src/YOLO/Yolov8/matlab_msg_gen/glnxa64/install/include/yolov8_msgs/yolov8_msgs/msg/detail/detection_array__type_support.c\n'}
+[25.536387] (yolov8_msgs) StdoutLine: {'line': b'-- Installing: /home/yong/YongJun_ws/src/YOLO/Yolov8/matlab_msg_gen/glnxa64/install/include/yolov8_msgs/yolov8_msgs/msg/detail/key_point3_d__rosidl_typesupport_introspection_c.h\n'}
+[25.536434] (yolov8_msgs) StdoutLine: {'line': b'-- Installing: /home/yong/YongJun_ws/src/YOLO/Yolov8/matlab_msg_gen/glnxa64/install/include/yolov8_msgs/yolov8_msgs/msg/detail/key_point2_d_array__type_support.c\n'}
+[25.536481] (yolov8_msgs) StdoutLine: {'line': b'-- Installing: /home/yong/YongJun_ws/src/YOLO/Yolov8/matlab_msg_gen/glnxa64/install/include/yolov8_msgs/yolov8_msgs/msg/detail/vector2__rosidl_typesupport_introspection_c.h\n'}
+[25.536528] (yolov8_msgs) StdoutLine: {'line': b'-- Installing: /home/yong/YongJun_ws/src/YOLO/Yolov8/matlab_msg_gen/glnxa64/install/include/yolov8_msgs/yolov8_msgs/msg/detail/bounding_box3_d__type_support.c\n'}
+[25.536575] (yolov8_msgs) StdoutLine: {'line': b'-- Installing: /home/yong/YongJun_ws/src/YOLO/Yolov8/matlab_msg_gen/glnxa64/install/include/yolov8_msgs/yolov8_msgs/msg/detail/pose2_d__rosidl_typesupport_introspection_c.h\n'}
+[25.536622] (yolov8_msgs) StdoutLine: {'line': b'-- Installing: /home/yong/YongJun_ws/src/YOLO/Yolov8/matlab_msg_gen/glnxa64/install/include/yolov8_msgs/yolov8_msgs/msg/detail/key_point3_d_array__type_support.c\n'}
+[25.536698] (yolov8_msgs) StdoutLine: {'line': b'-- Installing: /home/yong/YongJun_ws/src/YOLO/Yolov8/matlab_msg_gen/glnxa64/install/include/yolov8_msgs/yolov8_msgs/msg/detail/point2_d__type_support.c\n'}
+[25.536749] (yolov8_msgs) StdoutLine: {'line': b'-- Installing: /home/yong/YongJun_ws/src/YOLO/Yolov8/matlab_msg_gen/glnxa64/install/include/yolov8_msgs/yolov8_msgs/msg/detail/mask__type_support.c\n'}
+[25.536796] (yolov8_msgs) StdoutLine: {'line': b'-- Installing: /home/yong/YongJun_ws/src/YOLO/Yolov8/matlab_msg_gen/glnxa64/install/include/yolov8_msgs/yolov8_msgs/msg/detail/pose2_d__type_support.c\n'}
+[25.536843] (yolov8_msgs) StdoutLine: {'line': b'-- Installing: /home/yong/YongJun_ws/src/YOLO/Yolov8/matlab_msg_gen/glnxa64/install/include/yolov8_msgs/yolov8_msgs/msg/detail/detection_array__rosidl_typesupport_introspection_c.h\n'}
+[25.536890] (yolov8_msgs) StdoutLine: {'line': b'-- Installing: /home/yong/YongJun_ws/src/YOLO/Yolov8/matlab_msg_gen/glnxa64/install/include/yolov8_msgs/yolov8_msgs/msg/detail/bounding_box3_d__rosidl_typesupport_introspection_c.h\n'}
+[25.536970] (yolov8_msgs) StdoutLine: {'line': b'-- Installing: /home/yong/YongJun_ws/src/YOLO/Yolov8/matlab_msg_gen/glnxa64/install/lib/libyolov8_msgs__rosidl_typesupport_introspection_c.so\n'}
+[25.537032] (yolov8_msgs) StdoutLine: {'line': b'-- Installing: /home/yong/YongJun_ws/src/YOLO/Yolov8/matlab_msg_gen/glnxa64/install/lib/libyolov8_msgs__rosidl_typesupport_c.so\n'}
+[25.537101] (yolov8_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/yong/YongJun_ws/src/YOLO/Yolov8/matlab_msg_gen/glnxa64/install/include/yolov8_msgs/yolov8_msgs\n'}
+[25.537168] (yolov8_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/yong/YongJun_ws/src/YOLO/Yolov8/matlab_msg_gen/glnxa64/install/include/yolov8_msgs/yolov8_msgs/msg\n'}
+[25.537224] (yolov8_msgs) StdoutLine: {'line': b'-- Installing: /home/yong/YongJun_ws/src/YOLO/Yolov8/matlab_msg_gen/glnxa64/install/include/yolov8_msgs/yolov8_msgs/msg/vector2.hpp\n'}
+[25.537271] (yolov8_msgs) StdoutLine: {'line': b'-- Installing: /home/yong/YongJun_ws/src/YOLO/Yolov8/matlab_msg_gen/glnxa64/install/include/yolov8_msgs/yolov8_msgs/msg/key_point3_d_array.hpp\n'}
+[25.537317] (yolov8_msgs) StdoutLine: {'line': b'-- Installing: /home/yong/YongJun_ws/src/YOLO/Yolov8/matlab_msg_gen/glnxa64/install/include/yolov8_msgs/yolov8_msgs/msg/key_point2_d_array.hpp\n'}
+[25.537363] (yolov8_msgs) StdoutLine: {'line': b'-- Installing: /home/yong/YongJun_ws/src/YOLO/Yolov8/matlab_msg_gen/glnxa64/install/include/yolov8_msgs/yolov8_msgs/msg/bounding_box2_d.hpp\n'}
+[25.537409] (yolov8_msgs) StdoutLine: {'line': b'-- Installing: /home/yong/YongJun_ws/src/YOLO/Yolov8/matlab_msg_gen/glnxa64/install/include/yolov8_msgs/yolov8_msgs/msg/detection_array.hpp\n'}
+[25.537455] (yolov8_msgs) StdoutLine: {'line': b'-- Installing: /home/yong/YongJun_ws/src/YOLO/Yolov8/matlab_msg_gen/glnxa64/install/include/yolov8_msgs/yolov8_msgs/msg/pose2_d.hpp\n'}
+[25.537501] (yolov8_msgs) StdoutLine: {'line': b'-- Installing: /home/yong/YongJun_ws/src/YOLO/Yolov8/matlab_msg_gen/glnxa64/install/include/yolov8_msgs/yolov8_msgs/msg/key_point3_d.hpp\n'}
+[25.537547] (yolov8_msgs) StdoutLine: {'line': b'-- Installing: /home/yong/YongJun_ws/src/YOLO/Yolov8/matlab_msg_gen/glnxa64/install/include/yolov8_msgs/yolov8_msgs/msg/point2_d.hpp\n'}
+[25.537593] (yolov8_msgs) StdoutLine: {'line': b'-- Installing: /home/yong/YongJun_ws/src/YOLO/Yolov8/matlab_msg_gen/glnxa64/install/include/yolov8_msgs/yolov8_msgs/msg/mask.hpp\n'}
+[25.537640] (yolov8_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/yong/YongJun_ws/src/YOLO/Yolov8/matlab_msg_gen/glnxa64/install/include/yolov8_msgs/yolov8_msgs/msg/detail\n'}
+[25.537696] (yolov8_msgs) StdoutLine: {'line': b'-- Installing: /home/yong/YongJun_ws/src/YOLO/Yolov8/matlab_msg_gen/glnxa64/install/include/yolov8_msgs/yolov8_msgs/msg/detail/pose2_d__builder.hpp\n'}
+[25.537743] (yolov8_msgs) StdoutLine: {'line': b'-- Installing: /home/yong/YongJun_ws/src/YOLO/Yolov8/matlab_msg_gen/glnxa64/install/include/yolov8_msgs/yolov8_msgs/msg/detail/key_point2_d_array__builder.hpp\n'}
+[25.537789] (yolov8_msgs) StdoutLine: {'line': b'-- Installing: /home/yong/YongJun_ws/src/YOLO/Yolov8/matlab_msg_gen/glnxa64/install/include/yolov8_msgs/yolov8_msgs/msg/detail/key_point3_d__traits.hpp\n'}
+[25.537867] (yolov8_msgs) StdoutLine: {'line': b'-- Installing: /home/yong/YongJun_ws/src/YOLO/Yolov8/matlab_msg_gen/glnxa64/install/include/yolov8_msgs/yolov8_msgs/msg/detail/bounding_box3_d__builder.hpp\n'}
+[25.537914] (yolov8_msgs) StdoutLine: {'line': b'-- Installing: /home/yong/YongJun_ws/src/YOLO/Yolov8/matlab_msg_gen/glnxa64/install/include/yolov8_msgs/yolov8_msgs/msg/detail/vector2__traits.hpp\n'}
+[25.537959] (yolov8_msgs) StdoutLine: {'line': b'-- Installing: /home/yong/YongJun_ws/src/YOLO/Yolov8/matlab_msg_gen/glnxa64/install/include/yolov8_msgs/yolov8_msgs/msg/detail/pose2_d__traits.hpp\n'}
+[25.538004] (yolov8_msgs) StdoutLine: {'line': b'-- Installing: /home/yong/YongJun_ws/src/YOLO/Yolov8/matlab_msg_gen/glnxa64/install/include/yolov8_msgs/yolov8_msgs/msg/detail/key_point3_d_array__builder.hpp\n'}
+[25.538050] (yolov8_msgs) StdoutLine: {'line': b'-- Installing: /home/yong/YongJun_ws/src/YOLO/Yolov8/matlab_msg_gen/glnxa64/install/include/yolov8_msgs/yolov8_msgs/msg/detail/pose2_d__struct.hpp\n'}
+[25.538096] (yolov8_msgs) StdoutLine: {'line': b'-- Installing: /home/yong/YongJun_ws/src/YOLO/Yolov8/matlab_msg_gen/glnxa64/install/include/yolov8_msgs/yolov8_msgs/msg/detail/detection__traits.hpp\n'}
+[25.538142] (yolov8_msgs) StdoutLine: {'line': b'-- Installing: /home/yong/YongJun_ws/src/YOLO/Yolov8/matlab_msg_gen/glnxa64/install/include/yolov8_msgs/yolov8_msgs/msg/detail/bounding_box2_d__struct.hpp\n'}
+[25.538206] (yolov8_msgs) StdoutLine: {'line': b'-- Installing: /home/yong/YongJun_ws/src/YOLO/Yolov8/matlab_msg_gen/glnxa64/install/include/yolov8_msgs/yolov8_msgs/msg/detail/point2_d__traits.hpp\n'}
+[25.538266] (yolov8_msgs) StdoutLine: {'line': b'-- Installing: /home/yong/YongJun_ws/src/YOLO/Yolov8/matlab_msg_gen/glnxa64/install/include/yolov8_msgs/yolov8_msgs/msg/detail/mask__struct.hpp\n'}
+[25.538311] (yolov8_msgs) StdoutLine: {'line': b'-- Installing: /home/yong/YongJun_ws/src/YOLO/Yolov8/matlab_msg_gen/glnxa64/install/include/yolov8_msgs/yolov8_msgs/msg/detail/key_point2_d_array__traits.hpp\n'}
+[25.538388] (yolov8_msgs) StdoutLine: {'line': b'-- Installing: /home/yong/YongJun_ws/src/YOLO/Yolov8/matlab_msg_gen/glnxa64/install/include/yolov8_msgs/yolov8_msgs/msg/detail/key_point2_d__builder.hpp\n'}
+[25.538444] (yolov8_msgs) StdoutLine: {'line': b'-- Installing: /home/yong/YongJun_ws/src/YOLO/Yolov8/matlab_msg_gen/glnxa64/install/include/yolov8_msgs/yolov8_msgs/msg/detail/detection__struct.hpp\n'}
+[25.538499] (yolov8_msgs) StdoutLine: {'line': b'-- Installing: /home/yong/YongJun_ws/src/YOLO/Yolov8/matlab_msg_gen/glnxa64/install/include/yolov8_msgs/yolov8_msgs/msg/detail/key_point2_d_array__struct.hpp\n'}
+[25.538545] (yolov8_msgs) StdoutLine: {'line': b'-- Installing: /home/yong/YongJun_ws/src/YOLO/Yolov8/matlab_msg_gen/glnxa64/install/include/yolov8_msgs/yolov8_msgs/msg/detail/detection_array__struct.hpp\n'}
+[25.538610] (yolov8_msgs) StdoutLine: {'line': b'-- Installing: /home/yong/YongJun_ws/src/YOLO/Yolov8/matlab_msg_gen/glnxa64/install/include/yolov8_msgs/yolov8_msgs/msg/detail/key_point2_d__struct.hpp\n'}
+[25.538656] (yolov8_msgs) StdoutLine: {'line': b'-- Installing: /home/yong/YongJun_ws/src/YOLO/Yolov8/matlab_msg_gen/glnxa64/install/include/yolov8_msgs/yolov8_msgs/msg/detail/vector2__struct.hpp\n'}
+[25.538702] (yolov8_msgs) StdoutLine: {'line': b'-- Installing: /home/yong/YongJun_ws/src/YOLO/Yolov8/matlab_msg_gen/glnxa64/install/include/yolov8_msgs/yolov8_msgs/msg/detail/point2_d__builder.hpp\n'}
+[25.538748] (yolov8_msgs) StdoutLine: {'line': b'-- Installing: /home/yong/YongJun_ws/src/YOLO/Yolov8/matlab_msg_gen/glnxa64/install/include/yolov8_msgs/yolov8_msgs/msg/detail/detection__builder.hpp\n'}
+[25.538794] (yolov8_msgs) StdoutLine: {'line': b'-- Installing: /home/yong/YongJun_ws/src/YOLO/Yolov8/matlab_msg_gen/glnxa64/install/include/yolov8_msgs/yolov8_msgs/msg/detail/point2_d__struct.hpp\n'}
+[25.538840] (yolov8_msgs) StdoutLine: {'line': b'-- Installing: /home/yong/YongJun_ws/src/YOLO/Yolov8/matlab_msg_gen/glnxa64/install/include/yolov8_msgs/yolov8_msgs/msg/detail/key_point3_d__struct.hpp\n'}
+[25.538886] (yolov8_msgs) StdoutLine: {'line': b'-- Installing: /home/yong/YongJun_ws/src/YOLO/Yolov8/matlab_msg_gen/glnxa64/install/include/yolov8_msgs/yolov8_msgs/msg/detail/detection_array__builder.hpp\n'}
+[25.538970] (yolov8_msgs) StdoutLine: {'line': b'-- Installing: /home/yong/YongJun_ws/src/YOLO/Yolov8/matlab_msg_gen/glnxa64/install/include/yolov8_msgs/yolov8_msgs/msg/detail/key_point3_d_array__traits.hpp\n'}
+[25.539019] (yolov8_msgs) StdoutLine: {'line': b'-- Installing: /home/yong/YongJun_ws/src/YOLO/Yolov8/matlab_msg_gen/glnxa64/install/include/yolov8_msgs/yolov8_msgs/msg/detail/detection_array__traits.hpp\n'}
+[25.539066] (yolov8_msgs) StdoutLine: {'line': b'-- Installing: /home/yong/YongJun_ws/src/YOLO/Yolov8/matlab_msg_gen/glnxa64/install/include/yolov8_msgs/yolov8_msgs/msg/detail/key_point2_d__traits.hpp\n'}
+[25.539112] (yolov8_msgs) StdoutLine: {'line': b'-- Installing: /home/yong/YongJun_ws/src/YOLO/Yolov8/matlab_msg_gen/glnxa64/install/include/yolov8_msgs/yolov8_msgs/msg/detail/bounding_box2_d__builder.hpp\n'}
+[25.539157] (yolov8_msgs) StdoutLine: {'line': b'-- Installing: /home/yong/YongJun_ws/src/YOLO/Yolov8/matlab_msg_gen/glnxa64/install/include/yolov8_msgs/yolov8_msgs/msg/detail/mask__traits.hpp\n'}
+[25.539202] (yolov8_msgs) StdoutLine: {'line': b'-- Installing: /home/yong/YongJun_ws/src/YOLO/Yolov8/matlab_msg_gen/glnxa64/install/include/yolov8_msgs/yolov8_msgs/msg/detail/bounding_box3_d__traits.hpp\n'}
+[25.539248] (yolov8_msgs) StdoutLine: {'line': b'-- Installing: /home/yong/YongJun_ws/src/YOLO/Yolov8/matlab_msg_gen/glnxa64/install/include/yolov8_msgs/yolov8_msgs/msg/detail/bounding_box3_d__struct.hpp\n'}
+[25.539328] (yolov8_msgs) StdoutLine: {'line': b'-- Installing: /home/yong/YongJun_ws/src/YOLO/Yolov8/matlab_msg_gen/glnxa64/install/include/yolov8_msgs/yolov8_msgs/msg/detail/bounding_box2_d__traits.hpp\n'}
+[25.539374] (yolov8_msgs) StdoutLine: {'line': b'-- Installing: /home/yong/YongJun_ws/src/YOLO/Yolov8/matlab_msg_gen/glnxa64/install/include/yolov8_msgs/yolov8_msgs/msg/detail/key_point3_d_array__struct.hpp\n'}
+[25.539419] (yolov8_msgs) StdoutLine: {'line': b'-- Installing: /home/yong/YongJun_ws/src/YOLO/Yolov8/matlab_msg_gen/glnxa64/install/include/yolov8_msgs/yolov8_msgs/msg/detail/vector2__builder.hpp\n'}
+[25.539465] (yolov8_msgs) StdoutLine: {'line': b'-- Installing: /home/yong/YongJun_ws/src/YOLO/Yolov8/matlab_msg_gen/glnxa64/install/include/yolov8_msgs/yolov8_msgs/msg/detail/mask__builder.hpp\n'}
+[25.539511] (yolov8_msgs) StdoutLine: {'line': b'-- Installing: /home/yong/YongJun_ws/src/YOLO/Yolov8/matlab_msg_gen/glnxa64/install/include/yolov8_msgs/yolov8_msgs/msg/detail/key_point3_d__builder.hpp\n'}
+[25.539557] (yolov8_msgs) StdoutLine: {'line': b'-- Installing: /home/yong/YongJun_ws/src/YOLO/Yolov8/matlab_msg_gen/glnxa64/install/include/yolov8_msgs/yolov8_msgs/msg/detection.hpp\n'}
+[25.539604] (yolov8_msgs) StdoutLine: {'line': b'-- Installing: /home/yong/YongJun_ws/src/YOLO/Yolov8/matlab_msg_gen/glnxa64/install/include/yolov8_msgs/yolov8_msgs/msg/bounding_box3_d.hpp\n'}
+[25.539661] (yolov8_msgs) StdoutLine: {'line': b'-- Installing: /home/yong/YongJun_ws/src/YOLO/Yolov8/matlab_msg_gen/glnxa64/install/include/yolov8_msgs/yolov8_msgs/msg/key_point2_d.hpp\n'}
+[25.539748] (yolov8_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/yong/YongJun_ws/src/YOLO/Yolov8/matlab_msg_gen/glnxa64/install/include/yolov8_msgs/yolov8_msgs\n'}
+[25.539795] (yolov8_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/yong/YongJun_ws/src/YOLO/Yolov8/matlab_msg_gen/glnxa64/install/include/yolov8_msgs/yolov8_msgs/msg\n'}
+[25.539841] (yolov8_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/yong/YongJun_ws/src/YOLO/Yolov8/matlab_msg_gen/glnxa64/install/include/yolov8_msgs/yolov8_msgs/msg/detail\n'}
+[25.539887] (yolov8_msgs) StdoutLine: {'line': b'-- Installing: /home/yong/YongJun_ws/src/YOLO/Yolov8/matlab_msg_gen/glnxa64/install/include/yolov8_msgs/yolov8_msgs/msg/detail/bounding_box2_d__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[25.539933] (yolov8_msgs) StdoutLine: {'line': b'-- Installing: /home/yong/YongJun_ws/src/YOLO/Yolov8/matlab_msg_gen/glnxa64/install/include/yolov8_msgs/yolov8_msgs/msg/detail/key_point3_d_array__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[25.540012] (yolov8_msgs) StdoutLine: {'line': b'-- Installing: /home/yong/YongJun_ws/src/YOLO/Yolov8/matlab_msg_gen/glnxa64/install/include/yolov8_msgs/yolov8_msgs/msg/detail/key_point3_d__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[25.540056] (yolov8_msgs) StdoutLine: {'line': b'-- Installing: /home/yong/YongJun_ws/src/YOLO/Yolov8/matlab_msg_gen/glnxa64/install/include/yolov8_msgs/yolov8_msgs/msg/detail/key_point2_d__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[25.540101] (yolov8_msgs) StdoutLine: {'line': b'-- Installing: /home/yong/YongJun_ws/src/YOLO/Yolov8/matlab_msg_gen/glnxa64/install/include/yolov8_msgs/yolov8_msgs/msg/detail/detection__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[25.540147] (yolov8_msgs) StdoutLine: {'line': b'-- Installing: /home/yong/YongJun_ws/src/YOLO/Yolov8/matlab_msg_gen/glnxa64/install/include/yolov8_msgs/yolov8_msgs/msg/detail/bounding_box3_d__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[25.540193] (yolov8_msgs) StdoutLine: {'line': b'-- Installing: /home/yong/YongJun_ws/src/YOLO/Yolov8/matlab_msg_gen/glnxa64/install/include/yolov8_msgs/yolov8_msgs/msg/detail/key_point2_d_array__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[25.540239] (yolov8_msgs) StdoutLine: {'line': b'-- Installing: /home/yong/YongJun_ws/src/YOLO/Yolov8/matlab_msg_gen/glnxa64/install/include/yolov8_msgs/yolov8_msgs/msg/detail/dds_fastrtps\n'}
+[25.540285] (yolov8_msgs) StdoutLine: {'line': b'-- Installing: /home/yong/YongJun_ws/src/YOLO/Yolov8/matlab_msg_gen/glnxa64/install/include/yolov8_msgs/yolov8_msgs/msg/detail/vector2__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[25.540332] (yolov8_msgs) StdoutLine: {'line': b'-- Installing: /home/yong/YongJun_ws/src/YOLO/Yolov8/matlab_msg_gen/glnxa64/install/include/yolov8_msgs/yolov8_msgs/msg/detail/point2_d__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[25.540408] (yolov8_msgs) StdoutLine: {'line': b'-- Installing: /home/yong/YongJun_ws/src/YOLO/Yolov8/matlab_msg_gen/glnxa64/install/include/yolov8_msgs/yolov8_msgs/msg/detail/mask__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[25.540454] (yolov8_msgs) StdoutLine: {'line': b'-- Installing: /home/yong/YongJun_ws/src/YOLO/Yolov8/matlab_msg_gen/glnxa64/install/include/yolov8_msgs/yolov8_msgs/msg/detail/pose2_d__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[25.540500] (yolov8_msgs) StdoutLine: {'line': b'-- Installing: /home/yong/YongJun_ws/src/YOLO/Yolov8/matlab_msg_gen/glnxa64/install/include/yolov8_msgs/yolov8_msgs/msg/detail/detection_array__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[25.540545] (yolov8_msgs) StdoutLine: {'line': b'-- Installing: /home/yong/YongJun_ws/src/YOLO/Yolov8/matlab_msg_gen/glnxa64/install/include/yolov8_msgs/yolov8_msgs/msg/rosidl_typesupport_fastrtps_cpp__visibility_control.h\n'}
+[25.540592] (yolov8_msgs) StdoutLine: {'line': b'-- Installing: /home/yong/YongJun_ws/src/YOLO/Yolov8/matlab_msg_gen/glnxa64/install/lib/libyolov8_msgs__rosidl_typesupport_fastrtps_cpp.so\n'}
+[25.540638] (yolov8_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/yong/YongJun_ws/src/YOLO/Yolov8/matlab_msg_gen/glnxa64/install/include/yolov8_msgs/yolov8_msgs\n'}
+[25.540684] (yolov8_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/yong/YongJun_ws/src/YOLO/Yolov8/matlab_msg_gen/glnxa64/install/include/yolov8_msgs/yolov8_msgs/msg\n'}
+[25.540729] (yolov8_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/yong/YongJun_ws/src/YOLO/Yolov8/matlab_msg_gen/glnxa64/install/include/yolov8_msgs/yolov8_msgs/msg/detail\n'}
+[25.540775] (yolov8_msgs) StdoutLine: {'line': b'-- Installing: /home/yong/YongJun_ws/src/YOLO/Yolov8/matlab_msg_gen/glnxa64/install/include/yolov8_msgs/yolov8_msgs/msg/detail/key_point2_d_array__rosidl_typesupport_introspection_cpp.hpp\n'}
+[25.540821] (yolov8_msgs) StdoutLine: {'line': b'-- Installing: /home/yong/YongJun_ws/src/YOLO/Yolov8/matlab_msg_gen/glnxa64/install/include/yolov8_msgs/yolov8_msgs/msg/detail/pose2_d__type_support.cpp\n'}
+[25.540883] (yolov8_msgs) StdoutLine: {'line': b'-- Installing: /home/yong/YongJun_ws/src/YOLO/Yolov8/matlab_msg_gen/glnxa64/install/include/yolov8_msgs/yolov8_msgs/msg/detail/bounding_box2_d__rosidl_typesupport_introspection_cpp.hpp\n'}
+[25.540970] (yolov8_msgs) StdoutLine: {'line': b'-- Installing: /home/yong/YongJun_ws/src/YOLO/Yolov8/matlab_msg_gen/glnxa64/install/include/yolov8_msgs/yolov8_msgs/msg/detail/key_point2_d__type_support.cpp\n'}
+[25.541048] (yolov8_msgs) StdoutLine: {'line': b'-- Installing: /home/yong/YongJun_ws/src/YOLO/Yolov8/matlab_msg_gen/glnxa64/install/include/yolov8_msgs/yolov8_msgs/msg/detail/mask__type_support.cpp\n'}
+[25.541093] (yolov8_msgs) StdoutLine: {'line': b'-- Installing: /home/yong/YongJun_ws/src/YOLO/Yolov8/matlab_msg_gen/glnxa64/install/include/yolov8_msgs/yolov8_msgs/msg/detail/bounding_box2_d__type_support.cpp\n'}
+[25.541137] (yolov8_msgs) StdoutLine: {'line': b'-- Installing: /home/yong/YongJun_ws/src/YOLO/Yolov8/matlab_msg_gen/glnxa64/install/include/yolov8_msgs/yolov8_msgs/msg/detail/vector2__rosidl_typesupport_introspection_cpp.hpp\n'}
+[25.541183] (yolov8_msgs) StdoutLine: {'line': b'-- Installing: /home/yong/YongJun_ws/src/YOLO/Yolov8/matlab_msg_gen/glnxa64/install/include/yolov8_msgs/yolov8_msgs/msg/detail/detection_array__rosidl_typesupport_introspection_cpp.hpp\n'}
+[25.541230] (yolov8_msgs) StdoutLine: {'line': b'-- Installing: /home/yong/YongJun_ws/src/YOLO/Yolov8/matlab_msg_gen/glnxa64/install/include/yolov8_msgs/yolov8_msgs/msg/detail/detection__rosidl_typesupport_introspection_cpp.hpp\n'}
+[25.541311] (yolov8_msgs) StdoutLine: {'line': b'-- Installing: /home/yong/YongJun_ws/src/YOLO/Yolov8/matlab_msg_gen/glnxa64/install/include/yolov8_msgs/yolov8_msgs/msg/detail/key_point2_d__rosidl_typesupport_introspection_cpp.hpp\n'}
+[25.541358] (yolov8_msgs) StdoutLine: {'line': b'-- Installing: /home/yong/YongJun_ws/src/YOLO/Yolov8/matlab_msg_gen/glnxa64/install/include/yolov8_msgs/yolov8_msgs/msg/detail/key_point3_d__rosidl_typesupport_introspection_cpp.hpp\n'}
+[25.541405] (yolov8_msgs) StdoutLine: {'line': b'-- Installing: /home/yong/YongJun_ws/src/YOLO/Yolov8/matlab_msg_gen/glnxa64/install/include/yolov8_msgs/yolov8_msgs/msg/detail/detection__type_support.cpp\n'}
+[25.541452] (yolov8_msgs) StdoutLine: {'line': b'-- Installing: /home/yong/YongJun_ws/src/YOLO/Yolov8/matlab_msg_gen/glnxa64/install/include/yolov8_msgs/yolov8_msgs/msg/detail/key_point3_d_array__type_support.cpp\n'}
+[25.541498] (yolov8_msgs) StdoutLine: {'line': b'-- Installing: /home/yong/YongJun_ws/src/YOLO/Yolov8/matlab_msg_gen/glnxa64/install/include/yolov8_msgs/yolov8_msgs/msg/detail/vector2__type_support.cpp\n'}
+[25.541544] (yolov8_msgs) StdoutLine: {'line': b'-- Installing: /home/yong/YongJun_ws/src/YOLO/Yolov8/matlab_msg_gen/glnxa64/install/include/yolov8_msgs/yolov8_msgs/msg/detail/bounding_box3_d__rosidl_typesupport_introspection_cpp.hpp\n'}
+[25.541590] (yolov8_msgs) StdoutLine: {'line': b'-- Installing: /home/yong/YongJun_ws/src/YOLO/Yolov8/matlab_msg_gen/glnxa64/install/include/yolov8_msgs/yolov8_msgs/msg/detail/bounding_box3_d__type_support.cpp\n'}
+[25.541636] (yolov8_msgs) StdoutLine: {'line': b'-- Installing: /home/yong/YongJun_ws/src/YOLO/Yolov8/matlab_msg_gen/glnxa64/install/include/yolov8_msgs/yolov8_msgs/msg/detail/mask__rosidl_typesupport_introspection_cpp.hpp\n'}
+[25.541682] (yolov8_msgs) StdoutLine: {'line': b'-- Installing: /home/yong/YongJun_ws/src/YOLO/Yolov8/matlab_msg_gen/glnxa64/install/include/yolov8_msgs/yolov8_msgs/msg/detail/point2_d__type_support.cpp\n'}
+[25.541728] (yolov8_msgs) StdoutLine: {'line': b'-- Installing: /home/yong/YongJun_ws/src/YOLO/Yolov8/matlab_msg_gen/glnxa64/install/include/yolov8_msgs/yolov8_msgs/msg/detail/point2_d__rosidl_typesupport_introspection_cpp.hpp\n'}
+[25.541774] (yolov8_msgs) StdoutLine: {'line': b'-- Installing: /home/yong/YongJun_ws/src/YOLO/Yolov8/matlab_msg_gen/glnxa64/install/include/yolov8_msgs/yolov8_msgs/msg/detail/detection_array__type_support.cpp\n'}
+[25.541820] (yolov8_msgs) StdoutLine: {'line': b'-- Installing: /home/yong/YongJun_ws/src/YOLO/Yolov8/matlab_msg_gen/glnxa64/install/include/yolov8_msgs/yolov8_msgs/msg/detail/key_point2_d_array__type_support.cpp\n'}
+[25.541901] (yolov8_msgs) StdoutLine: {'line': b'-- Installing: /home/yong/YongJun_ws/src/YOLO/Yolov8/matlab_msg_gen/glnxa64/install/include/yolov8_msgs/yolov8_msgs/msg/detail/pose2_d__rosidl_typesupport_introspection_cpp.hpp\n'}
+[25.541948] (yolov8_msgs) StdoutLine: {'line': b'-- Installing: /home/yong/YongJun_ws/src/YOLO/Yolov8/matlab_msg_gen/glnxa64/install/include/yolov8_msgs/yolov8_msgs/msg/detail/key_point3_d_array__rosidl_typesupport_introspection_cpp.hpp\n'}
+[25.541994] (yolov8_msgs) StdoutLine: {'line': b'-- Installing: /home/yong/YongJun_ws/src/YOLO/Yolov8/matlab_msg_gen/glnxa64/install/include/yolov8_msgs/yolov8_msgs/msg/detail/key_point3_d__type_support.cpp\n'}
+[25.542041] (yolov8_msgs) StdoutLine: {'line': b'-- Installing: /home/yong/YongJun_ws/src/YOLO/Yolov8/matlab_msg_gen/glnxa64/install/lib/libyolov8_msgs__rosidl_typesupport_introspection_cpp.so\n'}
+[25.542088] (yolov8_msgs) StdoutLine: {'line': b'-- Installing: /home/yong/YongJun_ws/src/YOLO/Yolov8/matlab_msg_gen/glnxa64/install/lib/libyolov8_msgs__rosidl_typesupport_cpp.so\n'}
+[25.542158] (yolov8_msgs) StdoutLine: {'line': b'-- Installing: /home/yong/YongJun_ws/src/YOLO/Yolov8/matlab_msg_gen/glnxa64/install/share/yolov8_msgs/msg/BoundingBox2D.idl\n'}
+[25.542204] (yolov8_msgs) StdoutLine: {'line': b'-- Installing: /home/yong/YongJun_ws/src/YOLO/Yolov8/matlab_msg_gen/glnxa64/install/share/yolov8_msgs/msg/BoundingBox3D.idl\n'}
+[25.542260] (yolov8_msgs) StdoutLine: {'line': b'-- Installing: /home/yong/YongJun_ws/src/YOLO/Yolov8/matlab_msg_gen/glnxa64/install/share/yolov8_msgs/msg/Detection.idl\n'}
+[25.542305] (yolov8_msgs) StdoutLine: {'line': b'-- Installing: /home/yong/YongJun_ws/src/YOLO/Yolov8/matlab_msg_gen/glnxa64/install/share/yolov8_msgs/msg/DetectionArray.idl\n'}
+[25.542348] (yolov8_msgs) StdoutLine: {'line': b'-- Installing: /home/yong/YongJun_ws/src/YOLO/Yolov8/matlab_msg_gen/glnxa64/install/share/yolov8_msgs/msg/KeyPoint2D.idl\n'}
+[25.542391] (yolov8_msgs) StdoutLine: {'line': b'-- Installing: /home/yong/YongJun_ws/src/YOLO/Yolov8/matlab_msg_gen/glnxa64/install/share/yolov8_msgs/msg/KeyPoint2DArray.idl\n'}
+[25.542435] (yolov8_msgs) StdoutLine: {'line': b'-- Installing: /home/yong/YongJun_ws/src/YOLO/Yolov8/matlab_msg_gen/glnxa64/install/share/yolov8_msgs/msg/KeyPoint3D.idl\n'}
+[25.542479] (yolov8_msgs) StdoutLine: {'line': b'-- Installing: /home/yong/YongJun_ws/src/YOLO/Yolov8/matlab_msg_gen/glnxa64/install/share/yolov8_msgs/msg/KeyPoint3DArray.idl\n'}
+[25.542522] (yolov8_msgs) StdoutLine: {'line': b'-- Installing: /home/yong/YongJun_ws/src/YOLO/Yolov8/matlab_msg_gen/glnxa64/install/share/yolov8_msgs/msg/Mask.idl\n'}
+[25.542567] (yolov8_msgs) StdoutLine: {'line': b'-- Installing: /home/yong/YongJun_ws/src/YOLO/Yolov8/matlab_msg_gen/glnxa64/install/share/yolov8_msgs/msg/Point2D.idl\n'}
+[25.542617] (yolov8_msgs) StdoutLine: {'line': b'-- Installing: /home/yong/YongJun_ws/src/YOLO/Yolov8/matlab_msg_gen/glnxa64/install/share/yolov8_msgs/msg/Pose2D.idl\n'}
+[25.542661] (yolov8_msgs) StdoutLine: {'line': b'-- Installing: /home/yong/YongJun_ws/src/YOLO/Yolov8/matlab_msg_gen/glnxa64/install/share/yolov8_msgs/msg/Vector2.idl\n'}
+[25.542705] (yolov8_msgs) StdoutLine: {'line': b'-- Installing: /home/yong/YongJun_ws/src/YOLO/Yolov8/matlab_msg_gen/glnxa64/install/share/yolov8_msgs/msg/BoundingBox2D.msg\n'}
+[25.542750] (yolov8_msgs) StdoutLine: {'line': b'-- Installing: /home/yong/YongJun_ws/src/YOLO/Yolov8/matlab_msg_gen/glnxa64/install/share/yolov8_msgs/msg/BoundingBox3D.msg\n'}
+[25.542793] (yolov8_msgs) StdoutLine: {'line': b'-- Installing: /home/yong/YongJun_ws/src/YOLO/Yolov8/matlab_msg_gen/glnxa64/install/share/yolov8_msgs/msg/Detection.msg\n'}
+[25.542837] (yolov8_msgs) StdoutLine: {'line': b'-- Installing: /home/yong/YongJun_ws/src/YOLO/Yolov8/matlab_msg_gen/glnxa64/install/share/yolov8_msgs/msg/DetectionArray.msg\n'}
+[25.542881] (yolov8_msgs) StdoutLine: {'line': b'-- Installing: /home/yong/YongJun_ws/src/YOLO/Yolov8/matlab_msg_gen/glnxa64/install/share/yolov8_msgs/msg/KeyPoint2D.msg\n'}
+[25.542925] (yolov8_msgs) StdoutLine: {'line': b'-- Installing: /home/yong/YongJun_ws/src/YOLO/Yolov8/matlab_msg_gen/glnxa64/install/share/yolov8_msgs/msg/KeyPoint2DArray.msg\n'}
+[25.542971] (yolov8_msgs) StdoutLine: {'line': b'-- Installing: /home/yong/YongJun_ws/src/YOLO/Yolov8/matlab_msg_gen/glnxa64/install/share/yolov8_msgs/msg/KeyPoint3D.msg\n'}
+[25.543014] (yolov8_msgs) StdoutLine: {'line': b'-- Installing: /home/yong/YongJun_ws/src/YOLO/Yolov8/matlab_msg_gen/glnxa64/install/share/yolov8_msgs/msg/KeyPoint3DArray.msg\n'}
+[25.543057] (yolov8_msgs) StdoutLine: {'line': b'-- Installing: /home/yong/YongJun_ws/src/YOLO/Yolov8/matlab_msg_gen/glnxa64/install/share/yolov8_msgs/msg/Mask.msg\n'}
+[25.543102] (yolov8_msgs) StdoutLine: {'line': b'-- Installing: /home/yong/YongJun_ws/src/YOLO/Yolov8/matlab_msg_gen/glnxa64/install/share/yolov8_msgs/msg/Point2D.msg\n'}
+[25.543146] (yolov8_msgs) StdoutLine: {'line': b'-- Installing: /home/yong/YongJun_ws/src/YOLO/Yolov8/matlab_msg_gen/glnxa64/install/share/yolov8_msgs/msg/Pose2D.msg\n'}
+[25.543189] (yolov8_msgs) StdoutLine: {'line': b'-- Installing: /home/yong/YongJun_ws/src/YOLO/Yolov8/matlab_msg_gen/glnxa64/install/share/yolov8_msgs/msg/Vector2.msg\n'}
+[25.543233] (yolov8_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/yong/YongJun_ws/src/YOLO/Yolov8/matlab_msg_gen/glnxa64/install/include\n'}
+[25.543277] (yolov8_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/yong/YongJun_ws/src/YOLO/Yolov8/matlab_msg_gen/glnxa64/install/include/yolov8_msgs\n'}
+[25.543321] (yolov8_msgs) StdoutLine: {'line': b'-- Installing: /home/yong/YongJun_ws/src/YOLO/Yolov8/matlab_msg_gen/glnxa64/install/include/yolov8_msgs/visibility_control.h\n'}
+[25.543365] (yolov8_msgs) StdoutLine: {'line': b'-- Installing: /home/yong/YongJun_ws/src/YOLO/Yolov8/matlab_msg_gen/glnxa64/install/lib/libyolov8_msgs_matlab.so\n'}
+[25.569005] (yolov8_msgs) StdoutLine: {'line': b'-- Installing: /home/yong/YongJun_ws/src/YOLO/Yolov8/matlab_msg_gen/glnxa64/install/m/\n'}
+[25.569133] (yolov8_msgs) StdoutLine: {'line': b'-- Installing: /home/yong/YongJun_ws/src/YOLO/Yolov8/matlab_msg_gen/glnxa64/install/m//+ros\n'}
+[25.569185] (yolov8_msgs) StdoutLine: {'line': b'-- Installing: /home/yong/YongJun_ws/src/YOLO/Yolov8/matlab_msg_gen/glnxa64/install/m//+ros/+internal\n'}
+[25.569298] (yolov8_msgs) StdoutLine: {'line': b'-- Installing: /home/yong/YongJun_ws/src/YOLO/Yolov8/matlab_msg_gen/glnxa64/install/m//+ros/+internal/+ros2\n'}
+[25.569401] (yolov8_msgs) StdoutLine: {'line': b'-- Installing: /home/yong/YongJun_ws/src/YOLO/Yolov8/matlab_msg_gen/glnxa64/install/m//+ros/+internal/+ros2/+custommessages\n'}
+[25.569511] (yolov8_msgs) StdoutLine: {'line': b'-- Installing: /home/yong/YongJun_ws/src/YOLO/Yolov8/matlab_msg_gen/glnxa64/install/m//+ros/+internal/+ros2/+custommessages/+yolov8_msgs\n'}
+[25.569586] (yolov8_msgs) StdoutLine: {'line': b'-- Installing: /home/yong/YongJun_ws/src/YOLO/Yolov8/matlab_msg_gen/glnxa64/install/m//+ros/+internal/+ros2/+custommessages/+yolov8_msgs/yolov8_msgs_msg_DetectionArray_2To1_Converter.m\n'}
+[25.569654] (yolov8_msgs) StdoutLine: {'line': b'-- Installing: /home/yong/YongJun_ws/src/YOLO/Yolov8/matlab_msg_gen/glnxa64/install/m//+ros/+internal/+ros2/+custommessages/+yolov8_msgs/yolov8_msgs_msg_KeyPoint3D_1To2_Converter.m\n'}
+[25.569709] (yolov8_msgs) StdoutLine: {'line': b'-- Installing: /home/yong/YongJun_ws/src/YOLO/Yolov8/matlab_msg_gen/glnxa64/install/m//+ros/+internal/+ros2/+custommessages/+yolov8_msgs/yolov8_msgs_msg_Vector2_2To1_Converter.m\n'}
+[25.569766] (yolov8_msgs) StdoutLine: {'line': b'-- Installing: /home/yong/YongJun_ws/src/YOLO/Yolov8/matlab_msg_gen/glnxa64/install/m//+ros/+internal/+ros2/+custommessages/+yolov8_msgs/keyPoint3DArray.m\n'}
+[25.569830] (yolov8_msgs) StdoutLine: {'line': b'-- Installing: /home/yong/YongJun_ws/src/YOLO/Yolov8/matlab_msg_gen/glnxa64/install/m//+ros/+internal/+ros2/+custommessages/+yolov8_msgs/yolov8_msgs_msg_Point2D_1To2_Converter.m\n'}
+[25.569886] (yolov8_msgs) StdoutLine: {'line': b'-- Installing: /home/yong/YongJun_ws/src/YOLO/Yolov8/matlab_msg_gen/glnxa64/install/m//+ros/+internal/+ros2/+custommessages/+yolov8_msgs/yolov8_msgs_msg_KeyPoint3DArray_1To2_Converter.m\n'}
+[25.569951] (yolov8_msgs) StdoutLine: {'line': b'-- Installing: /home/yong/YongJun_ws/src/YOLO/Yolov8/matlab_msg_gen/glnxa64/install/m//+ros/+internal/+ros2/+custommessages/+yolov8_msgs/yolov8_msgs_msg_KeyPoint2D_1To2_Converter.m\n'}
+[25.569999] (yolov8_msgs) StdoutLine: {'line': b'-- Installing: /home/yong/YongJun_ws/src/YOLO/Yolov8/matlab_msg_gen/glnxa64/install/m//+ros/+internal/+ros2/+custommessages/+yolov8_msgs/yolov8_msgs_msg_Mask_1To2_Converter.m\n'}
+[25.570068] (yolov8_msgs) StdoutLine: {'line': b'-- Installing: /home/yong/YongJun_ws/src/YOLO/Yolov8/matlab_msg_gen/glnxa64/install/m//+ros/+internal/+ros2/+custommessages/+yolov8_msgs/yolov8_msgs_msg_BoundingBox2D_1To2_Converter.m\n'}
+[25.570116] (yolov8_msgs) StdoutLine: {'line': b'-- Installing: /home/yong/YongJun_ws/src/YOLO/Yolov8/matlab_msg_gen/glnxa64/install/m//+ros/+internal/+ros2/+custommessages/+yolov8_msgs/pose2D.m\n'}
+[25.570162] (yolov8_msgs) StdoutLine: {'line': b'-- Installing: /home/yong/YongJun_ws/src/YOLO/Yolov8/matlab_msg_gen/glnxa64/install/m//+ros/+internal/+ros2/+custommessages/+yolov8_msgs/yolov8_msgs_msg_Pose2D_1To2_Converter.m\n'}
+[25.570209] (yolov8_msgs) StdoutLine: {'line': b'-- Installing: /home/yong/YongJun_ws/src/YOLO/Yolov8/matlab_msg_gen/glnxa64/install/m//+ros/+internal/+ros2/+custommessages/+yolov8_msgs/yolov8_msgs_msg_KeyPoint2DArray_1To2_Converter.m\n'}
+[25.570257] (yolov8_msgs) StdoutLine: {'line': b'-- Installing: /home/yong/YongJun_ws/src/YOLO/Yolov8/matlab_msg_gen/glnxa64/install/m//+ros/+internal/+ros2/+custommessages/+yolov8_msgs/yolov8_msgs_msg_KeyPoint3D_2To1_Converter.m\n'}
+[25.570303] (yolov8_msgs) StdoutLine: {'line': b'-- Installing: /home/yong/YongJun_ws/src/YOLO/Yolov8/matlab_msg_gen/glnxa64/install/m//+ros/+internal/+ros2/+custommessages/+yolov8_msgs/yolov8_msgs_msg_Vector2_1To2_Converter.m\n'}
+[25.570349] (yolov8_msgs) StdoutLine: {'line': b'-- Installing: /home/yong/YongJun_ws/src/YOLO/Yolov8/matlab_msg_gen/glnxa64/install/m//+ros/+internal/+ros2/+custommessages/+yolov8_msgs/yolov8_msgs_msg_BoundingBox3D_2To1_Converter.m\n'}
+[25.570395] (yolov8_msgs) StdoutLine: {'line': b'-- Installing: /home/yong/YongJun_ws/src/YOLO/Yolov8/matlab_msg_gen/glnxa64/install/m//+ros/+internal/+ros2/+custommessages/+yolov8_msgs/boundingBox3D.m\n'}
+[25.570440] (yolov8_msgs) StdoutLine: {'line': b'-- Installing: /home/yong/YongJun_ws/src/YOLO/Yolov8/matlab_msg_gen/glnxa64/install/m//+ros/+internal/+ros2/+custommessages/+yolov8_msgs/detectionArray.m\n'}
+[25.570531] (yolov8_msgs) StdoutLine: {'line': b'-- Installing: /home/yong/YongJun_ws/src/YOLO/Yolov8/matlab_msg_gen/glnxa64/install/m//+ros/+internal/+ros2/+custommessages/+yolov8_msgs/yolov8_msgs_msg_Detection_1To2_Converter.m\n'}
+[25.570593] (yolov8_msgs) StdoutLine: {'line': b'-- Installing: /home/yong/YongJun_ws/src/YOLO/Yolov8/matlab_msg_gen/glnxa64/install/m//+ros/+internal/+ros2/+custommessages/+yolov8_msgs/yolov8_msgs_msg_Pose2D_2To1_Converter.m\n'}
+[25.570662] (yolov8_msgs) StdoutLine: {'line': b'-- Installing: /home/yong/YongJun_ws/src/YOLO/Yolov8/matlab_msg_gen/glnxa64/install/m//+ros/+internal/+ros2/+custommessages/+yolov8_msgs/yolov8_msgs_msg_KeyPoint2D_2To1_Converter.m\n'}
+[25.570718] (yolov8_msgs) StdoutLine: {'line': b'-- Installing: /home/yong/YongJun_ws/src/YOLO/Yolov8/matlab_msg_gen/glnxa64/install/m//+ros/+internal/+ros2/+custommessages/+yolov8_msgs/yolov8_msgs_msg_Detection_2To1_Converter.m\n'}
+[25.570788] (yolov8_msgs) StdoutLine: {'line': b'-- Installing: /home/yong/YongJun_ws/src/YOLO/Yolov8/matlab_msg_gen/glnxa64/install/m//+ros/+internal/+ros2/+custommessages/+yolov8_msgs/yolov8_msgs_msg_BoundingBox3D_1To2_Converter.m\n'}
+[25.570848] (yolov8_msgs) StdoutLine: {'line': b'-- Installing: /home/yong/YongJun_ws/src/YOLO/Yolov8/matlab_msg_gen/glnxa64/install/m//+ros/+internal/+ros2/+custommessages/+yolov8_msgs/mask.m\n'}
+[25.570891] (yolov8_msgs) StdoutLine: {'line': b'-- Installing: /home/yong/YongJun_ws/src/YOLO/Yolov8/matlab_msg_gen/glnxa64/install/m//+ros/+internal/+ros2/+custommessages/+yolov8_msgs/point2D.m\n'}
+[25.570948] (yolov8_msgs) StdoutLine: {'line': b'-- Installing: /home/yong/YongJun_ws/src/YOLO/Yolov8/matlab_msg_gen/glnxa64/install/m//+ros/+internal/+ros2/+custommessages/+yolov8_msgs/yolov8_msgs_msg_Point2D_2To1_Converter.m\n'}
+[25.570994] (yolov8_msgs) StdoutLine: {'line': b'-- Installing: /home/yong/YongJun_ws/src/YOLO/Yolov8/matlab_msg_gen/glnxa64/install/m//+ros/+internal/+ros2/+custommessages/+yolov8_msgs/yolov8_msgs_msg_BoundingBox2D_2To1_Converter.m\n'}
+[25.571040] (yolov8_msgs) StdoutLine: {'line': b'-- Installing: /home/yong/YongJun_ws/src/YOLO/Yolov8/matlab_msg_gen/glnxa64/install/m//+ros/+internal/+ros2/+custommessages/+yolov8_msgs/yolov8_msgs_msg_KeyPoint3DArray_2To1_Converter.m\n'}
+[25.571098] (yolov8_msgs) StdoutLine: {'line': b'-- Installing: /home/yong/YongJun_ws/src/YOLO/Yolov8/matlab_msg_gen/glnxa64/install/m//+ros/+internal/+ros2/+custommessages/+yolov8_msgs/detection.m\n'}
+[25.571154] (yolov8_msgs) StdoutLine: {'line': b'-- Installing: /home/yong/YongJun_ws/src/YOLO/Yolov8/matlab_msg_gen/glnxa64/install/m//+ros/+internal/+ros2/+custommessages/+yolov8_msgs/keyPoint2D.m\n'}
+[25.571200] (yolov8_msgs) StdoutLine: {'line': b'-- Installing: /home/yong/YongJun_ws/src/YOLO/Yolov8/matlab_msg_gen/glnxa64/install/m//+ros/+internal/+ros2/+custommessages/+yolov8_msgs/keyPoint2DArray.m\n'}
+[25.571245] (yolov8_msgs) StdoutLine: {'line': b'-- Installing: /home/yong/YongJun_ws/src/YOLO/Yolov8/matlab_msg_gen/glnxa64/install/m//+ros/+internal/+ros2/+custommessages/+yolov8_msgs/boundingBox2D.m\n'}
+[25.571291] (yolov8_msgs) StdoutLine: {'line': b'-- Installing: /home/yong/YongJun_ws/src/YOLO/Yolov8/matlab_msg_gen/glnxa64/install/m//+ros/+internal/+ros2/+custommessages/+yolov8_msgs/keyPoint3D.m\n'}
+[25.571358] (yolov8_msgs) StdoutLine: {'line': b'-- Installing: /home/yong/YongJun_ws/src/YOLO/Yolov8/matlab_msg_gen/glnxa64/install/m//+ros/+internal/+ros2/+custommessages/+yolov8_msgs/yolov8_msgs_msg_KeyPoint2DArray_2To1_Converter.m\n'}
+[25.571405] (yolov8_msgs) StdoutLine: {'line': b'-- Installing: /home/yong/YongJun_ws/src/YOLO/Yolov8/matlab_msg_gen/glnxa64/install/m//+ros/+internal/+ros2/+custommessages/+yolov8_msgs/vector2.m\n'}
+[25.571468] (yolov8_msgs) StdoutLine: {'line': b'-- Installing: /home/yong/YongJun_ws/src/YOLO/Yolov8/matlab_msg_gen/glnxa64/install/m//+ros/+internal/+ros2/+custommessages/+yolov8_msgs/yolov8_msgs_msg_DetectionArray_1To2_Converter.m\n'}
+[25.571513] (yolov8_msgs) StdoutLine: {'line': b'-- Installing: /home/yong/YongJun_ws/src/YOLO/Yolov8/matlab_msg_gen/glnxa64/install/m//+ros/+internal/+ros2/+custommessages/+yolov8_msgs/yolov8_msgs_msg_Mask_2To1_Converter.m\n'}
+[25.571567] (yolov8_msgs) StdoutLine: {'line': b'-- Installing: /home/yong/YongJun_ws/src/YOLO/Yolov8/matlab_msg_gen/glnxa64/install/share/ament_index/resource_index/package_run_dependencies/yolov8_msgs\n'}
+[25.571647] (yolov8_msgs) StdoutLine: {'line': b'-- Installing: /home/yong/YongJun_ws/src/YOLO/Yolov8/matlab_msg_gen/glnxa64/install/share/ament_index/resource_index/parent_prefix_path/yolov8_msgs\n'}
+[25.571701] (yolov8_msgs) StdoutLine: {'line': b'-- Installing: /home/yong/YongJun_ws/src/YOLO/Yolov8/matlab_msg_gen/glnxa64/install/share/yolov8_msgs/environment/ament_prefix_path.sh\n'}
+[25.571747] (yolov8_msgs) StdoutLine: {'line': b'-- Installing: /home/yong/YongJun_ws/src/YOLO/Yolov8/matlab_msg_gen/glnxa64/install/share/yolov8_msgs/environment/ament_prefix_path.dsv\n'}
+[25.571801] (yolov8_msgs) StdoutLine: {'line': b'-- Installing: /home/yong/YongJun_ws/src/YOLO/Yolov8/matlab_msg_gen/glnxa64/install/share/yolov8_msgs/environment/path.sh\n'}
+[25.571855] (yolov8_msgs) StdoutLine: {'line': b'-- Installing: /home/yong/YongJun_ws/src/YOLO/Yolov8/matlab_msg_gen/glnxa64/install/share/yolov8_msgs/environment/path.dsv\n'}
+[25.571930] (yolov8_msgs) StdoutLine: {'line': b'-- Installing: /home/yong/YongJun_ws/src/YOLO/Yolov8/matlab_msg_gen/glnxa64/install/share/yolov8_msgs/local_setup.bash\n'}
+[25.571975] (yolov8_msgs) StdoutLine: {'line': b'-- Installing: /home/yong/YongJun_ws/src/YOLO/Yolov8/matlab_msg_gen/glnxa64/install/share/yolov8_msgs/local_setup.sh\n'}
+[25.572046] (yolov8_msgs) StdoutLine: {'line': b'-- Installing: /home/yong/YongJun_ws/src/YOLO/Yolov8/matlab_msg_gen/glnxa64/install/share/yolov8_msgs/local_setup.zsh\n'}
+[25.572092] (yolov8_msgs) StdoutLine: {'line': b'-- Installing: /home/yong/YongJun_ws/src/YOLO/Yolov8/matlab_msg_gen/glnxa64/install/share/yolov8_msgs/local_setup.dsv\n'}
+[25.572138] (yolov8_msgs) StdoutLine: {'line': b'-- Installing: /home/yong/YongJun_ws/src/YOLO/Yolov8/matlab_msg_gen/glnxa64/install/share/yolov8_msgs/package.dsv\n'}
+[25.572204] (yolov8_msgs) StdoutLine: {'line': b'-- Installing: /home/yong/YongJun_ws/src/YOLO/Yolov8/matlab_msg_gen/glnxa64/install/share/ament_index/resource_index/packages/yolov8_msgs\n'}
+[25.572250] (yolov8_msgs) StdoutLine: {'line': b'-- Installing: /home/yong/YongJun_ws/src/YOLO/Yolov8/matlab_msg_gen/glnxa64/install/share/yolov8_msgs/cmake/export_yolov8_msgs__rosidl_generator_cExport.cmake\n'}
+[25.572298] (yolov8_msgs) StdoutLine: {'line': b'-- Installing: /home/yong/YongJun_ws/src/YOLO/Yolov8/matlab_msg_gen/glnxa64/install/share/yolov8_msgs/cmake/export_yolov8_msgs__rosidl_generator_cExport-release.cmake\n'}
+[25.572344] (yolov8_msgs) StdoutLine: {'line': b'-- Installing: /home/yong/YongJun_ws/src/YOLO/Yolov8/matlab_msg_gen/glnxa64/install/share/yolov8_msgs/cmake/export_yolov8_msgs__rosidl_typesupport_fastrtps_cExport.cmake\n'}
+[25.572412] (yolov8_msgs) StdoutLine: {'line': b'-- Installing: /home/yong/YongJun_ws/src/YOLO/Yolov8/matlab_msg_gen/glnxa64/install/share/yolov8_msgs/cmake/export_yolov8_msgs__rosidl_typesupport_fastrtps_cExport-release.cmake\n'}
+[25.572457] (yolov8_msgs) StdoutLine: {'line': b'-- Installing: /home/yong/YongJun_ws/src/YOLO/Yolov8/matlab_msg_gen/glnxa64/install/share/yolov8_msgs/cmake/yolov8_msgs__rosidl_typesupport_introspection_cExport.cmake\n'}
+[25.572512] (yolov8_msgs) StdoutLine: {'line': b'-- Installing: /home/yong/YongJun_ws/src/YOLO/Yolov8/matlab_msg_gen/glnxa64/install/share/yolov8_msgs/cmake/yolov8_msgs__rosidl_typesupport_introspection_cExport-release.cmake\n'}
+[25.572559] (yolov8_msgs) StdoutLine: {'line': b'-- Installing: /home/yong/YongJun_ws/src/YOLO/Yolov8/matlab_msg_gen/glnxa64/install/share/yolov8_msgs/cmake/yolov8_msgs__rosidl_typesupport_cExport.cmake\n'}
+[25.572605] (yolov8_msgs) StdoutLine: {'line': b'-- Installing: /home/yong/YongJun_ws/src/YOLO/Yolov8/matlab_msg_gen/glnxa64/install/share/yolov8_msgs/cmake/yolov8_msgs__rosidl_typesupport_cExport-release.cmake\n'}
+[25.572682] (yolov8_msgs) StdoutLine: {'line': b'-- Installing: /home/yong/YongJun_ws/src/YOLO/Yolov8/matlab_msg_gen/glnxa64/install/share/yolov8_msgs/cmake/export_yolov8_msgs__rosidl_generator_cppExport.cmake\n'}
+[25.572744] (yolov8_msgs) StdoutLine: {'line': b'-- Installing: /home/yong/YongJun_ws/src/YOLO/Yolov8/matlab_msg_gen/glnxa64/install/share/yolov8_msgs/cmake/export_yolov8_msgs__rosidl_typesupport_fastrtps_cppExport.cmake\n'}
+[25.572791] (yolov8_msgs) StdoutLine: {'line': b'-- Installing: /home/yong/YongJun_ws/src/YOLO/Yolov8/matlab_msg_gen/glnxa64/install/share/yolov8_msgs/cmake/export_yolov8_msgs__rosidl_typesupport_fastrtps_cppExport-release.cmake\n'}
+[25.572877] (yolov8_msgs) StdoutLine: {'line': b'-- Installing: /home/yong/YongJun_ws/src/YOLO/Yolov8/matlab_msg_gen/glnxa64/install/share/yolov8_msgs/cmake/yolov8_msgs__rosidl_typesupport_introspection_cppExport.cmake\n'}
+[25.572924] (yolov8_msgs) StdoutLine: {'line': b'-- Installing: /home/yong/YongJun_ws/src/YOLO/Yolov8/matlab_msg_gen/glnxa64/install/share/yolov8_msgs/cmake/yolov8_msgs__rosidl_typesupport_introspection_cppExport-release.cmake\n'}
+[25.572984] (yolov8_msgs) StdoutLine: {'line': b'-- Installing: /home/yong/YongJun_ws/src/YOLO/Yolov8/matlab_msg_gen/glnxa64/install/share/yolov8_msgs/cmake/yolov8_msgs__rosidl_typesupport_cppExport.cmake\n'}
+[25.573056] (yolov8_msgs) StdoutLine: {'line': b'-- Installing: /home/yong/YongJun_ws/src/YOLO/Yolov8/matlab_msg_gen/glnxa64/install/share/yolov8_msgs/cmake/yolov8_msgs__rosidl_typesupport_cppExport-release.cmake\n'}
+[25.573101] (yolov8_msgs) StdoutLine: {'line': b'-- Installing: /home/yong/YongJun_ws/src/YOLO/Yolov8/matlab_msg_gen/glnxa64/install/share/yolov8_msgs/cmake/rosidl_cmake-extras.cmake\n'}
+[25.573156] (yolov8_msgs) StdoutLine: {'line': b'-- Installing: /home/yong/YongJun_ws/src/YOLO/Yolov8/matlab_msg_gen/glnxa64/install/share/yolov8_msgs/cmake/ament_cmake_export_dependencies-extras.cmake\n'}
+[25.573201] (yolov8_msgs) StdoutLine: {'line': b'-- Installing: /home/yong/YongJun_ws/src/YOLO/Yolov8/matlab_msg_gen/glnxa64/install/share/yolov8_msgs/cmake/ament_cmake_export_include_directories-extras.cmake\n'}
+[25.573280] (yolov8_msgs) StdoutLine: {'line': b'-- Installing: /home/yong/YongJun_ws/src/YOLO/Yolov8/matlab_msg_gen/glnxa64/install/share/yolov8_msgs/cmake/ament_cmake_export_libraries-extras.cmake\n'}
+[25.573329] (yolov8_msgs) StdoutLine: {'line': b'-- Installing: /home/yong/YongJun_ws/src/YOLO/Yolov8/matlab_msg_gen/glnxa64/install/share/yolov8_msgs/cmake/ament_cmake_export_targets-extras.cmake\n'}
+[25.573390] (yolov8_msgs) StdoutLine: {'line': b'-- Installing: /home/yong/YongJun_ws/src/YOLO/Yolov8/matlab_msg_gen/glnxa64/install/share/yolov8_msgs/cmake/rosidl_cmake_export_typesupport_targets-extras.cmake\n'}
+[25.573450] (yolov8_msgs) StdoutLine: {'line': b'-- Installing: /home/yong/YongJun_ws/src/YOLO/Yolov8/matlab_msg_gen/glnxa64/install/share/yolov8_msgs/cmake/rosidl_cmake_export_typesupport_libraries-extras.cmake\n'}
+[25.573509] (yolov8_msgs) StdoutLine: {'line': b'-- Installing: /home/yong/YongJun_ws/src/YOLO/Yolov8/matlab_msg_gen/glnxa64/install/share/yolov8_msgs/cmake/yolov8_msgsConfig.cmake\n'}
+[25.573565] (yolov8_msgs) StdoutLine: {'line': b'-- Installing: /home/yong/YongJun_ws/src/YOLO/Yolov8/matlab_msg_gen/glnxa64/install/share/yolov8_msgs/cmake/yolov8_msgsConfig-version.cmake\n'}
+[25.573624] (yolov8_msgs) StdoutLine: {'line': b'-- Installing: /home/yong/YongJun_ws/src/YOLO/Yolov8/matlab_msg_gen/glnxa64/install/share/yolov8_msgs/package.xml\n'}
+[25.576389] (yolov8_msgs) CommandEnded: {'returncode': 0}
+[25.576755] (-) TimerEvent: {}
+[25.658890] (yolov8_msgs) JobEnded: {'identifier': 'yolov8_msgs', 'rc': 0}
+[25.659404] (-) EventReactorShutdown: {}

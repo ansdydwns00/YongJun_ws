@@ -81,7 +81,7 @@ class DebugNode(Node):
 
         # write text
         # label = "{} ({}) ({:.3f})".format(label, str(track_id), score)
-        label = "{} ({})".format(label, str(track_id))
+        label = "{}".format(str(track_id))
         pos = (min_pt[0] + 5, min_pt[1] + 25)
         font = cv2.FONT_HERSHEY_SIMPLEX
         cv2.putText(cv_image, label, pos, font,
