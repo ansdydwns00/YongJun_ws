@@ -5,7 +5,7 @@
  * File: AutoL_parsing.c
  *
  * MATLAB Coder version            : 23.2
- * C/C++ source code generated on  : 07-May-2024 13:08:27
+ * C/C++ source code generated on  : 08-May-2024 17:20:00
  */
 
 /* Include Files */
@@ -20,54 +20,31 @@
 /* Variable Definitions */
 static boolean_T points_not_empty;
 
-/* Function Declarations */
-static double rt_roundd_snf(double u);
-
 /* Function Definitions */
-/*
- * Arguments    : double u
- * Return Type  : double
- */
-static double rt_roundd_snf(double u)
-{
-  double y;
-  if (fabs(u) < 4.503599627370496E+15) {
-    if (u >= 0.5) {
-      y = floor(u + 0.5);
-    } else if (u > -0.5) {
-      y = u * 0.0;
-    } else {
-      y = ceil(u - 0.5);
-    }
-  } else {
-    y = u;
-  }
-  return y;
-}
-
 /*
  * Initialize of persistent parameters
  *
- * Arguments    : const double packetData[1330]
- *                double reset_flag
- *                emxArray_real_T *xyzCoords
+ * Arguments    : const float packetData[1330]
+ *                float reset_flag
+ *                emxArray_real32_T *xyzCoords
  *                boolean_T *isValid
  * Return Type  : void
  */
-void AutoL_parsing(const double packetData[1330], double reset_flag,
-                   emxArray_real_T *xyzCoords, boolean_T *isValid)
+void AutoL_parsing(const float packetData[1330], float reset_flag,
+                   emxArray_real32_T *xyzCoords, boolean_T *isValid)
 {
   static const double dv[4] = {-0.038388791, -0.104694693, -0.00523584,
                                -0.071541742};
-  static double points[68352];
   static double c_i;
-  double xyzPoints[384];
-  double ToF[128];
+  static float points[68352];
   double elevation[16];
-  double azimuth_data[8];
-  double d;
   double z_tmp;
-  double *xyzCoords_data;
+  float xyzPoints[384];
+  float ToF[128];
+  float azimuth_data[8];
+  float f;
+  float xy;
+  float *xyzCoords_data;
   int ToF_tmp;
   int b_i;
   int i;
@@ -77,8 +54,8 @@ void AutoL_parsing(const double packetData[1330], double reset_flag,
   if (!isInitialized_AutoL_parsing) {
     AutoL_parsing_initialize();
   }
-  if ((!points_not_empty) || (reset_flag == 0.0)) {
-    memset(&points[0], 0, 68352U * sizeof(double));
+  if ((!points_not_empty) || (reset_flag == 0.0F)) {
+    memset(&points[0], 0, 68352U * sizeof(float));
     points_not_empty = true;
     c_i = 1.0;
   }
@@ -87,14 +64,14 @@ void AutoL_parsing(const double packetData[1330], double reset_flag,
    * truncated.) */
   /*  [1 x 28] */
   /*  [1 x 1296] (Except for Timestamp, ProductID)   */
-  d = rt_roundd_snf(packetData[4]);
-  if (d < 256.0) {
-    if (d >= 0.0) {
-      top_bottom_flag = (unsigned char)d;
+  f = roundf(packetData[4]);
+  if (f < 256.0F) {
+    if (f >= 0.0F) {
+      top_bottom_flag = (unsigned char)f;
     } else {
       top_bottom_flag = 0U;
     }
-  } else if (d >= 256.0) {
+  } else if (f >= 256.0F) {
     top_bottom_flag = MAX_uint8_T;
   } else {
     top_bottom_flag = 0U;
@@ -117,57 +94,59 @@ void AutoL_parsing(const double packetData[1330], double reset_flag,
   }
   /*  Apply azimuth offset to calculate precise azimuth */
   /*  Values for azimuth (3 echo mode) */
-  memset(&azimuth_data[0], 0, 8U * sizeof(double));
+  for (i = 0; i < 8; i++) {
+    azimuth_data[i] = 0.0F;
+  }
   for (b_i = 0; b_i < 8; b_i++) {
     i = b_i * 3;
-    d = packetData[i * 54 + 30] + 256.0 * packetData[i * 54 + 31];
-    z_tmp = (d + 65536.0 * packetData[i * 54 + 32]) +
-            1.6777216E+7 * packetData[i * 54 + 33];
-    if (z_tmp > 2.147483647E+9) {
-      azimuth_data[(int)((double)i / 3.0 + 1.0) - 1] = (d - 65535.0) / 1000.0;
+    f = packetData[i * 54 + 30] + 256.0F * packetData[i * 54 + 31];
+    xy = (f + 65536.0F * packetData[i * 54 + 32]) +
+         1.6777216E+7F * packetData[i * 54 + 33];
+    if (xy > 2.147483647E+9) {
+      azimuth_data[(int)((double)i / 3.0 + 1.0) - 1] = (f - 65535.0F) / 1000.0F;
     } else {
-      azimuth_data[(int)((double)i / 3.0 + 1.0) - 1] = z_tmp / 1000.0;
+      azimuth_data[(int)((double)i / 3.0 + 1.0) - 1] = xy / 1000.0F;
     }
   }
   /*  ToF for azimuth [8*16] */
-  memset(&ToF[0], 0, 128U * sizeof(double));
+  memset(&ToF[0], 0, 128U * sizeof(float));
   for (b_i = 0; b_i < 8; b_i++) {
     for (j = 0; j < 16; j++) {
       i = j * 3;
       ToF_tmp = b_i * 54 * 3 + i;
       ToF[(int)(((double)b_i * 16.0 + (double)i / 3.0) + 1.0) - 1] =
-          (packetData[ToF_tmp + 34] + 256.0 * packetData[ToF_tmp + 35]) / 256.0;
+          (packetData[ToF_tmp + 34] + 256.0F * packetData[ToF_tmp + 35]) /
+          256.0F;
     }
   }
   /*  Rearrangement ToF [16 x 8]  */
   /*  Finding coordinates [x,y,z] */
   for (b_i = 0; b_i < 8; b_i++) {
     for (j = 0; j < 16; j++) {
-      double x_tmp;
-      double xy;
+      float x_tmp;
       z_tmp = 0.017453292519943295 * elevation[j];
       i = j + (b_i << 4);
-      d = ToF[i];
-      xy = d * cos(z_tmp);
-      x_tmp = 0.017453292519943295 *
-              (azimuth_data[b_i] + dv[(int)floor((double)j / 4.0)]);
-      xyzPoints[i] = xy * cos(x_tmp);
-      xyzPoints[i + 128] = xy * sin(x_tmp);
-      xyzPoints[i + 256] = d * sin(z_tmp);
+      f = ToF[i];
+      xy = f * (float)cos(z_tmp);
+      x_tmp = 0.0174532924F *
+              (azimuth_data[b_i] + (float)dv[(int)floor((double)j / 4.0)]);
+      xyzPoints[i] = xy * cosf(x_tmp);
+      xyzPoints[i + 128] = xy * sinf(x_tmp);
+      xyzPoints[i + 256] = f * (float)sin(z_tmp);
     }
   }
   /*  Check End frame packet */
   guard1 = false;
   if (top_bottom_flag == 1) {
     unsigned int u;
-    d = rt_roundd_snf(packetData[5]);
-    if (d < 4.294967296E+9) {
-      if (d >= 0.0) {
-        u = (unsigned int)d;
+    f = roundf(packetData[5]);
+    if (f < 4.2949673E+9F) {
+      if (f >= 0.0F) {
+        u = (unsigned int)f;
       } else {
         u = 0U;
       }
-    } else if (d >= 4.294967296E+9) {
+    } else if (f >= 4.2949673E+9F) {
       u = MAX_uint32_T;
     } else {
       u = 0U;
@@ -178,7 +157,7 @@ void AutoL_parsing(const double packetData[1330], double reset_flag,
       i = xyzCoords->size[0] * xyzCoords->size[1];
       xyzCoords->size[0] = 22784;
       xyzCoords->size[1] = 3;
-      emxEnsureCapacity_real_T(xyzCoords, i);
+      emxEnsureCapacity_real32_T(xyzCoords, i);
       xyzCoords_data = xyzCoords->data;
       for (i = 0; i < 68352; i++) {
         xyzCoords_data[i] = points[i];
@@ -186,7 +165,7 @@ void AutoL_parsing(const double packetData[1330], double reset_flag,
       *isValid = true;
       /*  Initialize of parameters */
       c_i = 1.0;
-      memset(&points[0], 0, 68352U * sizeof(double));
+      memset(&points[0], 0, 68352U * sizeof(float));
     } else {
       guard1 = true;
     }
@@ -195,10 +174,10 @@ void AutoL_parsing(const double packetData[1330], double reset_flag,
   }
   if (guard1) {
     /*  Save [x,y,z] coordinates in packet unless it's an end frame */
-    d = (c_i - 1.0) * 128.0 + 1.0;
+    z_tmp = (c_i - 1.0) * 128.0 + 1.0;
     for (i = 0; i < 3; i++) {
       for (ToF_tmp = 0; ToF_tmp < 128; ToF_tmp++) {
-        points[((int)(d + (double)ToF_tmp) + 22784 * i) - 1] =
+        points[((int)(z_tmp + (double)ToF_tmp) + 22784 * i) - 1] =
             xyzPoints[ToF_tmp + (i << 7)];
       }
     }

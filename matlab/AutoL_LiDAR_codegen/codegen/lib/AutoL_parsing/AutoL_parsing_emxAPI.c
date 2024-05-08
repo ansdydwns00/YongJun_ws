@@ -5,7 +5,7 @@
  * File: AutoL_parsing_emxAPI.c
  *
  * MATLAB Coder version            : 23.2
- * C/C++ source code generated on  : 07-May-2024 13:08:27
+ * C/C++ source code generated on  : 08-May-2024 17:20:00
  */
 
 /* Include Files */
@@ -18,38 +18,38 @@
 /*
  * Arguments    : int numDimensions
  *                const int *size
- * Return Type  : emxArray_real_T *
+ * Return Type  : emxArray_real32_T *
  */
-emxArray_real_T *emxCreateND_real_T(int numDimensions, const int *size)
+emxArray_real32_T *emxCreateND_real32_T(int numDimensions, const int *size)
 {
-  emxArray_real_T *emx;
+  emxArray_real32_T *emx;
   int i;
   int numEl;
-  emxInit_real_T(&emx, numDimensions);
+  emxInit_real32_T(&emx, numDimensions);
   numEl = 1;
   for (i = 0; i < numDimensions; i++) {
     numEl *= size[i];
     emx->size[i] = size[i];
   }
-  emx->data = (double *)malloc((unsigned int)numEl * sizeof(double));
+  emx->data = (float *)malloc((unsigned int)numEl * sizeof(float));
   emx->numDimensions = numDimensions;
   emx->allocatedSize = numEl;
   return emx;
 }
 
 /*
- * Arguments    : double *data
+ * Arguments    : float *data
  *                int numDimensions
  *                const int *size
- * Return Type  : emxArray_real_T *
+ * Return Type  : emxArray_real32_T *
  */
-emxArray_real_T *emxCreateWrapperND_real_T(double *data, int numDimensions,
-                                           const int *size)
+emxArray_real32_T *emxCreateWrapperND_real32_T(float *data, int numDimensions,
+                                               const int *size)
 {
-  emxArray_real_T *emx;
+  emxArray_real32_T *emx;
   int i;
   int numEl;
-  emxInit_real_T(&emx, numDimensions);
+  emxInit_real32_T(&emx, numDimensions);
   numEl = 1;
   for (i = 0; i < numDimensions; i++) {
     numEl *= size[i];
@@ -63,15 +63,15 @@ emxArray_real_T *emxCreateWrapperND_real_T(double *data, int numDimensions,
 }
 
 /*
- * Arguments    : double *data
+ * Arguments    : float *data
  *                int rows
  *                int cols
- * Return Type  : emxArray_real_T *
+ * Return Type  : emxArray_real32_T *
  */
-emxArray_real_T *emxCreateWrapper_real_T(double *data, int rows, int cols)
+emxArray_real32_T *emxCreateWrapper_real32_T(float *data, int rows, int cols)
 {
-  emxArray_real_T *emx;
-  emxInit_real_T(&emx, 2);
+  emxArray_real32_T *emx;
+  emxInit_real32_T(&emx, 2);
   emx->size[0] = rows;
   emx->size[1] = cols;
   emx->data = data;
@@ -84,39 +84,39 @@ emxArray_real_T *emxCreateWrapper_real_T(double *data, int rows, int cols)
 /*
  * Arguments    : int rows
  *                int cols
- * Return Type  : emxArray_real_T *
+ * Return Type  : emxArray_real32_T *
  */
-emxArray_real_T *emxCreate_real_T(int rows, int cols)
+emxArray_real32_T *emxCreate_real32_T(int rows, int cols)
 {
-  emxArray_real_T *emx;
+  emxArray_real32_T *emx;
   int numEl;
-  emxInit_real_T(&emx, 2);
+  emxInit_real32_T(&emx, 2);
   emx->size[0] = rows;
   numEl = rows * cols;
   emx->size[1] = cols;
-  emx->data = (double *)malloc((unsigned int)numEl * sizeof(double));
+  emx->data = (float *)malloc((unsigned int)numEl * sizeof(float));
   emx->numDimensions = 2;
   emx->allocatedSize = numEl;
   return emx;
 }
 
 /*
- * Arguments    : emxArray_real_T *emxArray
+ * Arguments    : emxArray_real32_T *emxArray
  * Return Type  : void
  */
-void emxDestroyArray_real_T(emxArray_real_T *emxArray)
+void emxDestroyArray_real32_T(emxArray_real32_T *emxArray)
 {
-  emxFree_real_T(&emxArray);
+  emxFree_real32_T(&emxArray);
 }
 
 /*
- * Arguments    : emxArray_real_T **pEmxArray
+ * Arguments    : emxArray_real32_T **pEmxArray
  *                int numDimensions
  * Return Type  : void
  */
-void emxInitArray_real_T(emxArray_real_T **pEmxArray, int numDimensions)
+void emxInitArray_real32_T(emxArray_real32_T **pEmxArray, int numDimensions)
 {
-  emxInit_real_T(pEmxArray, numDimensions);
+  emxInit_real32_T(pEmxArray, numDimensions);
 }
 
 /*

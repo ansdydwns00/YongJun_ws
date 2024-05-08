@@ -27,7 +27,7 @@ imageSub = ros2subscriber(Matlab,'/camera1/image_raw','sensor_msgs/Image');
 % player = pcplayer([0 15],[-10 10],[-4 20]);
 
 % [x,y,z] 좌표 값 사전 할당(178 packet * 128 points), 코드 속도를 위해 사전 할당 
-points = zeros(22784,3);
+points = single(zeros(22784,3));
 
 frameCount = 0;
 i = 1;
@@ -40,7 +40,7 @@ tic
 while true
     
     % 패킷 1개 불러오기      
-    packetData = read(udpObj,1);
+    packetData = single(read(udpObj,1));
     
     % 패킷 1개 parsing
     [payload,top_bottom_flag,dataType] = packet_extract(packetData);
@@ -92,12 +92,12 @@ while true
 
         % parameter 초기화
         i = 1;
-        points = zeros(22784,3);
+        points = single(zeros(22784,3));
 
-        % fps disp 
+        % Display Rendering rate 
         frameCount = frameCount + 1;
         elapsedTime = toc;
         frameRate = frameCount / elapsedTime;
-        fprintf("Lidar Hz: %f Hz\n",frameRate);
+        fprintf("Rendering rate: %f hz\n",frameRate);
     end        
 end

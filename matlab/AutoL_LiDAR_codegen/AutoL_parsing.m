@@ -5,7 +5,7 @@ function [xyzCoords, isValid] = AutoL_parsing(packetData,reset_flag) %#codegen
     persistent i
 
     if isempty(points) || reset_flag == 0
-        points = zeros(22784,3);
+        points = single(zeros(22784,3));
         i = 1;
     end
     
@@ -26,7 +26,7 @@ function [xyzCoords, isValid] = AutoL_parsing(packetData,reset_flag) %#codegen
         
         % Initialize of parameters
         i = 1;
-        points = zeros(22784,3);
+        points = single(zeros(22784,3));
     else
 
         % Save [x,y,z] coordinates in packet unless it's an end frame
@@ -34,7 +34,7 @@ function [xyzCoords, isValid] = AutoL_parsing(packetData,reset_flag) %#codegen
         i = i + 1;
         
         % Return empty matrix for 1 frame and set the return flag to false
-        xyzCoords = [];
+        xyzCoords = single([]);
         isValid = false;
     end   
      

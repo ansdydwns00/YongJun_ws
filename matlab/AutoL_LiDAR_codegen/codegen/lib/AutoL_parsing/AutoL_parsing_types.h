@@ -5,7 +5,7 @@
  * File: AutoL_parsing_types.h
  *
  * MATLAB Coder version            : 23.2
- * C/C++ source code generated on  : 07-May-2024 13:08:27
+ * C/C++ source code generated on  : 08-May-2024 17:20:00
  */
 
 #ifndef AUTOL_PARSING_TYPES_H
@@ -15,20 +15,20 @@
 #include "rtwtypes.h"
 
 /* Type Definitions */
-#ifndef struct_emxArray_real_T
-#define struct_emxArray_real_T
-struct emxArray_real_T {
-  double *data;
+#ifndef struct_emxArray_real32_T
+#define struct_emxArray_real32_T
+struct emxArray_real32_T {
+  float *data;
   int *size;
   int allocatedSize;
   int numDimensions;
   boolean_T canFreeData;
 };
-#endif /* struct_emxArray_real_T */
-#ifndef typedef_emxArray_real_T
-#define typedef_emxArray_real_T
-typedef struct emxArray_real_T emxArray_real_T;
-#endif /* typedef_emxArray_real_T */
+#endif /* struct_emxArray_real32_T */
+#ifndef typedef_emxArray_real32_T
+#define typedef_emxArray_real32_T
+typedef struct emxArray_real32_T emxArray_real32_T;
+#endif /* typedef_emxArray_real32_T */
 
 #endif
 /*

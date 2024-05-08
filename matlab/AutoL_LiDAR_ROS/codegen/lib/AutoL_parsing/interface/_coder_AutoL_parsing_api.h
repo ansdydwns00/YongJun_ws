@@ -5,7 +5,7 @@
  * File: _coder_AutoL_parsing_api.h
  *
  * MATLAB Coder version            : 23.2
- * C/C++ source code generated on  : 07-May-2024 13:08:27
+ * C/C++ source code generated on  : 08-May-2024 17:20:00
  */
 
 #ifndef _CODER_AUTOL_PARSING_API_H
@@ -18,20 +18,20 @@
 #include <string.h>
 
 /* Type Definitions */
-#ifndef struct_emxArray_real_T
-#define struct_emxArray_real_T
-struct emxArray_real_T {
-  real_T *data;
+#ifndef struct_emxArray_real32_T
+#define struct_emxArray_real32_T
+struct emxArray_real32_T {
+  real32_T *data;
   int32_T *size;
   int32_T allocatedSize;
   int32_T numDimensions;
   boolean_T canFreeData;
 };
-#endif /* struct_emxArray_real_T */
-#ifndef typedef_emxArray_real_T
-#define typedef_emxArray_real_T
-typedef struct emxArray_real_T emxArray_real_T;
-#endif /* typedef_emxArray_real_T */
+#endif /* struct_emxArray_real32_T */
+#ifndef typedef_emxArray_real32_T
+#define typedef_emxArray_real32_T
+typedef struct emxArray_real32_T emxArray_real32_T;
+#endif /* typedef_emxArray_real32_T */
 
 /* Variable Declarations */
 extern emlrtCTX emlrtRootTLSGlobal;
@@ -42,8 +42,8 @@ extern "C" {
 #endif
 
 /* Function Declarations */
-void AutoL_parsing(real_T packetData[1330], real_T reset_flag,
-                   emxArray_real_T *xyzCoords, boolean_T *isValid);
+void AutoL_parsing(real32_T packetData[1330], real32_T reset_flag,
+                   emxArray_real32_T *xyzCoords, boolean_T *isValid);
 
 void AutoL_parsing_api(const mxArray *const prhs[2], int32_T nlhs,
                        const mxArray *plhs[2]);

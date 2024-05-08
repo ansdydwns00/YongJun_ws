@@ -2,7 +2,7 @@ function [payload, top_bottom_flag, dataType] = packet_extract(packetData)
 
     % Split into "Payload Header" and "Payload" (UDP Header is received truncated.)
     payload_header = packetData(:,1:28);            % [1 x 28]
-    payload = packetData(:,29:end-6);               % [1 x 1296] (Except for Timestamp, ProductID)  
+    payload = single(packetData(:,29:end-6));               % [1 x 1296] (Except for Timestamp, ProductID)  
     
 
     

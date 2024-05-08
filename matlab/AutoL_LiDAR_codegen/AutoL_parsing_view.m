@@ -18,7 +18,7 @@ frameCount = 0;
 flush(udpObj,"input")
 
 % Reset persistent variable
-reset_flag = 0;
+reset_flag = single(0);
 
 % check_dataSize = {};
 
@@ -26,7 +26,7 @@ tic
 while true
 
     % Load 1 packet [1 x 1330]       
-    packetData = read(udpObj,1330);
+    packetData = single(read(udpObj,1330));
 
     % Use mex file to verify generated c code
     [xyzCoords,isValid] = AutoL_parsing_mex(packetData,reset_flag);
@@ -42,7 +42,7 @@ while true
         % Display ptCloud on pcplayer
         view(player,ptCloud) 
         
-        reset_flag = 1;
+        reset_flag = single(1);
 
         % Display Rendering rate 
         frameCount = frameCount + 1;

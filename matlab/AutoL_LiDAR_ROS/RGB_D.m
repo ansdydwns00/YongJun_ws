@@ -61,7 +61,7 @@ while true
     bboxes = [];
 
     % Load 1 packet [1 x 1330]       
-    packetData = read(udpObj,1330);
+    packetData = single(read(udpObj,1330));
     
     % Use mex file to verify generated c code
     [xyzCoords,isValid] = AutoL_parsing_mex(packetData,reset_flag);

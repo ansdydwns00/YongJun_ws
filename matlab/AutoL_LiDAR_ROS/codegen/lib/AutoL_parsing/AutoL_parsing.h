@@ -5,7 +5,7 @@
  * File: AutoL_parsing.h
  *
  * MATLAB Coder version            : 23.2
- * C/C++ source code generated on  : 07-May-2024 13:08:27
+ * C/C++ source code generated on  : 08-May-2024 17:20:00
  */
 
 #ifndef AUTOL_PARSING_H
@@ -22,8 +22,8 @@ extern "C" {
 #endif
 
 /* Function Declarations */
-extern void AutoL_parsing(const double packetData[1330], double reset_flag,
-                          emxArray_real_T *xyzCoords, boolean_T *isValid);
+extern void AutoL_parsing(const float packetData[1330], float reset_flag,
+                          emxArray_real32_T *xyzCoords, boolean_T *isValid);
 
 void AutoL_parsing_init(void);
 

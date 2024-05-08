@@ -13,7 +13,7 @@ player = pcplayer([0 10],[-10 10],[-4 4]);
 
 
 % Initialize of parameters 
-points = zeros(22784,3);      % Pre-allocation [x,y,z] coords matrix
+points = single(zeros(22784,3));      % Pre-allocation [x,y,z] coords matrix
 i = 1;
 frameCount = 0;
 
@@ -24,7 +24,7 @@ tic
 while true
   
     % Load 1 packet [1 x 1330]      
-    packetData = read(udpObj,1330);
+    packetData = single(read(udpObj,1330));
     
     % One packet data parsing
     [payload,top_bottom_flag,dataType] = packet_extract(packetData);
@@ -47,7 +47,7 @@ while true
 
         % Initialize of parameters
         i = 1;
-        points = zeros(22784,3);
+        points = single(zeros(22784,3));
         
         % Display Rendering rate 
         frameCount = frameCount + 1;

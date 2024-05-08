@@ -5,7 +5,7 @@
  * File: AutoL_parsing_emxAPI.h
  *
  * MATLAB Coder version            : 23.2
- * C/C++ source code generated on  : 07-May-2024 13:08:27
+ * C/C++ source code generated on  : 08-May-2024 17:20:00
  */
 
 #ifndef AUTOL_PARSING_EMXAPI_H
@@ -22,19 +22,21 @@ extern "C" {
 #endif
 
 /* Function Declarations */
-extern emxArray_real_T *emxCreateND_real_T(int numDimensions, const int *size);
+extern emxArray_real32_T *emxCreateND_real32_T(int numDimensions,
+                                               const int *size);
 
-extern emxArray_real_T *
-emxCreateWrapperND_real_T(double *data, int numDimensions, const int *size);
+extern emxArray_real32_T *
+emxCreateWrapperND_real32_T(float *data, int numDimensions, const int *size);
 
-extern emxArray_real_T *emxCreateWrapper_real_T(double *data, int rows,
-                                                int cols);
+extern emxArray_real32_T *emxCreateWrapper_real32_T(float *data, int rows,
+                                                    int cols);
 
-extern emxArray_real_T *emxCreate_real_T(int rows, int cols);
+extern emxArray_real32_T *emxCreate_real32_T(int rows, int cols);
 
-extern void emxDestroyArray_real_T(emxArray_real_T *emxArray);
+extern void emxDestroyArray_real32_T(emxArray_real32_T *emxArray);
 
-extern void emxInitArray_real_T(emxArray_real_T **pEmxArray, int numDimensions);
+extern void emxInitArray_real32_T(emxArray_real32_T **pEmxArray,
+                                  int numDimensions);
 
 #ifdef __cplusplus
 }

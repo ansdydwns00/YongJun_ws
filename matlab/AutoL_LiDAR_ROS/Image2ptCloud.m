@@ -16,7 +16,7 @@ CamToLidar = invert(tform);             % Cam coord -> Lidar coord
 %% Packet Data parsing 
 
 % [x,y,z] 좌표 값 사전 할당(178 packet * 128 points) -> 코드 속도를 위해 사전 할당
-points = zeros(22784,3);
+points = single(zeros(22784,3));
 
 % fps 확인 위한 parameter
 i = 1;
@@ -37,7 +37,7 @@ while true
     %--------------------------------LIDAR-------------------------------%
     %--------------------------------------------------------------------%
     % 패킷 1개 불러오기      
-    packetData = read(udpObj,1330);
+    packetData = single(read(udpObj,1330));
     
     % 패킷 1개 parsing
     [payload,top_bottom_flag,dataType] = packet_extract(packetData);
@@ -76,12 +76,12 @@ while true
 
         % parameter 초기화
         i = 1;
-        points = zeros(22784,3);
+        points = single(zeros(22784,3));
 
-        % fps disp 
+        % Display Rendering rate 
         frameCount = frameCount + 1;
         elapsedTime = toc;
         frameRate = frameCount / elapsedTime;
-        fprintf("AutoL Lidar FPS: %f Hz\n",frameRate);
+        fprintf("Rendering rate: %f hz\n",frameRate);
     end  
 end

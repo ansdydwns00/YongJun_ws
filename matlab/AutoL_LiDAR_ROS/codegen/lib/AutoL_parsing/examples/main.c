@@ -5,7 +5,7 @@
  * File: main.c
  *
  * MATLAB Coder version            : 23.2
- * C/C++ source code generated on  : 07-May-2024 13:08:27
+ * C/C++ source code generated on  : 08-May-2024 17:20:00
  */
 
 /*************************************************************************/
@@ -41,33 +41,33 @@
 #include "AutoL_parsing_types.h"
 
 /* Function Declarations */
-static void argInit_1x1330_real_T(double result[1330]);
+static void argInit_1x1330_real32_T(float result[1330]);
 
-static double argInit_real_T(void);
+static float argInit_real32_T(void);
 
 /* Function Definitions */
 /*
- * Arguments    : double result[1330]
+ * Arguments    : float result[1330]
  * Return Type  : void
  */
-static void argInit_1x1330_real_T(double result[1330])
+static void argInit_1x1330_real32_T(float result[1330])
 {
   int idx1;
   /* Loop over the array to initialize each element. */
   for (idx1 = 0; idx1 < 1330; idx1++) {
     /* Set the value of the array element.
 Change this value to the value that the application requires. */
-    result[idx1] = argInit_real_T();
+    result[idx1] = argInit_real32_T();
   }
 }
 
 /*
  * Arguments    : void
- * Return Type  : double
+ * Return Type  : float
  */
-static double argInit_real_T(void)
+static float argInit_real32_T(void)
 {
-  return 0.0;
+  return 0.0F;
 }
 
 /*
@@ -96,16 +96,16 @@ You do not need to do this more than one time. */
  */
 void main_AutoL_parsing(void)
 {
-  emxArray_real_T *xyzCoords;
-  double dv[1330];
+  emxArray_real32_T *xyzCoords;
+  float fv[1330];
   boolean_T isValid;
   /* Initialize function 'AutoL_parsing' input arguments. */
   /* Initialize function input argument 'packetData'. */
   /* Call the entry-point 'AutoL_parsing'. */
-  emxInitArray_real_T(&xyzCoords, 2);
-  argInit_1x1330_real_T(dv);
-  AutoL_parsing(dv, argInit_real_T(), xyzCoords, &isValid);
-  emxDestroyArray_real_T(xyzCoords);
+  emxInitArray_real32_T(&xyzCoords, 2);
+  argInit_1x1330_real32_T(fv);
+  AutoL_parsing(fv, argInit_real32_T(), xyzCoords, &isValid);
+  emxDestroyArray_real32_T(xyzCoords);
 }
 
 /*
