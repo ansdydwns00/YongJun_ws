@@ -2,7 +2,7 @@
 ## Makefile generated for component 'AutoL_parsing'. 
 ## 
 ## Makefile     : AutoL_parsing_rtw.mk
-## Generated on : Thu May 09 15:08:32 2024
+## Generated on : Fri May 10 19:22:14 2024
 ## Final product: ./AutoL_parsing.a
 ## Product type : static-library
 ## 
@@ -167,7 +167,7 @@ DEFINES = $(DEFINES_CUSTOM) $(DEFINES_STANDARD)
 ## SOURCE FILES
 ###########################################################################
 
-SRCS = $(START_DIR)/codegen/lib/AutoL_parsing/AutoL_parsing_data.c $(START_DIR)/codegen/lib/AutoL_parsing/rt_nonfinite.c $(START_DIR)/codegen/lib/AutoL_parsing/rtGetNaN.c $(START_DIR)/codegen/lib/AutoL_parsing/rtGetInf.c $(START_DIR)/codegen/lib/AutoL_parsing/AutoL_parsing_initialize.c $(START_DIR)/codegen/lib/AutoL_parsing/AutoL_parsing_terminate.c $(START_DIR)/codegen/lib/AutoL_parsing/AutoL_parsing.c $(START_DIR)/codegen/lib/AutoL_parsing/AutoL_parsing_emxutil.c $(START_DIR)/codegen/lib/AutoL_parsing/AutoL_parsing_emxAPI.c
+SRCS = $(START_DIR)/codegen/lib/AutoL_parsing/AutoL_parsing_data.c $(START_DIR)/codegen/lib/AutoL_parsing/AutoL_parsing_initialize.c $(START_DIR)/codegen/lib/AutoL_parsing/AutoL_parsing_terminate.c $(START_DIR)/codegen/lib/AutoL_parsing/AutoL_parsing.c $(START_DIR)/codegen/lib/AutoL_parsing/AutoL_parsing_emxutil.c $(START_DIR)/codegen/lib/AutoL_parsing/AutoL_parsing_emxAPI.c
 
 ALL_SRCS = $(SRCS)
 
@@ -175,7 +175,7 @@ ALL_SRCS = $(SRCS)
 ## OBJECTS
 ###########################################################################
 
-OBJS = AutoL_parsing_data.o rt_nonfinite.o rtGetNaN.o rtGetInf.o AutoL_parsing_initialize.o AutoL_parsing_terminate.o AutoL_parsing.o AutoL_parsing_emxutil.o AutoL_parsing_emxAPI.o
+OBJS = AutoL_parsing_data.o AutoL_parsing_initialize.o AutoL_parsing_terminate.o AutoL_parsing.o AutoL_parsing_emxutil.o AutoL_parsing_emxAPI.o
 
 ALL_OBJS = $(OBJS)
 
@@ -379,18 +379,6 @@ $(PRODUCT) : $(OBJS) $(PREBUILT_OBJS)
 
 
 AutoL_parsing_data.o : $(START_DIR)/codegen/lib/AutoL_parsing/AutoL_parsing_data.c
-	$(CC) $(CFLAGS) -o "$@" "$<"
-
-
-rt_nonfinite.o : $(START_DIR)/codegen/lib/AutoL_parsing/rt_nonfinite.c
-	$(CC) $(CFLAGS) -o "$@" "$<"
-
-
-rtGetNaN.o : $(START_DIR)/codegen/lib/AutoL_parsing/rtGetNaN.c
-	$(CC) $(CFLAGS) -o "$@" "$<"
-
-
-rtGetInf.o : $(START_DIR)/codegen/lib/AutoL_parsing/rtGetInf.c
 	$(CC) $(CFLAGS) -o "$@" "$<"
 
 

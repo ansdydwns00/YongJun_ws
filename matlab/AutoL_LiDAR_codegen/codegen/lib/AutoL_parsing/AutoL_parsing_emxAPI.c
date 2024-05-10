@@ -5,14 +5,13 @@
  * File: AutoL_parsing_emxAPI.c
  *
  * MATLAB Coder version            : 23.2
- * C/C++ source code generated on  : 09-May-2024 15:08:27
+ * C/C++ source code generated on  : 10-May-2024 19:22:11
  */
 
 /* Include Files */
 #include "AutoL_parsing_emxAPI.h"
 #include "AutoL_parsing_emxutil.h"
 #include "AutoL_parsing_types.h"
-#include "rt_nonfinite.h"
 #include <stdlib.h>
 
 /* Function Definitions */

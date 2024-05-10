@@ -40,7 +40,7 @@ tic
 while true
     
     % 패킷 1개 불러오기      
-    packetData = single(read(udpObj,1));
+    packetData = single(read(udpObj,1))';
     
     % 패킷 1개 parsing
     [payload,top_bottom_flag,dataType] = packet_extract(packetData);

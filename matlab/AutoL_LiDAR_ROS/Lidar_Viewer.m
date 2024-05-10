@@ -24,7 +24,7 @@ tic
 while true
   
     % Load 1 packet [1 x 1330]      
-    packetData = single(read(udpObj,1330));
+    packetData = single(read(udpObj,1330))';
     
     % One packet data parsing
     [payload,top_bottom_flag,dataType] = packet_extract(packetData);

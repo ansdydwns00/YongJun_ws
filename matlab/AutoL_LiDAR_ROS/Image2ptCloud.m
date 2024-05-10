@@ -37,7 +37,7 @@ while true
     %--------------------------------LIDAR-------------------------------%
     %--------------------------------------------------------------------%
     % 패킷 1개 불러오기      
-    packetData = single(read(udpObj,1330));
+    packetData = single(read(udpObj,1330))';
     
     % 패킷 1개 parsing
     [payload,top_bottom_flag,dataType] = packet_extract(packetData);

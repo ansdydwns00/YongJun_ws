@@ -12,10 +12,9 @@ function xyzPoints = ptCloud_extract(payload,top_bottom_flag)
     else
         elevation = elevation_angle_up;
     end
-
+    
     % Apply azimuth offset to calculate precise azimuth
     precision_azimuth = [-0.038388791, -0.104694693,-0.00523584, -0.071541742];
-
 
     % Values for azimuth (3 echo mode)
     azimuth_data = single(zeros(1,8));

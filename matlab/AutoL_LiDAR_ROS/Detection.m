@@ -36,7 +36,7 @@ distance = [];
 currentStep = 0;
 frameCount = 0;
 fps = 0;
-
+reset_flag = single(0);
 
 roi = [0, 10, -1, 1, -2, 7];                    % ROI 설정
 clusterThreshold = 0.2;                         % Cluster distance
@@ -64,16 +64,16 @@ while true
     %                         One Packet get  
     % ---------------------------------------------------------------------------
     
-    % 패킷 1개 불러오기      
-    packetData = single(read(udpObj,1330));
+    % Load 1 packet [1 x 1330]      
+    packetData = single(read(udpObj,1330))';
     
-    % 패킷 1개 parsing
+    % One packet data parsing
     [payload,top_bottom_flag,dataType] = packet_extract(packetData);
     
-    % 패킷 1개에 해당하는 pointCloud 검출 
+    % [x,y,z] coords of one packet 
     xyzPoints = ptCloud_extract(payload,top_bottom_flag);
     
-    % 패킷 속 [x y z] 좌표값 저장
+    % Save [x,y,z] coords
     points((i-1)*128+1:(i-1)*128+128,:) = xyzPoints;
     i = i + 1;
     
@@ -141,13 +141,10 @@ while true
             deleteCuboid(player.Axes);
         end
         
-        view(player,ptCloud);
+        % view(player,ptCloud);
         vPlayer.step(img);
         
-        % parameter 초기화
-        i = 1;
-        points = single(zeros(22784,3));
-     
+        bboxes = [];
 
         % Display Rendering rate 
         frameCount = frameCount + 1;
@@ -155,4 +152,5 @@ while true
         frameRate = frameCount / elapsedTime;
         fprintf("Rendering rate: %f hz\n",frameRate);
     end   
+    reset_flag = single(1);
 end

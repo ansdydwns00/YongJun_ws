@@ -24,10 +24,10 @@ reset_flag = single(0);
 
 tic
 while true
-
+    
     % Load 1 packet [1 x 1330]       
-    packetData = single(read(udpObj,1330));
-
+    packetData = single(read(udpObj,1330))';
+    
     % Use mex file to verify generated c code
     [xyzCoords,isValid] = AutoL_parsing_mex(packetData,reset_flag);
 
@@ -43,10 +43,10 @@ while true
         view(player,ptCloud) 
 
         % Display Rendering rate 
-        % frameCount = frameCount + 1;
-        % elapsedTime = toc;
-        % frameRate = frameCount / elapsedTime;
-        % fprintf("Rendering rate: %f hz\n",frameRate);
+        frameCount = frameCount + 1;
+        elapsedTime = toc;
+        frameRate = frameCount / elapsedTime;
+        fprintf("Rendering rate: %f hz\n",frameRate);
     end
     reset_flag = single(1);
 end

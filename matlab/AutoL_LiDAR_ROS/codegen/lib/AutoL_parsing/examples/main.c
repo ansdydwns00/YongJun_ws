@@ -5,7 +5,7 @@
  * File: main.c
  *
  * MATLAB Coder version            : 23.2
- * C/C++ source code generated on  : 09-May-2024 15:08:27
+ * C/C++ source code generated on  : 10-May-2024 19:22:11
  */
 
 /*************************************************************************/
@@ -39,10 +39,9 @@
 #include "AutoL_parsing_emxAPI.h"
 #include "AutoL_parsing_terminate.h"
 #include "AutoL_parsing_types.h"
-#include "rt_nonfinite.h"
 
 /* Function Declarations */
-static void argInit_1x1330_real32_T(float result[1330]);
+static void argInit_1330x1_real32_T(float result[1330]);
 
 static float argInit_real32_T(void);
 
@@ -51,14 +50,14 @@ static float argInit_real32_T(void);
  * Arguments    : float result[1330]
  * Return Type  : void
  */
-static void argInit_1x1330_real32_T(float result[1330])
+static void argInit_1330x1_real32_T(float result[1330])
 {
-  int idx1;
+  int idx0;
   /* Loop over the array to initialize each element. */
-  for (idx1 = 0; idx1 < 1330; idx1++) {
+  for (idx0 = 0; idx0 < 1330; idx0++) {
     /* Set the value of the array element.
 Change this value to the value that the application requires. */
-    result[idx1] = argInit_real32_T();
+    result[idx0] = argInit_real32_T();
   }
 }
 
@@ -104,7 +103,7 @@ void main_AutoL_parsing(void)
   /* Initialize function input argument 'packetData'. */
   /* Call the entry-point 'AutoL_parsing'. */
   emxInitArray_real32_T(&xyzCoords, 2);
-  argInit_1x1330_real32_T(fv);
+  argInit_1330x1_real32_T(fv);
   AutoL_parsing(fv, argInit_real32_T(), xyzCoords, &isValid);
   emxDestroyArray_real32_T(xyzCoords);
 }
