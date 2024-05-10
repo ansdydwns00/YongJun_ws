@@ -5,7 +5,7 @@
  * File: _coder_AutoL_parsing_info.c
  *
  * MATLAB Coder version            : 23.2
- * C/C++ source code generated on  : 08-May-2024 17:20:00
+ * C/C++ source code generated on  : 09-May-2024 15:08:27
  */
 
 /* Include Files */
@@ -80,7 +80,7 @@ mxArray *emlrtMexFcnProperties(void)
       emlrtMxCreateString(
           "/home/yong/YongJun_ws/matlab/AutoL_LiDAR_codegen/AutoL_parsing.m"));
   emlrtSetField(xEntryPoints, 0, "TimeStamp",
-                emlrtMxCreateDoubleScalar(739380.72195601847));
+                emlrtMxCreateDoubleScalar(739381.6306828704));
   emlrtSetField(xEntryPoints, 0, "Constructor",
                 emlrtMxCreateLogicalScalar(false));
   emlrtSetField(xEntryPoints, 0, "Visible", emlrtMxCreateLogicalScalar(true));

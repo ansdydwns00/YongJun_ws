@@ -5,13 +5,14 @@
  * File: AutoL_parsing_initialize.c
  *
  * MATLAB Coder version            : 23.2
- * C/C++ source code generated on  : 08-May-2024 17:20:00
+ * C/C++ source code generated on  : 09-May-2024 15:08:27
  */
 
 /* Include Files */
 #include "AutoL_parsing_initialize.h"
 #include "AutoL_parsing.h"
 #include "AutoL_parsing_data.h"
+#include "rt_nonfinite.h"
 
 /* Function Definitions */
 /*

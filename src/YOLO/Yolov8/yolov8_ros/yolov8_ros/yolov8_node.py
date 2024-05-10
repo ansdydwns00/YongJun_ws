@@ -122,57 +122,57 @@ class Yolov8Node(Node):
 
         return boxes_list
 
-    def parse_masks(self, results: Results) -> List[Mask]:
+    # def parse_masks(self, results: Results) -> List[Mask]:
 
-        masks_list = []
+    #     masks_list = []
 
-        def create_point2d(x: float, y: float) -> Point2D:
-            p = Point2D()
-            p.x = x
-            p.y = y
-            return p
+    #     def create_point2d(x: float, y: float) -> Point2D:
+    #         p = Point2D()
+    #         p.x = x
+    #         p.y = y
+    #         return p
 
-        mask: Masks
-        for mask in results.masks:
+    #     mask: Masks
+    #     for mask in results.masks:
 
-            msg = Mask()
+    #         msg = Mask()
 
-            msg.data = [create_point2d(float(ele[0]), float(ele[1]))
-                        for ele in mask.xy[0].tolist()]
-            msg.height = results.orig_img.shape[0]
-            msg.width = results.orig_img.shape[1]
+    #         msg.data = [create_point2d(float(ele[0]), float(ele[1]))
+    #                     for ele in mask.xy[0].tolist()]
+    #         msg.height = results.orig_img.shape[0]
+    #         msg.width = results.orig_img.shape[1]
 
-            masks_list.append(msg)
+    #         masks_list.append(msg)
 
-        return masks_list
+    #     return masks_list
 
-    def parse_keypoints(self, results: Results) -> List[KeyPoint2DArray]:
+    # def parse_keypoints(self, results: Results) -> List[KeyPoint2DArray]:
 
-        keypoints_list = []
+    #     keypoints_list = []
 
-        points: Keypoints
-        for points in results.keypoints:
+    #     points: Keypoints
+    #     for points in results.keypoints:
 
-            msg_array = KeyPoint2DArray()
+    #         msg_array = KeyPoint2DArray()
 
-            if points.conf is None:
-                continue
+    #         if points.conf is None:
+    #             continue
 
-            for kp_id, (p, conf) in enumerate(zip(points.xy[0], points.conf[0])):
+    #         for kp_id, (p, conf) in enumerate(zip(points.xy[0], points.conf[0])):
 
-                if conf >= self.threshold:
-                    msg = KeyPoint2D()
+    #             if conf >= self.threshold:
+    #                 msg = KeyPoint2D()
 
-                    msg.id = kp_id + 1
-                    msg.point.x = float(p[0])
-                    msg.point.y = float(p[1])
-                    msg.score = float(conf)
+    #                 msg.id = kp_id + 1
+    #                 msg.point.x = float(p[0])
+    #                 msg.point.y = float(p[1])
+    #                 msg.score = float(conf)
 
-                    msg_array.data.append(msg)
+    #                 msg_array.data.append(msg)
 
-            keypoints_list.append(msg_array)
+    #         keypoints_list.append(msg_array)
 
-        return keypoints_list
+    #     return keypoints_list
 
     def image_cb(self, msg: Image) -> None:
 
@@ -193,17 +193,17 @@ class Yolov8Node(Node):
                 hypothesis = self.parse_hypothesis(results)
                 boxes = self.parse_boxes(results)
 
-            if results.masks:
-                masks = self.parse_masks(results)
+            # if results.masks:
+            #     masks = self.parse_masks(results)
 
-            if results.keypoints:
-                keypoints = self.parse_keypoints(results)
+            # if results.keypoints:
+            #     keypoints = self.parse_keypoints(results)
 
             # create detection msgs
             detections_msg = DetectionArray()
 
             for i in range(len(results)):
-                if hypothesis[i]["class_id"] == 0:
+                if hypothesis[i]["class_id"] == 72:
                     aux_msg = Detection()
 
                     if results.boxes:
@@ -214,11 +214,11 @@ class Yolov8Node(Node):
 
                         aux_msg.bbox = boxes[i]
 
-                    if results.masks:
-                        aux_msg.mask = masks[i]
+                    # if results.masks:
+                    #     aux_msg.mask = masks[i]
 
-                    if results.keypoints:
-                        aux_msg.keypoints = keypoints[i]
+                    # if results.keypoints:
+                    #     aux_msg.keypoints = keypoints[i]
 
                     detections_msg.detections.append(aux_msg)
 

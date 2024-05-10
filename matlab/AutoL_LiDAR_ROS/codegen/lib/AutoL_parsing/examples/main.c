@@ -5,7 +5,7 @@
  * File: main.c
  *
  * MATLAB Coder version            : 23.2
- * C/C++ source code generated on  : 08-May-2024 17:20:00
+ * C/C++ source code generated on  : 09-May-2024 15:08:27
  */
 
 /*************************************************************************/
@@ -39,6 +39,7 @@
 #include "AutoL_parsing_emxAPI.h"
 #include "AutoL_parsing_terminate.h"
 #include "AutoL_parsing_types.h"
+#include "rt_nonfinite.h"
 
 /* Function Declarations */
 static void argInit_1x1330_real32_T(float result[1330]);
