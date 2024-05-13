@@ -26,8 +26,8 @@ CamToLidar = invert(tform);             % Cam coord -> Lidar coord
 
 i = 1; 
 points = single(zeros(22784,3));              % [x,y,z] 좌표 값 사전 할당(178 packet * 128 points), 코드 속도를 위해 사전 할당  
-m = 32;                               % 32 channel 정렬 
-gridStep = 0.1;                       % Point Cloud Downsampling
+m = 32;                                       % 32 channel 정렬 
+gridStep = 0.1;                               % Point Cloud Downsampling
 bboxesLidar = [];
 
 

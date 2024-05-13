@@ -1,7 +1,7 @@
-function [distance,bboxesLidar] = computeDistance(Yolo,bboxes,ptCloud,cameraParams,CamToLidar,clusterThreshold,player)
+function objectInfo = computeDistance(Yolo,ptCloud,cameraParams,CamToLidar,clusterThreshold,player)
     
     % ---------------------------------------------------------------------------
-    %                              Image sub  
+    %                              Yolo sub  
     % ---------------------------------------------------------------------------
     % subscribe image msg
     % image_received = receive(Yolo.imgSub);
@@ -9,6 +9,10 @@ function [distance,bboxesLidar] = computeDistance(Yolo,bboxes,ptCloud,cameraPara
          
     % subscribe track msg
     yolo_info = receive(Yolo.trackSub);
+    
+
+    objectInfo = {struct()};
+    bboxes = [];
 
     % bounding box info
     for idx = 1:length(yolo_info.detections)
@@ -16,30 +20,30 @@ function [distance,bboxesLidar] = computeDistance(Yolo,bboxes,ptCloud,cameraPara
         y = yolo_info.detections(idx).bbox.center.position.y;
         w = yolo_info.detections(idx).bbox.size.x;
         h = yolo_info.detections(idx).bbox.size.y;
-
+        
+        % Bounding box info
         bbox = [x-w/2, y-h/2, w, h];
-        bboxes = [bboxes; bbox];
+        bboxes(idx,:) = bbox;
+        objectInfo{idx}.Bbox = bbox;
+        
+        % Tracker id info 
+        id = yolo_info.detections(idx).id;
+        objectInfo{idx}.Id = id;
     end
     
     
     if bboxes
-        [bboxesLidar,~,~] = bboxCameraToLidar(bboxes,ptCloud,cameraParams,CamToLidar,'ClusterThreshold',clusterThreshold);
+
+        bboxesLidar = bboxCameraToLidar(bboxes, ptCloud, cameraParams, CamToLidar, 'ClusterThreshold', clusterThreshold);  
 
         if ~isempty(bboxesLidar)
-            % sum(bboxesLidar(1:6)) ~= 0 
-            distance = helperComputeDistance(ptCloud, bboxesLidar);
 
-            % showShape("cuboid",bboxesLidar,'Parent',player.Axes,"Opacity",0.15,"Color",'red');
+            objectInfo = helperComputeDistance(ptCloud, bboxesLidar, player, objectInfo);
             % yolo_img = insertTrackBoxes(yolo_img, bboxes, distance);
-
-            deleteCuboid(player.Axes);
-            cuboidInfo = getCuboidInfo(bboxesLidar);
-            drawCuboid(player.Axes, cuboidInfo, 'red');
+            
         end 
     else
         deleteCuboid(player.Axes);
-        distance = [];
-        bboxesLidar = [];
     end
-  
+    
 end
