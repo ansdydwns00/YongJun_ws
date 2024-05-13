@@ -50,6 +50,7 @@ reset_flag = single(0);                         % Reset persistent variable
 
 
 % ---------------------------------------------------------------------------
+% 
 %                              Create point cloud viewer 
 % ---------------------------------------------------------------------------
 player = pcplayer([0 10],[-5 5],[-2 2]);
@@ -75,8 +76,8 @@ while true
         ptCloud = pointCloud(xyzCoords);
 
         % ROI 영역 내 pointCloud 추출
-        % indices = findPointsInROI(ptCloud, roi);
-        % ptCloud = select(ptCloud, indices);
+        indices = findPointsInROI(ptCloud, roi);
+        ptCloud = select(ptCloud, indices);
         
         objectInfo = computeDistance(Yolo,ptCloud,cameraParams,CamToLidar,clusterThreshold,player);
         

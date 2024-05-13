@@ -10,6 +10,7 @@ clear; clc
 Matlab = ros2node("/MatlabNode");
  
 % Ros sub
+Yolo.rawImgSub = ros2subscriber(Matlab,"/camera1/image_raw","sensor_msgs/Image");
 Yolo.imgSub = ros2subscriber(Matlab,"/yolo/dbg_image","sensor_msgs/Image");
 Yolo.trackSub = ros2subscriber(Matlab,"/yolo/tracking","yolov8_msgs/DetectionArray");
 % Yolo.bboxSub = ros2subscriber(Matlab,"/yolo/detections","yolov8_msgs/DetectionArray");
@@ -52,15 +53,15 @@ reset_flag = single(0);                         % Reset persistent variable
 % ---------------------------------------------------------------------------
 %                              Create point cloud viewer 
 % ---------------------------------------------------------------------------
-player = pcplayer([0 10],[-5 5],[-2 2]);
-
-
+vPlayer = vision.DeployableVideoPlayer;
+fps = 0;
 
 % Remove input buffer
 flush(udpObj,"input")
 
-tic
+
 while true
+    tic
 
     % Load 1 packet [1 x 1330]   
     packetData = single(read(udpObj,1330))';   
@@ -75,20 +76,17 @@ while true
         ptCloud = pointCloud(xyzCoords);
 
         % ROI 영역 내 pointCloud 추출
-        % indices = findPointsInROI(ptCloud, roi);
-        % ptCloud = select(ptCloud, indices);
+        indices = findPointsInROI(ptCloud, roi);
+        ptCloud = select(ptCloud, indices);
         
-        objectInfo = computeDistance(Yolo,ptCloud,cameraParams,CamToLidar,clusterThreshold,player);
         
-        % view(player,ptCloud); 
+        objectInfo = computeDistance_image(Yolo,ptCloud,cameraParams,CamToLidar,clusterThreshold,vPlayer,fps);
+         
 
         % Display Rendering rate 
-        frameCount = frameCount + 1; 
-        elapsedTime = toc;
-        frameRate = frameCount / elapsedTime;
-        fprintf("Rendering rate: %f hz\n",frameRate);
+        time = toc;
+        fps = 0.9 * fps + 0.1 * (1 / time);
     end  
-
     reset_flag = single(1);
 end
 
