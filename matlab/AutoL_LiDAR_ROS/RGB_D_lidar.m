@@ -42,7 +42,7 @@ frameCount = 0;
 distance = [];                                    
 
 roi = [5, 10, -2, 2, -2, 2];                    % ROI 설정
-clusterThreshold = 0.2;                         % Cluster distance
+clusterThreshold = 0.4;                         % Cluster distance
 
 
 reset_flag = single(0);                         % Reset persistent variable
@@ -77,9 +77,9 @@ while true
 
         % ROI 영역 내 pointCloud 추출
         indices = findPointsInROI(ptCloud, roi);
-        ptCloud = select(ptCloud, indices);
+        roiPtCloud = select(ptCloud, indices);
         
-        objectInfo = computeDistance(Yolo,ptCloud,cameraParams,CamToLidar,clusterThreshold,player);
+        objectInfo = computeDistance(Yolo,roiPtCloud,cameraParams,CamToLidar,clusterThreshold,player);
         
         % view(player,ptCloud); 
 

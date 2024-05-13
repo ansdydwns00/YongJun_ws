@@ -16,9 +16,11 @@ function objectInfo = helperComputeDistance(ptCloud, bboxesLidar, player, object
 
         % Find the distance of the 2-D rectangle
 
-        dist = min(pts.Location(:,1));  
-        objectInfo{i}.Distance = dist;
-        
-        drawCuboid(player.Axes, model.Parameters, 'red', dist);
+        dist = min(pts.Location(:,1));
+
+        objectInfo{i,1}.Distance = dist;
+        Id = objectInfo{i}.Id;
+
+        drawCuboid(player.Axes, model.Parameters, 'red', dist, Id);
     end
 end

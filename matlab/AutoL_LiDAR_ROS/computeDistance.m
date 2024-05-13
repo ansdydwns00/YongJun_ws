@@ -24,11 +24,11 @@ function objectInfo = computeDistance(Yolo,ptCloud,cameraParams,CamToLidar,clust
         % Bounding box info
         bbox = [x-w/2, y-h/2, w, h];
         bboxes(idx,:) = bbox;
-        objectInfo{idx}.Bbox = bbox;
+        objectInfo{idx,1}.Bbox = bbox;
         
         % Tracker id info 
         id = yolo_info.detections(idx).id;
-        objectInfo{idx}.Id = id;
+        objectInfo{idx,1}.Id = id;
     end
     
     
@@ -39,7 +39,6 @@ function objectInfo = computeDistance(Yolo,ptCloud,cameraParams,CamToLidar,clust
         if ~isempty(bboxesLidar)
 
             objectInfo = helperComputeDistance(ptCloud, bboxesLidar, player, objectInfo);
-            % yolo_img = insertTrackBoxes(yolo_img, bboxes, distance);
             
         end 
     else

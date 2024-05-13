@@ -93,8 +93,6 @@ end
 %% Support functions
 
 % pointSort
-% computeDistance
+% computeDistance_image
 % AutoL_parsing
-% helperComputeDistance
-% drawCuboid
-% deleteCuboid
+% helperComputeDistance_image

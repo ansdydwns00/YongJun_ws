@@ -1,4 +1,4 @@
-function drawCuboid(ax, cuboid, color,dist)
+function drawCuboid(ax, cuboid, color, dist, Id)
 
     % Cuboid  [x, y, z, length, width, height]
     x = cuboid(1);
@@ -7,7 +7,6 @@ function drawCuboid(ax, cuboid, color,dist)
     % l = cuboid(4);
     % w = cuboid(5);
     % h = cuboid(6);
-
     l = 0.5;    % fix length
     w = 0.5;    % fix width    
     h = 1;      % fix height
@@ -36,7 +35,7 @@ function drawCuboid(ax, cuboid, color,dist)
     
     % Notation distance
     topCenter = [mean(vertices(1:4,1)), mean(vertices(1:4,2)), max(vertices(1:4,3))];
-    text(ax, topCenter(1), topCenter(2), topCenter(3), num2str(dist), ...
+    text(ax, topCenter(1), topCenter(2), topCenter(3), ['ID:' Id ' ' num2str(dist)], ...
          'HorizontalAlignment', 'center', 'VerticalAlignment', 'bottom', ...
          'Color','white','FontSize',12,'FontWeight','bold');
 end
