@@ -18,43 +18,27 @@ function xyzPoints = ptCloud_extract(payload,top_bottom_flag)
 
 
     % Values for azimuth (3 echo mode)
-    azimuth_data = single(zeros(1,8));
-    for i = 0:3:21  
-        azimuth = [payload(i*54+3) payload(i*54+4) payload(i*54+5) payload(i*54+6)];
-        delta = (2^0)*azimuth(1) + (2^8)*azimuth(2) + (2^16)*azimuth(3) + (2^24)*azimuth(4);
-
-        if delta > intmax('int32')
-            azimuth = ((2^0)*azimuth(1) + (2^8)*azimuth(2) - 65535)/1000;
-        else
-            azimuth = ((2^0)*azimuth(1) + (2^8)*azimuth(2) + (2^16)*azimuth(3) + (2^24)*azimuth(4))/1000;
-        end
-        azimuth_data(i/3+1) = azimuth; 
-    end
+    azimuth = single.empty(0,4);
+    azimuth_data = single(zeros(8,1));
+    i = 0:3:21;
+    azimuth = [payload(i*54+3)' (2^8)*payload(i*54+4)' (2^16)*payload(i*54+5)' (2^24)*payload(i*54+6)'];
+    ind = find(sum(azimuth,2)<=intmax('int32'));
+    azimuth_data(~ind) = (sum(azimuth(~ind,1:2),2)-65535)/1000;
+    azimuth_data(ind) = sum(azimuth(ind,:),2)/1000;
 
 
-    % ToF for azimuth [8*16]
-    ToF = single(zeros(1,128));
-    for i = 0:7
-        for j = 0:3:45
-            ToF(i*16+j/3+1) = ((2^0)*payload(i*54*3+7+j) + (2^8)*payload(i*54*3+8+j))/256;
-        end
-    end
-
-    % Rearrangement ToF [16 x 8] 
-    ToF = reshape(ToF,16,[]);   
+    % ToF for azimuth [24*16]
+    ToF = single(zeros(1,384));
+    i = 0:383;
+    ToF= ((2^0)*payload(7+i*3+(floor(i/16)*6))+(2^8)*payload(8+i*3+(floor(i/16)*6)))/256;
 
     % Finding coordinates [x,y,z]
-    xyzPoints = single(zeros(128,3));
-    for i = 1:8
-        for j = 0:15
-            z = ToF(j+1,i) * sin(deg2rad(elevation(j+1)));
-            xy = ToF(j+1,i) * cos(deg2rad(elevation(j+1)));
-
-            x = xy * cos(deg2rad(azimuth_data(i) + precision_azimuth(floor(j/4)+1)));
-            y = xy * sin(deg2rad(azimuth_data(i) + precision_azimuth(floor(j/4)+1)));
-
-            xyzPoints((i-1)*16+j+1,:) = [single(x) single(y) single(z)];
-        end
-    end
-  
+    xyzPoints = single(zeros(384,3));
+    i = 1:384;
+    z = ToF .* sin(deg2rad(elevation(rem(i-1,16)+1)));
+    xy = ToF .* cos(deg2rad(elevation(rem(i-1,16)+1)));
+    ang = deg2rad(azimuth_data(ceil(i/48))' + precision_azimuth(ceil((rem(i-1,16)+1)/4)));
+    x = xy .* cos(ang);
+    y = xy .* sin(ang);
+    xyzPoints = [x' y' z'];
 end

@@ -17,11 +17,11 @@ points = single(zeros(22784,3));      % Pre-allocation [x,y,z] coords matrix
 i = 1;
 frameCount = 0;
 
-% Remove input buffer
-flush(udpObj,"input")
+% % Remove input buffer
+% flush(udpObj,"input")
+% 
+% tic
 
-tic
-while true
   
     % Load 1 packet [1 x 1330]      
     packetData = single(read(udpObj,1330));
@@ -55,4 +55,4 @@ while true
         frameRate = frameCount / elapsedTime;
         fprintf("Rendering rate: %f hz\n",frameRate);
     end   
-end
+
