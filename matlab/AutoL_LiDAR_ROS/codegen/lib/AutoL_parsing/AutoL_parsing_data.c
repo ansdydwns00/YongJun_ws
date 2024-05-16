@@ -5,11 +5,12 @@
  * File: AutoL_parsing_data.c
  *
  * MATLAB Coder version            : 23.2
- * C/C++ source code generated on  : 10-May-2024 19:22:11
+ * C/C++ source code generated on  : 16-May-2024 15:16:24
  */
 
 /* Include Files */
 #include "AutoL_parsing_data.h"
+#include "rt_nonfinite.h"
 
 /* Variable Definitions */
 boolean_T isInitialized_AutoL_parsing = false;

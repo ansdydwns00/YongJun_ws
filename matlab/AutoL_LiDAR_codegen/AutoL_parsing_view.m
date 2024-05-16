@@ -30,7 +30,7 @@ while true
     
     % Use mex file to verify generated c code
     [xyzCoords,isValid] = AutoL_parsing_mex(packetData,reset_flag);
-
+    
     % isValid true: 1 frame, isValid false: not 1 frame  
     if isValid
 
