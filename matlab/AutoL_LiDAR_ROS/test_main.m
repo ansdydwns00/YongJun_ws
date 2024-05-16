@@ -5,13 +5,12 @@ clear; clc
 udpObj = udpport("byte","LocalPort",5001,"ByteOrder","little-endian");
 
 % Create point cloud viewer
-player = pcplayer([0 10],[-20 20],[-4 4]);
+player = pcplayer([0 10],[-10 10],[-4 4]);
 
 
 % Initialize of parameters
-points = single(zeros(22784,3));      % Pre-allocation [x,y,z] coords matrix
+points = single(zeros(69120,3));      % Pre-allocation [x,y,z] coords matrix
 i = 1;
-j = 1;
 frameCount = 0;
 
 % % Remove input buffer
@@ -21,7 +20,7 @@ prevTime = tic;
 
 while isOpen(player)
     % Load 1 packet [1 x 1330]
-    packetData = single(read(udpObj,1330));
+    packetData = single(read(udpObj,1330))';
     
     % One packet data parsing
     [payload,top_bottom_flag,dataType] = packet_extract(packetData);
@@ -34,13 +33,13 @@ while isOpen(player)
     i = i + 1; 
 
     % Check end frame
-    if (top_bottom_flag == 1 && dataType(:,1) == 170)
+    if (top_bottom_flag == 1 && dataType == 170)
         
         % Create point cloud object
         ptCloud = pointCloud(points);
         
         % Display ptCloud on pcplayer
-        pcshow(ptCloud);
+        view(player,ptCloud);
         
         % Initialize of parameters
         i = 1;
