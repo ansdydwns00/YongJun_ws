@@ -9,7 +9,7 @@ player = pcplayer([0 10],[-10 10],[-4 4]);
 
 
 % Initialize of parameters
-points = single(zeros(69120,3));      % Pre-allocation [x,y,z] coords matrix
+points = single(zeros(22784,3));      % Pre-allocation [x,y,z] coords matrix
 i = 1;
 frameCount = 0;
 
@@ -29,7 +29,7 @@ while isOpen(player)
     xyzPoints = ptCloud_extract(payload,top_bottom_flag);
     
     % Save [x,y,z] coords
-    points((i-1)*384+1:(i-1)*384+384,:) = xyzPoints;
+    points((i-1)*128+1:(i-1)*128+128,:) = xyzPoints;
     i = i + 1; 
 
     % Check end frame
