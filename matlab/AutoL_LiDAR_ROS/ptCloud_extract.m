@@ -18,23 +18,20 @@ function xyzPoints = ptCloud_extract(payload,top_bottom_flag)
 
 
     % Values for azimuth (3 echo mode)
-    azimuth = single.empty(4,0);
     azimuth_data = single(zeros(8,1));
     i = 0:3:21;
     azimuth = [payload(i*54+3) (2^8)*payload(i*54+4) (2^16)*payload(i*54+5) (2^24)*payload(i*54+6)];
-    ind = find(sum(azimuth,2)<=intmax('int32'));
+    ind = sum(azimuth,2)<=intmax('int32');
     azimuth_data(~ind) = (sum(azimuth(~ind,1:2),2)-65535)/1000;
     azimuth_data(ind) = sum(azimuth(ind,:),2)/1000;
 
 
     % ToF for azimuth [24*16]
-    ToF = single(zeros(128,1));
     i = 0:127;
     ToF = (payload(7+i*3+(floor(i/16)*114))+(2^8)*payload(8+i*3+(floor(i/16)*114)))/256;
     % Intensity = payload(9+i*3+(floor(i/16)*114));
 
     % Finding coordinates [x,y,z]
-    xyzPoints = single(zeros(128,3));
     i = 1:128;
     z = ToF .* sin(deg2rad(elevation(rem(i-1,16)+1)));
     xy = ToF .* cos(deg2rad(elevation(rem(i-1,16)+1)));
