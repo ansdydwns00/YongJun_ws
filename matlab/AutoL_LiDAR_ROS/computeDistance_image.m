@@ -3,20 +3,21 @@ function objectInfo = computeDistance_image(Yolo,ptCloud,cameraParams,CamToLidar
     % ---------------------------------------------------------------------------
     %                              Yolo sub  
     % ---------------------------------------------------------------------------
-    % subscribe image msg
+    % Subscribe image msg
     image_received = receive(Yolo.rawImgSub);
     yolo_img = rosReadImage(image_received);
          
-    % subscribe track msg
+    % Subscribe track msg
     yolo_info = receive(Yolo.trackSub);
     
-
+    % Initiailize parameters
     objectInfo = {struct()};
     bboxes = [];
     labels = {};
     bboxesLidar = [];
+    
 
-    % bounding box info
+    % Extract Bbox & Label Info
     for idx = 1:length(yolo_info.detections)
         x = yolo_info.detections(idx).bbox.center.position.x;
         y = yolo_info.detections(idx).bbox.center.position.y;

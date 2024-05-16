@@ -71,18 +71,17 @@ while true
     
     % isValid true: 1 frame, isValid false: not 1 frame  
     if isValid  
-       
+        
+        
         % [x,y,z] coordinates to point cloud
         ptCloud = pointCloud(xyzCoords);
 
         % ROI 영역 내 pointCloud 추출
         indices = findPointsInROI(ptCloud, roi);
-        ptCloud = select(ptCloud, indices);
-        
-        
-        objectInfo = computeDistance_image(Yolo,ptCloud,cameraParams,CamToLidar,clusterThreshold,vPlayer,fps);
+        roiPtCloud = select(ptCloud, indices);
+       
+        % objectInfo = computeDistance_image(Yolo,roiPtCloud,cameraParams,CamToLidar,clusterThreshold,vPlayer,fps);
          
-
         % Display Rendering rate 
         time = toc;
         fps = 0.9 * fps + 0.1 * (1 / time);

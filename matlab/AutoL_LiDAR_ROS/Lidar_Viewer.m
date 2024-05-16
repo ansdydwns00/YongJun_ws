@@ -30,7 +30,7 @@ while true
     [payload,top_bottom_flag,dataType] = packet_extract(packetData);
     
     % [x,y,z] coords of one packet 
-    xyzPoints = ptCloud_extract(payload,top_bottom_flag);
+    xyzPoints = ptCloud_extract_vector(payload,top_bottom_flag);
     
     % Save [x,y,z] coords
     points((i-1)*128+1:(i-1)*128+128,:) = xyzPoints;

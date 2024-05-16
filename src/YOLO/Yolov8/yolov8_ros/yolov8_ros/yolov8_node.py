@@ -203,24 +203,24 @@ class Yolov8Node(Node):
             detections_msg = DetectionArray()
 
             for i in range(len(results)):
-                # if hypothesis[i]["class_id"] == 72:
-                aux_msg = Detection()
+                if hypothesis[i]["class_id"] == 72:
+                    aux_msg = Detection()
 
-                if results.boxes:
-                    aux_msg.class_id = hypothesis[i]["class_id"]
-                    aux_msg.class_name = hypothesis[i]["class_name"]
-                    aux_msg.score = hypothesis[i]["score"]
-                            
+                    if results.boxes:
+                        aux_msg.class_id = hypothesis[i]["class_id"]
+                        aux_msg.class_name = hypothesis[i]["class_name"]
+                        aux_msg.score = hypothesis[i]["score"]
+                                
 
-                    aux_msg.bbox = boxes[i]
+                        aux_msg.bbox = boxes[i]
 
-                    # if results.masks:
-                    #     aux_msg.mask = masks[i]
+                        # if results.masks:
+                        #     aux_msg.mask = masks[i]
 
-                    # if results.keypoints:
-                    #     aux_msg.keypoints = keypoints[i]
+                        # if results.keypoints:
+                        #     aux_msg.keypoints = keypoints[i]
 
-                detections_msg.detections.append(aux_msg)
+                    detections_msg.detections.append(aux_msg)
 
             # publish detections
             detections_msg.header = msg.header

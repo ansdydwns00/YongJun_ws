@@ -1,5 +1,5 @@
 function xyzPoints = ptCloud_extract(payload,top_bottom_flag)
-
+    
     % Lower Frame
     elevation_angle_down = [-4.84375,-4.21875,-3.59375,-2.96875,-2.34375,-1.71875,-1.09375,-0.46875,0.15625,0.78125,1.40625,2.03125,2.65625,3.28125,3.90625,4.53125];
 
@@ -56,5 +56,5 @@ function xyzPoints = ptCloud_extract(payload,top_bottom_flag)
             xyzPoints((i-1)*16+j+1,:) = [single(x) single(y) single(z)];
         end
     end
-  
+    
 end
