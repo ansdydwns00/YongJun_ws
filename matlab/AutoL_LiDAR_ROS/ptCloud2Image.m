@@ -1,6 +1,6 @@
 %% Lidar Connection
 clear; clc
-udpObj = udpport("datagram","LocalPort",5001,"OutputDatagramSize",1330);
+udpObj = udpport("byte","LocalPort",5001,"ByteOrder","little-endian");
 
 %% Camera Connection
 
@@ -28,7 +28,6 @@ imageSub = ros2subscriber(Matlab,'/camera1/image_raw','sensor_msgs/Image');
 
 % [x,y,z] 좌표 값 사전 할당(178 packet * 128 points), 코드 속도를 위해 사전 할당 
 points = single(zeros(22784,3));
-
 frameCount = 0;
 i = 1;
 
@@ -40,15 +39,15 @@ tic
 while true
     
     % 패킷 1개 불러오기      
-    packetData = single(read(udpObj,1))';
+    packetData = single(read(udpObj,1330))';
     
-    % 패킷 1개 parsing
+    % 패킷 1개 parsing 
     [payload,top_bottom_flag,dataType] = packet_extract(packetData);
     
     % 패킷 1개에 해당하는 pointCloud 검출 
     xyzPoints = ptCloud_extract(payload,top_bottom_flag);
     
-    % 패킷 속 [x y z] 좌표값 저장
+    % 패킷 속 xyz 좌표값 저장
     points((i-1)*128+1:(i-1)*128+128,:) = xyzPoints;
     i = i + 1;
     
@@ -56,11 +55,6 @@ while true
     % 1 프레임 종료 확인(하부 프레임 89개 다음 상부 프레임 89개 수신 받으면 178 패킷 == 1 프레임); 
     if (top_bottom_flag == 1 && dataType(:,1) == 170)
         
-
-        % publish point cloud msg
-        % lidarPubMsg = rosWriteXYZ(lidarPubMsg,points);
-        % send(lidarPub,lidarPubMsg); 
-       
         % [x,y,z] -> point cloud 생성
         ptCloud = pointCloud(points);
         
@@ -84,12 +78,9 @@ while true
         [imPts,idx] = projectLidarPointsOnImage(ptCloud,cameraParams.Intrinsics,tform);
         imshow(img);
         hold on
-        scatter(imPts(:,1), imPts(:,2), 9, pointColors(idx), 'filled');
+        scatter(imPts(:,1), imPts(:,2), 5, pointColors(idx), 'filled');
         hold off
         
-        % pcplayer에 ptcloud disp
-        % view(player,ptCloud) 
-
         % parameter 초기화
         i = 1;
         points = single(zeros(22784,3));
@@ -99,5 +90,6 @@ while true
         elapsedTime = toc;
         frameRate = frameCount / elapsedTime;
         fprintf("Rendering rate: %f hz\n",frameRate);
-    end        
+    end    
+
 end

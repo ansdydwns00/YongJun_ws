@@ -6,7 +6,7 @@ udpObj = udpport("byte","LocalPort",5001,"ByteOrder","little-endian");
 
 
 Matlab = ros2node("/MatlabNode");
-imageSub = ros2subscriber(Matlab,'/camera1/image_raw','sensor_msgs/Image');
+ImageSub = ros2subscriber(Matlab,'/camera1/image_raw','sensor_msgs/Image');
 
 % calibration file load
 load("Calibration.mat");                % Calibration file 
@@ -15,7 +15,7 @@ LidarToCam = tform;                     % Lidar coord -> Cam coord
 CamToLidar = invert(tform);             % Cam coord -> Lidar coord
 %% Packet Data parsing 
 
-% [x,y,z] 좌표 값 사전 할당(178 packet * 128 points) -> 코드 속도를 위해 사전 할당
+% [x,y,z] 좌표 값 사전 할당(178 packet * 128 points)
 points = single(zeros(22784,3));
 
 % fps 확인 위한 parameter
@@ -25,7 +25,7 @@ frameCount = 0;
 % 입력 buffer 제거
 flush(udpObj,"input")
 
-player = pcplayer([-1 15],[-10 10],[-2 8]);
+player = pcplayer([0 10],[-3 3],[-2 2]);
 
 % point cloud를 정렬하기 위해서
 m = 32; % m 값을 설정
@@ -39,7 +39,7 @@ while true
     % 패킷 1개 불러오기      
     packetData = single(read(udpObj,1330))';
     
-    % 패킷 1개 parsing
+    % 패킷 1개 parsing 
     [payload,top_bottom_flag,dataType] = packet_extract(packetData);
     
     % 패킷 1개에 해당하는 pointCloud 검출 

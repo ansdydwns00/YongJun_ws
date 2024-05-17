@@ -17,6 +17,7 @@ points = single(zeros(22784,3));      % Pre-allocation [x,y,z] coords matrix
 i = 1;
 frameCount = 0;
 
+
 % Remove input buffer
 flush(udpObj,"input")
 
@@ -30,12 +31,13 @@ while true
     [payload,top_bottom_flag,dataType] = packet_extract(packetData);
     
     % [x,y,z] coords of one packet 
-    xyzPoints = ptCloud_extract_vector(payload,top_bottom_flag);
+    xyzPoints = ptCloud_extract(payload,top_bottom_flag);
     
     % Save [x,y,z] coords
     points((i-1)*128+1:(i-1)*128+128,:) = xyzPoints;
     i = i + 1;
     
+
     % Check end frame  
     if (top_bottom_flag == 1 && dataType(:,1) == 170)
         
@@ -44,15 +46,16 @@ while true
               
         % Display ptCloud on pcplayer
         view(player,ptCloud) 
-
-        % Initialize of parameters
-        i = 1;
-        points = single(zeros(22784,3));
         
+        % Initialize parameter
+        points = single(zeros(22784,3));
+        i = 1;
+
         % Display Rendering rate 
         frameCount = frameCount + 1;
         elapsedTime = toc;
         frameRate = frameCount / elapsedTime;
         fprintf("Rendering rate: %f hz\n",frameRate);
-    end   
+    end  
+
 end

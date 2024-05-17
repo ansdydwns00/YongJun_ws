@@ -40,6 +40,11 @@ function xyzPoints = ptCloud_extract(payload,top_bottom_flag)
         end
     end
 
+    % i = 0:127;
+    % % Intensity 
+    % Intensity = single(zeros(128,1));
+    % Intensity = payload(9+i*3+(floor(i/16)*114));
+
     % Rearrangement ToF [16 x 8] 
     ToF = reshape(ToF,16,[]);   
 
