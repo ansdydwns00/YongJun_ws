@@ -9,7 +9,7 @@ udpObj = udpport("byte","LocalPort",5001,"ByteOrder","little-endian");
 %% Packet Data parsing 
 
 % Create point cloud viewer
-player = pcplayer([0 10],[-10 10],[-4 4]);
+player = pcplayer([5 10],[-10 10],[-4 4]);
 
 % Initialize of parameters 
 frameCount = 0;
@@ -29,13 +29,15 @@ while true
     packetData = single(read(udpObj,1330))';
     
     % Use mex file to verify generated c code
+    % [xyzCoords,xyzIntensity,isValid] = AutoL_parsing_Intensity_mex(packetData,reset_flag);
     [xyzCoords,isValid] = AutoL_parsing_mex(packetData,reset_flag);
-    
+
+
     % isValid true: 1 frame, isValid false: not 1 frame  
     if isValid
 
         % [x,y,z] coordinates to point cloud
-        ptCloud = pointCloud(xyzCoords);
+        ptCloud = pointCloud(xyzCoords,"Intensity",xyzIntensity);
 
         % check_dataSize{end+1,1} = xyzCoords;
 

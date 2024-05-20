@@ -1,4 +1,4 @@
-function [xyzPoints,Intensity] = ptCloud_extract_vector(payload,top_bottom_flag)
+function [xyzPoints] = ptCloud_extract_vector(payload,top_bottom_flag)
     
     % Lower Frame
     elevation_angle_down = [-4.84375,-4.21875,-3.59375,-2.96875,-2.34375,-1.71875,-1.09375,-0.46875,0.15625,0.78125,1.40625,2.03125,2.65625,3.28125,3.90625,4.53125]';
@@ -32,9 +32,9 @@ function [xyzPoints,Intensity] = ptCloud_extract_vector(payload,top_bottom_flag)
     i = 0:127;
     ToF = (payload(7+i*3+(floor(i/16)*114))+(2^8)*payload(8+i*3+(floor(i/16)*114)))/256;
     
-    % Intensity 
-    Intensity = single(zeros(128,1));
-    Intensity = payload(9+i*3+(floor(i/16)*114));
+    % % Intensity 
+    % Intensity = single(zeros(128,1));
+    % Intensity = payload(9+i*3+(floor(i/16)*114));
 
     % Finding coordinates [x,y,z]
     xyzPoints = single(zeros(128,3));

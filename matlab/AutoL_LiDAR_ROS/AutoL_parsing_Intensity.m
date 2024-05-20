@@ -1,4 +1,4 @@
-function [xyzCoords,xyzIntensity, isValid] = AutoL_parsing(packetData,reset_flag) %#codegen
+function [xyzCoords,xyzIntensity, isValid] = AutoL_parsing_Intensity(packetData,reset_flag) %#codegen
     
     % Initialize of persistent parameters
     persistent points

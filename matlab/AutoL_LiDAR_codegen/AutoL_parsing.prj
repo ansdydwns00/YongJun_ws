@@ -1,5 +1,5 @@
 <deployment-project plugin="plugin.coder" plugin-version="R2023a">
-  <configuration build-checksum="2178856646" file="/home/yong/YongJun_ws/matlab/AutoL_LiDAR_codegen/AutoL_parsing.prj" location="/home/yong/YongJun_ws/matlab/AutoL_LiDAR_codegen" name="AutoL_parsing" target="target.unifiedcoder" target-name="MATLAB Coder">
+  <configuration build-checksum="1611120605" file="/home/yong/YongJun_ws/matlab/AutoL_LiDAR_codegen/AutoL_parsing.prj" location="/home/yong/YongJun_ws/matlab/AutoL_LiDAR_codegen" name="AutoL_parsing" target="target.unifiedcoder" target-name="MATLAB Coder">
     <profile key="profile.mex">
       <param.BuiltInstrumentedMex>false</param.BuiltInstrumentedMex>
       <param.RanInstrumentedMex>false</param.RanInstrumentedMex>
@@ -613,22 +613,22 @@
     <param.AutoInferUnboundedSizeThreshold>2048</param.AutoInferUnboundedSizeThreshold>
     <param.EnableFixedPointStep>false</param.EnableFixedPointStep>
     <param.EnableScreener>true</param.EnableScreener>
-    <param.AnnotationChecksum>1530988277</param.AnnotationChecksum>
+    <param.AnnotationChecksum>1225148178</param.AnnotationChecksum>
     <var.LegacyTarget />
     <var.MirrorOnOpen>false</var.MirrorOnOpen>
     <param.FixedPointEnabled>false</param.FixedPointEnabled>
     <var.redirectedInputTypeData />
-    <var.DismissScreener>true</var.DismissScreener>
+    <var.DismissScreener>false</var.DismissScreener>
     <param.unifiedParamStorage />
     <param.hdlParamStorage />
     <var.gc.lastOutputRoot>codegen/lib/AutoL_parsing</var.gc.lastOutputRoot>
     <var.gc.lastOutputType>C_CODE</var.gc.lastOutputType>
-    <var.gc.preBuildChecksum>2256374121</var.gc.preBuildChecksum>
+    <var.gc.preBuildChecksum>1738834034</var.gc.preBuildChecksum>
     <var.cfi.lastOutputRoot>codegen/mex/AutoL_parsing</var.cfi.lastOutputRoot>
-    <var.cfi.preBuildChecksum>1888726310</var.cfi.preBuildChecksum>
+    <var.cfi.preBuildChecksum>2437588029</var.cfi.preBuildChecksum>
     <var.lastCfiTestSnippet>AutoL_parsing</var.lastCfiTestSnippet>
     <var.outdatedOnRestore>false</var.outdatedOnRestore>
-    <var.lastUserSourceChecksum>&lt;?xml version="1.0" encoding="UTF-8" standalone="yes"?&gt;&lt;checksum&gt;&lt;includedFiles&gt;&lt;file&gt;/home/yong/YongJun_ws/matlab/AutoL_LiDAR_codegen/AutoL_parsing.m&lt;/file&gt;&lt;file&gt;/home/yong/YongJun_ws/matlab/AutoL_LiDAR_codegen/packet_extract.m&lt;/file&gt;&lt;file&gt;/home/yong/YongJun_ws/matlab/AutoL_LiDAR_codegen/ptCloud_extract_vector.m&lt;/file&gt;&lt;/includedFiles&gt;&lt;value&gt;2964013997&lt;/value&gt;&lt;/checksum&gt;</var.lastUserSourceChecksum>
+    <var.lastUserSourceChecksum>&lt;?xml version="1.0" encoding="UTF-8" standalone="yes"?&gt;&lt;checksum&gt;&lt;includedFiles&gt;&lt;file&gt;/home/yong/YongJun_ws/matlab/AutoL_LiDAR_codegen/AutoL_parsing.m&lt;/file&gt;&lt;file&gt;/home/yong/YongJun_ws/matlab/AutoL_LiDAR_codegen/packet_extract.m&lt;/file&gt;&lt;file&gt;/home/yong/YongJun_ws/matlab/AutoL_LiDAR_codegen/ptCloud_extract_vector.m&lt;/file&gt;&lt;/includedFiles&gt;&lt;value&gt;1677700302&lt;/value&gt;&lt;/checksum&gt;</var.lastUserSourceChecksum>
     <var.sourceSetState>&lt;?xml version="1.0" encoding="UTF-8" standalone="yes"?&gt;&lt;sourceModel&gt;&lt;primarySourceFiles&gt;&lt;file&gt;/home/yong/YongJun_ws/matlab/AutoL_LiDAR_codegen/AutoL_parsing.m&lt;/file&gt;&lt;file&gt;/home/yong/YongJun_ws/matlab/AutoL_LiDAR_codegen/packet_extract.m&lt;/file&gt;&lt;file&gt;/home/yong/YongJun_ws/matlab/AutoL_LiDAR_codegen/ptCloud_extract_vector.m&lt;/file&gt;&lt;/primarySourceFiles&gt;&lt;fixedPointSourceFiles/&gt;&lt;fixedPointSourceRegistered&gt;false&lt;/fixedPointSourceRegistered&gt;&lt;fixedPointSourceSelected&gt;false&lt;/fixedPointSourceSelected&gt;&lt;/sourceModel&gt;</var.sourceSetState>
     <param.forceMexBuild>false</param.forceMexBuild>
     <param.NoDefaultJIT>false</param.NoDefaultJIT>
@@ -700,7 +700,7 @@
     <param.EnableImplicitExpansion>true</param.EnableImplicitExpansion>
     <param.UsePreconditions>false</param.UsePreconditions>
     <param.FeatureFlags />
-    <param.FixedPointMode>option.FixedPointMode.Singles</param.FixedPointMode>
+    <param.FixedPointMode>option.FixedPointMode.None</param.FixedPointMode>
     <param.AutoScaleLoopIndexVariables>false</param.AutoScaleLoopIndexVariables>
     <param.ComputedFixedPointData />
     <param.UserFixedPointData />
@@ -766,6 +766,7 @@
       <var.MirrorOnOpen />
       <param.FixedPointEnabled />
       <var.redirectedInputTypeData />
+      <var.DismissScreener />
       <param.unifiedParamStorage />
       <param.hdlParamStorage />
       <var.outdatedOnRestore />
@@ -836,6 +837,7 @@
       <param.EnableImplicitExpansion />
       <param.UsePreconditions />
       <param.FeatureFlags />
+      <param.FixedPointMode />
       <param.AutoScaleLoopIndexVariables />
       <param.ComputedFixedPointData />
       <param.UserFixedPointData />
@@ -880,7 +882,7 @@
     </unset>
     <fileset.entrypoints>
       <file custom-data-expanded="false" value="${PROJECT_ROOT}/AutoL_parsing.m">
-        <Marker>1715840152715</Marker>
+        <Marker>1716171458152</Marker>
       </file>
     </fileset.entrypoints>
     <fileset.testbench />
@@ -964,7 +966,7 @@
       <vista>false</vista>
       <linux>true</linux>
       <solaris>false</solaris>
-      <osver>5.15.0-105-generic</osver>
+      <osver>5.15.0-107-generic</osver>
       <os32>false</os32>
       <os64>true</os64>
       <arch>glnxa64</arch>

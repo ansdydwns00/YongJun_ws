@@ -5,13 +5,12 @@
  * File: AutoL_parsing_terminate.c
  *
  * MATLAB Coder version            : 23.2
- * C/C++ source code generated on  : 16-May-2024 15:16:24
+ * C/C++ source code generated on  : 20-May-2024 11:17:54
  */
 
 /* Include Files */
 #include "AutoL_parsing_terminate.h"
 #include "AutoL_parsing_data.h"
-#include "rt_nonfinite.h"
 
 /* Function Definitions */
 /*
