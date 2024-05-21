@@ -60,6 +60,16 @@
 
 </details> 
 
+<details>
+	<summary>Cudnn</summary>
+  	<div markdown="1">
+	
+
+	Cudnn 설치(아래 링크 참고)
+	https://hjh1023.tistory.com/59
+
+</details> 
+
 
 ## Development Environment 
 ```
