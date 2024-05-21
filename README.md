@@ -1,5 +1,5 @@
 <details>
-	<summary>CUDA & CUDNN 삭제 및 설치</summary>
+	<summary>CUDA 삭제</summary>
   	<div markdown="1">
 	
 	CUDA 삭제
@@ -25,6 +25,20 @@
 	이후 재부팅
 	
 	$ sudo reboot
+	
+
+</details> 
+
+
+<details>
+	<summary>CUDA 설치</summary>
+  	<div markdown="1">
+	
+	CUDA 설치
+
+ 	# 해당 링크에 접속하여 본인 driver에 맞는 cuda 버전 확인
+ 	https://developer.nvidia.com/cuda-toolkit-archive
+
 	
 
 </details> 
