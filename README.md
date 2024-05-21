@@ -39,7 +39,8 @@
  	# 해당 링크에 접속하여 본인 driver에 맞는 cuda 버전 확인
  	https://developer.nvidia.com/cuda-toolkit-archive
 
-	
+	# 해당 사이트 참고
+	https://honbul.tistory.com/41
 
 </details> 
 
