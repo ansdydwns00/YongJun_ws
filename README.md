@@ -10,9 +10,8 @@
 		
 	sudo apt-get autoremove --purge 'cuda*'
 	```
- 	</div>
+
 	
-	<div markdown="1">
 	제거 확인
 	```
 	sudo dpkg -l|grep cuda
@@ -20,14 +19,14 @@
 	# 만약 설치된게 남았다면:
 	sudo apt-get remove --purge 남은 찌꺼기 이름
 	```
-	</div>
 
- 	<div markdown="1">
+
+
 	이후 재부팅
 	```
 	sudo reboot
 	```
-  	</div>
+
 </details> 
 
 ## Development Environment 
