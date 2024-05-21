@@ -44,6 +44,20 @@
 
 </details> 
 
+<details>
+	<summary>torch</summary>
+  	<div markdown="1">
+	
+	torch & torchvision 삭제
+
+ 	pip uninstall torch torchvision
+
+	# 해당 사이트 참고
+	https://honbul.tistory.com/41
+
+</details> 
+
+
 ## Development Environment 
 ```
 # Intel i7-9700 CPU 3.60Hz x 8
