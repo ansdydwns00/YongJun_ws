@@ -45,15 +45,18 @@
 </details> 
 
 <details>
-	<summary>torch</summary>
+	<summary>torch & torchvision 삭제 및 설치</summary>
   	<div markdown="1">
 	
 	torch & torchvision 삭제
+ 	$ pip uninstall torch torchvision
 
- 	pip uninstall torch torchvision
+	torch & torchvision 설치(아래 링크 참고)
+	https://pytorch.org/get-started/locally/
 
-	# 해당 사이트 참고
-	https://honbul.tistory.com/41
+ 	# 버전 확인
+  	python3 -c "import torch; print(torch.__version__)"
+  	python3 -c "import torchvision; print(torchvision.__version__)"
 
 </details> 
 
