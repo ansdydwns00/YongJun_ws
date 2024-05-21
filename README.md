@@ -1,30 +1,30 @@
 <details>
 	<summary>CUDA & CUDNN 삭제 및 설치</summary>
   	<div markdown="1">
-	CUDA 삭제
-		
-	```
-	sudo rm -rf /usr/local/cuda*
-
-	sudo apt-get --purge remove 'cuda*'
-
-	sudo apt-get autoremove --purge 'cuda*'
- 	```
-
-
-   	제거 확인
-    	```
-	sudo dpkg -l|grep cuda
 	
- 	# 만약 설치된게 남았다면:
-	sudo apt-get remove --purge 남은 찌꺼기 이름
- 	```
+		CUDA 삭제
+		```
+		sudo rm -rf /usr/local/cuda*
+	
+		sudo apt-get --purge remove 'cuda*'
+	
+		sudo apt-get autoremove --purge 'cuda*'
+	 	```
 
 
-     	이후 재부팅
-    	```
-	sudo reboot
- 	```
+	   	제거 확인
+	    	```
+		sudo dpkg -l|grep cuda
+		
+	 	# 만약 설치된게 남았다면:
+		sudo apt-get remove --purge 남은 찌꺼기 이름
+ 		```
+
+
+	     	이후 재부팅
+	    	```
+		sudo reboot
+	 	```
       
   	</div>
 </details> 
