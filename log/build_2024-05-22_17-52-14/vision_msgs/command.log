@@ -1,0 +1,6 @@
+Invoking command in '/home/yong/YongJun_ws/build/vision_msgs': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/foxy /usr/bin/cmake /home/yong/YongJun_ws/src/vision_msgs -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/yong/YongJun_ws/install/vision_msgs
+Invoked command in '/home/yong/YongJun_ws/build/vision_msgs' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/foxy /usr/bin/cmake /home/yong/YongJun_ws/src/vision_msgs -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/yong/YongJun_ws/install/vision_msgs
+Invoking command in '/home/yong/YongJun_ws/build/vision_msgs': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/foxy /usr/bin/cmake --build /home/yong/YongJun_ws/build/vision_msgs -- -j8 -l8
+Invoked command in '/home/yong/YongJun_ws/build/vision_msgs' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/foxy /usr/bin/cmake --build /home/yong/YongJun_ws/build/vision_msgs -- -j8 -l8
+Invoking command in '/home/yong/YongJun_ws/build/vision_msgs': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/foxy /usr/bin/cmake --install /home/yong/YongJun_ws/build/vision_msgs
+Invoked command in '/home/yong/YongJun_ws/build/vision_msgs' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/foxy /usr/bin/cmake --install /home/yong/YongJun_ws/build/vision_msgs

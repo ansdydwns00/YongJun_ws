@@ -1,0 +1,22 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/yong/YongJun_ws/src/deployedpointpillarmodel/include/deployedpointpillarmodel/coder_posix_time.h
+
+/home/yong/YongJun_ws/src/deployedpointpillarmodel/src/coder_posix_time.c
+windows.h
+-
+coder_posix_time.h
+/home/yong/YongJun_ws/src/deployedpointpillarmodel/src/coder_posix_time.h
+math.h
+-
+stdlib.h
+-
+time.h
+-
+

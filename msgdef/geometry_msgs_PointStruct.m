@@ -1,0 +1,13 @@
+function msg = geometry_msgs_PointStruct
+% Message struct definition for geometry_msgs/Point
+coder.inline("never")
+msg = struct(...
+    'MessageType','geometry_msgs/Point',...
+    'x',ros.internal.ros2.messages.ros2.default_type('double',1,0),...
+    'y',ros.internal.ros2.messages.ros2.default_type('double',1,0),...
+    'z',ros.internal.ros2.messages.ros2.default_type('double',1,0));
+coder.cstructname(msg,'geometry_msgs_PointStruct_T');
+if ~isempty(coder.target)
+    coder.ceval('//',coder.rref(msg));
+end
+end

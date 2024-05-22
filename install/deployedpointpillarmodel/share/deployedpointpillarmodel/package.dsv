@@ -1,0 +1,8 @@
+source;share/deployedpointpillarmodel/hook/cmake_prefix_path.ps1
+source;share/deployedpointpillarmodel/hook/cmake_prefix_path.dsv
+source;share/deployedpointpillarmodel/hook/cmake_prefix_path.sh
+source;share/deployedpointpillarmodel/local_setup.bash
+source;share/deployedpointpillarmodel/local_setup.dsv
+source;share/deployedpointpillarmodel/local_setup.ps1
+source;share/deployedpointpillarmodel/local_setup.sh
+source;share/deployedpointpillarmodel/local_setup.zsh

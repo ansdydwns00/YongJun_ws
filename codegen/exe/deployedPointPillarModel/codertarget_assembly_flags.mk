@@ -1,0 +1,3 @@
+ASFLAGS_ADDITIONAL = 
+STACK_SIZE = 200000
+TARGET_PKG_INSTALLDIR = /usr/local/MATLAB/R2023b/toolbox/ros/codertarget/ros2

@@ -1,0 +1,20 @@
+[0.652s] Invoking command in '/home/yong/YongJun_ws/build/yolov8_ros': PYTHONPATH=/home/yong/YongJun_ws/build/yolov8_ros/prefix_override:/home/yong/YongJun_ws/install/yolov8_ros/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py develop --editable --build-directory /home/yong/YongJun_ws/build/yolov8_ros/build --no-deps symlink_data
+[0.869s] running develop
+[1.020s] running egg_info
+[1.020s] writing yolov8_ros.egg-info/PKG-INFO
+[1.021s] writing dependency_links to yolov8_ros.egg-info/dependency_links.txt
+[1.021s] writing entry points to yolov8_ros.egg-info/entry_points.txt
+[1.021s] writing requirements to yolov8_ros.egg-info/requires.txt
+[1.021s] writing top-level names to yolov8_ros.egg-info/top_level.txt
+[1.045s] reading manifest file 'yolov8_ros.egg-info/SOURCES.txt'
+[1.045s] writing manifest file 'yolov8_ros.egg-info/SOURCES.txt'
+[1.075s] running build_ext
+[1.076s] Creating /home/yong/YongJun_ws/install/yolov8_ros/lib/python3.8/site-packages/yolov8-ros.egg-link (link to .)
+[1.076s] Installing debug_node script to /home/yong/YongJun_ws/install/yolov8_ros/lib/yolov8_ros
+[1.076s] Installing detect_3d_node script to /home/yong/YongJun_ws/install/yolov8_ros/lib/yolov8_ros
+[1.076s] Installing tracking_node script to /home/yong/YongJun_ws/install/yolov8_ros/lib/yolov8_ros
+[1.077s] Installing yolov8_node script to /home/yong/YongJun_ws/install/yolov8_ros/lib/yolov8_ros
+[1.077s] 
+[1.077s] Installed /home/yong/YongJun_ws/build/yolov8_ros
+[1.077s] running symlink_data
+[1.094s] Invoked command in '/home/yong/YongJun_ws/build/yolov8_ros' returned '0': PYTHONPATH=/home/yong/YongJun_ws/build/yolov8_ros/prefix_override:/home/yong/YongJun_ws/install/yolov8_ros/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py develop --editable --build-directory /home/yong/YongJun_ws/build/yolov8_ros/build --no-deps symlink_data
