@@ -1,0 +1,190 @@
+%% ROS2 Coneection 
+rosshutdown
+clear; clc
+
+% % ros2 node 
+Matlab = ros2node("/MatlabNode");
+% 
+% AutoL_lidar = ros2node("/AutoL_lidar");
+% 
+% % ros2 publish  
+% lidarPub = ros2publisher(AutoL_lidar,'/scan','sensor_msgs/PointCloud2');
+% lidarPubMsg = ros2message('sensor_msgs/PointCloud2');
+% 
+% % ros2 subscribe
+% lidarSub = ros2subscriber(Matlab,'/scan','sensor_msgs/PointCloud2');
+imageSub = ros2subscriber(Matlab,'/camera1/image_raw','sensor_msgs/Image');
+
+
+% rosinit
+% imageSub = rossubscriber("/camera_left/usb_cam_left/image_raw","sensor_msgs/Image","DataFormat","struct");
+
+% disPub = rospublisher("/distance","std_msgs/Float32","DataFormat","struct");
+% disPubMsg = rosmessage("std_msgs/Float32","DataFormat","struct");
+%% Sensor Connection
+% ---------------------------------------------------------------------------
+% ---------------------------------------------------------------------------
+%                              LiDAR Connection 
+% ---------------------------------------------------------------------------
+% ---------------------------------------------------------------------------
+udpObj = udpport("byte","LocalPort",5001,"ByteOrder","little-endian");
+
+%% Load .mat file
+% ---------------------------------------------------------------------------
+%                              Parameter Initialize 
+% ---------------------------------------------------------------------------
+load("Calibration.mat");                % Calibration file 
+
+LidarToCam = tform;                     % Lidar coord -> Cam coord
+CamToLidar = invert(tform);             % Cam coord -> Lidar coord
+
+%% Main
+
+i = 1; 
+points = zeros(22784,3);              % [x,y,z] 좌표 값 사전 할당(178 packet * 128 points), 코드 속도를 위해 사전 할당  
+m = 32;                               % 32 channel 정렬 
+gridStep = 0.1;                       % Point Cloud Downsampling
+
+
+color = 'red';
+distance = []; 
+currentStep = 0;
+frameCount = 0;
+fps = 0;
+
+
+roi = [0, 10, -1, 1, -2, 7];                    % ROI 설정
+clusterThreshold = 0.2;                         % Cluster distance
+cuboidTreshold = 0;                             % Ignore smaller than [value] cuboid
+
+
+detector = peopleDetectorACF();                 % Detector 선언
+[tracker,positionSelector] = setupTracker();    % Tracker 선언
+
+
+
+vPlayer = vision.DeployableVideoPlayer;
+player = pcplayer([0 10],[-3 3],[-2 2]);
+% display = helperLidarCameraObjectsDisplay;      % Visualization
+% initializeDisplay(display)                      % Visualization Init
+
+
+
+% 입력 buffer 제거
+flush(udpObj,"input")
+
+% tic
+while true
+    tic
+    % ---------------------------------------------------------------------------
+    %                         One Packet get  
+    % ---------------------------------------------------------------------------
+    
+    % 패킷 1개 불러오기      
+    packetData = read(udpObj,1330);
+    
+    % 패킷 1개 parsing
+    [payload,top_bottom_flag,dataType] = packet_extract(packetData);
+    
+    % 패킷 1개에 해당하는 pointCloud 검출 
+    xyzPoints = ptCloud_extract(payload,top_bottom_flag);
+    
+    % 패킷 속 [x y z] 좌표값 저장
+    points((i-1)*128+1:(i-1)*128+128,:) = xyzPoints;
+    i = i + 1;
+    
+    % ---------------------------------------------------------------------------
+    %                         One Frame get  
+    % ---------------------------------------------------------------------------
+    
+    % 1 프레임 종료 확인(하부 프레임 89개 다음 상부 프레임 89개 수신 받으면 178 패킷 == 1 프레임); 
+    if (top_bottom_flag == 1 && dataType(:,1) == 170)
+
+        % % points 정렬
+        % 각도 계산
+        % angles = atan2(points(:,2), points(:,1));
+
+        % % 각   도로 정렬
+        % [~, idx] = sort(angles);
+        % sorted_points = points(idx, :);
+
+        % % mxnx3 행렬 생성
+        % reshaped_points = reshape(sorted_points, m,[],3);
+
+        % % [x,y,z] -> pointCloud 생성
+        ptCloud = pointCloud(points);
+
+        % % ROI 영역 내 pointCloud 추출
+        % indices = findPointsInROI(ptCloud, roi);
+        % roiPtCloud = select(ptCloud, indices);
+        
+        % ---------------------------------------------------------------------------
+        %                              Image get  
+        % ---------------------------------------------------------------------------
+        % subscribe image msg
+        imgMsg = receive(imageSub);
+        img = rosReadImage(imgMsg);
+
+        % ---------------------------------------------------------------------------
+        %                              Object Detection   
+        % ---------------------------------------------------------------------------     
+        currentStep = currentStep + 1;
+        detections = detectObjects(detector,img,currentStep);
+
+        % ---------------------------------------------------------------------------
+        %                              Object Tracker  
+        % ---------------------------------------------------------------------------     
+        confirmedTracks = updateTracks(tracker,detections,currentStep);
+        confirmedTracks = removeNoisyTracks(confirmedTracks,positionSelector,cameraParams.ImageSize);
+        bboxes = getTrackBoxes(confirmedTracks,positionSelector);
+
+        if bboxes
+            [bboxesLidar,~,boxesUsed] = bboxCameraToLidar(bboxes,ptCloud,cameraParams,CamToLidar,'ClusterThreshold',clusterThreshold);
+            distance = helperComputeDistance(ptCloud, bboxesLidar);
+
+            
+            if ~isempty(bboxesLidar)
+                deleteCuboid(player.Axes);
+                cuboidInfo = getCuboidInfo(bboxesLidar);
+                drawCuboid(player.Axes, cuboidInfo, 'red');
+                % showShape("cuboid",bboxesLidar,'Parent',player.Axes,"Opacity",0.15,"Color",'red');
+            end
+
+            img = insertTrackBoxes(img, bboxes, distance);
+
+            bboxesLidar = [];
+        else
+            % deleteCuboid(player.Axes);
+        end
+        
+        view(player,ptCloud);
+        vPlayer.step(img);
+        
+        % parameter 초기화
+        i = 1;
+        points = zeros(22784,3);
+        toc;
+    end   
+end
+%% 
+% if bboxes
+%     [bboxesLidar,~,boxesUsed] = bboxCameraToLidar(bboxes,roiPtCloud,cameraParams,CamToLidar,'ClusterThreshold',clusterThreshold);
+%     distance = helperComputeDistance(roiPtCloud, bboxesLidar);
+% 
+%     img = updateImage(display, img, bboxes, distance);
+%     updateLidarBbox(display, bboxesLidar, boxesUsed);
+% 
+%     disPubMsg.Data = single(distance);
+%     send(disPub,disPubMsg);
+% else
+%     disPubMsg.Data = single(0);
+%     send(disPub,disPubMsg);
+% end
+% updateDisplay(display,img,roiPtCloud);
+% drawnow
+
+
+% frameCount = frameCount + 1;
+% frameTime = toc;
+% frameRate = frameCount / frameTime;
+% fprintf("rendering rate: %.4f hz\n",frameRate);

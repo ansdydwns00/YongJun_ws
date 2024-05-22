@@ -49,7 +49,7 @@ class Yolov8Node(Node):
         model = self.get_parameter(
             "model").get_parameter_value().string_value
 
-        self.declare_parameter("device", "cuda:0")
+        self.declare_parameter("device", "cuda:0")   #cuda:0
         self.device = self.get_parameter(
             "device").get_parameter_value().string_value
 
