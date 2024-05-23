@@ -194,9 +194,10 @@ https://github.com/ansdydwns00/YongJun_ws/assets/81146105/ab8b633e-7686-4c68-868
 
 ## RGB-D(Object Detection using Only LiDAR)
 
-### pointcloud viewer distance
+### pointcloud viewer distance(~=8hz)
 
 
+![Screenshot from 2024-05-23 15-22-03](https://github.com/ansdydwns00/YongJun_ws/assets/81146105/c44e3af3-99c7-4aff-9b88-10892f42fd5e)
 
 
 
