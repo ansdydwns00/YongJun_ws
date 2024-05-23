@@ -1,4 +1,105 @@
- 
+<details>
+	<summary>CUDA 삭제</summary>
+  	<div markdown="1">
+	
+	CUDA 삭제
+
+	$ sudo rm -rf /usr/local/cuda*
+		
+	$ sudo apt-get --purge remove 'cuda*'
+		
+	$ sudo apt-get autoremove --purge 'cuda*'
+
+ # Below nvidia-* and libnvidia-* removes drivers also. Better to remove everything and reinstall. The libcudnn8* removed cuDNN.
+sudo apt-get --purge remove cuda-* nvidia-* gds-tools-* libcublas-* libcufft-* libcufile-* libcurand-* libcusolver-* libcusparse-* libnpp-* libnvidia-* libnvjitlink-* libnvjpeg-* nsight* nvidia-* libnvidia-* libcudnn8*
+
+# Also run below which gets rid of CUDA 10 and prior stuff.
+sudo apt-get --purge remove "*cublas*" "*cufft*" "*curand*" "*cusolver*" "*cusparse*" "*npp*" "*nvjpeg*" "cuda*" "nsight*"
+
+# Cleanup uninstall
+sudo apt-get autoremove
+sudo apt-get autoclean
+
+# remove cuda directories
+sudo rm -rf /usr/local/cuda*
+
+# remove from dpkg
+sudo dpkg -r cuda
+sudo dpkg -r $(dpkg -l | grep '^ii  cudnn' | awk '{print $2}')
+
+	
+	제거 확인
+	
+	$ sudo dpkg -l|grep cuda
+			
+	# 만약 설치된게 남았다면:
+	$ sudo apt-get remove --purge 남은 찌꺼기 이름
+	
+
+
+
+	이후 재부팅
+	
+	$ sudo reboot
+	
+
+</details> 
+
+
+<details>
+	<summary>CUDA 설치</summary>
+  	<div markdown="1">
+	
+	CUDA 설치
+
+ 	# 해당 링크에 접속하여 본인 driver에 맞는 cuda 버전 확인
+ 	https://developer.nvidia.com/cuda-toolkit-archive
+
+	# 해당 사이트 참고
+	https://honbul.tistory.com/41
+
+</details> 
+
+<details>
+	<summary>torch & torchvision 삭제 및 설치</summary>
+  	<div markdown="1">
+	
+	torch & torchvision 삭제
+ 	$ pip uninstall torch torchvision
+
+	torch & torchvision 설치(아래 링크 참고)
+	https://pytorch.org/get-started/locally/
+
+ 	# 버전 확인
+  	python3 -c "import torch; print(torch.__version__)"
+  	python3 -c "import torchvision; print(torchvision.__version__)"
+
+</details> 
+
+<details>
+	<summary>Cudnn</summary>
+  	<div markdown="1">
+	
+
+	Cudnn 설치(아래 링크 참고)
+	https://hjh1023.tistory.com/59
+
+</details> 
+
+<details>
+	<summary>matlab ros msg</summary>
+  	<div markdown="1">
+	
+
+ 	# Matlab에 존재하는 ros2 msg list
+	>> ros2 msg list
+
+ 	# 만약 Matlab에 원하는 ros2 msg가 없을경우 따로 build 해줘야 함
+  	# build 하기 원하는 ros2 msg가 포함되어 있는 폴더의 경로로 이동 후 아래 명령어 실행
+   	>> ros2genmsg(pwd)	
+
+</details> 
+
 
 ## Development Environment 
 ```
@@ -62,7 +163,6 @@ $ ros2 launch yolov8_bringup yolov8.launch.py
 
 
 
-
 https://github.com/ansdydwns00/YongJun_ws/assets/81146105/5b0c084b-5386-486c-bef9-30e43c3b9cea
 
 
@@ -70,24 +170,57 @@ https://github.com/ansdydwns00/YongJun_ws/assets/81146105/5b0c084b-5386-486c-bef
 
 
 
+## AutoL G32 LiDAR Parsing
+
+Parsing at 10hz
+
+
+
+
+https://github.com/ansdydwns00/YongJun_ws/assets/81146105/8f324a0f-939f-426e-9792-fc5cbd16456b
 
 
 
 
 
+Parsing at 25hz
 
-## Build custom ros msg in MATLAB
-```
-% Matlab 내 정의되어 있는 ros msg type
->> ros2 msg list
 
-% Custom ros msg를 사용하기 위해 custom msg가 정의되어 있는 작업 공간에서 Build 진행
->> msg_path =  '/home/yong/YongJun_ws/src/YOLO/Yolov8';
->> ros2genmsg(msg_path)
 
-% Custom ros msg가 제대로 추가 되었는지 확인
->> ros2 msg list
-```
+
+https://github.com/ansdydwns00/YongJun_ws/assets/81146105/ab8b633e-7686-4c68-8682-fac468bb7ce4
+
+
+
+
+
+## RGB-D(Object Detection using LiDAR + Camera)
+
+### pointcloud viewer distance(~=4.2hz)
+
+![Screenshot from 2024-05-23 15-57-19](https://github.com/ansdydwns00/YongJun_ws/assets/81146105/17cce61c-d360-4737-9ea5-0791b377121d)
+
+
+
+### image viewer distance
+
+![Screenshot from 2024-05-23 16-09-37](https://github.com/ansdydwns00/YongJun_ws/assets/81146105/bf34853c-2df1-4bd7-90d7-49a6e727e881)
+
+
+
+
+
+## RGB-D(Object Detection using Only LiDAR)
+
+### pointcloud viewer distance(~=8hz)
+
+
+![Screenshot from 2024-05-23 15-22-03](https://github.com/ansdydwns00/YongJun_ws/assets/81146105/c44e3af3-99c7-4aff-9b88-10892f42fd5e)
+
+
+
+
+
 
 
 
