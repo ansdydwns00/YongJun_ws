@@ -80,10 +80,7 @@
 
  	# 만약 Matlab에 원하는 ros2 msg가 없을경우 따로 build 해줘야 함
   	# build 하기 원하는 ros2 msg가 포함되어 있는 폴더의 경로로 이동 후 아래 명령어 실행
-   	>> ros2genmsg(pwd)
-
-    	![after](https://github.com/ansdydwns00/YongJun_ws/assets/81146105/599a84bd-bc6d-4a39-affa-082fc614e7b2)
-
+   	>> ros2genmsg(pwd)	
 
 </details> 
 
