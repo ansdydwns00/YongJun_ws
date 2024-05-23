@@ -57,10 +57,12 @@ while true
         %     detectTime = tic; % Reset the timer
         %     showShape('cuboid',bboxes,'Parent',player.Axes,'Opacity',0.2,'Color','red','LineWidth',0.5);
         % end
-
+ 
         % Object Detection
+     
         [bboxes, score, labels] = detect(detector,ptCloud,"ExecutionEnvironment","gpu","Threshold",0.2);
-        
+      % [bboxes, score, labels] = detect(detector,ptCloud,"ExecutionEnvironment","cpu","Threshold",0.2);
+
         % Compute Object Distance
         Distances = LR_computeDistance(ptCloud,bboxes);
 

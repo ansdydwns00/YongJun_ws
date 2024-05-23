@@ -10,7 +10,7 @@ function Distances = LR_computeDistance(ptCloud,bboxes)
         model = cuboidModel(bboxCuboid);
         
         % Find points inside cuboid
-        ind = findPointsInsideCuboid(model,ptCloud);
+        ind = findPointsInModel(model,ptCloud);
         pts = select(ptCloud,ind);
 
         % Find the distance of the 2-D rectangle
