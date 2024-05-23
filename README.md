@@ -80,7 +80,7 @@
 
  	# 만약 Matlab에 원하는 ros2 msg가 없을경우 따로 build 해줘야 함
   	# build 하기 원하는 ros2 msg가 포함되어 있는 폴더의 경로로 이동 후 아래 명령어 실행
-   	>> ros2genmsg(pwd)
+   	>> ros2genmsg(pwd)	
 
 </details> 
 
@@ -147,7 +147,6 @@ $ ros2 launch yolov8_bringup yolov8.launch.py
 
 
 
-
 https://github.com/ansdydwns00/YongJun_ws/assets/81146105/5b0c084b-5386-486c-bef9-30e43c3b9cea
 
 
@@ -155,24 +154,57 @@ https://github.com/ansdydwns00/YongJun_ws/assets/81146105/5b0c084b-5386-486c-bef
 
 
 
+## AutoL G32 LiDAR Parsing
+
+Parsing at 10hz
+
+
+
+
+https://github.com/ansdydwns00/YongJun_ws/assets/81146105/8f324a0f-939f-426e-9792-fc5cbd16456b
 
 
 
 
 
+Parsing at 25hz
 
-## Build custom ros msg in MATLAB
-```
-% Matlab 내 정의되어 있는 ros msg type
->> ros2 msg list
 
-% Custom ros msg를 사용하기 위해 custom msg가 정의되어 있는 작업 공간에서 Build 진행
->> msg_path =  '/home/yong/YongJun_ws/src/YOLO/Yolov8';
->> ros2genmsg(msg_path)
 
-% Custom ros msg가 제대로 추가 되었는지 확인
->> ros2 msg list
-```
+
+https://github.com/ansdydwns00/YongJun_ws/assets/81146105/ab8b633e-7686-4c68-8682-fac468bb7ce4
+
+
+
+
+
+## RGB-D(Object Detection using LiDAR + Camera)
+
+### pointcloud viewer distance(~=4.2hz)
+
+![Screenshot from 2024-05-23 15-57-19](https://github.com/ansdydwns00/YongJun_ws/assets/81146105/17cce61c-d360-4737-9ea5-0791b377121d)
+
+
+
+### image viewer distance
+
+![Screenshot from 2024-05-23 16-09-37](https://github.com/ansdydwns00/YongJun_ws/assets/81146105/bf34853c-2df1-4bd7-90d7-49a6e727e881)
+
+
+
+
+
+## RGB-D(Object Detection using Only LiDAR)
+
+### pointcloud viewer distance(~=8hz)
+
+
+![Screenshot from 2024-05-23 15-22-03](https://github.com/ansdydwns00/YongJun_ws/assets/81146105/c44e3af3-99c7-4aff-9b88-10892f42fd5e)
+
+
+
+
+
 
 
 
