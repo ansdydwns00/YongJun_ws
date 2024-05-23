@@ -6,23 +6,16 @@ clear; clc
 % Create udp communication object
 udpObj = udpport("byte","LocalPort",5001,"ByteOrder","little-endian");
 
+% Load pointPillar Model
 load("detector.mat");
-
-%% 
-
-Matlab = ros2node("/MatlabNode");
-
-LidarPub = ros2publisher(Matlab,"/scan","sensor_msgs/PointCloud2");
-
 %% Initialize parameters
 
 % ---------------------------------------------------------------------------
 %                              Parameter Initialize 
 % ---------------------------------------------------------------------------
-% gridStep = 0.1;                                 % Point Cloud Downsampling
-% cuboidTreshold = 0;                             % Ignore smaller than [value] cuboid
+
 frameCount = 0;
-distance = [];                                    
+Distances = [];                                    
 
 roi = [5, 10, -2, 2, -2, 2];                    % ROI 설정
 clusterThreshold = 0.4;                         % Cluster distance
@@ -58,20 +51,33 @@ while true
         % Create point cloud object
         ptCloud = pointCloud(xyzCoords,"Intensity",xyzIntensity);
         
-        if toc(detectTime) >= 1
-            [bboxes, score, labels] = detect(detector,ptCloud,"ExecutionEnvironment","gpu","Threshold",0.2);
-            detectTime = tic; % Reset the timer
-            showShape('cuboid',bboxes,'Parent',player.Axes,'Opacity',0.1,'Color','green','LineWidth',0.5);
-        end
+        % if toc(detectTime) >= 1
+        %     hold(player.Axes,'off');
+        %     [bboxes, score, labels] = detect(detector,ptCloud,"ExecutionEnvironment","gpu","Threshold",0.2);
+        %     detectTime = tic; % Reset the timer
+        %     showShape('cuboid',bboxes,'Parent',player.Axes,'Opacity',0.2,'Color','red','LineWidth',0.5);
+        % end
+
+        % Object Detection
+        [bboxes, score, labels] = detect(detector,ptCloud,"ExecutionEnvironment","gpu","Threshold",0.2);
+        
+        % Compute Object Distance
+        Distances = LR_computeDistance(ptCloud,bboxes);
+
+        showShape('cuboid',bboxes,'Parent',player.Axes,'Opacity',0.2,'Color','red','LineWidth',0.5,'Label',Distances);
+
        
         % Display ptCloud on pcplayer
         view(player,ptCloud) 
         
-        % % Display Rendering rate 
+        % Display Rendering rate 
         frameCount = frameCount + 1;
         elapsedTime = toc;
         frameRate = frameCount / elapsedTime;
         fprintf("Rendering rate: %f hz\n",frameRate);
+
+        % Remove buffer 
+        flush(udpObj)
     end  
     reset_flag = single(1);
 end

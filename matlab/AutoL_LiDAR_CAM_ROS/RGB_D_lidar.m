@@ -41,8 +41,8 @@ CamToLidar = invert(tform);             % Cam coord -> Lidar coord
 frameCount = 0;
 distance = [];                                    
 
-roi = [5, 10, -2, 2, -2, 2];                    % ROI 설정
-clusterThreshold = 0.4;                         % Cluster distance
+roi = [6, 10, -2, 2, -2, 2];                    % ROI 설정
+clusterThreshold = 0.1;                         % Cluster distance
 
 
 reset_flag = single(0);                         % Reset persistent variable
@@ -52,8 +52,7 @@ reset_flag = single(0);                         % Reset persistent variable
 % ---------------------------------------------------------------------------
 %                              Create point cloud viewer 
 % ---------------------------------------------------------------------------
-player = pcplayer([0 10],[-5 5],[-2 2]);
-
+player = pcplayer([3 10],[-2 4],[-2 2]);
 
 
 % Remove input buffer
@@ -78,25 +77,20 @@ while true
         indices = findPointsInROI(ptCloud, roi);
         roiPtCloud = select(ptCloud, indices);
         
-        objectInfo = computeDistance(Yolo,roiPtCloud,cameraParams,CamToLidar,clusterThreshold,player);
+        [objectInfo,bboxesLidar,Distances] = computeDistance(Yolo,ptCloud,cameraParams,CamToLidar,clusterThreshold);
         
-        % view(player,ptCloud); 
+        showShape('cuboid',bboxesLidar,'Parent',player.Axes,'Opacity',0.2,'Color','red','LineWidth',0.5,'Label',Distances);
+        
+        view(player,ptCloud); 
 
         % Display Rendering rate 
         frameCount = frameCount + 1; 
         elapsedTime = toc;
         frameRate = frameCount / elapsedTime;
         fprintf("Rendering rate: %f hz\n",frameRate);
-    end  
 
+        % Remove buffer
+        flush(udpObj)
+    end  
     reset_flag = single(1);
 end
-
-%% Support functions
-
-% pointSort
-% computeDistance
-% AutoL_parsing
-% helperComputeDistance
-% drawCuboid
-% deleteCuboid

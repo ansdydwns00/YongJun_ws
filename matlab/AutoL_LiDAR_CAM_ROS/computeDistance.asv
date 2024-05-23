@@ -1,4 +1,4 @@
-function [objectInfo,bboxesLidar,Distances] = computeDistance(Yolo,ptCloud,cameraParams,CamToLidar,clusterThreshold)
+function objectInfo = computeDistance(Yolo,ptCloud,cameraParams,CamToLidar,clusterThreshold)
     
     % ---------------------------------------------------------------------------
     %                              Yolo sub  
@@ -8,9 +8,7 @@ function [objectInfo,bboxesLidar,Distances] = computeDistance(Yolo,ptCloud,camer
     
     objectInfo = {struct()};
     bboxes = [];
-    Distances = [];
-    bboxesLidar = [];
-    
+
     % bounding box info
     for idx = 1:length(yolo_info.detections)
         x = yolo_info.detections(idx).bbox.center.position.x;
@@ -49,7 +47,10 @@ function [objectInfo,bboxesLidar,Distances] = computeDistance(Yolo,ptCloud,camer
                 % Find the distance of the 2-D rectangle
         
                 dist = min(pts.Location(:,1));
-                Distances(i,:) = dist;
+                
+                % objectInfo{i,1}.Bbox = bboxCuboid;
+                % objectInfo{i,1}.Distance = dist;
+
             end
                 
         end

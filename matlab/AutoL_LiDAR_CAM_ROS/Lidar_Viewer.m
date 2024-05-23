@@ -56,6 +56,8 @@ while true
         elapsedTime = toc;
         frameRate = frameCount / elapsedTime;
         fprintf("Rendering rate: %f hz\n",frameRate);
+
+        flush(udpObj);
     end  
 
 end

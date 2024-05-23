@@ -67,11 +67,10 @@ while true
     packetData = single(read(udpObj,1330))';   
     
     % Use mex file to verify generated c code
-    [xyzCoords,isValid] = AutoL_parsing(packetData,reset_flag);
+    [xyzCoords,isValid] = AutoL_parsing_mex(packetData,reset_flag);
     
     % isValid true: 1 frame, isValid false: not 1 frame  
     if isValid  
-        
         
         % [x,y,z] coordinates to point cloud
         ptCloud = pointCloud(xyzCoords);
@@ -80,7 +79,7 @@ while true
         indices = findPointsInROI(ptCloud, roi);
         roiPtCloud = select(ptCloud, indices);
        
-        % objectInfo = computeDistance_image(Yolo,roiPtCloud,cameraParams,CamToLidar,clusterThreshold,vPlayer,fps);
+        [objectInfo,Distances] = computeDistance_image(Yolo,ptCloud,cameraParams,CamToLidar,clusterThreshold,vPlayer,fps);
          
         % Display Rendering rate 
         time = toc;
@@ -88,10 +87,3 @@ while true
     end  
     reset_flag = single(1);
 end
-
-%% Support functions
-
-% pointSort
-% computeDistance_image
-% AutoL_parsing
-% helperComputeDistance_image

@@ -1,4 +1,4 @@
-function objectInfo = computeDistance_image(Yolo,ptCloud,cameraParams,CamToLidar,clusterThreshold,vPlayer,fps)
+function [objectInfo,Distances] = computeDistance_image(Yolo,ptCloud,cameraParams,CamToLidar,clusterThreshold,vPlayer,fps)
     
     % ---------------------------------------------------------------------------
     %                              Yolo sub  
@@ -15,6 +15,7 @@ function objectInfo = computeDistance_image(Yolo,ptCloud,cameraParams,CamToLidar
     bboxes = [];
     labels = {};
     bboxesLidar = [];
+    Distances = [];
     
 
     % Extract Bbox & Label Info
@@ -31,18 +32,43 @@ function objectInfo = computeDistance_image(Yolo,ptCloud,cameraParams,CamToLidar
         
         % Tracker id info 
         id = yolo_info.detections(idx).id;
-        objectInfo{idx}.Id = id;
         labels = [labels; str2double(id)];
+        objectInfo{idx}.Id = id;
     end
     
     
     if bboxes
 
-        bboxesLidar = bboxCameraToLidar(bboxes, ptCloud, cameraParams, CamToLidar, 'ClusterThreshold', clusterThreshold);  
+        [bboxesLidar,~,~] = bboxCameraToLidar(bboxes, ptCloud, cameraParams, CamToLidar, 'ClusterThreshold', clusterThreshold);  
 
         if ~isempty(bboxesLidar)
 
-            [objectInfo,labels] = helperComputeDistance_image(ptCloud, bboxesLidar, labels, objectInfo);
+            numLidarDetections = size(bboxesLidar,1);
+            numBbox = size(labels,1);
+            
+            for i = 1:numLidarDetections
+                bboxCuboid = bboxesLidar(i,:);
+        
+                % Create cuboidModel
+                model = cuboidModel(bboxCuboid);
+                
+                % Find points inside cuboid
+                ind = findPointsInsideCuboid(model,ptCloud);
+                pts = select(ptCloud,ind);
+        
+                % Find the distance of the 2-D rectangle
+        
+                dist = min(pts.Location(:,1));  
+                Distances(i,:) = dist;
+        
+                labels{i} = ['ID:' num2str(labels{i}) ' Dist:' num2str(dist,'%0.2f') ' m'];
+            end
+        
+            if numLidarDetections ~= numBbox
+                for i = numLidarDetections+1:numBbox
+                    labels{i} = ['ID:' num2str(labels{i})];
+                end
+            end
             
             yolo_img = insertObjectAnnotation(yolo_img,"rectangle",bboxes,labels,"TextBoxOpacity",0.3);
 
