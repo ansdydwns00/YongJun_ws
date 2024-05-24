@@ -5,7 +5,7 @@
  * File: AutoL_parsing.c
  *
  * MATLAB Coder version            : 23.2
- * C/C++ source code generated on  : 08-May-2024 17:20:00
+ * C/C++ source code generated on  : 20-May-2024 11:17:54
  */
 
 /* Include Files */
@@ -33,31 +33,91 @@ static boolean_T points_not_empty;
 void AutoL_parsing(const float packetData[1330], float reset_flag,
                    emxArray_real32_T *xyzCoords, boolean_T *isValid)
 {
-  static const double dv[4] = {-0.038388791, -0.104694693, -0.00523584,
-                               -0.071541742};
-  static double c_i;
-  static float points[68352];
+  static const double dv[128] = {
+      0.25, 0.5, 0.75, 1.0, 1.25, 1.5, 1.75, 2.0, 2.25, 2.5, 2.75, 3.0,
+      3.25, 3.5, 3.75, 4.0, 0.25, 0.5, 0.75, 1.0, 1.25, 1.5, 1.75, 2.0,
+      2.25, 2.5, 2.75, 3.0, 3.25, 3.5, 3.75, 4.0, 0.25, 0.5, 0.75, 1.0,
+      1.25, 1.5, 1.75, 2.0, 2.25, 2.5, 2.75, 3.0, 3.25, 3.5, 3.75, 4.0,
+      0.25, 0.5, 0.75, 1.0, 1.25, 1.5, 1.75, 2.0, 2.25, 2.5, 2.75, 3.0,
+      3.25, 3.5, 3.75, 4.0, 0.25, 0.5, 0.75, 1.0, 1.25, 1.5, 1.75, 2.0,
+      2.25, 2.5, 2.75, 3.0, 3.25, 3.5, 3.75, 4.0, 0.25, 0.5, 0.75, 1.0,
+      1.25, 1.5, 1.75, 2.0, 2.25, 2.5, 2.75, 3.0, 3.25, 3.5, 3.75, 4.0,
+      0.25, 0.5, 0.75, 1.0, 1.25, 1.5, 1.75, 2.0, 2.25, 2.5, 2.75, 3.0,
+      3.25, 3.5, 3.75, 4.0, 0.25, 0.5, 0.75, 1.0, 1.25, 1.5, 1.75, 2.0,
+      2.25, 2.5, 2.75, 3.0, 3.25, 3.5, 3.75, 4.0};
+  static const double precision_azimuth[4] = {-0.038388791, -0.104694693,
+                                              -0.00523584, -0.071541742};
+  static double b_i;
+  static float points[115200];
+  static const short iv[128] = {
+      6,    9,    12,   15,   18,   21,   24,   27,   30,   33,   36,   39,
+      42,   45,   48,   51,   168,  171,  174,  177,  180,  183,  186,  189,
+      192,  195,  198,  201,  204,  207,  210,  213,  330,  333,  336,  339,
+      342,  345,  348,  351,  354,  357,  360,  363,  366,  369,  372,  375,
+      492,  495,  498,  501,  504,  507,  510,  513,  516,  519,  522,  525,
+      528,  531,  534,  537,  654,  657,  660,  663,  666,  669,  672,  675,
+      678,  681,  684,  687,  690,  693,  696,  699,  816,  819,  822,  825,
+      828,  831,  834,  837,  840,  843,  846,  849,  852,  855,  858,  861,
+      978,  981,  984,  987,  990,  993,  996,  999,  1002, 1005, 1008, 1011,
+      1014, 1017, 1020, 1023, 1140, 1143, 1146, 1149, 1152, 1155, 1158, 1161,
+      1164, 1167, 1170, 1173, 1176, 1179, 1182, 1185};
+  static const short iv1[128] = {
+      7,    10,   13,   16,   19,   22,   25,   28,   31,   34,   37,   40,
+      43,   46,   49,   52,   169,  172,  175,  178,  181,  184,  187,  190,
+      193,  196,  199,  202,  205,  208,  211,  214,  331,  334,  337,  340,
+      343,  346,  349,  352,  355,  358,  361,  364,  367,  370,  373,  376,
+      493,  496,  499,  502,  505,  508,  511,  514,  517,  520,  523,  526,
+      529,  532,  535,  538,  655,  658,  661,  664,  667,  670,  673,  676,
+      679,  682,  685,  688,  691,  694,  697,  700,  817,  820,  823,  826,
+      829,  832,  835,  838,  841,  844,  847,  850,  853,  856,  859,  862,
+      979,  982,  985,  988,  991,  994,  997,  1000, 1003, 1006, 1009, 1012,
+      1015, 1018, 1021, 1024, 1141, 1144, 1147, 1150, 1153, 1156, 1159, 1162,
+      1165, 1168, 1171, 1174, 1177, 1180, 1183, 1186};
+  static const signed char iv2[128] = {
+      0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15,
+      0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15,
+      0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15,
+      0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15,
+      0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15,
+      0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15,
+      0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15,
+      0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15};
+  static const signed char iv3[128] = {
+      0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1,
+      1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2,
+      2, 2, 2, 2, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 4, 4,
+      4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 5, 5, 5, 5, 5, 5, 5, 5,
+      5, 5, 5, 5, 5, 5, 5, 5, 6, 6, 6, 6, 6, 6, 6, 6, 6, 6, 6, 6, 6, 6,
+      6, 6, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7};
+  double x[128];
   double elevation[16];
-  double z_tmp;
-  float xyzPoints[384];
+  double d;
   float ToF[128];
+  float ang[128];
+  float b_x[128];
+  float xy[128];
+  float azimuth[32];
   float azimuth_data[8];
+  float y[8];
+  float y_data[8];
   float f;
-  float xy;
   float *xyzCoords_data;
-  int ToF_tmp;
-  int b_i;
   int i;
-  int j;
+  int k;
+  int trueCount;
+  int xj;
+  int xoffset;
+  signed char b_tmp_data[8];
+  signed char tmp_data[8];
   unsigned char top_bottom_flag;
   boolean_T guard1;
   if (!isInitialized_AutoL_parsing) {
     AutoL_parsing_initialize();
   }
   if ((!points_not_empty) || (reset_flag == 0.0F)) {
-    memset(&points[0], 0, 68352U * sizeof(float));
+    memset(&points[0], 0, 115200U * sizeof(float));
     points_not_empty = true;
-    c_i = 1.0;
+    b_i = 1.0;
   }
   /*  Extract one packet */
   /*  Split into "Payload Header" and "Payload" (UDP Header is received
@@ -94,46 +154,85 @@ void AutoL_parsing(const float packetData[1330], float reset_flag,
   }
   /*  Apply azimuth offset to calculate precise azimuth */
   /*  Values for azimuth (3 echo mode) */
-  for (i = 0; i < 8; i++) {
-    azimuth_data[i] = 0.0F;
+  for (xj = 0; xj < 8; xj++) {
+    azimuth_data[xj] = 0.0F;
+    f = packetData[162 * xj + 30];
+    azimuth[xj] = f;
+    azimuth[xj + 8] = 256.0F * packetData[162 * xj + 31];
+    azimuth[xj + 16] = 65536.0F * packetData[162 * xj + 32];
+    azimuth[xj + 24] = 1.6777216E+7F * packetData[162 * xj + 33];
+    y[xj] = f;
   }
-  for (b_i = 0; b_i < 8; b_i++) {
-    i = b_i * 3;
-    f = packetData[i * 54 + 30] + 256.0F * packetData[i * 54 + 31];
-    xy = (f + 65536.0F * packetData[i * 54 + 32]) +
-         1.6777216E+7F * packetData[i * 54 + 33];
-    if (xy > 2.147483647E+9) {
-      azimuth_data[(int)((double)i / 3.0 + 1.0) - 1] = (f - 65535.0F) / 1000.0F;
-    } else {
-      azimuth_data[(int)((double)i / 3.0 + 1.0) - 1] = xy / 1000.0F;
+  for (k = 0; k < 3; k++) {
+    xoffset = (k + 1) << 3;
+    for (xj = 0; xj < 8; xj++) {
+      y[xj] += azimuth[xoffset + xj];
     }
   }
-  /*  ToF for azimuth [8*16] */
-  memset(&ToF[0], 0, 128U * sizeof(float));
-  for (b_i = 0; b_i < 8; b_i++) {
-    for (j = 0; j < 16; j++) {
-      i = j * 3;
-      ToF_tmp = b_i * 54 * 3 + i;
-      ToF[(int)(((double)b_i * 16.0 + (double)i / 3.0) + 1.0) - 1] =
-          (packetData[ToF_tmp + 34] + 256.0F * packetData[ToF_tmp + 35]) /
-          256.0F;
+  trueCount = 0;
+  xoffset = 0;
+  for (xj = 0; xj < 8; xj++) {
+    if (!(y[xj] <= 2.147483647E+9)) {
+      trueCount++;
+      tmp_data[xoffset] = (signed char)xj;
+      xoffset++;
     }
   }
-  /*  Rearrangement ToF [16 x 8]  */
+  if (trueCount == 0) {
+    trueCount = 0;
+  } else {
+    for (xj = 0; xj < trueCount; xj++) {
+      i = trueCount + xj;
+      y_data[xj] = azimuth[tmp_data[xj % trueCount] + ((xj / trueCount) << 3)] +
+                   azimuth[tmp_data[i % trueCount] + ((i / trueCount) << 3)];
+    }
+  }
+  for (i = 0; i < trueCount; i++) {
+    azimuth_data[tmp_data[i]] = (y_data[i] - 65535.0F) / 1000.0F;
+  }
+  trueCount = 0;
+  xoffset = 0;
+  for (xj = 0; xj < 8; xj++) {
+    if (y[xj] <= 2.147483647E+9) {
+      trueCount++;
+      b_tmp_data[xoffset] = (signed char)xj;
+      xoffset++;
+    }
+  }
+  if (trueCount == 0) {
+    trueCount = 0;
+  } else {
+    for (xj = 0; xj < trueCount; xj++) {
+      y_data[xj] =
+          azimuth[b_tmp_data[xj % trueCount] + ((xj / trueCount) << 3)];
+    }
+    for (k = 0; k < 3; k++) {
+      xoffset = (k + 1) * trueCount;
+      for (xj = 0; xj < trueCount; xj++) {
+        i = xoffset + xj;
+        y_data[xj] +=
+            azimuth[b_tmp_data[i % trueCount] + ((i / trueCount) << 3)];
+      }
+    }
+  }
+  for (i = 0; i < trueCount; i++) {
+    azimuth_data[b_tmp_data[i]] = y_data[i] / 1000.0F;
+  }
+  /*  ToF for azimuth [24*16] */
+  /*  Intensity = payload(9+i*3+(floor(i/16)*114)); */
   /*  Finding coordinates [x,y,z] */
-  for (b_i = 0; b_i < 8; b_i++) {
-    for (j = 0; j < 16; j++) {
-      float x_tmp;
-      z_tmp = 0.017453292519943295 * elevation[j];
-      i = j + (b_i << 4);
-      f = ToF[i];
-      xy = f * (float)cos(z_tmp);
-      x_tmp = 0.0174532924F *
-              (azimuth_data[b_i] + (float)dv[(int)floor((double)j / 4.0)]);
-      xyzPoints[i] = xy * cosf(x_tmp);
-      xyzPoints[i + 128] = xy * sinf(x_tmp);
-      xyzPoints[i + 256] = f * (float)sin(z_tmp);
-    }
+  for (k = 0; k < 128; k++) {
+    f = (packetData[iv[k] + 28] + 256.0F * packetData[iv1[k] + 28]) / 256.0F;
+    ToF[k] = f;
+    d = 0.017453292519943295 * elevation[iv2[k]];
+    x[k] = sin(d);
+    d = cos(d);
+    xy[k] = f * (float)d;
+    f = 0.0174532924F *
+        (azimuth_data[iv3[k]] + (float)precision_azimuth[(int)ceil(dv[k]) - 1]);
+    b_x[k] = cosf(f);
+    f = sinf(f);
+    ang[k] = f;
   }
   /*  Check End frame packet */
   guard1 = false;
@@ -155,17 +254,17 @@ void AutoL_parsing(const float packetData[1330], float reset_flag,
       /*  Return [x,y,z] coordinates for 1 frame and set the return flag to true
        */
       i = xyzCoords->size[0] * xyzCoords->size[1];
-      xyzCoords->size[0] = 22784;
+      xyzCoords->size[0] = 38400;
       xyzCoords->size[1] = 3;
       emxEnsureCapacity_real32_T(xyzCoords, i);
       xyzCoords_data = xyzCoords->data;
-      for (i = 0; i < 68352; i++) {
+      for (i = 0; i < 115200; i++) {
         xyzCoords_data[i] = points[i];
       }
       *isValid = true;
       /*  Initialize of parameters */
-      c_i = 1.0;
-      memset(&points[0], 0, 68352U * sizeof(float));
+      memset(&points[0], 0, 115200U * sizeof(float));
+      b_i = 1.0;
     } else {
       guard1 = true;
     }
@@ -174,14 +273,16 @@ void AutoL_parsing(const float packetData[1330], float reset_flag,
   }
   if (guard1) {
     /*  Save [x,y,z] coordinates in packet unless it's an end frame */
-    z_tmp = (c_i - 1.0) * 128.0 + 1.0;
-    for (i = 0; i < 3; i++) {
-      for (ToF_tmp = 0; ToF_tmp < 128; ToF_tmp++) {
-        points[((int)(z_tmp + (double)ToF_tmp) + 22784 * i) - 1] =
-            xyzPoints[ToF_tmp + (i << 7)];
-      }
+    d = (b_i - 1.0) * 128.0 + 1.0;
+    for (i = 0; i < 128; i++) {
+      xoffset = (int)(d + (double)i);
+      f = xy[i];
+      points[xoffset - 1] = f * b_x[i];
+      points[xoffset + 38399] = f * ang[i];
+      points[xoffset + 76799] = ToF[i] * (float)x[i];
     }
-    c_i++;
+    b_i++;
+    /*  disp(i) */
     /*  Return empty matrix for 1 frame and set the return flag to false */
     xyzCoords->size[0] = 0;
     xyzCoords->size[1] = 0;

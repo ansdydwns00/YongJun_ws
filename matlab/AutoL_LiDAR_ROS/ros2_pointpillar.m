@@ -1,6 +1,9 @@
 import function.*
 load('udp_packet.mat')
 
+matFile = 'pretrainedPointPillarsDetector.mat';
+pretrainedDetector = load('pretrainedPointPillarsDetector.mat','detector');
+detector = pretrainedDetector.detector;
 
 %% Lidar Connection
 
@@ -13,23 +16,24 @@ udpObj = udpport("byte","LocalPort",5001,"ByteOrder","little-endian");
 %% Node Initialization
 lidar_node = ros2node('/lidar_node');
 lidarPub = ros2publisher(lidar_node,"/lidar","sensor_msgs/PointCloud2");
+lidarSub = ros2subscriber(lidar_node,'/detect')
 lidarMsg = ros2message(lidarPub);
 lidarMsg.is_bigendian = false;
 
 dt_node = ros2node('/dt_node');
-dtSub = ros2subscriber(dt_node,'/lidar');
+dtSub = ros2subscriber(dt_node,'/lidar',@get_ptdata); 
 
 
 
 %% Packet Data parsing 
 matFile = 'pretrained.mat';
-
+global pt;
 % Create point cloud viewer
 player = pcplayer([0 10],[-10 10],[-4 4]);
 
 % Initialize of parameters 
 points = single(zeros(22784,3)); % Pre-allocation [x,y,z] coords matrix
-intensity = single(zeros(22784,1));
+% intensity = single(zeros(22784,1));
 
 i = 1;
 j = 0;
@@ -46,15 +50,17 @@ while isOpen(player)
 
     % One packet data parsing
     [payload,top_bottom_flag,dataType] = packet_extract(packetData);
-    
 
     % [x,y,z] coords of one packet
+    % payload = gpuArray(payload);
+    
+    
     [xyzPoints,inten]= ptCloud_extract(payload,top_bottom_flag);
-
+ 
 
     % Save [x,y,z] coords
     points((i-1)*128+1:(i-1)*128+128,:) = xyzPoints;
-    intensity((i-1)*128+1:(i-1)*128+128,:) = inten;
+    % intensity((i-1)*128+1:(i-1)*128+128,:) = inten;
 
     i = i+1;
     j = j+1;
@@ -63,13 +69,13 @@ while isOpen(player)
     if (top_bottom_flag == 1 && dataType == 170)
 
         % Create point cloud object
-        ptCloud = pointCloud(points,Intensity=intensity);
+        ptCloud = pointCloud(points);
         
 
         % Display ptCloud on pcplayer
         view(player,ptCloud);
+        % [bboxes,~,labels]= pointpillardetect(matFile,ptCloud.Location,ptCloud.Intensity,0.5);
 
-        [bboxes,~,labels]= pointpillardetect_mex(matFile,ptCloud.Location,ptCloud.Intensity,0.5);
         lidarMsg = rosWriteXYZ(lidarMsg,points(1:22784,:));
         send(lidarPub,lidarMsg)
 
