@@ -42,6 +42,8 @@
 	# 해당 사이트 참고
 	https://honbul.tistory.com/41
 
+ 	# CUDA 버전 확인
+ 	/usr/local/cuda-버전/bin/nvcc -V
 </details> 
 
 <details>
