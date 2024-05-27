@@ -91,6 +91,15 @@
 
 </details> 
 
+<details>
+	<summary>MATAB 설치</summary>
+  	<div markdown="1">
+	
+	# sudo apt install python3.10 && sudo apt install python3.10-venv
+ 		
+
+</details> 
+
 
 ## Development Environment 
 ```
