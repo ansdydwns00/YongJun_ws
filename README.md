@@ -68,6 +68,13 @@
 	Cudnn 설치(아래 링크 참고)
 	https://hjh1023.tistory.com/59
 
+ 	cudnn 버전 확인
+ 	# cuDNN 8.x.x 이전 버전
+	cat /usr/local/cuda/include/cudnn.h | grep CUDNN_MAJOR -A 2
+
+	# cuDNN 8.x.x 이후 버전
+	cat /usr/local/cuda/include/cudnn_version.h | grep CUDNN_MAJOR -A 2
+
 </details> 
 
 <details>
