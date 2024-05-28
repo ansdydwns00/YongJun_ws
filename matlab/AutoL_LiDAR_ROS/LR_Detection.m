@@ -28,8 +28,7 @@ reset_flag = single(0);                         % Reset persistent variable
 % ---------------------------------------------------------------------------
 %                              Create point cloud viewer 
 % ---------------------------------------------------------------------------
-player = pcplayer([4 10],[-5 5],[-2 2]);
-
+player = pcplayer([0 10],[-5 5],[-2 2]);
 
 
 % Remove input buffer
@@ -59,12 +58,17 @@ while true
         % end
  
         % Object Detection
-     
-        [bboxes, score, labels] = detect(detector,ptCloud,"ExecutionEnvironment","gpu","Threshold",0.2);
-      % [bboxes, score, labels] = detect(detector,ptCloud,"ExecutionEnvironment","cpu","Threshold",0.2);
+        [bboxes, ~, ~] = detect(detector,ptCloud,"ExecutionEnvironment","gpu","Threshold",0.2);
 
         % Compute Object Distance
         Distances = LR_computeDistance(ptCloud,bboxes);
+        
+        % Delete 0 distance
+        idx = find(Distances);
+        Distances = Distances(idx,:);
+        bboxes = bboxes(idx,:);
+        % match distance & label
+
 
         showShape('cuboid',bboxes,'Parent',player.Axes,'Opacity',0.2,'Color','red','LineWidth',0.5,'Label',Distances);
 

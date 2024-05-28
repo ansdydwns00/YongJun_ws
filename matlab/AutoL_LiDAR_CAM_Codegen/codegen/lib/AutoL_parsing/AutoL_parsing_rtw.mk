@@ -2,7 +2,7 @@
 ## Makefile generated for component 'AutoL_parsing'. 
 ## 
 ## Makefile     : AutoL_parsing_rtw.mk
-## Generated on : Mon May 20 11:17:58 2024
+## Generated on : Tue May 28 16:10:02 2024
 ## Final product: ./AutoL_parsing.a
 ## Product type : static-library
 ## 
@@ -19,10 +19,10 @@
 
 PRODUCT_NAME              = AutoL_parsing
 MAKEFILE                  = AutoL_parsing_rtw.mk
-MATLAB_ROOT               = /usr/local/MATLAB/R2023b
-MATLAB_BIN                = /usr/local/MATLAB/R2023b/bin
+MATLAB_ROOT               = /usr/local/MATLAB/R2024a
+MATLAB_BIN                = /usr/local/MATLAB/R2024a/bin
 MATLAB_ARCH_BIN           = $(MATLAB_BIN)/glnxa64
-START_DIR                 = /home/yong/YongJun_ws/matlab/AutoL_LiDAR_codegen
+START_DIR                 = /home/aiv/YongJun_ws/matlab/AutoL_LiDAR_CAM_Codegen
 TGT_FCN_LIB               = ISO_C
 SOLVER_OBJ                = 
 CLASSIC_INTERFACE         = 0
@@ -38,7 +38,7 @@ MODELLIB                  = AutoL_parsing.a
 
 # Toolchain Name:          GNU gcc/g++ | gmake (64-bit Linux)
 # Supported Version(s):    
-# ToolchainInfo Version:   2023b
+# ToolchainInfo Version:   2024a
 # Specification Revision:  1.0
 # 
 #-------------------------------------------
@@ -52,9 +52,9 @@ MODELLIB                  = AutoL_parsing.a
 # MACROS
 #-----------
 
-WARN_FLAGS         = -Wall -W -Wwrite-strings -Winline -Wstrict-prototypes -Wnested-externs -Wpointer-arith -Wcast-align
+WARN_FLAGS         = -Wall -W -Wwrite-strings -Winline -Wstrict-prototypes -Wnested-externs -Wpointer-arith -Wcast-align -Wno-stringop-overflow
 WARN_FLAGS_MAX     = $(WARN_FLAGS) -Wcast-qual -Wshadow
-CPP_WARN_FLAGS     = -Wall -W -Wwrite-strings -Winline -Wpointer-arith -Wcast-align
+CPP_WARN_FLAGS     = -Wall -W -Wwrite-strings -Winline -Wpointer-arith -Wcast-align -Wno-stringop-overflow
 CPP_WARN_FLAGS_MAX = $(CPP_WARN_FLAGS) -Wcast-qual -Wshadow
 
 TOOLCHAIN_SRCS = 
@@ -121,9 +121,9 @@ RUN                 =
 
 ARFLAGS              = ruvs
 CFLAGS               = -c $(C_STANDARD_OPTS) -fPIC \
-                       -O3 -fno-loop-optimize -fno-aggressive-loop-optimizations
+                       -O3
 CPPFLAGS             = -c $(CPP_STANDARD_OPTS) -fPIC \
-                       -O3 -fno-loop-optimize -fno-aggressive-loop-optimizations
+                       -O3
 CPP_LDFLAGS          =
 CPP_SHAREDLIB_LDFLAGS  = -shared -Wl,--no-undefined
 DOWNLOAD_FLAGS       =
@@ -167,7 +167,7 @@ DEFINES = $(DEFINES_CUSTOM) $(DEFINES_STANDARD)
 ## SOURCE FILES
 ###########################################################################
 
-SRCS = $(START_DIR)/codegen/lib/AutoL_parsing/AutoL_parsing_data.c $(START_DIR)/codegen/lib/AutoL_parsing/AutoL_parsing_initialize.c $(START_DIR)/codegen/lib/AutoL_parsing/AutoL_parsing_terminate.c $(START_DIR)/codegen/lib/AutoL_parsing/AutoL_parsing.c $(START_DIR)/codegen/lib/AutoL_parsing/AutoL_parsing_emxutil.c $(START_DIR)/codegen/lib/AutoL_parsing/AutoL_parsing_emxAPI.c
+SRCS = $(START_DIR)/codegen/lib/AutoL_parsing/AutoL_parsing_data.c $(START_DIR)/codegen/lib/AutoL_parsing/rt_nonfinite.c $(START_DIR)/codegen/lib/AutoL_parsing/rtGetNaN.c $(START_DIR)/codegen/lib/AutoL_parsing/rtGetInf.c $(START_DIR)/codegen/lib/AutoL_parsing/AutoL_parsing_initialize.c $(START_DIR)/codegen/lib/AutoL_parsing/AutoL_parsing_terminate.c $(START_DIR)/codegen/lib/AutoL_parsing/AutoL_parsing.c $(START_DIR)/codegen/lib/AutoL_parsing/AutoL_parsing_emxutil.c $(START_DIR)/codegen/lib/AutoL_parsing/AutoL_parsing_emxAPI.c
 
 ALL_SRCS = $(SRCS)
 
@@ -175,7 +175,7 @@ ALL_SRCS = $(SRCS)
 ## OBJECTS
 ###########################################################################
 
-OBJS = AutoL_parsing_data.o AutoL_parsing_initialize.o AutoL_parsing_terminate.o AutoL_parsing.o AutoL_parsing_emxutil.o AutoL_parsing_emxAPI.o
+OBJS = AutoL_parsing_data.o rt_nonfinite.o rtGetNaN.o rtGetInf.o AutoL_parsing_initialize.o AutoL_parsing_terminate.o AutoL_parsing.o AutoL_parsing_emxutil.o AutoL_parsing_emxAPI.o
 
 ALL_OBJS = $(OBJS)
 
@@ -205,17 +205,19 @@ SYSTEM_LIBS =  -lm
 # C Compiler
 #---------------
 
+CFLAGS_TFL = -msse2 -fno-predictive-commoning
 CFLAGS_BASIC = $(DEFINES) $(INCLUDES)
 
-CFLAGS += $(CFLAGS_BASIC)
+CFLAGS += $(CFLAGS_TFL) $(CFLAGS_BASIC)
 
 #-----------------
 # C++ Compiler
 #-----------------
 
+CPPFLAGS_TFL = -msse2 -fno-predictive-commoning
 CPPFLAGS_BASIC = $(DEFINES) $(INCLUDES)
 
-CPPFLAGS += $(CPPFLAGS_BASIC)
+CPPFLAGS += $(CPPFLAGS_TFL) $(CPPFLAGS_BASIC)
 
 ###########################################################################
 ## INLINED COMMANDS
@@ -379,6 +381,18 @@ $(PRODUCT) : $(OBJS) $(PREBUILT_OBJS)
 
 
 AutoL_parsing_data.o : $(START_DIR)/codegen/lib/AutoL_parsing/AutoL_parsing_data.c
+	$(CC) $(CFLAGS) -o "$@" "$<"
+
+
+rt_nonfinite.o : $(START_DIR)/codegen/lib/AutoL_parsing/rt_nonfinite.c
+	$(CC) $(CFLAGS) -o "$@" "$<"
+
+
+rtGetNaN.o : $(START_DIR)/codegen/lib/AutoL_parsing/rtGetNaN.c
+	$(CC) $(CFLAGS) -o "$@" "$<"
+
+
+rtGetInf.o : $(START_DIR)/codegen/lib/AutoL_parsing/rtGetInf.c
 	$(CC) $(CFLAGS) -o "$@" "$<"
 
 

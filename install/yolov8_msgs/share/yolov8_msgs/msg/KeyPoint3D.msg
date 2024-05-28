@@ -1,1 +1,1 @@
-/home/yong/YongJun_ws/src/YOLO/Yolov8/yolov8_msgs/msg/KeyPoint3D.msg
+/home/aiv/YongJun_ws/src/YOLO/Yolov8/yolov8_msgs/msg/KeyPoint3D.msg

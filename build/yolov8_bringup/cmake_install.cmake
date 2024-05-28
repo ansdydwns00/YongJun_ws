@@ -1,8 +1,8 @@
-# Install script for directory: /home/yong/YongJun_ws/src/YOLO/Yolov8/yolov8_bringup
+# Install script for directory: /home/aiv/YongJun_ws/src/YOLO/Yolov8/yolov8_bringup
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
-  set(CMAKE_INSTALL_PREFIX "/home/yong/YongJun_ws/install/yolov8_bringup")
+  set(CMAKE_INSTALL_PREFIX "/home/aiv/YongJun_ws/install/yolov8_bringup")
 endif()
 string(REGEX REPLACE "/$" "" CMAKE_INSTALL_PREFIX "${CMAKE_INSTALL_PREFIX}")
 
@@ -38,7 +38,7 @@ if(NOT DEFINED CMAKE_CROSSCOMPILING)
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  include("/home/yong/YongJun_ws/build/yolov8_bringup/ament_cmake_symlink_install/ament_cmake_symlink_install.cmake")
+  include("/home/aiv/YongJun_ws/build/yolov8_bringup/ament_cmake_symlink_install/ament_cmake_symlink_install.cmake")
 endif()
 
 if(CMAKE_INSTALL_COMPONENT)
@@ -49,5 +49,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "/home/yong/YongJun_ws/build/yolov8_bringup/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "/home/aiv/YongJun_ws/build/yolov8_bringup/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")

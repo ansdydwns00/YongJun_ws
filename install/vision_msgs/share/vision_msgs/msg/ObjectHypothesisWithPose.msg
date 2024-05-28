@@ -1,1 +1,1 @@
-/home/yong/YongJun_ws/src/vision_msgs/msg/ObjectHypothesisWithPose.msg
+/home/aiv/YongJun_ws/src/vision_msgs/msg/ObjectHypothesisWithPose.msg

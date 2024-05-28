@@ -21,16 +21,29 @@ flush(udpObj,"input")
 reset_flag = single(0);
 
 % check_dataSize = {};
+time = [];
 
-tic
+
 while true
     
     % Load 1 packet [1 x 1330]       
     packetData = single(read(udpObj,1330))';
     
     % Use mex file to verify generated c code
-    % [xyzCoords,xyzIntensity,isValid] = AutoL_parsing_Intensity_mex(packetData,reset_flag);
-    [xyzCoords,isValid] = AutoL_parsing_mex(packetData,reset_flag);
+    [xyzCoords,xyzIntensity,isValid] = AutoL_parsing_Intensity_mex(packetData,reset_flag);
+    
+    % tic
+    % [xyzCoords,isValid] = AutoL_parsing_mex(packetData,reset_flag);
+    % time(end+1,1) = toc;
+    % 
+    % tic
+    % [xyzCoords,isValid] = AutoL_parsing_arm_mex(packetData,reset_flag);
+    % time(end+1,1) = toc;
+
+
+    % tic
+    % [xyzCoords,isValid] = AutoL_parsing_vector_mex(packetData,reset_flag);
+    % time(end+1,1) = toc;
 
 
     % isValid true: 1 frame, isValid false: not 1 frame  
@@ -38,8 +51,8 @@ while true
 
         % [x,y,z] coordinates to point cloud
         ptCloud = pointCloud(xyzCoords,"Intensity",xyzIntensity);
+        % ptCloud = pointCloud(xyzCoords);
 
-        % check_dataSize{end+1,1} = xyzCoords;
 
         % Display ptCloud on pcplayer
         view(player,ptCloud) 
@@ -49,6 +62,8 @@ while true
         elapsedTime = toc;
         frameRate = frameCount / elapsedTime;
         fprintf("Rendering rate: %f hz\n",frameRate);
+
+        flush(udpObj)
     end
     reset_flag = single(1);
 end

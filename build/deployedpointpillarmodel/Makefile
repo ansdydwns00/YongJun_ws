@@ -51,10 +51,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/yong/YongJun_ws/src/deployedpointpillarmodel
+CMAKE_SOURCE_DIR = /home/aiv/YongJun_ws/src/deployedpointpillarmodel
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/yong/YongJun_ws/build/deployedpointpillarmodel
+CMAKE_BINARY_DIR = /home/aiv/YongJun_ws/build/deployedpointpillarmodel
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -140,9 +140,9 @@ install/local/fast: preinstall/fast
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/yong/YongJun_ws/build/deployedpointpillarmodel/CMakeFiles /home/yong/YongJun_ws/build/deployedpointpillarmodel/CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/aiv/YongJun_ws/build/deployedpointpillarmodel/CMakeFiles /home/aiv/YongJun_ws/build/deployedpointpillarmodel/CMakeFiles/progress.marks
 	$(MAKE) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/yong/YongJun_ws/build/deployedpointpillarmodel/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/aiv/YongJun_ws/build/deployedpointpillarmodel/CMakeFiles 0
 .PHONY : all
 
 # The main clean target

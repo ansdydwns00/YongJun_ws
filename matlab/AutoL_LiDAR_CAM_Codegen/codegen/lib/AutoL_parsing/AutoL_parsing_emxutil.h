@@ -4,8 +4,8 @@
  * government, commercial, or other organizational use.
  * File: AutoL_parsing_emxutil.h
  *
- * MATLAB Coder version            : 23.2
- * C/C++ source code generated on  : 20-May-2024 11:17:54
+ * MATLAB Coder version            : 24.1
+ * C/C++ source code generated on  : 28-May-2024 16:51:43
  */
 
 #ifndef AUTOL_PARSING_EMXUTIL_H
@@ -25,9 +25,16 @@ extern "C" {
 extern void emxEnsureCapacity_real32_T(emxArray_real32_T *emxArray,
                                        int oldNumel);
 
+extern void emxEnsureCapacity_uint16_T(emxArray_uint16_T *emxArray,
+                                       int oldNumel);
+
 extern void emxFree_real32_T(emxArray_real32_T **pEmxArray);
 
+extern void emxFree_uint16_T(emxArray_uint16_T **pEmxArray);
+
 extern void emxInit_real32_T(emxArray_real32_T **pEmxArray, int numDimensions);
+
+extern void emxInit_uint16_T(emxArray_uint16_T **pEmxArray);
 
 #ifdef __cplusplus
 }

@@ -6,5 +6,5 @@ C_FLAGS = -fPIC   -Wall -std=gnu11
 
 C_DEFINES = -DRCUTILS_ENABLE_FAULT_INJECTION -DROS_PACKAGE_NAME=\"yolov8_msgs\" -Dyolov8_msgs__rosidl_typesupport_introspection_c_EXPORTS
 
-C_INCLUDES = -I/home/yong/YongJun_ws/build/yolov8_msgs/rosidl_generator_c -I/home/yong/YongJun_ws/build/yolov8_msgs/rosidl_typesupport_introspection_c -isystem /opt/ros/foxy/include 
+C_INCLUDES = -I/home/aiv/YongJun_ws/build/yolov8_msgs/rosidl_generator_c -I/home/aiv/YongJun_ws/build/yolov8_msgs/rosidl_typesupport_introspection_c -isystem /opt/ros/foxy/include 
 

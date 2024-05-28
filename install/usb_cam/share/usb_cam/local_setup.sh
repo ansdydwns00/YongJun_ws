@@ -1,1 +1,1 @@
-/home/yong/YongJun_ws/build/usb_cam/ament_cmake_environment_hooks/local_setup.sh
+/home/aiv/YongJun_ws/build/usb_cam/ament_cmake_environment_hooks/local_setup.sh

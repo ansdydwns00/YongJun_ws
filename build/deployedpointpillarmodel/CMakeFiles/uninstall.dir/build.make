@@ -46,10 +46,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/yong/YongJun_ws/src/deployedpointpillarmodel
+CMAKE_SOURCE_DIR = /home/aiv/YongJun_ws/src/deployedpointpillarmodel
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/yong/YongJun_ws/build/deployedpointpillarmodel
+CMAKE_BINARY_DIR = /home/aiv/YongJun_ws/build/deployedpointpillarmodel
 
 # Utility rule file for uninstall.
 
@@ -70,6 +70,6 @@ CMakeFiles/uninstall.dir/clean:
 .PHONY : CMakeFiles/uninstall.dir/clean
 
 CMakeFiles/uninstall.dir/depend:
-	cd /home/yong/YongJun_ws/build/deployedpointpillarmodel && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/yong/YongJun_ws/src/deployedpointpillarmodel /home/yong/YongJun_ws/src/deployedpointpillarmodel /home/yong/YongJun_ws/build/deployedpointpillarmodel /home/yong/YongJun_ws/build/deployedpointpillarmodel /home/yong/YongJun_ws/build/deployedpointpillarmodel/CMakeFiles/uninstall.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/aiv/YongJun_ws/build/deployedpointpillarmodel && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/aiv/YongJun_ws/src/deployedpointpillarmodel /home/aiv/YongJun_ws/src/deployedpointpillarmodel /home/aiv/YongJun_ws/build/deployedpointpillarmodel /home/aiv/YongJun_ws/build/deployedpointpillarmodel /home/aiv/YongJun_ws/build/deployedpointpillarmodel/CMakeFiles/uninstall.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/uninstall.dir/depend
 

@@ -4,7 +4,7 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "/home/yong/YongJun_ws/src/sensor/usb_cam/src/usb_cam.cpp" "/home/yong/YongJun_ws/build/usb_cam/CMakeFiles/usb_cam.dir/src/usb_cam.cpp.o"
+  "/home/aiv/YongJun_ws/src/sensor/usb_cam/src/usb_cam.cpp" "/home/aiv/YongJun_ws/build/usb_cam/CMakeFiles/usb_cam.dir/src/usb_cam.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
 
@@ -15,7 +15,7 @@ set(CMAKE_TARGET_DEFINITIONS_CXX
 
 # The include file search paths:
 set(CMAKE_CXX_TARGET_INCLUDE_PATH
-  "/home/yong/YongJun_ws/src/sensor/usb_cam/include"
+  "/home/aiv/YongJun_ws/src/sensor/usb_cam/include"
   "/usr/include/opencv4"
   )
 

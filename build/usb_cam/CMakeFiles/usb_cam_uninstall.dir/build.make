@@ -43,10 +43,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/yong/YongJun_ws/src/sensor/usb_cam
+CMAKE_SOURCE_DIR = /home/aiv/YongJun_ws/src/sensor/usb_cam
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/yong/YongJun_ws/build/usb_cam
+CMAKE_BINARY_DIR = /home/aiv/YongJun_ws/build/usb_cam
 
 # Utility rule file for usb_cam_uninstall.
 
@@ -54,7 +54,7 @@ CMAKE_BINARY_DIR = /home/yong/YongJun_ws/build/usb_cam
 include CMakeFiles/usb_cam_uninstall.dir/progress.make
 
 CMakeFiles/usb_cam_uninstall:
-	/usr/bin/cmake -P /home/yong/YongJun_ws/build/usb_cam/ament_cmake_uninstall_target/ament_cmake_uninstall_target.cmake
+	/usr/bin/cmake -P /home/aiv/YongJun_ws/build/usb_cam/ament_cmake_uninstall_target/ament_cmake_uninstall_target.cmake
 
 usb_cam_uninstall: CMakeFiles/usb_cam_uninstall
 usb_cam_uninstall: CMakeFiles/usb_cam_uninstall.dir/build.make
@@ -71,6 +71,6 @@ CMakeFiles/usb_cam_uninstall.dir/clean:
 .PHONY : CMakeFiles/usb_cam_uninstall.dir/clean
 
 CMakeFiles/usb_cam_uninstall.dir/depend:
-	cd /home/yong/YongJun_ws/build/usb_cam && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/yong/YongJun_ws/src/sensor/usb_cam /home/yong/YongJun_ws/src/sensor/usb_cam /home/yong/YongJun_ws/build/usb_cam /home/yong/YongJun_ws/build/usb_cam /home/yong/YongJun_ws/build/usb_cam/CMakeFiles/usb_cam_uninstall.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/aiv/YongJun_ws/build/usb_cam && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/aiv/YongJun_ws/src/sensor/usb_cam /home/aiv/YongJun_ws/src/sensor/usb_cam /home/aiv/YongJun_ws/build/usb_cam /home/aiv/YongJun_ws/build/usb_cam /home/aiv/YongJun_ws/build/usb_cam/CMakeFiles/usb_cam_uninstall.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/usb_cam_uninstall.dir/depend
 

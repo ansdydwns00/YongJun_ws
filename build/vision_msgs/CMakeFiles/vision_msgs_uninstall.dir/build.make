@@ -46,10 +46,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/yong/YongJun_ws/src/vision_msgs
+CMAKE_SOURCE_DIR = /home/aiv/YongJun_ws/src/vision_msgs
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/yong/YongJun_ws/build/vision_msgs
+CMAKE_BINARY_DIR = /home/aiv/YongJun_ws/build/vision_msgs
 
 # Utility rule file for vision_msgs_uninstall.
 
@@ -57,7 +57,7 @@ CMAKE_BINARY_DIR = /home/yong/YongJun_ws/build/vision_msgs
 include CMakeFiles/vision_msgs_uninstall.dir/progress.make
 
 CMakeFiles/vision_msgs_uninstall:
-	/usr/bin/cmake -P /home/yong/YongJun_ws/build/vision_msgs/ament_cmake_uninstall_target/ament_cmake_uninstall_target.cmake
+	/usr/bin/cmake -P /home/aiv/YongJun_ws/build/vision_msgs/ament_cmake_uninstall_target/ament_cmake_uninstall_target.cmake
 
 vision_msgs_uninstall: CMakeFiles/vision_msgs_uninstall
 vision_msgs_uninstall: CMakeFiles/vision_msgs_uninstall.dir/build.make
@@ -74,6 +74,6 @@ CMakeFiles/vision_msgs_uninstall.dir/clean:
 .PHONY : CMakeFiles/vision_msgs_uninstall.dir/clean
 
 CMakeFiles/vision_msgs_uninstall.dir/depend:
-	cd /home/yong/YongJun_ws/build/vision_msgs && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/yong/YongJun_ws/src/vision_msgs /home/yong/YongJun_ws/src/vision_msgs /home/yong/YongJun_ws/build/vision_msgs /home/yong/YongJun_ws/build/vision_msgs /home/yong/YongJun_ws/build/vision_msgs/CMakeFiles/vision_msgs_uninstall.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/aiv/YongJun_ws/build/vision_msgs && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/aiv/YongJun_ws/src/vision_msgs /home/aiv/YongJun_ws/src/vision_msgs /home/aiv/YongJun_ws/build/vision_msgs /home/aiv/YongJun_ws/build/vision_msgs /home/aiv/YongJun_ws/build/vision_msgs/CMakeFiles/vision_msgs_uninstall.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/vision_msgs_uninstall.dir/depend
 

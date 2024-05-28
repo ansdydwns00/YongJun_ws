@@ -1,8 +1,8 @@
-# Install script for directory: /home/yong/YongJun_ws/src/deployedpointpillarmodel
+# Install script for directory: /home/aiv/YongJun_ws/src/deployedpointpillarmodel
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
-  set(CMAKE_INSTALL_PREFIX "/home/yong/YongJun_ws/install/deployedpointpillarmodel")
+  set(CMAKE_INSTALL_PREFIX "/home/aiv/YongJun_ws/install/deployedpointpillarmodel")
 endif()
 string(REGEX REPLACE "/$" "" CMAKE_INSTALL_PREFIX "${CMAKE_INSTALL_PREFIX}")
 
@@ -38,11 +38,11 @@ if(NOT DEFINED CMAKE_CROSSCOMPILING)
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  include("/home/yong/YongJun_ws/build/deployedpointpillarmodel/ament_cmake_symlink_install/ament_cmake_symlink_install.cmake")
+  include("/home/aiv/YongJun_ws/build/deployedpointpillarmodel/ament_cmake_symlink_install/ament_cmake_symlink_install.cmake")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/deployedpointpillarmodel" TYPE EXECUTABLE FILES "/home/yong/YongJun_ws/build/deployedpointpillarmodel/deployedPointPillarModel")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/deployedpointpillarmodel" TYPE EXECUTABLE FILES "/home/aiv/YongJun_ws/build/deployedpointpillarmodel/deployedPointPillarModel")
   if(EXISTS "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/deployedpointpillarmodel/deployedPointPillarModel" AND
      NOT IS_SYMLINK "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/deployedpointpillarmodel/deployedPointPillarModel")
     if(CMAKE_INSTALL_DO_STRIP)
@@ -59,5 +59,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "/home/yong/YongJun_ws/build/deployedpointpillarmodel/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "/home/aiv/YongJun_ws/build/deployedpointpillarmodel/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")

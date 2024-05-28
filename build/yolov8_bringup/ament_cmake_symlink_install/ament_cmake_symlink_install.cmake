@@ -23,7 +23,7 @@ function(ament_cmake_symlink_install_directory cmake_current_source_dir)
 
   # make destination absolute path and ensure that it exists
   if(NOT IS_ABSOLUTE "${ARG_DESTINATION}")
-    set(ARG_DESTINATION "/home/yong/YongJun_ws/install/yolov8_bringup/${ARG_DESTINATION}")
+    set(ARG_DESTINATION "/home/aiv/YongJun_ws/install/yolov8_bringup/${ARG_DESTINATION}")
   endif()
   if(NOT EXISTS "${ARG_DESTINATION}")
     file(MAKE_DIRECTORY "${ARG_DESTINATION}")
@@ -123,7 +123,7 @@ function(ament_cmake_symlink_install_files cmake_current_source_dir)
 
   # make destination an absolute path and ensure that it exists
   if(NOT IS_ABSOLUTE "${ARG_DESTINATION}")
-    set(ARG_DESTINATION "/home/yong/YongJun_ws/install/yolov8_bringup/${ARG_DESTINATION}")
+    set(ARG_DESTINATION "/home/aiv/YongJun_ws/install/yolov8_bringup/${ARG_DESTINATION}")
   endif()
   if(NOT EXISTS "${ARG_DESTINATION}")
     file(MAKE_DIRECTORY "${ARG_DESTINATION}")
@@ -181,7 +181,7 @@ function(ament_cmake_symlink_install_programs cmake_current_source_dir)
 
   # make destination an absolute path and ensure that it exists
   if(NOT IS_ABSOLUTE "${ARG_DESTINATION}")
-    set(ARG_DESTINATION "/home/yong/YongJun_ws/install/yolov8_bringup/${ARG_DESTINATION}")
+    set(ARG_DESTINATION "/home/aiv/YongJun_ws/install/yolov8_bringup/${ARG_DESTINATION}")
   endif()
   if(NOT EXISTS "${ARG_DESTINATION}")
     file(MAKE_DIRECTORY "${ARG_DESTINATION}")
@@ -251,7 +251,7 @@ function(ament_cmake_symlink_install_targets)
 
     # make destination an absolute path and ensure that it exists
     if(NOT IS_ABSOLUTE "${destination}")
-      set(destination "/home/yong/YongJun_ws/install/yolov8_bringup/${destination}")
+      set(destination "/home/aiv/YongJun_ws/install/yolov8_bringup/${destination}")
     endif()
     if(NOT EXISTS "${destination}")
       file(MAKE_DIRECTORY "${destination}")
@@ -311,46 +311,46 @@ message(STATUS "Execute custom install script")
 # begin of custom install code
 
 # install(DIRECTORY "launch" "DESTINATION" "share/yolov8_bringup/")
-ament_cmake_symlink_install_directory("/home/yong/YongJun_ws/src/YOLO/Yolov8/yolov8_bringup" DIRECTORY "launch" "DESTINATION" "share/yolov8_bringup/")
+ament_cmake_symlink_install_directory("/home/aiv/YongJun_ws/src/YOLO/Yolov8/yolov8_bringup" DIRECTORY "launch" "DESTINATION" "share/yolov8_bringup/")
 
-# install(FILES "/home/yong/YongJun_ws/build/yolov8_bringup/ament_cmake_index/share/ament_index/resource_index/package_run_dependencies/yolov8_bringup" "DESTINATION" "share/ament_index/resource_index/package_run_dependencies")
-ament_cmake_symlink_install_files("/home/yong/YongJun_ws/src/YOLO/Yolov8/yolov8_bringup" FILES "/home/yong/YongJun_ws/build/yolov8_bringup/ament_cmake_index/share/ament_index/resource_index/package_run_dependencies/yolov8_bringup" "DESTINATION" "share/ament_index/resource_index/package_run_dependencies")
+# install(FILES "/home/aiv/YongJun_ws/build/yolov8_bringup/ament_cmake_index/share/ament_index/resource_index/package_run_dependencies/yolov8_bringup" "DESTINATION" "share/ament_index/resource_index/package_run_dependencies")
+ament_cmake_symlink_install_files("/home/aiv/YongJun_ws/src/YOLO/Yolov8/yolov8_bringup" FILES "/home/aiv/YongJun_ws/build/yolov8_bringup/ament_cmake_index/share/ament_index/resource_index/package_run_dependencies/yolov8_bringup" "DESTINATION" "share/ament_index/resource_index/package_run_dependencies")
 
-# install(FILES "/home/yong/YongJun_ws/build/yolov8_bringup/ament_cmake_index/share/ament_index/resource_index/parent_prefix_path/yolov8_bringup" "DESTINATION" "share/ament_index/resource_index/parent_prefix_path")
-ament_cmake_symlink_install_files("/home/yong/YongJun_ws/src/YOLO/Yolov8/yolov8_bringup" FILES "/home/yong/YongJun_ws/build/yolov8_bringup/ament_cmake_index/share/ament_index/resource_index/parent_prefix_path/yolov8_bringup" "DESTINATION" "share/ament_index/resource_index/parent_prefix_path")
+# install(FILES "/home/aiv/YongJun_ws/build/yolov8_bringup/ament_cmake_index/share/ament_index/resource_index/parent_prefix_path/yolov8_bringup" "DESTINATION" "share/ament_index/resource_index/parent_prefix_path")
+ament_cmake_symlink_install_files("/home/aiv/YongJun_ws/src/YOLO/Yolov8/yolov8_bringup" FILES "/home/aiv/YongJun_ws/build/yolov8_bringup/ament_cmake_index/share/ament_index/resource_index/parent_prefix_path/yolov8_bringup" "DESTINATION" "share/ament_index/resource_index/parent_prefix_path")
 
 # install(FILES "/opt/ros/foxy/share/ament_cmake_core/cmake/environment_hooks/environment/ament_prefix_path.sh" "DESTINATION" "share/yolov8_bringup/environment")
-ament_cmake_symlink_install_files("/home/yong/YongJun_ws/src/YOLO/Yolov8/yolov8_bringup" FILES "/opt/ros/foxy/share/ament_cmake_core/cmake/environment_hooks/environment/ament_prefix_path.sh" "DESTINATION" "share/yolov8_bringup/environment")
+ament_cmake_symlink_install_files("/home/aiv/YongJun_ws/src/YOLO/Yolov8/yolov8_bringup" FILES "/opt/ros/foxy/share/ament_cmake_core/cmake/environment_hooks/environment/ament_prefix_path.sh" "DESTINATION" "share/yolov8_bringup/environment")
 
-# install(FILES "/home/yong/YongJun_ws/build/yolov8_bringup/ament_cmake_environment_hooks/ament_prefix_path.dsv" "DESTINATION" "share/yolov8_bringup/environment")
-ament_cmake_symlink_install_files("/home/yong/YongJun_ws/src/YOLO/Yolov8/yolov8_bringup" FILES "/home/yong/YongJun_ws/build/yolov8_bringup/ament_cmake_environment_hooks/ament_prefix_path.dsv" "DESTINATION" "share/yolov8_bringup/environment")
+# install(FILES "/home/aiv/YongJun_ws/build/yolov8_bringup/ament_cmake_environment_hooks/ament_prefix_path.dsv" "DESTINATION" "share/yolov8_bringup/environment")
+ament_cmake_symlink_install_files("/home/aiv/YongJun_ws/src/YOLO/Yolov8/yolov8_bringup" FILES "/home/aiv/YongJun_ws/build/yolov8_bringup/ament_cmake_environment_hooks/ament_prefix_path.dsv" "DESTINATION" "share/yolov8_bringup/environment")
 
 # install(FILES "/opt/ros/foxy/share/ament_cmake_core/cmake/environment_hooks/environment/path.sh" "DESTINATION" "share/yolov8_bringup/environment")
-ament_cmake_symlink_install_files("/home/yong/YongJun_ws/src/YOLO/Yolov8/yolov8_bringup" FILES "/opt/ros/foxy/share/ament_cmake_core/cmake/environment_hooks/environment/path.sh" "DESTINATION" "share/yolov8_bringup/environment")
+ament_cmake_symlink_install_files("/home/aiv/YongJun_ws/src/YOLO/Yolov8/yolov8_bringup" FILES "/opt/ros/foxy/share/ament_cmake_core/cmake/environment_hooks/environment/path.sh" "DESTINATION" "share/yolov8_bringup/environment")
 
-# install(FILES "/home/yong/YongJun_ws/build/yolov8_bringup/ament_cmake_environment_hooks/path.dsv" "DESTINATION" "share/yolov8_bringup/environment")
-ament_cmake_symlink_install_files("/home/yong/YongJun_ws/src/YOLO/Yolov8/yolov8_bringup" FILES "/home/yong/YongJun_ws/build/yolov8_bringup/ament_cmake_environment_hooks/path.dsv" "DESTINATION" "share/yolov8_bringup/environment")
+# install(FILES "/home/aiv/YongJun_ws/build/yolov8_bringup/ament_cmake_environment_hooks/path.dsv" "DESTINATION" "share/yolov8_bringup/environment")
+ament_cmake_symlink_install_files("/home/aiv/YongJun_ws/src/YOLO/Yolov8/yolov8_bringup" FILES "/home/aiv/YongJun_ws/build/yolov8_bringup/ament_cmake_environment_hooks/path.dsv" "DESTINATION" "share/yolov8_bringup/environment")
 
-# install(FILES "/home/yong/YongJun_ws/build/yolov8_bringup/ament_cmake_environment_hooks/local_setup.bash" "DESTINATION" "share/yolov8_bringup")
-ament_cmake_symlink_install_files("/home/yong/YongJun_ws/src/YOLO/Yolov8/yolov8_bringup" FILES "/home/yong/YongJun_ws/build/yolov8_bringup/ament_cmake_environment_hooks/local_setup.bash" "DESTINATION" "share/yolov8_bringup")
+# install(FILES "/home/aiv/YongJun_ws/build/yolov8_bringup/ament_cmake_environment_hooks/local_setup.bash" "DESTINATION" "share/yolov8_bringup")
+ament_cmake_symlink_install_files("/home/aiv/YongJun_ws/src/YOLO/Yolov8/yolov8_bringup" FILES "/home/aiv/YongJun_ws/build/yolov8_bringup/ament_cmake_environment_hooks/local_setup.bash" "DESTINATION" "share/yolov8_bringup")
 
-# install(FILES "/home/yong/YongJun_ws/build/yolov8_bringup/ament_cmake_environment_hooks/local_setup.sh" "DESTINATION" "share/yolov8_bringup")
-ament_cmake_symlink_install_files("/home/yong/YongJun_ws/src/YOLO/Yolov8/yolov8_bringup" FILES "/home/yong/YongJun_ws/build/yolov8_bringup/ament_cmake_environment_hooks/local_setup.sh" "DESTINATION" "share/yolov8_bringup")
+# install(FILES "/home/aiv/YongJun_ws/build/yolov8_bringup/ament_cmake_environment_hooks/local_setup.sh" "DESTINATION" "share/yolov8_bringup")
+ament_cmake_symlink_install_files("/home/aiv/YongJun_ws/src/YOLO/Yolov8/yolov8_bringup" FILES "/home/aiv/YongJun_ws/build/yolov8_bringup/ament_cmake_environment_hooks/local_setup.sh" "DESTINATION" "share/yolov8_bringup")
 
-# install(FILES "/home/yong/YongJun_ws/build/yolov8_bringup/ament_cmake_environment_hooks/local_setup.zsh" "DESTINATION" "share/yolov8_bringup")
-ament_cmake_symlink_install_files("/home/yong/YongJun_ws/src/YOLO/Yolov8/yolov8_bringup" FILES "/home/yong/YongJun_ws/build/yolov8_bringup/ament_cmake_environment_hooks/local_setup.zsh" "DESTINATION" "share/yolov8_bringup")
+# install(FILES "/home/aiv/YongJun_ws/build/yolov8_bringup/ament_cmake_environment_hooks/local_setup.zsh" "DESTINATION" "share/yolov8_bringup")
+ament_cmake_symlink_install_files("/home/aiv/YongJun_ws/src/YOLO/Yolov8/yolov8_bringup" FILES "/home/aiv/YongJun_ws/build/yolov8_bringup/ament_cmake_environment_hooks/local_setup.zsh" "DESTINATION" "share/yolov8_bringup")
 
-# install(FILES "/home/yong/YongJun_ws/build/yolov8_bringup/ament_cmake_environment_hooks/local_setup.dsv" "DESTINATION" "share/yolov8_bringup")
-ament_cmake_symlink_install_files("/home/yong/YongJun_ws/src/YOLO/Yolov8/yolov8_bringup" FILES "/home/yong/YongJun_ws/build/yolov8_bringup/ament_cmake_environment_hooks/local_setup.dsv" "DESTINATION" "share/yolov8_bringup")
+# install(FILES "/home/aiv/YongJun_ws/build/yolov8_bringup/ament_cmake_environment_hooks/local_setup.dsv" "DESTINATION" "share/yolov8_bringup")
+ament_cmake_symlink_install_files("/home/aiv/YongJun_ws/src/YOLO/Yolov8/yolov8_bringup" FILES "/home/aiv/YongJun_ws/build/yolov8_bringup/ament_cmake_environment_hooks/local_setup.dsv" "DESTINATION" "share/yolov8_bringup")
 
-# install(FILES "/home/yong/YongJun_ws/build/yolov8_bringup/ament_cmake_environment_hooks/package.dsv" "DESTINATION" "share/yolov8_bringup")
-ament_cmake_symlink_install_files("/home/yong/YongJun_ws/src/YOLO/Yolov8/yolov8_bringup" FILES "/home/yong/YongJun_ws/build/yolov8_bringup/ament_cmake_environment_hooks/package.dsv" "DESTINATION" "share/yolov8_bringup")
+# install(FILES "/home/aiv/YongJun_ws/build/yolov8_bringup/ament_cmake_environment_hooks/package.dsv" "DESTINATION" "share/yolov8_bringup")
+ament_cmake_symlink_install_files("/home/aiv/YongJun_ws/src/YOLO/Yolov8/yolov8_bringup" FILES "/home/aiv/YongJun_ws/build/yolov8_bringup/ament_cmake_environment_hooks/package.dsv" "DESTINATION" "share/yolov8_bringup")
 
-# install(FILES "/home/yong/YongJun_ws/build/yolov8_bringup/ament_cmake_index/share/ament_index/resource_index/packages/yolov8_bringup" "DESTINATION" "share/ament_index/resource_index/packages")
-ament_cmake_symlink_install_files("/home/yong/YongJun_ws/src/YOLO/Yolov8/yolov8_bringup" FILES "/home/yong/YongJun_ws/build/yolov8_bringup/ament_cmake_index/share/ament_index/resource_index/packages/yolov8_bringup" "DESTINATION" "share/ament_index/resource_index/packages")
+# install(FILES "/home/aiv/YongJun_ws/build/yolov8_bringup/ament_cmake_index/share/ament_index/resource_index/packages/yolov8_bringup" "DESTINATION" "share/ament_index/resource_index/packages")
+ament_cmake_symlink_install_files("/home/aiv/YongJun_ws/src/YOLO/Yolov8/yolov8_bringup" FILES "/home/aiv/YongJun_ws/build/yolov8_bringup/ament_cmake_index/share/ament_index/resource_index/packages/yolov8_bringup" "DESTINATION" "share/ament_index/resource_index/packages")
 
-# install(FILES "/home/yong/YongJun_ws/build/yolov8_bringup/ament_cmake_core/yolov8_bringupConfig.cmake" "/home/yong/YongJun_ws/build/yolov8_bringup/ament_cmake_core/yolov8_bringupConfig-version.cmake" "DESTINATION" "share/yolov8_bringup/cmake")
-ament_cmake_symlink_install_files("/home/yong/YongJun_ws/src/YOLO/Yolov8/yolov8_bringup" FILES "/home/yong/YongJun_ws/build/yolov8_bringup/ament_cmake_core/yolov8_bringupConfig.cmake" "/home/yong/YongJun_ws/build/yolov8_bringup/ament_cmake_core/yolov8_bringupConfig-version.cmake" "DESTINATION" "share/yolov8_bringup/cmake")
+# install(FILES "/home/aiv/YongJun_ws/build/yolov8_bringup/ament_cmake_core/yolov8_bringupConfig.cmake" "/home/aiv/YongJun_ws/build/yolov8_bringup/ament_cmake_core/yolov8_bringupConfig-version.cmake" "DESTINATION" "share/yolov8_bringup/cmake")
+ament_cmake_symlink_install_files("/home/aiv/YongJun_ws/src/YOLO/Yolov8/yolov8_bringup" FILES "/home/aiv/YongJun_ws/build/yolov8_bringup/ament_cmake_core/yolov8_bringupConfig.cmake" "/home/aiv/YongJun_ws/build/yolov8_bringup/ament_cmake_core/yolov8_bringupConfig-version.cmake" "DESTINATION" "share/yolov8_bringup/cmake")
 
-# install(FILES "/home/yong/YongJun_ws/src/YOLO/Yolov8/yolov8_bringup/package.xml" "DESTINATION" "share/yolov8_bringup")
-ament_cmake_symlink_install_files("/home/yong/YongJun_ws/src/YOLO/Yolov8/yolov8_bringup" FILES "/home/yong/YongJun_ws/src/YOLO/Yolov8/yolov8_bringup/package.xml" "DESTINATION" "share/yolov8_bringup")
+# install(FILES "/home/aiv/YongJun_ws/src/YOLO/Yolov8/yolov8_bringup/package.xml" "DESTINATION" "share/yolov8_bringup")
+ament_cmake_symlink_install_files("/home/aiv/YongJun_ws/src/YOLO/Yolov8/yolov8_bringup" FILES "/home/aiv/YongJun_ws/src/YOLO/Yolov8/yolov8_bringup/package.xml" "DESTINATION" "share/yolov8_bringup")

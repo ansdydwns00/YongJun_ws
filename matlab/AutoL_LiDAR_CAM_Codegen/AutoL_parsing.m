@@ -14,7 +14,7 @@ function [xyzCoords, isValid] = AutoL_parsing(packetData,reset_flag) %#codegen
     [payload,top_bottom_flag,dataType] = packet_extract(packetData);
     
     % Extract [x,y,z] coordinates for one packet 
-    xyzPoints = ptCloud_extract_vector(payload,top_bottom_flag);
+    xyzPoints = ptCloud_extract(payload,top_bottom_flag);
     
     
     % Check End frame packet

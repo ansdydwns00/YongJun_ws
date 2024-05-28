@@ -15,8 +15,14 @@ function Distances = LR_computeDistance(ptCloud,bboxes)
 
         % Find the distance of the 2-D rectangle
         dist = min(pts.Location(:,1));
+        
+        if ~isempty(dist)
+            Distances(i,1) = dist;
+        else
+            continue;
+        end
+        
 
-        Distances(i,1) = dist;
     end
 
 end

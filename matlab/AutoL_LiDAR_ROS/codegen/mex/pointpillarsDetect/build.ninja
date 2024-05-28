@@ -1,0 +1,75 @@
+# CompilerName=gcc
+# Mode=optim
+ninja_required_version = 1.3
+
+# Basic folders
+root = .
+builddir = $root/build/glnxa64
+matlabdir = /usr/local/MATLAB/R2024a
+startdir = /home/aiv/YongJun_ws/matlab/AutoL_LiDAR_ROS
+
+# Toolchain information
+cc = gcc
+cxx = /usr/bin/g++
+linker = gcc
+linkerxx = /usr/bin/g++
+
+cflags =  -fexceptions -fPIC -fno-omit-frame-pointer -pthread -fwrapv -D_GNU_SOURCE -DMATLAB_MEX_FILE  -O2 -DNDEBUG -fvisibility=hidden -std=c99 -I "$root" -I "$startdir" -I "$matlabdir/sys/cuda/glnxa64/cudnn/include" -I "$matlabdir/derived/glnxa64/src/include/layer" -I "$matlabdir/derived/glnxa64/src/include/cudnn" -I "$matlabdir/toolbox/lidar/builtins/src/lidar/include" -I "$matlabdir/extern/include" -I "$matlabdir/toolbox/gpucoder/src/gpucoderrt/export/include/gpucoderrt" -I "$matlabdir/sys/cuda/glnxa64/cuda/include" -I "$root/interface" -I "." -DMW_CUDA_ARCH=890 -DMW_GPU_MEMORY_MANAGER -DMODEL=pointpillarsDetect_mex -DMW_NEEDS_VERSION_H -c 
+
+cxxflags =  -fexceptions -fPIC -fno-omit-frame-pointer -pthread -fwrapv -D_GNU_SOURCE -DMATLAB_MEX_FILE  -O2 -DNDEBUG -fvisibility=hidden -fno-gnu-unique -std=c++11 -I "$root" -I "$startdir" -I "$matlabdir/sys/cuda/glnxa64/cudnn/include" -I "$matlabdir/derived/glnxa64/src/include/layer" -I "$matlabdir/derived/glnxa64/src/include/cudnn" -I "$matlabdir/toolbox/lidar/builtins/src/lidar/include" -I "$matlabdir/extern/include" -I "$matlabdir/toolbox/gpucoder/src/gpucoderrt/export/include/gpucoderrt" -I "$matlabdir/sys/cuda/glnxa64/cuda/include" -I "$root/interface" -I "." -DMW_CUDA_ARCH=890 -DMW_GPU_MEMORY_MANAGER -DMODEL=pointpillarsDetect_mex -DMW_NEEDS_VERSION_H -c 
+
+ldflags =  -Xlinker --no-undefined  -shared -lstdc++ -Xlinker --as-needed -Xlinker -rpath-link,$matlabdir/bin/glnxa64 -L"$matlabdir/bin/glnxa64" -Xlinker -rpath-link,$matlabdir/extern/bin/glnxa64 -L"$matlabdir/extern/bin/glnxa64" -lMatlabDataArray -lmx -lmex -lm -lmat  -Xlinker -Bsymbolic -o pointpillarsDetect_mex.mexa64 -Xlinker --exclude-libs,ALL -L"$matlabdir/bin/glnxa64" -L"$matlabdir/sys/cuda/glnxa64/cuda/lib64" -l:libcudnn.so.8 -l:libcublas.so.12 -lmwshared_layers -lmwcudnn_layers -lmwgpucoderrt -lemlrt -lcovrt -lut -lmwmathutil -Xlinker -rpath,$matlabdir/bin/glnxa64 -arch sm_89 -I"$matlabdir/sys/cuda/glnxa64/cuda/include" -l:libcudart.so.12 -l:libcublas.so.12 -l:libcusolver.so.11 -l:libcufft.so.11 -l:libcurand.so.10 -l:libcusparse.so.12 -Xnvlink -w  -Wno-deprecated-gpu-targets
+
+linkobjs =  "$matlabdir/bin/glnxa64/libmwkdtree.so"
+
+# Build Rules
+rule cc
+    command = $cc $cflags $in -o $out
+
+rule cxx
+    command = $cxx $cxxflags $in -o $out
+
+rule link
+    command = $linker $in $linkobjs $ldflags
+
+rule linkxx
+    command = $linkerxx $in $linkobjs $ldflags
+
+cudac = nvcc
+linkercuda = nvcc
+
+cudaflags =  -rdc=true -Wno-deprecated-gpu-targets -Xcompiler -fPIC,-fexceptions,-fno-omit-frame-pointer,-pthread -Xcudafe "--display_error_number --diag_suppress=2381 --diag_suppress=unsigned_compare_with_zero --diag_suppress=useless_type_qualifier_on_return_type" -D_GNU_SOURCE -DMATLAB_MEX_FILE -noprof -ldir "$matlabdir/bin/glnxa64" -Xcompiler -fvisibility=hidden -std=c++11 -I "$root" -I "$startdir" -I "$matlabdir/sys/cuda/glnxa64/cudnn/include" -I "$matlabdir/derived/glnxa64/src/include/layer" -I "$matlabdir/derived/glnxa64/src/include/cudnn" -I "$matlabdir/toolbox/lidar/builtins/src/lidar/include" -I "$matlabdir/extern/include" -I "$matlabdir/toolbox/gpucoder/src/gpucoderrt/export/include/gpucoderrt" -I "$matlabdir/sys/cuda/glnxa64/cuda/include" -I "$root/interface" -I "." -DMW_CUDA_ARCH=890 -DMW_GPU_MEMORY_MANAGER -DMODEL=pointpillarsDetect_mex -DMW_NEEDS_VERSION_H -c -arch sm_89 -I "$matlabdir/simulink/include" -I "$matlabdir/toolbox/shared/simtargets"
+rule cudac
+    command = $cudac $cudaflags $in -o $out
+
+rule linkcuda
+    command = $linkercuda $in $linkobjs $ldflags
+
+# Build
+build $builddir/MWLaunchParametersUtilities.o : cudac $root/MWLaunchParametersUtilities.cpp
+build $builddir/createPillarsImpl.o : cxx $matlabdir/toolbox/lidar/builtins/src/lidar/createPillarsImpl.cpp
+build $builddir/pointpillarsDetect_data.o : cudac $root/pointpillarsDetect_data.cu
+build $builddir/rt_nonfinite.o : cudac $root/rt_nonfinite.cu
+build $builddir/pointpillarsDetect_initialize.o : cudac $root/pointpillarsDetect_initialize.cu
+build $builddir/pointpillarsDetect_terminate.o : cudac $root/pointpillarsDetect_terminate.cu
+build $builddir/pointpillarsDetect.o : cudac $root/pointpillarsDetect.cu
+build $builddir/dlnetwork.o : cudac $root/dlnetwork.cu
+build $builddir/PointCloudImpl.o : cudac $root/PointCloudImpl.cu
+build $builddir/predict.o : cudac $root/predict.cu
+build $builddir/selectStrongestBboxMulticlass.o : cudac $root/selectStrongestBboxMulticlass.cu
+build $builddir/overlapPolygonRotatedRects.o : cudac $root/overlapPolygonRotatedRects.cu
+build $builddir/pointPillarsObjectDetector.o : cudac $root/pointPillarsObjectDetector.cu
+build $builddir/handle.o : cudac $root/handle.cu
+build $builddir/_coder_pointpillarsDetect_api.o : cudac $root/interface/_coder_pointpillarsDetect_api.cu
+build $builddir/_coder_pointpillarsDetect_mex.o : cudac $root/interface/_coder_pointpillarsDetect_mex.cu
+build $builddir/sort.o : cudac $root/sort.cu
+build $builddir/insertionsort.o : cudac $root/insertionsort.cu
+build $builddir/introsort.o : cudac $root/introsort.cu
+build $builddir/heapsort.o : cudac $root/heapsort.cu
+build $builddir/pointpillarsDetect_emxutil.o : cudac $root/pointpillarsDetect_emxutil.cu
+build $builddir/pointpillarsDetect_mexutil.o : cudac $root/pointpillarsDetect_mexutil.cu
+build $builddir/_coder_pointpillarsDetect_info.o : cxx $root/interface/_coder_pointpillarsDetect_info.cpp
+build $builddir/cpp_mexapi_version.o : cudac $root/cpp_mexapi_version.cpp
+
+# Link
+build $root/pointpillarsDetect_mex.mexa64 : linkcuda $builddir/MWLaunchParametersUtilities.o $builddir/createPillarsImpl.o $builddir/pointpillarsDetect_data.o $builddir/rt_nonfinite.o $builddir/pointpillarsDetect_initialize.o $builddir/pointpillarsDetect_terminate.o $builddir/pointpillarsDetect.o $builddir/dlnetwork.o $builddir/PointCloudImpl.o $builddir/predict.o $builddir/selectStrongestBboxMulticlass.o $builddir/overlapPolygonRotatedRects.o $builddir/pointPillarsObjectDetector.o $builddir/handle.o $builddir/_coder_pointpillarsDetect_api.o $builddir/_coder_pointpillarsDetect_mex.o $builddir/sort.o $builddir/insertionsort.o $builddir/introsort.o $builddir/heapsort.o $builddir/pointpillarsDetect_emxutil.o $builddir/pointpillarsDetect_mexutil.o $builddir/_coder_pointpillarsDetect_info.o $builddir/cpp_mexapi_version.o 

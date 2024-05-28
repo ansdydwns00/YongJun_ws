@@ -4,8 +4,8 @@
  * government, commercial, or other organizational use.
  * File: AutoL_parsing_types.h
  *
- * MATLAB Coder version            : 23.2
- * C/C++ source code generated on  : 20-May-2024 11:17:54
+ * MATLAB Coder version            : 24.1
+ * C/C++ source code generated on  : 28-May-2024 16:51:43
  */
 
 #ifndef AUTOL_PARSING_TYPES_H
@@ -29,6 +29,21 @@ struct emxArray_real32_T {
 #define typedef_emxArray_real32_T
 typedef struct emxArray_real32_T emxArray_real32_T;
 #endif /* typedef_emxArray_real32_T */
+
+#ifndef struct_emxArray_uint16_T
+#define struct_emxArray_uint16_T
+struct emxArray_uint16_T {
+  unsigned short *data;
+  int *size;
+  int allocatedSize;
+  int numDimensions;
+  boolean_T canFreeData;
+};
+#endif /* struct_emxArray_uint16_T */
+#ifndef typedef_emxArray_uint16_T
+#define typedef_emxArray_uint16_T
+typedef struct emxArray_uint16_T emxArray_uint16_T;
+#endif /* typedef_emxArray_uint16_T */
 
 #endif
 /*

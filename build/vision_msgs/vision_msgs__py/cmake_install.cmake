@@ -1,8 +1,8 @@
-# Install script for directory: /home/yong/YongJun_ws/build/vision_msgs/vision_msgs__py
+# Install script for directory: /home/aiv/YongJun_ws/build/vision_msgs/vision_msgs__py
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
-  set(CMAKE_INSTALL_PREFIX "/home/yong/YongJun_ws/install/vision_msgs")
+  set(CMAKE_INSTALL_PREFIX "/home/aiv/YongJun_ws/install/vision_msgs")
 endif()
 string(REGEX REPLACE "/$" "" CMAKE_INSTALL_PREFIX "${CMAKE_INSTALL_PREFIX}")
 

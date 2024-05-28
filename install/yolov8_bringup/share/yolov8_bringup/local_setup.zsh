@@ -1,1 +1,1 @@
-/home/yong/YongJun_ws/build/yolov8_bringup/ament_cmake_environment_hooks/local_setup.zsh
+/home/aiv/YongJun_ws/build/yolov8_bringup/ament_cmake_environment_hooks/local_setup.zsh

@@ -4,12 +4,13 @@
  * government, commercial, or other organizational use.
  * File: AutoL_parsing_data.c
  *
- * MATLAB Coder version            : 23.2
- * C/C++ source code generated on  : 20-May-2024 11:17:54
+ * MATLAB Coder version            : 24.1
+ * C/C++ source code generated on  : 28-May-2024 16:51:43
  */
 
 /* Include Files */
 #include "AutoL_parsing_data.h"
+#include "rt_nonfinite.h"
 
 /* Variable Definitions */
 boolean_T isInitialized_AutoL_parsing = false;
