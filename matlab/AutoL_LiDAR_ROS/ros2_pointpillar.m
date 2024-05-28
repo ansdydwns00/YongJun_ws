@@ -1,3 +1,4 @@
+clear; clc
 import function.*
 load('udp_packet.mat')
 
@@ -7,21 +8,17 @@ detector = pretrainedDetector.detector;
 
 %% Lidar Connection
 
-% clear workspace
-clear; clc
-
 % Create udp communication object
 udpObj = udpport("byte","LocalPort",5001,"ByteOrder","little-endian");
 
 %% Node Initialization
 lidar_node = ros2node('/lidar_node');
 lidarPub = ros2publisher(lidar_node,"/lidar","sensor_msgs/PointCloud2");
-lidarSub = ros2subscriber(lidar_node,'/detect')
 lidarMsg = ros2message(lidarPub);
 lidarMsg.is_bigendian = false;
 
 dt_node = ros2node('/dt_node');
-dtSub = ros2subscriber(dt_node,'/lidar',@get_ptdata); 
+dtSub = ros2subscriber(dt_node,'/lidar',@get_ptdata);        
 
 
 
