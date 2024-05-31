@@ -5,7 +5,7 @@
  * File: _coder_AutoL_parsing_info.c
  *
  * MATLAB Coder version            : 23.2
- * C/C++ source code generated on  : 08-May-2024 17:20:00
+ * C/C++ source code generated on  : 20-May-2024 11:17:54
  */
 
 /* Include Files */
@@ -25,23 +25,23 @@ static const mxArray *c_emlrtMexFcnResolvedFunctionsI(void)
 {
   const mxArray *nameCaptureInfo;
   const char_T *data[5] = {
-      "789ce554d14ec230142d068c890a3cf9e047384d54343ee1060405a302216a0ccead8ce1"
-      "da2e5b27e04ff8e637f8e647e8934f7e928c8dc19a341020336a1f76"
-      "777ada9ed37bb70b62c5720c009004def85af5e2ba8fd37e5c02e1c1f231665d2cbc1c24"
-      "403cb46fc83ffb512198c22ef50096110c76aa04e958c6b4da3321b0",
-      "a04d8c47a80e98a66ec0aa8e60651c9cb908e5c7a800b894fb2eb6a0f2507110b05af6c8"
-      "a1310e827cbc72ee1b9f321f22271f6986bfc9dd0a2d82a0d0235813"
-      "aefa8f1307373ab680646ac8f742d6a1a4d428e952f6b2a110156a10fb73a66cd93ad6b6"
-      "50c8b739a7ef248359df818eac3c40dae897ce92153a9abf9b537f99",
-      "abef31ee950db8b83a495cbd303f4b9dc239f20a35294fa9297db371b47e6510df778f9a"
-      "51eaa9f5b78328f586e3a7f4ba9cf3a6fdee36387a69867f2ac892a8"
-      "9550b193c968fa4ea14c9a35313ff2713e4167920fc0c1519dff5ffb6c8ac1acef216f52"
-      "d1208e1a34da45f5d90457df631c1d53f7875e549d725cbd303f539f",
-      "0de76850a9a8fac2da5eb47df6e3e573334abde1f8eb7df634bfddb9968aed0aacd5db7a"
-      "eff062bf6de78e7f7f9ffd066a74c4c7",
+      "789cdd54cb4ec240141d0c181323b2f2135cdac410c3c605cf2822f27281c4d4b19d42d3"
+      "ce4c6da708fc846bf72edc9818bfc8ad4bff40a094d2c60904480dde"
+      "456f6fcfcc9c33f7360744ce2f2300803870e273d7c97b933a31c95bc01f413c125817f1"
+      "2f073110f5ed73f1a749962861a8c79c82408ca63b658a5502096bf4",
+      "0d044c6451bd8be431a2a83a6aa818d5678bf2a8c28519685a8ca0d17bb68324ad6e6360"
+      "762c4fa13e5b4cfbf1cab96f74c17e6439fd4804f056fe56e8508c84"
+      "3e256da1397c146d223e5a02864c87f742da66b42496d45cba264a54466d4426df0c685a"
+      "2a691f619f6e6345ddf1401dd43de581928698381c9d0925e67dbf5b",
+      "917f9bcbef20a32beb687d73ca71f9fcf83273f2f7c819d4bc3eed2fa83b98bdf53be3fc"
+      "f275aa84c9f77d934d86c9e7c65ff1f538e72dfadf1d70f812013c53"
+      "af96a0ac1d5fe40757d02aaa3857572a679e8eca1c9e793a00a70eebfc4df5d9b0e66fb0"
+      "ac4e6dd93511b18b2446cdf5f96d8cabc3416c95b014f0f8de57e42b",
+      "71f9fcf8527efb6bafc2f5ddea473154df7d6ebd1d86c9e7c67ff75d45b33252399992af"
+      "1f4e7a831a6966286e1736df777f005b32ccac",
       ""};
   nameCaptureInfo = NULL;
-  emlrtNameCaptureMxArrayR2016a(&data[0], 3048U, &nameCaptureInfo);
+  emlrtNameCaptureMxArrayR2016a(&data[0], 3064U, &nameCaptureInfo);
   return nameCaptureInfo;
 }
 
@@ -80,7 +80,7 @@ mxArray *emlrtMexFcnProperties(void)
       emlrtMxCreateString(
           "/home/yong/YongJun_ws/matlab/AutoL_LiDAR_codegen/AutoL_parsing.m"));
   emlrtSetField(xEntryPoints, 0, "TimeStamp",
-                emlrtMxCreateDoubleScalar(739380.72195601847));
+                emlrtMxCreateDoubleScalar(739388.63540509262));
   emlrtSetField(xEntryPoints, 0, "Constructor",
                 emlrtMxCreateLogicalScalar(false));
   emlrtSetField(xEntryPoints, 0, "Visible", emlrtMxCreateLogicalScalar(true));
@@ -91,7 +91,7 @@ mxArray *emlrtMexFcnProperties(void)
   emlrtSetField(xResult, 0, "ResolvedFunctions",
                 (mxArray *)c_emlrtMexFcnResolvedFunctionsI());
   emlrtSetField(xResult, 0, "Checksum",
-                emlrtMxCreateString("EEDS5RNGc6m3Isbwp0hu2E"));
+                emlrtMxCreateString("MSel4MjOiol5VezHopdJdF"));
   emlrtSetField(xResult, 0, "EntryPoints", xEntryPoints);
   return xResult;
 }

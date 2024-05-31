@@ -5,7 +5,7 @@
  * File: _coder_AutoL_parsing_api.c
  *
  * MATLAB Coder version            : 23.2
- * C/C++ source code generated on  : 08-May-2024 17:20:00
+ * C/C++ source code generated on  : 20-May-2024 11:17:54
  */
 
 /* Include Files */
@@ -129,12 +129,12 @@ static real32_T d_emlrt_marshallIn(const emlrtStack *sp, const mxArray *u,
 static real32_T (*e_emlrt_marshallIn(const emlrtStack *sp, const mxArray *src,
                                      const emlrtMsgIdentifier *msgId))[1330]
 {
-  static const int32_T dims[2] = {1, 1330};
-  int32_T iv[2];
+  static const int32_T dims = 1330;
+  int32_T i;
   real32_T(*ret)[1330];
-  boolean_T bv[2] = {false, false};
-  emlrtCheckVsBuiltInR2012b((emlrtConstCTX)sp, msgId, src, "single", false, 2U,
-                            (const void *)&dims[0], &bv[0], &iv[0]);
+  boolean_T b = false;
+  emlrtCheckVsBuiltInR2012b((emlrtConstCTX)sp, msgId, src, "single", false, 1U,
+                            (const void *)&dims, &b, &i);
   ret = (real32_T(*)[1330])emlrtMxGetData(src);
   emlrtDestroyArray(&src);
   return ret;
