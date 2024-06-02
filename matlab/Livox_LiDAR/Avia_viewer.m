@@ -9,7 +9,7 @@ udpObj = udpport("datagram","LocalPort",55501);
 
 % Start timer
 t = timer;
-t.Period = 0.5;
+t.Period = 1;
 t.TimerFcn = {@InitProtocol,udpObj};
 t.ExecutionMode = 'fixedDelay';
 
@@ -24,13 +24,14 @@ udpObj2 = udpport("byte","LocalPort",56001,"ByteOrder","little-endian");
 player = pcplayer([0 10],[-5 5],[-2 5]);
 
 % Set temporary value for 1 frame
-numPoints = 250 * 14; 
+numPoints = 250 * 96; 
 
 % Point data storage variable
-x = zeros(numPoints,1);
-y = zeros(numPoints,1);
-z = zeros(numPoints,1);
+x = single(zeros(numPoints,1));
+y = single(zeros(numPoints,1));
+z = single(zeros(numPoints,1));
 
+xyzPoints = single(zeros(numPoints,3));
 
 idx = 1;
 count = 0;
@@ -41,10 +42,10 @@ frameCount = 0;
 tic
 while 1
     % Read 1 packet
-    packet = read(udpObj2,1362);
+    packet = single(read(udpObj2,1362))';
 
     % Check for Point data or IMU data
-    dataType = packet(:,10);
+    dataType = packet(10);
     
     % dataType: 2 (cartesian data), dataType: 6 (IMU data)
     if dataType ~= 2
@@ -55,7 +56,7 @@ while 1
         count = count + 1; 
         
         % Cartesian coordinate data is 19:end 
-        xyzPointsPacket = packet(1,19:end);
+        xyzPointsPacket = packet(19:end);
         
         % 96 data consists of 14 bytes
         reshapedData = reshape(xyzPointsPacket, 14, []);
@@ -99,5 +100,5 @@ end
 function decimalValue = bytesToDec(p1, p2, p3, p4)
     bytes = [p1,p2,p3,p4];
     int32Value = typecast(uint8(bytes), 'int32');
-    decimalValue = double(int32Value) / 1000;
+    decimalValue = single(double(int32Value) / 1000);
 end
