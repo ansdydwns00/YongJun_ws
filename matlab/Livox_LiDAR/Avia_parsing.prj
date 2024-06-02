@@ -1,5 +1,5 @@
 <deployment-project plugin="plugin.coder" plugin-version="R2024a">
-  <configuration build-checksum="1809338252" file="/home/aiv/YongJun_ws/matlab/Livox_LiDAR/Avia_parsing.prj" location="/home/aiv/YongJun_ws/matlab/Livox_LiDAR" name="Avia_parsing" target="target.unifiedcoder" target-name="MATLAB Coder">
+  <configuration build-checksum="951770610" file="/home/aiv/YongJun_ws/matlab/Livox_LiDAR/Avia_parsing.prj" location="/home/aiv/YongJun_ws/matlab/Livox_LiDAR" name="Avia_parsing" target="target.unifiedcoder" target-name="MATLAB Coder">
     <profile key="profile.mex">
       <param.BuiltInstrumentedMex>false</param.BuiltInstrumentedMex>
       <param.RanInstrumentedMex>false</param.RanInstrumentedMex>
@@ -625,7 +625,7 @@
     <param.AutoInferUnboundedSizeThreshold>2048</param.AutoInferUnboundedSizeThreshold>
     <param.EnableFixedPointStep>false</param.EnableFixedPointStep>
     <param.EnableScreener>true</param.EnableScreener>
-    <param.AnnotationChecksum>2331676707</param.AnnotationChecksum>
+    <param.AnnotationChecksum>4253302066</param.AnnotationChecksum>
     <var.LegacyTarget />
     <var.MirrorOnOpen>false</var.MirrorOnOpen>
     <param.FixedPointEnabled>false</param.FixedPointEnabled>
@@ -635,12 +635,12 @@
     <param.hdlParamStorage />
     <var.gc.lastOutputRoot>codegen/lib/Avia_parsing</var.gc.lastOutputRoot>
     <var.gc.lastOutputType>C_CODE</var.gc.lastOutputType>
-    <var.gc.preBuildChecksum>2190013186</var.gc.preBuildChecksum>
+    <var.gc.preBuildChecksum>3521798524</var.gc.preBuildChecksum>
     <var.cfi.lastOutputRoot>codegen/mex/Avia_parsing</var.cfi.lastOutputRoot>
-    <var.cfi.preBuildChecksum>1897939603</var.cfi.preBuildChecksum>
+    <var.cfi.preBuildChecksum>574804205</var.cfi.preBuildChecksum>
     <var.lastCfiTestSnippet>Avia_parsing</var.lastCfiTestSnippet>
     <var.outdatedOnRestore>false</var.outdatedOnRestore>
-    <var.lastUserSourceChecksum>&lt;?xml version="1.0" encoding="UTF-8" standalone="yes"?&gt;&lt;checksum&gt;&lt;includedFiles&gt;&lt;file&gt;/home/aiv/YongJun_ws/matlab/Livox_LiDAR/Avia_parsing.m&lt;/file&gt;&lt;file&gt;/home/aiv/YongJun_ws/matlab/Livox_LiDAR/bytesToDec.m&lt;/file&gt;&lt;/includedFiles&gt;&lt;value&gt;1217199613&lt;/value&gt;&lt;/checksum&gt;</var.lastUserSourceChecksum>
+    <var.lastUserSourceChecksum>&lt;?xml version="1.0" encoding="UTF-8" standalone="yes"?&gt;&lt;checksum&gt;&lt;includedFiles&gt;&lt;file&gt;/home/aiv/YongJun_ws/matlab/Livox_LiDAR/Avia_parsing.m&lt;/file&gt;&lt;file&gt;/home/aiv/YongJun_ws/matlab/Livox_LiDAR/bytesToDec.m&lt;/file&gt;&lt;/includedFiles&gt;&lt;value&gt;2978752082&lt;/value&gt;&lt;/checksum&gt;</var.lastUserSourceChecksum>
     <var.sourceSetState>&lt;?xml version="1.0" encoding="UTF-8" standalone="yes"?&gt;&lt;sourceModel&gt;&lt;primarySourceFiles&gt;&lt;file&gt;/home/aiv/YongJun_ws/matlab/Livox_LiDAR/Avia_parsing.m&lt;/file&gt;&lt;file&gt;/home/aiv/YongJun_ws/matlab/Livox_LiDAR/bytesToDec.m&lt;/file&gt;&lt;/primarySourceFiles&gt;&lt;fixedPointSourceFiles/&gt;&lt;fixedPointSourceRegistered&gt;false&lt;/fixedPointSourceRegistered&gt;&lt;fixedPointSourceSelected&gt;false&lt;/fixedPointSourceSelected&gt;&lt;/sourceModel&gt;</var.sourceSetState>
     <param.forceMexBuild>false</param.forceMexBuild>
     <param.NoDefaultJIT>false</param.NoDefaultJIT>
@@ -885,7 +885,7 @@
     </unset>
     <fileset.entrypoints>
       <file custom-data-expanded="false" value="${PROJECT_ROOT}/Avia_parsing.m">
-        <Marker>1717315231949</Marker>
+        <Marker>1717316743480</Marker>
       </file>
     </fileset.entrypoints>
     <fileset.testbench />

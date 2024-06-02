@@ -37,7 +37,7 @@ while 1
        flush(udpObj2);
        continue;
     else
-        [xyzCoords,isValid] = Avia_parsing_mex(packet,reset_flag);
+        [xyzCoords,isValid] = Avia_parsing(packet,reset_flag);
   
         if isValid
             ptCloud = pointCloud(xyzCoords);

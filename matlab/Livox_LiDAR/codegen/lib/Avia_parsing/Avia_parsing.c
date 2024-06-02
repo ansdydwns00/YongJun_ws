@@ -5,7 +5,7 @@
  * File: Avia_parsing.c
  *
  * MATLAB Coder version            : 24.1
- * C/C++ source code generated on  : 02-Jun-2024 17:01:05
+ * C/C++ source code generated on  : 02-Jun-2024 17:26:03
  */
 
 /* Include Files */
@@ -37,7 +37,7 @@ void Avia_parsing(const float packet[1362], float reset_flag,
                   emxArray_real32_T *xyzCoords, boolean_T *isValid)
 {
   static float points[72000];
-  static float b_i;
+  static float i;
   emxArray_int16_T *r;
   emxArray_real32_T *vec;
   float b_packet[1344];
@@ -46,7 +46,6 @@ void Avia_parsing(const float packet[1362], float reset_flag,
   float *xyzCoords_data;
   int b_int32Value;
   int c_int32Value;
-  int i;
   int idx;
   int int32Value;
   short *r1;
@@ -56,19 +55,16 @@ void Avia_parsing(const float packet[1362], float reset_flag,
   if ((!points_not_empty) || (reset_flag == 0.0F)) {
     memset(&points[0], 0, 72000U * sizeof(float));
     points_not_empty = true;
-    b_i = 1.0F;
+    i = 1.0F;
   }
   /*  Cartesian coordinate data is 19:end  */
   /*  96 data consists of 14 bytes */
-  memcpy(&b_packet[0], &packet[18], 1344U * sizeof(float));
+  /*  Precompute the indices for faster access */
   for (idx = 0; idx < 96; idx++) {
-    float currentPart[14];
     unsigned char x[4];
     unsigned char u;
-    for (i = 0; i < 14; i++) {
-      currentPart[i] = b_packet[i + 14 * idx];
-    }
-    out_tmp = roundf(currentPart[0]);
+    memcpy(&b_packet[0], &packet[18], 1344U * sizeof(float));
+    out_tmp = roundf(b_packet[14 * idx]);
     if (out_tmp < 256.0F) {
       if (out_tmp >= 0.0F) {
         u = (unsigned char)out_tmp;
@@ -81,7 +77,7 @@ void Avia_parsing(const float packet[1362], float reset_flag,
       u = 0U;
     }
     x[0] = u;
-    out_tmp = roundf(currentPart[1]);
+    out_tmp = roundf(b_packet[14 * idx + 1]);
     if (out_tmp < 256.0F) {
       if (out_tmp >= 0.0F) {
         u = (unsigned char)out_tmp;
@@ -94,7 +90,7 @@ void Avia_parsing(const float packet[1362], float reset_flag,
       u = 0U;
     }
     x[1] = u;
-    out_tmp = roundf(currentPart[2]);
+    out_tmp = roundf(b_packet[14 * idx + 2]);
     if (out_tmp < 256.0F) {
       if (out_tmp >= 0.0F) {
         u = (unsigned char)out_tmp;
@@ -107,7 +103,7 @@ void Avia_parsing(const float packet[1362], float reset_flag,
       u = 0U;
     }
     x[2] = u;
-    out_tmp = roundf(currentPart[3]);
+    out_tmp = roundf(b_packet[14 * idx + 3]);
     if (out_tmp < 256.0F) {
       if (out_tmp >= 0.0F) {
         u = (unsigned char)out_tmp;
@@ -122,7 +118,8 @@ void Avia_parsing(const float packet[1362], float reset_flag,
     x[3] = u;
     memcpy((void *)&int32Value, (void *)&x[0],
            (unsigned int)((size_t)1 * sizeof(int)));
-    out_tmp = roundf(currentPart[4]);
+    memcpy(&b_packet[0], &packet[18], 1344U * sizeof(float));
+    out_tmp = roundf(b_packet[14 * idx + 4]);
     if (out_tmp < 256.0F) {
       if (out_tmp >= 0.0F) {
         u = (unsigned char)out_tmp;
@@ -135,7 +132,7 @@ void Avia_parsing(const float packet[1362], float reset_flag,
       u = 0U;
     }
     x[0] = u;
-    out_tmp = roundf(currentPart[5]);
+    out_tmp = roundf(b_packet[14 * idx + 5]);
     if (out_tmp < 256.0F) {
       if (out_tmp >= 0.0F) {
         u = (unsigned char)out_tmp;
@@ -148,7 +145,7 @@ void Avia_parsing(const float packet[1362], float reset_flag,
       u = 0U;
     }
     x[1] = u;
-    out_tmp = roundf(currentPart[6]);
+    out_tmp = roundf(b_packet[14 * idx + 6]);
     if (out_tmp < 256.0F) {
       if (out_tmp >= 0.0F) {
         u = (unsigned char)out_tmp;
@@ -161,7 +158,7 @@ void Avia_parsing(const float packet[1362], float reset_flag,
       u = 0U;
     }
     x[2] = u;
-    out_tmp = roundf(currentPart[7]);
+    out_tmp = roundf(b_packet[14 * idx + 7]);
     if (out_tmp < 256.0F) {
       if (out_tmp >= 0.0F) {
         u = (unsigned char)out_tmp;
@@ -176,7 +173,8 @@ void Avia_parsing(const float packet[1362], float reset_flag,
     x[3] = u;
     memcpy((void *)&b_int32Value, (void *)&x[0],
            (unsigned int)((size_t)1 * sizeof(int)));
-    out_tmp = roundf(currentPart[8]);
+    memcpy(&b_packet[0], &packet[18], 1344U * sizeof(float));
+    out_tmp = roundf(b_packet[14 * idx + 8]);
     if (out_tmp < 256.0F) {
       if (out_tmp >= 0.0F) {
         u = (unsigned char)out_tmp;
@@ -189,7 +187,7 @@ void Avia_parsing(const float packet[1362], float reset_flag,
       u = 0U;
     }
     x[0] = u;
-    out_tmp = roundf(currentPart[9]);
+    out_tmp = roundf(b_packet[14 * idx + 9]);
     if (out_tmp < 256.0F) {
       if (out_tmp >= 0.0F) {
         u = (unsigned char)out_tmp;
@@ -202,7 +200,7 @@ void Avia_parsing(const float packet[1362], float reset_flag,
       u = 0U;
     }
     x[1] = u;
-    out_tmp = roundf(currentPart[10]);
+    out_tmp = roundf(b_packet[14 * idx + 10]);
     if (out_tmp < 256.0F) {
       if (out_tmp >= 0.0F) {
         u = (unsigned char)out_tmp;
@@ -215,7 +213,7 @@ void Avia_parsing(const float packet[1362], float reset_flag,
       u = 0U;
     }
     x[2] = u;
-    out_tmp = roundf(currentPart[11]);
+    out_tmp = roundf(b_packet[14 * idx + 11]);
     if (out_tmp < 256.0F) {
       if (out_tmp >= 0.0F) {
         u = (unsigned char)out_tmp;
@@ -234,21 +232,21 @@ void Avia_parsing(const float packet[1362], float reset_flag,
     xyzPoints[idx + 96] = (float)b_int32Value / 1000.0F;
     xyzPoints[idx + 192] = (float)c_int32Value / 1000.0F;
   }
-  if (b_i == 250.0F) {
-    i = xyzCoords->size[0] * xyzCoords->size[1];
+  if (i == 250.0F) {
+    idx = xyzCoords->size[0] * xyzCoords->size[1];
     xyzCoords->size[0] = 24000;
     xyzCoords->size[1] = 3;
-    emxEnsureCapacity_real32_T(xyzCoords, i);
+    emxEnsureCapacity_real32_T(xyzCoords, idx);
     xyzCoords_data = xyzCoords->data;
-    for (i = 0; i < 72000; i++) {
-      xyzCoords_data[i] = points[i];
+    for (idx = 0; idx < 72000; idx++) {
+      xyzCoords_data[idx] = points[idx];
     }
     *isValid = true;
-    /*  Initialize of parameters */
+    /*  Reset parameters */
     memset(&points[0], 0, 72000U * sizeof(float));
-    b_i = 1.0F;
+    i = 1.0F;
   } else {
-    out_tmp = (b_i - 1.0F) * 96.0F;
+    out_tmp = (i - 1.0F) * 96.0F;
     emxInit_real32_T(&vec, 2);
     xyzCoords_data = vec->data;
     if (out_tmp + 96.0F < out_tmp + 1.0F) {
@@ -256,31 +254,31 @@ void Avia_parsing(const float packet[1362], float reset_flag,
       vec->size[1] = 0;
     } else if ((rtIsInfF(out_tmp + 1.0F) || rtIsInfF(out_tmp + 96.0F)) &&
                (out_tmp + 1.0F == out_tmp + 96.0F)) {
-      i = vec->size[0] * vec->size[1];
+      idx = vec->size[0] * vec->size[1];
       vec->size[0] = 1;
       vec->size[1] = 1;
-      emxEnsureCapacity_real32_T(vec, i);
+      emxEnsureCapacity_real32_T(vec, idx);
       xyzCoords_data = vec->data;
       xyzCoords_data[0] = rtNaNF;
     } else if (out_tmp + 1.0F == out_tmp + 1.0F) {
       if ((fabsf(out_tmp + 1.0F) >= 1.07374182E+9F) ||
           (fabsf(out_tmp + 96.0F) >= 1.07374182E+9F)) {
-        i = vec->size[0] * vec->size[1];
+        idx = vec->size[0] * vec->size[1];
         vec->size[0] = 1;
         int32Value = (int)((double)(out_tmp + 96.0F) - (out_tmp + 1.0F));
         vec->size[1] = int32Value + 1;
-        emxEnsureCapacity_real32_T(vec, i);
+        emxEnsureCapacity_real32_T(vec, idx);
         xyzCoords_data = vec->data;
-        for (i = 0; i <= int32Value; i++) {
-          xyzCoords_data[i] = (float)((out_tmp + 1.0F) + (double)i);
+        for (idx = 0; idx <= int32Value; idx++) {
+          xyzCoords_data[idx] = (float)((out_tmp + 1.0F) + (double)idx);
         }
       } else {
         int32Value = (int)floorf(out_tmp + 1.0F);
         b_int32Value = (int)floorf(out_tmp + 96.0F) - int32Value;
-        i = vec->size[0] * vec->size[1];
+        idx = vec->size[0] * vec->size[1];
         vec->size[0] = 1;
         vec->size[1] = b_int32Value + 1;
-        emxEnsureCapacity_real32_T(vec, i);
+        emxEnsureCapacity_real32_T(vec, idx);
         xyzCoords_data = vec->data;
         for (c_int32Value = 0; c_int32Value <= b_int32Value; c_int32Value++) {
           xyzCoords_data[c_int32Value] = (float)(int32Value + c_int32Value);
@@ -309,10 +307,10 @@ void Avia_parsing(const float packet[1362], float reset_flag,
       } else {
         b_int32Value = 0;
       }
-      i = vec->size[0] * vec->size[1];
+      idx = vec->size[0] * vec->size[1];
       vec->size[0] = 1;
       vec->size[1] = b_int32Value;
-      emxEnsureCapacity_real32_T(vec, i);
+      emxEnsureCapacity_real32_T(vec, idx);
       xyzCoords_data = vec->data;
       if (b_int32Value > 0) {
         xyzCoords_data[0] = out_tmp + 1.0F;
@@ -337,23 +335,23 @@ void Avia_parsing(const float packet[1362], float reset_flag,
     }
     emxInit_int16_T(&r);
     int32Value = vec->size[1];
-    i = r->size[0];
+    idx = r->size[0];
     r->size[0] = vec->size[1];
-    emxEnsureCapacity_int16_T(r, i);
+    emxEnsureCapacity_int16_T(r, idx);
     r1 = r->data;
-    for (i = 0; i < int32Value; i++) {
-      r1[i] = (short)((short)xyzCoords_data[i] - 1);
+    for (idx = 0; idx < int32Value; idx++) {
+      r1[idx] = (short)((short)xyzCoords_data[idx] - 1);
     }
     b_int32Value = vec->size[1];
     emxFree_real32_T(&vec);
-    for (i = 0; i < 3; i++) {
+    for (idx = 0; idx < 3; idx++) {
       for (c_int32Value = 0; c_int32Value < int32Value; c_int32Value++) {
-        points[r1[c_int32Value] + 24000 * i] =
-            xyzPoints[c_int32Value + b_int32Value * i];
+        points[r1[c_int32Value] + 24000 * idx] =
+            xyzPoints[c_int32Value + b_int32Value * idx];
       }
     }
     emxFree_int16_T(&r);
-    b_i++;
+    i++;
     xyzCoords->size[0] = 0;
     xyzCoords->size[1] = 0;
     *isValid = false;

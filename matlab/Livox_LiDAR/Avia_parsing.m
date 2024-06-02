@@ -17,16 +17,18 @@ function [xyzCoords,isValid] = Avia_parsing(packet,reset_flag)
     % 96 data consists of 14 bytes
     reshapedData = reshape(xyzPointsPacket, 14, []);
     
+    % Precompute the indices for faster access
+    x_idx = 1:4;
+    y_idx = 5:8;
+    z_idx = 9:12;
+    
     for idx = 1:size(reshapedData,2)
-        currentPart = reshapedData(:, idx);
 
-        x_byte = currentPart(1:4);
-        y_byte = currentPart(5:8);
-        z_byte = currentPart(9:12); 
+        currentPart = reshapedData(:, idx);
         
-        x = bytesToDec(x_byte(1), x_byte(2), x_byte(3), x_byte(4));
-        y = bytesToDec(y_byte(1), y_byte(2), y_byte(3), y_byte(4));
-        z = bytesToDec(z_byte(1), z_byte(2), z_byte(3), z_byte(4));
+        x = bytesToDec(currentPart(x_idx));
+        y = bytesToDec(currentPart(y_idx));
+        z = bytesToDec(currentPart(z_idx));
         
         xyzPoints(idx,:) = [x y z];
     end
@@ -35,7 +37,7 @@ function [xyzCoords,isValid] = Avia_parsing(packet,reset_flag)
         xyzCoords = points;
         isValid = true;
 
-        % Initialize of parameters
+        % Reset parameters
         points = single(zeros(96*250,3));
         i = 1;
     else

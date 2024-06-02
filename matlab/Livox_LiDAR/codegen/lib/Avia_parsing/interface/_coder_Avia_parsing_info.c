@@ -5,7 +5,7 @@
  * File: _coder_Avia_parsing_info.c
  *
  * MATLAB Coder version            : 24.1
- * C/C++ source code generated on  : 02-Jun-2024 17:01:05
+ * C/C++ source code generated on  : 02-Jun-2024 17:26:03
  */
 
 /* Include Files */
@@ -33,9 +33,9 @@ static const mxArray *c_emlrtMexFcnResolvedFunctionsI(void)
       "273149df27b32cbf22de27d3c53148dfb12c3331be20b1a838332f5d"
       "2f17cdbd0514ba978b807b61f2499525a9c521f92ea9c9a8f62750683f1b4efb2132204f"
       "e7a422ec9b41a17de638ed439527217e1041038c1d42e1c24fa43b71",
-      "e52b5e060e30dd281c9306a2e965dffeb37ff9e9691f0c0c947d1538cc23369d89e1b04f"
-      "004dbed0c4c0acaac2c82ddbc7dbb220d7d3c42dcb22d4c90da97c26"
-      "600f217730e0e0d3da7c00a20c6978",
+      "e52b5e060e30ada6139306a2e9655f4775141f3ded838181b2af028779c4a633311cf609"
+      "a0c99b9a7bbb58665766f9a4e7797a4738014badb00a3777a4f29980"
+      "3d84dcc180834f6bf301d90368a1",
       ""};
   nameCaptureInfo = NULL;
   emlrtNameCaptureMxArrayR2016a(&data[0], 1640U, &nameCaptureInfo);
@@ -76,7 +76,7 @@ mxArray *emlrtMexFcnProperties(void)
                 emlrtMxCreateString(
                     "/home/aiv/YongJun_ws/matlab/Livox_LiDAR/Avia_parsing.m"));
   emlrtSetField(xEntryPoints, 0, "TimeStamp",
-                emlrtMxCreateDoubleScalar(739405.70391203708));
+                emlrtMxCreateDoubleScalar(739405.72549768514));
   emlrtSetField(xEntryPoints, 0, "Constructor",
                 emlrtMxCreateLogicalScalar(false));
   emlrtSetField(xEntryPoints, 0, "Visible", emlrtMxCreateLogicalScalar(true));
@@ -87,7 +87,7 @@ mxArray *emlrtMexFcnProperties(void)
   emlrtSetField(xResult, 0, "ResolvedFunctions",
                 (mxArray *)c_emlrtMexFcnResolvedFunctionsI());
   emlrtSetField(xResult, 0, "Checksum",
-                emlrtMxCreateString("2GRDcCvEdyeD27HME5iAlF"));
+                emlrtMxCreateString("2E8OkrrLfEPI9KAvaoUsw"));
   emlrtSetField(xResult, 0, "EntryPoints", xEntryPoints);
   return xResult;
 }
