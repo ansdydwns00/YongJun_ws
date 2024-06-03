@@ -39,20 +39,20 @@ while 1
         flush(udpObj2);
     else
 
-        [xyzCoords,isValid] = Avia_parsing_mex(packet,reset_flag);
+        [xyzCoords,isValid] = Avia_parsing(packet,reset_flag);
         
         if isValid
 
             xyzPointsBuffer = vertcat(xyzPointsBuffer,xyzCoords);
             
-            if frameCount > 6 
+            if frameCount > 10
 
-                xyzPointsBuffer = xyzPointsBuffer(7873:end,:);
+                xyzPointsBuffer = xyzPointsBuffer(4800:end,:);
                 
                 ptCloud = pointCloud(xyzPointsBuffer);
                 
                 % Display ptCloud 
-                view(player,ptCloud)
+                view(player,ptCloud);
             end
 
             % Display Rendering rate 

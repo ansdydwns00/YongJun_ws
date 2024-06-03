@@ -5,7 +5,7 @@ function [xyzCoords,isValid] = Avia_parsing(packet,reset_flag)
     persistent i
 
     if isempty(points) || reset_flag == 0
-        points = single(zeros(96*82,3));
+        points = single(zeros(96*50,3));
         i = 1;
     end
     
@@ -37,12 +37,12 @@ function [xyzCoords,isValid] = Avia_parsing(packet,reset_flag)
     xyzPoints(:,2) = y;
     xyzPoints(:,3) = z;
 
-    if i == 82
+    if i == 50
         xyzCoords = points;
         isValid = true;
 
         % Reset parameters
-        points = single(zeros(96*82,3));
+        points = single(zeros(96*50,3));
         i = 1;
     else
         points((i-1)*96+1:(i-1)*96+96,:) = xyzPoints;
