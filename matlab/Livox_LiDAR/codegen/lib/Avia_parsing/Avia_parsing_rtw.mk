@@ -2,7 +2,7 @@
 ## Makefile generated for component 'Avia_parsing'. 
 ## 
 ## Makefile     : Avia_parsing_rtw.mk
-## Generated on : Sun Jun 02 17:26:07 2024
+## Generated on : Mon Jun 03 17:21:58 2024
 ## Final product: ./Avia_parsing.a
 ## Product type : static-library
 ## 
@@ -167,7 +167,7 @@ DEFINES = $(DEFINES_CUSTOM) $(DEFINES_STANDARD)
 ## SOURCE FILES
 ###########################################################################
 
-SRCS = $(START_DIR)/codegen/lib/Avia_parsing/Avia_parsing_data.c $(START_DIR)/codegen/lib/Avia_parsing/rt_nonfinite.c $(START_DIR)/codegen/lib/Avia_parsing/rtGetNaN.c $(START_DIR)/codegen/lib/Avia_parsing/rtGetInf.c $(START_DIR)/codegen/lib/Avia_parsing/Avia_parsing_initialize.c $(START_DIR)/codegen/lib/Avia_parsing/Avia_parsing_terminate.c $(START_DIR)/codegen/lib/Avia_parsing/Avia_parsing.c $(START_DIR)/codegen/lib/Avia_parsing/Avia_parsing_emxutil.c $(START_DIR)/codegen/lib/Avia_parsing/Avia_parsing_emxAPI.c
+SRCS = $(START_DIR)/codegen/lib/Avia_parsing/Avia_parsing_data.c $(START_DIR)/codegen/lib/Avia_parsing/rt_nonfinite.c $(START_DIR)/codegen/lib/Avia_parsing/rtGetNaN.c $(START_DIR)/codegen/lib/Avia_parsing/rtGetInf.c $(START_DIR)/codegen/lib/Avia_parsing/Avia_parsing_initialize.c $(START_DIR)/codegen/lib/Avia_parsing/Avia_parsing_terminate.c $(START_DIR)/codegen/lib/Avia_parsing/Avia_parsing.c $(START_DIR)/codegen/lib/Avia_parsing/colon.c $(START_DIR)/codegen/lib/Avia_parsing/Avia_parsing_emxutil.c $(START_DIR)/codegen/lib/Avia_parsing/Avia_parsing_emxAPI.c
 
 ALL_SRCS = $(SRCS)
 
@@ -175,7 +175,7 @@ ALL_SRCS = $(SRCS)
 ## OBJECTS
 ###########################################################################
 
-OBJS = Avia_parsing_data.o rt_nonfinite.o rtGetNaN.o rtGetInf.o Avia_parsing_initialize.o Avia_parsing_terminate.o Avia_parsing.o Avia_parsing_emxutil.o Avia_parsing_emxAPI.o
+OBJS = Avia_parsing_data.o rt_nonfinite.o rtGetNaN.o rtGetInf.o Avia_parsing_initialize.o Avia_parsing_terminate.o Avia_parsing.o colon.o Avia_parsing_emxutil.o Avia_parsing_emxAPI.o
 
 ALL_OBJS = $(OBJS)
 
@@ -405,6 +405,10 @@ Avia_parsing_terminate.o : $(START_DIR)/codegen/lib/Avia_parsing/Avia_parsing_te
 
 
 Avia_parsing.o : $(START_DIR)/codegen/lib/Avia_parsing/Avia_parsing.c
+	$(CC) $(CFLAGS) -o "$@" "$<"
+
+
+colon.o : $(START_DIR)/codegen/lib/Avia_parsing/colon.c
 	$(CC) $(CFLAGS) -o "$@" "$<"
 
 

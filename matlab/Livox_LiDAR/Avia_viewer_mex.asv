@@ -36,22 +36,20 @@ while 1
     dataType = packet(10);
 
     if dataType ~= 2
-        flush(udpObj2);
+       flush(udpObj2);
+       % continue; 
     else
 
         [xyzCoords,isValid] = Avia_parsing_mex(packet,reset_flag);
         
         if isValid
-
             xyzPointsBuffer = vertcat(xyzPointsBuffer,xyzCoords);
-            
             if frameCount > 6 
 
                 xyzPointsBuffer = xyzPointsBuffer(7873:end,:);
                 
                 ptCloud = pointCloud(xyzPointsBuffer);
-                
-                % Display ptCloud 
+
                 view(player,ptCloud)
             end
 
@@ -63,6 +61,7 @@ while 1
 
             flush(udpObj2)
         end
+
     end
     reset_flag = single(1);
 end

@@ -2,24 +2,27 @@
  * Academic License - for use in teaching, academic research, and meeting
  * course requirements at degree granting institutions only.  Not for
  * government, commercial, or other organizational use.
- * File: _coder_Avia_parsing_info.h
+ * File: colon.h
  *
  * MATLAB Coder version            : 24.1
  * C/C++ source code generated on  : 03-Jun-2024 17:21:52
  */
 
-#ifndef _CODER_AVIA_PARSING_INFO_H
-#define _CODER_AVIA_PARSING_INFO_H
+#ifndef COLON_H
+#define COLON_H
 
 /* Include Files */
-#include "mex.h"
+#include "Avia_parsing_types.h"
+#include "rtwtypes.h"
+#include <stddef.h>
+#include <stdlib.h>
 
 #ifdef __cplusplus
 extern "C" {
 #endif
 
 /* Function Declarations */
-MEXFUNCTION_LINKAGE mxArray *emlrtMexFcnProperties(void);
+void eml_float_colon(float a, float b, emxArray_real32_T *y);
 
 #ifdef __cplusplus
 }
@@ -27,7 +30,7 @@ MEXFUNCTION_LINKAGE mxArray *emlrtMexFcnProperties(void);
 
 #endif
 /*
- * File trailer for _coder_Avia_parsing_info.h
+ * File trailer for colon.h
  *
  * [EOF]
  */
