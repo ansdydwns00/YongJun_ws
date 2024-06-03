@@ -35,35 +35,32 @@ while 1
 
     dataType = packet(10);
 
-    if dataType ~= 2
-        flush(udpObj2);
-    else
 
-        [xyzCoords,isValid] = Avia_parsing(packet,reset_flag);
+    [xyzCoords,isValid] = Avia_parsing(packet,reset_flag);
+    
+    if isValid
+
+        xyzPointsBuffer = vertcat(xyzPointsBuffer,xyzCoords);
         
-        if isValid
+        if frameCount > 10
 
-            xyzPointsBuffer = vertcat(xyzPointsBuffer,xyzCoords);
+            xyzPointsBuffer = xyzPointsBuffer(4800:end,:);
             
-            if frameCount > 10
-
-                xyzPointsBuffer = xyzPointsBuffer(4800:end,:);
-                
-                ptCloud = pointCloud(xyzPointsBuffer);
-                
-                % Display ptCloud 
-                view(player,ptCloud);
-            end
-
-            % Display Rendering rate 
-            frameCount = frameCount + 1;
-            elapsedTime = toc;
-            frameRate = frameCount / elapsedTime;
-            fprintf("Rendering rate: %f hz\n",frameRate);
-
-            flush(udpObj2)
+            ptCloud = pointCloud(xyzPointsBuffer);
+            
+            % Display ptCloud 
+            view(player,ptCloud);
         end
+
+        % Display Rendering rate 
+        frameCount = frameCount + 1;
+        elapsedTime = toc;
+        frameRate = frameCount / elapsedTime;
+        fprintf("Rendering rate: %f hz\n",frameRate);
+
+        flush(udpObj2)
     end
+
     reset_flag = single(1);
 end
 
