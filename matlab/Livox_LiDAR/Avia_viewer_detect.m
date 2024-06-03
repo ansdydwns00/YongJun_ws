@@ -21,13 +21,17 @@ AviaUDP = udpport("byte","LocalPort",56001,"ByteOrder","little-endian");
 
 %% 
 
+load("detector.mat");
+
 player = pcplayer([0 10],[-5 5],[-2 5]);
 
 frameCount = 0;
 reset_flag = single(0);
 xyzPointsBuffer = [];
 xyzIntensityBuffer = [];
-numPacket = 30; 
+
+Distances = []; 
+
 
 tic
 while 1
@@ -44,11 +48,25 @@ while 1
 
         if frameCount > 20
 
-            xyzPointsBuffer = xyzPointsBuffer(96*numPacket:end,:);
-            xyzIntensityBuffer = xyzIntensityBuffer(96*numPacket:end,:);
+            xyzPointsBuffer = xyzPointsBuffer(96*30:end,:);
+            xyzIntensityBuffer = xyzIntensityBuffer(96*30:end,:);
 
             ptCloud = pointCloud(xyzPointsBuffer,"Intensity",xyzIntensityBuffer);
             
+            % Object Detection
+            [bboxes, ~, ~] = detect(detector,ptCloud,"ExecutionEnvironment","gpu","Threshold",0.2);
+
+            % Compute Object Distance
+            Distances = LR_computeDistance(ptCloud,bboxes);
+
+            % Delete 0 distance
+            idx = find(Distances);
+            Distances = Distances(idx,:);
+            bboxes = bboxes(idx,:);
+
+            % match distance & label
+            showShape('cuboid',bboxes,'Parent',player.Axes,'Opacity',0.2,'Color','red','LineWidth',0.5,'Label',Distances);
+
             % Display ptCloud 
             view(player,ptCloud);
         end

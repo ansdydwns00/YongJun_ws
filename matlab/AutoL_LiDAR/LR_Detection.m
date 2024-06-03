@@ -34,10 +34,11 @@ player = pcplayer([0 10],[-5 5],[-2 2]);
 % Remove input buffer
 flush(udpObj,"input")
 
-detectTime = tic;
+% detectTime = tic;
 
 tic
 while true
+
     % Load 1 packet [1 x 1330]   
     packetData = single(read(udpObj,1330))';   
     
@@ -67,12 +68,10 @@ while true
         idx = find(Distances);
         Distances = Distances(idx,:);
         bboxes = bboxes(idx,:);
+        
         % match distance & label
-
-
         showShape('cuboid',bboxes,'Parent',player.Axes,'Opacity',0.2,'Color','red','LineWidth',0.5,'Label',Distances);
 
-       
         % Display ptCloud on pcplayer
         view(player,ptCloud) 
         
