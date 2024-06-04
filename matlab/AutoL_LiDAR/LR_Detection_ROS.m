@@ -8,9 +8,9 @@ udpObj = udpport("byte","LocalPort",5001,"ByteOrder","little-endian");
 
 %% Create ROS Node
 
-Matlab = ros2node("/MatlabNode");
+Matlab = ros2node("/Matlab");
 
-LidarPub = ros2publisher(Matlab,"/scan","sensor_msgs/PointCloud2");
+LidarPub = ros2publisher(Matlab,"/AutoL","sensor_msgs/PointCloud2");
 LidarMsg = ros2message(LidarPub);
 
 objSub = ros2subscriber(Matlab,"/objDetectionInfo","vision_msgs/Detection3DArray");

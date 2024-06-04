@@ -59,16 +59,16 @@ while true
         % end
  
         % Object Detection
-        [bboxes, ~, ~] = detect(detector,ptCloud,"ExecutionEnvironment","gpu","Threshold",0.2);
+        [bboxes, ~, ~] = detect(detector,ptCloud,"ExecutionEnvironment","gpu","Threshold",0.3);
 
         % Compute Object Distance
         Distances = LR_computeDistance(ptCloud,bboxes);
-        
+
         % Delete 0 distance
         idx = find(Distances);
         Distances = Distances(idx,:);
         bboxes = bboxes(idx,:);
-        
+
         % match distance & label
         showShape('cuboid',bboxes,'Parent',player.Axes,'Opacity',0.2,'Color','red','LineWidth',0.5,'Label',Distances);
 

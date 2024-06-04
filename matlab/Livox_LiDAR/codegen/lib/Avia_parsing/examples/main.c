@@ -5,7 +5,7 @@
  * File: main.c
  *
  * MATLAB Coder version            : 24.1
- * C/C++ source code generated on  : 03-Jun-2024 17:21:52
+ * C/C++ source code generated on  : 04-Jun-2024 13:10:53
  */
 
 /*************************************************************************/
@@ -98,15 +98,18 @@ You do not need to do this more than one time. */
 void main_Avia_parsing(void)
 {
   emxArray_real32_T *xyzCoords;
+  emxArray_real32_T *xyzIntensity;
   float fv[1362];
   boolean_T isValid;
   /* Initialize function 'Avia_parsing' input arguments. */
   /* Initialize function input argument 'packet'. */
   /* Call the entry-point 'Avia_parsing'. */
   emxInitArray_real32_T(&xyzCoords, 2);
+  emxInitArray_real32_T(&xyzIntensity, 2);
   argInit_1362x1_real32_T(fv);
-  Avia_parsing(fv, argInit_real32_T(), xyzCoords, &isValid);
+  Avia_parsing(fv, argInit_real32_T(), xyzCoords, xyzIntensity, &isValid);
   emxDestroyArray_real32_T(xyzCoords);
+  emxDestroyArray_real32_T(xyzIntensity);
 }
 
 /*

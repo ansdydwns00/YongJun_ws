@@ -6,7 +6,7 @@ function deployedPointPillarModel
     nd = ros2node("/DetectionNode");
 
     % create subscribers and publishers
-    pcsub = ros2subscriber(nd,"/scan","sensor_msgs/PointCloud2");
+    pcsub = ros2subscriber(nd,"/Avia","sensor_msgs/PointCloud2");
     objDetectPub = ros2publisher(nd,'/objDetectionInfo','vision_msgs/Detection3DArray');
     
     % create ros message object

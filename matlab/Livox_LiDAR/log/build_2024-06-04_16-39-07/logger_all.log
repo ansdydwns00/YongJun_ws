@@ -1,0 +1,449 @@
+[0.126s] DEBUG:colcon:Command line arguments: ['/usr/bin/colcon', 'build', '--symlink-install']
+[0.126s] DEBUG:colcon:Parsed command line arguments: Namespace(allow_overriding=[], ament_cmake_args=None, base_paths=['.'], build_base='build', catkin_cmake_args=None, catkin_skip_building_tests=False, cmake_args=None, cmake_clean_cache=False, cmake_clean_first=False, cmake_force_configure=False, cmake_target=None, cmake_target_skip_unavailable=False, continue_on_error=False, event_handlers=None, executor='parallel', ignore_user_meta=False, install_base='install', log_base=None, log_level=None, main=<bound method BuildVerb.main of <colcon_core.verb.build.BuildVerb object at 0x7f897e50a520>>, merge_install=False, metas=['./colcon.meta'], mixin=None, mixin_files=None, mixin_verb=('build',), packages_above=None, packages_above_and_dependencies=None, packages_above_depth=None, packages_end=None, packages_ignore=None, packages_ignore_regex=None, packages_select=None, packages_select_build_failed=False, packages_select_by_dep=None, packages_select_regex=None, packages_select_test_failures=False, packages_skip=None, packages_skip_build_finished=False, packages_skip_by_dep=None, packages_skip_regex=None, packages_skip_test_passed=False, packages_skip_up_to=None, packages_start=None, packages_up_to=None, packages_up_to_regex=None, parallel_workers=32, paths=None, symlink_install=True, test_result_base=None, verb_extension=<colcon_core.verb.build.BuildVerb object at 0x7f897e50a520>, verb_name='build', verb_parser=<colcon_mixin.mixin.mixin_argument.MixinArgumentDecorator object at 0x7f897e50ab80>)
+[0.216s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) check parameters
+[0.216s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) check parameters
+[0.216s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) check parameters
+[0.216s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) check parameters
+[0.216s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) discover
+[0.216s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) discover
+[0.216s] INFO:colcon.colcon_core.package_discovery:Crawling recursively for packages in '/home/aiv/YongJun_ws/matlab/Livox_LiDAR'
+[0.216s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ignore', 'ignore_ament_install']
+[0.216s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore'
+[0.217s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore_ament_install'
+[0.217s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_pkg']
+[0.217s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_pkg'
+[0.217s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_meta']
+[0.217s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_meta'
+[0.217s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ros']
+[0.217s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ros'
+[0.224s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['cmake', 'python']
+[0.224s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'cmake'
+[0.224s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python'
+[0.224s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['python_setup_py']
+[0.224s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python_setup_py'
+[0.224s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extensions ['ignore', 'ignore_ament_install']
+[0.224s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extension 'ignore'
+[0.224s] Level 1:colcon.colcon_core.package_identification:_identify(build) ignored
+[0.224s] Level 1:colcon.colcon_core.package_identification:_identify(codegen) by extensions ['ignore', 'ignore_ament_install']
+[0.224s] Level 1:colcon.colcon_core.package_identification:_identify(codegen) by extension 'ignore'
+[0.224s] Level 1:colcon.colcon_core.package_identification:_identify(codegen) by extension 'ignore_ament_install'
+[0.224s] Level 1:colcon.colcon_core.package_identification:_identify(codegen) by extensions ['colcon_pkg']
+[0.224s] Level 1:colcon.colcon_core.package_identification:_identify(codegen) by extension 'colcon_pkg'
+[0.224s] Level 1:colcon.colcon_core.package_identification:_identify(codegen) by extensions ['colcon_meta']
+[0.224s] Level 1:colcon.colcon_core.package_identification:_identify(codegen) by extension 'colcon_meta'
+[0.224s] Level 1:colcon.colcon_core.package_identification:_identify(codegen) by extensions ['ros']
+[0.224s] Level 1:colcon.colcon_core.package_identification:_identify(codegen) by extension 'ros'
+[0.224s] Level 1:colcon.colcon_core.package_identification:_identify(codegen) by extensions ['cmake', 'python']
+[0.224s] Level 1:colcon.colcon_core.package_identification:_identify(codegen) by extension 'cmake'
+[0.224s] Level 1:colcon.colcon_core.package_identification:_identify(codegen) by extension 'python'
+[0.224s] Level 1:colcon.colcon_core.package_identification:_identify(codegen) by extensions ['python_setup_py']
+[0.224s] Level 1:colcon.colcon_core.package_identification:_identify(codegen) by extension 'python_setup_py'
+[0.224s] Level 1:colcon.colcon_core.package_identification:_identify(codegen/exe) by extensions ['ignore', 'ignore_ament_install']
+[0.224s] Level 1:colcon.colcon_core.package_identification:_identify(codegen/exe) by extension 'ignore'
+[0.224s] Level 1:colcon.colcon_core.package_identification:_identify(codegen/exe) by extension 'ignore_ament_install'
+[0.224s] Level 1:colcon.colcon_core.package_identification:_identify(codegen/exe) by extensions ['colcon_pkg']
+[0.225s] Level 1:colcon.colcon_core.package_identification:_identify(codegen/exe) by extension 'colcon_pkg'
+[0.225s] Level 1:colcon.colcon_core.package_identification:_identify(codegen/exe) by extensions ['colcon_meta']
+[0.225s] Level 1:colcon.colcon_core.package_identification:_identify(codegen/exe) by extension 'colcon_meta'
+[0.225s] Level 1:colcon.colcon_core.package_identification:_identify(codegen/exe) by extensions ['ros']
+[0.225s] Level 1:colcon.colcon_core.package_identification:_identify(codegen/exe) by extension 'ros'
+[0.225s] Level 1:colcon.colcon_core.package_identification:_identify(codegen/exe) by extensions ['cmake', 'python']
+[0.225s] Level 1:colcon.colcon_core.package_identification:_identify(codegen/exe) by extension 'cmake'
+[0.225s] Level 1:colcon.colcon_core.package_identification:_identify(codegen/exe) by extension 'python'
+[0.225s] Level 1:colcon.colcon_core.package_identification:_identify(codegen/exe) by extensions ['python_setup_py']
+[0.225s] Level 1:colcon.colcon_core.package_identification:_identify(codegen/exe) by extension 'python_setup_py'
+[0.225s] Level 1:colcon.colcon_core.package_identification:_identify(codegen/exe/deployedPointPillarModel) by extensions ['ignore', 'ignore_ament_install']
+[0.225s] Level 1:colcon.colcon_core.package_identification:_identify(codegen/exe/deployedPointPillarModel) by extension 'ignore'
+[0.225s] Level 1:colcon.colcon_core.package_identification:_identify(codegen/exe/deployedPointPillarModel) by extension 'ignore_ament_install'
+[0.225s] Level 1:colcon.colcon_core.package_identification:_identify(codegen/exe/deployedPointPillarModel) by extensions ['colcon_pkg']
+[0.225s] Level 1:colcon.colcon_core.package_identification:_identify(codegen/exe/deployedPointPillarModel) by extension 'colcon_pkg'
+[0.225s] Level 1:colcon.colcon_core.package_identification:_identify(codegen/exe/deployedPointPillarModel) by extensions ['colcon_meta']
+[0.225s] Level 1:colcon.colcon_core.package_identification:_identify(codegen/exe/deployedPointPillarModel) by extension 'colcon_meta'
+[0.225s] Level 1:colcon.colcon_core.package_identification:_identify(codegen/exe/deployedPointPillarModel) by extensions ['ros']
+[0.225s] Level 1:colcon.colcon_core.package_identification:_identify(codegen/exe/deployedPointPillarModel) by extension 'ros'
+[0.225s] Level 1:colcon.colcon_core.package_identification:_identify(codegen/exe/deployedPointPillarModel) by extensions ['cmake', 'python']
+[0.225s] Level 1:colcon.colcon_core.package_identification:_identify(codegen/exe/deployedPointPillarModel) by extension 'cmake'
+[0.225s] Level 1:colcon.colcon_core.package_identification:_identify(codegen/exe/deployedPointPillarModel) by extension 'python'
+[0.225s] Level 1:colcon.colcon_core.package_identification:_identify(codegen/exe/deployedPointPillarModel) by extensions ['python_setup_py']
+[0.225s] Level 1:colcon.colcon_core.package_identification:_identify(codegen/exe/deployedPointPillarModel) by extension 'python_setup_py'
+[0.225s] Level 1:colcon.colcon_core.package_identification:_identify(codegen/exe/deployedPointPillarModel/examples) by extensions ['ignore', 'ignore_ament_install']
+[0.225s] Level 1:colcon.colcon_core.package_identification:_identify(codegen/exe/deployedPointPillarModel/examples) by extension 'ignore'
+[0.225s] Level 1:colcon.colcon_core.package_identification:_identify(codegen/exe/deployedPointPillarModel/examples) by extension 'ignore_ament_install'
+[0.225s] Level 1:colcon.colcon_core.package_identification:_identify(codegen/exe/deployedPointPillarModel/examples) by extensions ['colcon_pkg']
+[0.225s] Level 1:colcon.colcon_core.package_identification:_identify(codegen/exe/deployedPointPillarModel/examples) by extension 'colcon_pkg'
+[0.225s] Level 1:colcon.colcon_core.package_identification:_identify(codegen/exe/deployedPointPillarModel/examples) by extensions ['colcon_meta']
+[0.225s] Level 1:colcon.colcon_core.package_identification:_identify(codegen/exe/deployedPointPillarModel/examples) by extension 'colcon_meta'
+[0.225s] Level 1:colcon.colcon_core.package_identification:_identify(codegen/exe/deployedPointPillarModel/examples) by extensions ['ros']
+[0.225s] Level 1:colcon.colcon_core.package_identification:_identify(codegen/exe/deployedPointPillarModel/examples) by extension 'ros'
+[0.226s] Level 1:colcon.colcon_core.package_identification:_identify(codegen/exe/deployedPointPillarModel/examples) by extensions ['cmake', 'python']
+[0.226s] Level 1:colcon.colcon_core.package_identification:_identify(codegen/exe/deployedPointPillarModel/examples) by extension 'cmake'
+[0.226s] Level 1:colcon.colcon_core.package_identification:_identify(codegen/exe/deployedPointPillarModel/examples) by extension 'python'
+[0.226s] Level 1:colcon.colcon_core.package_identification:_identify(codegen/exe/deployedPointPillarModel/examples) by extensions ['python_setup_py']
+[0.226s] Level 1:colcon.colcon_core.package_identification:_identify(codegen/exe/deployedPointPillarModel/examples) by extension 'python_setup_py'
+[0.226s] Level 1:colcon.colcon_core.package_identification:_identify(codegen/exe/deployedPointPillarModel/html) by extensions ['ignore', 'ignore_ament_install']
+[0.226s] Level 1:colcon.colcon_core.package_identification:_identify(codegen/exe/deployedPointPillarModel/html) by extension 'ignore'
+[0.226s] Level 1:colcon.colcon_core.package_identification:_identify(codegen/exe/deployedPointPillarModel/html) by extension 'ignore_ament_install'
+[0.226s] Level 1:colcon.colcon_core.package_identification:_identify(codegen/exe/deployedPointPillarModel/html) by extensions ['colcon_pkg']
+[0.226s] Level 1:colcon.colcon_core.package_identification:_identify(codegen/exe/deployedPointPillarModel/html) by extension 'colcon_pkg'
+[0.226s] Level 1:colcon.colcon_core.package_identification:_identify(codegen/exe/deployedPointPillarModel/html) by extensions ['colcon_meta']
+[0.226s] Level 1:colcon.colcon_core.package_identification:_identify(codegen/exe/deployedPointPillarModel/html) by extension 'colcon_meta'
+[0.226s] Level 1:colcon.colcon_core.package_identification:_identify(codegen/exe/deployedPointPillarModel/html) by extensions ['ros']
+[0.226s] Level 1:colcon.colcon_core.package_identification:_identify(codegen/exe/deployedPointPillarModel/html) by extension 'ros'
+[0.226s] Level 1:colcon.colcon_core.package_identification:_identify(codegen/exe/deployedPointPillarModel/html) by extensions ['cmake', 'python']
+[0.226s] Level 1:colcon.colcon_core.package_identification:_identify(codegen/exe/deployedPointPillarModel/html) by extension 'cmake'
+[0.226s] Level 1:colcon.colcon_core.package_identification:_identify(codegen/exe/deployedPointPillarModel/html) by extension 'python'
+[0.226s] Level 1:colcon.colcon_core.package_identification:_identify(codegen/exe/deployedPointPillarModel/html) by extensions ['python_setup_py']
+[0.226s] Level 1:colcon.colcon_core.package_identification:_identify(codegen/exe/deployedPointPillarModel/html) by extension 'python_setup_py'
+[0.226s] Level 1:colcon.colcon_core.package_identification:_identify(codegen/exe/deployedPointPillarModel/interface) by extensions ['ignore', 'ignore_ament_install']
+[0.226s] Level 1:colcon.colcon_core.package_identification:_identify(codegen/exe/deployedPointPillarModel/interface) by extension 'ignore'
+[0.226s] Level 1:colcon.colcon_core.package_identification:_identify(codegen/exe/deployedPointPillarModel/interface) by extension 'ignore_ament_install'
+[0.226s] Level 1:colcon.colcon_core.package_identification:_identify(codegen/exe/deployedPointPillarModel/interface) by extensions ['colcon_pkg']
+[0.226s] Level 1:colcon.colcon_core.package_identification:_identify(codegen/exe/deployedPointPillarModel/interface) by extension 'colcon_pkg'
+[0.226s] Level 1:colcon.colcon_core.package_identification:_identify(codegen/exe/deployedPointPillarModel/interface) by extensions ['colcon_meta']
+[0.226s] Level 1:colcon.colcon_core.package_identification:_identify(codegen/exe/deployedPointPillarModel/interface) by extension 'colcon_meta'
+[0.226s] Level 1:colcon.colcon_core.package_identification:_identify(codegen/exe/deployedPointPillarModel/interface) by extensions ['ros']
+[0.226s] Level 1:colcon.colcon_core.package_identification:_identify(codegen/exe/deployedPointPillarModel/interface) by extension 'ros'
+[0.226s] Level 1:colcon.colcon_core.package_identification:_identify(codegen/exe/deployedPointPillarModel/interface) by extensions ['cmake', 'python']
+[0.226s] Level 1:colcon.colcon_core.package_identification:_identify(codegen/exe/deployedPointPillarModel/interface) by extension 'cmake'
+[0.226s] Level 1:colcon.colcon_core.package_identification:_identify(codegen/exe/deployedPointPillarModel/interface) by extension 'python'
+[0.226s] Level 1:colcon.colcon_core.package_identification:_identify(codegen/exe/deployedPointPillarModel/interface) by extensions ['python_setup_py']
+[0.226s] Level 1:colcon.colcon_core.package_identification:_identify(codegen/exe/deployedPointPillarModel/interface) by extension 'python_setup_py'
+[0.226s] Level 1:colcon.colcon_core.package_identification:_identify(codegen/lib) by extensions ['ignore', 'ignore_ament_install']
+[0.226s] Level 1:colcon.colcon_core.package_identification:_identify(codegen/lib) by extension 'ignore'
+[0.226s] Level 1:colcon.colcon_core.package_identification:_identify(codegen/lib) by extension 'ignore_ament_install'
+[0.226s] Level 1:colcon.colcon_core.package_identification:_identify(codegen/lib) by extensions ['colcon_pkg']
+[0.226s] Level 1:colcon.colcon_core.package_identification:_identify(codegen/lib) by extension 'colcon_pkg'
+[0.226s] Level 1:colcon.colcon_core.package_identification:_identify(codegen/lib) by extensions ['colcon_meta']
+[0.227s] Level 1:colcon.colcon_core.package_identification:_identify(codegen/lib) by extension 'colcon_meta'
+[0.227s] Level 1:colcon.colcon_core.package_identification:_identify(codegen/lib) by extensions ['ros']
+[0.227s] Level 1:colcon.colcon_core.package_identification:_identify(codegen/lib) by extension 'ros'
+[0.227s] Level 1:colcon.colcon_core.package_identification:_identify(codegen/lib) by extensions ['cmake', 'python']
+[0.227s] Level 1:colcon.colcon_core.package_identification:_identify(codegen/lib) by extension 'cmake'
+[0.227s] Level 1:colcon.colcon_core.package_identification:_identify(codegen/lib) by extension 'python'
+[0.227s] Level 1:colcon.colcon_core.package_identification:_identify(codegen/lib) by extensions ['python_setup_py']
+[0.227s] Level 1:colcon.colcon_core.package_identification:_identify(codegen/lib) by extension 'python_setup_py'
+[0.227s] Level 1:colcon.colcon_core.package_identification:_identify(codegen/lib/Avia_parsing) by extensions ['ignore', 'ignore_ament_install']
+[0.227s] Level 1:colcon.colcon_core.package_identification:_identify(codegen/lib/Avia_parsing) by extension 'ignore'
+[0.227s] Level 1:colcon.colcon_core.package_identification:_identify(codegen/lib/Avia_parsing) by extension 'ignore_ament_install'
+[0.227s] Level 1:colcon.colcon_core.package_identification:_identify(codegen/lib/Avia_parsing) by extensions ['colcon_pkg']
+[0.227s] Level 1:colcon.colcon_core.package_identification:_identify(codegen/lib/Avia_parsing) by extension 'colcon_pkg'
+[0.227s] Level 1:colcon.colcon_core.package_identification:_identify(codegen/lib/Avia_parsing) by extensions ['colcon_meta']
+[0.227s] Level 1:colcon.colcon_core.package_identification:_identify(codegen/lib/Avia_parsing) by extension 'colcon_meta'
+[0.227s] Level 1:colcon.colcon_core.package_identification:_identify(codegen/lib/Avia_parsing) by extensions ['ros']
+[0.227s] Level 1:colcon.colcon_core.package_identification:_identify(codegen/lib/Avia_parsing) by extension 'ros'
+[0.227s] Level 1:colcon.colcon_core.package_identification:_identify(codegen/lib/Avia_parsing) by extensions ['cmake', 'python']
+[0.227s] Level 1:colcon.colcon_core.package_identification:_identify(codegen/lib/Avia_parsing) by extension 'cmake'
+[0.227s] Level 1:colcon.colcon_core.package_identification:_identify(codegen/lib/Avia_parsing) by extension 'python'
+[0.227s] Level 1:colcon.colcon_core.package_identification:_identify(codegen/lib/Avia_parsing) by extensions ['python_setup_py']
+[0.227s] Level 1:colcon.colcon_core.package_identification:_identify(codegen/lib/Avia_parsing) by extension 'python_setup_py'
+[0.227s] Level 1:colcon.colcon_core.package_identification:_identify(codegen/lib/Avia_parsing/examples) by extensions ['ignore', 'ignore_ament_install']
+[0.227s] Level 1:colcon.colcon_core.package_identification:_identify(codegen/lib/Avia_parsing/examples) by extension 'ignore'
+[0.227s] Level 1:colcon.colcon_core.package_identification:_identify(codegen/lib/Avia_parsing/examples) by extension 'ignore_ament_install'
+[0.227s] Level 1:colcon.colcon_core.package_identification:_identify(codegen/lib/Avia_parsing/examples) by extensions ['colcon_pkg']
+[0.227s] Level 1:colcon.colcon_core.package_identification:_identify(codegen/lib/Avia_parsing/examples) by extension 'colcon_pkg'
+[0.227s] Level 1:colcon.colcon_core.package_identification:_identify(codegen/lib/Avia_parsing/examples) by extensions ['colcon_meta']
+[0.227s] Level 1:colcon.colcon_core.package_identification:_identify(codegen/lib/Avia_parsing/examples) by extension 'colcon_meta'
+[0.227s] Level 1:colcon.colcon_core.package_identification:_identify(codegen/lib/Avia_parsing/examples) by extensions ['ros']
+[0.227s] Level 1:colcon.colcon_core.package_identification:_identify(codegen/lib/Avia_parsing/examples) by extension 'ros'
+[0.227s] Level 1:colcon.colcon_core.package_identification:_identify(codegen/lib/Avia_parsing/examples) by extensions ['cmake', 'python']
+[0.227s] Level 1:colcon.colcon_core.package_identification:_identify(codegen/lib/Avia_parsing/examples) by extension 'cmake'
+[0.227s] Level 1:colcon.colcon_core.package_identification:_identify(codegen/lib/Avia_parsing/examples) by extension 'python'
+[0.227s] Level 1:colcon.colcon_core.package_identification:_identify(codegen/lib/Avia_parsing/examples) by extensions ['python_setup_py']
+[0.227s] Level 1:colcon.colcon_core.package_identification:_identify(codegen/lib/Avia_parsing/examples) by extension 'python_setup_py'
+[0.227s] Level 1:colcon.colcon_core.package_identification:_identify(codegen/lib/Avia_parsing/html) by extensions ['ignore', 'ignore_ament_install']
+[0.227s] Level 1:colcon.colcon_core.package_identification:_identify(codegen/lib/Avia_parsing/html) by extension 'ignore'
+[0.227s] Level 1:colcon.colcon_core.package_identification:_identify(codegen/lib/Avia_parsing/html) by extension 'ignore_ament_install'
+[0.228s] Level 1:colcon.colcon_core.package_identification:_identify(codegen/lib/Avia_parsing/html) by extensions ['colcon_pkg']
+[0.228s] Level 1:colcon.colcon_core.package_identification:_identify(codegen/lib/Avia_parsing/html) by extension 'colcon_pkg'
+[0.228s] Level 1:colcon.colcon_core.package_identification:_identify(codegen/lib/Avia_parsing/html) by extensions ['colcon_meta']
+[0.228s] Level 1:colcon.colcon_core.package_identification:_identify(codegen/lib/Avia_parsing/html) by extension 'colcon_meta'
+[0.228s] Level 1:colcon.colcon_core.package_identification:_identify(codegen/lib/Avia_parsing/html) by extensions ['ros']
+[0.228s] Level 1:colcon.colcon_core.package_identification:_identify(codegen/lib/Avia_parsing/html) by extension 'ros'
+[0.228s] Level 1:colcon.colcon_core.package_identification:_identify(codegen/lib/Avia_parsing/html) by extensions ['cmake', 'python']
+[0.228s] Level 1:colcon.colcon_core.package_identification:_identify(codegen/lib/Avia_parsing/html) by extension 'cmake'
+[0.228s] Level 1:colcon.colcon_core.package_identification:_identify(codegen/lib/Avia_parsing/html) by extension 'python'
+[0.228s] Level 1:colcon.colcon_core.package_identification:_identify(codegen/lib/Avia_parsing/html) by extensions ['python_setup_py']
+[0.228s] Level 1:colcon.colcon_core.package_identification:_identify(codegen/lib/Avia_parsing/html) by extension 'python_setup_py'
+[0.228s] Level 1:colcon.colcon_core.package_identification:_identify(codegen/lib/Avia_parsing/interface) by extensions ['ignore', 'ignore_ament_install']
+[0.228s] Level 1:colcon.colcon_core.package_identification:_identify(codegen/lib/Avia_parsing/interface) by extension 'ignore'
+[0.228s] Level 1:colcon.colcon_core.package_identification:_identify(codegen/lib/Avia_parsing/interface) by extension 'ignore_ament_install'
+[0.228s] Level 1:colcon.colcon_core.package_identification:_identify(codegen/lib/Avia_parsing/interface) by extensions ['colcon_pkg']
+[0.228s] Level 1:colcon.colcon_core.package_identification:_identify(codegen/lib/Avia_parsing/interface) by extension 'colcon_pkg'
+[0.228s] Level 1:colcon.colcon_core.package_identification:_identify(codegen/lib/Avia_parsing/interface) by extensions ['colcon_meta']
+[0.228s] Level 1:colcon.colcon_core.package_identification:_identify(codegen/lib/Avia_parsing/interface) by extension 'colcon_meta'
+[0.228s] Level 1:colcon.colcon_core.package_identification:_identify(codegen/lib/Avia_parsing/interface) by extensions ['ros']
+[0.228s] Level 1:colcon.colcon_core.package_identification:_identify(codegen/lib/Avia_parsing/interface) by extension 'ros'
+[0.228s] Level 1:colcon.colcon_core.package_identification:_identify(codegen/lib/Avia_parsing/interface) by extensions ['cmake', 'python']
+[0.228s] Level 1:colcon.colcon_core.package_identification:_identify(codegen/lib/Avia_parsing/interface) by extension 'cmake'
+[0.228s] Level 1:colcon.colcon_core.package_identification:_identify(codegen/lib/Avia_parsing/interface) by extension 'python'
+[0.228s] Level 1:colcon.colcon_core.package_identification:_identify(codegen/lib/Avia_parsing/interface) by extensions ['python_setup_py']
+[0.228s] Level 1:colcon.colcon_core.package_identification:_identify(codegen/lib/Avia_parsing/interface) by extension 'python_setup_py'
+[0.228s] Level 1:colcon.colcon_core.package_identification:_identify(codegen/mex) by extensions ['ignore', 'ignore_ament_install']
+[0.228s] Level 1:colcon.colcon_core.package_identification:_identify(codegen/mex) by extension 'ignore'
+[0.228s] Level 1:colcon.colcon_core.package_identification:_identify(codegen/mex) by extension 'ignore_ament_install'
+[0.228s] Level 1:colcon.colcon_core.package_identification:_identify(codegen/mex) by extensions ['colcon_pkg']
+[0.228s] Level 1:colcon.colcon_core.package_identification:_identify(codegen/mex) by extension 'colcon_pkg'
+[0.228s] Level 1:colcon.colcon_core.package_identification:_identify(codegen/mex) by extensions ['colcon_meta']
+[0.228s] Level 1:colcon.colcon_core.package_identification:_identify(codegen/mex) by extension 'colcon_meta'
+[0.228s] Level 1:colcon.colcon_core.package_identification:_identify(codegen/mex) by extensions ['ros']
+[0.228s] Level 1:colcon.colcon_core.package_identification:_identify(codegen/mex) by extension 'ros'
+[0.228s] Level 1:colcon.colcon_core.package_identification:_identify(codegen/mex) by extensions ['cmake', 'python']
+[0.228s] Level 1:colcon.colcon_core.package_identification:_identify(codegen/mex) by extension 'cmake'
+[0.228s] Level 1:colcon.colcon_core.package_identification:_identify(codegen/mex) by extension 'python'
+[0.228s] Level 1:colcon.colcon_core.package_identification:_identify(codegen/mex) by extensions ['python_setup_py']
+[0.228s] Level 1:colcon.colcon_core.package_identification:_identify(codegen/mex) by extension 'python_setup_py'
+[0.228s] Level 1:colcon.colcon_core.package_identification:_identify(codegen/mex/Avia_parsing) by extensions ['ignore', 'ignore_ament_install']
+[0.229s] Level 1:colcon.colcon_core.package_identification:_identify(codegen/mex/Avia_parsing) by extension 'ignore'
+[0.229s] Level 1:colcon.colcon_core.package_identification:_identify(codegen/mex/Avia_parsing) by extension 'ignore_ament_install'
+[0.229s] Level 1:colcon.colcon_core.package_identification:_identify(codegen/mex/Avia_parsing) by extensions ['colcon_pkg']
+[0.229s] Level 1:colcon.colcon_core.package_identification:_identify(codegen/mex/Avia_parsing) by extension 'colcon_pkg'
+[0.229s] Level 1:colcon.colcon_core.package_identification:_identify(codegen/mex/Avia_parsing) by extensions ['colcon_meta']
+[0.229s] Level 1:colcon.colcon_core.package_identification:_identify(codegen/mex/Avia_parsing) by extension 'colcon_meta'
+[0.229s] Level 1:colcon.colcon_core.package_identification:_identify(codegen/mex/Avia_parsing) by extensions ['ros']
+[0.229s] Level 1:colcon.colcon_core.package_identification:_identify(codegen/mex/Avia_parsing) by extension 'ros'
+[0.229s] Level 1:colcon.colcon_core.package_identification:_identify(codegen/mex/Avia_parsing) by extensions ['cmake', 'python']
+[0.229s] Level 1:colcon.colcon_core.package_identification:_identify(codegen/mex/Avia_parsing) by extension 'cmake'
+[0.229s] Level 1:colcon.colcon_core.package_identification:_identify(codegen/mex/Avia_parsing) by extension 'python'
+[0.229s] Level 1:colcon.colcon_core.package_identification:_identify(codegen/mex/Avia_parsing) by extensions ['python_setup_py']
+[0.229s] Level 1:colcon.colcon_core.package_identification:_identify(codegen/mex/Avia_parsing) by extension 'python_setup_py'
+[0.229s] Level 1:colcon.colcon_core.package_identification:_identify(codegen/mex/Avia_parsing/html) by extensions ['ignore', 'ignore_ament_install']
+[0.229s] Level 1:colcon.colcon_core.package_identification:_identify(codegen/mex/Avia_parsing/html) by extension 'ignore'
+[0.229s] Level 1:colcon.colcon_core.package_identification:_identify(codegen/mex/Avia_parsing/html) by extension 'ignore_ament_install'
+[0.229s] Level 1:colcon.colcon_core.package_identification:_identify(codegen/mex/Avia_parsing/html) by extensions ['colcon_pkg']
+[0.229s] Level 1:colcon.colcon_core.package_identification:_identify(codegen/mex/Avia_parsing/html) by extension 'colcon_pkg'
+[0.229s] Level 1:colcon.colcon_core.package_identification:_identify(codegen/mex/Avia_parsing/html) by extensions ['colcon_meta']
+[0.229s] Level 1:colcon.colcon_core.package_identification:_identify(codegen/mex/Avia_parsing/html) by extension 'colcon_meta'
+[0.229s] Level 1:colcon.colcon_core.package_identification:_identify(codegen/mex/Avia_parsing/html) by extensions ['ros']
+[0.229s] Level 1:colcon.colcon_core.package_identification:_identify(codegen/mex/Avia_parsing/html) by extension 'ros'
+[0.229s] Level 1:colcon.colcon_core.package_identification:_identify(codegen/mex/Avia_parsing/html) by extensions ['cmake', 'python']
+[0.229s] Level 1:colcon.colcon_core.package_identification:_identify(codegen/mex/Avia_parsing/html) by extension 'cmake'
+[0.229s] Level 1:colcon.colcon_core.package_identification:_identify(codegen/mex/Avia_parsing/html) by extension 'python'
+[0.229s] Level 1:colcon.colcon_core.package_identification:_identify(codegen/mex/Avia_parsing/html) by extensions ['python_setup_py']
+[0.229s] Level 1:colcon.colcon_core.package_identification:_identify(codegen/mex/Avia_parsing/html) by extension 'python_setup_py'
+[0.229s] Level 1:colcon.colcon_core.package_identification:_identify(codegen/mex/Avia_parsing/interface) by extensions ['ignore', 'ignore_ament_install']
+[0.229s] Level 1:colcon.colcon_core.package_identification:_identify(codegen/mex/Avia_parsing/interface) by extension 'ignore'
+[0.229s] Level 1:colcon.colcon_core.package_identification:_identify(codegen/mex/Avia_parsing/interface) by extension 'ignore_ament_install'
+[0.229s] Level 1:colcon.colcon_core.package_identification:_identify(codegen/mex/Avia_parsing/interface) by extensions ['colcon_pkg']
+[0.229s] Level 1:colcon.colcon_core.package_identification:_identify(codegen/mex/Avia_parsing/interface) by extension 'colcon_pkg'
+[0.229s] Level 1:colcon.colcon_core.package_identification:_identify(codegen/mex/Avia_parsing/interface) by extensions ['colcon_meta']
+[0.229s] Level 1:colcon.colcon_core.package_identification:_identify(codegen/mex/Avia_parsing/interface) by extension 'colcon_meta'
+[0.229s] Level 1:colcon.colcon_core.package_identification:_identify(codegen/mex/Avia_parsing/interface) by extensions ['ros']
+[0.229s] Level 1:colcon.colcon_core.package_identification:_identify(codegen/mex/Avia_parsing/interface) by extension 'ros'
+[0.229s] Level 1:colcon.colcon_core.package_identification:_identify(codegen/mex/Avia_parsing/interface) by extensions ['cmake', 'python']
+[0.229s] Level 1:colcon.colcon_core.package_identification:_identify(codegen/mex/Avia_parsing/interface) by extension 'cmake'
+[0.229s] Level 1:colcon.colcon_core.package_identification:_identify(codegen/mex/Avia_parsing/interface) by extension 'python'
+[0.229s] Level 1:colcon.colcon_core.package_identification:_identify(codegen/mex/Avia_parsing/interface) by extensions ['python_setup_py']
+[0.229s] Level 1:colcon.colcon_core.package_identification:_identify(codegen/mex/Avia_parsing/interface) by extension 'python_setup_py'
+[0.230s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extensions ['ignore', 'ignore_ament_install']
+[0.230s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extension 'ignore'
+[0.230s] Level 1:colcon.colcon_core.package_identification:_identify(install) ignored
+[0.230s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extensions ['ignore', 'ignore_ament_install']
+[0.230s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extension 'ignore'
+[0.230s] Level 1:colcon.colcon_core.package_identification:_identify(log) ignored
+[0.230s] Level 1:colcon.colcon_core.package_identification:_identify(msgdef) by extensions ['ignore', 'ignore_ament_install']
+[0.230s] Level 1:colcon.colcon_core.package_identification:_identify(msgdef) by extension 'ignore'
+[0.230s] Level 1:colcon.colcon_core.package_identification:_identify(msgdef) by extension 'ignore_ament_install'
+[0.230s] Level 1:colcon.colcon_core.package_identification:_identify(msgdef) by extensions ['colcon_pkg']
+[0.230s] Level 1:colcon.colcon_core.package_identification:_identify(msgdef) by extension 'colcon_pkg'
+[0.230s] Level 1:colcon.colcon_core.package_identification:_identify(msgdef) by extensions ['colcon_meta']
+[0.230s] Level 1:colcon.colcon_core.package_identification:_identify(msgdef) by extension 'colcon_meta'
+[0.230s] Level 1:colcon.colcon_core.package_identification:_identify(msgdef) by extensions ['ros']
+[0.230s] Level 1:colcon.colcon_core.package_identification:_identify(msgdef) by extension 'ros'
+[0.230s] Level 1:colcon.colcon_core.package_identification:_identify(msgdef) by extensions ['cmake', 'python']
+[0.230s] Level 1:colcon.colcon_core.package_identification:_identify(msgdef) by extension 'cmake'
+[0.230s] Level 1:colcon.colcon_core.package_identification:_identify(msgdef) by extension 'python'
+[0.230s] Level 1:colcon.colcon_core.package_identification:_identify(msgdef) by extensions ['python_setup_py']
+[0.230s] Level 1:colcon.colcon_core.package_identification:_identify(msgdef) by extension 'python_setup_py'
+[0.230s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['ignore', 'ignore_ament_install']
+[0.230s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ignore'
+[0.230s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ignore_ament_install'
+[0.230s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['colcon_pkg']
+[0.230s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'colcon_pkg'
+[0.230s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['colcon_meta']
+[0.230s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'colcon_meta'
+[0.230s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['ros']
+[0.230s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ros'
+[0.230s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['cmake', 'python']
+[0.230s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'cmake'
+[0.230s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'python'
+[0.230s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['python_setup_py']
+[0.230s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'python_setup_py'
+[0.230s] Level 1:colcon.colcon_core.package_identification:_identify(src/deployedpointpillarmodel) by extensions ['ignore', 'ignore_ament_install']
+[0.230s] Level 1:colcon.colcon_core.package_identification:_identify(src/deployedpointpillarmodel) by extension 'ignore'
+[0.230s] Level 1:colcon.colcon_core.package_identification:_identify(src/deployedpointpillarmodel) by extension 'ignore_ament_install'
+[0.231s] Level 1:colcon.colcon_core.package_identification:_identify(src/deployedpointpillarmodel) by extensions ['colcon_pkg']
+[0.231s] Level 1:colcon.colcon_core.package_identification:_identify(src/deployedpointpillarmodel) by extension 'colcon_pkg'
+[0.231s] Level 1:colcon.colcon_core.package_identification:_identify(src/deployedpointpillarmodel) by extensions ['colcon_meta']
+[0.231s] Level 1:colcon.colcon_core.package_identification:_identify(src/deployedpointpillarmodel) by extension 'colcon_meta'
+[0.231s] Level 1:colcon.colcon_core.package_identification:_identify(src/deployedpointpillarmodel) by extensions ['ros']
+[0.231s] Level 1:colcon.colcon_core.package_identification:_identify(src/deployedpointpillarmodel) by extension 'ros'
+[0.232s] DEBUG:colcon.colcon_core.package_identification:Package 'src/deployedpointpillarmodel' with type 'ros.ament_cmake' and name 'deployedpointpillarmodel'
+[0.232s] Level 1:colcon.colcon_core.package_identification:_identify(src/vision_msgs) by extensions ['ignore', 'ignore_ament_install']
+[0.232s] Level 1:colcon.colcon_core.package_identification:_identify(src/vision_msgs) by extension 'ignore'
+[0.232s] Level 1:colcon.colcon_core.package_identification:_identify(src/vision_msgs) by extension 'ignore_ament_install'
+[0.232s] Level 1:colcon.colcon_core.package_identification:_identify(src/vision_msgs) by extensions ['colcon_pkg']
+[0.233s] Level 1:colcon.colcon_core.package_identification:_identify(src/vision_msgs) by extension 'colcon_pkg'
+[0.233s] Level 1:colcon.colcon_core.package_identification:_identify(src/vision_msgs) by extensions ['colcon_meta']
+[0.233s] Level 1:colcon.colcon_core.package_identification:_identify(src/vision_msgs) by extension 'colcon_meta'
+[0.233s] Level 1:colcon.colcon_core.package_identification:_identify(src/vision_msgs) by extensions ['ros']
+[0.233s] Level 1:colcon.colcon_core.package_identification:_identify(src/vision_msgs) by extension 'ros'
+[0.233s] DEBUG:colcon.colcon_core.package_identification:Package 'src/vision_msgs' with type 'ros.ament_cmake' and name 'vision_msgs'
+[0.233s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) using defaults
+[0.233s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) discover
+[0.233s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) using defaults
+[0.233s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) discover
+[0.233s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) using defaults
+[0.243s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) check parameters
+[0.243s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) discover
+[0.244s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 2 installed packages in /home/aiv/YongJun_ws/matlab/AutoL_LiDAR/install
+[0.245s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 263 installed packages in /opt/ros/foxy
+[0.250s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) using defaults
+[0.280s] Level 5:colcon.colcon_core.verb:set package 'vision_msgs' build argument 'cmake_args' from command line to 'None'
+[0.280s] Level 5:colcon.colcon_core.verb:set package 'vision_msgs' build argument 'cmake_target' from command line to 'None'
+[0.280s] Level 5:colcon.colcon_core.verb:set package 'vision_msgs' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.280s] Level 5:colcon.colcon_core.verb:set package 'vision_msgs' build argument 'cmake_clean_cache' from command line to 'False'
+[0.280s] Level 5:colcon.colcon_core.verb:set package 'vision_msgs' build argument 'cmake_clean_first' from command line to 'False'
+[0.280s] Level 5:colcon.colcon_core.verb:set package 'vision_msgs' build argument 'cmake_force_configure' from command line to 'False'
+[0.280s] Level 5:colcon.colcon_core.verb:set package 'vision_msgs' build argument 'ament_cmake_args' from command line to 'None'
+[0.280s] Level 5:colcon.colcon_core.verb:set package 'vision_msgs' build argument 'catkin_cmake_args' from command line to 'None'
+[0.280s] Level 5:colcon.colcon_core.verb:set package 'vision_msgs' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.280s] DEBUG:colcon.colcon_core.verb:Building package 'vision_msgs' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/aiv/YongJun_ws/matlab/Livox_LiDAR/build/vision_msgs', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/aiv/YongJun_ws/matlab/Livox_LiDAR/install/vision_msgs', 'merge_install': False, 'path': '/home/aiv/YongJun_ws/matlab/Livox_LiDAR/src/vision_msgs', 'symlink_install': True, 'test_result_base': None}
+[0.281s] Level 5:colcon.colcon_core.verb:set package 'deployedpointpillarmodel' build argument 'cmake_args' from command line to 'None'
+[0.281s] Level 5:colcon.colcon_core.verb:set package 'deployedpointpillarmodel' build argument 'cmake_target' from command line to 'None'
+[0.281s] Level 5:colcon.colcon_core.verb:set package 'deployedpointpillarmodel' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.281s] Level 5:colcon.colcon_core.verb:set package 'deployedpointpillarmodel' build argument 'cmake_clean_cache' from command line to 'False'
+[0.281s] Level 5:colcon.colcon_core.verb:set package 'deployedpointpillarmodel' build argument 'cmake_clean_first' from command line to 'False'
+[0.281s] Level 5:colcon.colcon_core.verb:set package 'deployedpointpillarmodel' build argument 'cmake_force_configure' from command line to 'False'
+[0.281s] Level 5:colcon.colcon_core.verb:set package 'deployedpointpillarmodel' build argument 'ament_cmake_args' from command line to 'None'
+[0.281s] Level 5:colcon.colcon_core.verb:set package 'deployedpointpillarmodel' build argument 'catkin_cmake_args' from command line to 'None'
+[0.281s] Level 5:colcon.colcon_core.verb:set package 'deployedpointpillarmodel' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.281s] DEBUG:colcon.colcon_core.verb:Building package 'deployedpointpillarmodel' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/aiv/YongJun_ws/matlab/Livox_LiDAR/build/deployedpointpillarmodel', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/aiv/YongJun_ws/matlab/Livox_LiDAR/install/deployedpointpillarmodel', 'merge_install': False, 'path': '/home/aiv/YongJun_ws/matlab/Livox_LiDAR/src/deployedpointpillarmodel', 'symlink_install': True, 'test_result_base': None}
+[0.281s] INFO:colcon.colcon_core.executor:Executing jobs using 'parallel' executor
+[0.282s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete
+[0.282s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/aiv/YongJun_ws/matlab/Livox_LiDAR/src/vision_msgs' with build type 'ament_cmake'
+[0.282s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/aiv/YongJun_ws/matlab/Livox_LiDAR/src/vision_msgs'
+[0.283s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_core.shell.bat': Not used on non-Windows systems
+[0.283s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.283s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.290s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/aiv/YongJun_ws/matlab/Livox_LiDAR/build/vision_msgs': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/foxy /usr/bin/cmake /home/aiv/YongJun_ws/matlab/Livox_LiDAR/src/vision_msgs -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/aiv/YongJun_ws/matlab/Livox_LiDAR/install/vision_msgs
+[1.506s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/aiv/YongJun_ws/matlab/Livox_LiDAR/build/vision_msgs' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/foxy /usr/bin/cmake /home/aiv/YongJun_ws/matlab/Livox_LiDAR/src/vision_msgs -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/aiv/YongJun_ws/matlab/Livox_LiDAR/install/vision_msgs
+[1.508s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/aiv/YongJun_ws/matlab/Livox_LiDAR/build/vision_msgs': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/foxy /usr/bin/cmake --build /home/aiv/YongJun_ws/matlab/Livox_LiDAR/build/vision_msgs -- -j32 -l32
+[4.196s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/aiv/YongJun_ws/matlab/Livox_LiDAR/build/vision_msgs' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/foxy /usr/bin/cmake --build /home/aiv/YongJun_ws/matlab/Livox_LiDAR/build/vision_msgs -- -j32 -l32
+[4.267s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/aiv/YongJun_ws/matlab/Livox_LiDAR/build/vision_msgs': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/foxy /usr/bin/cmake --install /home/aiv/YongJun_ws/matlab/Livox_LiDAR/build/vision_msgs
+[4.890s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(vision_msgs)
+[4.890s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/aiv/YongJun_ws/matlab/Livox_LiDAR/build/vision_msgs' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/foxy /usr/bin/cmake --install /home/aiv/YongJun_ws/matlab/Livox_LiDAR/build/vision_msgs
+[4.892s] Level 1:colcon.colcon_core.environment:checking '/home/aiv/YongJun_ws/matlab/Livox_LiDAR/install/vision_msgs' for CMake module files
+[4.892s] Level 1:colcon.colcon_core.environment:checking '/home/aiv/YongJun_ws/matlab/Livox_LiDAR/install/vision_msgs' for CMake config files
+[4.892s] Level 1:colcon.colcon_core.shell:create_environment_hook('vision_msgs', 'cmake_prefix_path')
+[4.893s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/aiv/YongJun_ws/matlab/Livox_LiDAR/install/vision_msgs/share/vision_msgs/hook/cmake_prefix_path.ps1'
+[4.893s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/aiv/YongJun_ws/matlab/Livox_LiDAR/install/vision_msgs/share/vision_msgs/hook/cmake_prefix_path.dsv'
+[4.893s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/aiv/YongJun_ws/matlab/Livox_LiDAR/install/vision_msgs/share/vision_msgs/hook/cmake_prefix_path.sh'
+[4.894s] Level 1:colcon.colcon_core.environment:checking '/home/aiv/YongJun_ws/matlab/Livox_LiDAR/install/vision_msgs/lib'
+[4.894s] Level 1:colcon.colcon_core.shell:create_environment_hook('vision_msgs', 'ld_library_path_lib')
+[4.894s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/aiv/YongJun_ws/matlab/Livox_LiDAR/install/vision_msgs/share/vision_msgs/hook/ld_library_path_lib.ps1'
+[4.894s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/aiv/YongJun_ws/matlab/Livox_LiDAR/install/vision_msgs/share/vision_msgs/hook/ld_library_path_lib.dsv'
+[4.894s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/aiv/YongJun_ws/matlab/Livox_LiDAR/install/vision_msgs/share/vision_msgs/hook/ld_library_path_lib.sh'
+[4.895s] Level 1:colcon.colcon_core.environment:checking '/home/aiv/YongJun_ws/matlab/Livox_LiDAR/install/vision_msgs/bin'
+[4.895s] Level 1:colcon.colcon_core.environment:checking '/home/aiv/YongJun_ws/matlab/Livox_LiDAR/install/vision_msgs/lib/pkgconfig/vision_msgs.pc'
+[4.895s] Level 1:colcon.colcon_core.environment:checking '/home/aiv/YongJun_ws/matlab/Livox_LiDAR/install/vision_msgs/lib/python3.8/site-packages'
+[4.895s] Level 1:colcon.colcon_core.shell:create_environment_hook('vision_msgs', 'pythonpath')
+[4.895s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/aiv/YongJun_ws/matlab/Livox_LiDAR/install/vision_msgs/share/vision_msgs/hook/pythonpath.ps1'
+[4.895s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/aiv/YongJun_ws/matlab/Livox_LiDAR/install/vision_msgs/share/vision_msgs/hook/pythonpath.dsv'
+[4.895s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/aiv/YongJun_ws/matlab/Livox_LiDAR/install/vision_msgs/share/vision_msgs/hook/pythonpath.sh'
+[4.895s] Level 1:colcon.colcon_core.environment:checking '/home/aiv/YongJun_ws/matlab/Livox_LiDAR/install/vision_msgs/bin'
+[4.896s] INFO:colcon.colcon_core.shell:Creating package script '/home/aiv/YongJun_ws/matlab/Livox_LiDAR/install/vision_msgs/share/vision_msgs/package.ps1'
+[4.896s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/aiv/YongJun_ws/matlab/Livox_LiDAR/install/vision_msgs/share/vision_msgs/package.dsv'
+[4.896s] INFO:colcon.colcon_core.shell:Creating package script '/home/aiv/YongJun_ws/matlab/Livox_LiDAR/install/vision_msgs/share/vision_msgs/package.sh'
+[4.897s] INFO:colcon.colcon_core.shell:Creating package script '/home/aiv/YongJun_ws/matlab/Livox_LiDAR/install/vision_msgs/share/vision_msgs/package.bash'
+[4.897s] INFO:colcon.colcon_core.shell:Creating package script '/home/aiv/YongJun_ws/matlab/Livox_LiDAR/install/vision_msgs/share/vision_msgs/package.zsh'
+[4.897s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/aiv/YongJun_ws/matlab/Livox_LiDAR/install/vision_msgs/share/colcon-core/packages/vision_msgs)
+[4.958s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(vision_msgs)
+[4.958s] Level 1:colcon.colcon_core.environment:checking '/home/aiv/YongJun_ws/matlab/Livox_LiDAR/install/vision_msgs' for CMake module files
+[4.958s] Level 1:colcon.colcon_core.environment:checking '/home/aiv/YongJun_ws/matlab/Livox_LiDAR/install/vision_msgs' for CMake config files
+[4.959s] Level 1:colcon.colcon_core.shell:create_environment_hook('vision_msgs', 'cmake_prefix_path')
+[4.959s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/aiv/YongJun_ws/matlab/Livox_LiDAR/install/vision_msgs/share/vision_msgs/hook/cmake_prefix_path.ps1'
+[4.959s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/aiv/YongJun_ws/matlab/Livox_LiDAR/install/vision_msgs/share/vision_msgs/hook/cmake_prefix_path.dsv'
+[4.959s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/aiv/YongJun_ws/matlab/Livox_LiDAR/install/vision_msgs/share/vision_msgs/hook/cmake_prefix_path.sh'
+[4.960s] Level 1:colcon.colcon_core.environment:checking '/home/aiv/YongJun_ws/matlab/Livox_LiDAR/install/vision_msgs/lib'
+[4.960s] Level 1:colcon.colcon_core.shell:create_environment_hook('vision_msgs', 'ld_library_path_lib')
+[4.960s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/aiv/YongJun_ws/matlab/Livox_LiDAR/install/vision_msgs/share/vision_msgs/hook/ld_library_path_lib.ps1'
+[4.960s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/aiv/YongJun_ws/matlab/Livox_LiDAR/install/vision_msgs/share/vision_msgs/hook/ld_library_path_lib.dsv'
+[4.960s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/aiv/YongJun_ws/matlab/Livox_LiDAR/install/vision_msgs/share/vision_msgs/hook/ld_library_path_lib.sh'
+[4.960s] Level 1:colcon.colcon_core.environment:checking '/home/aiv/YongJun_ws/matlab/Livox_LiDAR/install/vision_msgs/bin'
+[4.960s] Level 1:colcon.colcon_core.environment:checking '/home/aiv/YongJun_ws/matlab/Livox_LiDAR/install/vision_msgs/lib/pkgconfig/vision_msgs.pc'
+[4.960s] Level 1:colcon.colcon_core.environment:checking '/home/aiv/YongJun_ws/matlab/Livox_LiDAR/install/vision_msgs/lib/python3.8/site-packages'
+[4.960s] Level 1:colcon.colcon_core.shell:create_environment_hook('vision_msgs', 'pythonpath')
+[4.961s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/aiv/YongJun_ws/matlab/Livox_LiDAR/install/vision_msgs/share/vision_msgs/hook/pythonpath.ps1'
+[4.961s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/aiv/YongJun_ws/matlab/Livox_LiDAR/install/vision_msgs/share/vision_msgs/hook/pythonpath.dsv'
+[4.961s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/aiv/YongJun_ws/matlab/Livox_LiDAR/install/vision_msgs/share/vision_msgs/hook/pythonpath.sh'
+[4.961s] Level 1:colcon.colcon_core.environment:checking '/home/aiv/YongJun_ws/matlab/Livox_LiDAR/install/vision_msgs/bin'
+[4.961s] INFO:colcon.colcon_core.shell:Creating package script '/home/aiv/YongJun_ws/matlab/Livox_LiDAR/install/vision_msgs/share/vision_msgs/package.ps1'
+[4.962s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/aiv/YongJun_ws/matlab/Livox_LiDAR/install/vision_msgs/share/vision_msgs/package.dsv'
+[4.962s] INFO:colcon.colcon_core.shell:Creating package script '/home/aiv/YongJun_ws/matlab/Livox_LiDAR/install/vision_msgs/share/vision_msgs/package.sh'
+[4.962s] INFO:colcon.colcon_core.shell:Creating package script '/home/aiv/YongJun_ws/matlab/Livox_LiDAR/install/vision_msgs/share/vision_msgs/package.bash'
+[4.962s] INFO:colcon.colcon_core.shell:Creating package script '/home/aiv/YongJun_ws/matlab/Livox_LiDAR/install/vision_msgs/share/vision_msgs/package.zsh'
+[4.962s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/aiv/YongJun_ws/matlab/Livox_LiDAR/install/vision_msgs/share/colcon-core/packages/vision_msgs)
+[4.963s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/aiv/YongJun_ws/matlab/Livox_LiDAR/src/deployedpointpillarmodel' with build type 'ament_cmake'
+[4.963s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/aiv/YongJun_ws/matlab/Livox_LiDAR/src/deployedpointpillarmodel'
+[4.963s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[4.963s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[4.970s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/aiv/YongJun_ws/matlab/Livox_LiDAR/build/deployedpointpillarmodel': AMENT_PREFIX_PATH=/home/aiv/YongJun_ws/matlab/Livox_LiDAR/install/vision_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/aiv/YongJun_ws/matlab/Livox_LiDAR/install/vision_msgs:/home/aiv/YongJun_ws/matlab/AutoL_LiDAR/install/deployedpointpillarmodel:/home/aiv/YongJun_ws/matlab/AutoL_LiDAR/install/vision_msgs:/opt/ros/foxy LD_LIBRARY_PATH=/home/aiv/YongJun_ws/matlab/Livox_LiDAR/install/vision_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/aiv/YongJun_ws/matlab/Livox_LiDAR/install/vision_msgs/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/cmake /home/aiv/YongJun_ws/matlab/Livox_LiDAR/src/deployedpointpillarmodel -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/aiv/YongJun_ws/matlab/Livox_LiDAR/install/deployedpointpillarmodel
+[7.234s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/aiv/YongJun_ws/matlab/Livox_LiDAR/build/deployedpointpillarmodel' returned '0': AMENT_PREFIX_PATH=/home/aiv/YongJun_ws/matlab/Livox_LiDAR/install/vision_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/aiv/YongJun_ws/matlab/Livox_LiDAR/install/vision_msgs:/home/aiv/YongJun_ws/matlab/AutoL_LiDAR/install/deployedpointpillarmodel:/home/aiv/YongJun_ws/matlab/AutoL_LiDAR/install/vision_msgs:/opt/ros/foxy LD_LIBRARY_PATH=/home/aiv/YongJun_ws/matlab/Livox_LiDAR/install/vision_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/aiv/YongJun_ws/matlab/Livox_LiDAR/install/vision_msgs/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/cmake /home/aiv/YongJun_ws/matlab/Livox_LiDAR/src/deployedpointpillarmodel -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/aiv/YongJun_ws/matlab/Livox_LiDAR/install/deployedpointpillarmodel
+[7.234s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/aiv/YongJun_ws/matlab/Livox_LiDAR/build/deployedpointpillarmodel': AMENT_PREFIX_PATH=/home/aiv/YongJun_ws/matlab/Livox_LiDAR/install/vision_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/aiv/YongJun_ws/matlab/Livox_LiDAR/install/vision_msgs:/home/aiv/YongJun_ws/matlab/AutoL_LiDAR/install/deployedpointpillarmodel:/home/aiv/YongJun_ws/matlab/AutoL_LiDAR/install/vision_msgs:/opt/ros/foxy LD_LIBRARY_PATH=/home/aiv/YongJun_ws/matlab/Livox_LiDAR/install/vision_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/aiv/YongJun_ws/matlab/Livox_LiDAR/install/vision_msgs/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/cmake --build /home/aiv/YongJun_ws/matlab/Livox_LiDAR/build/deployedpointpillarmodel -- -j32 -l32
+[47.615s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/aiv/YongJun_ws/matlab/Livox_LiDAR/build/deployedpointpillarmodel' returned '0': AMENT_PREFIX_PATH=/home/aiv/YongJun_ws/matlab/Livox_LiDAR/install/vision_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/aiv/YongJun_ws/matlab/Livox_LiDAR/install/vision_msgs:/home/aiv/YongJun_ws/matlab/AutoL_LiDAR/install/deployedpointpillarmodel:/home/aiv/YongJun_ws/matlab/AutoL_LiDAR/install/vision_msgs:/opt/ros/foxy LD_LIBRARY_PATH=/home/aiv/YongJun_ws/matlab/Livox_LiDAR/install/vision_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/aiv/YongJun_ws/matlab/Livox_LiDAR/install/vision_msgs/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/cmake --build /home/aiv/YongJun_ws/matlab/Livox_LiDAR/build/deployedpointpillarmodel -- -j32 -l32
+[47.717s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/aiv/YongJun_ws/matlab/Livox_LiDAR/build/deployedpointpillarmodel': AMENT_PREFIX_PATH=/home/aiv/YongJun_ws/matlab/Livox_LiDAR/install/vision_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/aiv/YongJun_ws/matlab/Livox_LiDAR/install/vision_msgs:/home/aiv/YongJun_ws/matlab/AutoL_LiDAR/install/deployedpointpillarmodel:/home/aiv/YongJun_ws/matlab/AutoL_LiDAR/install/vision_msgs:/opt/ros/foxy LD_LIBRARY_PATH=/home/aiv/YongJun_ws/matlab/Livox_LiDAR/install/vision_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/aiv/YongJun_ws/matlab/Livox_LiDAR/install/vision_msgs/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/cmake --install /home/aiv/YongJun_ws/matlab/Livox_LiDAR/build/deployedpointpillarmodel
+[47.796s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(deployedpointpillarmodel)
+[47.797s] Level 1:colcon.colcon_core.environment:checking '/home/aiv/YongJun_ws/matlab/Livox_LiDAR/install/deployedpointpillarmodel' for CMake module files
+[47.797s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/aiv/YongJun_ws/matlab/Livox_LiDAR/build/deployedpointpillarmodel' returned '0': AMENT_PREFIX_PATH=/home/aiv/YongJun_ws/matlab/Livox_LiDAR/install/vision_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/aiv/YongJun_ws/matlab/Livox_LiDAR/install/vision_msgs:/home/aiv/YongJun_ws/matlab/AutoL_LiDAR/install/deployedpointpillarmodel:/home/aiv/YongJun_ws/matlab/AutoL_LiDAR/install/vision_msgs:/opt/ros/foxy LD_LIBRARY_PATH=/home/aiv/YongJun_ws/matlab/Livox_LiDAR/install/vision_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/aiv/YongJun_ws/matlab/Livox_LiDAR/install/vision_msgs/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/cmake --install /home/aiv/YongJun_ws/matlab/Livox_LiDAR/build/deployedpointpillarmodel
+[47.798s] Level 1:colcon.colcon_core.environment:checking '/home/aiv/YongJun_ws/matlab/Livox_LiDAR/install/deployedpointpillarmodel' for CMake config files
+[47.798s] Level 1:colcon.colcon_core.shell:create_environment_hook('deployedpointpillarmodel', 'cmake_prefix_path')
+[47.798s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/aiv/YongJun_ws/matlab/Livox_LiDAR/install/deployedpointpillarmodel/share/deployedpointpillarmodel/hook/cmake_prefix_path.ps1'
+[47.799s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/aiv/YongJun_ws/matlab/Livox_LiDAR/install/deployedpointpillarmodel/share/deployedpointpillarmodel/hook/cmake_prefix_path.dsv'
+[47.799s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/aiv/YongJun_ws/matlab/Livox_LiDAR/install/deployedpointpillarmodel/share/deployedpointpillarmodel/hook/cmake_prefix_path.sh'
+[47.799s] Level 1:colcon.colcon_core.environment:checking '/home/aiv/YongJun_ws/matlab/Livox_LiDAR/install/deployedpointpillarmodel/lib'
+[47.799s] Level 1:colcon.colcon_core.environment:checking '/home/aiv/YongJun_ws/matlab/Livox_LiDAR/install/deployedpointpillarmodel/bin'
+[47.799s] Level 1:colcon.colcon_core.environment:checking '/home/aiv/YongJun_ws/matlab/Livox_LiDAR/install/deployedpointpillarmodel/lib/pkgconfig/deployedpointpillarmodel.pc'
+[47.799s] Level 1:colcon.colcon_core.environment:checking '/home/aiv/YongJun_ws/matlab/Livox_LiDAR/install/deployedpointpillarmodel/lib/python3.8/site-packages'
+[47.800s] Level 1:colcon.colcon_core.environment:checking '/home/aiv/YongJun_ws/matlab/Livox_LiDAR/install/deployedpointpillarmodel/bin'
+[47.800s] INFO:colcon.colcon_core.shell:Creating package script '/home/aiv/YongJun_ws/matlab/Livox_LiDAR/install/deployedpointpillarmodel/share/deployedpointpillarmodel/package.ps1'
+[47.800s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/aiv/YongJun_ws/matlab/Livox_LiDAR/install/deployedpointpillarmodel/share/deployedpointpillarmodel/package.dsv'
+[47.801s] INFO:colcon.colcon_core.shell:Creating package script '/home/aiv/YongJun_ws/matlab/Livox_LiDAR/install/deployedpointpillarmodel/share/deployedpointpillarmodel/package.sh'
+[47.801s] INFO:colcon.colcon_core.shell:Creating package script '/home/aiv/YongJun_ws/matlab/Livox_LiDAR/install/deployedpointpillarmodel/share/deployedpointpillarmodel/package.bash'
+[47.801s] INFO:colcon.colcon_core.shell:Creating package script '/home/aiv/YongJun_ws/matlab/Livox_LiDAR/install/deployedpointpillarmodel/share/deployedpointpillarmodel/package.zsh'
+[47.801s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/aiv/YongJun_ws/matlab/Livox_LiDAR/install/deployedpointpillarmodel/share/colcon-core/packages/deployedpointpillarmodel)
+[47.917s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(deployedpointpillarmodel)
+[47.917s] Level 1:colcon.colcon_core.environment:checking '/home/aiv/YongJun_ws/matlab/Livox_LiDAR/install/deployedpointpillarmodel' for CMake module files
+[47.918s] Level 1:colcon.colcon_core.environment:checking '/home/aiv/YongJun_ws/matlab/Livox_LiDAR/install/deployedpointpillarmodel' for CMake config files
+[47.918s] Level 1:colcon.colcon_core.shell:create_environment_hook('deployedpointpillarmodel', 'cmake_prefix_path')
+[47.918s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/aiv/YongJun_ws/matlab/Livox_LiDAR/install/deployedpointpillarmodel/share/deployedpointpillarmodel/hook/cmake_prefix_path.ps1'
+[47.918s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/aiv/YongJun_ws/matlab/Livox_LiDAR/install/deployedpointpillarmodel/share/deployedpointpillarmodel/hook/cmake_prefix_path.dsv'
+[47.918s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/aiv/YongJun_ws/matlab/Livox_LiDAR/install/deployedpointpillarmodel/share/deployedpointpillarmodel/hook/cmake_prefix_path.sh'
+[47.919s] Level 1:colcon.colcon_core.environment:checking '/home/aiv/YongJun_ws/matlab/Livox_LiDAR/install/deployedpointpillarmodel/lib'
+[47.919s] Level 1:colcon.colcon_core.environment:checking '/home/aiv/YongJun_ws/matlab/Livox_LiDAR/install/deployedpointpillarmodel/bin'
+[47.919s] Level 1:colcon.colcon_core.environment:checking '/home/aiv/YongJun_ws/matlab/Livox_LiDAR/install/deployedpointpillarmodel/lib/pkgconfig/deployedpointpillarmodel.pc'
+[47.919s] Level 1:colcon.colcon_core.environment:checking '/home/aiv/YongJun_ws/matlab/Livox_LiDAR/install/deployedpointpillarmodel/lib/python3.8/site-packages'
+[47.919s] Level 1:colcon.colcon_core.environment:checking '/home/aiv/YongJun_ws/matlab/Livox_LiDAR/install/deployedpointpillarmodel/bin'
+[47.919s] INFO:colcon.colcon_core.shell:Creating package script '/home/aiv/YongJun_ws/matlab/Livox_LiDAR/install/deployedpointpillarmodel/share/deployedpointpillarmodel/package.ps1'
+[47.920s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/aiv/YongJun_ws/matlab/Livox_LiDAR/install/deployedpointpillarmodel/share/deployedpointpillarmodel/package.dsv'
+[47.920s] INFO:colcon.colcon_core.shell:Creating package script '/home/aiv/YongJun_ws/matlab/Livox_LiDAR/install/deployedpointpillarmodel/share/deployedpointpillarmodel/package.sh'
+[47.920s] INFO:colcon.colcon_core.shell:Creating package script '/home/aiv/YongJun_ws/matlab/Livox_LiDAR/install/deployedpointpillarmodel/share/deployedpointpillarmodel/package.bash'
+[47.920s] INFO:colcon.colcon_core.shell:Creating package script '/home/aiv/YongJun_ws/matlab/Livox_LiDAR/install/deployedpointpillarmodel/share/deployedpointpillarmodel/package.zsh'
+[47.920s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/aiv/YongJun_ws/matlab/Livox_LiDAR/install/deployedpointpillarmodel/share/colcon-core/packages/deployedpointpillarmodel)
+[47.920s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:closing loop
+[47.921s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:loop closed
+[47.921s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete finished with '0'
+[47.921s] DEBUG:colcon.colcon_core.event_reactor:joining thread
+[47.925s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.terminal_notifier': Not used on non-Darwin systems
+[47.925s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.win32': Not used on non-Windows systems
+[47.925s] INFO:colcon.colcon_notification.desktop_notification:Sending desktop notification using 'notify2'
+[47.934s] DEBUG:colcon.colcon_core.event_reactor:joined thread
+[47.934s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/aiv/YongJun_ws/matlab/Livox_LiDAR/install/local_setup.ps1'
+[47.935s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/aiv/YongJun_ws/matlab/Livox_LiDAR/install/_local_setup_util_ps1.py'
+[47.936s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/aiv/YongJun_ws/matlab/Livox_LiDAR/install/setup.ps1'
+[47.936s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/aiv/YongJun_ws/matlab/Livox_LiDAR/install/local_setup.sh'
+[47.936s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/aiv/YongJun_ws/matlab/Livox_LiDAR/install/_local_setup_util_sh.py'
+[47.937s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/aiv/YongJun_ws/matlab/Livox_LiDAR/install/setup.sh'
+[47.937s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/aiv/YongJun_ws/matlab/Livox_LiDAR/install/local_setup.bash'
+[47.937s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/aiv/YongJun_ws/matlab/Livox_LiDAR/install/setup.bash'
+[47.938s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/aiv/YongJun_ws/matlab/Livox_LiDAR/install/local_setup.zsh'
+[47.938s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/aiv/YongJun_ws/matlab/Livox_LiDAR/install/setup.zsh'

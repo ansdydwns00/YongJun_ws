@@ -1,6 +1,4 @@
-% Stop timer 
-% stop(t)
-
+%% Timer for Handshake protocol
 % Initialize workspace
 clear; clc;
 
@@ -14,44 +12,34 @@ t.TimerFcn = {@InitProtocol,udpObj};
 t.ExecutionMode = 'fixedRate';
 
 start(t)
-%%
+
+%% Connect AVIA UDP Communication
 
 % Connect udp data communication
-AviaUDP = udpport("byte","LocalPort",56001,"ByteOrder","little-endian");
+Avia_UDP = udpport("byte","LocalPort",56001,"ByteOrder","little-endian");
 
-%% 
+%% Visualization using 1 messages
 
 player = pcplayer([0 10],[-5 5],[-2 5]);
 
 frameCount = 0;
 reset_flag = single(0);
-xyzPointsBuffer = [];
-xyzIntensityBuffer = [];
-numPacket = 30; 
 
 tic
 while 1
 
     % Read 1 packet
-    packet = single(read(AviaUDP,1362))';
+    packet = single(read(Avia_UDP,1362))';
 
     [xyzCoords,xyzIntensity,isValid] = Avia_parsing(packet,reset_flag);
-    
+    % [xyzCoords,xyzIntensity,isValid] = Avia_parsing_mex(packet,reset_flag);
+
     if isValid
 
-        xyzPointsBuffer = vertcat(xyzPointsBuffer,xyzCoords);
-        xyzIntensityBuffer = vertcat(xyzIntensityBuffer,xyzIntensity);
-
-        if frameCount > 20
-
-            xyzPointsBuffer = xyzPointsBuffer(96*numPacket:end,:);
-            xyzIntensityBuffer = xyzIntensityBuffer(96*numPacket:end,:);
-
-            ptCloud = pointCloud(xyzPointsBuffer,"Intensity",xyzIntensityBuffer);
-            
-            % Display ptCloud 
-            view(player,ptCloud);
-        end
+        ptCloud = pointCloud(xyzCoords,"Intensity",xyzIntensity);
+        
+        % Display ptCloud 
+        view(player,ptCloud);
 
         % Display Rendering rate 
         frameCount = frameCount + 1;
@@ -59,7 +47,7 @@ while 1
         frameRate = frameCount / elapsedTime;
         fprintf("Rendering rate: %f hz\n",frameRate);
 
-        flush(AviaUDP)
+        flush(Avia_UDP)
     end
 
     reset_flag = single(1);

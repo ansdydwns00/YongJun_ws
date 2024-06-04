@@ -5,7 +5,7 @@ function [xyzCoords,xyzIntensity,isValid] = Avia_parsing(packet,reset_flag)
     persistent i
     persistent Intensity
     
-    numPacket = 30; 
+    numPacket = 250; 
 
     if isempty(points) || reset_flag == 0
         points = single(zeros(96*numPacket,3));

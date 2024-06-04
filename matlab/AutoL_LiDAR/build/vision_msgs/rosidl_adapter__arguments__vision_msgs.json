@@ -1,0 +1,10 @@
+{
+  "package_name": "vision_msgs",
+  "non_idl_tuples": [
+    "/home/aiv/YongJun_ws/matlab/AutoL_LiDAR/src/vision_msgs:msg/BoundingBox3D.msg",
+    "/home/aiv/YongJun_ws/matlab/AutoL_LiDAR/src/vision_msgs:msg/Detection3D.msg",
+    "/home/aiv/YongJun_ws/matlab/AutoL_LiDAR/src/vision_msgs:msg/Detection3DArray.msg",
+    "/home/aiv/YongJun_ws/matlab/AutoL_LiDAR/src/vision_msgs:msg/ObjectHypothesis.msg",
+    "/home/aiv/YongJun_ws/matlab/AutoL_LiDAR/src/vision_msgs:msg/ObjectHypothesisWithPose.msg"
+  ]
+}

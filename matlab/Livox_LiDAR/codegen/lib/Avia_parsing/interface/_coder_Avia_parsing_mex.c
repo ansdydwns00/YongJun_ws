@@ -5,7 +5,7 @@
  * File: _coder_Avia_parsing_mex.c
  *
  * MATLAB Coder version            : 24.1
- * C/C++ source code generated on  : 03-Jun-2024 17:21:52
+ * C/C++ source code generated on  : 04-Jun-2024 13:10:53
  */
 
 /* Include Files */
@@ -45,12 +45,12 @@ emlrtCTX mexFunctionCreateRootTLS(void)
 
 /*
  * Arguments    : int32_T nlhs
- *                mxArray *plhs[2]
+ *                mxArray *plhs[3]
  *                int32_T nrhs
  *                const mxArray *prhs[2]
  * Return Type  : void
  */
-void unsafe_Avia_parsing_mexFunction(int32_T nlhs, mxArray *plhs[2],
+void unsafe_Avia_parsing_mexFunction(int32_T nlhs, mxArray *plhs[3],
                                      int32_T nrhs, const mxArray *prhs[2])
 {
   emlrtStack st = {
@@ -58,8 +58,8 @@ void unsafe_Avia_parsing_mexFunction(int32_T nlhs, mxArray *plhs[2],
       NULL, /* tls */
       NULL  /* prev */
   };
+  const mxArray *outputs[3];
   const mxArray *b_prhs[2];
-  const mxArray *outputs[2];
   int32_T i;
   st.tls = emlrtRootTLSGlobal;
   /* Check for proper number of arguments. */
@@ -67,7 +67,7 @@ void unsafe_Avia_parsing_mexFunction(int32_T nlhs, mxArray *plhs[2],
     emlrtErrMsgIdAndTxt(&st, "EMLRT:runTime:WrongNumberOfInputs", 5, 12, 2, 4,
                         12, "Avia_parsing");
   }
-  if (nlhs > 2) {
+  if (nlhs > 3) {
     emlrtErrMsgIdAndTxt(&st, "EMLRT:runTime:TooManyOutputArguments", 3, 4, 12,
                         "Avia_parsing");
   }

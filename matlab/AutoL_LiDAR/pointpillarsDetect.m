@@ -11,5 +11,5 @@ end
 
 ptCloud = pointCloud(dataLoc,'Intensity',dataInt);
 
-[bboxes,scores,labels] = pointPillarObj.detect(ptCloud,'Threshold',threshold);
+[bboxes,scores,labels] = pointPillarObj.detect(ptCloud,'Threshold',threshold,"ExecutionEnvironment","gpu");
 end

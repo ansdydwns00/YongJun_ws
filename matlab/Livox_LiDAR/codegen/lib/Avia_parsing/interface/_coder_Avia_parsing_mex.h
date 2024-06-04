@@ -5,7 +5,7 @@
  * File: _coder_Avia_parsing_mex.h
  *
  * MATLAB Coder version            : 24.1
- * C/C++ source code generated on  : 03-Jun-2024 17:21:52
+ * C/C++ source code generated on  : 04-Jun-2024 13:10:53
  */
 
 #ifndef _CODER_AVIA_PARSING_MEX_H
@@ -26,7 +26,7 @@ MEXFUNCTION_LINKAGE void mexFunction(int32_T nlhs, mxArray *plhs[],
 
 emlrtCTX mexFunctionCreateRootTLS(void);
 
-void unsafe_Avia_parsing_mexFunction(int32_T nlhs, mxArray *plhs[2],
+void unsafe_Avia_parsing_mexFunction(int32_T nlhs, mxArray *plhs[3],
                                      int32_T nrhs, const mxArray *prhs[2]);
 
 #ifdef __cplusplus

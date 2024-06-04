@@ -27,6 +27,7 @@ player = pcplayer([0 10],[-5 5],[-2 5]);
 
 frameCount = 0;
 reset_flag = single(0);
+
 xyzPointsBuffer = [];
 xyzIntensityBuffer = [];
 
@@ -39,7 +40,7 @@ while 1
     % Read 1 packet
     packet = single(read(AviaUDP,1362))';
 
-    [xyzCoords,xyzIntensity,isValid] = Avia_parsing(packet,reset_flag);
+    [xyzCoords,xyzIntensity,isValid] = Avia_parsing_single(packet,reset_flag);
     
     if isValid
 

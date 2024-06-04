@@ -18,6 +18,13 @@ codegen -config cfg pointpillarsDetect -args args -report
 %% 
 dataLoc = ptCloud.Location;
 dataInt = ptCloud.Intensity;
+%% 
 tic
 [bboxes,~,labels] = pointpillarsDetect_mex(matFile,dataLoc,dataInt,confidenceThreshold);
+toc
+
+
+%% 
+tic
+[bboxes, ~, ~] = detect(detector,ptCloud,"ExecutionEnvironment","gpu","Threshold",0.3);
 toc

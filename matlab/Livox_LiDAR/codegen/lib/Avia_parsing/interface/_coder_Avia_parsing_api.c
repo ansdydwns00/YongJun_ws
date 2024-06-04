@@ -5,7 +5,7 @@
  * File: _coder_Avia_parsing_api.c
  *
  * MATLAB Coder version            : 24.1
- * C/C++ source code generated on  : 03-Jun-2024 17:21:52
+ * C/C++ source code generated on  : 04-Jun-2024 13:10:53
  */
 
 /* Include Files */
@@ -32,10 +32,12 @@ static void b_emlrt_marshallIn(const emlrtStack *sp, const mxArray *u,
                                const emlrtMsgIdentifier *parentId,
                                real32_T y[1362]);
 
-static const mxArray *b_emlrt_marshallOut(const boolean_T u);
+static const mxArray *b_emlrt_marshallOut(const emxArray_real32_T *u);
 
 static real32_T c_emlrt_marshallIn(const emlrtStack *sp, const mxArray *nullptr,
                                    const char_T *identifier);
+
+static const mxArray *c_emlrt_marshallOut(const boolean_T u);
 
 static real32_T d_emlrt_marshallIn(const emlrtStack *sp, const mxArray *u,
                                    const emlrtMsgIdentifier *parentId);
@@ -77,15 +79,33 @@ static void b_emlrt_marshallIn(const emlrtStack *sp, const mxArray *u,
 }
 
 /*
- * Arguments    : const boolean_T u
+ * Arguments    : const emxArray_real32_T *u
  * Return Type  : const mxArray *
  */
-static const mxArray *b_emlrt_marshallOut(const boolean_T u)
+static const mxArray *b_emlrt_marshallOut(const emxArray_real32_T *u)
 {
   const mxArray *m;
   const mxArray *y;
+  int32_T iv[2];
+  int32_T b_i;
+  int32_T i;
+  const real32_T *u_data;
+  real32_T *pData;
+  u_data = u->data;
   y = NULL;
-  m = emlrtCreateLogicalScalar(u);
+  iv[0] = u->size[0];
+  iv[1] = u->size[1];
+  m = emlrtCreateNumericArray(2, &iv[0], mxSINGLE_CLASS, mxREAL);
+  pData = (real32_T *)emlrtMxGetData(m);
+  i = 0;
+  b_i = 0;
+  while (b_i < u->size[1]) {
+    for (b_i = 0; b_i < u->size[0]; b_i++) {
+      pData[i] = u_data[b_i];
+      i++;
+    }
+    b_i = 1;
+  }
   emlrtAssign(&y, m);
   return y;
 }
@@ -106,6 +126,20 @@ static real32_T c_emlrt_marshallIn(const emlrtStack *sp, const mxArray *nullptr,
   thisId.bParentIsCell = false;
   y = d_emlrt_marshallIn(sp, emlrtAlias(nullptr), &thisId);
   emlrtDestroyArray(&nullptr);
+  return y;
+}
+
+/*
+ * Arguments    : const boolean_T u
+ * Return Type  : const mxArray *
+ */
+static const mxArray *c_emlrt_marshallOut(const boolean_T u)
+{
+  const mxArray *m;
+  const mxArray *y;
+  y = NULL;
+  m = emlrtCreateLogicalScalar(u);
+  emlrtAssign(&y, m);
   return y;
 }
 
@@ -266,11 +300,11 @@ static real32_T f_emlrt_marshallIn(const emlrtStack *sp, const mxArray *src,
 /*
  * Arguments    : const mxArray * const prhs[2]
  *                int32_T nlhs
- *                const mxArray *plhs[2]
+ *                const mxArray *plhs[3]
  * Return Type  : void
  */
 void Avia_parsing_api(const mxArray *const prhs[2], int32_T nlhs,
-                      const mxArray *plhs[2])
+                      const mxArray *plhs[3])
 {
   emlrtStack st = {
       NULL, /* site */
@@ -278,6 +312,7 @@ void Avia_parsing_api(const mxArray *const prhs[2], int32_T nlhs,
       NULL  /* prev */
   };
   emxArray_real32_T *xyzCoords;
+  emxArray_real32_T *xyzIntensity;
   real32_T packet[1362];
   real32_T reset_flag;
   boolean_T isValid;
@@ -288,12 +323,17 @@ void Avia_parsing_api(const mxArray *const prhs[2], int32_T nlhs,
   reset_flag = c_emlrt_marshallIn(&st, emlrtAliasP(prhs[1]), "reset_flag");
   /* Invoke the target function */
   emxInit_real32_T(&st, &xyzCoords);
-  Avia_parsing(packet, reset_flag, xyzCoords, &isValid);
+  emxInit_real32_T(&st, &xyzIntensity);
+  Avia_parsing(packet, reset_flag, xyzCoords, xyzIntensity, &isValid);
   /* Marshall function outputs */
   plhs[0] = emlrt_marshallOut(xyzCoords);
   emxFree_real32_T(&st, &xyzCoords);
   if (nlhs > 1) {
-    plhs[1] = b_emlrt_marshallOut(isValid);
+    plhs[1] = b_emlrt_marshallOut(xyzIntensity);
+  }
+  emxFree_real32_T(&st, &xyzIntensity);
+  if (nlhs > 2) {
+    plhs[2] = c_emlrt_marshallOut(isValid);
   }
   emlrtHeapReferenceStackLeaveFcnR2012b(&st);
 }
