@@ -13,4 +13,4 @@ Livox Avia Lidar specs
 
 
 
-[Livox Avia Open Source site][링크](https://github.com/Livox-SDK?tab=repositories&q=&type=&language=&sort=stargazers)
+[Livox Avia Open Source site][[링크](https://github.com/Livox-SDK?tab=repositories&q=&type=&language=&sort=stargazers)]
