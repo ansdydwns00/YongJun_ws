@@ -3,15 +3,29 @@
 % Connect udp data communication
 AviaUDP = udpport("byte","LocalPort",56001,"ByteOrder","little-endian");
 
-%% 
+%% Visualization using packet messages
 
-player = pcplayer([0 10],[-5 5],[-2 5]);
+% Setting point cloud viewer parameter
+xmin = 0;  xmax = 10;
+ymin = -5; ymax = 5;
+zmin = -2; zmax = 5;
 
-frameCount = 0;
+player = pcplayer([xmin xmax],[ymin ymax],[zmin zmax]);
+
+% Set values for frame count 
+frameCount = 1;
+
+% Set values for n frames
+frame_num = 10;
+
+% Flag for first Run
 reset_flag = single(0);
+
+% Parameter for n frame buffer
 xyzPointsBuffer = [];
 xyzIntensityBuffer = [];
-numPacket = 266; 
+
+
 
 tic
 while 1
@@ -26,15 +40,16 @@ while 1
         xyzPointsBuffer = vertcat(xyzPointsBuffer,xyzCoords);
         xyzIntensityBuffer = vertcat(xyzIntensityBuffer,xyzIntensity);
 
-        if frameCount > 6
+        if mod(frameCount,frame_num) == 0
 
-            xyzPointsBuffer = xyzPointsBuffer(90*numPacket:end,:);
-            xyzIntensityBuffer = xyzIntensityBuffer(90*numPacket:end,:);
 
             ptCloud = pointCloud(xyzPointsBuffer,"Intensity",xyzIntensityBuffer);
             
             % Display ptCloud 
             view(player,ptCloud);
+
+            xyzPointsBuffer = [];
+            xyzIntensityBuffer = [];
         end
 
         % Display Rendering rate 

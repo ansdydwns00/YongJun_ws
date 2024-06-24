@@ -59,7 +59,7 @@ while true
         % end
  
         % Object Detection
-        [bboxes, ~, ~] = detect(detector,ptCloud,"ExecutionEnvironment","gpu","Threshold",0.3);
+        [bboxes, ~, ~] = detect(detector,ptCloud,"ExecutionEnvironment","gpu","Threshold",0.2);
 
         % Compute Object Distance
         Distances = LR_computeDistance(ptCloud,bboxes);

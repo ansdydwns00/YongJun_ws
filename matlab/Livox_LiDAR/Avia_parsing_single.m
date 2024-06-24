@@ -5,7 +5,7 @@ function [xyzCoords,xyzIntensity,isValid] = Avia_parsing_single(packet,reset_fla
     persistent i
     persistent Intensity
     
-    numPacket = 30; 
+    numPacket = 600; 
 
     if isempty(points) || reset_flag == 0
         points = single(zeros(96*numPacket,3));
@@ -43,6 +43,8 @@ function [xyzCoords,xyzIntensity,isValid] = Avia_parsing_single(packet,reset_fla
     xyzPoints(:,2) = y;
     xyzPoints(:,3) = z;
     xyzReflect(:,1) = I;
+    
+
 
     if i == numPacket
         xyzCoords = points;
@@ -54,13 +56,13 @@ function [xyzCoords,xyzIntensity,isValid] = Avia_parsing_single(packet,reset_fla
         Intensity = single(zeros(96*numPacket,1));
         i = 1;
     else
-        points((i-1)*96+1:(i-1)*96+96,:) = xyzPoints;
-        Intensity((i-1)*96+1:(i-1)*96+96,:) = xyzReflect;
-        i = i + 1; 
-
         xyzCoords = single([]);
         xyzIntensity = single([]);
         isValid = false;
+
+        points((i-1)*96+1:(i-1)*96+96,:) = xyzPoints;
+        Intensity((i-1)*96+1:(i-1)*96+96,:) = xyzReflect;
+        i = i + 1; 
     end
         
 end

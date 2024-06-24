@@ -1,4 +1,5 @@
 %% Timer for Handshake protocol
+
 % Initialize workspace
 clear; clc;
 
@@ -18,14 +19,33 @@ start(t)
 % Connect udp data communication
 Avia_UDP = udpport("byte","LocalPort",56001,"ByteOrder","little-endian");
 
-%% Visualization using 1 messages
+%% Visualization using 250*n messages
 
-player = pcplayer([0 10],[-5 5],[-2 5]);
+% Setting point cloud viewer parameter
+xmin = 0;  xmax = 10;
+ymin = -5; ymax = 5;
+zmin = -2; zmax = 5;
 
-frameCount = 0;
+player = pcplayer([xmin xmax],[ymin ymax],[zmin zmax]);
+
+
+% Set values for frame count 
+frameCount = 1;
+
+% Set values for n frames
+frame_num = 1;
+
+% Flag for first Run
 reset_flag = single(0);
 
-tic
+% Parameter for n frame buffer
+xyzPointsBuffer = [];
+xyzIntensityBuffer = [];
+
+
+% tic
+% start_time = toc;
+% last_framecount = 0;
 while 1
 
     % Read 1 packet
@@ -35,18 +55,32 @@ while 1
     % [xyzCoords,xyzIntensity,isValid] = Avia_parsing_mex(packet,reset_flag);
 
     if isValid
-
-        ptCloud = pointCloud(xyzCoords,"Intensity",xyzIntensity);
         
-        % Display ptCloud 
-        view(player,ptCloud);
+        % Display n message
+        xyzPointsBuffer = vertcat(xyzPointsBuffer,xyzCoords);
+        xyzIntensityBuffer = vertcat(xyzIntensityBuffer,xyzIntensity);
+        
+        if mod(frameCount,frame_num) == 0
 
+            ptCloud = pointCloud(xyzPointsBuffer,"Intensity",xyzIntensityBuffer);
+            
+            % Display ptCloud 
+            view(player,ptCloud);
+            
+            xyzPointsBuffer = [];
+            xyzIntensityBuffer = [];
+        end
+        
         % Display Rendering rate 
+        % current_time = toc;
+        % if current_time - start_time >= 1
+        %     frame_count_diff = frameCount - last_framecount;
+        %     fprintf("Create %d ptCloud image in 1 second\n", frame_count_diff);
+        %     last_framecount = frameCount;
+        %     start_time = current_time;
+        % end
+        
         frameCount = frameCount + 1;
-        elapsedTime = toc;
-        frameRate = frameCount / elapsedTime;
-        fprintf("Rendering rate: %f hz\n",frameRate);
-
         flush(Avia_UDP)
     end
 

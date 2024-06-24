@@ -5,6 +5,7 @@ function [xyzCoords,xyzIntensity,isValid] = Avia_parsing(packet,reset_flag)
     persistent i
     persistent Intensity
     
+    % In ros, 10hz -> 24000 point -> 96*250 = 24000
     numPacket = 250; 
 
     if isempty(points) || reset_flag == 0
