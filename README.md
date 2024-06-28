@@ -103,6 +103,28 @@
 </details> 
 
 
+<details>
+	<summary>Python 관련</summary>
+  	<div markdown="1">
+
+ 	ubuntu의 경우 여러 버전의 같은 소프트웨어가 설치되었을 경우, update-alternatives를 이용하여 버전 관리 가능
+
+   	# 현재 alternatives에 등록된 python의 리스트 확인(등록된 python이 없을 경우 오류 출력됨) 
+    	# sudo update-alternatives --list python3
+
+ 	# python 등록 
+  	# sudo update-alternatives --install /usr/bin/python python /usr/bin/python3.x 1
+   	# sudo update-alternatives --install /usr/bin/python python /usr/bin/python3.x 2
+   
+     	# 등록된 python을 선택 
+	# sudo update-alternatives --config python3
+ 		
+
+</details> 
+
+
+
+
 ## Development Environment 
 ```
 # Intel i7-9700 CPU 3.60Hz x 8
