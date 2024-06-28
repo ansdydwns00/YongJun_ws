@@ -116,10 +116,9 @@
   	# sudo update-alternatives --install /usr/bin/python python /usr/bin/python3.x 1
    	# sudo update-alternatives --install /usr/bin/python python /usr/bin/python3.x 2
    
-     	# 등록된 python을 선택 
+        # 등록된 python을 선택 
 	# sudo update-alternatives --config python3
  		
-
 </details> 
 
 
