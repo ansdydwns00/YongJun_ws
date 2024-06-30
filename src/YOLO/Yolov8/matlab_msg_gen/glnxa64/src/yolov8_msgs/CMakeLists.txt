@@ -28,9 +28,9 @@ find_package( geometry_msgs REQUIRED)
 find_package( rclcpp REQUIRED)
 find_package( rcutils REQUIRED)
 find_package( std_msgs REQUIRED)
-include_directories("/usr/local/MATLAB/R2023b/extern/include")
-include_directories("/usr/local/MATLAB/R2023b/extern/include/MatlabDataArray")
-include_directories("/usr/local/MATLAB/R2023b/toolbox/ros/include/ros2")
+include_directories("/usr/local/MATLAB/R2024a/extern/include")
+include_directories("/usr/local/MATLAB/R2024a/extern/include/MatlabDataArray")
+include_directories("/usr/local/MATLAB/R2024a/toolbox/ros/include/ros2")
 include_directories("include/yolov8_msgs")
 set (CMAKE_SKIP_BUILD_RPATH false)
 set (CMAKE_BUILD_WITH_INSTALL_RPATH true)
@@ -62,7 +62,7 @@ rosidl_generate_interfaces(${PROJECT_NAME}
   geometry_msgs
   std_msgs
 )
-link_directories("/usr/local/MATLAB/R2023b/extern/bin/glnxa64")
+link_directories("/usr/local/MATLAB/R2024a/extern/bin/glnxa64")
 # Library
 add_library(
     yolov8_msgs_matlab 
@@ -90,8 +90,8 @@ target_include_directories(yolov8_msgs_matlab PUBLIC
   $<BUILD_INTERFACE:${CMAKE_CURRENT_SOURCE_DIR}/include>
   $<INSTALL_INTERFACE:include>)
 target_link_libraries( yolov8_msgs_matlab
-	"/usr/local/MATLAB/R2023b/sys/os/glnxa64/orig/libstdc++.so.6"
-	"/usr/local/MATLAB/R2023b/extern/bin/glnxa64/libMatlabDataArray.so"
+	"/usr/local/MATLAB/R2024a/sys/os/glnxa64/orig/libstdc++.so.6"
+	"/usr/local/MATLAB/R2024a/extern/bin/glnxa64/libMatlabDataArray.so"
 	${CMAKE_DL_LIBS}
 	)
 ament_target_dependencies(
@@ -141,4 +141,4 @@ add_custom_command(
 				   )				   
 endforeach(file_i)
 ament_package()
-# Generated on Fri May 03 13:46:57 2024
+# Generated on Wed Jun 26 16:11:03 2024

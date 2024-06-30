@@ -1,0 +1,8 @@
+-I/home/aiv/YongJun_ws/matlab/Livox_LiDAR/codegen/lib/Avia_parsing_single
+-I/home/aiv/YongJun_ws/matlab/Livox_LiDAR
+-I/home/aiv/Documents/MATLAB/SupportPackages/R2024a/3P.instrset/cmsis.instrset/CMSIS/Core/Include
+-I/home/aiv/Documents/MATLAB/SupportPackages/R2024a/3P.instrset/cmsis_dsp.instrset/Include
+-I/home/aiv/Documents/MATLAB/SupportPackages/R2024a/3P.instrset/cmsis_dsp.instrset/Include/dsp
+-I/home/aiv/Documents/MATLAB/SupportPackages/R2024a/toolbox/target/supportpackages/arm_cortex_m/include
+-I/usr/local/MATLAB/R2024a/toolbox/target/shared/armcortexmbase/scheduler/include
+-I/usr/local/MATLAB/R2024a/extern/include

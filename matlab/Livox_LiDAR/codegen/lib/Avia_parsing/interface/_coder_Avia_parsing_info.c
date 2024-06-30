@@ -5,7 +5,7 @@
  * File: _coder_Avia_parsing_info.c
  *
  * MATLAB Coder version            : 24.1
- * C/C++ source code generated on  : 04-Jun-2024 13:10:53
+ * C/C++ source code generated on  : 30-Jun-2024 15:08:53
  */
 
 /* Include Files */
@@ -76,7 +76,7 @@ mxArray *emlrtMexFcnProperties(void)
                 emlrtMxCreateString(
                     "/home/aiv/YongJun_ws/matlab/Livox_LiDAR/Avia_parsing.m"));
   emlrtSetField(xEntryPoints, 0, "TimeStamp",
-                emlrtMxCreateDoubleScalar(739407.5470486111));
+                emlrtMxCreateDoubleScalar(739433.62641203706));
   emlrtSetField(xEntryPoints, 0, "Constructor",
                 emlrtMxCreateLogicalScalar(false));
   emlrtSetField(xEntryPoints, 0, "Visible", emlrtMxCreateLogicalScalar(true));

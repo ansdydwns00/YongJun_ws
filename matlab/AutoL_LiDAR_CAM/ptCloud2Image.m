@@ -78,7 +78,7 @@ while true
         [imPts,idx] = projectLidarPointsOnImage(ptCloud,cameraParams.Intrinsics,tform);
         imshow(img);
         hold on
-        scatter(imPts(:,1), imPts(:,2), 5, pointColors(idx), 'filled');
+        scatter(imPts(:,1), imPts(:,2), 2, pointColors(idx), 'filled');
         hold off
         
         % parameter 초기화

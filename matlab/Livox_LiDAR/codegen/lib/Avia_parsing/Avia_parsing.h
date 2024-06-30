@@ -5,7 +5,7 @@
  * File: Avia_parsing.h
  *
  * MATLAB Coder version            : 24.1
- * C/C++ source code generated on  : 04-Jun-2024 13:10:53
+ * C/C++ source code generated on  : 30-Jun-2024 15:08:53
  */
 
 #ifndef AVIA_PARSING_H
@@ -24,7 +24,8 @@ extern "C" {
 /* Function Declarations */
 extern void Avia_parsing(const float packet[1362], float reset_flag,
                          emxArray_real32_T *xyzCoords,
-                         emxArray_real32_T *xyzIntensity, boolean_T *isValid);
+                         float xyzIntensity_data[], int xyzIntensity_size[2],
+                         bool *isValid);
 
 void Avia_parsing_init(void);
 

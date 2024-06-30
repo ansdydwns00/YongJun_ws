@@ -33,7 +33,7 @@ player = pcplayer([xmin xmax],[ymin ymax],[zmin zmax]);
 frameCount = 1;
 
 % Set values for n frames
-frame_num = 1;
+frame_num = 6;
 
 % Flag for first Run
 reset_flag = single(0);
@@ -42,17 +42,18 @@ reset_flag = single(0);
 xyzPointsBuffer = [];
 xyzIntensityBuffer = [];
 
+flush(Avia_UDP)
 
-% tic
-% start_time = toc;
-% last_framecount = 0;
+tic
+start_time = toc;
+last_framecount = 0;
 while 1
 
     % Read 1 packet
     packet = single(read(Avia_UDP,1362))';
 
-    [xyzCoords,xyzIntensity,isValid] = Avia_parsing(packet,reset_flag);
-    % [xyzCoords,xyzIntensity,isValid] = Avia_parsing_mex(packet,reset_flag);
+    % [xyzCoords,xyzIntensity,isValid] = Avia_parsing(packet,reset_flag);
+    [xyzCoords,xyzIntensity,isValid] = Avia_parsing_mex(packet,reset_flag);
 
     if isValid
         
@@ -63,7 +64,7 @@ while 1
         if mod(frameCount,frame_num) == 0
 
             ptCloud = pointCloud(xyzPointsBuffer,"Intensity",xyzIntensityBuffer);
-            
+                       
             % Display ptCloud 
             view(player,ptCloud);
             
@@ -72,17 +73,17 @@ while 1
         end
         
         % Display Rendering rate 
-        % current_time = toc;
-        % if current_time - start_time >= 1
-        %     frame_count_diff = frameCount - last_framecount;
-        %     fprintf("Create %d ptCloud image in 1 second\n", frame_count_diff);
-        %     last_framecount = frameCount;
-        %     start_time = current_time;
-        % end
+        current_time = toc;
+        if current_time - start_time >= 1
+            frame_count_diff = frameCount - last_framecount - 1;
+            fprintf("Create %d ptCloud image in 1 second\n", frame_count_diff);
+            last_framecount = frameCount;
+            start_time = current_time;
+        end
         
         frameCount = frameCount + 1;
-        flush(Avia_UDP)
+        % flush(Avia_UDP)
     end
-
+    
     reset_flag = single(1);
 end

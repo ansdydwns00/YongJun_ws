@@ -5,7 +5,7 @@
  * File: Avia_parsing_single.c
  *
  * MATLAB Coder version            : 24.1
- * C/C++ source code generated on  : 13-Jun-2024 20:01:18
+ * C/C++ source code generated on  : 29-Jun-2024 20:44:43
  */
 
 /* Include Files */
@@ -22,7 +22,7 @@
 #include <string.h>
 
 /* Variable Definitions */
-static boolean_T points_not_empty;
+static bool points_not_empty;
 
 /* Function Definitions */
 /*
@@ -32,12 +32,12 @@ static boolean_T points_not_empty;
  *                float reset_flag
  *                emxArray_real32_T *xyzCoords
  *                emxArray_real32_T *xyzIntensity
- *                boolean_T *isValid
+ *                bool *isValid
  * Return Type  : void
  */
 void Avia_parsing_single(const float packet[1362], float reset_flag,
                          emxArray_real32_T *xyzCoords,
-                         emxArray_real32_T *xyzIntensity, boolean_T *isValid)
+                         emxArray_real32_T *xyzIntensity, bool *isValid)
 {
   static float points[172800];
   static float Intensity[57600];
@@ -114,7 +114,7 @@ void Avia_parsing_single(const float packet[1362], float reset_flag,
       i = n >> 2;
     }
     memcpy((void *)&int32Value_data[0], (void *)&x_data[0],
-           (unsigned int)((size_t)i * sizeof(int)));
+           (size_t)i * sizeof(int));
     x[k] = (float)int32Value_data[0] / 1000.0F;
     out = k * 14 + 5;
     n = k * 14 + 8;
@@ -155,7 +155,7 @@ void Avia_parsing_single(const float packet[1362], float reset_flag,
       i = n >> 2;
     }
     memcpy((void *)&int32Value_data[0], (void *)&x_data[0],
-           (unsigned int)((size_t)i * sizeof(int)));
+           (size_t)i * sizeof(int));
     y[k] = (float)int32Value_data[0] / 1000.0F;
     out = k * 14 + 9;
     n = k * 14 + 12;
@@ -196,7 +196,7 @@ void Avia_parsing_single(const float packet[1362], float reset_flag,
       i = n >> 2;
     }
     memcpy((void *)&int32Value_data[0], (void *)&x_data[0],
-           (unsigned int)((size_t)i * sizeof(int)));
+           (size_t)i * sizeof(int));
     z[k] = (float)int32Value_data[0] / 1000.0F;
     b_I[k] = packet[k * 14 + 30];
   }
@@ -228,6 +228,11 @@ void Avia_parsing_single(const float packet[1362], float reset_flag,
     memset(&Intensity[0], 0, 57600U * sizeof(float));
     b_i = 1.0F;
   } else {
+    xyzCoords->size[0] = 0;
+    xyzCoords->size[1] = 0;
+    xyzIntensity->size[0] = 0;
+    xyzIntensity->size[1] = 0;
+    *isValid = false;
     out_tmp = (b_i - 1.0F) * 96.0F;
     if (out_tmp + 96.0F < out_tmp + 1.0F) {
       vec->size[0] = 1;
@@ -275,7 +280,7 @@ void Avia_parsing_single(const float packet[1362], float reset_flag,
     emxEnsureCapacity_uint16_T(r, i);
     r1 = r->data;
     for (i = 0; i < out; i++) {
-      r1[i] = (unsigned short)((unsigned short)xyzCoords_data[i] - 1);
+      r1[i] = (unsigned short)((unsigned short)xyzCoords_data[i] - 1U);
     }
     n = vec->size[1];
     for (i = 0; i < 3; i++) {
@@ -328,18 +333,13 @@ void Avia_parsing_single(const float packet[1362], float reset_flag,
     emxEnsureCapacity_uint16_T(r, i);
     r1 = r->data;
     for (i = 0; i < out; i++) {
-      r1[i] = (unsigned short)((unsigned short)xyzCoords_data[i] - 1);
+      r1[i] = (unsigned short)((unsigned short)xyzCoords_data[i] - 1U);
     }
     for (i = 0; i < out; i++) {
       Intensity[r1[i]] = b_I[i];
     }
     emxFree_uint16_T(&r);
     b_i++;
-    xyzCoords->size[0] = 0;
-    xyzCoords->size[1] = 0;
-    xyzIntensity->size[0] = 0;
-    xyzIntensity->size[1] = 0;
-    *isValid = false;
   }
   emxFree_real32_T(&vec);
 }

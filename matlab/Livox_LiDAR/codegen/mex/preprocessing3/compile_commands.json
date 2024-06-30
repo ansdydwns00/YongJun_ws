@@ -1,0 +1,110 @@
+[
+  {
+    "directory": "/home/aiv/YongJun_ws/matlab/Livox_LiDAR/codegen/mex/preprocessing3",
+    "command": "g++ -fexceptions -fPIC -fno-omit-frame-pointer -pthread -fwrapv -D_GNU_SOURCE -DMATLAB_MEX_FILE  -O2 -DNDEBUG -std=c++11 -I \".\" -I \"/home/aiv/YongJun_ws/matlab/Livox_LiDAR\" -I \"/usr/local/MATLAB/R2024a/toolbox/vision/builtins/src/vision/include\" -I \"/usr/local/MATLAB/R2024a/toolbox/vision/builtins/src/vision/export/include/vision\" -I \"/usr/local/MATLAB/R2024a/extern/include\" -I \"./interface\" -I \".\" -DMODEL=preprocessing3_mex -msse2 -fno-predictive-commoning -c  /usr/local/MATLAB/R2024a/toolbox/vision/builtins/src/vision/labelRangeDataGroundRemovalUtilsCore.cpp -o build/glnxa64/labelRangeDataGroundRemovalUtilsCore.o",
+    "file": "/usr/local/MATLAB/R2024a/toolbox/vision/builtins/src/vision/labelRangeDataGroundRemovalUtilsCore.cpp",
+    "output": "build/glnxa64/labelRangeDataGroundRemovalUtilsCore.o"
+  },
+  {
+    "directory": "/home/aiv/YongJun_ws/matlab/Livox_LiDAR/codegen/mex/preprocessing3",
+    "command": "/usr/bin/gcc -fexceptions -fPIC -fno-omit-frame-pointer -pthread -fwrapv -D_GNU_SOURCE -DMATLAB_MEX_FILE  -O2 -DNDEBUG -std=c99 -I \".\" -I \"/home/aiv/YongJun_ws/matlab/Livox_LiDAR\" -I \"/usr/local/MATLAB/R2024a/toolbox/vision/builtins/src/vision/include\" -I \"/usr/local/MATLAB/R2024a/toolbox/vision/builtins/src/vision/export/include/vision\" -I \"/usr/local/MATLAB/R2024a/extern/include\" -I \"./interface\" -I \".\" -DMODEL=preprocessing3_mex -msse2 -fno-predictive-commoning -c  preprocessing3_data.c -o build/glnxa64/preprocessing3_data.o",
+    "file": "preprocessing3_data.c",
+    "output": "build/glnxa64/preprocessing3_data.o"
+  },
+  {
+    "directory": "/home/aiv/YongJun_ws/matlab/Livox_LiDAR/codegen/mex/preprocessing3",
+    "command": "/usr/bin/gcc -fexceptions -fPIC -fno-omit-frame-pointer -pthread -fwrapv -D_GNU_SOURCE -DMATLAB_MEX_FILE  -O2 -DNDEBUG -std=c99 -I \".\" -I \"/home/aiv/YongJun_ws/matlab/Livox_LiDAR\" -I \"/usr/local/MATLAB/R2024a/toolbox/vision/builtins/src/vision/include\" -I \"/usr/local/MATLAB/R2024a/toolbox/vision/builtins/src/vision/export/include/vision\" -I \"/usr/local/MATLAB/R2024a/extern/include\" -I \"./interface\" -I \".\" -DMODEL=preprocessing3_mex -msse2 -fno-predictive-commoning -c  rt_nonfinite.c -o build/glnxa64/rt_nonfinite.o",
+    "file": "rt_nonfinite.c",
+    "output": "build/glnxa64/rt_nonfinite.o"
+  },
+  {
+    "directory": "/home/aiv/YongJun_ws/matlab/Livox_LiDAR/codegen/mex/preprocessing3",
+    "command": "/usr/bin/gcc -fexceptions -fPIC -fno-omit-frame-pointer -pthread -fwrapv -D_GNU_SOURCE -DMATLAB_MEX_FILE  -O2 -DNDEBUG -std=c99 -I \".\" -I \"/home/aiv/YongJun_ws/matlab/Livox_LiDAR\" -I \"/usr/local/MATLAB/R2024a/toolbox/vision/builtins/src/vision/include\" -I \"/usr/local/MATLAB/R2024a/toolbox/vision/builtins/src/vision/export/include/vision\" -I \"/usr/local/MATLAB/R2024a/extern/include\" -I \"./interface\" -I \".\" -DMODEL=preprocessing3_mex -msse2 -fno-predictive-commoning -c  preprocessing3_initialize.c -o build/glnxa64/preprocessing3_initialize.o",
+    "file": "preprocessing3_initialize.c",
+    "output": "build/glnxa64/preprocessing3_initialize.o"
+  },
+  {
+    "directory": "/home/aiv/YongJun_ws/matlab/Livox_LiDAR/codegen/mex/preprocessing3",
+    "command": "/usr/bin/gcc -fexceptions -fPIC -fno-omit-frame-pointer -pthread -fwrapv -D_GNU_SOURCE -DMATLAB_MEX_FILE  -O2 -DNDEBUG -std=c99 -I \".\" -I \"/home/aiv/YongJun_ws/matlab/Livox_LiDAR\" -I \"/usr/local/MATLAB/R2024a/toolbox/vision/builtins/src/vision/include\" -I \"/usr/local/MATLAB/R2024a/toolbox/vision/builtins/src/vision/export/include/vision\" -I \"/usr/local/MATLAB/R2024a/extern/include\" -I \"./interface\" -I \".\" -DMODEL=preprocessing3_mex -msse2 -fno-predictive-commoning -c  preprocessing3_terminate.c -o build/glnxa64/preprocessing3_terminate.o",
+    "file": "preprocessing3_terminate.c",
+    "output": "build/glnxa64/preprocessing3_terminate.o"
+  },
+  {
+    "directory": "/home/aiv/YongJun_ws/matlab/Livox_LiDAR/codegen/mex/preprocessing3",
+    "command": "/usr/bin/gcc -fexceptions -fPIC -fno-omit-frame-pointer -pthread -fwrapv -D_GNU_SOURCE -DMATLAB_MEX_FILE  -O2 -DNDEBUG -std=c99 -I \".\" -I \"/home/aiv/YongJun_ws/matlab/Livox_LiDAR\" -I \"/usr/local/MATLAB/R2024a/toolbox/vision/builtins/src/vision/include\" -I \"/usr/local/MATLAB/R2024a/toolbox/vision/builtins/src/vision/export/include/vision\" -I \"/usr/local/MATLAB/R2024a/extern/include\" -I \"./interface\" -I \".\" -DMODEL=preprocessing3_mex -msse2 -fno-predictive-commoning -c  preprocessing3.c -o build/glnxa64/preprocessing3.o",
+    "file": "preprocessing3.c",
+    "output": "build/glnxa64/preprocessing3.o"
+  },
+  {
+    "directory": "/home/aiv/YongJun_ws/matlab/Livox_LiDAR/codegen/mex/preprocessing3",
+    "command": "/usr/bin/gcc -fexceptions -fPIC -fno-omit-frame-pointer -pthread -fwrapv -D_GNU_SOURCE -DMATLAB_MEX_FILE  -O2 -DNDEBUG -std=c99 -I \".\" -I \"/home/aiv/YongJun_ws/matlab/Livox_LiDAR\" -I \"/usr/local/MATLAB/R2024a/toolbox/vision/builtins/src/vision/include\" -I \"/usr/local/MATLAB/R2024a/toolbox/vision/builtins/src/vision/export/include/vision\" -I \"/usr/local/MATLAB/R2024a/extern/include\" -I \"./interface\" -I \".\" -DMODEL=preprocessing3_mex -msse2 -fno-predictive-commoning -c  convertFromCartesianToSphericalCoordinate.c -o build/glnxa64/convertFromCartesianToSphericalCoordinate.o",
+    "file": "convertFromCartesianToSphericalCoordinate.c",
+    "output": "build/glnxa64/convertFromCartesianToSphericalCoordinate.o"
+  },
+  {
+    "directory": "/home/aiv/YongJun_ws/matlab/Livox_LiDAR/codegen/mex/preprocessing3",
+    "command": "/usr/bin/gcc -fexceptions -fPIC -fno-omit-frame-pointer -pthread -fwrapv -D_GNU_SOURCE -DMATLAB_MEX_FILE  -O2 -DNDEBUG -std=c99 -I \".\" -I \"/home/aiv/YongJun_ws/matlab/Livox_LiDAR\" -I \"/usr/local/MATLAB/R2024a/toolbox/vision/builtins/src/vision/include\" -I \"/usr/local/MATLAB/R2024a/toolbox/vision/builtins/src/vision/export/include/vision\" -I \"/usr/local/MATLAB/R2024a/extern/include\" -I \"./interface\" -I \".\" -DMODEL=preprocessing3_mex -msse2 -fno-predictive-commoning -c  pointCloud.c -o build/glnxa64/pointCloud.o",
+    "file": "pointCloud.c",
+    "output": "build/glnxa64/pointCloud.o"
+  },
+  {
+    "directory": "/home/aiv/YongJun_ws/matlab/Livox_LiDAR/codegen/mex/preprocessing3",
+    "command": "/usr/bin/gcc -fexceptions -fPIC -fno-omit-frame-pointer -pthread -fwrapv -D_GNU_SOURCE -DMATLAB_MEX_FILE  -O2 -DNDEBUG -std=c99 -I \".\" -I \"/home/aiv/YongJun_ws/matlab/Livox_LiDAR\" -I \"/usr/local/MATLAB/R2024a/toolbox/vision/builtins/src/vision/include\" -I \"/usr/local/MATLAB/R2024a/toolbox/vision/builtins/src/vision/export/include/vision\" -I \"/usr/local/MATLAB/R2024a/extern/include\" -I \"./interface\" -I \".\" -DMODEL=preprocessing3_mex -msse2 -fno-predictive-commoning -c  indexShapeCheck.c -o build/glnxa64/indexShapeCheck.o",
+    "file": "indexShapeCheck.c",
+    "output": "build/glnxa64/indexShapeCheck.o"
+  },
+  {
+    "directory": "/home/aiv/YongJun_ws/matlab/Livox_LiDAR/codegen/mex/preprocessing3",
+    "command": "/usr/bin/gcc -fexceptions -fPIC -fno-omit-frame-pointer -pthread -fwrapv -D_GNU_SOURCE -DMATLAB_MEX_FILE  -O2 -DNDEBUG -std=c99 -I \".\" -I \"/home/aiv/YongJun_ws/matlab/Livox_LiDAR\" -I \"/usr/local/MATLAB/R2024a/toolbox/vision/builtins/src/vision/include\" -I \"/usr/local/MATLAB/R2024a/toolbox/vision/builtins/src/vision/export/include/vision\" -I \"/usr/local/MATLAB/R2024a/extern/include\" -I \"./interface\" -I \".\" -DMODEL=preprocessing3_mex -msse2 -fno-predictive-commoning -c  warning.c -o build/glnxa64/warning.o",
+    "file": "warning.c",
+    "output": "build/glnxa64/warning.o"
+  },
+  {
+    "directory": "/home/aiv/YongJun_ws/matlab/Livox_LiDAR/codegen/mex/preprocessing3",
+    "command": "/usr/bin/gcc -fexceptions -fPIC -fno-omit-frame-pointer -pthread -fwrapv -D_GNU_SOURCE -DMATLAB_MEX_FILE  -O2 -DNDEBUG -std=c99 -I \".\" -I \"/home/aiv/YongJun_ws/matlab/Livox_LiDAR\" -I \"/usr/local/MATLAB/R2024a/toolbox/vision/builtins/src/vision/include\" -I \"/usr/local/MATLAB/R2024a/toolbox/vision/builtins/src/vision/export/include/vision\" -I \"/usr/local/MATLAB/R2024a/extern/include\" -I \"./interface\" -I \".\" -DMODEL=preprocessing3_mex -msse2 -fno-predictive-commoning -c  pointCloudBase.c -o build/glnxa64/pointCloudBase.o",
+    "file": "pointCloudBase.c",
+    "output": "build/glnxa64/pointCloudBase.o"
+  },
+  {
+    "directory": "/home/aiv/YongJun_ws/matlab/Livox_LiDAR/codegen/mex/preprocessing3",
+    "command": "/usr/bin/gcc -fexceptions -fPIC -fno-omit-frame-pointer -pthread -fwrapv -D_GNU_SOURCE -DMATLAB_MEX_FILE  -O2 -DNDEBUG -std=c99 -I \".\" -I \"/home/aiv/YongJun_ws/matlab/Livox_LiDAR\" -I \"/usr/local/MATLAB/R2024a/toolbox/vision/builtins/src/vision/include\" -I \"/usr/local/MATLAB/R2024a/toolbox/vision/builtins/src/vision/export/include/vision\" -I \"/usr/local/MATLAB/R2024a/extern/include\" -I \"./interface\" -I \".\" -DMODEL=preprocessing3_mex -msse2 -fno-predictive-commoning -c  handle.c -o build/glnxa64/handle.o",
+    "file": "handle.c",
+    "output": "build/glnxa64/handle.o"
+  },
+  {
+    "directory": "/home/aiv/YongJun_ws/matlab/Livox_LiDAR/codegen/mex/preprocessing3",
+    "command": "/usr/bin/gcc -fexceptions -fPIC -fno-omit-frame-pointer -pthread -fwrapv -D_GNU_SOURCE -DMATLAB_MEX_FILE  -O2 -DNDEBUG -std=c99 -I \".\" -I \"/home/aiv/YongJun_ws/matlab/Livox_LiDAR\" -I \"/usr/local/MATLAB/R2024a/toolbox/vision/builtins/src/vision/include\" -I \"/usr/local/MATLAB/R2024a/toolbox/vision/builtins/src/vision/export/include/vision\" -I \"/usr/local/MATLAB/R2024a/extern/include\" -I \"./interface\" -I \".\" -DMODEL=preprocessing3_mex -msse2 -fno-predictive-commoning -c  interface/_coder_preprocessing3_api.c -o build/glnxa64/_coder_preprocessing3_api.o",
+    "file": "interface/_coder_preprocessing3_api.c",
+    "output": "build/glnxa64/_coder_preprocessing3_api.o"
+  },
+  {
+    "directory": "/home/aiv/YongJun_ws/matlab/Livox_LiDAR/codegen/mex/preprocessing3",
+    "command": "/usr/bin/gcc -fexceptions -fPIC -fno-omit-frame-pointer -pthread -fwrapv -D_GNU_SOURCE -DMATLAB_MEX_FILE  -O2 -DNDEBUG -std=c99 -I \".\" -I \"/home/aiv/YongJun_ws/matlab/Livox_LiDAR\" -I \"/usr/local/MATLAB/R2024a/toolbox/vision/builtins/src/vision/include\" -I \"/usr/local/MATLAB/R2024a/toolbox/vision/builtins/src/vision/export/include/vision\" -I \"/usr/local/MATLAB/R2024a/extern/include\" -I \"./interface\" -I \".\" -DMODEL=preprocessing3_mex -msse2 -fno-predictive-commoning -c  interface/_coder_preprocessing3_mex.c -o build/glnxa64/_coder_preprocessing3_mex.o",
+    "file": "interface/_coder_preprocessing3_mex.c",
+    "output": "build/glnxa64/_coder_preprocessing3_mex.o"
+  },
+  {
+    "directory": "/home/aiv/YongJun_ws/matlab/Livox_LiDAR/codegen/mex/preprocessing3",
+    "command": "/usr/bin/gcc -fexceptions -fPIC -fno-omit-frame-pointer -pthread -fwrapv -D_GNU_SOURCE -DMATLAB_MEX_FILE  -O2 -DNDEBUG -std=c99 -I \".\" -I \"/home/aiv/YongJun_ws/matlab/Livox_LiDAR\" -I \"/usr/local/MATLAB/R2024a/toolbox/vision/builtins/src/vision/include\" -I \"/usr/local/MATLAB/R2024a/toolbox/vision/builtins/src/vision/export/include/vision\" -I \"/usr/local/MATLAB/R2024a/extern/include\" -I \"./interface\" -I \".\" -DMODEL=preprocessing3_mex -msse2 -fno-predictive-commoning -c  eml_int_forloop_overflow_check.c -o build/glnxa64/eml_int_forloop_overflow_check.o",
+    "file": "eml_int_forloop_overflow_check.c",
+    "output": "build/glnxa64/eml_int_forloop_overflow_check.o"
+  },
+  {
+    "directory": "/home/aiv/YongJun_ws/matlab/Livox_LiDAR/codegen/mex/preprocessing3",
+    "command": "/usr/bin/gcc -fexceptions -fPIC -fno-omit-frame-pointer -pthread -fwrapv -D_GNU_SOURCE -DMATLAB_MEX_FILE  -O2 -DNDEBUG -std=c99 -I \".\" -I \"/home/aiv/YongJun_ws/matlab/Livox_LiDAR\" -I \"/usr/local/MATLAB/R2024a/toolbox/vision/builtins/src/vision/include\" -I \"/usr/local/MATLAB/R2024a/toolbox/vision/builtins/src/vision/export/include/vision\" -I \"/usr/local/MATLAB/R2024a/extern/include\" -I \"./interface\" -I \".\" -DMODEL=preprocessing3_mex -msse2 -fno-predictive-commoning -c  preprocessing3_emxutil.c -o build/glnxa64/preprocessing3_emxutil.o",
+    "file": "preprocessing3_emxutil.c",
+    "output": "build/glnxa64/preprocessing3_emxutil.o"
+  },
+  {
+    "directory": "/home/aiv/YongJun_ws/matlab/Livox_LiDAR/codegen/mex/preprocessing3",
+    "command": "/usr/bin/gcc -fexceptions -fPIC -fno-omit-frame-pointer -pthread -fwrapv -D_GNU_SOURCE -DMATLAB_MEX_FILE  -O2 -DNDEBUG -std=c99 -I \".\" -I \"/home/aiv/YongJun_ws/matlab/Livox_LiDAR\" -I \"/usr/local/MATLAB/R2024a/toolbox/vision/builtins/src/vision/include\" -I \"/usr/local/MATLAB/R2024a/toolbox/vision/builtins/src/vision/export/include/vision\" -I \"/usr/local/MATLAB/R2024a/extern/include\" -I \"./interface\" -I \".\" -DMODEL=preprocessing3_mex -msse2 -fno-predictive-commoning -c  interface/_coder_preprocessing3_info.c -o build/glnxa64/_coder_preprocessing3_info.o",
+    "file": "interface/_coder_preprocessing3_info.c",
+    "output": "build/glnxa64/_coder_preprocessing3_info.o"
+  },
+  {
+    "directory": "/home/aiv/YongJun_ws/matlab/Livox_LiDAR/codegen/mex/preprocessing3",
+    "command": "/usr/bin/gcc -fexceptions -fPIC -fno-omit-frame-pointer -pthread -fwrapv -D_GNU_SOURCE -DMATLAB_MEX_FILE  -O2 -DNDEBUG -std=c99 -I \".\" -I \"/home/aiv/YongJun_ws/matlab/Livox_LiDAR\" -I \"/usr/local/MATLAB/R2024a/toolbox/vision/builtins/src/vision/include\" -I \"/usr/local/MATLAB/R2024a/toolbox/vision/builtins/src/vision/export/include/vision\" -I \"/usr/local/MATLAB/R2024a/extern/include\" -I \"./interface\" -I \".\" -DMODEL=preprocessing3_mex -msse2 -fno-predictive-commoning -c  /usr/local/MATLAB/R2024a/extern/version/c_mexapi_version.c -o build/glnxa64/c_mexapi_version.o",
+    "file": "/usr/local/MATLAB/R2024a/extern/version/c_mexapi_version.c",
+    "output": "build/glnxa64/c_mexapi_version.o"
+  }
+]

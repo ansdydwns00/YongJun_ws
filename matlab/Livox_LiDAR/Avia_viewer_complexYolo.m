@@ -21,9 +21,6 @@ LidarPub = ros2publisher(Node,"/Avia","sensor_msgs/PointCloud2");
 LidarMsg = ros2message(LidarPub);
 LidarMsg.header.frame_id = 'map';
 
-% LidarMsg = rosWriteXYZ(LidarMsg,(ptCloud.Location));
-% LidarMsg = rosWriteIntensity(LidarMsg,(ptCloud.Intensity));
-% send(LidarPub,LidarMsg);
 %% Connect AVIA UDP Communication
 
 % Connect udp data communication
@@ -67,59 +64,76 @@ player = pcplayer([xmin xmax],[ymin ymax],[zmin zmax]);
 % Set values for frame count 
 frameCount = 1;
 
+% Set values for n frames
+frame_num = 6;
+
+% Parameter for n frame buffer
+xyzPointsBuffer = [];
+xyzIntensityBuffer = [];
+
 % Flag for first Run
 reset_flag = single(0);
 
+
+flush(Avia_UDP)
 while 1
     
     % Read 1 packet
     packet = single(read(Avia_UDP,1362))';
 
-    [xyzCoords,xyzIntensity,isValid] = Avia_parsing_single_mex(packet,reset_flag);
+    [xyzCoords,xyzIntensity,isValid] = Avia_parsing_mex(packet,reset_flag);
 
     if isValid
-
-        reshape_xyzPointsBuffer = reshape(xyzCoords, 32, [], 3);
-        reshape_xyzIntensityBuffer = reshape(xyzIntensity, 32, [], 1);
-
-        ptCloud = pointCloud(reshape_xyzPointsBuffer,"Intensity",reshape_xyzIntensityBuffer);
         
-        % Convert point cloud to Bird-Eye-View Image
-        I = ptCldToBEV(ptCloud,gridParams);
-        
-        % Object Detection
-        [bboxes, scores, labels] = detect(detector,I,"Threshold",0.001);
+        % Display n message
+        xyzPointsBuffer = vertcat(xyzPointsBuffer,xyzCoords);
+        xyzIntensityBuffer = vertcat(xyzIntensityBuffer,xyzIntensity);
 
-        % Transfer bboxes to cuboid bboxes
-        bboxCuboid = transferBboxToCuboidBbox(bboxes,gridParams,ptCloud); 
+        if mod(frameCount,frame_num) == 0
+
+            reshape_xyzPointsBuffer = reshape(xyzPointsBuffer, 32, [], 3);
+            reshape_xyzIntensityBuffer = reshape(xyzIntensityBuffer, 32, [], 1);
     
-        % Compute Object Distance
-        [Distances,Ids] = LR_computeDistance(ptCloud,bboxCuboid);
+            ptCloud = pointCloud(reshape_xyzPointsBuffer,"Intensity",reshape_xyzIntensityBuffer);
+            
+            % Convert point cloud to Bird-Eye-View Image
+            I = ptCldToBEV(ptCloud,gridParams);
+            
+            % Object Detection
+            [bboxes, scores, labels] = detect(detector,I,"Threshold",0.001);
+    
+            % Transfer bboxes to cuboid bboxes
+            bboxCuboid = transferBboxToCuboidBbox(bboxes,gridParams,ptCloud); 
+        
+            % Compute Object Distance
+            [Distances,Ids] = LR_computeDistance(ptCloud,bboxCuboid);
+    
+            % Delete 0 distance
+            idx = find(Distances);
+            
+            Distances = Distances(idx,:);
+            Ids = Ids(idx,:);
+            bboxCuboid = bboxCuboid(idx,:);
+            scores = scores(idx,:);
+            labels = string(labels(idx,:));
+            
+            % Match Distances & Labels
+            showShape('cuboid',bboxCuboid,'Parent',player.Axes,'Opacity',0.2,'Color','red','LineWidth',0.5,...
+                      'Label',"ID:" + Ids + "," + labels + "," + Distances + "m",...
+                      'LabelOpacity',0.8);
+    
+            % showShape('cuboid',bboxCuboid,'Parent',player.Axes,'Opacity',0.2,'Color','red','LineWidth',0.5);
+            
+            % Display ptCloud 
+            view(player,ptCloud);
+            
+            xyzPointsBuffer = [];
+            xyzIntensityBuffer = [];
+        end
 
-        % Delete 0 distance
-        idx = find(Distances);
-        
-        Distances = Distances(idx,:);
-        Ids = Ids(idx,:);
-        bboxCuboid = bboxCuboid(idx,:);
-        scores = scores(idx,:);
-        labels = string(labels(idx,:));
-        
-
-        % Match Distances & Labels
-        showShape('cuboid',bboxCuboid,'Parent',player.Axes,'Opacity',0.2,'Color','red','LineWidth',0.5,...
-                  'Label',"ID:" + Ids + "," + labels + "," + Distances + "m",...
-                  'LabelOpacity',0.8);
-
-        % showShape('cuboid',bboxCuboid,'Parent',player.Axes,'Opacity',0.2,'Color','red','LineWidth',0.5);
-        
-        
-        % Display ptCloud 
-        view(player,ptCloud);
-        
         frameCount = frameCount + 1;
         
-        flush(Avia_UDP)
+        % flush(Avia_UDP)
     end
    
     reset_flag = single(1);

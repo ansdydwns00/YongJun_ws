@@ -5,7 +5,7 @@
  * File: Avia_parsing_single_data.c
  *
  * MATLAB Coder version            : 24.1
- * C/C++ source code generated on  : 13-Jun-2024 20:01:18
+ * C/C++ source code generated on  : 29-Jun-2024 20:44:43
  */
 
 /* Include Files */
@@ -13,7 +13,7 @@
 #include "rt_nonfinite.h"
 
 /* Variable Definitions */
-boolean_T isInitialized_Avia_parsing_single = false;
+bool isInitialized_Avia_parsing_single = false;
 
 /*
  * File trailer for Avia_parsing_single_data.c

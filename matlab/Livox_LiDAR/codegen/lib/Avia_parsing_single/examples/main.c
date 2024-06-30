@@ -5,7 +5,7 @@
  * File: main.c
  *
  * MATLAB Coder version            : 24.1
- * C/C++ source code generated on  : 13-Jun-2024 20:01:18
+ * C/C++ source code generated on  : 29-Jun-2024 20:44:43
  */
 
 /*************************************************************************/
@@ -100,7 +100,7 @@ void main_Avia_parsing_single(void)
   emxArray_real32_T *xyzCoords;
   emxArray_real32_T *xyzIntensity;
   float fv[1362];
-  boolean_T isValid;
+  bool isValid;
   /* Initialize function 'Avia_parsing_single' input arguments. */
   /* Initialize function input argument 'packet'. */
   /* Call the entry-point 'Avia_parsing_single'. */

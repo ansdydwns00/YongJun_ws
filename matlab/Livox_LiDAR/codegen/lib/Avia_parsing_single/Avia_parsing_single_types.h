@@ -5,7 +5,7 @@
  * File: Avia_parsing_single_types.h
  *
  * MATLAB Coder version            : 24.1
- * C/C++ source code generated on  : 13-Jun-2024 20:01:18
+ * C/C++ source code generated on  : 29-Jun-2024 20:44:43
  */
 
 #ifndef AVIA_PARSING_SINGLE_TYPES_H
@@ -22,7 +22,7 @@ struct emxArray_real32_T {
   int *size;
   int allocatedSize;
   int numDimensions;
-  boolean_T canFreeData;
+  bool canFreeData;
 };
 #endif /* struct_emxArray_real32_T */
 #ifndef typedef_emxArray_real32_T
@@ -37,7 +37,7 @@ struct emxArray_uint16_T {
   int *size;
   int allocatedSize;
   int numDimensions;
-  boolean_T canFreeData;
+  bool canFreeData;
 };
 #endif /* struct_emxArray_uint16_T */
 #ifndef typedef_emxArray_uint16_T
