@@ -134,7 +134,12 @@
 
  	# ZED ROS2 
   	# https://github.com/stereolabs/zed-ros2-wrapper
- 	
+
+  	# dependency
+   	# sudo apt-get install ros-<your-ros-distro>-robot-localization
+	# sudo apt-get install ros-<your-ros-distro>-diagnostic-updater
+	# sudo apt-get install ros-<your-ros-distro>-nmea-msgs
+	# sudo apt-get install ros-<your-ros-distro>-xacro
  
  		
 </details> 
