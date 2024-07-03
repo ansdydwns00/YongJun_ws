@@ -122,6 +122,22 @@
 </details> 
 
 
+<details>
+	<summary>ZED</summary>
+  	<div markdown="1">
+
+ 	# ZED SDK download
+	# https://www.stereolabs.com/developers/release
+ 
+ 	# ZED SDK download guide
+	# https://www.stereolabs.com/docs/installation/linux
+
+ 	# ZED ROS2 
+  	# https://github.com/stereolabs/zed-ros2-wrapper
+ 	
+ 
+ 		
+</details> 
 
 
 ---
