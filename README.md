@@ -157,6 +157,8 @@
 
 # Ubuntu 20.04.6 LTS 
 # ROS2 - foxy version
+# uname -a (kernel version) - Linux aiv 5.15.0-113-generic #123~20.04.1-Ubuntu SMP Wed Jun 12 17:33:13 UTC 2024 x86_64 x86_64 x86_64 GNU/Linux
+
 ```
 
 
