@@ -122,6 +122,27 @@
 </details> 
 
 
+<details>
+	<summary>ZED</summary>
+  	<div markdown="1">
+
+ 	# ZED SDK download
+	# https://www.stereolabs.com/developers/release
+ 
+ 	# ZED SDK download guide
+	# https://www.stereolabs.com/docs/installation/linux
+
+ 	# ZED ROS2 
+  	# https://github.com/stereolabs/zed-ros2-wrapper
+
+  	# dependency
+   	# sudo apt-get install ros-<your-ros-distro>-robot-localization
+	# sudo apt-get install ros-<your-ros-distro>-diagnostic-updater
+	# sudo apt-get install ros-<your-ros-distro>-nmea-msgs
+	# sudo apt-get install ros-<your-ros-distro>-xacro
+ 
+ 		
+</details> 
 
 
 ---
@@ -136,6 +157,8 @@
 
 # Ubuntu 20.04.6 LTS 
 # ROS2 - foxy version
+# uname -a (kernel version) - Linux aiv 5.15.0-113-generic #123~20.04.1-Ubuntu SMP Wed Jun 12 17:33:13 UTC 2024 x86_64 x86_64 x86_64 GNU/Linux
+
 ```
 
 
