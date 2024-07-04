@@ -1,1 +1,0 @@
-/home/aiv/YongJun_ws/build/vision_msgs/ament_cmake_environment_hooks/pythonpath.sh

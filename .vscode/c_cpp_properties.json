@@ -1,0 +1,29 @@
+{
+  "configurations": [
+    {
+      "browse": {
+        "databaseFilename": "${default}",
+        "limitSymbolsToIncludedHeaders": false
+      },
+      "includePath": [
+        "/home/aiv/YongJun_ws/install/yolov8_msgs/include/**",
+        "/home/aiv/YongJun_ws/install/vision_msgs/include/**",
+        "/home/aiv/YongJun_ws/install/usb_cam/include/**",
+        "/opt/ros/foxy/include/**",
+        "/home/aiv/YongJun_ws/matlab/AutoL_LiDAR/src/deployedpointpillarmodel/include/**",
+        "/home/aiv/YongJun_ws/matlab/AutoL_LiDAR/src/vision_msgs/include/**",
+        "/home/aiv/YongJun_ws/matlab/Livox_LiDAR/src/deployedpointpillarmodel/include/**",
+        "/home/aiv/YongJun_ws/matlab/Livox_LiDAR/src/vision_msgs/include/**",
+        "/home/aiv/YongJun_ws/src/sensor/usb_cam/include/**",
+        "/home/aiv/YongJun_ws/src/vision_msgs/include/**",
+        "/usr/include/**"
+      ],
+      "name": "ROS",
+      "intelliSenseMode": "gcc-x64",
+      "compilerPath": "/usr/bin/gcc",
+      "cStandard": "gnu11",
+      "cppStandard": "c++14"
+    }
+  ],
+  "version": 4
+}

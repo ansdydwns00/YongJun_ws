@@ -1,1 +1,0 @@
-/home/aiv/YongJun_ws/src/YOLO/Yolov8/yolov8_msgs/msg/Vector2.msg

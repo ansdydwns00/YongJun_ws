@@ -1,1 +1,0 @@
-/home/aiv/YongJun_ws/src/vision_msgs/msg/Detection3D.msg
