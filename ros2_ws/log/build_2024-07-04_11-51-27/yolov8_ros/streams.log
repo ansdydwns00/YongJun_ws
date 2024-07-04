@@ -1,0 +1,14 @@
+[0.554s] Invoking command in '/home/aiv/YongJun_ws/ros2_ws/src/yolov8_ros/yolov8_ros': AMENT_PREFIX_PATH=/home/aiv/YongJun_ws/ros2_ws/install/yolov8_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/aiv/YongJun_ws/ros2_ws/install/yolov8_msgs LD_LIBRARY_PATH=/home/aiv/YongJun_ws/ros2_ws/install/yolov8_msgs/lib:/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib/x86_64-linux-gnu:/opt/ros/foxy/lib:/usr/local/cuda/lib64 PYTHONPATH=/home/aiv/YongJun_ws/ros2_ws/build/yolov8_ros/prefix_override:/home/aiv/YongJun_ws/ros2_ws/install/yolov8_ros/lib/python3.8/site-packages:/home/aiv/YongJun_ws/ros2_ws/install/yolov8_msgs/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../../../build/yolov8_ros build --build-base /home/aiv/YongJun_ws/ros2_ws/build/yolov8_ros/build install --record /home/aiv/YongJun_ws/ros2_ws/build/yolov8_ros/install.log --single-version-externally-managed install_data
+[0.719s] running egg_info
+[0.722s] writing manifest file '../../../build/yolov8_ros/yolov8_ros.egg-info/SOURCES.txt'
+[0.722s] running build
+[0.722s] running build_py
+[0.723s] running install
+[0.724s] running install_lib
+[0.724s] running install_data
+[0.724s] running install_egg_info
+[0.725s] removing '/home/aiv/YongJun_ws/ros2_ws/install/yolov8_ros/lib/python3.8/site-packages/yolov8_ros-0.0.0-py3.8.egg-info' (and everything under it)
+[0.725s] Copying ../../../build/yolov8_ros/yolov8_ros.egg-info to /home/aiv/YongJun_ws/ros2_ws/install/yolov8_ros/lib/python3.8/site-packages/yolov8_ros-0.0.0-py3.8.egg-info
+[0.726s] running install_scripts
+[0.737s] writing list of installed files to '/home/aiv/YongJun_ws/ros2_ws/build/yolov8_ros/install.log'
+[0.751s] Invoked command in '/home/aiv/YongJun_ws/ros2_ws/src/yolov8_ros/yolov8_ros' returned '0': AMENT_PREFIX_PATH=/home/aiv/YongJun_ws/ros2_ws/install/yolov8_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/aiv/YongJun_ws/ros2_ws/install/yolov8_msgs LD_LIBRARY_PATH=/home/aiv/YongJun_ws/ros2_ws/install/yolov8_msgs/lib:/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib/x86_64-linux-gnu:/opt/ros/foxy/lib:/usr/local/cuda/lib64 PYTHONPATH=/home/aiv/YongJun_ws/ros2_ws/build/yolov8_ros/prefix_override:/home/aiv/YongJun_ws/ros2_ws/install/yolov8_ros/lib/python3.8/site-packages:/home/aiv/YongJun_ws/ros2_ws/install/yolov8_msgs/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../../../build/yolov8_ros build --build-base /home/aiv/YongJun_ws/ros2_ws/build/yolov8_ros/build install --record /home/aiv/YongJun_ws/ros2_ws/build/yolov8_ros/install.log --single-version-externally-managed install_data

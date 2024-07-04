@@ -1,10 +1,1 @@
-# one keypoint for human pose estimation
-
-# id of the keypoint
-int32 id
-
-# 2D point in pixels
-yolov8_msgs/Point2D point
-
-# conf of the keypoint
-float64 score
+/home/aiv/YongJun_ws/ros2_ws/src/yolov8_ros/yolov8_msgs/msg/KeyPoint2D.msg

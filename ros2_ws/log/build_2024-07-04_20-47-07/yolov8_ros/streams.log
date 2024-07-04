@@ -1,0 +1,9 @@
+[0.547s] Invoking command in '/home/aiv/YongJun_ws/ros2_ws/build/yolov8_ros': PYTHONPATH=/home/aiv/YongJun_ws/ros2_ws/build/yolov8_ros/prefix_override:/home/aiv/YongJun_ws/ros2_ws/install/yolov8_ros/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py develop --editable --build-directory /home/aiv/YongJun_ws/ros2_ws/build/yolov8_ros/build --no-deps symlink_data
+[0.756s] running develop
+[0.757s] /home/aiv/.local/lib/python3.8/site-packages/setuptools/command/easy_install.py:156: EasyInstallDeprecationWarning: easy_install command is deprecated. Use build and pip and other standards-based tools.
+[0.757s]   warnings.warn(
+[0.884s] running egg_info
+[0.887s] writing manifest file 'yolov8_ros.egg-info/SOURCES.txt'
+[0.915s] running build_ext
+[0.916s] running symlink_data
+[0.941s] Invoked command in '/home/aiv/YongJun_ws/ros2_ws/build/yolov8_ros' returned '0': PYTHONPATH=/home/aiv/YongJun_ws/ros2_ws/build/yolov8_ros/prefix_override:/home/aiv/YongJun_ws/ros2_ws/install/yolov8_ros/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py develop --editable --build-directory /home/aiv/YongJun_ws/ros2_ws/build/yolov8_ros/build --no-deps symlink_data

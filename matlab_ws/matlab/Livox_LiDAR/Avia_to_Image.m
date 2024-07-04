@@ -82,7 +82,7 @@ while true
             [imPts,idx] = projectLidarPointsOnImage(ptCloud,cameraParams.Intrinsics,tform);
             imshow(img);
             hold on
-            scatter(imPts(:,1), imPts(:,2), 6, pointColors(idx), 'filled');
+            scatter(imPts(:,1), imPts(:,2), 4, pointColors(idx), 'filled');
             hold off
     
             xyzPointsBuffer = [];

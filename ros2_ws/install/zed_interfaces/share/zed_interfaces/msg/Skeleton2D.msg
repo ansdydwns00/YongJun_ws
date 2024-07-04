@@ -1,2 +1,1 @@
-# Skeleton joints
-zed_interfaces/Keypoint2Df[70] keypoints
+/home/aiv/YongJun_ws/ros2_ws/src/zed-ros2-wrapper/zed-ros2-interfaces/msg/Skeleton2D.msg

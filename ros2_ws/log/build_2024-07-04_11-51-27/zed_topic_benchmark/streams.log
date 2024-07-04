@@ -1,0 +1,20 @@
+[0.008s] Invoking command in '/home/aiv/YongJun_ws/ros2_ws/build/zed_topic_benchmark': AMENT_PREFIX_PATH=/home/aiv/YongJun_ws/ros2_ws/install/zed_topic_benchmark_component:/home/aiv/YongJun_ws/ros2_ws/install/zed_topic_benchmark_interfaces:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/aiv/YongJun_ws/ros2_ws/install/zed_topic_benchmark_component:/home/aiv/YongJun_ws/ros2_ws/install/zed_topic_benchmark_interfaces:/opt/ros/foxy /usr/bin/cmake --build /home/aiv/YongJun_ws/ros2_ws/build/zed_topic_benchmark -- -j32 -l32
+[0.036s] Invoked command in '/home/aiv/YongJun_ws/ros2_ws/build/zed_topic_benchmark' returned '0': AMENT_PREFIX_PATH=/home/aiv/YongJun_ws/ros2_ws/install/zed_topic_benchmark_component:/home/aiv/YongJun_ws/ros2_ws/install/zed_topic_benchmark_interfaces:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/aiv/YongJun_ws/ros2_ws/install/zed_topic_benchmark_component:/home/aiv/YongJun_ws/ros2_ws/install/zed_topic_benchmark_interfaces:/opt/ros/foxy /usr/bin/cmake --build /home/aiv/YongJun_ws/ros2_ws/build/zed_topic_benchmark -- -j32 -l32
+[0.057s] Invoking command in '/home/aiv/YongJun_ws/ros2_ws/build/zed_topic_benchmark': AMENT_PREFIX_PATH=/home/aiv/YongJun_ws/ros2_ws/install/zed_topic_benchmark_component:/home/aiv/YongJun_ws/ros2_ws/install/zed_topic_benchmark_interfaces:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/aiv/YongJun_ws/ros2_ws/install/zed_topic_benchmark_component:/home/aiv/YongJun_ws/ros2_ws/install/zed_topic_benchmark_interfaces:/opt/ros/foxy /usr/bin/cmake --install /home/aiv/YongJun_ws/ros2_ws/build/zed_topic_benchmark
+[0.065s] -- Install configuration: "Release"
+[0.065s] -- Up-to-date: /home/aiv/YongJun_ws/ros2_ws/install/zed_topic_benchmark/share/ament_index/resource_index/package_run_dependencies/zed_topic_benchmark
+[0.065s] -- Up-to-date: /home/aiv/YongJun_ws/ros2_ws/install/zed_topic_benchmark/share/ament_index/resource_index/parent_prefix_path/zed_topic_benchmark
+[0.065s] -- Up-to-date: /home/aiv/YongJun_ws/ros2_ws/install/zed_topic_benchmark/share/zed_topic_benchmark/environment/ament_prefix_path.sh
+[0.065s] -- Up-to-date: /home/aiv/YongJun_ws/ros2_ws/install/zed_topic_benchmark/share/zed_topic_benchmark/environment/ament_prefix_path.dsv
+[0.065s] -- Up-to-date: /home/aiv/YongJun_ws/ros2_ws/install/zed_topic_benchmark/share/zed_topic_benchmark/environment/path.sh
+[0.065s] -- Up-to-date: /home/aiv/YongJun_ws/ros2_ws/install/zed_topic_benchmark/share/zed_topic_benchmark/environment/path.dsv
+[0.065s] -- Up-to-date: /home/aiv/YongJun_ws/ros2_ws/install/zed_topic_benchmark/share/zed_topic_benchmark/local_setup.bash
+[0.065s] -- Up-to-date: /home/aiv/YongJun_ws/ros2_ws/install/zed_topic_benchmark/share/zed_topic_benchmark/local_setup.sh
+[0.065s] -- Up-to-date: /home/aiv/YongJun_ws/ros2_ws/install/zed_topic_benchmark/share/zed_topic_benchmark/local_setup.zsh
+[0.065s] -- Up-to-date: /home/aiv/YongJun_ws/ros2_ws/install/zed_topic_benchmark/share/zed_topic_benchmark/local_setup.dsv
+[0.065s] -- Installing: /home/aiv/YongJun_ws/ros2_ws/install/zed_topic_benchmark/share/zed_topic_benchmark/package.dsv
+[0.065s] -- Up-to-date: /home/aiv/YongJun_ws/ros2_ws/install/zed_topic_benchmark/share/ament_index/resource_index/packages/zed_topic_benchmark
+[0.065s] -- Up-to-date: /home/aiv/YongJun_ws/ros2_ws/install/zed_topic_benchmark/share/zed_topic_benchmark/cmake/zed_topic_benchmarkConfig.cmake
+[0.066s] -- Up-to-date: /home/aiv/YongJun_ws/ros2_ws/install/zed_topic_benchmark/share/zed_topic_benchmark/cmake/zed_topic_benchmarkConfig-version.cmake
+[0.066s] -- Up-to-date: /home/aiv/YongJun_ws/ros2_ws/install/zed_topic_benchmark/share/zed_topic_benchmark/package.xml
+[0.067s] Invoked command in '/home/aiv/YongJun_ws/ros2_ws/build/zed_topic_benchmark' returned '0': AMENT_PREFIX_PATH=/home/aiv/YongJun_ws/ros2_ws/install/zed_topic_benchmark_component:/home/aiv/YongJun_ws/ros2_ws/install/zed_topic_benchmark_interfaces:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/aiv/YongJun_ws/ros2_ws/install/zed_topic_benchmark_component:/home/aiv/YongJun_ws/ros2_ws/install/zed_topic_benchmark_interfaces:/opt/ros/foxy /usr/bin/cmake --install /home/aiv/YongJun_ws/ros2_ws/build/zed_topic_benchmark

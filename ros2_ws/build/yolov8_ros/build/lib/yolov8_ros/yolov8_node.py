@@ -53,7 +53,7 @@ class Yolov8Node(Node):
         self.device = self.get_parameter(
             "device").get_parameter_value().string_value
 
-        self.declare_parameter("threshold", 0.8)
+        self.declare_parameter("threshold", 0.5)
         self.threshold = self.get_parameter(
             "threshold").get_parameter_value().double_value
 

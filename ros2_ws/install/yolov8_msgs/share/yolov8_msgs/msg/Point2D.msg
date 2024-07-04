@@ -1,4 +1,1 @@
-# 2D point in pixel coordinates
-
-float64 x
-float64 y
+/home/aiv/YongJun_ws/ros2_ws/src/yolov8_ros/yolov8_msgs/msg/Point2D.msg

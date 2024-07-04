@@ -1,0 +1,20 @@
+[0.032s] Invoking command in '/home/aiv/YongJun_ws/ros2_ws/build/zed_topic_benchmark_interfaces': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/aiv/YongJun_ws/ros2_ws/install/yolov8_ros:/opt/ros/foxy /usr/bin/cmake --build /home/aiv/YongJun_ws/ros2_ws/build/zed_topic_benchmark_interfaces -- -j32 -l32
+[0.064s] Invoked command in '/home/aiv/YongJun_ws/ros2_ws/build/zed_topic_benchmark_interfaces' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/aiv/YongJun_ws/ros2_ws/install/yolov8_ros:/opt/ros/foxy /usr/bin/cmake --build /home/aiv/YongJun_ws/ros2_ws/build/zed_topic_benchmark_interfaces -- -j32 -l32
+[0.111s] Invoking command in '/home/aiv/YongJun_ws/ros2_ws/build/zed_topic_benchmark_interfaces': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/aiv/YongJun_ws/ros2_ws/install/yolov8_ros:/opt/ros/foxy /usr/bin/cmake --install /home/aiv/YongJun_ws/ros2_ws/build/zed_topic_benchmark_interfaces
+[0.125s] -- Install configuration: ""
+[0.128s] -- Up-to-date: /home/aiv/YongJun_ws/ros2_ws/install/zed_topic_benchmark_interfaces/share/ament_index/resource_index/package_run_dependencies/zed_topic_benchmark_interfaces
+[0.129s] -- Up-to-date: /home/aiv/YongJun_ws/ros2_ws/install/zed_topic_benchmark_interfaces/share/ament_index/resource_index/parent_prefix_path/zed_topic_benchmark_interfaces
+[0.129s] -- Up-to-date: /home/aiv/YongJun_ws/ros2_ws/install/zed_topic_benchmark_interfaces/share/zed_topic_benchmark_interfaces/environment/ament_prefix_path.sh
+[0.129s] -- Up-to-date: /home/aiv/YongJun_ws/ros2_ws/install/zed_topic_benchmark_interfaces/share/zed_topic_benchmark_interfaces/environment/ament_prefix_path.dsv
+[0.129s] -- Up-to-date: /home/aiv/YongJun_ws/ros2_ws/install/zed_topic_benchmark_interfaces/share/zed_topic_benchmark_interfaces/environment/path.sh
+[0.130s] -- Up-to-date: /home/aiv/YongJun_ws/ros2_ws/install/zed_topic_benchmark_interfaces/share/zed_topic_benchmark_interfaces/environment/path.dsv
+[0.130s] -- Up-to-date: /home/aiv/YongJun_ws/ros2_ws/install/zed_topic_benchmark_interfaces/share/zed_topic_benchmark_interfaces/local_setup.bash
+[0.131s] -- Up-to-date: /home/aiv/YongJun_ws/ros2_ws/install/zed_topic_benchmark_interfaces/share/zed_topic_benchmark_interfaces/local_setup.sh
+[0.132s] -- Up-to-date: /home/aiv/YongJun_ws/ros2_ws/install/zed_topic_benchmark_interfaces/share/zed_topic_benchmark_interfaces/local_setup.zsh
+[0.132s] -- Up-to-date: /home/aiv/YongJun_ws/ros2_ws/install/zed_topic_benchmark_interfaces/share/zed_topic_benchmark_interfaces/local_setup.dsv
+[0.132s] -- Installing: /home/aiv/YongJun_ws/ros2_ws/install/zed_topic_benchmark_interfaces/share/zed_topic_benchmark_interfaces/package.dsv
+[0.132s] -- Up-to-date: /home/aiv/YongJun_ws/ros2_ws/install/zed_topic_benchmark_interfaces/share/ament_index/resource_index/packages/zed_topic_benchmark_interfaces
+[0.133s] -- Up-to-date: /home/aiv/YongJun_ws/ros2_ws/install/zed_topic_benchmark_interfaces/share/zed_topic_benchmark_interfaces/cmake/zed_topic_benchmark_interfacesConfig.cmake
+[0.133s] -- Up-to-date: /home/aiv/YongJun_ws/ros2_ws/install/zed_topic_benchmark_interfaces/share/zed_topic_benchmark_interfaces/cmake/zed_topic_benchmark_interfacesConfig-version.cmake
+[0.133s] -- Up-to-date: /home/aiv/YongJun_ws/ros2_ws/install/zed_topic_benchmark_interfaces/share/zed_topic_benchmark_interfaces/package.xml
+[0.135s] Invoked command in '/home/aiv/YongJun_ws/ros2_ws/build/zed_topic_benchmark_interfaces' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/aiv/YongJun_ws/ros2_ws/install/yolov8_ros:/opt/ros/foxy /usr/bin/cmake --install /home/aiv/YongJun_ws/ros2_ws/build/zed_topic_benchmark_interfaces

@@ -1,12 +1,1 @@
-// generated from rosidl_generator_cpp/resource/idl.hpp.em
-// generated code does not contain a copyright notice
-
-#ifndef ZED_INTERFACES__MSG__OBJECT_HPP_
-#define ZED_INTERFACES__MSG__OBJECT_HPP_
-
-#include "zed_interfaces/msg/detail/object__struct.hpp"
-#include "zed_interfaces/msg/detail/object__builder.hpp"
-#include "zed_interfaces/msg/detail/object__traits.hpp"
-#include "zed_interfaces/msg/detail/object__type_support.hpp"
-
-#endif  // ZED_INTERFACES__MSG__OBJECT_HPP_
+/home/aiv/YongJun_ws/ros2_ws/build/zed_interfaces/rosidl_generator_cpp/zed_interfaces/msg/object.hpp

@@ -1,10 +1,1 @@
-msg/BoundingBox3D.idl
-msg/BoundingBox3D.msg
-msg/Detection3D.idl
-msg/Detection3D.msg
-msg/Detection3DArray.idl
-msg/Detection3DArray.msg
-msg/ObjectHypothesis.idl
-msg/ObjectHypothesis.msg
-msg/ObjectHypothesisWithPose.idl
-msg/ObjectHypothesisWithPose.msg
+/home/aiv/YongJun_ws/ros2_ws/build/vision_msgs/ament_cmake_index/share/ament_index/resource_index/rosidl_interfaces/vision_msgs

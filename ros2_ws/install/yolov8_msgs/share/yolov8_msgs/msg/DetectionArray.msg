@@ -1,4 +1,1 @@
-# represents all YOLOv8 detections in one frame
-
-std_msgs/Header header
-yolov8_msgs/Detection[] detections
+/home/aiv/YongJun_ws/ros2_ws/src/yolov8_ros/yolov8_msgs/msg/DetectionArray.msg

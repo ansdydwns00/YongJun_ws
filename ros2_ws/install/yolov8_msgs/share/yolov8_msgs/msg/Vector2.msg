@@ -1,4 +1,1 @@
-# 2D size in pixel
-
-float64 x
-float64 y
+/home/aiv/YongJun_ws/ros2_ws/src/yolov8_ros/yolov8_msgs/msg/Vector2.msg

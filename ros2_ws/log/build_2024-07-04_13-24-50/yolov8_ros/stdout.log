@@ -1,0 +1,5 @@
+running develop
+running egg_info
+writing manifest file 'yolov8_ros.egg-info/SOURCES.txt'
+running build_ext
+running symlink_data

@@ -1,2 +1,1 @@
-source;share/zed_depth_to_laserscan/environment/ament_prefix_path.sh
-source;share/zed_depth_to_laserscan/environment/path.sh
+/home/aiv/YongJun_ws/ros2_ws/build/zed_depth_to_laserscan/ament_cmake_environment_hooks/local_setup.dsv

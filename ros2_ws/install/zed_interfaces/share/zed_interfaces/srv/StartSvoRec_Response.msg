@@ -1,3 +1,1 @@
-
-bool success   # indicate successful run of service
-string message # informational, e.g. for error messages
+/home/aiv/YongJun_ws/ros2_ws/build/zed_interfaces/rosidl_cmake/srv/StartSvoRec_Response.msg

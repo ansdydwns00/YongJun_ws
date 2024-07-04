@@ -1,0 +1,21 @@
+running develop
+running egg_info
+writing manifest file '../../../build/yolov8_ros/yolov8_ros.egg-info/SOURCES.txt'
+running build
+running build_py
+copying yolov8_ros/yolov8_node.py -> /home/aiv/YongJun_ws/ros2_ws/build/yolov8_ros/build/lib/yolov8_ros
+running install
+running install_lib
+creating /home/aiv/YongJun_ws/ros2_ws/install/yolov8_ros/lib/python3.8/site-packages/yolov8_ros
+byte-compiling /home/aiv/YongJun_ws/ros2_ws/install/yolov8_ros/lib/python3.8/site-packages/yolov8_ros/tracking_node.py to tracking_node.cpython-38.pyc
+byte-compiling /home/aiv/YongJun_ws/ros2_ws/install/yolov8_ros/lib/python3.8/site-packages/yolov8_ros/yolov8_node.py to yolov8_node.cpython-38.pyc
+byte-compiling /home/aiv/YongJun_ws/ros2_ws/install/yolov8_ros/lib/python3.8/site-packages/yolov8_ros/detect_3d_node.py to detect_3d_node.cpython-38.pyc
+byte-compiling /home/aiv/YongJun_ws/ros2_ws/install/yolov8_ros/lib/python3.8/site-packages/yolov8_ros/__init__.py to __init__.cpython-38.pyc
+byte-compiling /home/aiv/YongJun_ws/ros2_ws/install/yolov8_ros/lib/python3.8/site-packages/yolov8_ros/debug_node.py to debug_node.cpython-38.pyc
+running install_data
+copying resource/yolov8_ros -> /home/aiv/YongJun_ws/ros2_ws/install/yolov8_ros/share/ament_index/resource_index/packages
+copying package.xml -> /home/aiv/YongJun_ws/ros2_ws/install/yolov8_ros/share/yolov8_ros
+running install_egg_info
+Copying ../../../build/yolov8_ros/yolov8_ros.egg-info to /home/aiv/YongJun_ws/ros2_ws/install/yolov8_ros/lib/python3.8/site-packages/yolov8_ros-0.0.0-py3.8.egg-info
+running install_scripts
+writing list of installed files to '/home/aiv/YongJun_ws/ros2_ws/build/yolov8_ros/install.log'

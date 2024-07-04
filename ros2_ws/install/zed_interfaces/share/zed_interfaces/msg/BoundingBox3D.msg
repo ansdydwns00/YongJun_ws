@@ -1,8 +1,1 @@
-#      1 ------- 2
-#     /.        /|
-#    0 ------- 3 |
-#    | .       | |
-#    | 5.......| 6
-#    |.        |/
-#    4 ------- 7
-zed_interfaces/Keypoint3D[8] corners
+/home/aiv/YongJun_ws/ros2_ws/src/zed-ros2-wrapper/zed-ros2-interfaces/msg/BoundingBox3D.msg

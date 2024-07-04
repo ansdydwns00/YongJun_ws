@@ -1,0 +1,60 @@
+[0.033s] Invoking command in '/home/aiv/YongJun_ws/ros2_ws/build/usb_cam': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/aiv/YongJun_ws/ros2_ws/install/yolov8_ros:/opt/ros/foxy /usr/bin/cmake --build /home/aiv/YongJun_ws/ros2_ws/build/usb_cam -- -j32 -l32
+[0.074s] [ 14%] Built target gtest_main
+[0.074s] [ 28%] Built target gtest
+[0.087s] [ 42%] Built target usb_cam_node_exe
+[0.087s] [ 57%] Built target usb_cam
+[0.114s] [ 71%] Built target test_usb_cam_utils
+[0.127s] [ 85%] Built target test_pixel_formats
+[0.131s] [100%] Built target usb_cam_node
+[0.150s] Invoked command in '/home/aiv/YongJun_ws/ros2_ws/build/usb_cam' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/aiv/YongJun_ws/ros2_ws/install/yolov8_ros:/opt/ros/foxy /usr/bin/cmake --build /home/aiv/YongJun_ws/ros2_ws/build/usb_cam -- -j32 -l32
+[0.224s] Invoking command in '/home/aiv/YongJun_ws/ros2_ws/build/usb_cam': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/aiv/YongJun_ws/ros2_ws/install/yolov8_ros:/opt/ros/foxy /usr/bin/cmake --install /home/aiv/YongJun_ws/ros2_ws/build/usb_cam
+[0.234s] -- Install configuration: ""
+[0.235s] -- Execute custom install script
+[0.236s] -- Up-to-date symlink: /home/aiv/YongJun_ws/ros2_ws/install/usb_cam/share/usb_cam/environment/library_path.sh
+[0.237s] -- Up-to-date symlink: /home/aiv/YongJun_ws/ros2_ws/install/usb_cam/share/usb_cam/environment/library_path.dsv
+[0.237s] -- Up-to-date symlink: /home/aiv/YongJun_ws/ros2_ws/install/usb_cam/lib/usb_cam/usb_cam_node_exe
+[0.237s] -- Up-to-date symlink: /home/aiv/YongJun_ws/ros2_ws/install/usb_cam/lib/usb_cam/show_image.py
+[0.237s] -- Up-to-date symlink: /home/aiv/YongJun_ws/ros2_ws/install/usb_cam/lib/libusb_cam.so
+[0.237s] -- Up-to-date symlink: /home/aiv/YongJun_ws/ros2_ws/install/usb_cam/lib/libusb_cam_node.so
+[0.237s] -- Up-to-date symlink: /home/aiv/YongJun_ws/ros2_ws/install/usb_cam/include/usb_cam/constants.hpp
+[0.237s] -- Up-to-date symlink: /home/aiv/YongJun_ws/ros2_ws/install/usb_cam/include/usb_cam/conversions.hpp
+[0.237s] -- Up-to-date symlink: /home/aiv/YongJun_ws/ros2_ws/install/usb_cam/include/usb_cam/formats/av_pixel_format_helper.hpp
+[0.237s] -- Up-to-date symlink: /home/aiv/YongJun_ws/ros2_ws/install/usb_cam/include/usb_cam/formats/m420.hpp
+[0.237s] -- Up-to-date symlink: /home/aiv/YongJun_ws/ros2_ws/install/usb_cam/include/usb_cam/formats/mjpeg.hpp
+[0.238s] -- Up-to-date symlink: /home/aiv/YongJun_ws/ros2_ws/install/usb_cam/include/usb_cam/formats/mono.hpp
+[0.238s] -- Up-to-date symlink: /home/aiv/YongJun_ws/ros2_ws/install/usb_cam/include/usb_cam/formats/pixel_format_base.hpp
+[0.238s] -- Up-to-date symlink: /home/aiv/YongJun_ws/ros2_ws/install/usb_cam/include/usb_cam/formats/rgb.hpp
+[0.238s] -- Up-to-date symlink: /home/aiv/YongJun_ws/ros2_ws/install/usb_cam/include/usb_cam/formats/utils.hpp
+[0.238s] -- Up-to-date symlink: /home/aiv/YongJun_ws/ros2_ws/install/usb_cam/include/usb_cam/formats/uyvy.hpp
+[0.238s] -- Up-to-date symlink: /home/aiv/YongJun_ws/ros2_ws/install/usb_cam/include/usb_cam/formats/yuyv.hpp
+[0.238s] -- Up-to-date symlink: /home/aiv/YongJun_ws/ros2_ws/install/usb_cam/include/usb_cam/usb_cam.hpp
+[0.238s] -- Up-to-date symlink: /home/aiv/YongJun_ws/ros2_ws/install/usb_cam/include/usb_cam/usb_cam_node.hpp
+[0.238s] -- Up-to-date symlink: /home/aiv/YongJun_ws/ros2_ws/install/usb_cam/include/usb_cam/utils.hpp
+[0.238s] -- Up-to-date symlink: /home/aiv/YongJun_ws/ros2_ws/install/usb_cam/lib/libusb_cam_node.so
+[0.238s] -- Up-to-date symlink: /home/aiv/YongJun_ws/ros2_ws/install/usb_cam/share/usb_cam/launch/__init__.py
+[0.238s] -- Up-to-date symlink: /home/aiv/YongJun_ws/ros2_ws/install/usb_cam/share/usb_cam/launch/__pycache__/camera_config.cpython-38.pyc
+[0.238s] -- Up-to-date symlink: /home/aiv/YongJun_ws/ros2_ws/install/usb_cam/share/usb_cam/launch/camera.launch.py
+[0.238s] -- Up-to-date symlink: /home/aiv/YongJun_ws/ros2_ws/install/usb_cam/share/usb_cam/launch/camera_config.py
+[0.238s] -- Up-to-date symlink: /home/aiv/YongJun_ws/ros2_ws/install/usb_cam/share/usb_cam/config/camera_info.yaml
+[0.238s] -- Up-to-date symlink: /home/aiv/YongJun_ws/ros2_ws/install/usb_cam/share/usb_cam/config/params_1.yaml
+[0.239s] -- Up-to-date symlink: /home/aiv/YongJun_ws/ros2_ws/install/usb_cam/share/usb_cam/config/params_2.yaml
+[0.239s] -- Up-to-date symlink: /home/aiv/YongJun_ws/ros2_ws/install/usb_cam/share/ament_index/resource_index/package_run_dependencies/usb_cam
+[0.239s] -- Up-to-date symlink: /home/aiv/YongJun_ws/ros2_ws/install/usb_cam/share/ament_index/resource_index/parent_prefix_path/usb_cam
+[0.239s] -- Up-to-date symlink: /home/aiv/YongJun_ws/ros2_ws/install/usb_cam/share/usb_cam/environment/ament_prefix_path.sh
+[0.239s] -- Up-to-date symlink: /home/aiv/YongJun_ws/ros2_ws/install/usb_cam/share/usb_cam/environment/ament_prefix_path.dsv
+[0.239s] -- Up-to-date symlink: /home/aiv/YongJun_ws/ros2_ws/install/usb_cam/share/usb_cam/environment/path.sh
+[0.239s] -- Up-to-date symlink: /home/aiv/YongJun_ws/ros2_ws/install/usb_cam/share/usb_cam/environment/path.dsv
+[0.239s] -- Up-to-date symlink: /home/aiv/YongJun_ws/ros2_ws/install/usb_cam/share/usb_cam/local_setup.bash
+[0.239s] -- Up-to-date symlink: /home/aiv/YongJun_ws/ros2_ws/install/usb_cam/share/usb_cam/local_setup.sh
+[0.239s] -- Up-to-date symlink: /home/aiv/YongJun_ws/ros2_ws/install/usb_cam/share/usb_cam/local_setup.zsh
+[0.239s] -- Up-to-date symlink: /home/aiv/YongJun_ws/ros2_ws/install/usb_cam/share/usb_cam/local_setup.dsv
+[0.239s] -- Symlinking: /home/aiv/YongJun_ws/ros2_ws/install/usb_cam/share/usb_cam/package.dsv
+[0.240s] -- Up-to-date symlink: /home/aiv/YongJun_ws/ros2_ws/install/usb_cam/share/ament_index/resource_index/packages/usb_cam
+[0.240s] -- Up-to-date symlink: /home/aiv/YongJun_ws/ros2_ws/install/usb_cam/share/ament_index/resource_index/rclcpp_components/usb_cam
+[0.240s] -- Up-to-date symlink: /home/aiv/YongJun_ws/ros2_ws/install/usb_cam/share/usb_cam/cmake/ament_cmake_export_libraries-extras.cmake
+[0.240s] -- Up-to-date symlink: /home/aiv/YongJun_ws/ros2_ws/install/usb_cam/share/usb_cam/cmake/ament_cmake_export_dependencies-extras.cmake
+[0.240s] -- Up-to-date symlink: /home/aiv/YongJun_ws/ros2_ws/install/usb_cam/share/usb_cam/cmake/ament_cmake_export_include_directories-extras.cmake
+[0.241s] -- Up-to-date symlink: /home/aiv/YongJun_ws/ros2_ws/install/usb_cam/share/usb_cam/cmake/usb_camConfig.cmake
+[0.241s] -- Up-to-date symlink: /home/aiv/YongJun_ws/ros2_ws/install/usb_cam/share/usb_cam/cmake/usb_camConfig-version.cmake
+[0.241s] -- Up-to-date symlink: /home/aiv/YongJun_ws/ros2_ws/install/usb_cam/share/usb_cam/package.xml
+[0.259s] Invoked command in '/home/aiv/YongJun_ws/ros2_ws/build/usb_cam' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/aiv/YongJun_ws/ros2_ws/install/yolov8_ros:/opt/ros/foxy /usr/bin/cmake --install /home/aiv/YongJun_ws/ros2_ws/build/usb_cam

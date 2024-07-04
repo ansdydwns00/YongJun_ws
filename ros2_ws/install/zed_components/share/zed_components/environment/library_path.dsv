@@ -1,1 +1,1 @@
-prepend-non-duplicate;LD_LIBRARY_PATH;lib
+/home/aiv/YongJun_ws/ros2_ws/build/zed_components/ament_cmake_environment_hooks/library_path.dsv

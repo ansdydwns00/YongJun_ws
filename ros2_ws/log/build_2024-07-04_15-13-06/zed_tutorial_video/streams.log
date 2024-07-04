@@ -1,0 +1,37 @@
+[0.041s] Invoking command in '/home/aiv/YongJun_ws/ros2_ws/build/zed_tutorial_video': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/aiv/YongJun_ws/ros2_ws/install/yolov8_ros:/opt/ros/foxy /usr/bin/cmake /home/aiv/YongJun_ws/ros2_ws/src/zed-ros2-examples/tutorials/zed_video_tutorial -DCMAKE_INSTALL_PREFIX=/home/aiv/YongJun_ws/ros2_ws/install/zed_tutorial_video
+[0.052s] -- Found ament_cmake_auto: 0.9.12 (/opt/ros/foxy/share/ament_cmake_auto/cmake)
+[0.072s] -- Using PYTHON_EXECUTABLE: /usr/bin/python3
+[0.232s] -- Override CMake install command with custom implementation using symlinks instead of copying resources
+[0.310s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.312s] -- Found rosidl_adapter: 1.3.1 (/opt/ros/foxy/share/rosidl_adapter/cmake)
+[0.427s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.464s] -- Found rmw_implementation_cmake: 1.0.4 (/opt/ros/foxy/share/rmw_implementation_cmake/cmake)
+[0.466s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[0.661s] -- Found ament_lint_auto: 0.9.8 (/opt/ros/foxy/share/ament_lint_auto/cmake)
+[0.670s] -- Configuring done
+[0.681s] -- Generating done
+[0.683s] -- Build files have been written to: /home/aiv/YongJun_ws/ros2_ws/build/zed_tutorial_video
+[0.695s] Invoked command in '/home/aiv/YongJun_ws/ros2_ws/build/zed_tutorial_video' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/aiv/YongJun_ws/ros2_ws/install/yolov8_ros:/opt/ros/foxy /usr/bin/cmake /home/aiv/YongJun_ws/ros2_ws/src/zed-ros2-examples/tutorials/zed_video_tutorial -DCMAKE_INSTALL_PREFIX=/home/aiv/YongJun_ws/ros2_ws/install/zed_tutorial_video
+[0.696s] Invoking command in '/home/aiv/YongJun_ws/ros2_ws/build/zed_tutorial_video': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/aiv/YongJun_ws/ros2_ws/install/yolov8_ros:/opt/ros/foxy /usr/bin/cmake --build /home/aiv/YongJun_ws/ros2_ws/build/zed_tutorial_video -- -j32 -l32
+[0.741s] [100%] Built target zed_tutorial_video
+[0.751s] Invoked command in '/home/aiv/YongJun_ws/ros2_ws/build/zed_tutorial_video' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/aiv/YongJun_ws/ros2_ws/install/yolov8_ros:/opt/ros/foxy /usr/bin/cmake --build /home/aiv/YongJun_ws/ros2_ws/build/zed_tutorial_video -- -j32 -l32
+[0.772s] Invoking command in '/home/aiv/YongJun_ws/ros2_ws/build/zed_tutorial_video': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/aiv/YongJun_ws/ros2_ws/install/yolov8_ros:/opt/ros/foxy /usr/bin/cmake --install /home/aiv/YongJun_ws/ros2_ws/build/zed_tutorial_video
+[0.779s] -- Install configuration: "Release"
+[0.779s] -- Execute custom install script
+[0.780s] -- Up-to-date symlink: /home/aiv/YongJun_ws/ros2_ws/install/zed_tutorial_video/lib/zed_tutorial_video/zed_tutorial_video
+[0.780s] -- Up-to-date symlink: /home/aiv/YongJun_ws/ros2_ws/install/zed_tutorial_video/share/ament_index/resource_index/package_run_dependencies/zed_tutorial_video
+[0.780s] -- Up-to-date symlink: /home/aiv/YongJun_ws/ros2_ws/install/zed_tutorial_video/share/ament_index/resource_index/parent_prefix_path/zed_tutorial_video
+[0.781s] -- Up-to-date symlink: /home/aiv/YongJun_ws/ros2_ws/install/zed_tutorial_video/share/zed_tutorial_video/environment/ament_prefix_path.sh
+[0.781s] -- Up-to-date symlink: /home/aiv/YongJun_ws/ros2_ws/install/zed_tutorial_video/share/zed_tutorial_video/environment/ament_prefix_path.dsv
+[0.781s] -- Up-to-date symlink: /home/aiv/YongJun_ws/ros2_ws/install/zed_tutorial_video/share/zed_tutorial_video/environment/path.sh
+[0.781s] -- Up-to-date symlink: /home/aiv/YongJun_ws/ros2_ws/install/zed_tutorial_video/share/zed_tutorial_video/environment/path.dsv
+[0.781s] -- Up-to-date symlink: /home/aiv/YongJun_ws/ros2_ws/install/zed_tutorial_video/share/zed_tutorial_video/local_setup.bash
+[0.782s] -- Up-to-date symlink: /home/aiv/YongJun_ws/ros2_ws/install/zed_tutorial_video/share/zed_tutorial_video/local_setup.sh
+[0.782s] -- Up-to-date symlink: /home/aiv/YongJun_ws/ros2_ws/install/zed_tutorial_video/share/zed_tutorial_video/local_setup.zsh
+[0.782s] -- Up-to-date symlink: /home/aiv/YongJun_ws/ros2_ws/install/zed_tutorial_video/share/zed_tutorial_video/local_setup.dsv
+[0.782s] -- Symlinking: /home/aiv/YongJun_ws/ros2_ws/install/zed_tutorial_video/share/zed_tutorial_video/package.dsv
+[0.789s] -- Up-to-date symlink: /home/aiv/YongJun_ws/ros2_ws/install/zed_tutorial_video/share/ament_index/resource_index/packages/zed_tutorial_video
+[0.789s] -- Up-to-date symlink: /home/aiv/YongJun_ws/ros2_ws/install/zed_tutorial_video/share/zed_tutorial_video/cmake/zed_tutorial_videoConfig.cmake
+[0.789s] -- Up-to-date symlink: /home/aiv/YongJun_ws/ros2_ws/install/zed_tutorial_video/share/zed_tutorial_video/cmake/zed_tutorial_videoConfig-version.cmake
+[0.790s] -- Up-to-date symlink: /home/aiv/YongJun_ws/ros2_ws/install/zed_tutorial_video/share/zed_tutorial_video/package.xml
+[0.792s] Invoked command in '/home/aiv/YongJun_ws/ros2_ws/build/zed_tutorial_video' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/aiv/YongJun_ws/ros2_ws/install/yolov8_ros:/opt/ros/foxy /usr/bin/cmake --install /home/aiv/YongJun_ws/ros2_ws/build/zed_tutorial_video
