@@ -1,0 +1,99 @@
+[0.013s] Invoking command in '/home/aiv/YongJun_ws/ros2_ws/build/zed_wrapper': AMENT_PREFIX_PATH=/home/aiv/YongJun_ws/ros2_ws/install/zed_components:/home/aiv/YongJun_ws/ros2_ws/install/zed_interfaces:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/aiv/YongJun_ws/ros2_ws/install/zed_components:/home/aiv/YongJun_ws/ros2_ws/install/zed_interfaces:/opt/ros/foxy LD_LIBRARY_PATH=/home/aiv/YongJun_ws/ros2_ws/install/zed_components/lib:/home/aiv/YongJun_ws/ros2_ws/install/zed_interfaces/lib:/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib/x86_64-linux-gnu:/opt/ros/foxy/lib:/usr/local/cuda/lib64 PYTHONPATH=/home/aiv/YongJun_ws/ros2_ws/install/zed_interfaces/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/cmake /home/aiv/YongJun_ws/ros2_ws/src/zed-ros2-wrapper/zed_wrapper -DCMAKE_INSTALL_PREFIX=/home/aiv/YongJun_ws/ros2_ws/install/zed_wrapper
+[0.047s] -- The C compiler identification is GNU 9.4.0
+[0.079s] -- The CXX compiler identification is GNU 9.4.0
+[0.082s] -- Check for working C compiler: /usr/bin/cc
+[0.124s] -- Check for working C compiler: /usr/bin/cc -- works
+[0.125s] -- Detecting C compiler ABI info
+[0.166s] -- Detecting C compiler ABI info - done
+[0.173s] -- Detecting C compile features
+[0.173s] -- Detecting C compile features - done
+[0.175s] -- Check for working CXX compiler: /usr/bin/c++
+[0.224s] -- Check for working CXX compiler: /usr/bin/c++ -- works
+[0.224s] -- Detecting CXX compiler ABI info
+[0.274s] -- Detecting CXX compiler ABI info - done
+[0.282s] -- Detecting CXX compile features
+[0.282s] -- Detecting CXX compile features - done
+[0.285s] -- Looking for sgemm_
+[0.327s] -- Looking for sgemm_ - not found
+[0.327s] -- Looking for pthread.h
+[0.371s] -- Looking for pthread.h - found
+[0.371s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+[0.416s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Failed
+[0.416s] -- Looking for pthread_create in pthreads
+[0.452s] -- Looking for pthread_create in pthreads - not found
+[0.452s] -- Looking for pthread_create in pthread
+[0.494s] -- Looking for pthread_create in pthread - found
+[0.495s] -- Found Threads: TRUE  
+[0.511s] -- Looking for sgemm_
+[0.574s] -- Looking for sgemm_ - found
+[0.574s] -- Found BLAS: /usr/lib/x86_64-linux-gnu/libopenblas.so  
+[0.584s] -- Found CUDA: /usr/local/cuda-12.2 (found suitable version "12.2", minimum required is "12") 
+[0.608s] -- Found CUDA: /usr/local/cuda-12.2 (found version "12.2") 
+[0.610s] -- Found ament_cmake_auto: 0.9.12 (/opt/ros/foxy/share/ament_cmake_auto/cmake)
+[0.629s] -- Found PythonInterp: /usr/bin/python3 (found suitable version "3.8.10", minimum required is "3") 
+[0.629s] -- Using PYTHON_EXECUTABLE: /usr/bin/python3
+[0.840s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.844s] -- Found rosidl_adapter: 1.3.1 (/opt/ros/foxy/share/rosidl_adapter/cmake)
+[0.894s] -- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "1.1.1f")  
+[0.911s] -- Found FastRTPS: /opt/ros/foxy/include  
+[0.962s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.999s] -- Found rmw_implementation_cmake: 1.0.4 (/opt/ros/foxy/share/rmw_implementation_cmake/cmake)
+[1.000s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[1.465s] -- Found eigen3_cmake_module: 0.1.1 (/opt/ros/foxy/share/eigen3_cmake_module/cmake)
+[1.467s] -- Found Eigen3: TRUE (found version "3.3.7") 
+[2.176s] -- Found ament_lint_auto: 0.9.8 (/opt/ros/foxy/share/ament_lint_auto/cmake)
+[2.444s] -- Added test 'copyright' to check source files copyright and LICENSE
+[2.445s] -- Added test 'cppcheck' to perform static code analysis on C / C++ code
+[2.445s] -- Configured cppcheck include dirs: /home/aiv/YongJun_ws/ros2_ws/src/zed-ros2-wrapper/zed_wrapper/src
+[2.445s] -- Configured cppcheck exclude dirs and/or files: 
+[2.446s] -- Added test 'lint_cmake' to check CMake code style
+[2.446s] -- Added test 'pep257' to check Python code against some of the style conventions in PEP 257
+[2.446s] -- Added test 'uncrustify' to check C / C++ code style
+[2.446s] -- Configured uncrustify additional arguments: 
+[2.447s] -- Added test 'xmllint' to check XML markup files
+[2.449s] -- Configuring done
+[2.473s] -- Generating done
+[2.474s] -- Build files have been written to: /home/aiv/YongJun_ws/ros2_ws/build/zed_wrapper
+[2.480s] Invoked command in '/home/aiv/YongJun_ws/ros2_ws/build/zed_wrapper' returned '0': AMENT_PREFIX_PATH=/home/aiv/YongJun_ws/ros2_ws/install/zed_components:/home/aiv/YongJun_ws/ros2_ws/install/zed_interfaces:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/aiv/YongJun_ws/ros2_ws/install/zed_components:/home/aiv/YongJun_ws/ros2_ws/install/zed_interfaces:/opt/ros/foxy LD_LIBRARY_PATH=/home/aiv/YongJun_ws/ros2_ws/install/zed_components/lib:/home/aiv/YongJun_ws/ros2_ws/install/zed_interfaces/lib:/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib/x86_64-linux-gnu:/opt/ros/foxy/lib:/usr/local/cuda/lib64 PYTHONPATH=/home/aiv/YongJun_ws/ros2_ws/install/zed_interfaces/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/cmake /home/aiv/YongJun_ws/ros2_ws/src/zed-ros2-wrapper/zed_wrapper -DCMAKE_INSTALL_PREFIX=/home/aiv/YongJun_ws/ros2_ws/install/zed_wrapper
+[2.482s] Invoking command in '/home/aiv/YongJun_ws/ros2_ws/build/zed_wrapper': AMENT_PREFIX_PATH=/home/aiv/YongJun_ws/ros2_ws/install/zed_components:/home/aiv/YongJun_ws/ros2_ws/install/zed_interfaces:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/aiv/YongJun_ws/ros2_ws/install/zed_components:/home/aiv/YongJun_ws/ros2_ws/install/zed_interfaces:/opt/ros/foxy LD_LIBRARY_PATH=/home/aiv/YongJun_ws/ros2_ws/install/zed_components/lib:/home/aiv/YongJun_ws/ros2_ws/install/zed_interfaces/lib:/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib/x86_64-linux-gnu:/opt/ros/foxy/lib:/usr/local/cuda/lib64 PYTHONPATH=/home/aiv/YongJun_ws/ros2_ws/install/zed_interfaces/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/cmake --build /home/aiv/YongJun_ws/ros2_ws/build/zed_wrapper -- -j32 -l32
+[2.506s] [35m[1mScanning dependencies of target zed_wrapper[0m
+[2.553s] [ 50%] [32mBuilding CXX object CMakeFiles/zed_wrapper.dir/src/zed_wrapper.cpp.o[0m
+[5.005s] [100%] [32m[1mLinking CXX executable zed_wrapper[0m
+[5.168s] [100%] Built target zed_wrapper
+[5.176s] Invoked command in '/home/aiv/YongJun_ws/ros2_ws/build/zed_wrapper' returned '0': AMENT_PREFIX_PATH=/home/aiv/YongJun_ws/ros2_ws/install/zed_components:/home/aiv/YongJun_ws/ros2_ws/install/zed_interfaces:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/aiv/YongJun_ws/ros2_ws/install/zed_components:/home/aiv/YongJun_ws/ros2_ws/install/zed_interfaces:/opt/ros/foxy LD_LIBRARY_PATH=/home/aiv/YongJun_ws/ros2_ws/install/zed_components/lib:/home/aiv/YongJun_ws/ros2_ws/install/zed_interfaces/lib:/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib/x86_64-linux-gnu:/opt/ros/foxy/lib:/usr/local/cuda/lib64 PYTHONPATH=/home/aiv/YongJun_ws/ros2_ws/install/zed_interfaces/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/cmake --build /home/aiv/YongJun_ws/ros2_ws/build/zed_wrapper -- -j32 -l32
+[5.192s] Invoking command in '/home/aiv/YongJun_ws/ros2_ws/build/zed_wrapper': AMENT_PREFIX_PATH=/home/aiv/YongJun_ws/ros2_ws/install/zed_components:/home/aiv/YongJun_ws/ros2_ws/install/zed_interfaces:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/aiv/YongJun_ws/ros2_ws/install/zed_components:/home/aiv/YongJun_ws/ros2_ws/install/zed_interfaces:/opt/ros/foxy LD_LIBRARY_PATH=/home/aiv/YongJun_ws/ros2_ws/install/zed_components/lib:/home/aiv/YongJun_ws/ros2_ws/install/zed_interfaces/lib:/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib/x86_64-linux-gnu:/opt/ros/foxy/lib:/usr/local/cuda/lib64 PYTHONPATH=/home/aiv/YongJun_ws/ros2_ws/install/zed_interfaces/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/cmake --install /home/aiv/YongJun_ws/ros2_ws/build/zed_wrapper
+[5.197s] -- Install configuration: "Release"
+[5.197s] -- Installing: /home/aiv/YongJun_ws/ros2_ws/install/zed_wrapper/lib/zed_wrapper/zed_wrapper
+[5.198s] -- Set runtime path of "/home/aiv/YongJun_ws/ros2_ws/install/zed_wrapper/lib/zed_wrapper/zed_wrapper" to ""
+[5.198s] -- Installing: /home/aiv/YongJun_ws/ros2_ws/install/zed_wrapper/share/zed_wrapper/config
+[5.198s] -- Installing: /home/aiv/YongJun_ws/ros2_ws/install/zed_wrapper/share/zed_wrapper/config/zedxm.yaml
+[5.198s] -- Installing: /home/aiv/YongJun_ws/ros2_ws/install/zed_wrapper/share/zed_wrapper/config/zed2i.yaml
+[5.198s] -- Installing: /home/aiv/YongJun_ws/ros2_ws/install/zed_wrapper/share/zed_wrapper/config/virtual.yaml
+[5.198s] -- Installing: /home/aiv/YongJun_ws/ros2_ws/install/zed_wrapper/share/zed_wrapper/config/zed.yaml
+[5.198s] -- Installing: /home/aiv/YongJun_ws/ros2_ws/install/zed_wrapper/share/zed_wrapper/config/zedm.yaml
+[5.198s] -- Installing: /home/aiv/YongJun_ws/ros2_ws/install/zed_wrapper/share/zed_wrapper/config/zed2.yaml
+[5.198s] -- Installing: /home/aiv/YongJun_ws/ros2_ws/install/zed_wrapper/share/zed_wrapper/config/common.yaml
+[5.198s] -- Installing: /home/aiv/YongJun_ws/ros2_ws/install/zed_wrapper/share/zed_wrapper/config/zedx.yaml
+[5.198s] -- Installing: /home/aiv/YongJun_ws/ros2_ws/install/zed_wrapper/share/zed_wrapper/urdf
+[5.199s] -- Installing: /home/aiv/YongJun_ws/ros2_ws/install/zed_wrapper/share/zed_wrapper/urdf/include
+[5.199s] -- Installing: /home/aiv/YongJun_ws/ros2_ws/install/zed_wrapper/share/zed_wrapper/urdf/include/materials.urdf.xacro
+[5.199s] -- Installing: /home/aiv/YongJun_ws/ros2_ws/install/zed_wrapper/share/zed_wrapper/urdf/zed_descr.urdf.xacro
+[5.199s] -- Installing: /home/aiv/YongJun_ws/ros2_ws/install/zed_wrapper/share/zed_wrapper/urdf/zed_macro.urdf.xacro
+[5.199s] -- Installing: /home/aiv/YongJun_ws/ros2_ws/install/zed_wrapper/share/zed_wrapper/launch
+[5.199s] -- Installing: /home/aiv/YongJun_ws/ros2_ws/install/zed_wrapper/share/zed_wrapper/launch/zed_camera.launch.py
+[5.199s] -- Installing: /home/aiv/YongJun_ws/ros2_ws/install/zed_wrapper/share/ament_index/resource_index/package_run_dependencies/zed_wrapper
+[5.199s] -- Installing: /home/aiv/YongJun_ws/ros2_ws/install/zed_wrapper/share/ament_index/resource_index/parent_prefix_path/zed_wrapper
+[5.199s] -- Installing: /home/aiv/YongJun_ws/ros2_ws/install/zed_wrapper/share/zed_wrapper/environment/ament_prefix_path.sh
+[5.199s] -- Installing: /home/aiv/YongJun_ws/ros2_ws/install/zed_wrapper/share/zed_wrapper/environment/ament_prefix_path.dsv
+[5.199s] -- Installing: /home/aiv/YongJun_ws/ros2_ws/install/zed_wrapper/share/zed_wrapper/environment/path.sh
+[5.199s] -- Installing: /home/aiv/YongJun_ws/ros2_ws/install/zed_wrapper/share/zed_wrapper/environment/path.dsv
+[5.199s] -- Installing: /home/aiv/YongJun_ws/ros2_ws/install/zed_wrapper/share/zed_wrapper/local_setup.bash
+[5.199s] -- Installing: /home/aiv/YongJun_ws/ros2_ws/install/zed_wrapper/share/zed_wrapper/local_setup.sh
+[5.199s] -- Installing: /home/aiv/YongJun_ws/ros2_ws/install/zed_wrapper/share/zed_wrapper/local_setup.zsh
+[5.199s] -- Installing: /home/aiv/YongJun_ws/ros2_ws/install/zed_wrapper/share/zed_wrapper/local_setup.dsv
+[5.199s] -- Installing: /home/aiv/YongJun_ws/ros2_ws/install/zed_wrapper/share/zed_wrapper/package.dsv
+[5.199s] -- Installing: /home/aiv/YongJun_ws/ros2_ws/install/zed_wrapper/share/ament_index/resource_index/packages/zed_wrapper
+[5.199s] -- Installing: /home/aiv/YongJun_ws/ros2_ws/install/zed_wrapper/share/zed_wrapper/cmake/zed_wrapperConfig.cmake
+[5.199s] -- Installing: /home/aiv/YongJun_ws/ros2_ws/install/zed_wrapper/share/zed_wrapper/cmake/zed_wrapperConfig-version.cmake
+[5.199s] -- Installing: /home/aiv/YongJun_ws/ros2_ws/install/zed_wrapper/share/zed_wrapper/package.xml
+[5.201s] Invoked command in '/home/aiv/YongJun_ws/ros2_ws/build/zed_wrapper' returned '0': AMENT_PREFIX_PATH=/home/aiv/YongJun_ws/ros2_ws/install/zed_components:/home/aiv/YongJun_ws/ros2_ws/install/zed_interfaces:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/aiv/YongJun_ws/ros2_ws/install/zed_components:/home/aiv/YongJun_ws/ros2_ws/install/zed_interfaces:/opt/ros/foxy LD_LIBRARY_PATH=/home/aiv/YongJun_ws/ros2_ws/install/zed_components/lib:/home/aiv/YongJun_ws/ros2_ws/install/zed_interfaces/lib:/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib/x86_64-linux-gnu:/opt/ros/foxy/lib:/usr/local/cuda/lib64 PYTHONPATH=/home/aiv/YongJun_ws/ros2_ws/install/zed_interfaces/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/cmake --install /home/aiv/YongJun_ws/ros2_ws/build/zed_wrapper

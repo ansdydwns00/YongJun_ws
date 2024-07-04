@@ -1,0 +1,59 @@
+# CompilerName=gcc
+# Mode=optim
+ninja_required_version = 1.3
+
+# Basic folders
+root = .
+builddir = $root/build/glnxa64
+matlabdir = /usr/local/MATLAB/R2024a
+startdir = /home/aiv/YongJun_ws/matlab/Livox_LiDAR
+
+# Toolchain information
+cc = /usr/bin/gcc
+cxx = g++
+linker = /usr/bin/gcc
+linkerxx = g++
+
+cflags =  -fexceptions -fPIC -fno-omit-frame-pointer -pthread -fwrapv -D_GNU_SOURCE -DMATLAB_MEX_FILE  -O2 -DNDEBUG -std=c99 -I "$root" -I "$startdir" -I "$matlabdir/toolbox/vision/builtins/src/vision/include" -I "$matlabdir/toolbox/vision/builtins/src/vision/export/include/vision" -I "$matlabdir/extern/include" -I "$root/interface" -I "." -DMODEL=preprocessing3_mex -msse2 -fno-predictive-commoning -c 
+
+cxxflags =  -fexceptions -fPIC -fno-omit-frame-pointer -pthread -fwrapv -D_GNU_SOURCE -DMATLAB_MEX_FILE  -O2 -DNDEBUG -std=c++11 -I "$root" -I "$startdir" -I "$matlabdir/toolbox/vision/builtins/src/vision/include" -I "$matlabdir/toolbox/vision/builtins/src/vision/export/include/vision" -I "$matlabdir/extern/include" -I "$root/interface" -I "." -DMODEL=preprocessing3_mex -msse2 -fno-predictive-commoning -c 
+
+ldflags =  -pthread -Wl,--no-undefined -Wl,-rpath-link,$matlabdir/bin/glnxa64 -shared  -L"$matlabdir/bin/glnxa64" -lmx -lmex -lmat -lm -lstdc++  -Wl,-Bsymbolic -o preprocessing3_mex.mexa64 -lemlrt -lcovrt -lut -lmwmathutil  -Wl,--version-script,preprocessing3_mex.map
+
+linkobjs =  "$matlabdir/bin/glnxa64/libmwkdtree.so"
+
+# Build Rules
+rule cc
+    command = $cc $cflags $in -o $out
+
+rule cxx
+    command = $cxx $cxxflags $in -o $out
+
+rule link
+    command = $linker $in $linkobjs $ldflags
+
+rule linkxx
+    command = $linkerxx $in $linkobjs $ldflags
+
+# Build
+build $builddir/labelRangeDataGroundRemovalUtilsCore.o : cxx $matlabdir/toolbox/vision/builtins/src/vision/labelRangeDataGroundRemovalUtilsCore.cpp
+build $builddir/preprocessing3_data.o : cc $root/preprocessing3_data.c
+build $builddir/rt_nonfinite.o : cc $root/rt_nonfinite.c
+build $builddir/preprocessing3_initialize.o : cc $root/preprocessing3_initialize.c
+build $builddir/preprocessing3_terminate.o : cc $root/preprocessing3_terminate.c
+build $builddir/preprocessing3.o : cc $root/preprocessing3.c
+build $builddir/convertFromCartesianToSphericalCoordinate.o : cc $root/convertFromCartesianToSphericalCoordinate.c
+build $builddir/pointCloud.o : cc $root/pointCloud.c
+build $builddir/indexShapeCheck.o : cc $root/indexShapeCheck.c
+build $builddir/warning.o : cc $root/warning.c
+build $builddir/pointCloudBase.o : cc $root/pointCloudBase.c
+build $builddir/handle.o : cc $root/handle.c
+build $builddir/_coder_preprocessing3_api.o : cc $root/interface/_coder_preprocessing3_api.c
+build $builddir/_coder_preprocessing3_mex.o : cc $root/interface/_coder_preprocessing3_mex.c
+build $builddir/eml_int_forloop_overflow_check.o : cc $root/eml_int_forloop_overflow_check.c
+build $builddir/preprocessing3_emxutil.o : cc $root/preprocessing3_emxutil.c
+build $builddir/_coder_preprocessing3_info.o : cc $root/interface/_coder_preprocessing3_info.c
+build $builddir/c_mexapi_version.o : cc $matlabdir/extern/version/c_mexapi_version.c
+
+# Link
+build $root/preprocessing3_mex.mexa64 : linkxx $builddir/labelRangeDataGroundRemovalUtilsCore.o $builddir/preprocessing3_data.o $builddir/rt_nonfinite.o $builddir/preprocessing3_initialize.o $builddir/preprocessing3_terminate.o $builddir/preprocessing3.o $builddir/convertFromCartesianToSphericalCoordinate.o $builddir/pointCloud.o $builddir/indexShapeCheck.o $builddir/warning.o $builddir/pointCloudBase.o $builddir/handle.o $builddir/_coder_preprocessing3_api.o $builddir/_coder_preprocessing3_mex.o $builddir/eml_int_forloop_overflow_check.o $builddir/preprocessing3_emxutil.o $builddir/_coder_preprocessing3_info.o $builddir/c_mexapi_version.o 

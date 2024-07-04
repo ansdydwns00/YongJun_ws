@@ -1,0 +1,69 @@
+[0.014s] Invoking command in '/home/aiv/YongJun_ws/ros2_ws/build/zed_topic_benchmark': AMENT_PREFIX_PATH=/home/aiv/YongJun_ws/ros2_ws/install/zed_topic_benchmark_component:/home/aiv/YongJun_ws/ros2_ws/install/zed_topic_benchmark_interfaces:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/aiv/YongJun_ws/ros2_ws/install/zed_topic_benchmark_component:/home/aiv/YongJun_ws/ros2_ws/install/zed_topic_benchmark_interfaces:/opt/ros/foxy /usr/bin/cmake /home/aiv/YongJun_ws/ros2_ws/src/zed-ros2-examples/tools/zed_benchmark -DCMAKE_INSTALL_PREFIX=/home/aiv/YongJun_ws/ros2_ws/install/zed_topic_benchmark
+[0.103s] -- The C compiler identification is GNU 9.4.0
+[0.175s] -- The CXX compiler identification is GNU 9.4.0
+[0.181s] -- Check for working C compiler: /usr/bin/cc
+[0.272s] -- Check for working C compiler: /usr/bin/cc -- works
+[0.273s] -- Detecting C compiler ABI info
+[0.352s] -- Detecting C compiler ABI info - done
+[0.370s] -- Detecting C compile features
+[0.371s] -- Detecting C compile features - done
+[0.374s] -- Check for working CXX compiler: /usr/bin/c++
+[0.465s] -- Check for working CXX compiler: /usr/bin/c++ -- works
+[0.467s] -- Detecting CXX compiler ABI info
+[0.575s] -- Detecting CXX compiler ABI info - done
+[0.595s] -- Detecting CXX compile features
+[0.596s] -- Detecting CXX compile features - done
+[0.599s] -- Found ament_cmake_auto: 0.9.12 (/opt/ros/foxy/share/ament_cmake_auto/cmake)
+[0.643s] -- Found PythonInterp: /usr/bin/python3 (found suitable version "3.8.10", minimum required is "3") 
+[0.643s] -- Using PYTHON_EXECUTABLE: /usr/bin/python3
+[1.161s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[1.172s] -- Found rosidl_adapter: 1.3.1 (/opt/ros/foxy/share/rosidl_adapter/cmake)
+[1.500s] -- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "1.1.1f")  
+[1.547s] -- Found FastRTPS: /opt/ros/foxy/include  
+[1.677s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[1.771s] -- Found rmw_implementation_cmake: 1.0.4 (/opt/ros/foxy/share/rmw_implementation_cmake/cmake)
+[1.772s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[1.774s] -- Looking for pthread.h
+[1.898s] -- Looking for pthread.h - found
+[1.898s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+[1.985s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Failed
+[1.986s] -- Looking for pthread_create in pthreads
+[2.041s] -- Looking for pthread_create in pthreads - not found
+[2.041s] -- Looking for pthread_create in pthread
+[2.129s] -- Looking for pthread_create in pthread - found
+[2.131s] -- Found Threads: TRUE  
+[2.445s] -- Found ament_lint_auto: 0.9.8 (/opt/ros/foxy/share/ament_lint_auto/cmake)
+[2.484s] -- Added test 'copyright' to check source files copyright and LICENSE
+[2.486s] -- Added test 'cppcheck' to perform static code analysis on C / C++ code
+[2.486s] -- Configured cppcheck include dirs: 
+[2.486s] -- Configured cppcheck exclude dirs and/or files: 
+[2.487s] -- Added test 'cpplint' to check C / C++ code against the Google style
+[2.487s] -- Configured cpplint exclude dirs and/or files: 
+[2.487s] -- Added test 'lint_cmake' to check CMake code style
+[2.488s] -- Added test 'uncrustify' to check C / C++ code style
+[2.489s] -- Configured uncrustify additional arguments: 
+[2.489s] -- Added test 'xmllint' to check XML markup files
+[2.492s] -- Configuring done
+[2.496s] -- Generating done
+[2.497s] -- Build files have been written to: /home/aiv/YongJun_ws/ros2_ws/build/zed_topic_benchmark
+[2.511s] Invoked command in '/home/aiv/YongJun_ws/ros2_ws/build/zed_topic_benchmark' returned '0': AMENT_PREFIX_PATH=/home/aiv/YongJun_ws/ros2_ws/install/zed_topic_benchmark_component:/home/aiv/YongJun_ws/ros2_ws/install/zed_topic_benchmark_interfaces:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/aiv/YongJun_ws/ros2_ws/install/zed_topic_benchmark_component:/home/aiv/YongJun_ws/ros2_ws/install/zed_topic_benchmark_interfaces:/opt/ros/foxy /usr/bin/cmake /home/aiv/YongJun_ws/ros2_ws/src/zed-ros2-examples/tools/zed_benchmark -DCMAKE_INSTALL_PREFIX=/home/aiv/YongJun_ws/ros2_ws/install/zed_topic_benchmark
+[2.512s] Invoking command in '/home/aiv/YongJun_ws/ros2_ws/build/zed_topic_benchmark': AMENT_PREFIX_PATH=/home/aiv/YongJun_ws/ros2_ws/install/zed_topic_benchmark_component:/home/aiv/YongJun_ws/ros2_ws/install/zed_topic_benchmark_interfaces:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/aiv/YongJun_ws/ros2_ws/install/zed_topic_benchmark_component:/home/aiv/YongJun_ws/ros2_ws/install/zed_topic_benchmark_interfaces:/opt/ros/foxy /usr/bin/cmake --build /home/aiv/YongJun_ws/ros2_ws/build/zed_topic_benchmark -- -j32 -l32
+[2.564s] Invoked command in '/home/aiv/YongJun_ws/ros2_ws/build/zed_topic_benchmark' returned '0': AMENT_PREFIX_PATH=/home/aiv/YongJun_ws/ros2_ws/install/zed_topic_benchmark_component:/home/aiv/YongJun_ws/ros2_ws/install/zed_topic_benchmark_interfaces:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/aiv/YongJun_ws/ros2_ws/install/zed_topic_benchmark_component:/home/aiv/YongJun_ws/ros2_ws/install/zed_topic_benchmark_interfaces:/opt/ros/foxy /usr/bin/cmake --build /home/aiv/YongJun_ws/ros2_ws/build/zed_topic_benchmark -- -j32 -l32
+[2.597s] Invoking command in '/home/aiv/YongJun_ws/ros2_ws/build/zed_topic_benchmark': AMENT_PREFIX_PATH=/home/aiv/YongJun_ws/ros2_ws/install/zed_topic_benchmark_component:/home/aiv/YongJun_ws/ros2_ws/install/zed_topic_benchmark_interfaces:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/aiv/YongJun_ws/ros2_ws/install/zed_topic_benchmark_component:/home/aiv/YongJun_ws/ros2_ws/install/zed_topic_benchmark_interfaces:/opt/ros/foxy /usr/bin/cmake --install /home/aiv/YongJun_ws/ros2_ws/build/zed_topic_benchmark
+[2.607s] -- Install configuration: "Release"
+[2.608s] -- Installing: /home/aiv/YongJun_ws/ros2_ws/install/zed_topic_benchmark/share/ament_index/resource_index/package_run_dependencies/zed_topic_benchmark
+[2.608s] -- Installing: /home/aiv/YongJun_ws/ros2_ws/install/zed_topic_benchmark/share/ament_index/resource_index/parent_prefix_path/zed_topic_benchmark
+[2.608s] -- Installing: /home/aiv/YongJun_ws/ros2_ws/install/zed_topic_benchmark/share/zed_topic_benchmark/environment/ament_prefix_path.sh
+[2.608s] -- Installing: /home/aiv/YongJun_ws/ros2_ws/install/zed_topic_benchmark/share/zed_topic_benchmark/environment/ament_prefix_path.dsv
+[2.609s] -- Installing: /home/aiv/YongJun_ws/ros2_ws/install/zed_topic_benchmark/share/zed_topic_benchmark/environment/path.sh
+[2.609s] -- Installing: /home/aiv/YongJun_ws/ros2_ws/install/zed_topic_benchmark/share/zed_topic_benchmark/environment/path.dsv
+[2.609s] -- Installing: /home/aiv/YongJun_ws/ros2_ws/install/zed_topic_benchmark/share/zed_topic_benchmark/local_setup.bash
+[2.609s] -- Installing: /home/aiv/YongJun_ws/ros2_ws/install/zed_topic_benchmark/share/zed_topic_benchmark/local_setup.sh
+[2.609s] -- Installing: /home/aiv/YongJun_ws/ros2_ws/install/zed_topic_benchmark/share/zed_topic_benchmark/local_setup.zsh
+[2.609s] -- Installing: /home/aiv/YongJun_ws/ros2_ws/install/zed_topic_benchmark/share/zed_topic_benchmark/local_setup.dsv
+[2.610s] -- Installing: /home/aiv/YongJun_ws/ros2_ws/install/zed_topic_benchmark/share/zed_topic_benchmark/package.dsv
+[2.610s] -- Installing: /home/aiv/YongJun_ws/ros2_ws/install/zed_topic_benchmark/share/ament_index/resource_index/packages/zed_topic_benchmark
+[2.610s] -- Installing: /home/aiv/YongJun_ws/ros2_ws/install/zed_topic_benchmark/share/zed_topic_benchmark/cmake/zed_topic_benchmarkConfig.cmake
+[2.610s] -- Installing: /home/aiv/YongJun_ws/ros2_ws/install/zed_topic_benchmark/share/zed_topic_benchmark/cmake/zed_topic_benchmarkConfig-version.cmake
+[2.610s] -- Installing: /home/aiv/YongJun_ws/ros2_ws/install/zed_topic_benchmark/share/zed_topic_benchmark/package.xml
+[2.614s] Invoked command in '/home/aiv/YongJun_ws/ros2_ws/build/zed_topic_benchmark' returned '0': AMENT_PREFIX_PATH=/home/aiv/YongJun_ws/ros2_ws/install/zed_topic_benchmark_component:/home/aiv/YongJun_ws/ros2_ws/install/zed_topic_benchmark_interfaces:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/aiv/YongJun_ws/ros2_ws/install/zed_topic_benchmark_component:/home/aiv/YongJun_ws/ros2_ws/install/zed_topic_benchmark_interfaces:/opt/ros/foxy /usr/bin/cmake --install /home/aiv/YongJun_ws/ros2_ws/build/zed_topic_benchmark

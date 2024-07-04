@@ -1,0 +1,82 @@
+[0.012s] Invoking command in '/home/aiv/YongJun_ws/ros2_ws/build/zed_aruco_localization': AMENT_PREFIX_PATH=/home/aiv/YongJun_ws/ros2_ws/install/zed_components:/home/aiv/YongJun_ws/ros2_ws/install/zed_interfaces:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/aiv/YongJun_ws/ros2_ws/install/zed_components:/home/aiv/YongJun_ws/ros2_ws/install/zed_interfaces:/opt/ros/foxy LD_LIBRARY_PATH=/home/aiv/YongJun_ws/ros2_ws/install/zed_components/lib:/home/aiv/YongJun_ws/ros2_ws/install/zed_interfaces/lib:/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib/x86_64-linux-gnu:/opt/ros/foxy/lib:/usr/local/cuda/lib64 PYTHONPATH=/home/aiv/YongJun_ws/ros2_ws/install/zed_interfaces/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/cmake /home/aiv/YongJun_ws/ros2_ws/src/zed-ros2-examples/examples/zed_aruco_localization -DCMAKE_INSTALL_PREFIX=/home/aiv/YongJun_ws/ros2_ws/install/zed_aruco_localization
+[0.045s] -- The C compiler identification is GNU 9.4.0
+[0.077s] -- The CXX compiler identification is GNU 9.4.0
+[0.080s] -- Check for working C compiler: /usr/bin/cc
+[0.121s] -- Check for working C compiler: /usr/bin/cc -- works
+[0.121s] -- Detecting C compiler ABI info
+[0.163s] -- Detecting C compiler ABI info - done
+[0.174s] -- Detecting C compile features
+[0.174s] -- Detecting C compile features - done
+[0.176s] -- Check for working CXX compiler: /usr/bin/c++
+[0.223s] -- Check for working CXX compiler: /usr/bin/c++ -- works
+[0.223s] -- Detecting CXX compiler ABI info
+[0.271s] -- Detecting CXX compiler ABI info - done
+[0.279s] -- Detecting CXX compile features
+[0.279s] -- Detecting CXX compile features - done
+[0.280s] *** WARNING *** ROS2 foxy is not officially supported by the package 'zed_aruco_localization'. Correct operation is not guaranteed.
+[0.288s] -- Found OpenCV: /usr (found suitable version "4.2.0", minimum required is "4") 
+[0.290s] -- Looking for sgemm_
+[0.331s] -- Looking for sgemm_ - not found
+[0.332s] -- Looking for pthread.h
+[0.374s] -- Looking for pthread.h - found
+[0.374s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+[0.417s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Failed
+[0.418s] -- Looking for pthread_create in pthreads
+[0.452s] -- Looking for pthread_create in pthreads - not found
+[0.453s] -- Looking for pthread_create in pthread
+[0.494s] -- Looking for pthread_create in pthread - found
+[0.495s] -- Found Threads: TRUE  
+[0.510s] -- Looking for sgemm_
+[0.571s] -- Looking for sgemm_ - found
+[0.571s] -- Found BLAS: /usr/lib/x86_64-linux-gnu/libopenblas.so  
+[0.581s] -- Found CUDA: /usr/local/cuda-12.2 (found suitable version "12.2", minimum required is "12") 
+[0.606s] -- Found CUDA: /usr/local/cuda-12.2 (found version "12.2") 
+[0.608s] -- Found ament_cmake_auto: 0.9.12 (/opt/ros/foxy/share/ament_cmake_auto/cmake)
+[0.627s] -- Found PythonInterp: /usr/bin/python3 (found suitable version "3.8.10", minimum required is "3") 
+[0.627s] -- Using PYTHON_EXECUTABLE: /usr/bin/python3
+[0.837s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.842s] -- Found rosidl_adapter: 1.3.1 (/opt/ros/foxy/share/rosidl_adapter/cmake)
+[0.890s] -- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "1.1.1f")  
+[0.907s] -- Found FastRTPS: /opt/ros/foxy/include  
+[0.957s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.994s] -- Found rmw_implementation_cmake: 1.0.4 (/opt/ros/foxy/share/rmw_implementation_cmake/cmake)
+[0.995s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[1.431s] -- Found eigen3_cmake_module: 0.1.1 (/opt/ros/foxy/share/eigen3_cmake_module/cmake)
+[1.433s] -- Found Eigen3: TRUE (found version "3.3.7") 
+[2.176s] -- Found ament_lint_auto: 0.9.8 (/opt/ros/foxy/share/ament_lint_auto/cmake)
+[2.194s] -- Added test 'copyright' to check source files copyright and LICENSE
+[2.195s] -- Added test 'cppcheck' to perform static code analysis on C / C++ code
+[2.195s] -- Configured cppcheck include dirs: 
+[2.195s] -- Configured cppcheck exclude dirs and/or files: 
+[2.196s] -- Added test 'cpplint' to check C / C++ code against the Google style
+[2.196s] -- Configured cpplint exclude dirs and/or files: 
+[2.196s] -- Added test 'flake8' to check Python code syntax and style conventions
+[2.197s] -- Added test 'lint_cmake' to check CMake code style
+[2.197s] -- Added test 'pep257' to check Python code against some of the style conventions in PEP 257
+[2.198s] -- Added test 'uncrustify' to check C / C++ code style
+[2.198s] -- Configured uncrustify additional arguments: 
+[2.198s] -- Added test 'xmllint' to check XML markup files
+[2.200s] -- Configuring done
+[2.202s] -- Generating done
+[2.203s] -- Build files have been written to: /home/aiv/YongJun_ws/ros2_ws/build/zed_aruco_localization
+[2.210s] Invoked command in '/home/aiv/YongJun_ws/ros2_ws/build/zed_aruco_localization' returned '0': AMENT_PREFIX_PATH=/home/aiv/YongJun_ws/ros2_ws/install/zed_components:/home/aiv/YongJun_ws/ros2_ws/install/zed_interfaces:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/aiv/YongJun_ws/ros2_ws/install/zed_components:/home/aiv/YongJun_ws/ros2_ws/install/zed_interfaces:/opt/ros/foxy LD_LIBRARY_PATH=/home/aiv/YongJun_ws/ros2_ws/install/zed_components/lib:/home/aiv/YongJun_ws/ros2_ws/install/zed_interfaces/lib:/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib/x86_64-linux-gnu:/opt/ros/foxy/lib:/usr/local/cuda/lib64 PYTHONPATH=/home/aiv/YongJun_ws/ros2_ws/install/zed_interfaces/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/cmake /home/aiv/YongJun_ws/ros2_ws/src/zed-ros2-examples/examples/zed_aruco_localization -DCMAKE_INSTALL_PREFIX=/home/aiv/YongJun_ws/ros2_ws/install/zed_aruco_localization
+[2.211s] Invoking command in '/home/aiv/YongJun_ws/ros2_ws/build/zed_aruco_localization': AMENT_PREFIX_PATH=/home/aiv/YongJun_ws/ros2_ws/install/zed_components:/home/aiv/YongJun_ws/ros2_ws/install/zed_interfaces:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/aiv/YongJun_ws/ros2_ws/install/zed_components:/home/aiv/YongJun_ws/ros2_ws/install/zed_interfaces:/opt/ros/foxy LD_LIBRARY_PATH=/home/aiv/YongJun_ws/ros2_ws/install/zed_components/lib:/home/aiv/YongJun_ws/ros2_ws/install/zed_interfaces/lib:/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib/x86_64-linux-gnu:/opt/ros/foxy/lib:/usr/local/cuda/lib64 PYTHONPATH=/home/aiv/YongJun_ws/ros2_ws/install/zed_interfaces/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/cmake --build /home/aiv/YongJun_ws/ros2_ws/build/zed_aruco_localization -- -j32 -l32
+[2.237s] Invoked command in '/home/aiv/YongJun_ws/ros2_ws/build/zed_aruco_localization' returned '0': AMENT_PREFIX_PATH=/home/aiv/YongJun_ws/ros2_ws/install/zed_components:/home/aiv/YongJun_ws/ros2_ws/install/zed_interfaces:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/aiv/YongJun_ws/ros2_ws/install/zed_components:/home/aiv/YongJun_ws/ros2_ws/install/zed_interfaces:/opt/ros/foxy LD_LIBRARY_PATH=/home/aiv/YongJun_ws/ros2_ws/install/zed_components/lib:/home/aiv/YongJun_ws/ros2_ws/install/zed_interfaces/lib:/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib/x86_64-linux-gnu:/opt/ros/foxy/lib:/usr/local/cuda/lib64 PYTHONPATH=/home/aiv/YongJun_ws/ros2_ws/install/zed_interfaces/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/cmake --build /home/aiv/YongJun_ws/ros2_ws/build/zed_aruco_localization -- -j32 -l32
+[2.250s] Invoking command in '/home/aiv/YongJun_ws/ros2_ws/build/zed_aruco_localization': AMENT_PREFIX_PATH=/home/aiv/YongJun_ws/ros2_ws/install/zed_components:/home/aiv/YongJun_ws/ros2_ws/install/zed_interfaces:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/aiv/YongJun_ws/ros2_ws/install/zed_components:/home/aiv/YongJun_ws/ros2_ws/install/zed_interfaces:/opt/ros/foxy LD_LIBRARY_PATH=/home/aiv/YongJun_ws/ros2_ws/install/zed_components/lib:/home/aiv/YongJun_ws/ros2_ws/install/zed_interfaces/lib:/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib/x86_64-linux-gnu:/opt/ros/foxy/lib:/usr/local/cuda/lib64 PYTHONPATH=/home/aiv/YongJun_ws/ros2_ws/install/zed_interfaces/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/cmake --install /home/aiv/YongJun_ws/ros2_ws/build/zed_aruco_localization
+[2.256s] -- Install configuration: "Release"
+[2.256s] -- Installing: /home/aiv/YongJun_ws/ros2_ws/install/zed_aruco_localization/share/ament_index/resource_index/package_run_dependencies/zed_aruco_localization
+[2.256s] -- Installing: /home/aiv/YongJun_ws/ros2_ws/install/zed_aruco_localization/share/ament_index/resource_index/parent_prefix_path/zed_aruco_localization
+[2.256s] -- Installing: /home/aiv/YongJun_ws/ros2_ws/install/zed_aruco_localization/share/zed_aruco_localization/environment/ament_prefix_path.sh
+[2.256s] -- Installing: /home/aiv/YongJun_ws/ros2_ws/install/zed_aruco_localization/share/zed_aruco_localization/environment/ament_prefix_path.dsv
+[2.256s] -- Installing: /home/aiv/YongJun_ws/ros2_ws/install/zed_aruco_localization/share/zed_aruco_localization/environment/path.sh
+[2.256s] -- Installing: /home/aiv/YongJun_ws/ros2_ws/install/zed_aruco_localization/share/zed_aruco_localization/environment/path.dsv
+[2.256s] -- Installing: /home/aiv/YongJun_ws/ros2_ws/install/zed_aruco_localization/share/zed_aruco_localization/local_setup.bash
+[2.256s] -- Installing: /home/aiv/YongJun_ws/ros2_ws/install/zed_aruco_localization/share/zed_aruco_localization/local_setup.sh
+[2.256s] -- Installing: /home/aiv/YongJun_ws/ros2_ws/install/zed_aruco_localization/share/zed_aruco_localization/local_setup.zsh
+[2.257s] -- Installing: /home/aiv/YongJun_ws/ros2_ws/install/zed_aruco_localization/share/zed_aruco_localization/local_setup.dsv
+[2.257s] -- Installing: /home/aiv/YongJun_ws/ros2_ws/install/zed_aruco_localization/share/zed_aruco_localization/package.dsv
+[2.257s] -- Installing: /home/aiv/YongJun_ws/ros2_ws/install/zed_aruco_localization/share/ament_index/resource_index/packages/zed_aruco_localization
+[2.257s] -- Installing: /home/aiv/YongJun_ws/ros2_ws/install/zed_aruco_localization/share/zed_aruco_localization/cmake/zed_aruco_localizationConfig.cmake
+[2.257s] -- Installing: /home/aiv/YongJun_ws/ros2_ws/install/zed_aruco_localization/share/zed_aruco_localization/cmake/zed_aruco_localizationConfig-version.cmake
+[2.257s] -- Installing: /home/aiv/YongJun_ws/ros2_ws/install/zed_aruco_localization/share/zed_aruco_localization/package.xml
+[2.258s] Invoked command in '/home/aiv/YongJun_ws/ros2_ws/build/zed_aruco_localization' returned '0': AMENT_PREFIX_PATH=/home/aiv/YongJun_ws/ros2_ws/install/zed_components:/home/aiv/YongJun_ws/ros2_ws/install/zed_interfaces:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/aiv/YongJun_ws/ros2_ws/install/zed_components:/home/aiv/YongJun_ws/ros2_ws/install/zed_interfaces:/opt/ros/foxy LD_LIBRARY_PATH=/home/aiv/YongJun_ws/ros2_ws/install/zed_components/lib:/home/aiv/YongJun_ws/ros2_ws/install/zed_interfaces/lib:/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib/x86_64-linux-gnu:/opt/ros/foxy/lib:/usr/local/cuda/lib64 PYTHONPATH=/home/aiv/YongJun_ws/ros2_ws/install/zed_interfaces/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/cmake --install /home/aiv/YongJun_ws/ros2_ws/build/zed_aruco_localization

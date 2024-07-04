@@ -1,0 +1,75 @@
+[0.029s] Invoking command in '/home/aiv/YongJun_ws/ros2_ws/build/zed_tutorial_depth': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake /home/aiv/YongJun_ws/ros2_ws/src/zed-ros2-examples/tutorials/zed_depth_tutorial -DCMAKE_INSTALL_PREFIX=/home/aiv/YongJun_ws/ros2_ws/install/zed_tutorial_depth
+[0.065s] -- The C compiler identification is GNU 9.4.0
+[0.107s] -- The CXX compiler identification is GNU 9.4.0
+[0.111s] -- Check for working C compiler: /usr/bin/cc
+[0.159s] -- Check for working C compiler: /usr/bin/cc -- works
+[0.160s] -- Detecting C compiler ABI info
+[0.209s] -- Detecting C compiler ABI info - done
+[0.219s] -- Detecting C compile features
+[0.220s] -- Detecting C compile features - done
+[0.222s] -- Check for working CXX compiler: /usr/bin/c++
+[0.275s] -- Check for working CXX compiler: /usr/bin/c++ -- works
+[0.277s] -- Detecting CXX compiler ABI info
+[0.334s] -- Detecting CXX compiler ABI info - done
+[0.343s] -- Detecting CXX compile features
+[0.343s] -- Detecting CXX compile features - done
+[0.344s] -- Found ament_cmake_auto: 0.9.12 (/opt/ros/foxy/share/ament_cmake_auto/cmake)
+[0.364s] -- Found PythonInterp: /usr/bin/python3 (found suitable version "3.8.10", minimum required is "3") 
+[0.365s] -- Using PYTHON_EXECUTABLE: /usr/bin/python3
+[0.601s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.605s] -- Found rosidl_adapter: 1.3.1 (/opt/ros/foxy/share/rosidl_adapter/cmake)
+[0.664s] -- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "1.1.1f")  
+[0.689s] -- Found FastRTPS: /opt/ros/foxy/include  
+[0.745s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.784s] -- Found rmw_implementation_cmake: 1.0.4 (/opt/ros/foxy/share/rmw_implementation_cmake/cmake)
+[0.785s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[0.786s] -- Looking for pthread.h
+[0.835s] -- Looking for pthread.h - found
+[0.836s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+[0.888s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Failed
+[0.888s] -- Looking for pthread_create in pthreads
+[0.931s] -- Looking for pthread_create in pthreads - not found
+[0.931s] -- Looking for pthread_create in pthread
+[0.979s] -- Looking for pthread_create in pthread - found
+[0.980s] -- Found Threads: TRUE  
+[1.191s] -- Found ament_lint_auto: 0.9.8 (/opt/ros/foxy/share/ament_lint_auto/cmake)
+[1.210s] -- Added test 'copyright' to check source files copyright and LICENSE
+[1.210s] -- Added test 'cppcheck' to perform static code analysis on C / C++ code
+[1.210s] -- Configured cppcheck include dirs: 
+[1.210s] -- Configured cppcheck exclude dirs and/or files: 
+[1.211s] -- Added test 'cpplint' to check C / C++ code against the Google style
+[1.211s] -- Configured cpplint exclude dirs and/or files: 
+[1.211s] -- Added test 'lint_cmake' to check CMake code style
+[1.212s] -- Added test 'uncrustify' to check C / C++ code style
+[1.212s] -- Configured uncrustify additional arguments: 
+[1.212s] -- Added test 'xmllint' to check XML markup files
+[1.214s] -- Configuring done
+[1.219s] -- Generating done
+[1.220s] -- Build files have been written to: /home/aiv/YongJun_ws/ros2_ws/build/zed_tutorial_depth
+[1.228s] Invoked command in '/home/aiv/YongJun_ws/ros2_ws/build/zed_tutorial_depth' returned '0': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake /home/aiv/YongJun_ws/ros2_ws/src/zed-ros2-examples/tutorials/zed_depth_tutorial -DCMAKE_INSTALL_PREFIX=/home/aiv/YongJun_ws/ros2_ws/install/zed_tutorial_depth
+[1.229s] Invoking command in '/home/aiv/YongJun_ws/ros2_ws/build/zed_tutorial_depth': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake --build /home/aiv/YongJun_ws/ros2_ws/build/zed_tutorial_depth -- -j32 -l32
+[1.255s] [35m[1mScanning dependencies of target zed_tutorial_depth[0m
+[1.278s] [ 50%] [32mBuilding CXX object CMakeFiles/zed_tutorial_depth.dir/src/zed_depth_sub_tutorial.cpp.o[0m
+[7.750s] [100%] [32m[1mLinking CXX executable zed_tutorial_depth[0m
+[7.881s] [100%] Built target zed_tutorial_depth
+[7.894s] Invoked command in '/home/aiv/YongJun_ws/ros2_ws/build/zed_tutorial_depth' returned '0': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake --build /home/aiv/YongJun_ws/ros2_ws/build/zed_tutorial_depth -- -j32 -l32
+[7.913s] Invoking command in '/home/aiv/YongJun_ws/ros2_ws/build/zed_tutorial_depth': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake --install /home/aiv/YongJun_ws/ros2_ws/build/zed_tutorial_depth
+[7.922s] -- Install configuration: "Release"
+[7.922s] -- Installing: /home/aiv/YongJun_ws/ros2_ws/install/zed_tutorial_depth/lib/zed_tutorial_depth/zed_tutorial_depth
+[7.923s] -- Set runtime path of "/home/aiv/YongJun_ws/ros2_ws/install/zed_tutorial_depth/lib/zed_tutorial_depth/zed_tutorial_depth" to ""
+[7.923s] -- Installing: /home/aiv/YongJun_ws/ros2_ws/install/zed_tutorial_depth/share/ament_index/resource_index/package_run_dependencies/zed_tutorial_depth
+[7.923s] -- Installing: /home/aiv/YongJun_ws/ros2_ws/install/zed_tutorial_depth/share/ament_index/resource_index/parent_prefix_path/zed_tutorial_depth
+[7.923s] -- Installing: /home/aiv/YongJun_ws/ros2_ws/install/zed_tutorial_depth/share/zed_tutorial_depth/environment/ament_prefix_path.sh
+[7.924s] -- Installing: /home/aiv/YongJun_ws/ros2_ws/install/zed_tutorial_depth/share/zed_tutorial_depth/environment/ament_prefix_path.dsv
+[7.924s] -- Installing: /home/aiv/YongJun_ws/ros2_ws/install/zed_tutorial_depth/share/zed_tutorial_depth/environment/path.sh
+[7.924s] -- Installing: /home/aiv/YongJun_ws/ros2_ws/install/zed_tutorial_depth/share/zed_tutorial_depth/environment/path.dsv
+[7.924s] -- Installing: /home/aiv/YongJun_ws/ros2_ws/install/zed_tutorial_depth/share/zed_tutorial_depth/local_setup.bash
+[7.925s] -- Installing: /home/aiv/YongJun_ws/ros2_ws/install/zed_tutorial_depth/share/zed_tutorial_depth/local_setup.sh
+[7.925s] -- Installing: /home/aiv/YongJun_ws/ros2_ws/install/zed_tutorial_depth/share/zed_tutorial_depth/local_setup.zsh
+[7.925s] -- Installing: /home/aiv/YongJun_ws/ros2_ws/install/zed_tutorial_depth/share/zed_tutorial_depth/local_setup.dsv
+[7.925s] -- Installing: /home/aiv/YongJun_ws/ros2_ws/install/zed_tutorial_depth/share/zed_tutorial_depth/package.dsv
+[7.925s] -- Installing: /home/aiv/YongJun_ws/ros2_ws/install/zed_tutorial_depth/share/ament_index/resource_index/packages/zed_tutorial_depth
+[7.925s] -- Installing: /home/aiv/YongJun_ws/ros2_ws/install/zed_tutorial_depth/share/zed_tutorial_depth/cmake/zed_tutorial_depthConfig.cmake
+[7.925s] -- Installing: /home/aiv/YongJun_ws/ros2_ws/install/zed_tutorial_depth/share/zed_tutorial_depth/cmake/zed_tutorial_depthConfig-version.cmake
+[7.926s] -- Installing: /home/aiv/YongJun_ws/ros2_ws/install/zed_tutorial_depth/share/zed_tutorial_depth/package.xml
+[7.927s] Invoked command in '/home/aiv/YongJun_ws/ros2_ws/build/zed_tutorial_depth' returned '0': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake --install /home/aiv/YongJun_ws/ros2_ws/build/zed_tutorial_depth

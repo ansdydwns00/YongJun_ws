@@ -1,0 +1,7 @@
+[
+{
+  "directory": "/home/aiv/YongJun_ws/ros2_ws/build/zed_tutorial_depth",
+  "command": "/usr/bin/c++  -DDEFAULT_RMW_IMPLEMENTATION=rmw_fastrtps_cpp -DFOUND_FOXY -DRCUTILS_ENABLE_FAULT_INJECTION -DSPDLOG_COMPILED_LIB -isystem /opt/ros/foxy/include  -O3 -DNDEBUG   -std=gnu++14 -o CMakeFiles/zed_tutorial_depth.dir/src/zed_depth_sub_tutorial.cpp.o -c /home/aiv/YongJun_ws/ros2_ws/src/zed-ros2-examples/tutorials/zed_depth_tutorial/src/zed_depth_sub_tutorial.cpp",
+  "file": "/home/aiv/YongJun_ws/ros2_ws/src/zed-ros2-examples/tutorials/zed_depth_tutorial/src/zed_depth_sub_tutorial.cpp"
+}
+]

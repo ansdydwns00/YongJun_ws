@@ -1,0 +1,44 @@
+-- The C compiler identification is GNU 9.4.0
+-- The CXX compiler identification is GNU 9.4.0
+-- Check for working C compiler: /usr/bin/cc
+-- Check for working C compiler: /usr/bin/cc -- works
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - done
+-- Detecting C compile features
+-- Detecting C compile features - done
+-- Check for working CXX compiler: /usr/bin/c++
+-- Check for working CXX compiler: /usr/bin/c++ -- works
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+-- Found ament_cmake: 0.9.12 (/opt/ros/foxy/share/ament_cmake/cmake)
+-- Found PythonInterp: /usr/bin/python3 (found suitable version "3.8.10", minimum required is "3") 
+-- Using PYTHON_EXECUTABLE: /usr/bin/python3
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /home/aiv/YongJun_ws/ros2_ws/build/zed_robot_integration
+-- Install configuration: ""
+-- Installing: /home/aiv/YongJun_ws/ros2_ws/install/zed_robot_integration/share/zed_robot_integration//launch
+-- Installing: /home/aiv/YongJun_ws/ros2_ws/install/zed_robot_integration/share/zed_robot_integration//launch/view_mono_zed.launch.py
+-- Installing: /home/aiv/YongJun_ws/ros2_ws/install/zed_robot_integration/share/zed_robot_integration//launch/view_dual_zed.launch.py
+-- Installing: /home/aiv/YongJun_ws/ros2_ws/install/zed_robot_integration/share/zed_robot_integration//urdf
+-- Installing: /home/aiv/YongJun_ws/ros2_ws/install/zed_robot_integration/share/zed_robot_integration//urdf/zed_robot_dual.urdf.xacro
+-- Installing: /home/aiv/YongJun_ws/ros2_ws/install/zed_robot_integration/share/zed_robot_integration//urdf/zed_robot_mono.urdf.xacro
+-- Installing: /home/aiv/YongJun_ws/ros2_ws/install/zed_robot_integration/share/zed_robot_integration//rviz2
+-- Installing: /home/aiv/YongJun_ws/ros2_ws/install/zed_robot_integration/share/zed_robot_integration//rviz2/view_config.rviz
+-- Installing: /home/aiv/YongJun_ws/ros2_ws/install/zed_robot_integration/share/ament_index/resource_index/package_run_dependencies/zed_robot_integration
+-- Installing: /home/aiv/YongJun_ws/ros2_ws/install/zed_robot_integration/share/ament_index/resource_index/parent_prefix_path/zed_robot_integration
+-- Installing: /home/aiv/YongJun_ws/ros2_ws/install/zed_robot_integration/share/zed_robot_integration/environment/ament_prefix_path.sh
+-- Installing: /home/aiv/YongJun_ws/ros2_ws/install/zed_robot_integration/share/zed_robot_integration/environment/ament_prefix_path.dsv
+-- Installing: /home/aiv/YongJun_ws/ros2_ws/install/zed_robot_integration/share/zed_robot_integration/environment/path.sh
+-- Installing: /home/aiv/YongJun_ws/ros2_ws/install/zed_robot_integration/share/zed_robot_integration/environment/path.dsv
+-- Installing: /home/aiv/YongJun_ws/ros2_ws/install/zed_robot_integration/share/zed_robot_integration/local_setup.bash
+-- Installing: /home/aiv/YongJun_ws/ros2_ws/install/zed_robot_integration/share/zed_robot_integration/local_setup.sh
+-- Installing: /home/aiv/YongJun_ws/ros2_ws/install/zed_robot_integration/share/zed_robot_integration/local_setup.zsh
+-- Installing: /home/aiv/YongJun_ws/ros2_ws/install/zed_robot_integration/share/zed_robot_integration/local_setup.dsv
+-- Installing: /home/aiv/YongJun_ws/ros2_ws/install/zed_robot_integration/share/zed_robot_integration/package.dsv
+-- Installing: /home/aiv/YongJun_ws/ros2_ws/install/zed_robot_integration/share/ament_index/resource_index/packages/zed_robot_integration
+-- Installing: /home/aiv/YongJun_ws/ros2_ws/install/zed_robot_integration/share/zed_robot_integration/cmake/zed_robot_integrationConfig.cmake
+-- Installing: /home/aiv/YongJun_ws/ros2_ws/install/zed_robot_integration/share/zed_robot_integration/cmake/zed_robot_integrationConfig-version.cmake
+-- Installing: /home/aiv/YongJun_ws/ros2_ws/install/zed_robot_integration/share/zed_robot_integration/package.xml

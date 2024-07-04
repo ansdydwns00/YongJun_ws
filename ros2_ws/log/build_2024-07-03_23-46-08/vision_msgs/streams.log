@@ -1,0 +1,313 @@
+[0.031s] Invoking command in '/home/aiv/YongJun_ws/ros2_ws/build/vision_msgs': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/aiv/YongJun_ws/ros2_ws/install/yolov8_ros:/opt/ros/foxy /usr/bin/cmake --build /home/aiv/YongJun_ws/ros2_ws/build/vision_msgs -- -j32 -l32
+[0.045s] /usr/bin/cmake -S/home/aiv/YongJun_ws/ros2_ws/src/vision_msgs -B/home/aiv/YongJun_ws/ros2_ws/build/vision_msgs --check-build-system CMakeFiles/Makefile.cmake 0
+[0.047s] /usr/bin/cmake -E cmake_progress_start /home/aiv/YongJun_ws/ros2_ws/build/vision_msgs/CMakeFiles /home/aiv/YongJun_ws/ros2_ws/build/vision_msgs/CMakeFiles/progress.marks
+[0.057s] /usr/bin/make -f CMakeFiles/Makefile2 all
+[0.058s] make[1]: Entering directory '/home/aiv/YongJun_ws/ros2_ws/build/vision_msgs'
+[0.058s] /usr/bin/make -f CMakeFiles/vision_msgs__cpp.dir/build.make CMakeFiles/vision_msgs__cpp.dir/depend
+[0.058s] /usr/bin/make -f CMakeFiles/vision_msgs__rosidl_generator_c.dir/build.make CMakeFiles/vision_msgs__rosidl_generator_c.dir/depend
+[0.060s] make[2]: Entering directory '/home/aiv/YongJun_ws/ros2_ws/build/vision_msgs'
+[0.060s] cd /home/aiv/YongJun_ws/ros2_ws/build/vision_msgs && /usr/bin/cmake -E cmake_depends "Unix Makefiles" /home/aiv/YongJun_ws/ros2_ws/src/vision_msgs /home/aiv/YongJun_ws/ros2_ws/src/vision_msgs /home/aiv/YongJun_ws/ros2_ws/build/vision_msgs /home/aiv/YongJun_ws/ros2_ws/build/vision_msgs /home/aiv/YongJun_ws/ros2_ws/build/vision_msgs/CMakeFiles/vision_msgs__cpp.dir/DependInfo.cmake --color=
+[0.061s] make[2]: Entering directory '/home/aiv/YongJun_ws/ros2_ws/build/vision_msgs'
+[0.061s] cd /home/aiv/YongJun_ws/ros2_ws/build/vision_msgs && /usr/bin/cmake -E cmake_depends "Unix Makefiles" /home/aiv/YongJun_ws/ros2_ws/src/vision_msgs /home/aiv/YongJun_ws/ros2_ws/src/vision_msgs /home/aiv/YongJun_ws/ros2_ws/build/vision_msgs /home/aiv/YongJun_ws/ros2_ws/build/vision_msgs /home/aiv/YongJun_ws/ros2_ws/build/vision_msgs/CMakeFiles/vision_msgs__rosidl_generator_c.dir/DependInfo.cmake --color=
+[0.069s] make[2]: Leaving directory '/home/aiv/YongJun_ws/ros2_ws/build/vision_msgs'
+[0.069s] /usr/bin/make -f CMakeFiles/vision_msgs__cpp.dir/build.make CMakeFiles/vision_msgs__cpp.dir/build
+[0.071s] make[2]: Entering directory '/home/aiv/YongJun_ws/ros2_ws/build/vision_msgs'
+[0.071s] make[2]: Nothing to be done for 'CMakeFiles/vision_msgs__cpp.dir/build'.
+[0.071s] make[2]: Leaving directory '/home/aiv/YongJun_ws/ros2_ws/build/vision_msgs'
+[0.073s] make[2]: Leaving directory '/home/aiv/YongJun_ws/ros2_ws/build/vision_msgs'
+[0.074s] /usr/bin/make -f CMakeFiles/vision_msgs__rosidl_generator_c.dir/build.make CMakeFiles/vision_msgs__rosidl_generator_c.dir/build
+[0.079s] make[2]: Entering directory '/home/aiv/YongJun_ws/ros2_ws/build/vision_msgs'
+[0.079s] make[2]: Nothing to be done for 'CMakeFiles/vision_msgs__rosidl_generator_c.dir/build'.
+[0.079s] make[2]: Leaving directory '/home/aiv/YongJun_ws/ros2_ws/build/vision_msgs'
+[0.084s] [  1%] Built target vision_msgs__cpp
+[0.085s] /usr/bin/make -f CMakeFiles/vision_msgs__rosidl_typesupport_cpp.dir/build.make CMakeFiles/vision_msgs__rosidl_typesupport_cpp.dir/depend
+[0.085s] /usr/bin/make -f CMakeFiles/vision_msgs__rosidl_typesupport_fastrtps_cpp.dir/build.make CMakeFiles/vision_msgs__rosidl_typesupport_fastrtps_cpp.dir/depend
+[0.085s] /usr/bin/make -f CMakeFiles/vision_msgs__rosidl_typesupport_introspection_cpp.dir/build.make CMakeFiles/vision_msgs__rosidl_typesupport_introspection_cpp.dir/depend
+[0.087s] make[2]: Entering directory '/home/aiv/YongJun_ws/ros2_ws/build/vision_msgs'
+[0.087s] cd /home/aiv/YongJun_ws/ros2_ws/build/vision_msgs && /usr/bin/cmake -E cmake_depends "Unix Makefiles" /home/aiv/YongJun_ws/ros2_ws/src/vision_msgs /home/aiv/YongJun_ws/ros2_ws/src/vision_msgs /home/aiv/YongJun_ws/ros2_ws/build/vision_msgs /home/aiv/YongJun_ws/ros2_ws/build/vision_msgs /home/aiv/YongJun_ws/ros2_ws/build/vision_msgs/CMakeFiles/vision_msgs__rosidl_typesupport_cpp.dir/DependInfo.cmake --color=
+[0.087s] make[2]: Entering directory '/home/aiv/YongJun_ws/ros2_ws/build/vision_msgs'
+[0.087s] cd /home/aiv/YongJun_ws/ros2_ws/build/vision_msgs && /usr/bin/cmake -E cmake_depends "Unix Makefiles" /home/aiv/YongJun_ws/ros2_ws/src/vision_msgs /home/aiv/YongJun_ws/ros2_ws/src/vision_msgs /home/aiv/YongJun_ws/ros2_ws/build/vision_msgs /home/aiv/YongJun_ws/ros2_ws/build/vision_msgs /home/aiv/YongJun_ws/ros2_ws/build/vision_msgs/CMakeFiles/vision_msgs__rosidl_typesupport_fastrtps_cpp.dir/DependInfo.cmake --color=
+[0.087s] make[2]: Entering directory '/home/aiv/YongJun_ws/ros2_ws/build/vision_msgs'
+[0.088s] cd /home/aiv/YongJun_ws/ros2_ws/build/vision_msgs && /usr/bin/cmake -E cmake_depends "Unix Makefiles" /home/aiv/YongJun_ws/ros2_ws/src/vision_msgs /home/aiv/YongJun_ws/ros2_ws/src/vision_msgs /home/aiv/YongJun_ws/ros2_ws/build/vision_msgs /home/aiv/YongJun_ws/ros2_ws/build/vision_msgs /home/aiv/YongJun_ws/ros2_ws/build/vision_msgs/CMakeFiles/vision_msgs__rosidl_typesupport_introspection_cpp.dir/DependInfo.cmake --color=
+[0.089s] [ 12%] Built target vision_msgs__rosidl_generator_c
+[0.089s] /usr/bin/make -f CMakeFiles/vision_msgs__rosidl_typesupport_introspection_c.dir/build.make CMakeFiles/vision_msgs__rosidl_typesupport_introspection_c.dir/depend
+[0.089s] /usr/bin/make -f CMakeFiles/vision_msgs__rosidl_typesupport_c.dir/build.make CMakeFiles/vision_msgs__rosidl_typesupport_c.dir/depend
+[0.092s] make[2]: Entering directory '/home/aiv/YongJun_ws/ros2_ws/build/vision_msgs'
+[0.092s] cd /home/aiv/YongJun_ws/ros2_ws/build/vision_msgs && /usr/bin/cmake -E cmake_depends "Unix Makefiles" /home/aiv/YongJun_ws/ros2_ws/src/vision_msgs /home/aiv/YongJun_ws/ros2_ws/src/vision_msgs /home/aiv/YongJun_ws/ros2_ws/build/vision_msgs /home/aiv/YongJun_ws/ros2_ws/build/vision_msgs /home/aiv/YongJun_ws/ros2_ws/build/vision_msgs/CMakeFiles/vision_msgs__rosidl_typesupport_introspection_c.dir/DependInfo.cmake --color=
+[0.093s] make[2]: Entering directory '/home/aiv/YongJun_ws/ros2_ws/build/vision_msgs'
+[0.093s] cd /home/aiv/YongJun_ws/ros2_ws/build/vision_msgs && /usr/bin/cmake -E cmake_depends "Unix Makefiles" /home/aiv/YongJun_ws/ros2_ws/src/vision_msgs /home/aiv/YongJun_ws/ros2_ws/src/vision_msgs /home/aiv/YongJun_ws/ros2_ws/build/vision_msgs /home/aiv/YongJun_ws/ros2_ws/build/vision_msgs /home/aiv/YongJun_ws/ros2_ws/build/vision_msgs/CMakeFiles/vision_msgs__rosidl_typesupport_c.dir/DependInfo.cmake --color=
+[0.101s] make[2]: Leaving directory '/home/aiv/YongJun_ws/ros2_ws/build/vision_msgs'
+[0.102s] /usr/bin/make -f CMakeFiles/vision_msgs__rosidl_typesupport_cpp.dir/build.make CMakeFiles/vision_msgs__rosidl_typesupport_cpp.dir/build
+[0.102s] make[2]: Leaving directory '/home/aiv/YongJun_ws/ros2_ws/build/vision_msgs'
+[0.102s] make[2]: Leaving directory '/home/aiv/YongJun_ws/ros2_ws/build/vision_msgs'
+[0.103s] /usr/bin/make -f CMakeFiles/vision_msgs__rosidl_typesupport_fastrtps_cpp.dir/build.make CMakeFiles/vision_msgs__rosidl_typesupport_fastrtps_cpp.dir/build
+[0.103s] /usr/bin/make -f CMakeFiles/vision_msgs__rosidl_typesupport_introspection_cpp.dir/build.make CMakeFiles/vision_msgs__rosidl_typesupport_introspection_cpp.dir/build
+[0.103s] make[2]: Leaving directory '/home/aiv/YongJun_ws/ros2_ws/build/vision_msgs'
+[0.104s] /usr/bin/make -f CMakeFiles/vision_msgs__rosidl_typesupport_introspection_c.dir/build.make CMakeFiles/vision_msgs__rosidl_typesupport_introspection_c.dir/build
+[0.104s] make[2]: Leaving directory '/home/aiv/YongJun_ws/ros2_ws/build/vision_msgs'
+[0.104s] /usr/bin/make -f CMakeFiles/vision_msgs__rosidl_typesupport_c.dir/build.make CMakeFiles/vision_msgs__rosidl_typesupport_c.dir/build
+[0.105s] make[2]: Entering directory '/home/aiv/YongJun_ws/ros2_ws/build/vision_msgs'
+[0.105s] make[2]: Nothing to be done for 'CMakeFiles/vision_msgs__rosidl_typesupport_introspection_cpp.dir/build'.
+[0.105s] make[2]: Leaving directory '/home/aiv/YongJun_ws/ros2_ws/build/vision_msgs'
+[0.106s] make[2]: Entering directory '/home/aiv/YongJun_ws/ros2_ws/build/vision_msgs'
+[0.107s] make[2]: Nothing to be done for 'CMakeFiles/vision_msgs__rosidl_typesupport_introspection_c.dir/build'.
+[0.107s] make[2]: Leaving directory '/home/aiv/YongJun_ws/ros2_ws/build/vision_msgs'
+[0.107s] make[2]: Entering directory '/home/aiv/YongJun_ws/ros2_ws/build/vision_msgs'
+[0.109s] make[2]: Nothing to be done for 'CMakeFiles/vision_msgs__rosidl_typesupport_cpp.dir/build'.
+[0.109s] make[2]: Leaving directory '/home/aiv/YongJun_ws/ros2_ws/build/vision_msgs'
+[0.109s] make[2]: Entering directory '/home/aiv/YongJun_ws/ros2_ws/build/vision_msgs'
+[0.109s] make[2]: Nothing to be done for 'CMakeFiles/vision_msgs__rosidl_typesupport_c.dir/build'.
+[0.109s] make[2]: Leaving directory '/home/aiv/YongJun_ws/ros2_ws/build/vision_msgs'
+[0.115s] make[2]: Entering directory '/home/aiv/YongJun_ws/ros2_ws/build/vision_msgs'
+[0.115s] make[2]: Nothing to be done for 'CMakeFiles/vision_msgs__rosidl_typesupport_fastrtps_cpp.dir/build'.
+[0.115s] make[2]: Leaving directory '/home/aiv/YongJun_ws/ros2_ws/build/vision_msgs'
+[0.115s] [ 23%] Built target vision_msgs__rosidl_typesupport_introspection_cpp
+[0.115s] [ 34%] Built target vision_msgs__rosidl_typesupport_introspection_c
+[0.115s] [ 46%] Built target vision_msgs__rosidl_typesupport_cpp
+[0.115s] [ 57%] Built target vision_msgs__rosidl_typesupport_c
+[0.118s] [ 68%] Built target vision_msgs__rosidl_typesupport_fastrtps_cpp
+[0.119s] /usr/bin/make -f CMakeFiles/vision_msgs__rosidl_typesupport_fastrtps_c.dir/build.make CMakeFiles/vision_msgs__rosidl_typesupport_fastrtps_c.dir/depend
+[0.123s] make[2]: Entering directory '/home/aiv/YongJun_ws/ros2_ws/build/vision_msgs'
+[0.123s] cd /home/aiv/YongJun_ws/ros2_ws/build/vision_msgs && /usr/bin/cmake -E cmake_depends "Unix Makefiles" /home/aiv/YongJun_ws/ros2_ws/src/vision_msgs /home/aiv/YongJun_ws/ros2_ws/src/vision_msgs /home/aiv/YongJun_ws/ros2_ws/build/vision_msgs /home/aiv/YongJun_ws/ros2_ws/build/vision_msgs /home/aiv/YongJun_ws/ros2_ws/build/vision_msgs/CMakeFiles/vision_msgs__rosidl_typesupport_fastrtps_c.dir/DependInfo.cmake --color=
+[0.130s] make[2]: Leaving directory '/home/aiv/YongJun_ws/ros2_ws/build/vision_msgs'
+[0.130s] /usr/bin/make -f CMakeFiles/vision_msgs__rosidl_typesupport_fastrtps_c.dir/build.make CMakeFiles/vision_msgs__rosidl_typesupport_fastrtps_c.dir/build
+[0.138s] make[2]: Entering directory '/home/aiv/YongJun_ws/ros2_ws/build/vision_msgs'
+[0.139s] make[2]: Nothing to be done for 'CMakeFiles/vision_msgs__rosidl_typesupport_fastrtps_c.dir/build'.
+[0.139s] make[2]: Leaving directory '/home/aiv/YongJun_ws/ros2_ws/build/vision_msgs'
+[0.142s] [ 79%] Built target vision_msgs__rosidl_typesupport_fastrtps_c
+[0.143s] /usr/bin/make -f CMakeFiles/vision_msgs.dir/build.make CMakeFiles/vision_msgs.dir/depend
+[0.145s] make[2]: Entering directory '/home/aiv/YongJun_ws/ros2_ws/build/vision_msgs'
+[0.145s] cd /home/aiv/YongJun_ws/ros2_ws/build/vision_msgs && /usr/bin/cmake -E cmake_depends "Unix Makefiles" /home/aiv/YongJun_ws/ros2_ws/src/vision_msgs /home/aiv/YongJun_ws/ros2_ws/src/vision_msgs /home/aiv/YongJun_ws/ros2_ws/build/vision_msgs /home/aiv/YongJun_ws/ros2_ws/build/vision_msgs /home/aiv/YongJun_ws/ros2_ws/build/vision_msgs/CMakeFiles/vision_msgs.dir/DependInfo.cmake --color=
+[0.157s] make[2]: Leaving directory '/home/aiv/YongJun_ws/ros2_ws/build/vision_msgs'
+[0.157s] /usr/bin/make -f CMakeFiles/vision_msgs.dir/build.make CMakeFiles/vision_msgs.dir/build
+[0.158s] make[2]: Entering directory '/home/aiv/YongJun_ws/ros2_ws/build/vision_msgs'
+[0.158s] make[2]: Nothing to be done for 'CMakeFiles/vision_msgs.dir/build'.
+[0.158s] make[2]: Leaving directory '/home/aiv/YongJun_ws/ros2_ws/build/vision_msgs'
+[0.160s] [ 79%] Built target vision_msgs
+[0.160s] /usr/bin/make -f vision_msgs__py/CMakeFiles/vision_msgs__py.dir/build.make vision_msgs__py/CMakeFiles/vision_msgs__py.dir/depend
+[0.163s] make[2]: Entering directory '/home/aiv/YongJun_ws/ros2_ws/build/vision_msgs'
+[0.164s] cd /home/aiv/YongJun_ws/ros2_ws/build/vision_msgs && /usr/bin/cmake -E cmake_depends "Unix Makefiles" /home/aiv/YongJun_ws/ros2_ws/src/vision_msgs /home/aiv/YongJun_ws/ros2_ws/build/vision_msgs/vision_msgs__py /home/aiv/YongJun_ws/ros2_ws/build/vision_msgs /home/aiv/YongJun_ws/ros2_ws/build/vision_msgs/vision_msgs__py /home/aiv/YongJun_ws/ros2_ws/build/vision_msgs/vision_msgs__py/CMakeFiles/vision_msgs__py.dir/DependInfo.cmake --color=
+[0.169s] make[2]: Leaving directory '/home/aiv/YongJun_ws/ros2_ws/build/vision_msgs'
+[0.169s] /usr/bin/make -f vision_msgs__py/CMakeFiles/vision_msgs__py.dir/build.make vision_msgs__py/CMakeFiles/vision_msgs__py.dir/build
+[0.169s] make[2]: Entering directory '/home/aiv/YongJun_ws/ros2_ws/build/vision_msgs'
+[0.169s] make[2]: Nothing to be done for 'vision_msgs__py/CMakeFiles/vision_msgs__py.dir/build'.
+[0.170s] make[2]: Leaving directory '/home/aiv/YongJun_ws/ros2_ws/build/vision_msgs'
+[0.177s] [ 80%] Built target vision_msgs__py
+[0.177s] /usr/bin/make -f CMakeFiles/vision_msgs__python.dir/build.make CMakeFiles/vision_msgs__python.dir/depend
+[0.179s] make[2]: Entering directory '/home/aiv/YongJun_ws/ros2_ws/build/vision_msgs'
+[0.179s] cd /home/aiv/YongJun_ws/ros2_ws/build/vision_msgs && /usr/bin/cmake -E cmake_depends "Unix Makefiles" /home/aiv/YongJun_ws/ros2_ws/src/vision_msgs /home/aiv/YongJun_ws/ros2_ws/src/vision_msgs /home/aiv/YongJun_ws/ros2_ws/build/vision_msgs /home/aiv/YongJun_ws/ros2_ws/build/vision_msgs /home/aiv/YongJun_ws/ros2_ws/build/vision_msgs/CMakeFiles/vision_msgs__python.dir/DependInfo.cmake --color=
+[0.187s] make[2]: Leaving directory '/home/aiv/YongJun_ws/ros2_ws/build/vision_msgs'
+[0.187s] /usr/bin/make -f CMakeFiles/vision_msgs__python.dir/build.make CMakeFiles/vision_msgs__python.dir/build
+[0.193s] make[2]: Entering directory '/home/aiv/YongJun_ws/ros2_ws/build/vision_msgs'
+[0.193s] make[2]: Nothing to be done for 'CMakeFiles/vision_msgs__python.dir/build'.
+[0.193s] make[2]: Leaving directory '/home/aiv/YongJun_ws/ros2_ws/build/vision_msgs'
+[0.198s] [ 90%] Built target vision_msgs__python
+[0.199s] /usr/bin/make -f CMakeFiles/vision_msgs__rosidl_typesupport_c__pyext.dir/build.make CMakeFiles/vision_msgs__rosidl_typesupport_c__pyext.dir/depend
+[0.202s] /usr/bin/make -f CMakeFiles/vision_msgs__rosidl_typesupport_fastrtps_c__pyext.dir/build.make CMakeFiles/vision_msgs__rosidl_typesupport_fastrtps_c__pyext.dir/depend
+[0.202s] /usr/bin/make -f CMakeFiles/vision_msgs__rosidl_typesupport_introspection_c__pyext.dir/build.make CMakeFiles/vision_msgs__rosidl_typesupport_introspection_c__pyext.dir/depend
+[0.202s] make[2]: Entering directory '/home/aiv/YongJun_ws/ros2_ws/build/vision_msgs'
+[0.203s] cd /home/aiv/YongJun_ws/ros2_ws/build/vision_msgs && /usr/bin/cmake -E cmake_depends "Unix Makefiles" /home/aiv/YongJun_ws/ros2_ws/src/vision_msgs /home/aiv/YongJun_ws/ros2_ws/src/vision_msgs /home/aiv/YongJun_ws/ros2_ws/build/vision_msgs /home/aiv/YongJun_ws/ros2_ws/build/vision_msgs /home/aiv/YongJun_ws/ros2_ws/build/vision_msgs/CMakeFiles/vision_msgs__rosidl_typesupport_c__pyext.dir/DependInfo.cmake --color=
+[0.205s] make[2]: Entering directory '/home/aiv/YongJun_ws/ros2_ws/build/vision_msgs'
+[0.205s] cd /home/aiv/YongJun_ws/ros2_ws/build/vision_msgs && /usr/bin/cmake -E cmake_depends "Unix Makefiles" /home/aiv/YongJun_ws/ros2_ws/src/vision_msgs /home/aiv/YongJun_ws/ros2_ws/src/vision_msgs /home/aiv/YongJun_ws/ros2_ws/build/vision_msgs /home/aiv/YongJun_ws/ros2_ws/build/vision_msgs /home/aiv/YongJun_ws/ros2_ws/build/vision_msgs/CMakeFiles/vision_msgs__rosidl_typesupport_fastrtps_c__pyext.dir/DependInfo.cmake --color=
+[0.205s] make[2]: Entering directory '/home/aiv/YongJun_ws/ros2_ws/build/vision_msgs'
+[0.205s] cd /home/aiv/YongJun_ws/ros2_ws/build/vision_msgs && /usr/bin/cmake -E cmake_depends "Unix Makefiles" /home/aiv/YongJun_ws/ros2_ws/src/vision_msgs /home/aiv/YongJun_ws/ros2_ws/src/vision_msgs /home/aiv/YongJun_ws/ros2_ws/build/vision_msgs /home/aiv/YongJun_ws/ros2_ws/build/vision_msgs /home/aiv/YongJun_ws/ros2_ws/build/vision_msgs/CMakeFiles/vision_msgs__rosidl_typesupport_introspection_c__pyext.dir/DependInfo.cmake --color=
+[0.209s] make[2]: Leaving directory '/home/aiv/YongJun_ws/ros2_ws/build/vision_msgs'
+[0.209s] make[2]: Leaving directory '/home/aiv/YongJun_ws/ros2_ws/build/vision_msgs'
+[0.209s] /usr/bin/make -f CMakeFiles/vision_msgs__rosidl_typesupport_c__pyext.dir/build.make CMakeFiles/vision_msgs__rosidl_typesupport_c__pyext.dir/build
+[0.209s] /usr/bin/make -f CMakeFiles/vision_msgs__rosidl_typesupport_introspection_c__pyext.dir/build.make CMakeFiles/vision_msgs__rosidl_typesupport_introspection_c__pyext.dir/build
+[0.211s] make[2]: Leaving directory '/home/aiv/YongJun_ws/ros2_ws/build/vision_msgs'
+[0.212s] /usr/bin/make -f CMakeFiles/vision_msgs__rosidl_typesupport_fastrtps_c__pyext.dir/build.make CMakeFiles/vision_msgs__rosidl_typesupport_fastrtps_c__pyext.dir/build
+[0.213s] make[2]: Entering directory '/home/aiv/YongJun_ws/ros2_ws/build/vision_msgs'
+[0.213s] make[2]: Nothing to be done for 'CMakeFiles/vision_msgs__rosidl_typesupport_c__pyext.dir/build'.
+[0.214s] make[2]: Leaving directory '/home/aiv/YongJun_ws/ros2_ws/build/vision_msgs'
+[0.214s] make[2]: Entering directory '/home/aiv/YongJun_ws/ros2_ws/build/vision_msgs'
+[0.214s] make[2]: Nothing to be done for 'CMakeFiles/vision_msgs__rosidl_typesupport_introspection_c__pyext.dir/build'.
+[0.214s] make[2]: Leaving directory '/home/aiv/YongJun_ws/ros2_ws/build/vision_msgs'
+[0.217s] make[2]: Entering directory '/home/aiv/YongJun_ws/ros2_ws/build/vision_msgs'
+[0.217s] make[2]: Nothing to be done for 'CMakeFiles/vision_msgs__rosidl_typesupport_fastrtps_c__pyext.dir/build'.
+[0.217s] make[2]: Leaving directory '/home/aiv/YongJun_ws/ros2_ws/build/vision_msgs'
+[0.226s] [ 93%] Built target vision_msgs__rosidl_typesupport_c__pyext
+[0.226s] [ 96%] Built target vision_msgs__rosidl_typesupport_introspection_c__pyext
+[0.226s] [100%] Built target vision_msgs__rosidl_typesupport_fastrtps_c__pyext
+[0.226s] make[1]: Leaving directory '/home/aiv/YongJun_ws/ros2_ws/build/vision_msgs'
+[0.226s] /usr/bin/cmake -E cmake_progress_start /home/aiv/YongJun_ws/ros2_ws/build/vision_msgs/CMakeFiles 0
+[0.250s] Invoked command in '/home/aiv/YongJun_ws/ros2_ws/build/vision_msgs' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/aiv/YongJun_ws/ros2_ws/install/yolov8_ros:/opt/ros/foxy /usr/bin/cmake --build /home/aiv/YongJun_ws/ros2_ws/build/vision_msgs -- -j32 -l32
+[0.330s] Invoking command in '/home/aiv/YongJun_ws/ros2_ws/build/vision_msgs': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/aiv/YongJun_ws/ros2_ws/install/yolov8_ros:/opt/ros/foxy /usr/bin/cmake --install /home/aiv/YongJun_ws/ros2_ws/build/vision_msgs
+[0.336s] -- Install configuration: "Release"
+[0.338s] -- Up-to-date: /home/aiv/YongJun_ws/ros2_ws/install/vision_msgs/share/ament_index/resource_index/rosidl_interfaces/vision_msgs
+[0.338s] -- Up-to-date: /home/aiv/YongJun_ws/ros2_ws/install/vision_msgs/include/vision_msgs
+[0.339s] -- Up-to-date: /home/aiv/YongJun_ws/ros2_ws/install/vision_msgs/include/vision_msgs/msg
+[0.339s] -- Up-to-date: /home/aiv/YongJun_ws/ros2_ws/install/vision_msgs/include/vision_msgs/msg/detection3_d.h
+[0.339s] -- Up-to-date: /home/aiv/YongJun_ws/ros2_ws/install/vision_msgs/include/vision_msgs/msg/object_hypothesis.h
+[0.339s] -- Up-to-date: /home/aiv/YongJun_ws/ros2_ws/install/vision_msgs/include/vision_msgs/msg/rosidl_generator_c__visibility_control.h
+[0.339s] -- Up-to-date: /home/aiv/YongJun_ws/ros2_ws/install/vision_msgs/include/vision_msgs/msg/object_hypothesis_with_pose.h
+[0.339s] -- Up-to-date: /home/aiv/YongJun_ws/ros2_ws/install/vision_msgs/include/vision_msgs/msg/detail
+[0.339s] -- Up-to-date: /home/aiv/YongJun_ws/ros2_ws/install/vision_msgs/include/vision_msgs/msg/detail/object_hypothesis_with_pose__type_support.h
+[0.339s] -- Up-to-date: /home/aiv/YongJun_ws/ros2_ws/install/vision_msgs/include/vision_msgs/msg/detail/detection3_d_array__functions.c
+[0.339s] -- Up-to-date: /home/aiv/YongJun_ws/ros2_ws/install/vision_msgs/include/vision_msgs/msg/detail/object_hypothesis__functions.h
+[0.339s] -- Up-to-date: /home/aiv/YongJun_ws/ros2_ws/install/vision_msgs/include/vision_msgs/msg/detail/object_hypothesis__functions.c
+[0.339s] -- Up-to-date: /home/aiv/YongJun_ws/ros2_ws/install/vision_msgs/include/vision_msgs/msg/detail/bounding_box3_d__struct.h
+[0.339s] -- Up-to-date: /home/aiv/YongJun_ws/ros2_ws/install/vision_msgs/include/vision_msgs/msg/detail/bounding_box3_d__functions.c
+[0.339s] -- Up-to-date: /home/aiv/YongJun_ws/ros2_ws/install/vision_msgs/include/vision_msgs/msg/detail/detection3_d__struct.h
+[0.339s] -- Up-to-date: /home/aiv/YongJun_ws/ros2_ws/install/vision_msgs/include/vision_msgs/msg/detail/object_hypothesis_with_pose__struct.h
+[0.339s] -- Up-to-date: /home/aiv/YongJun_ws/ros2_ws/install/vision_msgs/include/vision_msgs/msg/detail/detection3_d__functions.c
+[0.339s] -- Up-to-date: /home/aiv/YongJun_ws/ros2_ws/install/vision_msgs/include/vision_msgs/msg/detail/detection3_d__functions.h
+[0.339s] -- Up-to-date: /home/aiv/YongJun_ws/ros2_ws/install/vision_msgs/include/vision_msgs/msg/detail/object_hypothesis__type_support.h
+[0.340s] -- Up-to-date: /home/aiv/YongJun_ws/ros2_ws/install/vision_msgs/include/vision_msgs/msg/detail/bounding_box3_d__type_support.h
+[0.340s] -- Up-to-date: /home/aiv/YongJun_ws/ros2_ws/install/vision_msgs/include/vision_msgs/msg/detail/object_hypothesis_with_pose__functions.c
+[0.340s] -- Up-to-date: /home/aiv/YongJun_ws/ros2_ws/install/vision_msgs/include/vision_msgs/msg/detail/detection3_d_array__struct.h
+[0.340s] -- Up-to-date: /home/aiv/YongJun_ws/ros2_ws/install/vision_msgs/include/vision_msgs/msg/detail/object_hypothesis_with_pose__functions.h
+[0.340s] -- Up-to-date: /home/aiv/YongJun_ws/ros2_ws/install/vision_msgs/include/vision_msgs/msg/detail/detection3_d_array__type_support.h
+[0.340s] -- Up-to-date: /home/aiv/YongJun_ws/ros2_ws/install/vision_msgs/include/vision_msgs/msg/detail/object_hypothesis__struct.h
+[0.340s] -- Up-to-date: /home/aiv/YongJun_ws/ros2_ws/install/vision_msgs/include/vision_msgs/msg/detail/detection3_d__type_support.h
+[0.340s] -- Up-to-date: /home/aiv/YongJun_ws/ros2_ws/install/vision_msgs/include/vision_msgs/msg/detail/bounding_box3_d__functions.h
+[0.340s] -- Up-to-date: /home/aiv/YongJun_ws/ros2_ws/install/vision_msgs/include/vision_msgs/msg/detail/detection3_d_array__functions.h
+[0.340s] -- Up-to-date: /home/aiv/YongJun_ws/ros2_ws/install/vision_msgs/include/vision_msgs/msg/bounding_box3_d.h
+[0.340s] -- Up-to-date: /home/aiv/YongJun_ws/ros2_ws/install/vision_msgs/include/vision_msgs/msg/detection3_d_array.h
+[0.340s] -- Up-to-date: /home/aiv/YongJun_ws/ros2_ws/install/vision_msgs/share/vision_msgs/environment/library_path.sh
+[0.341s] -- Up-to-date: /home/aiv/YongJun_ws/ros2_ws/install/vision_msgs/share/vision_msgs/environment/library_path.dsv
+[0.341s] -- Up-to-date: /home/aiv/YongJun_ws/ros2_ws/install/vision_msgs/lib/libvision_msgs__rosidl_generator_c.so
+[0.341s] -- Up-to-date: /home/aiv/YongJun_ws/ros2_ws/install/vision_msgs/include/vision_msgs
+[0.341s] -- Up-to-date: /home/aiv/YongJun_ws/ros2_ws/install/vision_msgs/include/vision_msgs/msg
+[0.341s] -- Up-to-date: /home/aiv/YongJun_ws/ros2_ws/install/vision_msgs/include/vision_msgs/msg/rosidl_typesupport_fastrtps_c__visibility_control.h
+[0.341s] -- Up-to-date: /home/aiv/YongJun_ws/ros2_ws/install/vision_msgs/include/vision_msgs/msg/detail
+[0.341s] -- Up-to-date: /home/aiv/YongJun_ws/ros2_ws/install/vision_msgs/include/vision_msgs/msg/detail/detection3_d_array__rosidl_typesupport_fastrtps_c.h
+[0.341s] -- Up-to-date: /home/aiv/YongJun_ws/ros2_ws/install/vision_msgs/include/vision_msgs/msg/detail/detection3_d__rosidl_typesupport_fastrtps_c.h
+[0.341s] -- Up-to-date: /home/aiv/YongJun_ws/ros2_ws/install/vision_msgs/include/vision_msgs/msg/detail/bounding_box3_d__rosidl_typesupport_fastrtps_c.h
+[0.341s] -- Up-to-date: /home/aiv/YongJun_ws/ros2_ws/install/vision_msgs/include/vision_msgs/msg/detail/object_hypothesis_with_pose__rosidl_typesupport_fastrtps_c.h
+[0.341s] -- Up-to-date: /home/aiv/YongJun_ws/ros2_ws/install/vision_msgs/include/vision_msgs/msg/detail/object_hypothesis__rosidl_typesupport_fastrtps_c.h
+[0.341s] -- Up-to-date: /home/aiv/YongJun_ws/ros2_ws/install/vision_msgs/lib/libvision_msgs__rosidl_typesupport_fastrtps_c.so
+[0.342s] -- Up-to-date: /home/aiv/YongJun_ws/ros2_ws/install/vision_msgs/include/vision_msgs
+[0.342s] -- Up-to-date: /home/aiv/YongJun_ws/ros2_ws/install/vision_msgs/include/vision_msgs/msg
+[0.342s] -- Up-to-date: /home/aiv/YongJun_ws/ros2_ws/install/vision_msgs/include/vision_msgs/msg/rosidl_typesupport_fastrtps_cpp__visibility_control.h
+[0.342s] -- Up-to-date: /home/aiv/YongJun_ws/ros2_ws/install/vision_msgs/include/vision_msgs/msg/detail
+[0.342s] -- Up-to-date: /home/aiv/YongJun_ws/ros2_ws/install/vision_msgs/include/vision_msgs/msg/detail/bounding_box3_d__rosidl_typesupport_fastrtps_cpp.hpp
+[0.342s] -- Up-to-date: /home/aiv/YongJun_ws/ros2_ws/install/vision_msgs/include/vision_msgs/msg/detail/dds_fastrtps
+[0.342s] -- Up-to-date: /home/aiv/YongJun_ws/ros2_ws/install/vision_msgs/include/vision_msgs/msg/detail/detection3_d_array__rosidl_typesupport_fastrtps_cpp.hpp
+[0.342s] -- Up-to-date: /home/aiv/YongJun_ws/ros2_ws/install/vision_msgs/include/vision_msgs/msg/detail/object_hypothesis_with_pose__rosidl_typesupport_fastrtps_cpp.hpp
+[0.342s] -- Up-to-date: /home/aiv/YongJun_ws/ros2_ws/install/vision_msgs/include/vision_msgs/msg/detail/object_hypothesis__rosidl_typesupport_fastrtps_cpp.hpp
+[0.342s] -- Up-to-date: /home/aiv/YongJun_ws/ros2_ws/install/vision_msgs/include/vision_msgs/msg/detail/detection3_d__rosidl_typesupport_fastrtps_cpp.hpp
+[0.342s] -- Up-to-date: /home/aiv/YongJun_ws/ros2_ws/install/vision_msgs/lib/libvision_msgs__rosidl_typesupport_fastrtps_cpp.so
+[0.342s] -- Up-to-date: /home/aiv/YongJun_ws/ros2_ws/install/vision_msgs/include/vision_msgs
+[0.342s] -- Up-to-date: /home/aiv/YongJun_ws/ros2_ws/install/vision_msgs/include/vision_msgs/msg
+[0.342s] -- Up-to-date: /home/aiv/YongJun_ws/ros2_ws/install/vision_msgs/include/vision_msgs/msg/rosidl_typesupport_introspection_c__visibility_control.h
+[0.342s] -- Up-to-date: /home/aiv/YongJun_ws/ros2_ws/install/vision_msgs/include/vision_msgs/msg/detail
+[0.342s] -- Up-to-date: /home/aiv/YongJun_ws/ros2_ws/install/vision_msgs/include/vision_msgs/msg/detail/object_hypothesis__type_support.c
+[0.342s] -- Up-to-date: /home/aiv/YongJun_ws/ros2_ws/install/vision_msgs/include/vision_msgs/msg/detail/detection3_d__type_support.c
+[0.342s] -- Up-to-date: /home/aiv/YongJun_ws/ros2_ws/install/vision_msgs/include/vision_msgs/msg/detail/detection3_d__rosidl_typesupport_introspection_c.h
+[0.342s] -- Up-to-date: /home/aiv/YongJun_ws/ros2_ws/install/vision_msgs/include/vision_msgs/msg/detail/object_hypothesis_with_pose__type_support.c
+[0.343s] -- Up-to-date: /home/aiv/YongJun_ws/ros2_ws/install/vision_msgs/include/vision_msgs/msg/detail/object_hypothesis__rosidl_typesupport_introspection_c.h
+[0.343s] -- Up-to-date: /home/aiv/YongJun_ws/ros2_ws/install/vision_msgs/include/vision_msgs/msg/detail/bounding_box3_d__type_support.c
+[0.343s] -- Up-to-date: /home/aiv/YongJun_ws/ros2_ws/install/vision_msgs/include/vision_msgs/msg/detail/object_hypothesis_with_pose__rosidl_typesupport_introspection_c.h
+[0.343s] -- Up-to-date: /home/aiv/YongJun_ws/ros2_ws/install/vision_msgs/include/vision_msgs/msg/detail/detection3_d_array__rosidl_typesupport_introspection_c.h
+[0.343s] -- Up-to-date: /home/aiv/YongJun_ws/ros2_ws/install/vision_msgs/include/vision_msgs/msg/detail/detection3_d_array__type_support.c
+[0.343s] -- Up-to-date: /home/aiv/YongJun_ws/ros2_ws/install/vision_msgs/include/vision_msgs/msg/detail/bounding_box3_d__rosidl_typesupport_introspection_c.h
+[0.343s] -- Up-to-date: /home/aiv/YongJun_ws/ros2_ws/install/vision_msgs/lib/libvision_msgs__rosidl_typesupport_introspection_c.so
+[0.343s] -- Up-to-date: /home/aiv/YongJun_ws/ros2_ws/install/vision_msgs/lib/libvision_msgs__rosidl_typesupport_c.so
+[0.343s] -- Up-to-date: /home/aiv/YongJun_ws/ros2_ws/install/vision_msgs/include/vision_msgs
+[0.343s] -- Up-to-date: /home/aiv/YongJun_ws/ros2_ws/install/vision_msgs/include/vision_msgs/msg
+[0.343s] -- Up-to-date: /home/aiv/YongJun_ws/ros2_ws/install/vision_msgs/include/vision_msgs/msg/object_hypothesis.hpp
+[0.343s] -- Up-to-date: /home/aiv/YongJun_ws/ros2_ws/install/vision_msgs/include/vision_msgs/msg/detection3_d_array.hpp
+[0.343s] -- Up-to-date: /home/aiv/YongJun_ws/ros2_ws/install/vision_msgs/include/vision_msgs/msg/detection3_d.hpp
+[0.343s] -- Up-to-date: /home/aiv/YongJun_ws/ros2_ws/install/vision_msgs/include/vision_msgs/msg/rosidl_generator_cpp__visibility_control.hpp
+[0.344s] -- Up-to-date: /home/aiv/YongJun_ws/ros2_ws/install/vision_msgs/include/vision_msgs/msg/object_hypothesis_with_pose.hpp
+[0.344s] -- Up-to-date: /home/aiv/YongJun_ws/ros2_ws/install/vision_msgs/include/vision_msgs/msg/detail
+[0.344s] -- Up-to-date: /home/aiv/YongJun_ws/ros2_ws/install/vision_msgs/include/vision_msgs/msg/detail/bounding_box3_d__type_support.hpp
+[0.344s] -- Up-to-date: /home/aiv/YongJun_ws/ros2_ws/install/vision_msgs/include/vision_msgs/msg/detail/bounding_box3_d__builder.hpp
+[0.344s] -- Up-to-date: /home/aiv/YongJun_ws/ros2_ws/install/vision_msgs/include/vision_msgs/msg/detail/object_hypothesis_with_pose__type_support.hpp
+[0.344s] -- Up-to-date: /home/aiv/YongJun_ws/ros2_ws/install/vision_msgs/include/vision_msgs/msg/detail/detection3_d__type_support.hpp
+[0.344s] -- Up-to-date: /home/aiv/YongJun_ws/ros2_ws/install/vision_msgs/include/vision_msgs/msg/detail/detection3_d_array__traits.hpp
+[0.344s] -- Up-to-date: /home/aiv/YongJun_ws/ros2_ws/install/vision_msgs/include/vision_msgs/msg/detail/object_hypothesis__type_support.hpp
+[0.344s] -- Up-to-date: /home/aiv/YongJun_ws/ros2_ws/install/vision_msgs/include/vision_msgs/msg/detail/detection3_d__traits.hpp
+[0.344s] -- Up-to-date: /home/aiv/YongJun_ws/ros2_ws/install/vision_msgs/include/vision_msgs/msg/detail/object_hypothesis__traits.hpp
+[0.344s] -- Up-to-date: /home/aiv/YongJun_ws/ros2_ws/install/vision_msgs/include/vision_msgs/msg/detail/object_hypothesis__builder.hpp
+[0.344s] -- Up-to-date: /home/aiv/YongJun_ws/ros2_ws/install/vision_msgs/include/vision_msgs/msg/detail/detection3_d_array__type_support.hpp
+[0.344s] -- Up-to-date: /home/aiv/YongJun_ws/ros2_ws/install/vision_msgs/include/vision_msgs/msg/detail/object_hypothesis__struct.hpp
+[0.345s] -- Up-to-date: /home/aiv/YongJun_ws/ros2_ws/install/vision_msgs/include/vision_msgs/msg/detail/detection3_d__struct.hpp
+[0.345s] -- Up-to-date: /home/aiv/YongJun_ws/ros2_ws/install/vision_msgs/include/vision_msgs/msg/detail/object_hypothesis_with_pose__struct.hpp
+[0.345s] -- Up-to-date: /home/aiv/YongJun_ws/ros2_ws/install/vision_msgs/include/vision_msgs/msg/detail/bounding_box3_d__traits.hpp
+[0.345s] -- Up-to-date: /home/aiv/YongJun_ws/ros2_ws/install/vision_msgs/include/vision_msgs/msg/detail/detection3_d__builder.hpp
+[0.345s] -- Up-to-date: /home/aiv/YongJun_ws/ros2_ws/install/vision_msgs/include/vision_msgs/msg/detail/bounding_box3_d__struct.hpp
+[0.345s] -- Up-to-date: /home/aiv/YongJun_ws/ros2_ws/install/vision_msgs/include/vision_msgs/msg/detail/detection3_d_array__builder.hpp
+[0.345s] -- Up-to-date: /home/aiv/YongJun_ws/ros2_ws/install/vision_msgs/include/vision_msgs/msg/detail/object_hypothesis_with_pose__traits.hpp
+[0.345s] -- Up-to-date: /home/aiv/YongJun_ws/ros2_ws/install/vision_msgs/include/vision_msgs/msg/detail/object_hypothesis_with_pose__builder.hpp
+[0.345s] -- Up-to-date: /home/aiv/YongJun_ws/ros2_ws/install/vision_msgs/include/vision_msgs/msg/detail/detection3_d_array__struct.hpp
+[0.345s] -- Up-to-date: /home/aiv/YongJun_ws/ros2_ws/install/vision_msgs/include/vision_msgs/msg/bounding_box3_d.hpp
+[0.345s] -- Up-to-date: /home/aiv/YongJun_ws/ros2_ws/install/vision_msgs/include/vision_msgs
+[0.345s] -- Up-to-date: /home/aiv/YongJun_ws/ros2_ws/install/vision_msgs/include/vision_msgs/msg
+[0.346s] -- Up-to-date: /home/aiv/YongJun_ws/ros2_ws/install/vision_msgs/include/vision_msgs/msg/detail
+[0.346s] -- Up-to-date: /home/aiv/YongJun_ws/ros2_ws/install/vision_msgs/include/vision_msgs/msg/detail/object_hypothesis__type_support.cpp
+[0.346s] -- Up-to-date: /home/aiv/YongJun_ws/ros2_ws/install/vision_msgs/include/vision_msgs/msg/detail/object_hypothesis__rosidl_typesupport_introspection_cpp.hpp
+[0.346s] -- Up-to-date: /home/aiv/YongJun_ws/ros2_ws/install/vision_msgs/include/vision_msgs/msg/detail/detection3_d__rosidl_typesupport_introspection_cpp.hpp
+[0.346s] -- Up-to-date: /home/aiv/YongJun_ws/ros2_ws/install/vision_msgs/include/vision_msgs/msg/detail/bounding_box3_d__rosidl_typesupport_introspection_cpp.hpp
+[0.346s] -- Up-to-date: /home/aiv/YongJun_ws/ros2_ws/install/vision_msgs/include/vision_msgs/msg/detail/detection3_d_array__type_support.cpp
+[0.346s] -- Up-to-date: /home/aiv/YongJun_ws/ros2_ws/install/vision_msgs/include/vision_msgs/msg/detail/detection3_d_array__rosidl_typesupport_introspection_cpp.hpp
+[0.346s] -- Up-to-date: /home/aiv/YongJun_ws/ros2_ws/install/vision_msgs/include/vision_msgs/msg/detail/object_hypothesis_with_pose__type_support.cpp
+[0.346s] -- Up-to-date: /home/aiv/YongJun_ws/ros2_ws/install/vision_msgs/include/vision_msgs/msg/detail/object_hypothesis_with_pose__rosidl_typesupport_introspection_cpp.hpp
+[0.346s] -- Up-to-date: /home/aiv/YongJun_ws/ros2_ws/install/vision_msgs/include/vision_msgs/msg/detail/bounding_box3_d__type_support.cpp
+[0.346s] -- Up-to-date: /home/aiv/YongJun_ws/ros2_ws/install/vision_msgs/include/vision_msgs/msg/detail/detection3_d__type_support.cpp
+[0.346s] -- Up-to-date: /home/aiv/YongJun_ws/ros2_ws/install/vision_msgs/lib/libvision_msgs__rosidl_typesupport_introspection_cpp.so
+[0.346s] -- Up-to-date: /home/aiv/YongJun_ws/ros2_ws/install/vision_msgs/lib/libvision_msgs__rosidl_typesupport_cpp.so
+[0.346s] -- Up-to-date: /home/aiv/YongJun_ws/ros2_ws/install/vision_msgs/share/vision_msgs/environment/pythonpath.sh
+[0.346s] -- Up-to-date: /home/aiv/YongJun_ws/ros2_ws/install/vision_msgs/share/vision_msgs/environment/pythonpath.dsv
+[0.346s] -- Up-to-date: /home/aiv/YongJun_ws/ros2_ws/install/vision_msgs/lib/python3.8/site-packages/vision_msgs/__init__.py
+[0.367s] -- Up-to-date: /home/aiv/YongJun_ws/ros2_ws/install/vision_msgs/lib/python3.8/site-packages/vision_msgs/msg
+[0.367s] -- Up-to-date: /home/aiv/YongJun_ws/ros2_ws/install/vision_msgs/lib/python3.8/site-packages/vision_msgs/msg/_bounding_box3_d_s.c
+[0.367s] -- Up-to-date: /home/aiv/YongJun_ws/ros2_ws/install/vision_msgs/lib/python3.8/site-packages/vision_msgs/msg/_detection3_d_array_s.c
+[0.367s] -- Up-to-date: /home/aiv/YongJun_ws/ros2_ws/install/vision_msgs/lib/python3.8/site-packages/vision_msgs/msg/_object_hypothesis.py
+[0.367s] -- Up-to-date: /home/aiv/YongJun_ws/ros2_ws/install/vision_msgs/lib/python3.8/site-packages/vision_msgs/msg/_object_hypothesis_with_pose_s.c
+[0.367s] -- Up-to-date: /home/aiv/YongJun_ws/ros2_ws/install/vision_msgs/lib/python3.8/site-packages/vision_msgs/msg/_object_hypothesis_with_pose.py
+[0.367s] -- Up-to-date: /home/aiv/YongJun_ws/ros2_ws/install/vision_msgs/lib/python3.8/site-packages/vision_msgs/msg/_object_hypothesis_s.c
+[0.367s] -- Up-to-date: /home/aiv/YongJun_ws/ros2_ws/install/vision_msgs/lib/python3.8/site-packages/vision_msgs/msg/_detection3_d_array.py
+[0.367s] -- Up-to-date: /home/aiv/YongJun_ws/ros2_ws/install/vision_msgs/lib/python3.8/site-packages/vision_msgs/msg/__init__.py
+[0.367s] -- Up-to-date: /home/aiv/YongJun_ws/ros2_ws/install/vision_msgs/lib/python3.8/site-packages/vision_msgs/msg/_detection3_d_s.c
+[0.367s] -- Up-to-date: /home/aiv/YongJun_ws/ros2_ws/install/vision_msgs/lib/python3.8/site-packages/vision_msgs/msg/_detection3_d.py
+[0.367s] -- Up-to-date: /home/aiv/YongJun_ws/ros2_ws/install/vision_msgs/lib/python3.8/site-packages/vision_msgs/msg/_bounding_box3_d.py
+[0.367s] -- Up-to-date: /home/aiv/YongJun_ws/ros2_ws/install/vision_msgs/lib/python3.8/site-packages/vision_msgs/vision_msgs_s__rosidl_typesupport_fastrtps_c.cpython-38-x86_64-linux-gnu.so
+[0.367s] -- Up-to-date: /home/aiv/YongJun_ws/ros2_ws/install/vision_msgs/lib/python3.8/site-packages/vision_msgs/vision_msgs_s__rosidl_typesupport_introspection_c.cpython-38-x86_64-linux-gnu.so
+[0.367s] -- Up-to-date: /home/aiv/YongJun_ws/ros2_ws/install/vision_msgs/lib/python3.8/site-packages/vision_msgs/vision_msgs_s__rosidl_typesupport_c.cpython-38-x86_64-linux-gnu.so
+[0.367s] -- Up-to-date: /home/aiv/YongJun_ws/ros2_ws/install/vision_msgs/lib/libvision_msgs__python.so
+[0.367s] -- Up-to-date: /home/aiv/YongJun_ws/ros2_ws/install/vision_msgs/share/vision_msgs/msg/BoundingBox3D.idl
+[0.368s] -- Up-to-date: /home/aiv/YongJun_ws/ros2_ws/install/vision_msgs/share/vision_msgs/msg/Detection3D.idl
+[0.368s] -- Up-to-date: /home/aiv/YongJun_ws/ros2_ws/install/vision_msgs/share/vision_msgs/msg/Detection3DArray.idl
+[0.369s] -- Up-to-date: /home/aiv/YongJun_ws/ros2_ws/install/vision_msgs/share/vision_msgs/msg/ObjectHypothesis.idl
+[0.369s] -- Up-to-date: /home/aiv/YongJun_ws/ros2_ws/install/vision_msgs/share/vision_msgs/msg/ObjectHypothesisWithPose.idl
+[0.369s] -- Up-to-date: /home/aiv/YongJun_ws/ros2_ws/install/vision_msgs/share/vision_msgs/msg/BoundingBox3D.msg
+[0.369s] -- Up-to-date: /home/aiv/YongJun_ws/ros2_ws/install/vision_msgs/share/vision_msgs/msg/Detection3D.msg
+[0.370s] -- Up-to-date: /home/aiv/YongJun_ws/ros2_ws/install/vision_msgs/share/vision_msgs/msg/Detection3DArray.msg
+[0.370s] -- Up-to-date: /home/aiv/YongJun_ws/ros2_ws/install/vision_msgs/share/vision_msgs/msg/ObjectHypothesis.msg
+[0.370s] -- Up-to-date: /home/aiv/YongJun_ws/ros2_ws/install/vision_msgs/share/vision_msgs/msg/ObjectHypothesisWithPose.msg
+[0.370s] -- Up-to-date: /home/aiv/YongJun_ws/ros2_ws/install/vision_msgs/share/ament_index/resource_index/package_run_dependencies/vision_msgs
+[0.370s] -- Up-to-date: /home/aiv/YongJun_ws/ros2_ws/install/vision_msgs/share/ament_index/resource_index/parent_prefix_path/vision_msgs
+[0.370s] -- Up-to-date: /home/aiv/YongJun_ws/ros2_ws/install/vision_msgs/share/vision_msgs/environment/ament_prefix_path.sh
+[0.370s] -- Up-to-date: /home/aiv/YongJun_ws/ros2_ws/install/vision_msgs/share/vision_msgs/environment/ament_prefix_path.dsv
+[0.370s] -- Up-to-date: /home/aiv/YongJun_ws/ros2_ws/install/vision_msgs/share/vision_msgs/environment/path.sh
+[0.370s] -- Up-to-date: /home/aiv/YongJun_ws/ros2_ws/install/vision_msgs/share/vision_msgs/environment/path.dsv
+[0.370s] -- Up-to-date: /home/aiv/YongJun_ws/ros2_ws/install/vision_msgs/share/vision_msgs/local_setup.bash
+[0.370s] -- Up-to-date: /home/aiv/YongJun_ws/ros2_ws/install/vision_msgs/share/vision_msgs/local_setup.sh
+[0.370s] -- Up-to-date: /home/aiv/YongJun_ws/ros2_ws/install/vision_msgs/share/vision_msgs/local_setup.zsh
+[0.370s] -- Up-to-date: /home/aiv/YongJun_ws/ros2_ws/install/vision_msgs/share/vision_msgs/local_setup.dsv
+[0.370s] -- Installing: /home/aiv/YongJun_ws/ros2_ws/install/vision_msgs/share/vision_msgs/package.dsv
+[0.370s] -- Up-to-date: /home/aiv/YongJun_ws/ros2_ws/install/vision_msgs/share/ament_index/resource_index/packages/vision_msgs
+[0.370s] -- Up-to-date: /home/aiv/YongJun_ws/ros2_ws/install/vision_msgs/share/vision_msgs/cmake/vision_msgs__rosidl_generator_cExport.cmake
+[0.370s] -- Up-to-date: /home/aiv/YongJun_ws/ros2_ws/install/vision_msgs/share/vision_msgs/cmake/vision_msgs__rosidl_generator_cExport-release.cmake
+[0.370s] -- Up-to-date: /home/aiv/YongJun_ws/ros2_ws/install/vision_msgs/share/vision_msgs/cmake/vision_msgs__rosidl_typesupport_introspection_cExport.cmake
+[0.371s] -- Up-to-date: /home/aiv/YongJun_ws/ros2_ws/install/vision_msgs/share/vision_msgs/cmake/vision_msgs__rosidl_typesupport_introspection_cExport-release.cmake
+[0.371s] -- Up-to-date: /home/aiv/YongJun_ws/ros2_ws/install/vision_msgs/share/vision_msgs/cmake/vision_msgs__rosidl_typesupport_cExport.cmake
+[0.371s] -- Up-to-date: /home/aiv/YongJun_ws/ros2_ws/install/vision_msgs/share/vision_msgs/cmake/vision_msgs__rosidl_typesupport_cExport-release.cmake
+[0.371s] -- Up-to-date: /home/aiv/YongJun_ws/ros2_ws/install/vision_msgs/share/vision_msgs/cmake/vision_msgs__rosidl_generator_cppExport.cmake
+[0.371s] -- Up-to-date: /home/aiv/YongJun_ws/ros2_ws/install/vision_msgs/share/vision_msgs/cmake/vision_msgs__rosidl_typesupport_introspection_cppExport.cmake
+[0.371s] -- Up-to-date: /home/aiv/YongJun_ws/ros2_ws/install/vision_msgs/share/vision_msgs/cmake/vision_msgs__rosidl_typesupport_introspection_cppExport-release.cmake
+[0.371s] -- Up-to-date: /home/aiv/YongJun_ws/ros2_ws/install/vision_msgs/share/vision_msgs/cmake/vision_msgs__rosidl_typesupport_cppExport.cmake
+[0.371s] -- Up-to-date: /home/aiv/YongJun_ws/ros2_ws/install/vision_msgs/share/vision_msgs/cmake/vision_msgs__rosidl_typesupport_cppExport-release.cmake
+[0.371s] -- Up-to-date: /home/aiv/YongJun_ws/ros2_ws/install/vision_msgs/share/vision_msgs/cmake/rosidl_cmake-extras.cmake
+[0.371s] -- Up-to-date: /home/aiv/YongJun_ws/ros2_ws/install/vision_msgs/share/vision_msgs/cmake/ament_cmake_export_dependencies-extras.cmake
+[0.371s] -- Up-to-date: /home/aiv/YongJun_ws/ros2_ws/install/vision_msgs/share/vision_msgs/cmake/ament_cmake_export_libraries-extras.cmake
+[0.372s] -- Up-to-date: /home/aiv/YongJun_ws/ros2_ws/install/vision_msgs/share/vision_msgs/cmake/ament_cmake_export_targets-extras.cmake
+[0.372s] -- Up-to-date: /home/aiv/YongJun_ws/ros2_ws/install/vision_msgs/share/vision_msgs/cmake/ament_cmake_export_include_directories-extras.cmake
+[0.373s] -- Up-to-date: /home/aiv/YongJun_ws/ros2_ws/install/vision_msgs/share/vision_msgs/cmake/rosidl_cmake_export_typesupport_libraries-extras.cmake
+[0.373s] -- Up-to-date: /home/aiv/YongJun_ws/ros2_ws/install/vision_msgs/share/vision_msgs/cmake/rosidl_cmake_export_typesupport_targets-extras.cmake
+[0.373s] -- Up-to-date: /home/aiv/YongJun_ws/ros2_ws/install/vision_msgs/share/vision_msgs/cmake/vision_msgsConfig.cmake
+[0.373s] -- Up-to-date: /home/aiv/YongJun_ws/ros2_ws/install/vision_msgs/share/vision_msgs/cmake/vision_msgsConfig-version.cmake
+[0.373s] -- Up-to-date: /home/aiv/YongJun_ws/ros2_ws/install/vision_msgs/share/vision_msgs/package.xml
+[0.373s] Invoked command in '/home/aiv/YongJun_ws/ros2_ws/build/vision_msgs' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/aiv/YongJun_ws/ros2_ws/install/yolov8_ros:/opt/ros/foxy /usr/bin/cmake --install /home/aiv/YongJun_ws/ros2_ws/build/vision_msgs
