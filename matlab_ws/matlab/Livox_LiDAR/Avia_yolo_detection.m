@@ -1,3 +1,5 @@
+cd ~/YongJun_ws/matlab_ws/matlab/Livox_LiDAR/
+import tools.*
 %% Connect AVIA UDP Communication
 clear; clc
 % Connect udp data communication

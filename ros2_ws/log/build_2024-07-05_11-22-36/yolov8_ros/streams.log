@@ -1,0 +1,34 @@
+[0.414s] Invoking command in '/home/user/YongJun_ws/ros2_ws/src/yolov8_ros/yolov8_ros': CONDA_PROMPT_MODIFIER=(openmmlab) PYTHONPATH=/home/user/YongJun_ws/ros2_ws/build/yolov8_ros/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/user/YongJun_ws/ros2_ws/install/yolov8_ros/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../../../build/yolov8_ros build --build-base /home/user/YongJun_ws/ros2_ws/build/yolov8_ros/build install --record /home/user/YongJun_ws/ros2_ws/build/yolov8_ros/install.log --single-version-externally-managed install_data
+[0.552s] running egg_info
+[0.552s] creating ../../../build/yolov8_ros/yolov8_ros.egg-info
+[0.553s] writing manifest file '../../../build/yolov8_ros/yolov8_ros.egg-info/SOURCES.txt'
+[0.555s] writing manifest file '../../../build/yolov8_ros/yolov8_ros.egg-info/SOURCES.txt'
+[0.555s] running build
+[0.555s] running build_py
+[0.555s] creating /home/user/YongJun_ws/ros2_ws/build/yolov8_ros/build
+[0.555s] creating /home/user/YongJun_ws/ros2_ws/build/yolov8_ros/build/lib
+[0.555s] creating /home/user/YongJun_ws/ros2_ws/build/yolov8_ros/build/lib/yolov8_ros
+[0.555s] copying yolov8_ros/tracking_node.py -> /home/user/YongJun_ws/ros2_ws/build/yolov8_ros/build/lib/yolov8_ros
+[0.555s] copying yolov8_ros/__init__.py -> /home/user/YongJun_ws/ros2_ws/build/yolov8_ros/build/lib/yolov8_ros
+[0.555s] copying yolov8_ros/detect_3d_node.py -> /home/user/YongJun_ws/ros2_ws/build/yolov8_ros/build/lib/yolov8_ros
+[0.555s] copying yolov8_ros/debug_node.py -> /home/user/YongJun_ws/ros2_ws/build/yolov8_ros/build/lib/yolov8_ros
+[0.555s] copying yolov8_ros/yolov8_node.py -> /home/user/YongJun_ws/ros2_ws/build/yolov8_ros/build/lib/yolov8_ros
+[0.555s] running install
+[0.556s] running install_lib
+[0.556s] creating /home/user/YongJun_ws/ros2_ws/install/yolov8_ros/lib/python3.8/site-packages/yolov8_ros
+[0.557s] byte-compiling /home/user/YongJun_ws/ros2_ws/install/yolov8_ros/lib/python3.8/site-packages/yolov8_ros/tracking_node.py to tracking_node.cpython-38.pyc
+[0.558s] byte-compiling /home/user/YongJun_ws/ros2_ws/install/yolov8_ros/lib/python3.8/site-packages/yolov8_ros/__init__.py to __init__.cpython-38.pyc
+[0.558s] byte-compiling /home/user/YongJun_ws/ros2_ws/install/yolov8_ros/lib/python3.8/site-packages/yolov8_ros/detect_3d_node.py to detect_3d_node.cpython-38.pyc
+[0.559s] byte-compiling /home/user/YongJun_ws/ros2_ws/install/yolov8_ros/lib/python3.8/site-packages/yolov8_ros/debug_node.py to debug_node.cpython-38.pyc
+[0.559s] byte-compiling /home/user/YongJun_ws/ros2_ws/install/yolov8_ros/lib/python3.8/site-packages/yolov8_ros/yolov8_node.py to yolov8_node.cpython-38.pyc
+[0.560s] running install_data
+[0.560s] creating /home/user/YongJun_ws/ros2_ws/install/yolov8_ros/share/ament_index
+[0.560s] creating /home/user/YongJun_ws/ros2_ws/install/yolov8_ros/share/ament_index/resource_index
+[0.560s] creating /home/user/YongJun_ws/ros2_ws/install/yolov8_ros/share/ament_index/resource_index/packages
+[0.560s] copying resource/yolov8_ros -> /home/user/YongJun_ws/ros2_ws/install/yolov8_ros/share/ament_index/resource_index/packages
+[0.560s] copying package.xml -> /home/user/YongJun_ws/ros2_ws/install/yolov8_ros/share/yolov8_ros
+[0.560s] running install_egg_info
+[0.561s] Copying ../../../build/yolov8_ros/yolov8_ros.egg-info to /home/user/YongJun_ws/ros2_ws/install/yolov8_ros/lib/python3.8/site-packages/yolov8_ros-0.0.0-py3.8.egg-info
+[0.561s] running install_scripts
+[0.572s] writing list of installed files to '/home/user/YongJun_ws/ros2_ws/build/yolov8_ros/install.log'
+[0.587s] Invoked command in '/home/user/YongJun_ws/ros2_ws/src/yolov8_ros/yolov8_ros' returned '0': CONDA_PROMPT_MODIFIER=(openmmlab) PYTHONPATH=/home/user/YongJun_ws/ros2_ws/build/yolov8_ros/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/user/YongJun_ws/ros2_ws/install/yolov8_ros/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../../../build/yolov8_ros build --build-base /home/user/YongJun_ws/ros2_ws/build/yolov8_ros/build install --record /home/user/YongJun_ws/ros2_ws/build/yolov8_ros/install.log --single-version-externally-managed install_data

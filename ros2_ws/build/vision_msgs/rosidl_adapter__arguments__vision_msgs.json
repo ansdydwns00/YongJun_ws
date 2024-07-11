@@ -1,10 +1,10 @@
 {
   "package_name": "vision_msgs",
   "non_idl_tuples": [
-    "/home/aiv/YongJun_ws/ros2_ws/src/vision_msgs:msg/BoundingBox3D.msg",
-    "/home/aiv/YongJun_ws/ros2_ws/src/vision_msgs:msg/Detection3D.msg",
-    "/home/aiv/YongJun_ws/ros2_ws/src/vision_msgs:msg/Detection3DArray.msg",
-    "/home/aiv/YongJun_ws/ros2_ws/src/vision_msgs:msg/ObjectHypothesis.msg",
-    "/home/aiv/YongJun_ws/ros2_ws/src/vision_msgs:msg/ObjectHypothesisWithPose.msg"
+    "/home/user/YongJun_ws/ros2_ws/src/vision_msgs:msg/BoundingBox3D.msg",
+    "/home/user/YongJun_ws/ros2_ws/src/vision_msgs:msg/Detection3D.msg",
+    "/home/user/YongJun_ws/ros2_ws/src/vision_msgs:msg/Detection3DArray.msg",
+    "/home/user/YongJun_ws/ros2_ws/src/vision_msgs:msg/ObjectHypothesis.msg",
+    "/home/user/YongJun_ws/ros2_ws/src/vision_msgs:msg/ObjectHypothesisWithPose.msg"
   ]
 }

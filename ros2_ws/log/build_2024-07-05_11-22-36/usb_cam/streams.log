@@ -1,0 +1,140 @@
+[0.164s] Invoking command in '/home/user/YongJun_ws/ros2_ws/build/usb_cam': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/user/YongJun_ws/ros2_ws/install/yolov8_ros:/opt/ros/foxy CONDA_PROMPT_MODIFIER=(openmmlab) /home/user/.local/bin/cmake /home/user/YongJun_ws/ros2_ws/src/sensor/usb_cam -DCMAKE_INSTALL_PREFIX=/home/user/YongJun_ws/ros2_ws/install/usb_cam
+[0.210s] -- The C compiler identification is GNU 9.4.0
+[0.245s] -- The CXX compiler identification is GNU 9.4.0
+[0.251s] -- Detecting C compiler ABI info
+[0.281s] -- Detecting C compiler ABI info - done
+[0.289s] -- Check for working C compiler: /usr/bin/cc - skipped
+[0.290s] -- Detecting C compile features
+[0.290s] -- Detecting C compile features - done
+[0.293s] -- Detecting CXX compiler ABI info
+[0.330s] -- Detecting CXX compiler ABI info - done
+[0.336s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[0.336s] -- Detecting CXX compile features
+[0.337s] -- Detecting CXX compile features - done
+[0.338s] -- Found ament_cmake_auto: 0.9.12 (/opt/ros/foxy/share/ament_cmake_auto/cmake)
+[0.355s] -- Found PythonInterp: /home/user/anaconda3/envs/openmmlab/bin/python3 (found suitable version "3.8.19", minimum required is "3") 
+[0.355s] -- Using PYTHON_EXECUTABLE: /home/user/anaconda3/envs/openmmlab/bin/python3
+[0.545s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.549s] -- Found rosidl_adapter: 1.3.1 (/opt/ros/foxy/share/rosidl_adapter/cmake)
+[0.591s] -- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "1.1.1f")  
+[0.611s] -- Found FastRTPS: /opt/ros/foxy/include  
+[0.662s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.696s] -- Found rmw_implementation_cmake: 1.0.4 (/opt/ros/foxy/share/rmw_implementation_cmake/cmake)
+[0.696s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[0.697s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+[0.732s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Failed
+[0.732s] -- Looking for pthread_create in pthreads
+[0.757s] -- Looking for pthread_create in pthreads - not found
+[0.757s] -- Looking for pthread_create in pthread
+[0.791s] -- Looking for pthread_create in pthread - found
+[0.792s] -- Found Threads: TRUE  
+[1.018s] -- Setting yaml-cpp_DIR to: '/opt/ros/foxy/share/yaml_cpp_vendor/cmake/../../../opt/yaml_cpp_vendor/lib/cmake/yaml-cpp'
+[1.108s] -- Found OpenCV: /usr (found version "4.2.0") 
+[1.110s] -- Found PkgConfig: /usr/bin/pkg-config (found version "0.29.1") 
+[1.111s] -- Checking for module 'libavcodec'
+[1.119s] --   Found libavcodec, version 58.54.100
+[1.138s] -- Checking for module 'libavutil'
+[1.146s] --   Found libavutil, version 56.31.100
+[1.163s] -- Checking for module 'libswscale'
+[1.171s] --   Found libswscale, version 5.5.100
+[1.241s] -- Found ament_lint_auto: 0.9.8 (/opt/ros/foxy/share/ament_lint_auto/cmake)
+[1.271s] -- Found gtest sources under '/opt/ros/foxy/src/gtest_vendor': C++ tests using 'Google Test' will be built
+[1.277s] -- Check if compiler accepts -pthread
+[1.328s] -- Check if compiler accepts -pthread - yes
+[1.335s] -- Added test 'copyright' to check source files copyright and LICENSE
+[1.337s] -- Added test 'cppcheck' to perform static code analysis on C / C++ code
+[1.337s] -- Configured cppcheck include dirs: /home/user/YongJun_ws/ros2_ws/src/sensor/usb_cam/include
+[1.337s] -- Configured cppcheck exclude dirs and/or files: 
+[1.338s] -- Added test 'cpplint' to check C / C++ code against the Google style
+[1.338s] -- Configured cpplint exclude dirs and/or files: 
+[1.338s] -- Added test 'flake8' to check Python code syntax and style conventions
+[1.339s] -- Added test 'lint_cmake' to check CMake code style
+[1.339s] -- Added test 'pep257' to check Python code against some of the style conventions in PEP 257
+[1.341s] -- Added test 'uncrustify' to check C / C++ code style
+[1.341s] -- Configured uncrustify additional arguments: 
+[1.341s] -- Added test 'xmllint' to check XML markup files
+[1.342s] -- Configuring done
+[1.363s] -- Generating done
+[1.364s] -- Build files have been written to: /home/user/YongJun_ws/ros2_ws/build/usb_cam
+[1.374s] Invoked command in '/home/user/YongJun_ws/ros2_ws/build/usb_cam' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/user/YongJun_ws/ros2_ws/install/yolov8_ros:/opt/ros/foxy CONDA_PROMPT_MODIFIER=(openmmlab) /home/user/.local/bin/cmake /home/user/YongJun_ws/ros2_ws/src/sensor/usb_cam -DCMAKE_INSTALL_PREFIX=/home/user/YongJun_ws/ros2_ws/install/usb_cam
+[1.374s] Invoking command in '/home/user/YongJun_ws/ros2_ws/build/usb_cam': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/user/YongJun_ws/ros2_ws/install/yolov8_ros:/opt/ros/foxy CONDA_PROMPT_MODIFIER=(openmmlab) /home/user/.local/bin/cmake --build /home/user/YongJun_ws/ros2_ws/build/usb_cam -- -j24 -l24
+[1.405s] [  7%] [32mBuilding CXX object CMakeFiles/usb_cam.dir/src/usb_cam.cpp.o[0m
+[1.405s] [ 14%] [32mBuilding CXX object gtest/CMakeFiles/gtest_main.dir/src/gtest_main.cc.o[0m
+[1.405s] [ 28%] [32mBuilding CXX object gtest/CMakeFiles/gtest.dir/src/gtest-all.cc.o[0m
+[1.405s] [ 28%] [32mBuilding CXX object CMakeFiles/usb_cam_node_exe.dir/rclcpp_components/node_main_usb_cam_node_exe.cpp.o[0m
+[1.983s] [ 35%] [32m[1mLinking CXX static library libgtest_main.a[0m
+[1.993s] [ 35%] Built target gtest_main
+[2.776s] [ 42%] [32m[1mLinking CXX executable usb_cam_node_exe[0m
+[2.807s] [ 50%] [32m[1mLinking CXX shared library libusb_cam.so[0m
+[2.900s] [ 50%] Built target usb_cam_node_exe
+[3.004s] [ 50%] Built target usb_cam
+[3.028s] [ 57%] [32mBuilding CXX object CMakeFiles/usb_cam_node.dir/src/ros2/usb_cam_node.cpp.o[0m
+[3.756s] [ 64%] [32m[1mLinking CXX static library libgtest.a[0m
+[3.813s] [ 64%] Built target gtest
+[3.842s] [ 71%] [32mBuilding CXX object CMakeFiles/test_usb_cam_utils.dir/test/test_usb_cam_utils.cpp.o[0m
+[3.854s] [ 78%] [32mBuilding CXX object CMakeFiles/test_pixel_formats.dir/test/test_pixel_formats.cpp.o[0m
+[4.779s] [ 85%] [32m[1mLinking CXX executable test_usb_cam_utils[0m
+[4.865s] [ 85%] Built target test_usb_cam_utils
+[4.945s] [ 92%] [32m[1mLinking CXX executable test_pixel_formats[0m
+[5.029s] [ 92%] Built target test_pixel_formats
+[6.719s] [100%] [32m[1mLinking CXX shared library libusb_cam_node.so[0m
+[6.928s] [100%] Built target usb_cam_node
+[6.933s] Invoked command in '/home/user/YongJun_ws/ros2_ws/build/usb_cam' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/user/YongJun_ws/ros2_ws/install/yolov8_ros:/opt/ros/foxy CONDA_PROMPT_MODIFIER=(openmmlab) /home/user/.local/bin/cmake --build /home/user/YongJun_ws/ros2_ws/build/usb_cam -- -j24 -l24
+[6.977s] Invoking command in '/home/user/YongJun_ws/ros2_ws/build/usb_cam': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/user/YongJun_ws/ros2_ws/install/yolov8_ros:/opt/ros/foxy CONDA_PROMPT_MODIFIER=(openmmlab) /home/user/.local/bin/cmake --install /home/user/YongJun_ws/ros2_ws/build/usb_cam
+[7.004s] -- Install configuration: ""
+[7.004s] -- Installing: /home/user/YongJun_ws/ros2_ws/install/usb_cam/share/usb_cam/environment/library_path.sh
+[7.005s] -- Installing: /home/user/YongJun_ws/ros2_ws/install/usb_cam/share/usb_cam/environment/library_path.dsv
+[7.005s] -- Installing: /home/user/YongJun_ws/ros2_ws/install/usb_cam/lib/usb_cam/usb_cam_node_exe
+[7.005s] -- Set runtime path of "/home/user/YongJun_ws/ros2_ws/install/usb_cam/lib/usb_cam/usb_cam_node_exe" to ""
+[7.005s] -- Installing: /home/user/YongJun_ws/ros2_ws/install/usb_cam/lib/usb_cam/show_image.py
+[7.005s] -- Installing: /home/user/YongJun_ws/ros2_ws/install/usb_cam/lib/libusb_cam.so
+[7.005s] -- Installing: /home/user/YongJun_ws/ros2_ws/install/usb_cam/lib/libusb_cam_node.so
+[7.007s] -- Set runtime path of "/home/user/YongJun_ws/ros2_ws/install/usb_cam/lib/libusb_cam_node.so" to ""
+[7.007s] -- Installing: /home/user/YongJun_ws/ros2_ws/install/usb_cam/include
+[7.007s] -- Installing: /home/user/YongJun_ws/ros2_ws/install/usb_cam/include/usb_cam
+[7.007s] -- Installing: /home/user/YongJun_ws/ros2_ws/install/usb_cam/include/usb_cam/usb_cam.hpp
+[7.007s] -- Installing: /home/user/YongJun_ws/ros2_ws/install/usb_cam/include/usb_cam/utils.hpp
+[7.007s] -- Installing: /home/user/YongJun_ws/ros2_ws/install/usb_cam/include/usb_cam/conversions.hpp
+[7.007s] -- Installing: /home/user/YongJun_ws/ros2_ws/install/usb_cam/include/usb_cam/formats
+[7.007s] -- Installing: /home/user/YongJun_ws/ros2_ws/install/usb_cam/include/usb_cam/formats/mjpeg.hpp
+[7.007s] -- Installing: /home/user/YongJun_ws/ros2_ws/install/usb_cam/include/usb_cam/formats/uyvy.hpp
+[7.007s] -- Installing: /home/user/YongJun_ws/ros2_ws/install/usb_cam/include/usb_cam/formats/utils.hpp
+[7.007s] -- Installing: /home/user/YongJun_ws/ros2_ws/install/usb_cam/include/usb_cam/formats/pixel_format_base.hpp
+[7.007s] -- Installing: /home/user/YongJun_ws/ros2_ws/install/usb_cam/include/usb_cam/formats/mono.hpp
+[7.007s] -- Installing: /home/user/YongJun_ws/ros2_ws/install/usb_cam/include/usb_cam/formats/rgb.hpp
+[7.007s] -- Installing: /home/user/YongJun_ws/ros2_ws/install/usb_cam/include/usb_cam/formats/yuyv.hpp
+[7.007s] -- Installing: /home/user/YongJun_ws/ros2_ws/install/usb_cam/include/usb_cam/formats/m420.hpp
+[7.007s] -- Installing: /home/user/YongJun_ws/ros2_ws/install/usb_cam/include/usb_cam/formats/av_pixel_format_helper.hpp
+[7.007s] -- Installing: /home/user/YongJun_ws/ros2_ws/install/usb_cam/include/usb_cam/constants.hpp
+[7.007s] -- Installing: /home/user/YongJun_ws/ros2_ws/install/usb_cam/include/usb_cam/usb_cam_node.hpp
+[7.007s] -- Up-to-date: /home/user/YongJun_ws/ros2_ws/install/usb_cam/lib/libusb_cam_node.so
+[7.007s] -- Installing: /home/user/YongJun_ws/ros2_ws/install/usb_cam/share/usb_cam/launch
+[7.007s] -- Installing: /home/user/YongJun_ws/ros2_ws/install/usb_cam/share/usb_cam/launch/__init__.py
+[7.007s] -- Installing: /home/user/YongJun_ws/ros2_ws/install/usb_cam/share/usb_cam/launch/camera_config.py
+[7.007s] -- Installing: /home/user/YongJun_ws/ros2_ws/install/usb_cam/share/usb_cam/launch/__pycache__
+[7.007s] -- Installing: /home/user/YongJun_ws/ros2_ws/install/usb_cam/share/usb_cam/launch/__pycache__/camera_config.cpython-38.pyc
+[7.008s] -- Installing: /home/user/YongJun_ws/ros2_ws/install/usb_cam/share/usb_cam/launch/camera.launch.py
+[7.008s] -- Installing: /home/user/YongJun_ws/ros2_ws/install/usb_cam/share/usb_cam/config
+[7.008s] -- Installing: /home/user/YongJun_ws/ros2_ws/install/usb_cam/share/usb_cam/config/params_2.yaml
+[7.008s] -- Installing: /home/user/YongJun_ws/ros2_ws/install/usb_cam/share/usb_cam/config/params_1.yaml
+[7.008s] -- Installing: /home/user/YongJun_ws/ros2_ws/install/usb_cam/share/usb_cam/config/camera_info.yaml
+[7.008s] -- Installing: /home/user/YongJun_ws/ros2_ws/install/usb_cam/share/ament_index/resource_index/package_run_dependencies/usb_cam
+[7.008s] -- Installing: /home/user/YongJun_ws/ros2_ws/install/usb_cam/share/ament_index/resource_index/parent_prefix_path/usb_cam
+[7.008s] -- Installing: /home/user/YongJun_ws/ros2_ws/install/usb_cam/share/usb_cam/environment/ament_prefix_path.sh
+[7.008s] -- Installing: /home/user/YongJun_ws/ros2_ws/install/usb_cam/share/usb_cam/environment/ament_prefix_path.dsv
+[7.008s] -- Installing: /home/user/YongJun_ws/ros2_ws/install/usb_cam/share/usb_cam/environment/path.sh
+[7.008s] -- Installing: /home/user/YongJun_ws/ros2_ws/install/usb_cam/share/usb_cam/environment/path.dsv
+[7.008s] -- Installing: /home/user/YongJun_ws/ros2_ws/install/usb_cam/share/usb_cam/local_setup.bash
+[7.008s] -- Installing: /home/user/YongJun_ws/ros2_ws/install/usb_cam/share/usb_cam/local_setup.sh
+[7.008s] -- Installing: /home/user/YongJun_ws/ros2_ws/install/usb_cam/share/usb_cam/local_setup.zsh
+[7.008s] -- Installing: /home/user/YongJun_ws/ros2_ws/install/usb_cam/share/usb_cam/local_setup.dsv
+[7.008s] -- Installing: /home/user/YongJun_ws/ros2_ws/install/usb_cam/share/usb_cam/package.dsv
+[7.008s] -- Installing: /home/user/YongJun_ws/ros2_ws/install/usb_cam/share/ament_index/resource_index/packages/usb_cam
+[7.008s] -- Installing: /home/user/YongJun_ws/ros2_ws/install/usb_cam/share/ament_index/resource_index/rclcpp_components/usb_cam
+[7.008s] -- Installing: /home/user/YongJun_ws/ros2_ws/install/usb_cam/share/usb_cam/cmake/ament_cmake_export_libraries-extras.cmake
+[7.008s] -- Installing: /home/user/YongJun_ws/ros2_ws/install/usb_cam/share/usb_cam/cmake/ament_cmake_export_dependencies-extras.cmake
+[7.008s] -- Installing: /home/user/YongJun_ws/ros2_ws/install/usb_cam/share/usb_cam/cmake/ament_cmake_export_include_directories-extras.cmake
+[7.008s] -- Installing: /home/user/YongJun_ws/ros2_ws/install/usb_cam/share/usb_cam/cmake/usb_camConfig.cmake
+[7.008s] -- Installing: /home/user/YongJun_ws/ros2_ws/install/usb_cam/share/usb_cam/cmake/usb_camConfig-version.cmake
+[7.008s] -- Installing: /home/user/YongJun_ws/ros2_ws/install/usb_cam/share/usb_cam/package.xml
+[7.011s] Invoked command in '/home/user/YongJun_ws/ros2_ws/build/usb_cam' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/user/YongJun_ws/ros2_ws/install/yolov8_ros:/opt/ros/foxy CONDA_PROMPT_MODIFIER=(openmmlab) /home/user/.local/bin/cmake --install /home/user/YongJun_ws/ros2_ws/build/usb_cam

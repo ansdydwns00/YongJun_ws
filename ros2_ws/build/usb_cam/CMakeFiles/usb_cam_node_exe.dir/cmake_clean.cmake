@@ -1,5 +1,6 @@
 file(REMOVE_RECURSE
   "CMakeFiles/usb_cam_node_exe.dir/rclcpp_components/node_main_usb_cam_node_exe.cpp.o"
+  "CMakeFiles/usb_cam_node_exe.dir/rclcpp_components/node_main_usb_cam_node_exe.cpp.o.d"
   "usb_cam_node_exe"
   "usb_cam_node_exe.pdb"
 )

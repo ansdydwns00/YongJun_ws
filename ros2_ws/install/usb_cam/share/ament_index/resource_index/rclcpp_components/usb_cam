@@ -1,1 +1,1 @@
-/home/aiv/YongJun_ws/ros2_ws/build/usb_cam/ament_cmake_index/share/ament_index/resource_index/rclcpp_components/usb_cam
+usb_cam::UsbCamNode;lib/libusb_cam_node.so

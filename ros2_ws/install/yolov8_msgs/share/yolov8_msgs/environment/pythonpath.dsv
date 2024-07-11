@@ -1,1 +1,1 @@
-/home/aiv/YongJun_ws/ros2_ws/build/yolov8_msgs/ament_cmake_environment_hooks/pythonpath.dsv
+prepend-non-duplicate;PYTHONPATH;lib/python3.8/site-packages

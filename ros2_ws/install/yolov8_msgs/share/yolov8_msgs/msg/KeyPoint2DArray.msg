@@ -1,1 +1,3 @@
-/home/aiv/YongJun_ws/ros2_ws/src/yolov8_ros/yolov8_msgs/msg/KeyPoint2DArray.msg
+# represents all the keypoints for human pose estimation
+
+yolov8_msgs/KeyPoint2D[] data

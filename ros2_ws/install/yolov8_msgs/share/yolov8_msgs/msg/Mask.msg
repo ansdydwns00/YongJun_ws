@@ -1,1 +1,8 @@
-/home/aiv/YongJun_ws/ros2_ws/src/yolov8_ros/yolov8_msgs/msg/Mask.msg
+# segmentation mask for one instance
+
+# size of the original image
+int32 height
+int32 width
+
+# mask data represeted by the points of the border of the mask
+yolov8_msgs/Point2D[] data

@@ -1,3 +1,0 @@
-/home/aiv/YongJun_ws/ros2_ws/install/rviz_plugin_zed_od/lib/librviz_plugin_zed_od.so
-/home/aiv/YongJun_ws/ros2_ws/install/rviz_plugin_zed_od/share/rviz_plugin_zed_od/cmake/rviz_plugin_zed_odExport.cmake
-/home/aiv/YongJun_ws/ros2_ws/install/rviz_plugin_zed_od/share/rviz_plugin_zed_od/cmake/rviz_plugin_zed_odExport-noconfig.cmake

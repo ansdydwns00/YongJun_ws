@@ -1,5 +1,6 @@
 file(REMOVE_RECURSE
   "CMakeFiles/test_pixel_formats.dir/test/test_pixel_formats.cpp.o"
+  "CMakeFiles/test_pixel_formats.dir/test/test_pixel_formats.cpp.o.d"
   "test_pixel_formats"
   "test_pixel_formats.pdb"
 )

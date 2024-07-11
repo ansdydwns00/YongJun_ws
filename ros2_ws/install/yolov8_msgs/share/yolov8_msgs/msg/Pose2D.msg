@@ -1,1 +1,4 @@
-/home/aiv/YongJun_ws/ros2_ws/src/yolov8_ros/yolov8_msgs/msg/Pose2D.msg
+# 2D position in pixel coordinates
+
+yolov8_msgs/Point2D position
+float64 theta

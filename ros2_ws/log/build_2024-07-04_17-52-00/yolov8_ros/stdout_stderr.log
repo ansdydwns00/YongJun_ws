@@ -1,9 +1,0 @@
-running develop
-/home/aiv/.local/lib/python3.8/site-packages/setuptools/command/easy_install.py:156: EasyInstallDeprecationWarning: easy_install command is deprecated. Use build and pip and other standards-based tools.
-  warnings.warn(
-running egg_info
-writing manifest file 'yolov8_ros.egg-info/SOURCES.txt'
-running build_ext
-running symlink_data
-symbolically linking /home/aiv/YongJun_ws/ros2_ws/build/yolov8_ros/resource/yolov8_ros -> /home/aiv/YongJun_ws/ros2_ws/install/yolov8_ros/share/ament_index/resource_index/packages
-symbolically linking /home/aiv/YongJun_ws/ros2_ws/build/yolov8_ros/package.xml -> /home/aiv/YongJun_ws/ros2_ws/install/yolov8_ros/share/yolov8_ros
