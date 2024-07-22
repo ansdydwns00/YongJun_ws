@@ -1,16 +1,16 @@
-function [objectInfo,bboxesLidar,Distances,cls_tmp] = computeDistance(Yolo,ptCloud,cameraParams,CamToLidar,clusterThreshold)
-    
+function [bboxesLidar,Distances,cls_tmp,id_tmp] = computeDistance(Yolo,ptCloud,cameraParams,CamToLidar,clusterThreshold)
+    % [objectInfo,bboxesLidar,Distances,cls_tmp] = computeDistance(Yolo,ptCloud,cameraParams,CamToLidar,clusterThreshold)
     % ---------------------------------------------------------------------------
     %                              Yolo sub  
     % ---------------------------------------------------------------------------
     % subscribe track msg
     yolo_info = receive(Yolo.trackSub);
     
-    objectInfo = {struct()};
+    % objectInfo = {struct()};
     bboxes_tmp = [];
     id_tmp = {};
     cls_tmp = {};
-    dis_tmp = [];
+    % dis_tmp = [];
 
     bboxes = [];
     Distances = [];
@@ -65,7 +65,7 @@ function [objectInfo,bboxesLidar,Distances,cls_tmp] = computeDistance(Yolo,ptClo
                 % dis_tmp(i,:) = dist;
             end
             
-            bboxes_tmp(~bboxesUsed,:) = [];
+            % bboxes_tmp(~bboxesUsed,:) = [];
             id_tmp(~bboxesUsed') = [];
             cls_tmp(~bboxesUsed') = [];
             

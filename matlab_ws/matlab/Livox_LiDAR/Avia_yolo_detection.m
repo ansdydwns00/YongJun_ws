@@ -29,10 +29,10 @@ Yolo.trackSub = ros2subscriber(main,"/yolo/tracking","yolov8_msgs/DetectionArray
   
 % Setting point cloud viewer parameter
 xmin = 0;  xmax = 20;
-ymin = -6; ymax = 6;
-zmin = -2; zmax = 10;
+ymin = -8; ymax = 8;
+zmin = -2; zmax = 5;
 
-player = pcplayer([xmin xmax],[ymin ymax],[zmin zmax],"ColorSource","X","MarkerSize",10);
+player = pcplayer([xmin xmax],[ymin ymax],[zmin zmax],"ColorSource","X","MarkerSize",6);
 
 % Set values for frame count 
 frameCount = 1;
@@ -48,7 +48,7 @@ xyzPointsBuffer = [];
 xyzIntensityBuffer = [];
 
 % ROI 설정
-roi = [2, 10, -5, 5, -2, 5];     
+roi = [5, 10, -5, 5, -1, 5];     
 
 distance = [];
 
@@ -59,7 +59,7 @@ clusterThreshold = 0.1;
 flush(Avia_UDP)
 
 while true
-    
+    tic
     % Read 1 packet
     packet = single(read(Avia_UDP,1362))';
 
@@ -78,32 +78,32 @@ while true
             ptCloud = pointCloud(xyzPointsBuffer,"Intensity",xyzIntensityBuffer);
                        
             % ROI 영역 내 pointCloud 추출
-            % indices = findPointsInROI(ptCloud, roi);
-            % roiPtCloud = select(ptCloud, indices);
+            indices = findPointsInROI(ptCloud, roi);
+            roiPtCloud = select(ptCloud, indices);
             
-            [objectInfo, bboxesLidar, Distances, labels] = computeDistance(Yolo,ptCloud,camParams,camToLidar,clusterThreshold);
-            
-            
-            labelsPedes = bboxesLidar(strcmp(labels,'person')',:);
-            labelsRefri = bboxesLidar(strcmp(labels,'refrigerator')',:);
-            
+            % [~, bboxesLidar, Distances, labels] = computeDistance(Yolo,roiPtCloud,camParams,camToLidar,clusterThreshold);
+            [bboxesLidar,Distances,labels,ids] = computeDistance(Yolo,roiPtCloud,camParams,camToLidar,clusterThreshold);
+                        
             % Display ptCloud 
+            % hold(player.Axes,"off")
             view(player,ptCloud);
-            
-            showShape('cuboid',labelsRefri,'Parent',player.Axes,'Opacity',0.2,'Color','green','LineWidth',0.5,'Label',round(Distances(strcmp(labels,'refrigerator')',:),2) + "m");
-            hold(player.Axes,"on")
-            showShape('cuboid',labelsPedes,'Parent',player.Axes,'Opacity',0.2,'Color','red','LineWidth',0.5,'Label',round(Distances(strcmp(labels,'person')',:),2) + "m");
-            hold(player.Axes,"off")
+           
+            % showShape('cuboid',bboxesLidar(strcmp(labels,'refrigerator')',:),'Parent',player.Axes,'Opacity',0.2,'Color','red','LineWidth',0.5,'Label',ids{strcmp(labels,'refrigerator')} + " : " + labels{strcmp(labels,'refrigerator')} + " = " + round(Distances(strcmp(labels,'person')',:),2) + "m");
+
+            % hold(player.Axes,"on")
+            % showShape('cuboid',labelsRefri,'Parent',player.Axes,'Opacity',0.2,'Color','green','LineWidth',0.5,'Label',labels{strcmp(labels,'refrigerator')} + ' : ' + round(Distances(strcmp(labels,'refrigerator')',:),2) + "m");
             
 
-            % showShape('cuboid',bboxesLidar,'Parent',player.Axes,'Opacity',0.2,'Color','red','LineWidth',0.5,'Label',Distances);
+            showShape('cuboid',bboxesLidar,'Parent',player.Axes,'Opacity',0.2,'Color','red','LineWidth',0.5,'Label',Distances);
             
 
             xyzPointsBuffer = [];
             xyzIntensityBuffer = [];
+            toc
         end
 
        frameCount = frameCount + 1;
+       flush(Avia_UDP)
     end    
     reset_flag = single(1);
 end

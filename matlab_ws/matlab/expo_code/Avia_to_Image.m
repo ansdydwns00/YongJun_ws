@@ -1,5 +1,10 @@
+%% UDP Connection
+
+% run("Initialize_UDP_Protocol.m")
+
+
 %% Connect AVIA UDP Communication
-clear; clc
+
 % Connect udp data communication
 Avia_UDP = udpport("byte","LocalPort",56001,"ByteOrder","little-endian");
 
@@ -22,17 +27,8 @@ main = ros2node("/IVL");
 % lidarSub = ros2subscriber(Matlab,'/livox/lidar','sensor_msgs/PointCloud2');
 imageSub = ros2subscriber(main,'/camera/camera/color/image_raw','sensor_msgs/Image');
 
-Yolo.imgSub = ros2subscriber(main,"/yolo/dbg_image","sensor_msgs/Image");
-Yolo.trackSub = ros2subscriber(main,"/yolo/tracking","yolov8_msgs/DetectionArray");
-
 %% Packet Data parsing 
-  
-% Setting point cloud viewer parameter
-xmin = 0;  xmax = 20;
-ymin = -6; ymax = 6;
-zmin = -2; zmax = 10;
 
-player = pcplayer([xmin xmax],[ymin ymax],[zmin zmax],"ColorSource","X","MarkerSize",10);
 
 % Set values for frame count 
 frameCount = 1;
@@ -46,15 +42,6 @@ reset_flag = single(0);
 % Parameter for n frame buffer
 xyzPointsBuffer = [];
 xyzIntensityBuffer = [];
-
-% ROI 설정
-roi = [6, 10, -2, 2, -2, 2];     
-
-distance = [];
-
-% Cluster distance
-clusterThreshold = 0.1;                         
-
 
 flush(Avia_UDP)
 
@@ -77,29 +64,39 @@ while true
 
             ptCloud = pointCloud(xyzPointsBuffer,"Intensity",xyzIntensityBuffer);
                        
-            % ROI 영역 내 pointCloud 추출
-            % indices = findPointsInROI(ptCloud, roi);
-            % roiPtCloud = select(ptCloud, indices);
+            % Display ptCloud 
+            % view(player,ptCloud);
             
-            [objectInfo, bboxesLidar, Distances, labels] = computeDistance(Yolo,ptCloud,camParams,camToLidar,clusterThreshold);
+            % Create Colormap of Pointcloud
+            heights = ptCloud.Location(:,1);
+            colormap jet;
+            colorRange = jet(256);
             
+            minHeight = min(heights); % 최소 높이 값
+            maxHeight = max(heights); % 최대 높이 값
+            normalizedHeights = (heights - minHeight) / (maxHeight - minHeight); % 높이 값을 0과 1 사이로 정규화
+            colorIndices = ceil(normalizedHeights * 255) + 1;
+            colorIndices(colorIndices > 256) = 256;
+            colorIndices(colorIndices < 1) = 1;
+            pointColors = colorRange(colorIndices, :);
+           
+            % subscribe image msg
+            imgMsg = receive(imageSub);
+            img = rosReadImage(imgMsg);
     
-            labelsPedes = bboxesLidar(strcmp(labels,'Pedestrain')',:);
-            labelsRefri = bboxesLidar(strcmp(labels,'refrigerator')',:);
-
-            showShape('cuboid',labelsPedes,'Parent',player.Axes,'Opacity',0.2,'Color','red','LineWidth',0.5,'Label',Distances(strcmp(labels,'Pedestrain')',:));
+            [imPts,idx] = projectLidarPointsOnImage(ptCloud,cameraParams.Intrinsics,tform);
+            imshow(img);
             hold on
-            showShape('cuboid',labelsRefri,'Parent',player.Axes,'Opacity',0.2,'Color','green','LineWidth',0.5,'Label',Distances(strcmp(labels,'refrigerator')',:));
-
-            % showShape('cuboid',bboxesLidar,'Parent',player.Axes,'Opacity',0.2,'Color','red','LineWidth',0.5,'Label',Distances);
-            
-
+            scatter(imPts(:,1), imPts(:,2), 4, pointColors(idx), 'filled');
+            hold off
+    
             xyzPointsBuffer = [];
             xyzIntensityBuffer = [];
         
         end
 
        frameCount = frameCount + 1;
+       flush(Avia_UDP)
     end    
     reset_flag = single(1);
 end

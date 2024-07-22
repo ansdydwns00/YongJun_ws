@@ -52,7 +52,7 @@ def generate_launch_description():
     threshold = LaunchConfiguration("threshold")
     threshold_cmd = DeclareLaunchArgument(
         "threshold",
-        default_value="0.8",
+        default_value="0.5",
         description="Minimum probability of a detection to be published")
 
     input_image_topic = LaunchConfiguration("input_image_topic")

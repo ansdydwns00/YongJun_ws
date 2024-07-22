@@ -53,7 +53,7 @@ class Yolov8Node(Node):
         self.device = self.get_parameter(
             "device").get_parameter_value().string_value
 
-        self.declare_parameter("threshold", 0.8)
+        self.declare_parameter("threshold", 0.5)
         self.threshold = self.get_parameter(
             "threshold").get_parameter_value().double_value
 
@@ -204,42 +204,42 @@ class Yolov8Node(Node):
 
             for i in range(len(results)):
                 
-                aux_msg = Detection()
+                # aux_msg = Detection()
 
-                if results.boxes:
-                    aux_msg.class_id = hypothesis[i]["class_id"]
-                    aux_msg.class_name = hypothesis[i]["class_name"]
-                    aux_msg.score = hypothesis[i]["score"]
+                # if results.boxes:
+                #     aux_msg.class_id = hypothesis[i]["class_id"]
+                #     aux_msg.class_name = hypothesis[i]["class_name"]
+                #     aux_msg.score = hypothesis[i]["score"]
                                 
 
-                    aux_msg.bbox = boxes[i]
+                #     aux_msg.bbox = boxes[i]
 
-                # if results.masks:
-                #     aux_msg.mask = masks[i]
+                # # if results.masks:
+                # #     aux_msg.mask = masks[i]
 
-                # if results.keypoints:
-                #     aux_msg.keypoints = keypoints[i]
+                # # if results.keypoints:
+                # #     aux_msg.keypoints = keypoints[i]
 
-                detections_msg.detections.append(aux_msg)
+                # detections_msg.detections.append(aux_msg)
 
-                # if hypothesis[i]["class_id"] == 72:
-                #     aux_msg = Detection()
+                if hypothesis[i]["class_id"] == 0:
+                    aux_msg = Detection()
 
-                #     if results.boxes:
-                #         aux_msg.class_id = hypothesis[i]["class_id"]
-                #         aux_msg.class_name = hypothesis[i]["class_name"]
-                #         aux_msg.score = hypothesis[i]["score"]
+                    if results.boxes:
+                        aux_msg.class_id = hypothesis[i]["class_id"]
+                        aux_msg.class_name = hypothesis[i]["class_name"]
+                        aux_msg.score = hypothesis[i]["score"]
                                 
 
-                #         aux_msg.bbox = boxes[i]
+                        aux_msg.bbox = boxes[i]
 
-                #         # if results.masks:
-                #         #     aux_msg.mask = masks[i]
+                        # if results.masks:
+                        #     aux_msg.mask = masks[i]
 
-                #         # if results.keypoints:
-                #         #     aux_msg.keypoints = keypoints[i]
+                        # if results.keypoints:
+                        #     aux_msg.keypoints = keypoints[i]
 
-                #     detections_msg.detections.append(aux_msg)
+                    detections_msg.detections.append(aux_msg)
 
             # publish detections
             detections_msg.header = msg.header

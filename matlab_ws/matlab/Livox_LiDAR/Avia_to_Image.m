@@ -82,7 +82,7 @@ while true
             [imPts,idx] = projectLidarPointsOnImage(ptCloud,cameraParams.Intrinsics,tform);
             imshow(img);
             hold on
-            scatter(imPts(:,1), imPts(:,2), 4, pointColors(idx), 'filled');
+            scatter(imPts(:,1), imPts(:,2), 7, pointColors(idx), 'filled');
             hold off
     
             xyzPointsBuffer = [];
@@ -91,6 +91,7 @@ while true
         end
 
        frameCount = frameCount + 1;
+       flush(Avia_UDP)
     end    
     reset_flag = single(1);
 end

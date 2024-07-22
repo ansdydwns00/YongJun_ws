@@ -1,0 +1,58 @@
+[0.395s] Traceback (most recent call last):
+  File "/usr/lib/python3/dist-packages/colcon_parallel_executor/executor/parallel.py", line 75, in execute
+    loop.run_until_complete(future)
+  File "/usr/lib/python3.8/asyncio/base_events.py", line 603, in run_until_complete
+    self.run_forever()
+  File "/usr/lib/python3.8/asyncio/base_events.py", line 570, in run_forever
+    self._run_once()
+  File "/usr/lib/python3.8/asyncio/base_events.py", line 1823, in _run_once
+    event_list = self._selector.select(timeout)
+  File "/usr/lib/python3.8/selectors.py", line 468, in select
+    fd_event_list = self._selector.poll(timeout, max_ev)
+KeyboardInterrupt
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/lib/python3/dist-packages/colcon_core/executor/__init__.py", line 91, in __call__
+    rc = await self.task(*args, **kwargs)
+  File "/usr/lib/python3/dist-packages/colcon_core/task/__init__.py", line 93, in __call__
+    return await task_method(*args, **kwargs)
+  File "/usr/lib/python3/dist-packages/colcon_ros/task/ament_python/build.py", line 102, in build
+    return await extension.build(additional_hooks=additional_hooks)
+  File "/usr/lib/python3/dist-packages/colcon_core/task/python/build.py", line 90, in build
+    available_commands = await self._get_available_commands(
+  File "/usr/lib/python3/dist-packages/colcon_core/task/python/build.py", line 188, in _get_available_commands
+    output = await check_output(
+  File "/usr/lib/python3/dist-packages/colcon_core/subprocess.py", line 129, in check_output
+    assert not rc, f'Expected {args} to pass: {stderr_data}'
+AssertionError: Expected ['/usr/bin/python3', '-W', 'ignore:setup.py install is deprecated', 'setup.py', '--help-commands'] to pass: Traceback (most recent call last):
+  File "setup.py", line 5, in <module>
+    setup(
+  File "/home/aiv/.local/lib/python3.8/site-packages/setuptools/__init__.py", line 155, in setup
+    return distutils.core.setup(**attrs)
+  File "/home/aiv/.local/lib/python3.8/site-packages/setuptools/_distutils/core.py", line 135, in setup
+    ok = dist.parse_command_line()
+  File "/home/aiv/.local/lib/python3.8/site-packages/setuptools/_distutils/dist.py", line 481, in parse_command_line
+    if self.handle_display_options(option_order):
+  File "/home/aiv/.local/lib/python3.8/site-packages/setuptools/dist.py", line 1126, in handle_display_options
+    return _Distribution.handle_display_options(self, option_order)
+  File "/home/aiv/.local/lib/python3.8/site-packages/setuptools/_distutils/dist.py", line 684, in handle_display_options
+    self.print_commands()
+  File "/home/aiv/.local/lib/python3.8/site-packages/setuptools/dist.py", line 902, in print_commands
+    cmdclass = ep.resolve()
+  File "/home/aiv/.local/lib/python3.8/site-packages/pkg_resources/__init__.py", line 2471, in resolve
+    module = __import__(self.module_name, fromlist=['__name__'], level=0)
+  File "/home/aiv/.local/lib/python3.8/site-packages/setuptools/command/build_ext.py", line 19, in <module>
+    __import__('Cython.Compiler.Main')
+  File "/home/aiv/.local/lib/python3.8/site-packages/Cython/Compiler/Main.py", line 30, in <module>
+    from .Symtab import ModuleScope
+  File "/home/aiv/.local/lib/python3.8/site-packages/Cython/Compiler/Symtab.py", line 20, in <module>
+    from . import PyrexTypes
+  File "/home/aiv/.local/lib/python3.8/site-packages/Cython/Compiler/PyrexTypes.py", line 19, in <module>
+    from .Code import UtilityCode, LazyUtilityCode, TempitaUtilityCode
+  File "Cython/Compiler/Code.py", line 437, in init Cython.Compiler.Code
+  File "/usr/lib/python3.8/re.py", line 250, in compile
+    def compile(pattern, flags=0):
+KeyboardInterrupt
+

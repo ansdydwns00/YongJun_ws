@@ -44,9 +44,9 @@ xyzIntensityBuffer = [];
 
 flush(Avia_UDP)
 
-tic
-start_time = toc;
-last_framecount = 0;
+% tic
+% start_time = toc;
+% last_framecount = 0;
 while 1
 
     % Read 1 packet
@@ -75,16 +75,16 @@ while 1
         end
         
         % Display Rendering rate 
-        current_time = toc;
-        if current_time - start_time >= 1
-            frame_count_diff = frameCount - last_framecount - 1;
-            fprintf("Create %d ptCloud image in 1 second\n", frame_count_diff);
-            last_framecount = frameCount;
-            start_time = current_time;
-        end
+        % current_time = toc;
+        % if current_time - start_time >= 1
+        %     frame_count_diff = frameCount - last_framecount - 1;
+        %     fprintf("Create %d ptCloud image in 1 second\n", frame_count_diff);
+        %     last_framecount = frameCount;
+        %     start_time = current_time;
+        % end
         
         frameCount = frameCount + 1;
-        % flush(Avia_UDP)
+        flush(Avia_UDP)
     end
     
     reset_flag = single(1);
