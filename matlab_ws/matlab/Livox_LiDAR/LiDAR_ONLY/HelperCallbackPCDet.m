@@ -13,8 +13,8 @@ function GbboxInfo = HelperCallbackPCDet(msg)
     bbox_tmp = [];
     id_tmp = {};
     cls_tmp = {};
-
-
+    
+    
     for i = 1:num_detection
         x_ctr = msg.detections(i).bbox.center.position.x;
         y_ctr = msg.detections(i).bbox.center.position.y;
@@ -41,4 +41,5 @@ function GbboxInfo = HelperCallbackPCDet(msg)
     G_bbox = bbox_tmp;
     G_id = id_tmp';
     G_cls = cls_tmp';
+    
 end

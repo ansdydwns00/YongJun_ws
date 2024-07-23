@@ -25,14 +25,12 @@ msg_LiDAR = ros2message(pub.LiDAR);
 msg_LiDAR.header.frame_id = 'map';
 
 %% Main 
-
-
 %===================================================================================%
 %-----------------------------------Visualization-----------------------------------%
 %===================================================================================%
 % Set x,y,z range of pcplayer
-xmin = 0;      xmax = 8;
-ymin = -4;     ymax = 4;
+xmin = 0;      xmax = 100;
+ymin = -40;     ymax = 40;
 zmin = -2;      zmax = 4;
 
 player = pcplayer([xmin xmax],[ymin ymax],[zmin zmax],"ColorSource","Z","MarkerSize",4);
@@ -41,8 +39,8 @@ player = pcplayer([xmin xmax],[ymin ymax],[zmin zmax],"ColorSource","Z","MarkerS
 % ROI 설정
 roi = [5, 10, -4, 4, -1, 5];     
 
-% Cluster distance 
-clusterThreshold = 0.1;   
+% Downsample
+gridStep = 0.1;
 
 % Set values for frame count 
 frameCount = 1;
@@ -79,31 +77,28 @@ while true
             
             ptCloud = pointCloud(xyzPointsBuffer,"Intensity",xyzIntensityBuffer);
             
-            % ROI 영역 내 pointCloud 추출
-            % indices = findPointsInROI(ptCloud, roi);
-            % roiPtCloud = select(ptCloud, indices);
+            ptCld_ps = HelperPtCldProcessing(ptCloud,gridStep,roi);
             
             % Sending point cloud msg to ROS2 
-            msg_LiDAR = rosWriteXYZ(msg_LiDAR,(ptCloud.Location));
-            msg_LiDAR = rosWriteIntensity(msg_LiDAR,(ptCloud.Intensity));
+            msg_LiDAR = ros2message(pub.LiDAR);
+            msg_LiDAR.header.frame_id = 'map';
+            msg_LiDAR = rosWriteXYZ(msg_LiDAR,(ptCld_ps.Location));
+            msg_LiDAR = rosWriteIntensity(msg_LiDAR,(ptCld_ps.Intensity));
             send(pub.LiDAR,msg_LiDAR);
-
 
             L_bbox = G_bbox;
             L_id = G_id;
             L_cls = G_cls;
 
             % Display ptCloud 
-            view(player,ptCloud);
+            view(player,ptCld_ps);
             HelperDeleteCuboid(player.Axes)
 
-
-            if ~isempty(L_bbox) && ~isempty(ptCloud.Location)                 
+            if ~isempty(L_bbox) && ~isempty(ptCld_ps.Location)                 
                 
-                Distances = HelperComputeDistance(L_bbox,ptCloud);
+                Distances = HelperComputeDistance(L_bbox,ptCld_ps);
 
-                HelperDrawCuboid(player.Axes,L_bbox,Distances,L_id,L_cls)   
-                % HelperDrawCuboid(player.Axes,bboxInfo,Distances,Id,Cls)  
+                HelperDrawCuboid(player.Axes,L_bbox,Distances,L_id,L_cls) 
             end
 
             xyzPointsBuffer = [];
