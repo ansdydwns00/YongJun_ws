@@ -1,0 +1,31 @@
+function [data, info] = objectHypothesisWithPose
+%ObjectHypothesisWithPose gives an empty data for vision_msgs/ObjectHypothesisWithPose
+% Copyright 2019-2021 The MathWorks, Inc.
+data = struct();
+data.MessageType = 'vision_msgs/ObjectHypothesisWithPose';
+[data.hypothesis, info.hypothesis] = ros.internal.ros2.custommessages.vision_msgs.objectHypothesis;
+info.hypothesis.MLdataType = 'struct';
+[data.pose, info.pose] = ros.internal.ros2.messages.geometry_msgs.poseWithCovariance;
+info.pose.MLdataType = 'struct';
+info.MessageType = 'vision_msgs/ObjectHypothesisWithPose';
+info.constant = 0;
+info.default = 0;
+info.maxstrlen = NaN;
+info.MaxLen = 1;
+info.MinLen = 1;
+info.MatPath = cell(1,15);
+info.MatPath{1} = 'hypothesis';
+info.MatPath{2} = 'hypothesis.class_id';
+info.MatPath{3} = 'hypothesis.score';
+info.MatPath{4} = 'pose';
+info.MatPath{5} = 'pose.pose';
+info.MatPath{6} = 'pose.pose.position';
+info.MatPath{7} = 'pose.pose.position.x';
+info.MatPath{8} = 'pose.pose.position.y';
+info.MatPath{9} = 'pose.pose.position.z';
+info.MatPath{10} = 'pose.pose.orientation';
+info.MatPath{11} = 'pose.pose.orientation.x';
+info.MatPath{12} = 'pose.pose.orientation.y';
+info.MatPath{13} = 'pose.pose.orientation.z';
+info.MatPath{14} = 'pose.pose.orientation.w';
+info.MatPath{15} = 'pose.covariance';

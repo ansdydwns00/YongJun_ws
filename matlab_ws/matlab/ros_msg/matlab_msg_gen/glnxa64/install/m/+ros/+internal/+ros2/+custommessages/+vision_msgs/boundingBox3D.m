@@ -1,0 +1,30 @@
+function [data, info] = boundingBox3D
+%BoundingBox3D gives an empty data for vision_msgs/BoundingBox3D
+% Copyright 2019-2021 The MathWorks, Inc.
+data = struct();
+data.MessageType = 'vision_msgs/BoundingBox3D';
+[data.center, info.center] = ros.internal.ros2.messages.geometry_msgs.pose;
+info.center.MLdataType = 'struct';
+[data.size, info.size] = ros.internal.ros2.messages.geometry_msgs.vector3;
+info.size.MLdataType = 'struct';
+info.MessageType = 'vision_msgs/BoundingBox3D';
+info.constant = 0;
+info.default = 0;
+info.maxstrlen = NaN;
+info.MaxLen = 1;
+info.MinLen = 1;
+info.MatPath = cell(1,14);
+info.MatPath{1} = 'center';
+info.MatPath{2} = 'center.position';
+info.MatPath{3} = 'center.position.x';
+info.MatPath{4} = 'center.position.y';
+info.MatPath{5} = 'center.position.z';
+info.MatPath{6} = 'center.orientation';
+info.MatPath{7} = 'center.orientation.x';
+info.MatPath{8} = 'center.orientation.y';
+info.MatPath{9} = 'center.orientation.z';
+info.MatPath{10} = 'center.orientation.w';
+info.MatPath{11} = 'size';
+info.MatPath{12} = 'size.x';
+info.MatPath{13} = 'size.y';
+info.MatPath{14} = 'size.z';

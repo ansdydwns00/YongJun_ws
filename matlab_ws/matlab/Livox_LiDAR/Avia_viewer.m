@@ -19,10 +19,10 @@ start(t)
 % Connect udp data communication
 Avia_UDP = udpport("byte","LocalPort",56001,"ByteOrder","little-endian");
 
-%% Visualization using 250*n messages
+%% Visualization
 
 % Setting point cloud viewer parameter
-xmin = 0;  xmax = 5;
+xmin = 0;  xmax = 10;
 ymin = -5; ymax = 5;
 zmin = -2; zmax = 5;
 
