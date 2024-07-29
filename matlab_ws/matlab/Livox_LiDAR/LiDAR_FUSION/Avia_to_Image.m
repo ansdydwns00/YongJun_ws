@@ -38,7 +38,7 @@ reset_flag = single(0);
 xyzPointsBuffer = [];
 xyzIntensityBuffer = [];
 
-flush(Avia_UDP)
+flush(Avia_UDP,"input")
 
 while true
     

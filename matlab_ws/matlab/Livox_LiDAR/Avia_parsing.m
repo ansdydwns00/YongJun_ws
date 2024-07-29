@@ -5,9 +5,11 @@ function [xyzCoords,xyzIntensity,isValid] = Avia_parsing(packet,reset_flag)
     persistent i
     persistent Intensity
     
+    
     % In ros, 10hz -> 24000 points in 1 message -> 96*250 = 24000
     % In ros, 30hz -> 7872 points in 1 message -> 96*82 = 7872
     
+    % Select pthe number of packets(10hz = 250 packets, 30hz = 82 packets)
     % numPacket = 250;
     numPacket = 82; 
 

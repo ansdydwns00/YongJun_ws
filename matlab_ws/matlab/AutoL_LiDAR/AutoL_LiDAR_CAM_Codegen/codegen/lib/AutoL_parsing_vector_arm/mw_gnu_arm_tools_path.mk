@@ -1,1 +1,0 @@
-MW_GNU_ARM_TOOLS_PATH = /home/aiv/Documents/MATLAB/SupportPackages/R2024a/3P.instrset/gnuarm-armcortex.instrset/glnxa64/bin

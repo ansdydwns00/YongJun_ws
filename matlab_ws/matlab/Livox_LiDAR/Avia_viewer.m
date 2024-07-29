@@ -15,18 +15,21 @@ t.ExecutionMode = 'fixedRate';
 start(t)
 
 %% Connect AVIA UDP Communication
+clear; clc
 
 % Connect udp data communication
-Avia_UDP = udpport("byte","LocalPort",56001,"ByteOrder","little-endian");
+% Avia_UDP = udpport("byte","LocalPort",56002,"ByteOrder","little-endian");
 
+% prev avia
+Avia_UDP = udpport("byte","LocalPort",56001,"ByteOrder","little-endian");
 %% Visualization
 
 % Setting point cloud viewer parameter
 xmin = 0;  xmax = 10;
 ymin = -5; ymax = 5;
-zmin = -2; zmax = 5;
+zmin = -2; zmax = 4;
 
-player = pcplayer([xmin xmax],[ymin ymax],[zmin zmax],"ColorSource","Z","MarkerSize",10);
+player = pcplayer([xmin xmax],[ymin ymax],[zmin zmax],"ColorSource","Z");
 
 
 % Set values for frame count 
@@ -47,13 +50,13 @@ flush(Avia_UDP)
 % tic
 % start_time = toc;
 % last_framecount = 0;
-while 1
+while true
 
     % Read 1 packet
     packet = single(read(Avia_UDP,1362))';
 
     % [xyzCoords,xyzIntensity,isValid] = Avia_parsing(packet,reset_flag);
-    [xyzCoords,xyzIntensity,isValid] = Avia_parsing_mex(packet,reset_flag);
+    [xyzCoords,xyzIntensity,isValid] = Avia_parsing(packet,reset_flag);
 
     if isValid
         
@@ -72,7 +75,7 @@ while 1
             xyzIntensityBuffer = [];
         end
         
-        % % Display Rendering rate 
+        % Display Rendering rate 
         % current_time = toc;
         % if current_time - start_time >= 1
         %     frame_count_diff = frameCount - last_framecount - 1;

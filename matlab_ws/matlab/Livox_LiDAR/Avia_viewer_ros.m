@@ -23,7 +23,7 @@ Avia_UDP = udpport("byte","LocalPort",56001,"ByteOrder","little-endian");
 
 Node = ros2node("/MATLAB");
 
-LidarPub = ros2publisher(Node,"/Avia","sensor_msgs/PointCloud2");
+LidarPub = ros2publisher(Node,"/LiDAR/Avia","sensor_msgs/PointCloud2");
 LidarMsg = ros2message(LidarPub);
 LidarMsg.header.frame_id = 'map';
 
@@ -53,7 +53,7 @@ while 1
     packet = single(read(Avia_UDP,1362))';
 
     % [xyzCoords,xyzIntensity,isValid] = Avia_parsing(packet,reset_flag);
-    [xyzCoords,xyzIntensity,isValid] = Avia_parsing_mex(packet,reset_flag);
+    [xyzCoords,xyzIntensity,isValid] = Avia_parsing(packet,reset_flag);
 
     if isValid
         
