@@ -2,10 +2,10 @@ function [xyzCoords,xyzIntensity,isValid] = Avia_parsing(packet,reset_flag)
     
     % Initialize of persistent parameters
     persistent points
-    persistent i
     persistent Intensity
-    
-    
+    persistent i
+   
+   
     % In ros, 10hz -> 24000 points in 1 message -> 96*250 = 24000
     % In ros, 30hz -> 7872 points in 1 message -> 96*82 = 7872
     

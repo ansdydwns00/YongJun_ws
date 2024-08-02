@@ -17,7 +17,7 @@ start(t)
 %% Connect AVIA UDP Communication
 
 % Connect udp data communication
-Avia_UDP = udpport("byte","LocalPort",56001,"ByteOrder","little-endian");
+Avia_UDP = udpport("datagram","LocalPort",56001);
 
 %% Initialize ROS Node
 
@@ -50,10 +50,11 @@ flush(Avia_UDP)
 while 1
 
     % Read 1 packet
-    packet = single(read(Avia_UDP,1362))';
+    packet = read(Avia_UDP,1,"uint8");
 
-    % [xyzCoords,xyzIntensity,isValid] = Avia_parsing(packet,reset_flag);
-    [xyzCoords,xyzIntensity,isValid] = Avia_parsing(packet,reset_flag);
+    if size(packet.Data,2) == 1362 
+        [xyzCoords,xyzIntensity,isValid] = Avia_parsing_mex(single((packet.Data)'),reset_flag);
+    end
 
     if isValid
         
@@ -65,11 +66,14 @@ while 1
 
             ptCloud = pointCloud(xyzPointsBuffer,"Intensity",xyzIntensityBuffer);
             
-            % Sending point cloud msg to ROS2 
-            LidarMsg = rosWriteXYZ(LidarMsg,(ptCloud.Location));
-            LidarMsg = rosWriteIntensity(LidarMsg,(ptCloud.Intensity));
-            send(LidarPub,LidarMsg);
-            
+            if ~isempty(ptCloud.Location)
+                % Sending point cloud msg to ROS2 
+                LidarMsg = ros2message(LidarPub);
+                LidarMsg.header.frame_id = 'map';
+                LidarMsg = rosWriteXYZ(LidarMsg,(ptCloud.Location));
+                LidarMsg = rosWriteIntensity(LidarMsg,(ptCloud.Intensity));
+                send(LidarPub,LidarMsg);
+            end
             xyzPointsBuffer = [];
             xyzIntensityBuffer = [];
         end

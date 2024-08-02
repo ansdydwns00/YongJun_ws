@@ -10,7 +10,7 @@ yoloImageSub = ros2subscriber(mainNode,"/yolo/dbg_image","sensor_msgs/Image");
 yoloBboxSub = ros2subscriber(mainNode,"/yolo/detections","yolov8_msgs/DetectionArray");
 yoloTrackSub = ros2subscriber(mainNode,"/yolo/tracking","yolov8_msgs/DetectionArray");
 
-ImageSub = ros2subscriber(mainNode,"/camera1/image_raw","sensor_msgs/Image");
+% ImageSub = ros2subscriber(mainNode,"/camera1/image_raw","sensor_msgs/Image");
 %% 
 
 vPlayer = vision.DeployableVideoPlayer;

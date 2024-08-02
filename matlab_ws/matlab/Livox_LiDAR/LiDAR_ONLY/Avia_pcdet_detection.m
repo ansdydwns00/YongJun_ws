@@ -2,7 +2,7 @@
 clear; clc
 
 % Connect udp data communication
-Avia_UDP = udpport("byte","LocalPort",56001,"ByteOrder","little-endian");
+Avia_UDP = udpport("datagram","LocalPort",56001);
 
 %% ROS Node 
 
@@ -63,9 +63,11 @@ flush(Avia_UDP);
 while true
     
     % Read 1 packet
-    packet = single(read(Avia_UDP,1362))';
+    packet = read(Avia_UDP,1,"uint8");
 
-    [xyzCoords,xyzIntensity,isValid] = Avia_parsing_mex(packet,reset_flag);
+    if size(packet.Data,2) == 1362 
+        [xyzCoords,xyzIntensity,isValid] = Avia_parsing_mex(single((packet.Data)'),reset_flag);
+    end
     
     if isValid
         
@@ -79,13 +81,15 @@ while true
             
             ptCld_ps = HelperPtCldProcessing(ptCloud,gridStep,roi);
             
-            % Sending point cloud msg to ROS2 
-            msg_LiDAR = ros2message(pub.LiDAR);
-            msg_LiDAR.header.frame_id = 'map';
-            msg_LiDAR = rosWriteXYZ(msg_LiDAR,(ptCld_ps.Location));
-            msg_LiDAR = rosWriteIntensity(msg_LiDAR,(ptCld_ps.Intensity));
-            send(pub.LiDAR,msg_LiDAR);
-
+            if ~isempty(ptCld_ps)
+                % Sending point cloud msg to ROS2 
+                msg_LiDAR = ros2message(pub.LiDAR);
+                msg_LiDAR.header.frame_id = 'map';
+                msg_LiDAR = rosWriteXYZ(msg_LiDAR,(ptCld_ps.Location));
+                msg_LiDAR = rosWriteIntensity(msg_LiDAR,(ptCld_ps.Intensity));
+                send(pub.LiDAR,msg_LiDAR);
+            end
+            
             L_bbox = G_bbox;
             L_id = G_id;
             L_cls = G_cls;

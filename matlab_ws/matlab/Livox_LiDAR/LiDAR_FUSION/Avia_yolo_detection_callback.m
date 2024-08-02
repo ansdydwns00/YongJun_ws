@@ -2,7 +2,7 @@
 clear; clc
 
 % Connect udp data communication
-Avia_UDP = udpport("byte","LocalPort",56001,"ByteOrder","little-endian");
+Avia_UDP = udpport("datagram","LocalPort",56001);
 
 %% ROS Node 
 
@@ -24,7 +24,7 @@ sub.Yolo_img = ros2subscriber(Node,"/yolo/dbg_image","sensor_msgs/Image");
 sub.Yolo_track = ros2subscriber(Node,"/yolo/tracking","yolov8_msgs/DetectionArray",@helperCallbackYolo);
 
 % Create Publish Node
-pub.LiDAR = ros2publisher(Node,"/Avia","sensor_msgs/PointCloud2");
+pub.LiDAR = ros2publisher(Node,"LiDAR/Avia","sensor_msgs/PointCloud2");
 pub.detections = ros2publisher(Node,'/clusters_marker', 'visualization_msgs/MarkerArray');
 
 % Create Publish Message
@@ -52,14 +52,17 @@ xmin = 0;      xmax = 8;
 ymin = -4;     ymax = 4;
 zmin = -2;      zmax = 4;
 
-player = pcplayer([xmin xmax],[ymin ymax],[zmin zmax],"ColorSource","Z","MarkerSize",4);
+player = pcplayer([xmin xmax],[ymin ymax],[zmin zmax],"ColorSource","X","MarkerSize",4);
 
 
 % ROI 설정
-roi = [5, 10, -4, 4, -1, 5];     
+roi = [4, 10, -4, 4, -0.5, 5];     
+
+% Downsample
+gridStep = 0.01;
 
 % Cluster distance 
-clusterThreshold = 0.1;   
+clusterThreshold = 0.09;   
 
 % Set values for frame count 
 frameCount = 1;
@@ -70,8 +73,6 @@ frame_num = 6;
 % Flag for first Run
 reset_flag = single(0);
 
-% Set clustered object number
-markerIdClusters = 0;
 
 % Parameter for n frame buffer
 xyzPointsBuffer = [];
@@ -82,9 +83,11 @@ flush(Avia_UDP);
 while true
     
     % Read 1 packet
-    packet = single(read(Avia_UDP,1362))';
+    packet = read(Avia_UDP,1,"uint8");
 
-    [xyzCoords,xyzIntensity,isValid] = Avia_parsing_mex(packet,reset_flag);
+    if size(packet.Data,2) == 1362 
+        [xyzCoords,xyzIntensity,isValid] = Avia_parsing_mex(single((packet.Data)'),reset_flag);
+    end
     
     if isValid
         
@@ -96,37 +99,29 @@ while true
 
             ptCloud = pointCloud(xyzPointsBuffer,"Intensity",xyzIntensityBuffer);
             
-            % ROI 영역 내 pointCloud 추출
-            indices = findPointsInROI(ptCloud, roi);
-            roiPtCloud = select(ptCloud, indices);
-            
-            % Sending point cloud msg to ROS2 
-            msg_LiDAR = rosWriteXYZ(msg_LiDAR,(ptCloud.Location));
-            msg_LiDAR = rosWriteIntensity(msg_LiDAR,(ptCloud.Intensity));
-            send(pub.LiDAR,msg_LiDAR);
+            if ~isempty(ptCloud.Location)
+                ptCld_ps = helperPtCldProcessing(ptCloud,roi,gridStep); 
 
-            Bbox =bboxes_tmp;
-            Id = id_tmp;
-            Cls = cls_tmp;
-
-            [Distances,bboxesLidar,bboxesUsed] = helperComputeDistance(Bbox,roiPtCloud,camParams,camToLidar,clusterThreshold);
-            
-            % Display ptCloud 
-            view(player,roiPtCloud);
-            helperDeleteCuboid(player.Axes)
-
-            if ~isempty(bboxesLidar) 
-
-                Id(~bboxesUsed') = [];
-                Cls(~bboxesUsed') = [];           
+                Bbox =bboxes_tmp;
+                Id = id_tmp;
+                Cls = cls_tmp;
+    
+                [Distances,bboxesLidar,bboxesUsed] = helperComputeDistance(Bbox,ptCld_ps,camParams,camToLidar,clusterThreshold);
                 
-                cuboidInfo = helperGetCuboidInfo(bboxesLidar);
-                helperDrawCuboid(player.Axes,cuboidInfo,'red',Distances,Id,Cls)
-                % showShape('cuboid',bboxesLidar,'Parent',player.Axes,'Opacity',0.2,'Color','red','LineWidth',0.5,'Label',round(Distances,2) + "m",'LabelFontSize',6);
-            else
-                
+                % Display ptCloud 
+                view(player,ptCld_ps);
+                helperDeleteCuboid(player.Axes)
+    
+                if ~isempty(bboxesLidar) 
+    
+                    Id(~bboxesUsed') = [];
+                    Cls(~bboxesUsed') = [];           
+                    
+                    cuboidInfo = helperGetCuboidInfo(bboxesLidar);
+                    helperDrawCuboid(player.Axes,cuboidInfo,'red',Distances,Id,Cls)
+                   
+                end
             end
-            
             xyzPointsBuffer = [];
             xyzIntensityBuffer = [];
         end

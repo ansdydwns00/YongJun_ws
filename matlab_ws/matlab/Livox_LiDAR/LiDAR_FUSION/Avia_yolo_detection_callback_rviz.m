@@ -2,7 +2,7 @@
 clear; clc
 
 % Connect udp data communication
-Avia_UDP = udpport("byte","LocalPort",56001,"ByteOrder","little-endian");
+Avia_UDP = udpport("datagram","LocalPort",56001);
 
 %% ROS Node 
 
@@ -24,7 +24,7 @@ sub.Yolo_img = ros2subscriber(Node,"/yolo/dbg_image","sensor_msgs/Image");
 sub.Yolo_track = ros2subscriber(Node,"/yolo/tracking","yolov8_msgs/DetectionArray",@helperCallbackYolo);
 
 % Create Publish Node
-pub.LiDAR = ros2publisher(Node,"/Avia","sensor_msgs/PointCloud2");
+pub.LiDAR = ros2publisher(Node,"/LiDAR/Avia","sensor_msgs/PointCloud2");
 pub.detections = ros2publisher(Node,'/clusters_marker', 'visualization_msgs/MarkerArray');
 
 % Create Publish Message
@@ -60,8 +60,11 @@ player = pcplayer([xmin xmax],[ymin ymax],[zmin zmax],"ColorSource","Z","MarkerS
 % ROI 설정
 roi = [5, 10, -4, 4, -1, 5];     
 
+% Downsample
+gridStep = 0.01;
+
 % Cluster distance 
-clusterThreshold = 0.1;   
+clusterThreshold = 0.04;   
 
 % Set values for frame count 
 frameCount = 1;
@@ -84,12 +87,13 @@ flush(Avia_UDP);
 while true
     
     % Read 1 packet
-    packet = single(read(Avia_UDP,1362))';
+    packet = read(Avia_UDP,1,"uint8");
 
-    [xyzCoords,xyzIntensity,isValid] = Avia_parsing_mex(packet,reset_flag);
+    if size(packet.Data,2) == 1362 
+        [xyzCoords,xyzIntensity,isValid] = Avia_parsing_mex(single((packet.Data)'),reset_flag);
+    end
     
-    
-
+   
     if isValid
         
         % Display n message
@@ -99,29 +103,30 @@ while true
         if mod(frameCount,frame_num) == 0
 
             ptCloud = pointCloud(xyzPointsBuffer,"Intensity",xyzIntensityBuffer);
-            
-            % ROI 영역 내 pointCloud 추출
-            indices = findPointsInROI(ptCloud, roi);
-            roiPtCloud = select(ptCloud, indices);
+            ptCld_ps = helperPtCldProcessing(ptCloud,roi,gridStep); 
             
             % Sending point cloud msg to ROS2 
-            msg_LiDAR = rosWriteXYZ(msg_LiDAR,(ptCloud.Location));
-            msg_LiDAR = rosWriteIntensity(msg_LiDAR,(ptCloud.Intensity));
-            send(pub.LiDAR,msg_LiDAR);
+            if ~isempty(ptCld_ps.Location)
+                msg_LiDAR = ros2message(pub.LiDAR);
+                msg_LiDAR.header.frame_id = 'map';
+                msg_LiDAR = rosWriteXYZ(msg_LiDAR,(ptCld_ps.Location));
+                msg_LiDAR = rosWriteIntensity(msg_LiDAR,(ptCld_ps.Intensity));
+                send(pub.LiDAR,msg_LiDAR);
+            end
 
             Bbox =bboxes_tmp;
             Id = id_tmp;
             Cls = cls_tmp;
 
-            [Distances,bboxesLidar,bboxesUsed] = helpercomputeDistance(Bbox,roiPtCloud,camParams,camToLidar,clusterThreshold);
+            [Distances,bboxesLidar,bboxesUsed] = helperComputeDistance(Bbox,ptCld_ps,camParams,camToLidar,clusterThreshold);
             
+            % Display ptCloud 
+            view(player,ptCld_ps);
+            helperDeleteCuboid(player.Axes)
             
 
-            % Display ptCloud 
-            view(player,roiPtCloud);
-            helperDeleteCuboid(player.Axes)
-            % [msg_Detections, markerIdClusters] = generate_clusters_marker(bboxesLidar, 'map', markerIdClusters,3);
-            % send(pub.detections, msg_Detections);
+            [msg_Detections, markerIdClusters] = generate_clusters_marker(bboxesLidar, 'map', markerIdClusters,3);
+            send(pub.detections, msg_Detections);
 
             if ~isempty(bboxesLidar) 
 
@@ -130,12 +135,11 @@ while true
                 
                 cuboidInfo = helperGetCuboidInfo(bboxesLidar);
                 helperDrawCuboid(player.Axes,cuboidInfo,'red',Distances,Id,Cls)
-                % showShape('cuboid',bboxesLidar,'Parent',player.Axes,'Opacity',0.2,'Color','red','LineWidth',0.5,'Label',round(Distances,2) + "m",'LabelFontSize',6);
                 
-                % [msg_Detections, markerIdClusters] = generate_clusters_marker(bboxesLidar, 'map', markerIdClusters,0);
-                % send(pub.detections, msg_Detections);
+                [msg_Detections, markerIdClusters] = generate_clusters_marker(bboxesLidar, 'map', markerIdClusters,0);
+                send(pub.detections, msg_Detections);
             end
-            
+
             xyzPointsBuffer = [];
             xyzIntensityBuffer = [];
         end
@@ -151,9 +155,9 @@ end
 %% Support Functions
 
 function [markerArrayMsg, markerID] = generate_clusters_marker(bboxesLidar, frameId, markerID, action)
-   
+
     markerArrayMsg = ros2message('visualization_msgs/MarkerArray');
-    
+
     for i = 1:size(bboxesLidar,1)
 
         markerMsg = ros2message('visualization_msgs/Marker');
@@ -161,14 +165,14 @@ function [markerArrayMsg, markerID] = generate_clusters_marker(bboxesLidar, fram
         markerMsg.id = int32(markerID); % Cast 'markerID' to int32
 
         markerID = markerID + 1;  % Increment markerID by 1 for each new marker
-        
+
         markerMsg.type = int32(1);
         markerMsg.action = int32(action);
 
         markerMsg.pose.position.x = double(bboxesLidar(i,1));
         markerMsg.pose.position.y = double(bboxesLidar(i,2));
         markerMsg.pose.position.z = double(bboxesLidar(i,3));
-        
+
         quat = eul2quat([bboxesLidar(i,9),bboxesLidar(i,8),bboxesLidar(i,7)]);
 
         markerMsg.pose.orientation.w = quat(1);
@@ -179,13 +183,13 @@ function [markerArrayMsg, markerID] = generate_clusters_marker(bboxesLidar, fram
         markerMsg.scale.x = double(bboxesLidar(i,4));
         markerMsg.scale.y = double(bboxesLidar(i,5));
         markerMsg.scale.z = double(bboxesLidar(i,6));
-        
+
         % Set Color
         markerMsg.color.r = single(0);
         markerMsg.color.g = single(0);
         markerMsg.color.b = single(1);
         markerMsg.color.a = single(0.8);
-        
+
         markerArrayMsg.markers(i) = markerMsg;
     end
 end

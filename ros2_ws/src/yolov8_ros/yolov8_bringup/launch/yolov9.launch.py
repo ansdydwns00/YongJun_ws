@@ -35,7 +35,7 @@ def generate_launch_description():
                 "device": LaunchConfiguration("device", default="cuda:0"),
                 "enable": LaunchConfiguration("enable", default="True"),
                 "threshold": LaunchConfiguration("threshold", default="0.5"),
-                "input_image_topic": LaunchConfiguration("input_image_topic", default="/camera/color/image_raw"),
+                "input_image_topic": LaunchConfiguration("input_image_topic", default="/camera/camera/color/image_raw"),
                 "image_reliability": LaunchConfiguration("image_reliability", default="2"),
                 "namespace": LaunchConfiguration("namespace", default="yolo"),
             }.items(),

@@ -21,7 +21,7 @@ clear; clc
 % Avia_UDP = udpport("byte","LocalPort",56002,"ByteOrder","little-endian");
 
 % prev avia
-Avia_UDP = udpport("byte","LocalPort",56001,"ByteOrder","little-endian");
+Avia_UDP = udpport("datagram","LocalPort",56001);
 %% Visualization
 
 % Setting point cloud viewer parameter
@@ -29,7 +29,7 @@ xmin = 0;  xmax = 10;
 ymin = -5; ymax = 5;
 zmin = -2; zmax = 4;
 
-player = pcplayer([xmin xmax],[ymin ymax],[zmin zmax],"ColorSource","Z");
+player = pcplayer([xmin xmax],[ymin ymax],[zmin zmax],"ColorSource","X");
 
 
 % Set values for frame count 
@@ -45,21 +45,28 @@ reset_flag = single(0);
 xyzPointsBuffer = [];
 xyzIntensityBuffer = [];
 
+% ROI 설정
+roi = [3, 10, -4, 4, -1, 5];  
+
+% Downsample
+gridStep = 0.1;
+
+
 flush(Avia_UDP)
 
-% tic
-% start_time = toc;
-% last_framecount = 0;
+tic
+start_time = toc;
+last_framecount = 0;
 while true
 
     % Read 1 packet
-    packet = single(read(Avia_UDP,1362))';
-
-    % [xyzCoords,xyzIntensity,isValid] = Avia_parsing(packet,reset_flag);
-    [xyzCoords,xyzIntensity,isValid] = Avia_parsing(packet,reset_flag);
+    packet = read(Avia_UDP,1,"uint8");
+    
+    if size(packet.Data,2) == 1362 
+        [xyzCoords,xyzIntensity,isValid] = Avia_parsing_mex(single((packet.Data)'),reset_flag);
+    end
 
     if isValid
-        
         % Display n message
         xyzPointsBuffer = vertcat(xyzPointsBuffer,xyzCoords);
         xyzIntensityBuffer = vertcat(xyzIntensityBuffer,xyzIntensity);
@@ -67,7 +74,8 @@ while true
         if mod(frameCount,frame_num) == 0
 
             ptCloud = pointCloud(xyzPointsBuffer,"Intensity",xyzIntensityBuffer);
-                       
+            % ptCld_ps = HelperPtCldProcessing(ptCloud,gridStep,roi);   
+            
             % Display ptCloud 
             view(player,ptCloud);
             
@@ -76,17 +84,17 @@ while true
         end
         
         % Display Rendering rate 
-        % current_time = toc;
-        % if current_time - start_time >= 1
-        %     frame_count_diff = frameCount - last_framecount - 1;
-        %     fprintf("Create %d ptCloud image in 1 second\n", frame_count_diff);
-        %     last_framecount = frameCount;
-        %     start_time = current_time;
-        % end
+        current_time = toc;
+        if current_time - start_time >= 1
+            frame_count_diff = frameCount - last_framecount - 1;
+            fprintf("Create %d ptCloud image in 1 second\n", frame_count_diff);
+            last_framecount = frameCount;
+            start_time = current_time;
+        end
         
         frameCount = frameCount + 1;
         flush(Avia_UDP)
     end
-    
+        
     reset_flag = single(1);
 end

@@ -1,7 +1,7 @@
 clear; clc
 
 % rosbag 객체 생성
-calib_bag = ros2bagreader("/home/aiv/Calib2.bag");
+calib_bag = ros2bagreader("/home/aiv/calib_640x480.bag");
 
 %ros lidar, camera 데이터 읽기
 image_bag = select(calib_bag,"Topic","/camera/camera/color/image_raw/compressed");
@@ -38,8 +38,8 @@ else
     end
 end
 
-pcFilesPath = fullfile(tempdir,'Avia_ptCld');
-imageFilesPath = fullfile(tempdir,'RS_img');
+pcFilesPath = fullfile(tempdir,'ptCld_640x480');
+imageFilesPath = fullfile(tempdir,'img_640x480');
 
 if ~exist(imageFilesPath,'dir')
     mkdir(imageFilesPath);
