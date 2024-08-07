@@ -1,4 +1,4 @@
-function GbboxInfo = HelperCallbackPCDet(msg)
+function HelperCallbackPCDet(msg)
     % number of detections 
     num_detection = size(msg.detections,1);
     
@@ -41,5 +41,5 @@ function GbboxInfo = HelperCallbackPCDet(msg)
     G_bbox = bbox_tmp;
     G_id = id_tmp';
     G_cls = cls_tmp';
-    
+    disp(G_bbox)
 end

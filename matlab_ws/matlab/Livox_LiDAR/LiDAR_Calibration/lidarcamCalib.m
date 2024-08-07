@@ -1,7 +1,7 @@
 clear; clc
 
 % rosbag 객체 생성
-calib_bag = ros2bagreader("/home/aiv/calib_640x480.bag");
+calib_bag = ros2bagreader("/home/aiv/lcc_640");
 
 %ros lidar, camera 데이터 읽기
 image_bag = select(calib_bag,"Topic","/camera/camera/color/image_raw/compressed");
@@ -16,6 +16,7 @@ ts1 = timetable(image_bag);
 ts2 = timetable(ptCld_bag);
 t1 = (ts1.Time)*50;
 t2 = (ts2.Time)*50;
+
 %% 
 
 k = 1;
@@ -48,6 +49,7 @@ end
 if ~exist(pcFilesPath,'dir')
     mkdir(pcFilesPath);
 end
+
 %% 
 
 for i = 1:10:length(idx)

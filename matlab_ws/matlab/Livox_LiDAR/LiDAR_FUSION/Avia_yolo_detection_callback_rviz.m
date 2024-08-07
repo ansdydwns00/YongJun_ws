@@ -36,7 +36,7 @@ msg_LiDAR.header.frame_id = 'map';
 %% Main 
 
 % Load LiDAR-Camera Calibration parameter
-load("Avia_realsense_Calib.mat");
+load("lcc_params_640.mat");
 
 % 라이다 카메라 칼리브레이션 파일
 % lidarToCam = tform;              
@@ -50,7 +50,7 @@ camParams = cameraParams;
 %-----------------------------------Visualization-----------------------------------%
 %===================================================================================%
 % Set x,y,z range of pcplayer
-xmin = 0;      xmax = 10;
+xmin = 0;      xmax = 60;
 ymin = -5;     ymax = 5;
 zmin = -2;      zmax = 4;
 
@@ -58,7 +58,7 @@ player = pcplayer([xmin xmax],[ymin ymax],[zmin zmax],"ColorSource","Z","MarkerS
 
 
 % ROI 설정
-roi = [5, 10, -4, 4, -1, 5];     
+roi = [5, 50, -4, 4, -1, 5];     
 
 % Downsample
 gridStep = 0.01;

@@ -6,13 +6,13 @@ Avia_UDP = udpport("datagram","LocalPort",56001);
 
 %% ROS Node 
 
-global id_tmp
-global cls_tmp
-global bboxes_tmp
+global g_id
+global g_cls
+global g_bboxes
 
-bboxes_tmp = [];
-id_tmp = {};
-cls_tmp = {};
+g_bboxes = [];
+g_id = {};
+g_cls = {};
 
 % Create a node for connection between MATLAB and ROS2
 Node = ros2node("/IVL");
@@ -31,67 +31,91 @@ pub.detections = ros2publisher(Node,'/clusters_marker', 'visualization_msgs/Mark
 msg_LiDAR = ros2message(pub.LiDAR);
 msg_LiDAR.header.frame_id = 'map';
 
-%% Main 
+
+%% 
+
+
+
+%-----------------------------------------------------------------------------------%
+%-------------------------------Calibration Parameter-------------------------------%
+%-----------------------------------------------------------------------------------%
 
 % Load LiDAR-Camera Calibration parameter
-load("Avia_realsense_Calib.mat");
+load("lcc_params_640.mat");
 
 % 라이다 카메라 칼리브레이션 파일
-% lidarToCam = tform;              
+lidarToCam = tform;              
 camToLidar = invert(tform);
 
 % 카메라 칼리브레이션 파일
-camParams = cameraParams;  
+% camparams;
+%-----------------------------------------------------------------------------------%
 
 
-%===================================================================================%
+
+%-----------------------------------------------------------------------------------%
 %-----------------------------------Visualization-----------------------------------%
-%===================================================================================%
+%-----------------------------------------------------------------------------------%
 % Set x,y,z range of pcplayer
-xmin = 0;      xmax = 8;
-ymin = -4;     ymax = 4;
-zmin = -2;      zmax = 4;
+xmin = 0;      xmax = 10;
+ymin = -10;     ymax = 10;
+zmin = -2;     zmax = 4;
 
 player = pcplayer([xmin xmax],[ymin ymax],[zmin zmax],"ColorSource","X","MarkerSize",4);
+%-----------------------------------------------------------------------------------%
 
 
+
+
+%-----------------------------------------------------------------------------------%
+%------------------------------Clustering Parameter---------------------------------%
+%-----------------------------------------------------------------------------------%
 % ROI 설정
-roi = [4, 10, -4, 4, -0.5, 5];     
+roi = [0, 10, -5, 5, -2, 2];     
 
 % Downsample
 gridStep = 0.01;
 
 % Cluster distance 
-clusterThreshold = 0.09;   
+clusterThreshold = 0.1;   
+%-----------------------------------------------------------------------------------%
 
+
+
+%-----------------------------------------------------------------------------------%
+%-----------------------------------UDP Parameter-----------------------------------%
+%-----------------------------------------------------------------------------------%
 % Set values for frame count 
 frameCount = 1;
 
 % Set values for n frames
-frame_num = 6;
+frame_num = 3;
 
 % Flag for first Run
 reset_flag = single(0);
 
-
 % Parameter for n frame buffer
 xyzPointsBuffer = [];
 xyzIntensityBuffer = [];
-                      
+%-----------------------------------------------------------------------------------%
 
+
+
+                      
 flush(Avia_UDP);
 while true
-    
-    % Read 1 packet
-    packet = read(Avia_UDP,1,"uint8");
 
+    % Read 1 packet datagram
+    packet = read(Avia_UDP,1,"uint8");
+    
+    % LiDAR [x,y,z,I] data parsing
     if size(packet.Data,2) == 1362 
         [xyzCoords,xyzIntensity,isValid] = Avia_parsing_mex(single((packet.Data)'),reset_flag);
     end
     
     if isValid
         
-        % Display n message
+        % Store [frame_num] message
         xyzPointsBuffer = vertcat(xyzPointsBuffer,xyzCoords);
         xyzIntensityBuffer = vertcat(xyzIntensityBuffer,xyzIntensity);
         
@@ -99,29 +123,32 @@ while true
 
             ptCloud = pointCloud(xyzPointsBuffer,"Intensity",xyzIntensityBuffer);
             
+            % Preprocessing point clound (ROI, Downsampling, remove ground)
             if ~isempty(ptCloud.Location)
-                ptCld_ps = helperPtCldProcessing(ptCloud,roi,gridStep); 
-
-                Bbox =bboxes_tmp;
-                Id = id_tmp;
-                Cls = cls_tmp;
-    
-                [Distances,bboxesLidar,bboxesUsed] = helperComputeDistance(Bbox,ptCld_ps,camParams,camToLidar,clusterThreshold);
-                
-                % Display ptCloud 
-                view(player,ptCld_ps);
-                helperDeleteCuboid(player.Axes)
-    
-                if ~isempty(bboxesLidar) 
-    
-                    Id(~bboxesUsed') = [];
-                    Cls(~bboxesUsed') = [];           
-                    
-                    cuboidInfo = helperGetCuboidInfo(bboxesLidar);
-                    helperDrawCuboid(player.Axes,cuboidInfo,'red',Distances,Id,Cls)
-                   
-                end
+                ptCloud = helperPtCldProcessing(ptCloud,roi,gridStep); 
             end
+
+            l_bboxes = g_bboxes;
+            l_id = g_id;
+            l_cls = g_cls;
+            
+            % Object detection
+            [Distances,bboxesLidar,bboxesUsed] = helperComputeDistance(l_bboxes,ptCloud,camParams,camToLidar,clusterThreshold);
+            
+            % Display ptCloud
+            view(player,ptCloud);
+            helperDeleteCuboid(player.Axes)
+
+            if ~isempty(bboxesLidar)
+
+                l_id(~bboxesUsed') = [];
+                l_cls(~bboxesUsed') = [];           
+                
+                cuboidInfo = helperGetCuboidInfo(bboxesLidar);
+                helperDrawCuboid(player.Axes,cuboidInfo,'red',Distances,l_id,l_cls)
+               
+            end
+            
             xyzPointsBuffer = [];
             xyzIntensityBuffer = [];
         end
@@ -129,7 +156,14 @@ while true
        frameCount = frameCount + 1;
        flush(Avia_UDP);
     end    
-
+    
     reset_flag = single(1);
 end
 
+
+
+            % Display Rendering rate 
+            % elapsedTime = toc;
+            % frameRate = frameCount / elapsedTime;
+            % fprintf("Rendering rate: %f hz\n",frameRate);
+            % toc

@@ -1,12 +1,15 @@
-function ptCld_ps = helperPtCldProcessing(ptCld,roi,gridStep)
+function ptCld = helperPtCldProcessing(pt,roi,gridStep)
     
     % pointCloud ROI 
-    indices = findPointsInROI(ptCld, roi);
-    ptCld_roi = select(ptCld, indices);
-    % ptCld_ps = ptCld_roi;
+    indices = findPointsInROI(pt, roi);
+    ptCld = select(pt, indices);
     
     % pointCloud Downsampling
-    ptCld_ps = pcdownsample(ptCld_roi,"gridAverage",gridStep);
+    % ptCld = pcdownsample(ptCld,"gridAverage",gridStep);
     
-    % ptCld_ps = pcdenoise(ptCld_ds);
+    % Remove ground plane
+    groundPtsIndex = segmentGroundSMRF(ptCld,'SlopeThreshold',0.15,'ElevationThreshold',0.1,'ElevationScale',1.25);
+    ptCld = select(ptCld,~groundPtsIndex);
+    
+    % ptCld = pcdenoise(ptCld);
 end

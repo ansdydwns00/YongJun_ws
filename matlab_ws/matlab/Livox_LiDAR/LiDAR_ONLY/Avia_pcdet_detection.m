@@ -29,24 +29,24 @@ msg_LiDAR.header.frame_id = 'map';
 %-----------------------------------Visualization-----------------------------------%
 %===================================================================================%
 % Set x,y,z range of pcplayer
-xmin = 0;      xmax = 100;
-ymin = -40;     ymax = 40;
+xmin = 0;      xmax = 10;
+ymin = -5;     ymax = 5;
 zmin = -2;      zmax = 4;
 
-player = pcplayer([xmin xmax],[ymin ymax],[zmin zmax],"ColorSource","Z","MarkerSize",4);
+player = pcplayer([xmin xmax],[ymin ymax],[zmin zmax],"ColorSource","X","MarkerSize",4);
 
 
 % ROI 설정
-roi = [5, 10, -4, 4, -1, 5];     
+roi = [2, 10, -4, 4, -1, 5];     
 
 % Downsample
 gridStep = 0.1;
 
 % Set values for frame count 
-frameCount = 1;
+frameCount = 3;
 
 % Set values for n frames
-frame_num = 6;
+frame_num = 3;
 
 % Flag for first Run
 reset_flag = single(0);
@@ -58,6 +58,7 @@ xyzIntensityBuffer = [];
 L_bbox = [];
 L_id = [];
 L_cls = [];
+
 
 flush(Avia_UDP);
 while true
@@ -71,22 +72,24 @@ while true
     
     if isValid
         
-        % Display n message
+        % Store [frame_num] message
         xyzPointsBuffer = vertcat(xyzPointsBuffer,xyzCoords);
         xyzIntensityBuffer = vertcat(xyzIntensityBuffer,xyzIntensity);
         
         if mod(frameCount,frame_num) == 0
             
-            ptCloud = pointCloud(xyzPointsBuffer,"Intensity",xyzIntensityBuffer);
+            % ptCloud = pointCloud(xyzPointsBuffer,"Intensity",xyzIntensityBuffer);
+            ptCloud = pointCloud(xyzPointsBuffer,"Intensity",zeros(size(xyzPointsBuffer,1),1));
             
-            ptCld_ps = HelperPtCldProcessing(ptCloud,gridStep,roi);
-            
-            if ~isempty(ptCld_ps)
+            % Preprocessing point clound (ROI, Downsampling, remove ground)
+            if ~isempty(ptCloud.Location)
+                ptCloud = HelperPtCldProcessing(ptCloud,roi,gridStep); 
+
                 % Sending point cloud msg to ROS2 
                 msg_LiDAR = ros2message(pub.LiDAR);
                 msg_LiDAR.header.frame_id = 'map';
-                msg_LiDAR = rosWriteXYZ(msg_LiDAR,(ptCld_ps.Location));
-                msg_LiDAR = rosWriteIntensity(msg_LiDAR,(ptCld_ps.Intensity));
+                msg_LiDAR = rosWriteXYZ(msg_LiDAR,(ptCloud.Location));
+                msg_LiDAR = rosWriteIntensity(msg_LiDAR,(ptCloud.Intensity));
                 send(pub.LiDAR,msg_LiDAR);
             end
             
@@ -95,12 +98,12 @@ while true
             L_cls = G_cls;
 
             % Display ptCloud 
-            view(player,ptCld_ps);
+            view(player,ptCloud);
             HelperDeleteCuboid(player.Axes)
 
-            if ~isempty(L_bbox) && ~isempty(ptCld_ps.Location)                 
+            if ~isempty(L_bbox) && ~isempty(ptCloud.Location)                 
                 
-                Distances = HelperComputeDistance(L_bbox,ptCld_ps);
+                Distances = HelperComputeDistance(L_bbox,ptCloud);
 
                 HelperDrawCuboid(player.Axes,L_bbox,Distances,L_id,L_cls) 
             end

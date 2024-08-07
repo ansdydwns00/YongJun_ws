@@ -6,7 +6,7 @@ function [Distances,bboxesLidar,bboxesUsed] = helperComputeDistance(bboxes,ptCld
 
     if ~isempty(bboxes) && ~isempty(ptCld.Location)
 
-        [bboxesLidar, ~, bboxesUsed] = bboxCameraToLidar(bboxes, ptCld, cameraParams, CamToLidar, 'ClusterThreshold', clusterThreshold);  
+        [bboxesLidar, ~, bboxesUsed] = bboxCameraToLidar(bboxes, ptCld, cameraParams, CamToLidar, 'ClusterThreshold', clusterThreshold,'MaxDetectionRange',[2,10]);  
         
         % [0 0 0 0 0 0 0 0 0] value remove
         idx_del = all(bboxesLidar == 0, 2);
