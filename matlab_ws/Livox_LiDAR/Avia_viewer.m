@@ -1,18 +1,18 @@
-% %% Timer for Handshake protocol
-% 
-% % Initialize workspace
+%% Timer for Handshake protocol
+
+% Initialize workspace
 % clear; clc;
-% 
-% % Connect udp handshake communication
-% udpObj = udpport("datagram","LocalPort",55501);
-% 
-% % Start timer
-% t = timer;
-% t.Period = 1;
-% t.TimerFcn = {@InitProtocol,udpObj};
-% t.ExecutionMode = 'fixedRate';
-% 
-% start(t)
+
+% Connect udp handshake communication
+udpObj = udpport("datagram","LocalPort",55000);
+
+% Start timer
+t = timer;
+t.Period = 1;
+t.TimerFcn = {@InitProtocol,udpObj};
+t.ExecutionMode = 'fixedRate';
+
+start(t)
 
 %% Connect AVIA UDP Communication
 clear; clc
@@ -25,7 +25,7 @@ Avia_UDP = udpport("datagram","LocalPort",56001);
 %% Visualization
 
 % Setting point cloud viewer parameter
-xmin = 0;  xmax = 50;
+xmin = 0;  xmax = 10;
 ymin = -5; ymax = 5;
 zmin = -2; zmax = 4;
 

@@ -1,0 +1,383 @@
+[0.000000] (-) TimerEvent: {}
+[0.000392] (vision_msgs) JobQueued: {'identifier': 'vision_msgs', 'dependencies': OrderedDict()}
+[0.000430] (vision_msgs) JobStarted: {'identifier': 'vision_msgs'}
+[0.019564] (vision_msgs) JobProgress: {'identifier': 'vision_msgs', 'progress': 'cmake'}
+[0.019702] (vision_msgs) Command: {'cmd': ['/usr/local/MATLAB/R2024a/bin/glnxa64/cmake/bin/cmake', '/home/aiv/YongJun_ws/matlab_ws/ros_msg/matlab_msg_gen/glnxa64/src/vision_msgs', '-DCMAKE_BUILD_TYPE=Release', '-DCMAKE_SHARED_LINKER_FLAGS=-Wl,-no-as-needed', '-DBUILD_TESTING=OFF', '-DALIAS_ROS2_TF2=1', '-DCMAKE_CXX_FLAGS_RELEASE=-O0', '-G', 'Ninja', '-DCMAKE_C_COMPILER=/usr/bin/gcc', '-DCMAKE_CXX_COMPILER=/usr/bin/g++', '-DCMAKE_INSTALL_PREFIX=/home/aiv/YongJun_ws/matlab_ws/ros_msg/matlab_msg_gen/glnxa64/install'], 'cwd': '/home/aiv/YongJun_ws/matlab_ws/ros_msg/matlab_msg_gen/glnxa64/build/vision_msgs', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('ARCH', 'glnxa64'), ('CUSTOM_LD_LIBRARY_PATH', ''), ('USER', 'aiv'), ('LOCAL_PYTHON_VENV_PATH', '/home/aiv/.matlab/R2024a/ros2/glnxa64/venv'), ('MEMKIND_HEAP_MANAGER', 'TBB'), ('CUSTOM_AMENT_PREFIX_PATH', '/home/aiv/YongJun_ws/ros2_ws/src/yolov8_ros/matlab_msg_gen/glnxa64/install:/usr/local/MATLAB/R2024a/sys/ros2/glnxa64/ros2'), ('SSH_AGENT_PID', '2228'), ('XDG_SESSION_TYPE', 'x11'), ('KMP_HANDLE_SIGNALS', '0'), ('SHLVL', '2'), ('ICU_TIMEZONE_FILES_DIR', '/usr/local/MATLAB/R2024a/bin/icutzdata'), ('LD_LIBRARY_PATH', ':/usr/local/MATLAB/R2024a/sys/ros2/glnxa64/ros2/lib:/usr/local/MATLAB/R2024a/sys/os/glnxa64:/usr/local/MATLAB/R2024a/bin/glnxa64:/home/aiv/.MathWorks/sjIU_JBHMpDfD2I6PVGUzD1UvwcpVSfTWaVgy57sVOE/bin/glnxa64:/usr/local/MATLAB/R2024a/extern/lib/glnxa64:/usr/local/MATLAB/R2024a/cefclient/sys/os/glnxa64:/usr/local/MATLAB/R2024a/runtime/glnxa64:/usr/local/MATLAB/R2024a/sys/java/jre/glnxa64/jre/lib/amd64/native_threads:/usr/local/MATLAB/R2024a/sys/java/jre/glnxa64/jre/lib/amd64/server:/usr/local/cuda-11.8/lib64:'), ('BASEMATLABPATH', ''), ('HOME', '/home/aiv'), ('AUTOMOUNT_MAP', ''), ('OLDPWD', '/usr/local/MATLAB/R2024a'), ('DESKTOP_SESSION', 'ubuntu'), ('MW_LD_SHIM', '/usr/local/MATLAB/R2024a/bin/glnxa64/ld_shim.so.2.31.ubuntu_20_04'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', ''), ('KMP_BLOCKTIME', '1'), ('PS1', '(venv)'), ('LIBVA_MESSAGING_LEVEL', '0'), ('MANAGERPID', '2128'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('TERMINATOR_DBUS_NAME', 'net.tenshu.Terminator23558193cd9818af7fe4d2c2f5bd9d00f'), ('GIO_LAUNCHED_DESKTOP_FILE_PID', '112923'), ('CUSTOM_SITE_PACKAGES_PATH', ''), ('IM_CONFIG_PHASE', '1'), ('COLCON_PREFIX_PATH', '/home/aiv/YongJun_ws/ros2_ws/src/yolov8_ros/matlab_msg_gen/glnxa64/install:/usr/local/MATLAB/R2024a/sys/ros2/glnxa64/ros2:/usr/local/MATLAB/R2024a/sys/ros2/glnxa64/ros2'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'aiv'), ('MATLAB_MEM_MGR_VALUE', ''), ('JOURNAL_STREAM', '8:41188'), ('_', '/home/aiv/.matlab/R2024a/ros2/glnxa64/venv/bin/colcon'), ('PKG_CONFIG_PATH', '/usr/local/MATLAB/R2024a/sys/ros2/glnxa64/ros2/lib/pkgconfig'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'aiv'), ('TERM', 'dumb'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('WINDOWPATH', '2'), ('PATH', '/usr/local/MATLAB/R2024a/bin/glnxa64/cmake/bin::/usr/local/MATLAB/R2024a/sys/ros2/glnxa64/ros2/bin:/home/aiv/.matlab/R2024a/ros2/glnxa64/venv/bin:/home/aiv/.matlab/R2024a/ros2/glnxa64/venv/bin:/usr/local/MATLAB/R2024a/toolbox/shared/coder/ninja/glnxa64:/usr/local/cuda-11.8/bin:/home/aiv/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/usr/local/bin'), ('SESSION_MANAGER', 'local/aiv:@/tmp/.ICE-unix/2264,unix/aiv:/tmp/.ICE-unix/2264'), ('INVOCATION_ID', '0854f21b05cd47a1bdf017ca3279c55f'), ('XDG_MENU_PREFIX', 'gnome-'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('TOOLBOX', '/usr/local/MATLAB/R2024a/toolbox'), ('MKL_DOMAIN_NUM_THREADS', ''), ('KMP_INIT_AT_FORK', 'false'), ('DISPLAY', ':1'), ('TERMINATOR_DBUS_PATH', '/net/tenshu/Terminator2'), ('LD_PRELOAD', ''), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('PRE_LD_PRELOAD', ''), ('VIRTUAL_ENV_PROMPT', '(venv)'), ('RMW_IMPLEMENTATION', ''), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/aiv/YongJun_ws/ros2_ws/src/yolov8_ros/matlab_msg_gen/glnxa64/install:/usr/local/MATLAB/R2024a/sys/ros2/glnxa64/ros2:/usr/local/MATLAB/R2024a/sys/ros2/glnxa64/ros2'), ('SHELL', '/bin/bash'), ('TERMINATOR_UUID', 'urn:uuid:4062e127-c5f4-42e7-8ae4-fb79495f74f0'), ('CMAKE_PATH', '/usr/local/MATLAB/R2024a/bin/glnxa64/cmake/bin'), ('XFILESEARCHPATH', '/usr/local/MATLAB/R2024a/sys/java/jre/glnxa64/jre/lib/locale/%L/%T/%N%S:'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('OSG_LD_LIBRARY_PATH', '/usr/local/MATLAB/R2024a/sys/openscenegraph/lib/glnxa64'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('VIRTUAL_ENV', '/home/aiv/.matlab/R2024a/ros2/glnxa64/venv'), ('CUSTOM_PATH', ''), ('KMP_STACKSIZE', '512k'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/aiv/YongJun_ws/matlab_ws/ros_msg/matlab_msg_gen/glnxa64/build/vision_msgs'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('DYLD_LIBRARY_PATH', ':/usr/local/MATLAB/R2024a/sys/ros2/glnxa64/ros2/lib:'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('MKL_NUM_THREADS', ''), ('MW_PATCH_OFFSETS', '0000104000000050'), ('PYTHONPATH', ':/usr/local/MATLAB/R2024a/sys/ros2/glnxa64/ros2/lib/python3.9/site-packages:/home/aiv/.matlab/R2024a/ros2/glnxa64/venv/lib/python3.10/site-packages:'), ('LC_NUMERIC', 'C'), ('COLCON', '1'), ('VTE_VERSION', '6003'), ('CMAKE_PREFIX_PATH', '/home/aiv/YongJun_ws/ros2_ws/src/yolov8_ros/matlab_msg_gen/glnxa64/install:/usr/local/MATLAB/R2024a/sys/ros2/glnxa64/ros2:/usr/local/MATLAB/R2024a/sys/ros2/glnxa64/ros2')]), 'shell': False}
+[0.076894] (vision_msgs) StdoutLine: {'line': b'-- The C compiler identification is GNU 9.4.0\n'}
+[0.099820] (-) TimerEvent: {}
+[0.126265] (vision_msgs) StdoutLine: {'line': b'-- The CXX compiler identification is GNU 9.4.0\n'}
+[0.136569] (vision_msgs) StdoutLine: {'line': b'-- Detecting C compiler ABI info\n'}
+[0.171077] (vision_msgs) StdoutLine: {'line': b'-- Detecting C compiler ABI info - done\n'}
+[0.178794] (vision_msgs) StdoutLine: {'line': b'-- Check for working C compiler: /usr/bin/gcc - skipped\n'}
+[0.179002] (vision_msgs) StdoutLine: {'line': b'-- Detecting C compile features\n'}
+[0.179553] (vision_msgs) StdoutLine: {'line': b'-- Detecting C compile features - done\n'}
+[0.182237] (vision_msgs) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info\n'}
+[0.199983] (-) TimerEvent: {}
+[0.226322] (vision_msgs) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info - done\n'}
+[0.232506] (vision_msgs) StdoutLine: {'line': b'-- Check for working CXX compiler: /usr/bin/g++ - skipped\n'}
+[0.232741] (vision_msgs) StdoutLine: {'line': b'-- Detecting CXX compile features\n'}
+[0.233106] (vision_msgs) StdoutLine: {'line': b'-- Detecting CXX compile features - done\n'}
+[0.236038] (vision_msgs) StdoutLine: {'line': b'-- Found ament_cmake: 1.3.3 (/usr/local/MATLAB/R2024a/sys/ros2/glnxa64/ros2/share/ament_cmake/cmake)\n'}
+[0.300142] (-) TimerEvent: {}
+[0.400426] (-) TimerEvent: {}
+[0.500682] (-) TimerEvent: {}
+[0.600941] (-) TimerEvent: {}
+[0.701210] (-) TimerEvent: {}
+[0.801516] (-) TimerEvent: {}
+[0.901785] (-) TimerEvent: {}
+[0.909335] (vision_msgs) StdoutLine: {'line': b'-- Found Python3: /home/aiv/.matlab/R2024a/ros2/glnxa64/venv/bin/python3.10 (found version "3.10.14") found components: Interpreter \n'}
+[0.975168] (vision_msgs) StdoutLine: {'line': b'-- Found ament_cmake_ros: 0.10.0 (/usr/local/MATLAB/R2024a/sys/ros2/glnxa64/ros2/share/ament_cmake_ros/cmake)\n'}
+[0.981218] (vision_msgs) StdoutLine: {'line': b'-- Found rosidl_typesupport_c: 2.0.0 (/usr/local/MATLAB/R2024a/sys/ros2/glnxa64/ros2/share/rosidl_typesupport_c/cmake)\n'}
+[0.981805] (vision_msgs) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[0.986692] (vision_msgs) StdoutLine: {'line': b'-- Found rosidl_adapter: 3.1.4 (/usr/local/MATLAB/R2024a/sys/ros2/glnxa64/ros2/share/rosidl_adapter/cmake)\n'}
+[1.001943] (-) TimerEvent: {}
+[1.023563] (vision_msgs) StdoutLine: {'line': b'-- Found rosidl_typesupport_cpp: 2.0.0 (/usr/local/MATLAB/R2024a/sys/ros2/glnxa64/ros2/share/rosidl_typesupport_cpp/cmake)\n'}
+[1.024144] (vision_msgs) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[1.051814] (vision_msgs) StdoutLine: {'line': b'-- Found rosidl_default_generators: 1.2.0 (/usr/local/MATLAB/R2024a/sys/ros2/glnxa64/ros2/share/rosidl_default_generators/cmake)\n'}
+[1.054903] (vision_msgs) StdoutLine: {'line': b'-- Found class_loader: 2.2.0 (/usr/local/MATLAB/R2024a/sys/ros2/glnxa64/ros2/share/class_loader/cmake)\n'}
+[1.058588] (vision_msgs) StdoutLine: {'line': b'-- Found geometry_msgs: 4.2.3 (/usr/local/MATLAB/R2024a/sys/ros2/glnxa64/ros2/share/geometry_msgs/cmake)\n'}
+[1.102112] (-) TimerEvent: {}
+[1.153711] (vision_msgs) StdoutLine: {'line': b'-- Found rclcpp: 16.0.5 (/usr/local/MATLAB/R2024a/sys/ros2/glnxa64/ros2/share/rclcpp/cmake)\n'}
+[1.199907] (vision_msgs) StdoutLine: {'line': b'-- Found rmw_implementation_cmake: 6.1.1 (/usr/local/MATLAB/R2024a/sys/ros2/glnxa64/ros2/share/rmw_implementation_cmake/cmake)\n'}
+[1.201933] (vision_msgs) StdoutLine: {'line': b'-- Found rmw_fastrtps_cpp: 6.2.2 (/usr/local/MATLAB/R2024a/sys/ros2/glnxa64/ros2/share/rmw_fastrtps_cpp/cmake)\n'}
+[1.202170] (-) TimerEvent: {}
+[1.256114] (vision_msgs) StdoutLine: {'line': b'-- Found FastRTPS: /usr/local/MATLAB/R2024a/sys/ros2/glnxa64/ros2/include  \n'}
+[1.280559] (vision_msgs) StdoutLine: {'line': b"-- Using RMW implementation 'rmw_fastrtps_cpp' as default\n"}
+[1.287095] (vision_msgs) StdoutLine: {'line': b'-- Performing Test CMAKE_HAVE_LIBC_PTHREAD\n'}
+[1.302343] (-) TimerEvent: {}
+[1.329026] (vision_msgs) StdoutLine: {'line': b'-- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Failed\n'}
+[1.329156] (vision_msgs) StdoutLine: {'line': b'-- Looking for pthread_create in pthreads\n'}
+[1.361760] (vision_msgs) StdoutLine: {'line': b'-- Looking for pthread_create in pthreads - not found\n'}
+[1.361904] (vision_msgs) StdoutLine: {'line': b'-- Looking for pthread_create in pthread\n'}
+[1.402515] (-) TimerEvent: {}
+[1.408833] (vision_msgs) StdoutLine: {'line': b'-- Looking for pthread_create in pthread - found\n'}
+[1.410058] (vision_msgs) StdoutLine: {'line': b'-- Found Threads: TRUE  \n'}
+[1.502666] (-) TimerEvent: {}
+[1.602910] (-) TimerEvent: {}
+[1.703166] (-) TimerEvent: {}
+[1.803430] (-) TimerEvent: {}
+[1.817728] (vision_msgs) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[1.903587] (-) TimerEvent: {}
+[1.997915] (vision_msgs) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[2.003741] (-) TimerEvent: {}
+[2.004859] (vision_msgs) StdoutLine: {'line': b'-- Configuring done\n'}
+[2.023967] (vision_msgs) StdoutLine: {'line': b'-- Generating done\n'}
+[2.030822] (vision_msgs) StdoutLine: {'line': b'-- Build files have been written to: /home/aiv/YongJun_ws/matlab_ws/ros_msg/matlab_msg_gen/glnxa64/build/vision_msgs\n'}
+[2.038048] (vision_msgs) CommandEnded: {'returncode': 0}
+[2.038308] (vision_msgs) JobProgress: {'identifier': 'vision_msgs', 'progress': 'build'}
+[2.038324] (vision_msgs) Command: {'cmd': ['/usr/local/MATLAB/R2024a/bin/glnxa64/cmake/bin/cmake', '--build', '/home/aiv/YongJun_ws/matlab_ws/ros_msg/matlab_msg_gen/glnxa64/build/vision_msgs', '--', '-j32', '-l32'], 'cwd': '/home/aiv/YongJun_ws/matlab_ws/ros_msg/matlab_msg_gen/glnxa64/build/vision_msgs', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('ARCH', 'glnxa64'), ('CUSTOM_LD_LIBRARY_PATH', ''), ('USER', 'aiv'), ('LOCAL_PYTHON_VENV_PATH', '/home/aiv/.matlab/R2024a/ros2/glnxa64/venv'), ('MEMKIND_HEAP_MANAGER', 'TBB'), ('CUSTOM_AMENT_PREFIX_PATH', '/home/aiv/YongJun_ws/ros2_ws/src/yolov8_ros/matlab_msg_gen/glnxa64/install:/usr/local/MATLAB/R2024a/sys/ros2/glnxa64/ros2'), ('SSH_AGENT_PID', '2228'), ('XDG_SESSION_TYPE', 'x11'), ('KMP_HANDLE_SIGNALS', '0'), ('SHLVL', '2'), ('ICU_TIMEZONE_FILES_DIR', '/usr/local/MATLAB/R2024a/bin/icutzdata'), ('LD_LIBRARY_PATH', ':/usr/local/MATLAB/R2024a/sys/ros2/glnxa64/ros2/lib:/usr/local/MATLAB/R2024a/sys/os/glnxa64:/usr/local/MATLAB/R2024a/bin/glnxa64:/home/aiv/.MathWorks/sjIU_JBHMpDfD2I6PVGUzD1UvwcpVSfTWaVgy57sVOE/bin/glnxa64:/usr/local/MATLAB/R2024a/extern/lib/glnxa64:/usr/local/MATLAB/R2024a/cefclient/sys/os/glnxa64:/usr/local/MATLAB/R2024a/runtime/glnxa64:/usr/local/MATLAB/R2024a/sys/java/jre/glnxa64/jre/lib/amd64/native_threads:/usr/local/MATLAB/R2024a/sys/java/jre/glnxa64/jre/lib/amd64/server:/usr/local/cuda-11.8/lib64:'), ('BASEMATLABPATH', ''), ('HOME', '/home/aiv'), ('AUTOMOUNT_MAP', ''), ('OLDPWD', '/usr/local/MATLAB/R2024a'), ('DESKTOP_SESSION', 'ubuntu'), ('MW_LD_SHIM', '/usr/local/MATLAB/R2024a/bin/glnxa64/ld_shim.so.2.31.ubuntu_20_04'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', ''), ('KMP_BLOCKTIME', '1'), ('PS1', '(venv)'), ('LIBVA_MESSAGING_LEVEL', '0'), ('MANAGERPID', '2128'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('TERMINATOR_DBUS_NAME', 'net.tenshu.Terminator23558193cd9818af7fe4d2c2f5bd9d00f'), ('GIO_LAUNCHED_DESKTOP_FILE_PID', '112923'), ('CUSTOM_SITE_PACKAGES_PATH', ''), ('IM_CONFIG_PHASE', '1'), ('COLCON_PREFIX_PATH', '/home/aiv/YongJun_ws/ros2_ws/src/yolov8_ros/matlab_msg_gen/glnxa64/install:/usr/local/MATLAB/R2024a/sys/ros2/glnxa64/ros2:/usr/local/MATLAB/R2024a/sys/ros2/glnxa64/ros2'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'aiv'), ('MATLAB_MEM_MGR_VALUE', ''), ('JOURNAL_STREAM', '8:41188'), ('_', '/home/aiv/.matlab/R2024a/ros2/glnxa64/venv/bin/colcon'), ('PKG_CONFIG_PATH', '/usr/local/MATLAB/R2024a/sys/ros2/glnxa64/ros2/lib/pkgconfig'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'aiv'), ('TERM', 'dumb'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('WINDOWPATH', '2'), ('PATH', '/usr/local/MATLAB/R2024a/bin/glnxa64/cmake/bin::/usr/local/MATLAB/R2024a/sys/ros2/glnxa64/ros2/bin:/home/aiv/.matlab/R2024a/ros2/glnxa64/venv/bin:/home/aiv/.matlab/R2024a/ros2/glnxa64/venv/bin:/usr/local/MATLAB/R2024a/toolbox/shared/coder/ninja/glnxa64:/usr/local/cuda-11.8/bin:/home/aiv/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/usr/local/bin'), ('SESSION_MANAGER', 'local/aiv:@/tmp/.ICE-unix/2264,unix/aiv:/tmp/.ICE-unix/2264'), ('INVOCATION_ID', '0854f21b05cd47a1bdf017ca3279c55f'), ('XDG_MENU_PREFIX', 'gnome-'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('TOOLBOX', '/usr/local/MATLAB/R2024a/toolbox'), ('MKL_DOMAIN_NUM_THREADS', ''), ('KMP_INIT_AT_FORK', 'false'), ('DISPLAY', ':1'), ('TERMINATOR_DBUS_PATH', '/net/tenshu/Terminator2'), ('LD_PRELOAD', ''), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('PRE_LD_PRELOAD', ''), ('VIRTUAL_ENV_PROMPT', '(venv)'), ('RMW_IMPLEMENTATION', ''), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/aiv/YongJun_ws/ros2_ws/src/yolov8_ros/matlab_msg_gen/glnxa64/install:/usr/local/MATLAB/R2024a/sys/ros2/glnxa64/ros2:/usr/local/MATLAB/R2024a/sys/ros2/glnxa64/ros2'), ('SHELL', '/bin/bash'), ('TERMINATOR_UUID', 'urn:uuid:4062e127-c5f4-42e7-8ae4-fb79495f74f0'), ('CMAKE_PATH', '/usr/local/MATLAB/R2024a/bin/glnxa64/cmake/bin'), ('XFILESEARCHPATH', '/usr/local/MATLAB/R2024a/sys/java/jre/glnxa64/jre/lib/locale/%L/%T/%N%S:'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('OSG_LD_LIBRARY_PATH', '/usr/local/MATLAB/R2024a/sys/openscenegraph/lib/glnxa64'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('VIRTUAL_ENV', '/home/aiv/.matlab/R2024a/ros2/glnxa64/venv'), ('CUSTOM_PATH', ''), ('KMP_STACKSIZE', '512k'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/aiv/YongJun_ws/matlab_ws/ros_msg/matlab_msg_gen/glnxa64/build/vision_msgs'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('DYLD_LIBRARY_PATH', ':/usr/local/MATLAB/R2024a/sys/ros2/glnxa64/ros2/lib:'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('MKL_NUM_THREADS', ''), ('MW_PATCH_OFFSETS', '0000104000000050'), ('PYTHONPATH', ':/usr/local/MATLAB/R2024a/sys/ros2/glnxa64/ros2/lib/python3.9/site-packages:/home/aiv/.matlab/R2024a/ros2/glnxa64/venv/lib/python3.10/site-packages:'), ('LC_NUMERIC', 'C'), ('COLCON', '1'), ('VTE_VERSION', '6003'), ('CMAKE_PREFIX_PATH', '/home/aiv/YongJun_ws/ros2_ws/src/yolov8_ros/matlab_msg_gen/glnxa64/install:/usr/local/MATLAB/R2024a/sys/ros2/glnxa64/ros2:/usr/local/MATLAB/R2024a/sys/ros2/glnxa64/ros2')]), 'shell': False}
+[2.103906] (-) TimerEvent: {}
+[2.204183] (-) TimerEvent: {}
+[2.304488] (-) TimerEvent: {}
+[2.343857] (vision_msgs) StdoutLine: {'line': b'[1/56] Generating C++ code for ROS interfaces\n'}
+[2.356511] (vision_msgs) StdoutLine: {'line': b'[2/56] Generating C code for ROS interfaces\n'}
+[2.404717] (-) TimerEvent: {}
+[2.422403] (vision_msgs) StdoutLine: {'line': b'[3/56] Building C object CMakeFiles/vision_msgs__rosidl_generator_c.dir/rosidl_generator_c/vision_msgs/msg/detail/bounding_box3_d__functions.c.o\n'}
+[2.422584] (vision_msgs) StdoutLine: {'line': b'[4/56] Building C object CMakeFiles/vision_msgs__rosidl_generator_c.dir/rosidl_generator_c/vision_msgs/msg/detail/object_hypothesis_with_pose__functions.c.o\n'}
+[2.422669] (vision_msgs) StdoutLine: {'line': b'[5/56] Building C object CMakeFiles/vision_msgs__rosidl_generator_c.dir/rosidl_generator_c/vision_msgs/msg/detail/detection3_d_array__functions.c.o\n'}
+[2.422746] (vision_msgs) StdoutLine: {'line': b'[6/56] Building C object CMakeFiles/vision_msgs__rosidl_generator_c.dir/rosidl_generator_c/vision_msgs/msg/detail/object_hypothesis__functions.c.o\n'}
+[2.423135] (vision_msgs) StdoutLine: {'line': b'[7/56] Building C object CMakeFiles/vision_msgs__rosidl_generator_c.dir/rosidl_generator_c/vision_msgs/msg/detail/detection3_d__functions.c.o\n'}
+[2.435257] (vision_msgs) StdoutLine: {'line': b'[8/56] Linking C shared library libvision_msgs__rosidl_generator_c.so\n'}
+[2.504841] (-) TimerEvent: {}
+[2.599366] (vision_msgs) StdoutLine: {'line': b'[9/56] Generating C++ type support dispatch for ROS interfaces\n'}
+[2.605046] (-) TimerEvent: {}
+[2.629688] (vision_msgs) StdoutLine: {'line': b'[10/56] Generating C++ introspection for ROS interfaces\n'}
+[2.651787] (vision_msgs) StdoutLine: {'line': b'[11/56] Generating C++ type support for eProsima Fast-RTPS\n'}
+[2.703998] (vision_msgs) StdoutLine: {'line': b'[12/56] Generating C type support dispatch for ROS interfaces\n'}
+[2.705153] (-) TimerEvent: {}
+[2.727727] (vision_msgs) StdoutLine: {'line': b'[13/56] Building CXX object CMakeFiles/vision_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/vision_msgs/msg/object_hypothesis__type_support.cpp.o\n'}
+[2.738085] (vision_msgs) StdoutLine: {'line': b'[14/56] Building CXX object CMakeFiles/vision_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/vision_msgs/msg/object_hypothesis_with_pose__type_support.cpp.o\n'}
+[2.739055] (vision_msgs) StdoutLine: {'line': b'[15/56] Building CXX object CMakeFiles/vision_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/vision_msgs/msg/bounding_box3_d__type_support.cpp.o\n'}
+[2.740825] (vision_msgs) StdoutLine: {'line': b'[16/56] Building CXX object CMakeFiles/vision_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/vision_msgs/msg/detection3_d_array__type_support.cpp.o\n'}
+[2.741377] (vision_msgs) StdoutLine: {'line': b'[17/56] Building CXX object CMakeFiles/vision_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/vision_msgs/msg/detection3_d__type_support.cpp.o\n'}
+[2.764094] (vision_msgs) StdoutLine: {'line': b'[18/56] Generating C introspection for ROS interfaces\n'}
+[2.771314] (vision_msgs) StdoutLine: {'line': b'[19/56] Generating C type support for eProsima Fast-RTPS\n'}
+[2.792157] (vision_msgs) StdoutLine: {'line': b'[20/56] Linking CXX shared library libvision_msgs__rosidl_typesupport_c.so\n'}
+[2.805274] (-) TimerEvent: {}
+[2.806035] (vision_msgs) StdoutLine: {'line': b'[21/56] Building C object CMakeFiles/vision_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/vision_msgs/msg/detail/object_hypothesis__type_support.c.o\n'}
+[2.807214] (vision_msgs) StdoutLine: {'line': b'[22/56] Building C object CMakeFiles/vision_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/vision_msgs/msg/detail/bounding_box3_d__type_support.c.o\n'}
+[2.809487] (vision_msgs) StdoutLine: {'line': b'[23/56] Building C object CMakeFiles/vision_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/vision_msgs/msg/detail/object_hypothesis_with_pose__type_support.c.o\n'}
+[2.830038] (vision_msgs) StdoutLine: {'line': b'[24/56] Building C object CMakeFiles/vision_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/vision_msgs/msg/detail/detection3_d__type_support.c.o\n'}
+[2.830991] (vision_msgs) StdoutLine: {'line': b'[25/56] Building C object CMakeFiles/vision_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/vision_msgs/msg/detail/detection3_d_array__type_support.c.o\n'}
+[2.860821] (vision_msgs) StdoutLine: {'line': b'[26/56] Linking C shared library libvision_msgs__rosidl_typesupport_introspection_c.so\n'}
+[2.872805] (vision_msgs) StdoutLine: {'line': b'[27/56] Building CXX object CMakeFiles/vision_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/vision_msgs/msg/object_hypothesis_with_pose__type_support.cpp.o\n'}
+[2.905404] (-) TimerEvent: {}
+[2.918654] (vision_msgs) StdoutLine: {'line': b'[28/56] Building CXX object CMakeFiles/vision_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/vision_msgs/msg/detection3_d__type_support.cpp.o\n'}
+[2.990284] (vision_msgs) StdoutLine: {'line': b'[29/56] Building CXX object CMakeFiles/vision_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/vision_msgs/msg/detail/bounding_box3_d__type_support.cpp.o\n'}
+[3.005515] (-) TimerEvent: {}
+[3.006428] (vision_msgs) StdoutLine: {'line': b'[30/56] Building CXX object CMakeFiles/vision_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/vision_msgs/msg/detail/dds_fastrtps/bounding_box3_d__type_support.cpp.o\n'}
+[3.009160] (vision_msgs) StdoutLine: {'line': b'[31/56] Building CXX object CMakeFiles/vision_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/vision_msgs/msg/detail/object_hypothesis__type_support.cpp.o\n'}
+[3.010396] (vision_msgs) StdoutLine: {'line': b'[32/56] Building CXX object CMakeFiles/vision_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/vision_msgs/msg/object_hypothesis__type_support.cpp.o\n'}
+[3.013857] (vision_msgs) StdoutLine: {'line': b'[33/56] Building CXX object CMakeFiles/vision_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/vision_msgs/msg/bounding_box3_d__type_support.cpp.o\n'}
+[3.020935] (vision_msgs) StdoutLine: {'line': b'[34/56] Building CXX object CMakeFiles/vision_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/vision_msgs/msg/detection3_d_array__type_support.cpp.o\n'}
+[3.068948] (vision_msgs) StdoutLine: {'line': b'[35/56] Linking CXX shared library libvision_msgs__rosidl_typesupport_cpp.so\n'}
+[3.081698] (vision_msgs) StdoutLine: {'line': b'[36/56] Building CXX object CMakeFiles/vision_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/vision_msgs/msg/detail/object_hypothesis__type_support_c.cpp.o\n'}
+[3.099470] (vision_msgs) StdoutLine: {'line': b'[37/56] Building CXX object CMakeFiles/vision_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/vision_msgs/msg/detail/bounding_box3_d__type_support_c.cpp.o\n'}
+[3.103688] (vision_msgs) StdoutLine: {'line': b'[38/56] Building CXX object CMakeFiles/vision_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/vision_msgs/msg/detail/detection3_d__type_support_c.cpp.o\n'}
+[3.105597] (-) TimerEvent: {}
+[3.107265] (vision_msgs) StdoutLine: {'line': b'[39/56] Building CXX object CMakeFiles/vision_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/vision_msgs/msg/detail/detection3_d_array__type_support_c.cpp.o\n'}
+[3.165797] (vision_msgs) StdoutLine: {'line': b'[40/56] Building CXX object CMakeFiles/vision_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/vision_msgs/msg/detail/object_hypothesis_with_pose__type_support.cpp.o\n'}
+[3.170133] (vision_msgs) StdoutLine: {'line': b'[41/56] Building CXX object CMakeFiles/vision_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/vision_msgs/msg/detail/dds_fastrtps/object_hypothesis__type_support.cpp.o\n'}
+[3.205714] (-) TimerEvent: {}
+[3.207021] (vision_msgs) StdoutLine: {'line': b'[42/56] Building CXX object CMakeFiles/vision_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/vision_msgs/msg/detail/dds_fastrtps/object_hypothesis_with_pose__type_support.cpp.o\n'}
+[3.216513] (vision_msgs) StdoutLine: {'line': b'[43/56] Building CXX object CMakeFiles/vision_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/vision_msgs/msg/detail/object_hypothesis_with_pose__type_support_c.cpp.o\n'}
+[3.229064] (vision_msgs) StdoutLine: {'line': b'[44/56] Building CXX object CMakeFiles/vision_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/vision_msgs/msg/detail/dds_fastrtps/detection3_d__type_support.cpp.o\n'}
+[3.258706] (vision_msgs) StdoutLine: {'line': b'[45/56] Linking CXX shared library libvision_msgs__rosidl_typesupport_fastrtps_c.so\n'}
+[3.259970] (vision_msgs) StdoutLine: {'line': b'[46/56] Building CXX object CMakeFiles/vision_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/vision_msgs/msg/detail/dds_fastrtps/detection3_d_array__type_support.cpp.o\n'}
+[3.271260] (vision_msgs) StdoutLine: {'line': b'[47/56] Building CXX object CMakeFiles/vision_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/vision_msgs/msg/detail/detection3_d__type_support.cpp.o\n'}
+[3.283832] (vision_msgs) StdoutLine: {'line': b'[48/56] Building CXX object CMakeFiles/vision_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/vision_msgs/msg/detail/detection3_d_array__type_support.cpp.o\n'}
+[3.303344] (vision_msgs) StdoutLine: {'line': b'[49/56] Linking CXX shared library libvision_msgs__rosidl_typesupport_fastrtps_cpp.so\n'}
+[3.305797] (-) TimerEvent: {}
+[3.326073] (vision_msgs) StdoutLine: {'line': b'[50/56] Linking CXX shared library libvision_msgs__rosidl_typesupport_introspection_cpp.so\n'}
+[3.406008] (-) TimerEvent: {}
+[3.506387] (-) TimerEvent: {}
+[3.606753] (-) TimerEvent: {}
+[3.707159] (-) TimerEvent: {}
+[3.807393] (-) TimerEvent: {}
+[3.907692] (-) TimerEvent: {}
+[4.008011] (-) TimerEvent: {}
+[4.108381] (-) TimerEvent: {}
+[4.208711] (-) TimerEvent: {}
+[4.309025] (-) TimerEvent: {}
+[4.409300] (-) TimerEvent: {}
+[4.509591] (-) TimerEvent: {}
+[4.609840] (-) TimerEvent: {}
+[4.710213] (-) TimerEvent: {}
+[4.810539] (-) TimerEvent: {}
+[4.910821] (-) TimerEvent: {}
+[5.011149] (-) TimerEvent: {}
+[5.111482] (-) TimerEvent: {}
+[5.211803] (-) TimerEvent: {}
+[5.312130] (-) TimerEvent: {}
+[5.412404] (-) TimerEvent: {}
+[5.512756] (-) TimerEvent: {}
+[5.613107] (-) TimerEvent: {}
+[5.713434] (-) TimerEvent: {}
+[5.813766] (-) TimerEvent: {}
+[5.914087] (-) TimerEvent: {}
+[6.014401] (-) TimerEvent: {}
+[6.114738] (-) TimerEvent: {}
+[6.215068] (-) TimerEvent: {}
+[6.315403] (-) TimerEvent: {}
+[6.415759] (-) TimerEvent: {}
+[6.516092] (-) TimerEvent: {}
+[6.616386] (-) TimerEvent: {}
+[6.716679] (-) TimerEvent: {}
+[6.816990] (-) TimerEvent: {}
+[6.917302] (-) TimerEvent: {}
+[7.017686] (-) TimerEvent: {}
+[7.117924] (-) TimerEvent: {}
+[7.218252] (-) TimerEvent: {}
+[7.318580] (-) TimerEvent: {}
+[7.418891] (-) TimerEvent: {}
+[7.519204] (-) TimerEvent: {}
+[7.619514] (-) TimerEvent: {}
+[7.719826] (-) TimerEvent: {}
+[7.820128] (-) TimerEvent: {}
+[7.920369] (-) TimerEvent: {}
+[8.020591] (-) TimerEvent: {}
+[8.120899] (-) TimerEvent: {}
+[8.221205] (-) TimerEvent: {}
+[8.321510] (-) TimerEvent: {}
+[8.421833] (-) TimerEvent: {}
+[8.522141] (-) TimerEvent: {}
+[8.622473] (-) TimerEvent: {}
+[8.722718] (-) TimerEvent: {}
+[8.822971] (-) TimerEvent: {}
+[8.923211] (-) TimerEvent: {}
+[9.023459] (-) TimerEvent: {}
+[9.123719] (-) TimerEvent: {}
+[9.134639] (vision_msgs) StdoutLine: {'line': b'[51/56] Building CXX object CMakeFiles/vision_msgs_matlab.dir/src/vision_msgs_ObjectHypothesis_message.cpp.o\n'}
+[9.174814] (vision_msgs) StdoutLine: {'line': b'[52/56] Building CXX object CMakeFiles/vision_msgs_matlab.dir/src/vision_msgs_ObjectHypothesisWithPose_message.cpp.o\n'}
+[9.223900] (-) TimerEvent: {}
+[9.322027] (vision_msgs) StdoutLine: {'line': b'[53/56] Building CXX object CMakeFiles/vision_msgs_matlab.dir/src/vision_msgs_BoundingBox3D_message.cpp.o\n'}
+[9.324066] (-) TimerEvent: {}
+[9.355409] (vision_msgs) StdoutLine: {'line': b'[54/56] Building CXX object CMakeFiles/vision_msgs_matlab.dir/src/vision_msgs_Detection3DArray_message.cpp.o\n'}
+[9.424271] (-) TimerEvent: {}
+[9.443317] (vision_msgs) StdoutLine: {'line': b'[55/56] Building CXX object CMakeFiles/vision_msgs_matlab.dir/src/vision_msgs_Detection3D_message.cpp.o\n'}
+[9.524365] (-) TimerEvent: {}
+[9.624657] (-) TimerEvent: {}
+[9.725013] (-) TimerEvent: {}
+[9.825422] (-) TimerEvent: {}
+[9.925772] (-) TimerEvent: {}
+[10.026088] (-) TimerEvent: {}
+[10.126417] (-) TimerEvent: {}
+[10.225149] (vision_msgs) StdoutLine: {'line': b'[56/56] Linking CXX shared library libvision_msgs_matlab.so\n'}
+[10.227093] (vision_msgs) CommandEnded: {'returncode': 0}
+[10.227359] (-) TimerEvent: {}
+[10.236585] (vision_msgs) JobProgress: {'identifier': 'vision_msgs', 'progress': 'install'}
+[10.238174] (vision_msgs) Command: {'cmd': ['/usr/local/MATLAB/R2024a/bin/glnxa64/cmake/bin/cmake', '--install', '/home/aiv/YongJun_ws/matlab_ws/ros_msg/matlab_msg_gen/glnxa64/build/vision_msgs'], 'cwd': '/home/aiv/YongJun_ws/matlab_ws/ros_msg/matlab_msg_gen/glnxa64/build/vision_msgs', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('ARCH', 'glnxa64'), ('CUSTOM_LD_LIBRARY_PATH', ''), ('USER', 'aiv'), ('LOCAL_PYTHON_VENV_PATH', '/home/aiv/.matlab/R2024a/ros2/glnxa64/venv'), ('MEMKIND_HEAP_MANAGER', 'TBB'), ('CUSTOM_AMENT_PREFIX_PATH', '/home/aiv/YongJun_ws/ros2_ws/src/yolov8_ros/matlab_msg_gen/glnxa64/install:/usr/local/MATLAB/R2024a/sys/ros2/glnxa64/ros2'), ('SSH_AGENT_PID', '2228'), ('XDG_SESSION_TYPE', 'x11'), ('KMP_HANDLE_SIGNALS', '0'), ('SHLVL', '2'), ('ICU_TIMEZONE_FILES_DIR', '/usr/local/MATLAB/R2024a/bin/icutzdata'), ('LD_LIBRARY_PATH', ':/usr/local/MATLAB/R2024a/sys/ros2/glnxa64/ros2/lib:/usr/local/MATLAB/R2024a/sys/os/glnxa64:/usr/local/MATLAB/R2024a/bin/glnxa64:/home/aiv/.MathWorks/sjIU_JBHMpDfD2I6PVGUzD1UvwcpVSfTWaVgy57sVOE/bin/glnxa64:/usr/local/MATLAB/R2024a/extern/lib/glnxa64:/usr/local/MATLAB/R2024a/cefclient/sys/os/glnxa64:/usr/local/MATLAB/R2024a/runtime/glnxa64:/usr/local/MATLAB/R2024a/sys/java/jre/glnxa64/jre/lib/amd64/native_threads:/usr/local/MATLAB/R2024a/sys/java/jre/glnxa64/jre/lib/amd64/server:/usr/local/cuda-11.8/lib64:'), ('BASEMATLABPATH', ''), ('HOME', '/home/aiv'), ('AUTOMOUNT_MAP', ''), ('OLDPWD', '/usr/local/MATLAB/R2024a'), ('DESKTOP_SESSION', 'ubuntu'), ('MW_LD_SHIM', '/usr/local/MATLAB/R2024a/bin/glnxa64/ld_shim.so.2.31.ubuntu_20_04'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', ''), ('KMP_BLOCKTIME', '1'), ('PS1', '(venv)'), ('LIBVA_MESSAGING_LEVEL', '0'), ('MANAGERPID', '2128'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('TERMINATOR_DBUS_NAME', 'net.tenshu.Terminator23558193cd9818af7fe4d2c2f5bd9d00f'), ('GIO_LAUNCHED_DESKTOP_FILE_PID', '112923'), ('CUSTOM_SITE_PACKAGES_PATH', ''), ('IM_CONFIG_PHASE', '1'), ('COLCON_PREFIX_PATH', '/home/aiv/YongJun_ws/ros2_ws/src/yolov8_ros/matlab_msg_gen/glnxa64/install:/usr/local/MATLAB/R2024a/sys/ros2/glnxa64/ros2:/usr/local/MATLAB/R2024a/sys/ros2/glnxa64/ros2'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'aiv'), ('MATLAB_MEM_MGR_VALUE', ''), ('JOURNAL_STREAM', '8:41188'), ('_', '/home/aiv/.matlab/R2024a/ros2/glnxa64/venv/bin/colcon'), ('PKG_CONFIG_PATH', '/usr/local/MATLAB/R2024a/sys/ros2/glnxa64/ros2/lib/pkgconfig'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'aiv'), ('TERM', 'dumb'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('WINDOWPATH', '2'), ('PATH', '/usr/local/MATLAB/R2024a/bin/glnxa64/cmake/bin::/usr/local/MATLAB/R2024a/sys/ros2/glnxa64/ros2/bin:/home/aiv/.matlab/R2024a/ros2/glnxa64/venv/bin:/home/aiv/.matlab/R2024a/ros2/glnxa64/venv/bin:/usr/local/MATLAB/R2024a/toolbox/shared/coder/ninja/glnxa64:/usr/local/cuda-11.8/bin:/home/aiv/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/usr/local/bin'), ('SESSION_MANAGER', 'local/aiv:@/tmp/.ICE-unix/2264,unix/aiv:/tmp/.ICE-unix/2264'), ('INVOCATION_ID', '0854f21b05cd47a1bdf017ca3279c55f'), ('XDG_MENU_PREFIX', 'gnome-'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('TOOLBOX', '/usr/local/MATLAB/R2024a/toolbox'), ('MKL_DOMAIN_NUM_THREADS', ''), ('KMP_INIT_AT_FORK', 'false'), ('DISPLAY', ':1'), ('TERMINATOR_DBUS_PATH', '/net/tenshu/Terminator2'), ('LD_PRELOAD', ''), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('PRE_LD_PRELOAD', ''), ('VIRTUAL_ENV_PROMPT', '(venv)'), ('RMW_IMPLEMENTATION', ''), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/aiv/YongJun_ws/ros2_ws/src/yolov8_ros/matlab_msg_gen/glnxa64/install:/usr/local/MATLAB/R2024a/sys/ros2/glnxa64/ros2:/usr/local/MATLAB/R2024a/sys/ros2/glnxa64/ros2'), ('SHELL', '/bin/bash'), ('TERMINATOR_UUID', 'urn:uuid:4062e127-c5f4-42e7-8ae4-fb79495f74f0'), ('CMAKE_PATH', '/usr/local/MATLAB/R2024a/bin/glnxa64/cmake/bin'), ('XFILESEARCHPATH', '/usr/local/MATLAB/R2024a/sys/java/jre/glnxa64/jre/lib/locale/%L/%T/%N%S:'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('OSG_LD_LIBRARY_PATH', '/usr/local/MATLAB/R2024a/sys/openscenegraph/lib/glnxa64'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('VIRTUAL_ENV', '/home/aiv/.matlab/R2024a/ros2/glnxa64/venv'), ('CUSTOM_PATH', ''), ('KMP_STACKSIZE', '512k'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/aiv/YongJun_ws/matlab_ws/ros_msg/matlab_msg_gen/glnxa64/build/vision_msgs'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('DYLD_LIBRARY_PATH', ':/usr/local/MATLAB/R2024a/sys/ros2/glnxa64/ros2/lib:'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('MKL_NUM_THREADS', ''), ('MW_PATCH_OFFSETS', '0000104000000050'), ('PYTHONPATH', ':/usr/local/MATLAB/R2024a/sys/ros2/glnxa64/ros2/lib/python3.9/site-packages:/home/aiv/.matlab/R2024a/ros2/glnxa64/venv/lib/python3.10/site-packages:'), ('LC_NUMERIC', 'C'), ('COLCON', '1'), ('VTE_VERSION', '6003'), ('CMAKE_PREFIX_PATH', '/home/aiv/YongJun_ws/ros2_ws/src/yolov8_ros/matlab_msg_gen/glnxa64/install:/usr/local/MATLAB/R2024a/sys/ros2/glnxa64/ros2:/usr/local/MATLAB/R2024a/sys/ros2/glnxa64/ros2')]), 'shell': False}
+[10.239792] (vision_msgs) StdoutLine: {'line': b'-- Install configuration: "Release"\n'}
+[10.240012] (vision_msgs) StdoutLine: {'line': b'-- Installing: /home/aiv/YongJun_ws/matlab_ws/ros_msg/matlab_msg_gen/glnxa64/install/share/ament_index/resource_index/rosidl_interfaces/vision_msgs\n'}
+[10.240057] (vision_msgs) StdoutLine: {'line': b'-- Installing: /home/aiv/YongJun_ws/matlab_ws/ros_msg/matlab_msg_gen/glnxa64/install/include/vision_msgs/vision_msgs\n'}
+[10.240093] (vision_msgs) StdoutLine: {'line': b'-- Installing: /home/aiv/YongJun_ws/matlab_ws/ros_msg/matlab_msg_gen/glnxa64/install/include/vision_msgs/vision_msgs/msg\n'}
+[10.240141] (vision_msgs) StdoutLine: {'line': b'-- Installing: /home/aiv/YongJun_ws/matlab_ws/ros_msg/matlab_msg_gen/glnxa64/install/include/vision_msgs/vision_msgs/msg/detection3_d.h\n'}
+[10.240175] (vision_msgs) StdoutLine: {'line': b'-- Installing: /home/aiv/YongJun_ws/matlab_ws/ros_msg/matlab_msg_gen/glnxa64/install/include/vision_msgs/vision_msgs/msg/object_hypothesis.h\n'}
+[10.240206] (vision_msgs) StdoutLine: {'line': b'-- Installing: /home/aiv/YongJun_ws/matlab_ws/ros_msg/matlab_msg_gen/glnxa64/install/include/vision_msgs/vision_msgs/msg/rosidl_generator_c__visibility_control.h\n'}
+[10.240243] (vision_msgs) StdoutLine: {'line': b'-- Installing: /home/aiv/YongJun_ws/matlab_ws/ros_msg/matlab_msg_gen/glnxa64/install/include/vision_msgs/vision_msgs/msg/object_hypothesis_with_pose.h\n'}
+[10.240275] (vision_msgs) StdoutLine: {'line': b'-- Installing: /home/aiv/YongJun_ws/matlab_ws/ros_msg/matlab_msg_gen/glnxa64/install/include/vision_msgs/vision_msgs/msg/detail\n'}
+[10.240313] (vision_msgs) StdoutLine: {'line': b'-- Installing: /home/aiv/YongJun_ws/matlab_ws/ros_msg/matlab_msg_gen/glnxa64/install/include/vision_msgs/vision_msgs/msg/detail/object_hypothesis_with_pose__type_support.h\n'}
+[10.240345] (vision_msgs) StdoutLine: {'line': b'-- Installing: /home/aiv/YongJun_ws/matlab_ws/ros_msg/matlab_msg_gen/glnxa64/install/include/vision_msgs/vision_msgs/msg/detail/detection3_d_array__functions.c\n'}
+[10.240377] (vision_msgs) StdoutLine: {'line': b'-- Installing: /home/aiv/YongJun_ws/matlab_ws/ros_msg/matlab_msg_gen/glnxa64/install/include/vision_msgs/vision_msgs/msg/detail/object_hypothesis__functions.h\n'}
+[10.240412] (vision_msgs) StdoutLine: {'line': b'-- Installing: /home/aiv/YongJun_ws/matlab_ws/ros_msg/matlab_msg_gen/glnxa64/install/include/vision_msgs/vision_msgs/msg/detail/object_hypothesis__functions.c\n'}
+[10.240505] (vision_msgs) StdoutLine: {'line': b'-- Installing: /home/aiv/YongJun_ws/matlab_ws/ros_msg/matlab_msg_gen/glnxa64/install/include/vision_msgs/vision_msgs/msg/detail/bounding_box3_d__struct.h\n'}
+[10.240543] (vision_msgs) StdoutLine: {'line': b'-- Installing: /home/aiv/YongJun_ws/matlab_ws/ros_msg/matlab_msg_gen/glnxa64/install/include/vision_msgs/vision_msgs/msg/detail/bounding_box3_d__functions.c\n'}
+[10.240576] (vision_msgs) StdoutLine: {'line': b'-- Installing: /home/aiv/YongJun_ws/matlab_ws/ros_msg/matlab_msg_gen/glnxa64/install/include/vision_msgs/vision_msgs/msg/detail/detection3_d__struct.h\n'}
+[10.240609] (vision_msgs) StdoutLine: {'line': b'-- Installing: /home/aiv/YongJun_ws/matlab_ws/ros_msg/matlab_msg_gen/glnxa64/install/include/vision_msgs/vision_msgs/msg/detail/object_hypothesis_with_pose__struct.h\n'}
+[10.240641] (vision_msgs) StdoutLine: {'line': b'-- Installing: /home/aiv/YongJun_ws/matlab_ws/ros_msg/matlab_msg_gen/glnxa64/install/include/vision_msgs/vision_msgs/msg/detail/detection3_d__functions.c\n'}
+[10.240671] (vision_msgs) StdoutLine: {'line': b'-- Installing: /home/aiv/YongJun_ws/matlab_ws/ros_msg/matlab_msg_gen/glnxa64/install/include/vision_msgs/vision_msgs/msg/detail/detection3_d__functions.h\n'}
+[10.240720] (vision_msgs) StdoutLine: {'line': b'-- Installing: /home/aiv/YongJun_ws/matlab_ws/ros_msg/matlab_msg_gen/glnxa64/install/include/vision_msgs/vision_msgs/msg/detail/object_hypothesis__type_support.h\n'}
+[10.240750] (vision_msgs) StdoutLine: {'line': b'-- Installing: /home/aiv/YongJun_ws/matlab_ws/ros_msg/matlab_msg_gen/glnxa64/install/include/vision_msgs/vision_msgs/msg/detail/bounding_box3_d__type_support.h\n'}
+[10.240781] (vision_msgs) StdoutLine: {'line': b'-- Installing: /home/aiv/YongJun_ws/matlab_ws/ros_msg/matlab_msg_gen/glnxa64/install/include/vision_msgs/vision_msgs/msg/detail/object_hypothesis_with_pose__functions.c\n'}
+[10.240812] (vision_msgs) StdoutLine: {'line': b'-- Installing: /home/aiv/YongJun_ws/matlab_ws/ros_msg/matlab_msg_gen/glnxa64/install/include/vision_msgs/vision_msgs/msg/detail/detection3_d_array__struct.h\n'}
+[10.240843] (vision_msgs) StdoutLine: {'line': b'-- Installing: /home/aiv/YongJun_ws/matlab_ws/ros_msg/matlab_msg_gen/glnxa64/install/include/vision_msgs/vision_msgs/msg/detail/object_hypothesis_with_pose__functions.h\n'}
+[10.240897] (vision_msgs) StdoutLine: {'line': b'-- Installing: /home/aiv/YongJun_ws/matlab_ws/ros_msg/matlab_msg_gen/glnxa64/install/include/vision_msgs/vision_msgs/msg/detail/detection3_d_array__type_support.h\n'}
+[10.240928] (vision_msgs) StdoutLine: {'line': b'-- Installing: /home/aiv/YongJun_ws/matlab_ws/ros_msg/matlab_msg_gen/glnxa64/install/include/vision_msgs/vision_msgs/msg/detail/object_hypothesis__struct.h\n'}
+[10.240958] (vision_msgs) StdoutLine: {'line': b'-- Installing: /home/aiv/YongJun_ws/matlab_ws/ros_msg/matlab_msg_gen/glnxa64/install/include/vision_msgs/vision_msgs/msg/detail/detection3_d__type_support.h\n'}
+[10.240989] (vision_msgs) StdoutLine: {'line': b'-- Installing: /home/aiv/YongJun_ws/matlab_ws/ros_msg/matlab_msg_gen/glnxa64/install/include/vision_msgs/vision_msgs/msg/detail/bounding_box3_d__functions.h\n'}
+[10.241020] (vision_msgs) StdoutLine: {'line': b'-- Installing: /home/aiv/YongJun_ws/matlab_ws/ros_msg/matlab_msg_gen/glnxa64/install/include/vision_msgs/vision_msgs/msg/detail/detection3_d_array__functions.h\n'}
+[10.241050] (vision_msgs) StdoutLine: {'line': b'-- Installing: /home/aiv/YongJun_ws/matlab_ws/ros_msg/matlab_msg_gen/glnxa64/install/include/vision_msgs/vision_msgs/msg/bounding_box3_d.h\n'}
+[10.241080] (vision_msgs) StdoutLine: {'line': b'-- Installing: /home/aiv/YongJun_ws/matlab_ws/ros_msg/matlab_msg_gen/glnxa64/install/include/vision_msgs/vision_msgs/msg/detection3_d_array.h\n'}
+[10.241110] (vision_msgs) StdoutLine: {'line': b'-- Installing: /home/aiv/YongJun_ws/matlab_ws/ros_msg/matlab_msg_gen/glnxa64/install/share/vision_msgs/environment/library_path.sh\n'}
+[10.241139] (vision_msgs) StdoutLine: {'line': b'-- Installing: /home/aiv/YongJun_ws/matlab_ws/ros_msg/matlab_msg_gen/glnxa64/install/share/vision_msgs/environment/library_path.dsv\n'}
+[10.241170] (vision_msgs) StdoutLine: {'line': b'-- Installing: /home/aiv/YongJun_ws/matlab_ws/ros_msg/matlab_msg_gen/glnxa64/install/lib/libvision_msgs__rosidl_generator_c.so\n'}
+[10.241200] (vision_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/aiv/YongJun_ws/matlab_ws/ros_msg/matlab_msg_gen/glnxa64/install/include/vision_msgs/vision_msgs\n'}
+[10.241231] (vision_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/aiv/YongJun_ws/matlab_ws/ros_msg/matlab_msg_gen/glnxa64/install/include/vision_msgs/vision_msgs/msg\n'}
+[10.241260] (vision_msgs) StdoutLine: {'line': b'-- Installing: /home/aiv/YongJun_ws/matlab_ws/ros_msg/matlab_msg_gen/glnxa64/install/include/vision_msgs/vision_msgs/msg/rosidl_typesupport_fastrtps_c__visibility_control.h\n'}
+[10.241289] (vision_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/aiv/YongJun_ws/matlab_ws/ros_msg/matlab_msg_gen/glnxa64/install/include/vision_msgs/vision_msgs/msg/detail\n'}
+[10.241320] (vision_msgs) StdoutLine: {'line': b'-- Installing: /home/aiv/YongJun_ws/matlab_ws/ros_msg/matlab_msg_gen/glnxa64/install/include/vision_msgs/vision_msgs/msg/detail/detection3_d_array__rosidl_typesupport_fastrtps_c.h\n'}
+[10.241350] (vision_msgs) StdoutLine: {'line': b'-- Installing: /home/aiv/YongJun_ws/matlab_ws/ros_msg/matlab_msg_gen/glnxa64/install/include/vision_msgs/vision_msgs/msg/detail/detection3_d__rosidl_typesupport_fastrtps_c.h\n'}
+[10.241422] (vision_msgs) StdoutLine: {'line': b'-- Installing: /home/aiv/YongJun_ws/matlab_ws/ros_msg/matlab_msg_gen/glnxa64/install/include/vision_msgs/vision_msgs/msg/detail/bounding_box3_d__rosidl_typesupport_fastrtps_c.h\n'}
+[10.241454] (vision_msgs) StdoutLine: {'line': b'-- Installing: /home/aiv/YongJun_ws/matlab_ws/ros_msg/matlab_msg_gen/glnxa64/install/include/vision_msgs/vision_msgs/msg/detail/object_hypothesis_with_pose__rosidl_typesupport_fastrtps_c.h\n'}
+[10.241485] (vision_msgs) StdoutLine: {'line': b'-- Installing: /home/aiv/YongJun_ws/matlab_ws/ros_msg/matlab_msg_gen/glnxa64/install/include/vision_msgs/vision_msgs/msg/detail/object_hypothesis__rosidl_typesupport_fastrtps_c.h\n'}
+[10.241528] (vision_msgs) StdoutLine: {'line': b'-- Installing: /home/aiv/YongJun_ws/matlab_ws/ros_msg/matlab_msg_gen/glnxa64/install/lib/libvision_msgs__rosidl_typesupport_fastrtps_c.so\n'}
+[10.241567] (vision_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/aiv/YongJun_ws/matlab_ws/ros_msg/matlab_msg_gen/glnxa64/install/include/vision_msgs/vision_msgs\n'}
+[10.241600] (vision_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/aiv/YongJun_ws/matlab_ws/ros_msg/matlab_msg_gen/glnxa64/install/include/vision_msgs/vision_msgs/msg\n'}
+[10.241632] (vision_msgs) StdoutLine: {'line': b'-- Installing: /home/aiv/YongJun_ws/matlab_ws/ros_msg/matlab_msg_gen/glnxa64/install/include/vision_msgs/vision_msgs/msg/rosidl_typesupport_introspection_c__visibility_control.h\n'}
+[10.241665] (vision_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/aiv/YongJun_ws/matlab_ws/ros_msg/matlab_msg_gen/glnxa64/install/include/vision_msgs/vision_msgs/msg/detail\n'}
+[10.241695] (vision_msgs) StdoutLine: {'line': b'-- Installing: /home/aiv/YongJun_ws/matlab_ws/ros_msg/matlab_msg_gen/glnxa64/install/include/vision_msgs/vision_msgs/msg/detail/object_hypothesis__type_support.c\n'}
+[10.241725] (vision_msgs) StdoutLine: {'line': b'-- Installing: /home/aiv/YongJun_ws/matlab_ws/ros_msg/matlab_msg_gen/glnxa64/install/include/vision_msgs/vision_msgs/msg/detail/detection3_d__type_support.c\n'}
+[10.241756] (vision_msgs) StdoutLine: {'line': b'-- Installing: /home/aiv/YongJun_ws/matlab_ws/ros_msg/matlab_msg_gen/glnxa64/install/include/vision_msgs/vision_msgs/msg/detail/detection3_d__rosidl_typesupport_introspection_c.h\n'}
+[10.241787] (vision_msgs) StdoutLine: {'line': b'-- Installing: /home/aiv/YongJun_ws/matlab_ws/ros_msg/matlab_msg_gen/glnxa64/install/include/vision_msgs/vision_msgs/msg/detail/object_hypothesis_with_pose__type_support.c\n'}
+[10.241817] (vision_msgs) StdoutLine: {'line': b'-- Installing: /home/aiv/YongJun_ws/matlab_ws/ros_msg/matlab_msg_gen/glnxa64/install/include/vision_msgs/vision_msgs/msg/detail/object_hypothesis__rosidl_typesupport_introspection_c.h\n'}
+[10.241846] (vision_msgs) StdoutLine: {'line': b'-- Installing: /home/aiv/YongJun_ws/matlab_ws/ros_msg/matlab_msg_gen/glnxa64/install/include/vision_msgs/vision_msgs/msg/detail/bounding_box3_d__type_support.c\n'}
+[10.241875] (vision_msgs) StdoutLine: {'line': b'-- Installing: /home/aiv/YongJun_ws/matlab_ws/ros_msg/matlab_msg_gen/glnxa64/install/include/vision_msgs/vision_msgs/msg/detail/object_hypothesis_with_pose__rosidl_typesupport_introspection_c.h\n'}
+[10.241904] (vision_msgs) StdoutLine: {'line': b'-- Installing: /home/aiv/YongJun_ws/matlab_ws/ros_msg/matlab_msg_gen/glnxa64/install/include/vision_msgs/vision_msgs/msg/detail/detection3_d_array__rosidl_typesupport_introspection_c.h\n'}
+[10.241933] (vision_msgs) StdoutLine: {'line': b'-- Installing: /home/aiv/YongJun_ws/matlab_ws/ros_msg/matlab_msg_gen/glnxa64/install/include/vision_msgs/vision_msgs/msg/detail/detection3_d_array__type_support.c\n'}
+[10.241962] (vision_msgs) StdoutLine: {'line': b'-- Installing: /home/aiv/YongJun_ws/matlab_ws/ros_msg/matlab_msg_gen/glnxa64/install/include/vision_msgs/vision_msgs/msg/detail/bounding_box3_d__rosidl_typesupport_introspection_c.h\n'}
+[10.241991] (vision_msgs) StdoutLine: {'line': b'-- Installing: /home/aiv/YongJun_ws/matlab_ws/ros_msg/matlab_msg_gen/glnxa64/install/lib/libvision_msgs__rosidl_typesupport_introspection_c.so\n'}
+[10.242021] (vision_msgs) StdoutLine: {'line': b'-- Installing: /home/aiv/YongJun_ws/matlab_ws/ros_msg/matlab_msg_gen/glnxa64/install/lib/libvision_msgs__rosidl_typesupport_c.so\n'}
+[10.242068] (vision_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/aiv/YongJun_ws/matlab_ws/ros_msg/matlab_msg_gen/glnxa64/install/include/vision_msgs/vision_msgs\n'}
+[10.242141] (vision_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/aiv/YongJun_ws/matlab_ws/ros_msg/matlab_msg_gen/glnxa64/install/include/vision_msgs/vision_msgs/msg\n'}
+[10.242174] (vision_msgs) StdoutLine: {'line': b'-- Installing: /home/aiv/YongJun_ws/matlab_ws/ros_msg/matlab_msg_gen/glnxa64/install/include/vision_msgs/vision_msgs/msg/object_hypothesis.hpp\n'}
+[10.242219] (vision_msgs) StdoutLine: {'line': b'-- Installing: /home/aiv/YongJun_ws/matlab_ws/ros_msg/matlab_msg_gen/glnxa64/install/include/vision_msgs/vision_msgs/msg/detection3_d_array.hpp\n'}
+[10.242249] (vision_msgs) StdoutLine: {'line': b'-- Installing: /home/aiv/YongJun_ws/matlab_ws/ros_msg/matlab_msg_gen/glnxa64/install/include/vision_msgs/vision_msgs/msg/detection3_d.hpp\n'}
+[10.242280] (vision_msgs) StdoutLine: {'line': b'-- Installing: /home/aiv/YongJun_ws/matlab_ws/ros_msg/matlab_msg_gen/glnxa64/install/include/vision_msgs/vision_msgs/msg/object_hypothesis_with_pose.hpp\n'}
+[10.242339] (vision_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/aiv/YongJun_ws/matlab_ws/ros_msg/matlab_msg_gen/glnxa64/install/include/vision_msgs/vision_msgs/msg/detail\n'}
+[10.242372] (vision_msgs) StdoutLine: {'line': b'-- Installing: /home/aiv/YongJun_ws/matlab_ws/ros_msg/matlab_msg_gen/glnxa64/install/include/vision_msgs/vision_msgs/msg/detail/bounding_box3_d__builder.hpp\n'}
+[10.242403] (vision_msgs) StdoutLine: {'line': b'-- Installing: /home/aiv/YongJun_ws/matlab_ws/ros_msg/matlab_msg_gen/glnxa64/install/include/vision_msgs/vision_msgs/msg/detail/detection3_d_array__traits.hpp\n'}
+[10.242453] (vision_msgs) StdoutLine: {'line': b'-- Installing: /home/aiv/YongJun_ws/matlab_ws/ros_msg/matlab_msg_gen/glnxa64/install/include/vision_msgs/vision_msgs/msg/detail/detection3_d__traits.hpp\n'}
+[10.242482] (vision_msgs) StdoutLine: {'line': b'-- Installing: /home/aiv/YongJun_ws/matlab_ws/ros_msg/matlab_msg_gen/glnxa64/install/include/vision_msgs/vision_msgs/msg/detail/object_hypothesis__traits.hpp\n'}
+[10.242510] (vision_msgs) StdoutLine: {'line': b'-- Installing: /home/aiv/YongJun_ws/matlab_ws/ros_msg/matlab_msg_gen/glnxa64/install/include/vision_msgs/vision_msgs/msg/detail/object_hypothesis__builder.hpp\n'}
+[10.242541] (vision_msgs) StdoutLine: {'line': b'-- Installing: /home/aiv/YongJun_ws/matlab_ws/ros_msg/matlab_msg_gen/glnxa64/install/include/vision_msgs/vision_msgs/msg/detail/object_hypothesis__struct.hpp\n'}
+[10.242570] (vision_msgs) StdoutLine: {'line': b'-- Installing: /home/aiv/YongJun_ws/matlab_ws/ros_msg/matlab_msg_gen/glnxa64/install/include/vision_msgs/vision_msgs/msg/detail/detection3_d__struct.hpp\n'}
+[10.242600] (vision_msgs) StdoutLine: {'line': b'-- Installing: /home/aiv/YongJun_ws/matlab_ws/ros_msg/matlab_msg_gen/glnxa64/install/include/vision_msgs/vision_msgs/msg/detail/object_hypothesis_with_pose__struct.hpp\n'}
+[10.242629] (vision_msgs) StdoutLine: {'line': b'-- Installing: /home/aiv/YongJun_ws/matlab_ws/ros_msg/matlab_msg_gen/glnxa64/install/include/vision_msgs/vision_msgs/msg/detail/bounding_box3_d__traits.hpp\n'}
+[10.242659] (vision_msgs) StdoutLine: {'line': b'-- Installing: /home/aiv/YongJun_ws/matlab_ws/ros_msg/matlab_msg_gen/glnxa64/install/include/vision_msgs/vision_msgs/msg/detail/detection3_d__builder.hpp\n'}
+[10.242688] (vision_msgs) StdoutLine: {'line': b'-- Installing: /home/aiv/YongJun_ws/matlab_ws/ros_msg/matlab_msg_gen/glnxa64/install/include/vision_msgs/vision_msgs/msg/detail/bounding_box3_d__struct.hpp\n'}
+[10.242717] (vision_msgs) StdoutLine: {'line': b'-- Installing: /home/aiv/YongJun_ws/matlab_ws/ros_msg/matlab_msg_gen/glnxa64/install/include/vision_msgs/vision_msgs/msg/detail/detection3_d_array__builder.hpp\n'}
+[10.242747] (vision_msgs) StdoutLine: {'line': b'-- Installing: /home/aiv/YongJun_ws/matlab_ws/ros_msg/matlab_msg_gen/glnxa64/install/include/vision_msgs/vision_msgs/msg/detail/object_hypothesis_with_pose__traits.hpp\n'}
+[10.242775] (vision_msgs) StdoutLine: {'line': b'-- Installing: /home/aiv/YongJun_ws/matlab_ws/ros_msg/matlab_msg_gen/glnxa64/install/include/vision_msgs/vision_msgs/msg/detail/object_hypothesis_with_pose__builder.hpp\n'}
+[10.242805] (vision_msgs) StdoutLine: {'line': b'-- Installing: /home/aiv/YongJun_ws/matlab_ws/ros_msg/matlab_msg_gen/glnxa64/install/include/vision_msgs/vision_msgs/msg/detail/detection3_d_array__struct.hpp\n'}
+[10.242834] (vision_msgs) StdoutLine: {'line': b'-- Installing: /home/aiv/YongJun_ws/matlab_ws/ros_msg/matlab_msg_gen/glnxa64/install/include/vision_msgs/vision_msgs/msg/bounding_box3_d.hpp\n'}
+[10.242875] (vision_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/aiv/YongJun_ws/matlab_ws/ros_msg/matlab_msg_gen/glnxa64/install/include/vision_msgs/vision_msgs\n'}
+[10.242906] (vision_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/aiv/YongJun_ws/matlab_ws/ros_msg/matlab_msg_gen/glnxa64/install/include/vision_msgs/vision_msgs/msg\n'}
+[10.242936] (vision_msgs) StdoutLine: {'line': b'-- Installing: /home/aiv/YongJun_ws/matlab_ws/ros_msg/matlab_msg_gen/glnxa64/install/include/vision_msgs/vision_msgs/msg/rosidl_typesupport_fastrtps_cpp__visibility_control.h\n'}
+[10.242967] (vision_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/aiv/YongJun_ws/matlab_ws/ros_msg/matlab_msg_gen/glnxa64/install/include/vision_msgs/vision_msgs/msg/detail\n'}
+[10.242999] (vision_msgs) StdoutLine: {'line': b'-- Installing: /home/aiv/YongJun_ws/matlab_ws/ros_msg/matlab_msg_gen/glnxa64/install/include/vision_msgs/vision_msgs/msg/detail/bounding_box3_d__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[10.243032] (vision_msgs) StdoutLine: {'line': b'-- Installing: /home/aiv/YongJun_ws/matlab_ws/ros_msg/matlab_msg_gen/glnxa64/install/include/vision_msgs/vision_msgs/msg/detail/dds_fastrtps\n'}
+[10.243064] (vision_msgs) StdoutLine: {'line': b'-- Installing: /home/aiv/YongJun_ws/matlab_ws/ros_msg/matlab_msg_gen/glnxa64/install/include/vision_msgs/vision_msgs/msg/detail/detection3_d_array__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[10.243095] (vision_msgs) StdoutLine: {'line': b'-- Installing: /home/aiv/YongJun_ws/matlab_ws/ros_msg/matlab_msg_gen/glnxa64/install/include/vision_msgs/vision_msgs/msg/detail/object_hypothesis_with_pose__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[10.243126] (vision_msgs) StdoutLine: {'line': b'-- Installing: /home/aiv/YongJun_ws/matlab_ws/ros_msg/matlab_msg_gen/glnxa64/install/include/vision_msgs/vision_msgs/msg/detail/object_hypothesis__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[10.243193] (vision_msgs) StdoutLine: {'line': b'-- Installing: /home/aiv/YongJun_ws/matlab_ws/ros_msg/matlab_msg_gen/glnxa64/install/include/vision_msgs/vision_msgs/msg/detail/detection3_d__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[10.243229] (vision_msgs) StdoutLine: {'line': b'-- Installing: /home/aiv/YongJun_ws/matlab_ws/ros_msg/matlab_msg_gen/glnxa64/install/lib/libvision_msgs__rosidl_typesupport_fastrtps_cpp.so\n'}
+[10.243257] (vision_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/aiv/YongJun_ws/matlab_ws/ros_msg/matlab_msg_gen/glnxa64/install/include/vision_msgs/vision_msgs\n'}
+[10.243287] (vision_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/aiv/YongJun_ws/matlab_ws/ros_msg/matlab_msg_gen/glnxa64/install/include/vision_msgs/vision_msgs/msg\n'}
+[10.243316] (vision_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/aiv/YongJun_ws/matlab_ws/ros_msg/matlab_msg_gen/glnxa64/install/include/vision_msgs/vision_msgs/msg/detail\n'}
+[10.243346] (vision_msgs) StdoutLine: {'line': b'-- Installing: /home/aiv/YongJun_ws/matlab_ws/ros_msg/matlab_msg_gen/glnxa64/install/include/vision_msgs/vision_msgs/msg/detail/object_hypothesis__type_support.cpp\n'}
+[10.243375] (vision_msgs) StdoutLine: {'line': b'-- Installing: /home/aiv/YongJun_ws/matlab_ws/ros_msg/matlab_msg_gen/glnxa64/install/include/vision_msgs/vision_msgs/msg/detail/object_hypothesis__rosidl_typesupport_introspection_cpp.hpp\n'}
+[10.243404] (vision_msgs) StdoutLine: {'line': b'-- Installing: /home/aiv/YongJun_ws/matlab_ws/ros_msg/matlab_msg_gen/glnxa64/install/include/vision_msgs/vision_msgs/msg/detail/detection3_d__rosidl_typesupport_introspection_cpp.hpp\n'}
+[10.243434] (vision_msgs) StdoutLine: {'line': b'-- Installing: /home/aiv/YongJun_ws/matlab_ws/ros_msg/matlab_msg_gen/glnxa64/install/include/vision_msgs/vision_msgs/msg/detail/bounding_box3_d__rosidl_typesupport_introspection_cpp.hpp\n'}
+[10.243463] (vision_msgs) StdoutLine: {'line': b'-- Installing: /home/aiv/YongJun_ws/matlab_ws/ros_msg/matlab_msg_gen/glnxa64/install/include/vision_msgs/vision_msgs/msg/detail/detection3_d_array__type_support.cpp\n'}
+[10.243503] (vision_msgs) StdoutLine: {'line': b'-- Installing: /home/aiv/YongJun_ws/matlab_ws/ros_msg/matlab_msg_gen/glnxa64/install/include/vision_msgs/vision_msgs/msg/detail/detection3_d_array__rosidl_typesupport_introspection_cpp.hpp\n'}
+[10.243532] (vision_msgs) StdoutLine: {'line': b'-- Installing: /home/aiv/YongJun_ws/matlab_ws/ros_msg/matlab_msg_gen/glnxa64/install/include/vision_msgs/vision_msgs/msg/detail/object_hypothesis_with_pose__type_support.cpp\n'}
+[10.243562] (vision_msgs) StdoutLine: {'line': b'-- Installing: /home/aiv/YongJun_ws/matlab_ws/ros_msg/matlab_msg_gen/glnxa64/install/include/vision_msgs/vision_msgs/msg/detail/object_hypothesis_with_pose__rosidl_typesupport_introspection_cpp.hpp\n'}
+[10.243591] (vision_msgs) StdoutLine: {'line': b'-- Installing: /home/aiv/YongJun_ws/matlab_ws/ros_msg/matlab_msg_gen/glnxa64/install/include/vision_msgs/vision_msgs/msg/detail/bounding_box3_d__type_support.cpp\n'}
+[10.243621] (vision_msgs) StdoutLine: {'line': b'-- Installing: /home/aiv/YongJun_ws/matlab_ws/ros_msg/matlab_msg_gen/glnxa64/install/include/vision_msgs/vision_msgs/msg/detail/detection3_d__type_support.cpp\n'}
+[10.243650] (vision_msgs) StdoutLine: {'line': b'-- Installing: /home/aiv/YongJun_ws/matlab_ws/ros_msg/matlab_msg_gen/glnxa64/install/lib/libvision_msgs__rosidl_typesupport_introspection_cpp.so\n'}
+[10.243679] (vision_msgs) StdoutLine: {'line': b'-- Installing: /home/aiv/YongJun_ws/matlab_ws/ros_msg/matlab_msg_gen/glnxa64/install/lib/libvision_msgs__rosidl_typesupport_cpp.so\n'}
+[10.243708] (vision_msgs) StdoutLine: {'line': b'-- Installing: /home/aiv/YongJun_ws/matlab_ws/ros_msg/matlab_msg_gen/glnxa64/install/share/vision_msgs/msg/BoundingBox3D.idl\n'}
+[10.243738] (vision_msgs) StdoutLine: {'line': b'-- Installing: /home/aiv/YongJun_ws/matlab_ws/ros_msg/matlab_msg_gen/glnxa64/install/share/vision_msgs/msg/Detection3D.idl\n'}
+[10.243790] (vision_msgs) StdoutLine: {'line': b'-- Installing: /home/aiv/YongJun_ws/matlab_ws/ros_msg/matlab_msg_gen/glnxa64/install/share/vision_msgs/msg/Detection3DArray.idl\n'}
+[10.243823] (vision_msgs) StdoutLine: {'line': b'-- Installing: /home/aiv/YongJun_ws/matlab_ws/ros_msg/matlab_msg_gen/glnxa64/install/share/vision_msgs/msg/ObjectHypothesis.idl\n'}
+[10.243855] (vision_msgs) StdoutLine: {'line': b'-- Installing: /home/aiv/YongJun_ws/matlab_ws/ros_msg/matlab_msg_gen/glnxa64/install/share/vision_msgs/msg/ObjectHypothesisWithPose.idl\n'}
+[10.243885] (vision_msgs) StdoutLine: {'line': b'-- Installing: /home/aiv/YongJun_ws/matlab_ws/ros_msg/matlab_msg_gen/glnxa64/install/share/vision_msgs/msg/BoundingBox3D.msg\n'}
+[10.243915] (vision_msgs) StdoutLine: {'line': b'-- Installing: /home/aiv/YongJun_ws/matlab_ws/ros_msg/matlab_msg_gen/glnxa64/install/share/vision_msgs/msg/Detection3D.msg\n'}
+[10.243966] (vision_msgs) StdoutLine: {'line': b'-- Installing: /home/aiv/YongJun_ws/matlab_ws/ros_msg/matlab_msg_gen/glnxa64/install/share/vision_msgs/msg/Detection3DArray.msg\n'}
+[10.243996] (vision_msgs) StdoutLine: {'line': b'-- Installing: /home/aiv/YongJun_ws/matlab_ws/ros_msg/matlab_msg_gen/glnxa64/install/share/vision_msgs/msg/ObjectHypothesis.msg\n'}
+[10.244025] (vision_msgs) StdoutLine: {'line': b'-- Installing: /home/aiv/YongJun_ws/matlab_ws/ros_msg/matlab_msg_gen/glnxa64/install/share/vision_msgs/msg/ObjectHypothesisWithPose.msg\n'}
+[10.244053] (vision_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/aiv/YongJun_ws/matlab_ws/ros_msg/matlab_msg_gen/glnxa64/install/include\n'}
+[10.244085] (vision_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/aiv/YongJun_ws/matlab_ws/ros_msg/matlab_msg_gen/glnxa64/install/include/vision_msgs\n'}
+[10.244113] (vision_msgs) StdoutLine: {'line': b'-- Installing: /home/aiv/YongJun_ws/matlab_ws/ros_msg/matlab_msg_gen/glnxa64/install/include/vision_msgs/visibility_control.h\n'}
+[10.244142] (vision_msgs) StdoutLine: {'line': b'-- Installing: /home/aiv/YongJun_ws/matlab_ws/ros_msg/matlab_msg_gen/glnxa64/install/lib/libvision_msgs_matlab.so\n'}
+[10.256422] (vision_msgs) StdoutLine: {'line': b'-- Installing: /home/aiv/YongJun_ws/matlab_ws/ros_msg/matlab_msg_gen/glnxa64/install/m/\n'}
+[10.256531] (vision_msgs) StdoutLine: {'line': b'-- Installing: /home/aiv/YongJun_ws/matlab_ws/ros_msg/matlab_msg_gen/glnxa64/install/m//+ros\n'}
+[10.256578] (vision_msgs) StdoutLine: {'line': b'-- Installing: /home/aiv/YongJun_ws/matlab_ws/ros_msg/matlab_msg_gen/glnxa64/install/m//+ros/+internal\n'}
+[10.256612] (vision_msgs) StdoutLine: {'line': b'-- Installing: /home/aiv/YongJun_ws/matlab_ws/ros_msg/matlab_msg_gen/glnxa64/install/m//+ros/+internal/+ros2\n'}
+[10.256643] (vision_msgs) StdoutLine: {'line': b'-- Installing: /home/aiv/YongJun_ws/matlab_ws/ros_msg/matlab_msg_gen/glnxa64/install/m//+ros/+internal/+ros2/+custommessages\n'}
+[10.256674] (vision_msgs) StdoutLine: {'line': b'-- Installing: /home/aiv/YongJun_ws/matlab_ws/ros_msg/matlab_msg_gen/glnxa64/install/m//+ros/+internal/+ros2/+custommessages/+vision_msgs\n'}
+[10.256732] (vision_msgs) StdoutLine: {'line': b'-- Installing: /home/aiv/YongJun_ws/matlab_ws/ros_msg/matlab_msg_gen/glnxa64/install/m//+ros/+internal/+ros2/+custommessages/+vision_msgs/detection3DArray.m\n'}
+[10.256798] (vision_msgs) StdoutLine: {'line': b'-- Installing: /home/aiv/YongJun_ws/matlab_ws/ros_msg/matlab_msg_gen/glnxa64/install/m//+ros/+internal/+ros2/+custommessages/+vision_msgs/objectHypothesisWithPose.m\n'}
+[10.256831] (vision_msgs) StdoutLine: {'line': b'-- Installing: /home/aiv/YongJun_ws/matlab_ws/ros_msg/matlab_msg_gen/glnxa64/install/m//+ros/+internal/+ros2/+custommessages/+vision_msgs/detection3D.m\n'}
+[10.256862] (vision_msgs) StdoutLine: {'line': b'-- Installing: /home/aiv/YongJun_ws/matlab_ws/ros_msg/matlab_msg_gen/glnxa64/install/m//+ros/+internal/+ros2/+custommessages/+vision_msgs/boundingBox3D.m\n'}
+[10.256892] (vision_msgs) StdoutLine: {'line': b'-- Installing: /home/aiv/YongJun_ws/matlab_ws/ros_msg/matlab_msg_gen/glnxa64/install/m//+ros/+internal/+ros2/+custommessages/+vision_msgs/objectHypothesis.m\n'}
+[10.256924] (vision_msgs) StdoutLine: {'line': b'-- Installing: /home/aiv/YongJun_ws/matlab_ws/ros_msg/matlab_msg_gen/glnxa64/install/share/ament_index/resource_index/package_run_dependencies/vision_msgs\n'}
+[10.256954] (vision_msgs) StdoutLine: {'line': b'-- Installing: /home/aiv/YongJun_ws/matlab_ws/ros_msg/matlab_msg_gen/glnxa64/install/share/ament_index/resource_index/parent_prefix_path/vision_msgs\n'}
+[10.256984] (vision_msgs) StdoutLine: {'line': b'-- Installing: /home/aiv/YongJun_ws/matlab_ws/ros_msg/matlab_msg_gen/glnxa64/install/share/vision_msgs/environment/ament_prefix_path.sh\n'}
+[10.257049] (vision_msgs) StdoutLine: {'line': b'-- Installing: /home/aiv/YongJun_ws/matlab_ws/ros_msg/matlab_msg_gen/glnxa64/install/share/vision_msgs/environment/ament_prefix_path.dsv\n'}
+[10.257096] (vision_msgs) StdoutLine: {'line': b'-- Installing: /home/aiv/YongJun_ws/matlab_ws/ros_msg/matlab_msg_gen/glnxa64/install/share/vision_msgs/environment/path.sh\n'}
+[10.257132] (vision_msgs) StdoutLine: {'line': b'-- Installing: /home/aiv/YongJun_ws/matlab_ws/ros_msg/matlab_msg_gen/glnxa64/install/share/vision_msgs/environment/path.dsv\n'}
+[10.257162] (vision_msgs) StdoutLine: {'line': b'-- Installing: /home/aiv/YongJun_ws/matlab_ws/ros_msg/matlab_msg_gen/glnxa64/install/share/vision_msgs/local_setup.bash\n'}
+[10.257193] (vision_msgs) StdoutLine: {'line': b'-- Installing: /home/aiv/YongJun_ws/matlab_ws/ros_msg/matlab_msg_gen/glnxa64/install/share/vision_msgs/local_setup.sh\n'}
+[10.257222] (vision_msgs) StdoutLine: {'line': b'-- Installing: /home/aiv/YongJun_ws/matlab_ws/ros_msg/matlab_msg_gen/glnxa64/install/share/vision_msgs/local_setup.zsh\n'}
+[10.257252] (vision_msgs) StdoutLine: {'line': b'-- Installing: /home/aiv/YongJun_ws/matlab_ws/ros_msg/matlab_msg_gen/glnxa64/install/share/vision_msgs/local_setup.dsv\n'}
+[10.257281] (vision_msgs) StdoutLine: {'line': b'-- Installing: /home/aiv/YongJun_ws/matlab_ws/ros_msg/matlab_msg_gen/glnxa64/install/share/vision_msgs/package.dsv\n'}
+[10.257344] (vision_msgs) StdoutLine: {'line': b'-- Installing: /home/aiv/YongJun_ws/matlab_ws/ros_msg/matlab_msg_gen/glnxa64/install/share/ament_index/resource_index/packages/vision_msgs\n'}
+[10.257401] (vision_msgs) StdoutLine: {'line': b'-- Installing: /home/aiv/YongJun_ws/matlab_ws/ros_msg/matlab_msg_gen/glnxa64/install/share/vision_msgs/cmake/export_vision_msgs__rosidl_generator_cExport.cmake\n'}
+[10.257433] (vision_msgs) StdoutLine: {'line': b'-- Installing: /home/aiv/YongJun_ws/matlab_ws/ros_msg/matlab_msg_gen/glnxa64/install/share/vision_msgs/cmake/export_vision_msgs__rosidl_generator_cExport-release.cmake\n'}
+[10.257464] (vision_msgs) StdoutLine: {'line': b'-- Installing: /home/aiv/YongJun_ws/matlab_ws/ros_msg/matlab_msg_gen/glnxa64/install/share/vision_msgs/cmake/export_vision_msgs__rosidl_typesupport_fastrtps_cExport.cmake\n'}
+[10.257508] (vision_msgs) StdoutLine: {'line': b'-- Installing: /home/aiv/YongJun_ws/matlab_ws/ros_msg/matlab_msg_gen/glnxa64/install/share/vision_msgs/cmake/export_vision_msgs__rosidl_typesupport_fastrtps_cExport-release.cmake\n'}
+[10.257538] (vision_msgs) StdoutLine: {'line': b'-- Installing: /home/aiv/YongJun_ws/matlab_ws/ros_msg/matlab_msg_gen/glnxa64/install/share/vision_msgs/cmake/vision_msgs__rosidl_typesupport_introspection_cExport.cmake\n'}
+[10.257577] (vision_msgs) StdoutLine: {'line': b'-- Installing: /home/aiv/YongJun_ws/matlab_ws/ros_msg/matlab_msg_gen/glnxa64/install/share/vision_msgs/cmake/vision_msgs__rosidl_typesupport_introspection_cExport-release.cmake\n'}
+[10.257608] (vision_msgs) StdoutLine: {'line': b'-- Installing: /home/aiv/YongJun_ws/matlab_ws/ros_msg/matlab_msg_gen/glnxa64/install/share/vision_msgs/cmake/vision_msgs__rosidl_typesupport_cExport.cmake\n'}
+[10.257637] (vision_msgs) StdoutLine: {'line': b'-- Installing: /home/aiv/YongJun_ws/matlab_ws/ros_msg/matlab_msg_gen/glnxa64/install/share/vision_msgs/cmake/vision_msgs__rosidl_typesupport_cExport-release.cmake\n'}
+[10.257666] (vision_msgs) StdoutLine: {'line': b'-- Installing: /home/aiv/YongJun_ws/matlab_ws/ros_msg/matlab_msg_gen/glnxa64/install/share/vision_msgs/cmake/export_vision_msgs__rosidl_generator_cppExport.cmake\n'}
+[10.257695] (vision_msgs) StdoutLine: {'line': b'-- Installing: /home/aiv/YongJun_ws/matlab_ws/ros_msg/matlab_msg_gen/glnxa64/install/share/vision_msgs/cmake/export_vision_msgs__rosidl_typesupport_fastrtps_cppExport.cmake\n'}
+[10.257738] (vision_msgs) StdoutLine: {'line': b'-- Installing: /home/aiv/YongJun_ws/matlab_ws/ros_msg/matlab_msg_gen/glnxa64/install/share/vision_msgs/cmake/export_vision_msgs__rosidl_typesupport_fastrtps_cppExport-release.cmake\n'}
+[10.257794] (vision_msgs) StdoutLine: {'line': b'-- Installing: /home/aiv/YongJun_ws/matlab_ws/ros_msg/matlab_msg_gen/glnxa64/install/share/vision_msgs/cmake/vision_msgs__rosidl_typesupport_introspection_cppExport.cmake\n'}
+[10.257824] (vision_msgs) StdoutLine: {'line': b'-- Installing: /home/aiv/YongJun_ws/matlab_ws/ros_msg/matlab_msg_gen/glnxa64/install/share/vision_msgs/cmake/vision_msgs__rosidl_typesupport_introspection_cppExport-release.cmake\n'}
+[10.257855] (vision_msgs) StdoutLine: {'line': b'-- Installing: /home/aiv/YongJun_ws/matlab_ws/ros_msg/matlab_msg_gen/glnxa64/install/share/vision_msgs/cmake/vision_msgs__rosidl_typesupport_cppExport.cmake\n'}
+[10.257885] (vision_msgs) StdoutLine: {'line': b'-- Installing: /home/aiv/YongJun_ws/matlab_ws/ros_msg/matlab_msg_gen/glnxa64/install/share/vision_msgs/cmake/vision_msgs__rosidl_typesupport_cppExport-release.cmake\n'}
+[10.257914] (vision_msgs) StdoutLine: {'line': b'-- Installing: /home/aiv/YongJun_ws/matlab_ws/ros_msg/matlab_msg_gen/glnxa64/install/share/vision_msgs/cmake/rosidl_cmake-extras.cmake\n'}
+[10.257956] (vision_msgs) StdoutLine: {'line': b'-- Installing: /home/aiv/YongJun_ws/matlab_ws/ros_msg/matlab_msg_gen/glnxa64/install/share/vision_msgs/cmake/ament_cmake_export_dependencies-extras.cmake\n'}
+[10.258007] (vision_msgs) StdoutLine: {'line': b'-- Installing: /home/aiv/YongJun_ws/matlab_ws/ros_msg/matlab_msg_gen/glnxa64/install/share/vision_msgs/cmake/ament_cmake_export_include_directories-extras.cmake\n'}
+[10.258038] (vision_msgs) StdoutLine: {'line': b'-- Installing: /home/aiv/YongJun_ws/matlab_ws/ros_msg/matlab_msg_gen/glnxa64/install/share/vision_msgs/cmake/ament_cmake_export_libraries-extras.cmake\n'}
+[10.258078] (vision_msgs) StdoutLine: {'line': b'-- Installing: /home/aiv/YongJun_ws/matlab_ws/ros_msg/matlab_msg_gen/glnxa64/install/share/vision_msgs/cmake/ament_cmake_export_targets-extras.cmake\n'}
+[10.258108] (vision_msgs) StdoutLine: {'line': b'-- Installing: /home/aiv/YongJun_ws/matlab_ws/ros_msg/matlab_msg_gen/glnxa64/install/share/vision_msgs/cmake/rosidl_cmake_export_typesupport_targets-extras.cmake\n'}
+[10.258138] (vision_msgs) StdoutLine: {'line': b'-- Installing: /home/aiv/YongJun_ws/matlab_ws/ros_msg/matlab_msg_gen/glnxa64/install/share/vision_msgs/cmake/rosidl_cmake_export_typesupport_libraries-extras.cmake\n'}
+[10.258179] (vision_msgs) StdoutLine: {'line': b'-- Installing: /home/aiv/YongJun_ws/matlab_ws/ros_msg/matlab_msg_gen/glnxa64/install/share/vision_msgs/cmake/vision_msgsConfig.cmake\n'}
+[10.258224] (vision_msgs) StdoutLine: {'line': b'-- Installing: /home/aiv/YongJun_ws/matlab_ws/ros_msg/matlab_msg_gen/glnxa64/install/share/vision_msgs/cmake/vision_msgsConfig-version.cmake\n'}
+[10.258254] (vision_msgs) StdoutLine: {'line': b'-- Installing: /home/aiv/YongJun_ws/matlab_ws/ros_msg/matlab_msg_gen/glnxa64/install/share/vision_msgs/package.xml\n'}
+[10.259128] (vision_msgs) CommandEnded: {'returncode': 0}
+[10.317818] (vision_msgs) JobEnded: {'identifier': 'vision_msgs', 'rc': 0}
+[10.318007] (-) EventReactorShutdown: {}

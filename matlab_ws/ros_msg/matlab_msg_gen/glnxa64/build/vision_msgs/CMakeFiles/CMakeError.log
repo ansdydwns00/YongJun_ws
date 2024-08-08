@@ -1,11 +1,11 @@
 Performing C SOURCE FILE Test CMAKE_HAVE_LIBC_PTHREAD failed with the following output:
-Change Dir: /home/aiv/YongJun_ws/matlab_ws/matlab/ros_msg/matlab_msg_gen/glnxa64/build/vision_msgs/CMakeFiles/CMakeScratch/TryCompile-OcKmvY
+Change Dir: /home/aiv/YongJun_ws/matlab_ws/ros_msg/matlab_msg_gen/glnxa64/build/vision_msgs/CMakeFiles/CMakeScratch/TryCompile-ufBCag
 
-Run Build Command(s):/usr/local/MATLAB/R2024a/toolbox/shared/coder/ninja/glnxa64/ninja cmTC_d3d93 && [1/2] Building C object CMakeFiles/cmTC_d3d93.dir/src.c.o
-[2/2] Linking C executable cmTC_d3d93
-FAILED: cmTC_d3d93 
-: && /usr/bin/gcc   CMakeFiles/cmTC_d3d93.dir/src.c.o -o cmTC_d3d93   && :
-/usr/bin/ld: CMakeFiles/cmTC_d3d93.dir/src.c.o: in function `main':
+Run Build Command(s):/usr/local/MATLAB/R2024a/toolbox/shared/coder/ninja/glnxa64/ninja cmTC_7e112 && [1/2] Building C object CMakeFiles/cmTC_7e112.dir/src.c.o
+[2/2] Linking C executable cmTC_7e112
+FAILED: cmTC_7e112 
+: && /usr/bin/gcc   CMakeFiles/cmTC_7e112.dir/src.c.o -o cmTC_7e112   && :
+/usr/bin/ld: CMakeFiles/cmTC_7e112.dir/src.c.o: in function `main':
 src.c:(.text+0x46): undefined reference to `pthread_create'
 /usr/bin/ld: src.c:(.text+0x52): undefined reference to `pthread_detach'
 /usr/bin/ld: src.c:(.text+0x5e): undefined reference to `pthread_cancel'
@@ -37,12 +37,12 @@ int main(void)
 
 
 Determining if the function pthread_create exists in the pthreads failed with the following output:
-Change Dir: /home/aiv/YongJun_ws/matlab_ws/matlab/ros_msg/matlab_msg_gen/glnxa64/build/vision_msgs/CMakeFiles/CMakeScratch/TryCompile-R8yfBZ
+Change Dir: /home/aiv/YongJun_ws/matlab_ws/ros_msg/matlab_msg_gen/glnxa64/build/vision_msgs/CMakeFiles/CMakeScratch/TryCompile-NVxv4f
 
-Run Build Command(s):/usr/local/MATLAB/R2024a/toolbox/shared/coder/ninja/glnxa64/ninja cmTC_6e14e && [1/2] Building C object CMakeFiles/cmTC_6e14e.dir/CheckFunctionExists.c.o
-[2/2] Linking C executable cmTC_6e14e
-FAILED: cmTC_6e14e 
-: && /usr/bin/gcc -DCHECK_FUNCTION_EXISTS=pthread_create  CMakeFiles/cmTC_6e14e.dir/CheckFunctionExists.c.o -o cmTC_6e14e  -lpthreads && :
+Run Build Command(s):/usr/local/MATLAB/R2024a/toolbox/shared/coder/ninja/glnxa64/ninja cmTC_1b013 && [1/2] Building C object CMakeFiles/cmTC_1b013.dir/CheckFunctionExists.c.o
+[2/2] Linking C executable cmTC_1b013
+FAILED: cmTC_1b013 
+: && /usr/bin/gcc -DCHECK_FUNCTION_EXISTS=pthread_create  CMakeFiles/cmTC_1b013.dir/CheckFunctionExists.c.o -o cmTC_1b013  -lpthreads && :
 /usr/bin/ld: cannot find -lpthreads
 collect2: error: ld returned 1 exit status
 ninja: build stopped: subcommand failed.

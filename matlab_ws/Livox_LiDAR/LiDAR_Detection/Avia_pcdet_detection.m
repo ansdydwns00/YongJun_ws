@@ -11,18 +11,16 @@ global G_id
 global G_cls
 
 % Create a node for connection between MATLAB and ROS2
-Node = ros2node("/IVL");
+Pub_Node = ros2node("/IVL_Pub");
+Sub_Node = ros2node("/IVL_Sub");
 
-% Create Subscribe Node
-sub.lr_detection = ros2subscriber(Node,"/lr_detections","vision_msgs/Detection3DArray",@HelperCallbackPCDet);
 
 % Create Publish Node
-pub.LiDAR = ros2publisher(Node,"/LiDAR/Avia","sensor_msgs/PointCloud2");
-% pub.detections = ros2publisher(Node,'/clusters_marker', 'visualization_msgs/MarkerArray');
+pub.LiDAR = ros2publisher(Pub_Node,"/livox/lidar","sensor_msgs/PointCloud2");
 
-% Create Publish Message
-msg_LiDAR = ros2message(pub.LiDAR);
-msg_LiDAR.header.frame_id = 'map';
+% Create Subscribe Node
+sub.lr_detection = ros2subscriber(Sub_Node,"/lr_detections","vision_msgs/Detection3DArray",@HelperCallbackPCDet);
+
 
 %% Main 
 %===================================================================================%
@@ -35,7 +33,6 @@ zmin = -2;      zmax = 4;
 
 player = pcplayer([xmin xmax],[ymin ymax],[zmin zmax],"ColorSource","X","MarkerSize",4);
 
-
 % ROI 설정
 roi = [2, 10, -4, 4, -1, 5];     
 
@@ -43,7 +40,7 @@ roi = [2, 10, -4, 4, -1, 5];
 gridStep = 0.1;
 
 % Set values for frame count 
-frameCount = 3;
+frameCount = 1;
 
 % Set values for n frames
 frame_num = 3;
@@ -83,8 +80,9 @@ while true
             
             % Preprocessing point clound (ROI, Downsampling, remove ground)
             if ~isempty(ptCloud.Location)
-                ptCloud = HelperPtCldProcessing(ptCloud,roi,gridStep); 
 
+                % ptCloud = HelperPtCldProcessing(ptCloud,roi,gridStep); 
+                
                 % Sending point cloud msg to ROS2 
                 msg_LiDAR = ros2message(pub.LiDAR);
                 msg_LiDAR.header.frame_id = 'map';

@@ -1,5 +1,6 @@
 function InitProtocol(~,~,udpObj)
-slaveIP = '192.168.1.119'; 
+slaveIP = '192.168.1.175'; 
+% slaveIP = '192.168.1.119'; 
 slavePort = 65000;   
 
 % 핸드셰이크 메시지 구성

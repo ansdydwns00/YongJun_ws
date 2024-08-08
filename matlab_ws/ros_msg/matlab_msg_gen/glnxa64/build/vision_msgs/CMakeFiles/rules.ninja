@@ -175,7 +175,7 @@ rule CUSTOM_COMMAND
 # Rule for re-running cmake.
 
 rule RERUN_CMAKE
-  command = /usr/local/MATLAB/R2024a/bin/glnxa64/cmake/bin/cmake --regenerate-during-build -S/home/aiv/YongJun_ws/matlab_ws/matlab/ros_msg/matlab_msg_gen/glnxa64/src/vision_msgs -B/home/aiv/YongJun_ws/matlab_ws/matlab/ros_msg/matlab_msg_gen/glnxa64/build/vision_msgs
+  command = /usr/local/MATLAB/R2024a/bin/glnxa64/cmake/bin/cmake --regenerate-during-build -S/home/aiv/YongJun_ws/matlab_ws/ros_msg/matlab_msg_gen/glnxa64/src/vision_msgs -B/home/aiv/YongJun_ws/matlab_ws/ros_msg/matlab_msg_gen/glnxa64/build/vision_msgs
   description = Re-running CMake...
   generator = 1
 

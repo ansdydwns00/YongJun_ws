@@ -83,10 +83,7 @@ while true
         xyzIntensityBuffer = [];
     end
     
-    
-    
-    
-    
+
     frameCount = frameCount + 1; 
     pause(0.01)
 end
