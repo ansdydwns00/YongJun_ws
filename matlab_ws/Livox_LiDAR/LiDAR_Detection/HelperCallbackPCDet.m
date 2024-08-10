@@ -8,18 +8,16 @@ function HelperCallbackPCDet(msg)
     G_id = {};
     G_cls = {};
     
-    % number of detections 
-    num_detection = size(msg.detections,1);
-    
-    if num_detection ~= 0
-        a = num_detection;
-
-    end
-
     bbox_tmp = [];
     id_tmp = {};
     cls_tmp = {};
-
+    
+    % number of detections 
+    num_detection = size(msg.detections,1);
+    
+    if num_detection == 0
+        disp("No Object Detection")
+    end
 
     for i = 1:num_detection
         x_ctr = msg.detections(i).bbox.center.position.x;

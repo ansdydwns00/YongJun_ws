@@ -4,6 +4,7 @@ clear; clc
 % Connect udp data communication
 Avia_UDP = udpport("datagram","LocalPort",56001);
 
+
 %% ROS Node 
 
 global g_id
@@ -41,9 +42,9 @@ msg_LiDAR.header.frame_id = 'map';
 %-----------------------------------------------------------------------------------%
 
 % Load LiDAR-Camera Calibration parameter
-load("lcc_params_640.mat");
-
-% 라이다 카메라 칼리브레이션 파일
+load("lcc_params_1920.mat");
+% 
+% % 라이다 카메라 칼리브레이션 파일
 lidarToCam = tform;              
 camToLidar = invert(tform);
 
@@ -55,11 +56,11 @@ camToLidar = invert(tform);
 
 %-----------------------------------------------------------------------------------%
 %-----------------------------------Visualization-----------------------------------%
-%-----------------------------------------------------------------------------------%
+%---------------------------------------------2 --------------------------------------%
 % Set x,y,z range of pcplayer
-xmin = 0;      xmax = 10;
-ymin = -10;     ymax = 10;
-zmin = -2;     zmax = 4;
+xmin = 0;      xmax = 70;
+ymin = -15;     ymax = 15;
+zmin = -2;     zmax = 3;
 
 player = pcplayer([xmin xmax],[ymin ymax],[zmin zmax],"ColorSource","X","MarkerSize",4);
 %-----------------------------------------------------------------------------------%
@@ -71,13 +72,13 @@ player = pcplayer([xmin xmax],[ymin ymax],[zmin zmax],"ColorSource","X","MarkerS
 %------------------------------Clustering Parameter---------------------------------%
 %-----------------------------------------------------------------------------------%
 % ROI 설정
-roi = [0, 10, -5, 5, -2, 2];     
+roi = [0, 60, -10, 10, -2, 2];     
 
 % Downsample
 gridStep = 0.01;
 
 % Cluster distance 
-clusterThreshold = 0.1;   
+clusterThreshold = 2;   
 %-----------------------------------------------------------------------------------%
 
 
@@ -89,7 +90,7 @@ clusterThreshold = 0.1;
 frameCount = 1;
 
 % Set values for n frames
-frame_num = 3;
+frame_num = 6;
 
 % Flag for first Run
 reset_flag = single(0);
@@ -104,7 +105,8 @@ xyzIntensityBuffer = [];
                       
 flush(Avia_UDP);
 while true
-
+    
+    tic
     % Read 1 packet datagram
     packet = read(Avia_UDP,1,"uint8");
     
@@ -123,10 +125,14 @@ while true
 
             ptCloud = pointCloud(xyzPointsBuffer,"Intensity",xyzIntensityBuffer);
             
-            % Preprocessing point clound (ROI, Downsampling, remove ground)
-            if ~isempty(ptCloud.Location)
-                ptCloud = helperPtCldProcessing(ptCloud,roi,gridStep); 
-            end
+            % % Preprocessing point clound (ROI, Downsampling, remove ground)
+            % if ~isempty(ptCloud.Location)
+            %     ptCloud = helperPtCldProcessing(ptCloud,roi,gridStep); 
+            % end
+            
+            l_bboxes = [];
+            l_id = [];
+            l_cls = [];
 
             l_bboxes = g_bboxes;
             l_id = g_id;
@@ -134,6 +140,8 @@ while true
             
             % Object detection
             [Distances,bboxesLidar,bboxesUsed] = helperComputeDistance(l_bboxes,ptCloud,camParams,camToLidar,clusterThreshold);
+            
+            toc
             
             % Display ptCloud
             view(player,ptCloud);
@@ -146,11 +154,11 @@ while true
                 
                 cuboidInfo = helperGetCuboidInfo(bboxesLidar);
                 helperDrawCuboid(player.Axes,cuboidInfo,'red',Distances,l_id,l_cls)
-               
             end
             
             xyzPointsBuffer = [];
             xyzIntensityBuffer = [];
+    
         end
 
        frameCount = frameCount + 1;

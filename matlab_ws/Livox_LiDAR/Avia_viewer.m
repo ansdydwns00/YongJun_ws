@@ -25,7 +25,7 @@ Avia_UDP = udpport("datagram","LocalPort",56001);
 %% Visualization
 
 % Setting point cloud viewer parameter
-xmin = 0;  xmax = 10;
+xmin = 0;  xmax = 60;
 ymin = -5; ymax = 5;
 zmin = -2; zmax = 4;
 
@@ -75,17 +75,17 @@ while true
         if mod(frameCount,frame_num) == 0
 
             ptCloud = pointCloud(xyzPointsBuffer,"Intensity",xyzIntensityBuffer);
-            ptCloud = helperPtCldProcessing(ptCloud, roi, gridStep);
+            % ptCloud = helperPtCldProcessing(ptCloud, roi, gridStep);
             
-            % % % ptCloud to bin file
-            % filename = sprintf('%06d.bin',i);
-            % fileID = fopen(filename,'w');
-            % xyzi_point = [ptCloud.Location ptCloud.Intensity]';
-            % % xyzi_point = [ptCloud.Location normalize(ptCloud.Intensity)]';
-            % % xyzi_point = [ptCloud.Location zeros(size(ptCloud.Location,1),1)]';
-            % i = i + 1;
-            % fwrite(fileID,xyzi_point,'single');
-            % fclose(fileID);
+            % % ptCloud to bin file
+            filename = sprintf('%06d.bin',i);
+            fileID = fopen(filename,'w');
+            xyzi_point = [ptCloud.Location ptCloud.Intensity]';
+            % xyzi_point = [ptCloud.Location normalize(ptCloud.Intensity)]';
+            % xyzi_point = [ptCloud.Location zeros(size(ptCloud.Location,1),1)]';
+            i = i + 1;
+            fwrite(fileID,xyzi_point,'single');
+            fclose(fileID);
 
             % Display ptCloud 
             view(player,ptCloud);

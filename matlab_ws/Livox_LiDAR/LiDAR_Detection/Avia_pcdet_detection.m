@@ -27,14 +27,15 @@ sub.lr_detection = ros2subscriber(Sub_Node,"/lr_detections","vision_msgs/Detecti
 %-----------------------------------Visualization-----------------------------------%
 %===================================================================================%
 % Set x,y,z range of pcplayer
-xmin = 0;      xmax = 10;
-ymin = -5;     ymax = 5;
+xmin = 0;      xmax = 70;
+ymin = -20;     ymax = 20;
 zmin = -2;      zmax = 4;
 
 player = pcplayer([xmin xmax],[ymin ymax],[zmin zmax],"ColorSource","X","MarkerSize",4);
 
+
 % ROI 설정
-roi = [2, 10, -4, 4, -1, 5];     
+roi = [2, 70, -20, 20, -2, 3];     
 
 % Downsample
 gridStep = 0.1;
@@ -43,7 +44,7 @@ gridStep = 0.1;
 frameCount = 1;
 
 % Set values for n frames
-frame_num = 3;
+frame_num = 1;
 
 % Flag for first Run
 reset_flag = single(0);
@@ -59,7 +60,7 @@ L_cls = [];
 
 flush(Avia_UDP);
 while true
-    
+    tic
     % Read 1 packet
     packet = read(Avia_UDP,1,"uint8");
 
@@ -68,7 +69,7 @@ while true
     end
     
     if isValid
-        
+        tic
         % Store [frame_num] message
         xyzPointsBuffer = vertcat(xyzPointsBuffer,xyzCoords);
         xyzIntensityBuffer = vertcat(xyzIntensityBuffer,xyzIntensity);
@@ -94,7 +95,9 @@ while true
             L_bbox = G_bbox;
             L_id = G_id;
             L_cls = G_cls;
-
+            
+            % toc
+            
             % Display ptCloud 
             view(player,ptCloud);
             HelperDeleteCuboid(player.Axes)

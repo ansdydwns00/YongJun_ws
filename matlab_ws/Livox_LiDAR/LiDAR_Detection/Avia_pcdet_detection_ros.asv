@@ -1,4 +1,5 @@
 %% ROS Node 
+clear; clc
 
 global G_bbox
 global G_id
@@ -9,8 +10,9 @@ global G_point
 Node = ros2node("/IVL");
 
 % Create Subscribe Node
+sub.avia = ros2subscriber(Node,"/livox/lidar","sensor_msgs/PointCloud2",@HelperCallbackLiDAR);
 sub.lr_detection = ros2subscriber(Node,"/lr_detections","vision_msgs/Detection3DArray",@HelperCallbackPCDet);
-sub.avia = ros2subscriber(Node,"/livox/lidar","sensor_msgs/Pointcloud2",@HelperCallbackLiDAR);
+
 
 % Create Publish Node
 % pub.detections = ros2publisher(Node,'/clusters_marker', 'visualization_msgs/MarkerArray');
@@ -25,6 +27,7 @@ sub.avia = ros2subscriber(Node,"/livox/lidar","sensor_msgs/Pointcloud2",@HelperC
 xmin = 0;      xmax = 10;
 ymin = -5;     ymax = 5;
 zmin = -2;      zmax = 4;
+
 
 player = pcplayer([xmin xmax],[ymin ymax],[zmin zmax],"ColorSource","X","MarkerSize",4);
 
@@ -48,8 +51,6 @@ xyzIntensityBuffer = [];
 L_bbox = [];
 L_id = [];
 L_cls = [];
-
-
 
 
 
@@ -83,10 +84,7 @@ while true
         xyzIntensityBuffer = [];
     end
     
-    
-    
-    
-    
+
     frameCount = frameCount + 1; 
     pause(0.01)
 end

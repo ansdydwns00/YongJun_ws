@@ -28,7 +28,8 @@ xmin = 0;      xmax = 10;
 ymin = -5;     ymax = 5;
 zmin = -2;      zmax = 4;
 
-player = pcplayer([xmin xmax],[ymin ymax],[zmin zmax],"ColorSource","X","MarkerSize",4);
+
+player = pcplayer([xmin xmax],[ymin ymax],[zmin zmax],"ColorSource","X","MarkerSize",6);
 
 % Set values for frame count 
 frameCount = 1;

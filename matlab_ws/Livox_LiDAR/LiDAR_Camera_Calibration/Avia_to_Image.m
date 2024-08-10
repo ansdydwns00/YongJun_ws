@@ -6,10 +6,10 @@ Avia_UDP = udpport("datagram","LocalPort",56001);
 
 %% Node 
 
-main = ros2node("/IVL");
+Node = ros2node("/IVL");
 
 % lidarSub = ros2subscriber(Matlab,'/livox/lidar','sensor_msgs/PointCloud2');
-imageSub = ros2subscriber(main,'/camera/camera/color/image_raw','sensor_msgs/Image');
+imageSub = ros2subscriber(Node,'/camera/camera/color/image_raw','sensor_msgs/Image');
 
 %% LiDAR/Camera(640x480) Calibration .mat  
 
@@ -20,7 +20,7 @@ lidarToCam = tform;
 camToLidar = invert(tform);
 
 % 카메라 칼리브레이션 파일
-camParams = cameraIntrinsics([6.087285448757669e+02 6.218653857175901e+02],[3.282029259014350e+02 2.472197338367030e+02],[480 640],"RadialDistortion",[0.151165056783003 -0.287374015031260]);
+camParams = cameraIntrinsics([6.087285448757669e+02 6.218653857175901e+02],[3.242029259014350e+02 2.472197338367030e+02],[480 640],"RadialDistortion",[0.151165056783003 -0.287374015031260]);
 
 %% LiDAR/Camera(1280x720) Calibration .mat
 
@@ -31,7 +31,7 @@ lidarToCam = tform;
 camToLidar = invert(tform);
 
 % 카메라 칼리브레이션 파일
-camParams = cameraIntrinsics([910.6805 927.2654],[652.0424 368.1984],[720 1280],"RadialDistortion",[0.1387 -0.2776]);
+camParams = cameraIntrinsics([910.6805 927.2654],[650.0424 368.1984],[720 1280],"RadialDistortion",[0.1387 -0.2776]);
 
 %% LiDAR/Camera(1920x1080) Calibration .mat
 
@@ -42,7 +42,7 @@ lidarToCam = tform;
 camToLidar = invert(tform);
 
 % 카메라 칼리브레이션 파일 
-camParams = cameraIntrinsics([1.403085770877809e+03 1.402638897100132e+03],[9.652984572253220e+02 5.525375075192622e+02],[1080 1920],"RadialDistortion",[0.114560927009696 -0.206313798776597]);
+camParams = cameraIntrinsics([1.403085770877809e+03 1.402638897100132e+03],[9.542984572253220e+02 5.525375075192622e+02],[1080 1920],"RadialDistortion",[0.114560927009696 -0.206313798776597]);
 
 %%
 

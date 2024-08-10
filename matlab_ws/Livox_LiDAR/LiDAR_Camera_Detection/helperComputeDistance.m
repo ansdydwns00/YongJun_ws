@@ -6,7 +6,7 @@ function [Distances,bboxesLidar,bboxesUsed] = helperComputeDistance(bboxes,ptCld
 
     if ~isempty(bboxes) && ~isempty(ptCld.Location)
 
-        [bboxesLidar, ~, bboxesUsed] = bboxCameraToLidar(bboxes, ptCld, cameraParams, CamToLidar, 'ClusterThreshold', clusterThreshold,'MaxDetectionRange',[2,10]);  
+        [bboxesLidar, ~, bboxesUsed] = bboxCameraToLidar(bboxes, ptCld, cameraParams, CamToLidar, 'ClusterThreshold', clusterThreshold,'MaxDetectionRange',[2,60]);  
         
         % [0 0 0 0 0 0 0 0 0] value remove
         idx_del = all(bboxesLidar == 0, 2);
@@ -28,7 +28,7 @@ function [Distances,bboxesLidar,bboxesUsed] = helperComputeDistance(bboxes,ptCld
         
                 % Find the distance of the 2-D rectangle
         
-                dist = mean(pts.Location(:,1));
+                dist = min(pts.Location(:,1));
                 Distances(i,:) = dist;
             end
 

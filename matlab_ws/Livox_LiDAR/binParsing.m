@@ -18,22 +18,22 @@ pcshow(k)
 
 
 % 특정 경로의 파일 목록 가져오기
-folder_path = '/home/aiv/YongJun_ws/matlab/Livox_LiDAR/binFile/sejongStreet_ng';
+folder_path = '/home/aiv/YongJun_ws/matlab_ws/Livox_LiDAR/dd';
 file_list = dir(fullfile(folder_path, '*.bin'));
-player = pcplayer([0 60],[-20 20],[-2 10],"MarkerSize",10);
+player = pcplayer([0 60],[-10 10],[-2 4],"MarkerSize",10);
 
 
 % 각 bin 파일 처리하기
-for i = 20:length(file_list)
+for i = 1:length(file_list)
     % 현재 파일 경로 구성
     current_dir = fopen(fullfile(folder_path, file_list(i).name));
     
     current_file = single(fread(current_dir,[4 inf],'single')');
-    f = factor(length(current_file));
-    ptCloud = pointCloud(reshape(current_file(:,1:3),f(1),[],3),"Intensity",reshape(current_file(:,4),f(1),[],1));
+    % f = factor(length(current_file));
+    ptCloud = pointCloud(current_file(:,1:3),"Intensity",current_file(:,4));
     
-    groundIdx = segmentGroundFromLidarData(ptCloud);
-    ptCloud = select(ptCloud,~groundIdx);
+    % groundIdx = segmentGroundFromLidarData(ptCloud);
+    % ptCloud = select(ptCloud,~groundIdx);
 
     % % ptCloud to bin file
     % filename = sprintf('%06d.bin',i);
