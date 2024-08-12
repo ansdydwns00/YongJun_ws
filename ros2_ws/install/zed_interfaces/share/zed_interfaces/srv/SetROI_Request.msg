@@ -1,1 +1,0 @@
-/home/aiv/YongJun_ws/ros2_ws/build/zed_interfaces/rosidl_cmake/srv/SetROI_Request.msg

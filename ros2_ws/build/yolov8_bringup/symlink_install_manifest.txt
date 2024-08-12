@@ -1,3 +1,4 @@
+/home/aiv/YongJun_ws/ros2_ws/install/yolov8_bringup/share/yolov8_bringup//launch/yolo-nas.launch.py
 /home/aiv/YongJun_ws/ros2_ws/install/yolov8_bringup/share/yolov8_bringup//launch/yolov10.launch.py
 /home/aiv/YongJun_ws/ros2_ws/install/yolov8_bringup/share/yolov8_bringup//launch/yolov8.launch.py
 /home/aiv/YongJun_ws/ros2_ws/install/yolov8_bringup/share/yolov8_bringup//launch/yolov8_3d.launch.py

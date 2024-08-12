@@ -1,6 +1,6 @@
 function helperCallbackYolo(msg)
    
-
+    
     global g_id
     global g_cls
     global g_bboxes
@@ -8,7 +8,7 @@ function helperCallbackYolo(msg)
     g_id = {};
     g_cls = {};
     g_bboxes = [];
-
+    
     % bounding box info
     for idx = 1:length(msg.detections)
         x = msg.detections(idx).bbox.center.position.x;
@@ -25,6 +25,8 @@ function helperCallbackYolo(msg)
 
         % Object info
         g_cls{idx} = msg.detections(idx).class_name;
+        
     end
-
+    
+    
 end

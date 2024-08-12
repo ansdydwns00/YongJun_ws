@@ -1,5 +1,5 @@
 set(_AMENT_PACKAGE_NAME "yolov8_msgs")
-set(yolov8_msgs_VERSION "0.0.0")
+set(yolov8_msgs_VERSION "3.3.0")
 set(yolov8_msgs_MAINTAINER "Miguel Ángel González Santamarta <mgons@unileon.es>")
 set(yolov8_msgs_BUILD_DEPENDS "std_msgs" "geometry_msgs")
 set(yolov8_msgs_BUILDTOOL_DEPENDS "ament_cmake")

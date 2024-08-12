@@ -1,5 +1,6 @@
 file(REMOVE_RECURSE
   "CMakeFiles/gtest_template.dir/test/gtest_template.cpp.o"
+  "CMakeFiles/gtest_template.dir/test/gtest_template.cpp.o.d"
   "gtest_template"
   "gtest_template.pdb"
 )

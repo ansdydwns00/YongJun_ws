@@ -15,22 +15,45 @@ function HelperDrawCuboid(varargin)
         class = varargin{5}(i);
 
         % Cuboid [x, y, z, length, width, height]
-        x_c = cuboid(1);
-        y_c = cuboid(2);
-        z_c = cuboid(3);
-        x_l = cuboid(4);
-        y_l = cuboid(5);
-        z_l = cuboid(6);
+        x_ctr = cuboid(1);
+        y_ctr = cuboid(2);
+        z_ctr = cuboid(3);
+        x_len = cuboid(4);
+        y_len = cuboid(5);
+        z_len = cuboid(6);
+        x_rot = cuboid(7);
+        y_rot = cuboid(8);
+        z_rot = cuboid(9);
 
         % Compute vertices
-        vertices = [x_c+x_l/2, y_c-y_l/2, z_c+z_l/2;                % front left up 
-                    x_c+x_l/2, y_c+y_l/2, z_c+z_l/2;                % front right up 
-                    x_c-x_l/2, y_c+y_l/2, z_c+z_l/2;                % back right up  
-                    x_c-x_l/2, y_c-y_l/2, z_c+z_l/2;                % back left up   
-                    x_c+x_l/2, y_c-y_l/2, z_c-z_l/2;                % front left down
-                    x_c+x_l/2, y_c+y_l/2, z_c-z_l/2;                % front right down
-                    x_c-x_l/2, y_c+y_l/2, z_c-z_l/2;                % back right down
-                    x_c-x_l/2, y_c-y_l/2, z_c-z_l/2];               % back left down
+        vertices = [x_ctr+x_len/2, y_ctr-y_len/2, z_ctr+z_len/2;                % front left up 
+                    x_ctr+x_len/2, y_ctr+y_len/2, z_ctr+z_len/2;                % front right up 
+                    x_ctr-x_len/2, y_ctr+y_len/2, z_ctr+z_len/2;                % back right up  
+                    x_ctr-x_len/2, y_ctr-y_len/2, z_ctr+z_len/2;                % back left up   
+                    x_ctr+x_len/2, y_ctr-y_len/2, z_ctr-z_len/2;                % front left down
+                    x_ctr+x_len/2, y_ctr+y_len/2, z_ctr-z_len/2;                % front right down
+                    x_ctr-x_len/2, y_ctr+y_len/2, z_ctr-z_len/2;                % back right down
+                    x_ctr-x_len/2, y_ctr-y_len/2, z_ctr-z_len/2];               % back left down
+        
+        % Translate vertices to the origin
+        vertices = vertices - [x_ctr, y_ctr, z_ctr];
+
+        % Create rotation matrices
+        Rx = [1 0 0; 0 cosd(x_rot) -sind(x_rot); 0 sind(x_rot) cosd(x_rot)];
+        Ry = [cosd(y_rot) 0 sind(y_rot); 0 1 0; -sind(y_rot) 0 cosd(y_rot)];
+        Rz = [cosd(z_rot) -sind(z_rot) 0; sind(z_rot) cosd(z_rot) 0; 0 0 1];
+
+        % Combine rotation matrices
+        R = Rz * Ry * Rx;
+
+        % Apply rotation to vertices
+        for j = 1:size(vertices, 1)
+            vertices(j, :) = (R * vertices(j, :)')';
+        end
+
+        % Translate vertices back to the original location
+        vertices = vertices + [x_ctr, y_ctr, z_ctr];
+
 
         % Index of the line connecting the vertices
         edges = [1,2; 2,3; 3,4; 4,1;    % up side

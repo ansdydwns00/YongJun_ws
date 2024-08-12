@@ -1,5 +1,6 @@
 file(REMOVE_RECURSE
   "CMakeFiles/test_usb_cam_utils.dir/test/test_usb_cam_utils.cpp.o"
+  "CMakeFiles/test_usb_cam_utils.dir/test/test_usb_cam_utils.cpp.o.d"
   "test_usb_cam_utils"
   "test_usb_cam_utils.pdb"
 )

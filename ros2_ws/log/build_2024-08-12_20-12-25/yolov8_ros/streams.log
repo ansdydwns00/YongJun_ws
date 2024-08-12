@@ -1,0 +1,42 @@
+[0.734s] Invoking command in '/home/aiv/YongJun_ws/ros2_ws/build/yolov8_ros': AMENT_PREFIX_PATH=/home/aiv/YongJun_ws/ros2_ws/install/yolov8_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/aiv/YongJun_ws/ros2_ws/install/yolov8_msgs LD_LIBRARY_PATH=/home/aiv/YongJun_ws/ros2_ws/install/yolov8_msgs/lib:/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib/x86_64-linux-gnu:/opt/ros/foxy/lib:/usr/local/cuda-11.8/lib64 PYTHONPATH=/home/aiv/YongJun_ws/ros2_ws/build/yolov8_ros/prefix_override:/home/aiv/YongJun_ws/ros2_ws/install/yolov8_ros/lib/python3.8/site-packages:/home/aiv/YongJun_ws/ros2_ws/install/yolov8_msgs/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py develop --editable --build-directory /home/aiv/YongJun_ws/ros2_ws/build/yolov8_ros/build --no-deps symlink_data
+[0.845s] /home/aiv/.local/lib/python3.8/site-packages/setuptools/_distutils/dist.py:268: UserWarning: Unknown distribution option: 'tests_require'
+[0.845s]   warnings.warn(msg)
+[0.986s] running develop
+[0.987s] /home/aiv/.local/lib/python3.8/site-packages/setuptools/command/develop.py:42: EasyInstallDeprecationWarning: easy_install command is deprecated.
+[0.987s] !!
+[0.987s] 
+[0.987s]         ********************************************************************************
+[0.987s]         Please avoid running ``setup.py`` and ``easy_install``.
+[0.987s]         Instead, use pypa/build, pypa/installer or other
+[0.987s]         standards-based tools.
+[0.987s] 
+[0.987s]         See https://github.com/pypa/setuptools/issues/917 for details.
+[0.987s]         ********************************************************************************
+[0.987s] 
+[0.987s] !!
+[0.987s]   easy_install.initialize_options(self)
+[1.154s] running egg_info
+[1.154s] creating yolov8_ros.egg-info
+[1.170s] writing yolov8_ros.egg-info/PKG-INFO
+[1.170s] writing dependency_links to yolov8_ros.egg-info/dependency_links.txt
+[1.170s] writing entry points to yolov8_ros.egg-info/entry_points.txt
+[1.171s] writing requirements to yolov8_ros.egg-info/requires.txt
+[1.171s] writing top-level names to yolov8_ros.egg-info/top_level.txt
+[1.171s] writing manifest file 'yolov8_ros.egg-info/SOURCES.txt'
+[1.208s] reading manifest file 'yolov8_ros.egg-info/SOURCES.txt'
+[1.209s] writing manifest file 'yolov8_ros.egg-info/SOURCES.txt'
+[1.251s] running build_ext
+[1.251s] Creating /home/aiv/YongJun_ws/ros2_ws/install/yolov8_ros/lib/python3.8/site-packages/yolov8-ros.egg-link (link to .)
+[1.251s] Installing debug_node script to /home/aiv/YongJun_ws/ros2_ws/install/yolov8_ros/lib/yolov8_ros
+[1.251s] Installing detect_3d_node script to /home/aiv/YongJun_ws/ros2_ws/install/yolov8_ros/lib/yolov8_ros
+[1.251s] Installing tracking_node script to /home/aiv/YongJun_ws/ros2_ws/install/yolov8_ros/lib/yolov8_ros
+[1.252s] Installing yolov8_node script to /home/aiv/YongJun_ws/ros2_ws/install/yolov8_ros/lib/yolov8_ros
+[1.252s] 
+[1.252s] Installed /home/aiv/YongJun_ws/ros2_ws/build/yolov8_ros
+[1.252s] running symlink_data
+[1.252s] creating /home/aiv/YongJun_ws/ros2_ws/install/yolov8_ros/share/ament_index
+[1.252s] creating /home/aiv/YongJun_ws/ros2_ws/install/yolov8_ros/share/ament_index/resource_index
+[1.252s] creating /home/aiv/YongJun_ws/ros2_ws/install/yolov8_ros/share/ament_index/resource_index/packages
+[1.252s] symbolically linking /home/aiv/YongJun_ws/ros2_ws/build/yolov8_ros/resource/yolov8_ros -> /home/aiv/YongJun_ws/ros2_ws/install/yolov8_ros/share/ament_index/resource_index/packages
+[1.252s] symbolically linking /home/aiv/YongJun_ws/ros2_ws/build/yolov8_ros/package.xml -> /home/aiv/YongJun_ws/ros2_ws/install/yolov8_ros/share/yolov8_ros
+[1.270s] Invoked command in '/home/aiv/YongJun_ws/ros2_ws/build/yolov8_ros' returned '0': AMENT_PREFIX_PATH=/home/aiv/YongJun_ws/ros2_ws/install/yolov8_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/aiv/YongJun_ws/ros2_ws/install/yolov8_msgs LD_LIBRARY_PATH=/home/aiv/YongJun_ws/ros2_ws/install/yolov8_msgs/lib:/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib/x86_64-linux-gnu:/opt/ros/foxy/lib:/usr/local/cuda-11.8/lib64 PYTHONPATH=/home/aiv/YongJun_ws/ros2_ws/build/yolov8_ros/prefix_override:/home/aiv/YongJun_ws/ros2_ws/install/yolov8_ros/lib/python3.8/site-packages:/home/aiv/YongJun_ws/ros2_ws/install/yolov8_msgs/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py develop --editable --build-directory /home/aiv/YongJun_ws/ros2_ws/build/yolov8_ros/build --no-deps symlink_data

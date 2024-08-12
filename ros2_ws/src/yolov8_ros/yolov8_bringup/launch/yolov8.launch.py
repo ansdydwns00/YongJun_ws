@@ -25,6 +25,13 @@ def generate_launch_description():
     #
     # ARGS
     #
+    model_type = LaunchConfiguration("model_type")
+    model_type_cmd = DeclareLaunchArgument(
+        "model_type",
+        default_value="YOLO",
+        choices=["YOLO", "NAS"],
+        description="Model type form Ultralytics (YOLO, NAS")
+
     model = LaunchConfiguration("model")
     model_cmd = DeclareLaunchArgument(
         "model",
@@ -40,7 +47,7 @@ def generate_launch_description():
     device = LaunchConfiguration("device")
     device_cmd = DeclareLaunchArgument(
         "device",
-        default_value="cuda:0",  #cuda:0
+        default_value="cuda:0",
         description="Device to use (GPU/CPU)")
 
     enable = LaunchConfiguration("enable")
@@ -61,6 +68,13 @@ def generate_launch_description():
         default_value="/camera/camera/color/image_raw",
         description="Name of the input image topic")
 
+    image_reliability = LaunchConfiguration("image_reliability")
+    image_reliability_cmd = DeclareLaunchArgument(
+        "image_reliability",
+        default_value="2",
+        choices=["0", "1", "2"],
+        description="Specific reliability QoS of the input image topic (0=system default, 1=Reliable, 2=Best Effort)")
+
     namespace = LaunchConfiguration("namespace")
     namespace_cmd = DeclareLaunchArgument(
         "namespace",
@@ -75,10 +89,14 @@ def generate_launch_description():
         executable="yolov8_node",
         name="yolov8_node",
         namespace=namespace,
-        parameters=[{"model": model,
-                     "device": device,
-                     "enable": enable,
-                     "threshold": threshold}],
+        parameters=[{
+            "model_type": model_type,
+            "model": model,
+            "device": device,
+            "enable": enable,
+            "threshold": threshold,
+            "image_reliability": image_reliability,
+        }],
         remappings=[("image_raw", input_image_topic)]
     )
 
@@ -87,7 +105,10 @@ def generate_launch_description():
         executable="tracking_node",
         name="tracking_node",
         namespace=namespace,
-        parameters=[{"tracker": tracker}],
+        parameters=[{
+            "tracker": tracker,
+            "image_reliability": image_reliability
+        }],
         remappings=[("image_raw", input_image_topic)]
     )
 
@@ -96,18 +117,23 @@ def generate_launch_description():
         executable="debug_node",
         name="debug_node",
         namespace=namespace,
-        remappings=[("image_raw", input_image_topic),
-                    ("detections", "tracking")]
+        parameters=[{"image_reliability": image_reliability}],
+        remappings=[
+            ("image_raw", input_image_topic),
+            ("detections", "tracking")
+        ]
     )
 
     ld = LaunchDescription()
 
+    ld.add_action(model_type_cmd)
     ld.add_action(model_cmd)
     ld.add_action(tracker_cmd)
     ld.add_action(device_cmd)
     ld.add_action(enable_cmd)
     ld.add_action(threshold_cmd)
     ld.add_action(input_image_topic_cmd)
+    ld.add_action(image_reliability_cmd)
     ld.add_action(namespace_cmd)
 
     ld.add_action(detector_node_cmd)

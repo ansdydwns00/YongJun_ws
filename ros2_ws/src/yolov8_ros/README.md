@@ -1,6 +1,13 @@
 # yolov8_ros
 
-ROS 2 wrap for [Ultralytics YOLOv8](https://github.com/ultralytics/ultralytics) to perform object detection and tracking, instance segmentation and human pose estimation. There are also 3D versions of object detection and human pose estimation based on depth images.
+ROS 2 wrap for [Ultralytics YOLOv8](https://github.com/ultralytics/ultralytics) to perform object detection and tracking, instance segmentation, human pose estimation and Oriented Bounding Box (OBB). There are also 3D versions of object detection, including instance segmentation, and human pose estimation based on depth images.
+
+## Table of Contents
+
+1. [Installation](#installation)
+2. [Models](#models)
+3. [Usage](#usage)
+4. [Demos](#demos)
 
 ## Installation
 
@@ -13,9 +20,18 @@ $ rosdep install --from-paths src --ignore-src -r -y
 $ colcon build
 ```
 
+## Models
+
+The available models for yolov8_ros are the following:
+
+- [YOLOv8](https://docs.ultralytics.com/models/yolov8/)
+- [YOLOv9](https://docs.ultralytics.com/models/yolov9/)
+- [YOLOv10](https://docs.ultralytics.com/models/yolov10/)
+- [YOLO-NAS](https://docs.ultralytics.com/models/yolo-nas/)
+
 ## Usage
 
-### YOLOv8 / YOLOv9
+### YOLOv8 / YOLOv9 / YOLOv10 / YOLO-NAS
 
 ```shell
 $ ros2 launch yolov8_bringup yolov8.launch.py
@@ -37,6 +53,7 @@ $ ros2 launch yolov8_bringup yolov9.launch.py
 
 #### Parameters
 
+- **model_type**: Ultralytics model type (default: YOLO)
 - **model**: YOLOv8 model (default: yolov8m.pt)
 - **tracker**: Tracker file (default: bytetrack.yaml)
 - **device**: GPU/CUDA (default: cuda:0)
@@ -64,6 +81,7 @@ $ ros2 launch yolov8_bringup yolov8_3d.launch.py
 
 #### Parameters
 
+- **model_type**: Ultralytics model type (default: YOLO)
 - **model**: YOLOv8 model (default: yolov8m.pt)
 - **tracker**: tracker file (default: bytetrack.yaml)
 - **device**: GPU/CUDA (default: cuda:0)
@@ -78,6 +96,18 @@ $ ros2 launch yolov8_bringup yolov8_3d.launch.py
 - **depth_image_units_divisor**: divisor to convert the depth image into metres (default: 1000)
 - **target_frame**: frame to transform the 3D boxes (default: base_link)
 - **maximum_detection_threshold**: maximum detection threshold in the z axis (default: 0.3)
+
+## Lifecycle nodes
+
+Previous updates add Lifecycle Nodes support to all the nodes available in the package.
+This implementation tries to reduce the workload in the unconfigured and inactive states by only loading the models and activating the subscriber on the active state.
+
+These are some resource comparisons using the default yolov8m.pt model on a 30fps video stream.
+
+| State    | CPU Usage (i7 12th Gen) | VRAM Usage | Bandwidth Usage |
+| -------- | ----------------------- | ---------- | --------------- |
+| Active   | 40-50% in one core      | 628 MB     | Up to 200 Mbps  |
+| Inactive | ~5-7% in one core       | 338 MB     | 0-20 Kbps       |
 
 ## Demos
 

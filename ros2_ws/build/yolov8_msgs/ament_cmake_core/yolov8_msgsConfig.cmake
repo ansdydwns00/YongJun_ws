@@ -16,7 +16,7 @@ set(_yolov8_msgs_CONFIG_INCLUDED TRUE)
 
 # output package information
 if(NOT yolov8_msgs_FIND_QUIETLY)
-  message(STATUS "Found yolov8_msgs: 0.0.0 (${yolov8_msgs_DIR})")
+  message(STATUS "Found yolov8_msgs: 3.3.0 (${yolov8_msgs_DIR})")
 endif()
 
 # warn when using a deprecated package

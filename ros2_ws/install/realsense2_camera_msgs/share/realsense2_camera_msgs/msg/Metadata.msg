@@ -1,2 +1,1 @@
-std_msgs/Header header
-string json_data
+/home/aiv/YongJun_ws/ros2_ws/src/realsense-ros/realsense2_camera_msgs/msg/Metadata.msg

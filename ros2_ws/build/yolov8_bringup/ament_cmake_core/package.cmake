@@ -1,5 +1,5 @@
 set(_AMENT_PACKAGE_NAME "yolov8_bringup")
-set(yolov8_bringup_VERSION "0.0.0")
+set(yolov8_bringup_VERSION "3.3.0")
 set(yolov8_bringup_MAINTAINER "Miguel Ángel González Santamarta <mgons@unileon.es>")
 set(yolov8_bringup_BUILD_DEPENDS "yolov8_ros")
 set(yolov8_bringup_BUILDTOOL_DEPENDS "ament_cmake")

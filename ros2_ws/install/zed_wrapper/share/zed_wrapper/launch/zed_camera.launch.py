@@ -1,1 +1,0 @@
-/home/aiv/YongJun_ws/ros2_ws/src/zed-ros2-wrapper/zed_wrapper/launch/zed_camera.launch.py

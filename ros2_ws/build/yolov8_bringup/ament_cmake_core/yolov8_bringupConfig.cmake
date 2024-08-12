@@ -16,7 +16,7 @@ set(_yolov8_bringup_CONFIG_INCLUDED TRUE)
 
 # output package information
 if(NOT yolov8_bringup_FIND_QUIETLY)
-  message(STATUS "Found yolov8_bringup: 0.0.0 (${yolov8_bringup_DIR})")
+  message(STATUS "Found yolov8_bringup: 3.3.0 (${yolov8_bringup_DIR})")
 endif()
 
 # warn when using a deprecated package

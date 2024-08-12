@@ -1,0 +1,70 @@
+[0.010s] Invoking command in '/home/aiv/YongJun_ws/ros2_ws/build/realsense2_description': AMENT_PREFIX_PATH=/home/aiv/YongJun_ws/ros2_ws/install/realsense2_camera_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/aiv/YongJun_ws/ros2_ws/install/realsense2_camera_msgs:/opt/ros/foxy LD_LIBRARY_PATH=/home/aiv/YongJun_ws/ros2_ws/install/realsense2_camera_msgs/lib:/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib/x86_64-linux-gnu:/opt/ros/foxy/lib:/usr/local/cuda-11.8/lib64 PYTHONPATH=/home/aiv/YongJun_ws/ros2_ws/install/realsense2_camera_msgs/lib/python3.8/site-packages:${PYTHONPATH} /home/aiv/.local/bin/cmake /home/aiv/YongJun_ws/ros2_ws/src/realsense-ros/realsense2_description -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/aiv/YongJun_ws/ros2_ws/install/realsense2_description
+[0.063s] -- The C compiler identification is GNU 9.4.0
+[0.100s] -- The CXX compiler identification is GNU 9.4.0
+[0.107s] -- Detecting C compiler ABI info
+[0.142s] -- Detecting C compiler ABI info - done
+[0.149s] -- Check for working C compiler: /usr/bin/cc - skipped
+[0.149s] -- Detecting C compile features
+[0.150s] -- Detecting C compile features - done
+[0.152s] -- Detecting CXX compiler ABI info
+[0.194s] -- Detecting CXX compiler ABI info - done
+[0.203s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[0.203s] -- Detecting CXX compile features
+[0.203s] -- Detecting CXX compile features - done
+[0.205s] -- Found ament_cmake: 0.9.12 (/opt/ros/foxy/share/ament_cmake/cmake)
+[0.222s] -- Found PythonInterp: /usr/bin/python3 (found suitable version "3.8.10", minimum required is "3") 
+[0.223s] -- Using PYTHON_EXECUTABLE: /usr/bin/python3
+[0.356s] -- Override CMake install command with custom implementation using symlinks instead of copying resources
+[0.410s] -- Configuring done
+[0.411s] -- Generating done
+[0.412s] -- Build files have been written to: /home/aiv/YongJun_ws/ros2_ws/build/realsense2_description
+[0.418s] Invoked command in '/home/aiv/YongJun_ws/ros2_ws/build/realsense2_description' returned '0': AMENT_PREFIX_PATH=/home/aiv/YongJun_ws/ros2_ws/install/realsense2_camera_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/aiv/YongJun_ws/ros2_ws/install/realsense2_camera_msgs:/opt/ros/foxy LD_LIBRARY_PATH=/home/aiv/YongJun_ws/ros2_ws/install/realsense2_camera_msgs/lib:/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib/x86_64-linux-gnu:/opt/ros/foxy/lib:/usr/local/cuda-11.8/lib64 PYTHONPATH=/home/aiv/YongJun_ws/ros2_ws/install/realsense2_camera_msgs/lib/python3.8/site-packages:${PYTHONPATH} /home/aiv/.local/bin/cmake /home/aiv/YongJun_ws/ros2_ws/src/realsense-ros/realsense2_description -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/aiv/YongJun_ws/ros2_ws/install/realsense2_description
+[0.418s] Invoking command in '/home/aiv/YongJun_ws/ros2_ws/build/realsense2_description': AMENT_PREFIX_PATH=/home/aiv/YongJun_ws/ros2_ws/install/realsense2_camera_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/aiv/YongJun_ws/ros2_ws/install/realsense2_camera_msgs:/opt/ros/foxy LD_LIBRARY_PATH=/home/aiv/YongJun_ws/ros2_ws/install/realsense2_camera_msgs/lib:/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib/x86_64-linux-gnu:/opt/ros/foxy/lib:/usr/local/cuda-11.8/lib64 PYTHONPATH=/home/aiv/YongJun_ws/ros2_ws/install/realsense2_camera_msgs/lib/python3.8/site-packages:${PYTHONPATH} /home/aiv/.local/bin/cmake --build /home/aiv/YongJun_ws/ros2_ws/build/realsense2_description -- -j32 -l32
+[0.449s] Invoked command in '/home/aiv/YongJun_ws/ros2_ws/build/realsense2_description' returned '0': AMENT_PREFIX_PATH=/home/aiv/YongJun_ws/ros2_ws/install/realsense2_camera_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/aiv/YongJun_ws/ros2_ws/install/realsense2_camera_msgs:/opt/ros/foxy LD_LIBRARY_PATH=/home/aiv/YongJun_ws/ros2_ws/install/realsense2_camera_msgs/lib:/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib/x86_64-linux-gnu:/opt/ros/foxy/lib:/usr/local/cuda-11.8/lib64 PYTHONPATH=/home/aiv/YongJun_ws/ros2_ws/install/realsense2_camera_msgs/lib/python3.8/site-packages:${PYTHONPATH} /home/aiv/.local/bin/cmake --build /home/aiv/YongJun_ws/ros2_ws/build/realsense2_description -- -j32 -l32
+[0.480s] Invoking command in '/home/aiv/YongJun_ws/ros2_ws/build/realsense2_description': AMENT_PREFIX_PATH=/home/aiv/YongJun_ws/ros2_ws/install/realsense2_camera_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/aiv/YongJun_ws/ros2_ws/install/realsense2_camera_msgs:/opt/ros/foxy LD_LIBRARY_PATH=/home/aiv/YongJun_ws/ros2_ws/install/realsense2_camera_msgs/lib:/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib/x86_64-linux-gnu:/opt/ros/foxy/lib:/usr/local/cuda-11.8/lib64 PYTHONPATH=/home/aiv/YongJun_ws/ros2_ws/install/realsense2_camera_msgs/lib/python3.8/site-packages:${PYTHONPATH} /home/aiv/.local/bin/cmake --install /home/aiv/YongJun_ws/ros2_ws/build/realsense2_description
+[0.499s] -- Install configuration: ""
+[0.499s] -- Execute custom install script
+[0.499s] -- Symlinking: /home/aiv/YongJun_ws/ros2_ws/install/realsense2_description/share/realsense2_description/launch/launch_utils.py
+[0.501s] -- Symlinking: /home/aiv/YongJun_ws/ros2_ws/install/realsense2_description/share/realsense2_description/launch/view_model.launch.py
+[0.503s] -- Symlinking: /home/aiv/YongJun_ws/ros2_ws/install/realsense2_description/share/realsense2_description/meshes/d405.stl
+[0.504s] -- Symlinking: /home/aiv/YongJun_ws/ros2_ws/install/realsense2_description/share/realsense2_description/meshes/d415.stl
+[0.506s] -- Symlinking: /home/aiv/YongJun_ws/ros2_ws/install/realsense2_description/share/realsense2_description/meshes/d435.dae
+[0.508s] -- Symlinking: /home/aiv/YongJun_ws/ros2_ws/install/realsense2_description/share/realsense2_description/meshes/d455.stl
+[0.509s] -- Symlinking: /home/aiv/YongJun_ws/ros2_ws/install/realsense2_description/share/realsense2_description/meshes/l515.dae
+[0.511s] -- Symlinking: /home/aiv/YongJun_ws/ros2_ws/install/realsense2_description/share/realsense2_description/meshes/plug.stl
+[0.512s] -- Symlinking: /home/aiv/YongJun_ws/ros2_ws/install/realsense2_description/share/realsense2_description/meshes/plug_collision.stl
+[0.514s] -- Symlinking: /home/aiv/YongJun_ws/ros2_ws/install/realsense2_description/share/realsense2_description/rviz/urdf.rviz
+[0.516s] -- Symlinking: /home/aiv/YongJun_ws/ros2_ws/install/realsense2_description/share/realsense2_description/urdf/_d405.urdf.xacro
+[0.517s] -- Symlinking: /home/aiv/YongJun_ws/ros2_ws/install/realsense2_description/share/realsense2_description/urdf/_d415.urdf.xacro
+[0.519s] -- Symlinking: /home/aiv/YongJun_ws/ros2_ws/install/realsense2_description/share/realsense2_description/urdf/_d435.urdf.xacro
+[0.520s] -- Symlinking: /home/aiv/YongJun_ws/ros2_ws/install/realsense2_description/share/realsense2_description/urdf/_d435i.urdf.xacro
+[0.522s] -- Symlinking: /home/aiv/YongJun_ws/ros2_ws/install/realsense2_description/share/realsense2_description/urdf/_d435i_imu_modules.urdf.xacro
+[0.523s] -- Symlinking: /home/aiv/YongJun_ws/ros2_ws/install/realsense2_description/share/realsense2_description/urdf/_d455.urdf.xacro
+[0.525s] -- Symlinking: /home/aiv/YongJun_ws/ros2_ws/install/realsense2_description/share/realsense2_description/urdf/_materials.urdf.xacro
+[0.526s] -- Symlinking: /home/aiv/YongJun_ws/ros2_ws/install/realsense2_description/share/realsense2_description/urdf/_r410.urdf.xacro
+[0.528s] -- Symlinking: /home/aiv/YongJun_ws/ros2_ws/install/realsense2_description/share/realsense2_description/urdf/_r430.urdf.xacro
+[0.529s] -- Symlinking: /home/aiv/YongJun_ws/ros2_ws/install/realsense2_description/share/realsense2_description/urdf/_usb_plug.urdf.xacro
+[0.531s] -- Symlinking: /home/aiv/YongJun_ws/ros2_ws/install/realsense2_description/share/realsense2_description/urdf/test_d405_camera.urdf.xacro
+[0.533s] -- Symlinking: /home/aiv/YongJun_ws/ros2_ws/install/realsense2_description/share/realsense2_description/urdf/test_d415_camera.urdf.xacro
+[0.534s] -- Symlinking: /home/aiv/YongJun_ws/ros2_ws/install/realsense2_description/share/realsense2_description/urdf/test_d435_camera.urdf.xacro
+[0.536s] -- Symlinking: /home/aiv/YongJun_ws/ros2_ws/install/realsense2_description/share/realsense2_description/urdf/test_d435_multiple_cameras.urdf.xacro
+[0.537s] -- Symlinking: /home/aiv/YongJun_ws/ros2_ws/install/realsense2_description/share/realsense2_description/urdf/test_d435i_camera.urdf.xacro
+[0.539s] -- Symlinking: /home/aiv/YongJun_ws/ros2_ws/install/realsense2_description/share/realsense2_description/urdf/test_d455_camera.urdf.xacro
+[0.540s] -- Symlinking: /home/aiv/YongJun_ws/ros2_ws/install/realsense2_description/share/realsense2_description/urdf/test_r410_camera.urdf.xacro
+[0.542s] -- Symlinking: /home/aiv/YongJun_ws/ros2_ws/install/realsense2_description/share/realsense2_description/urdf/test_r430_camera.urdf.xacro
+[0.543s] -- Symlinking: /home/aiv/YongJun_ws/ros2_ws/install/realsense2_description/share/ament_index/resource_index/package_run_dependencies/realsense2_description
+[0.545s] -- Symlinking: /home/aiv/YongJun_ws/ros2_ws/install/realsense2_description/share/ament_index/resource_index/parent_prefix_path/realsense2_description
+[0.547s] -- Symlinking: /home/aiv/YongJun_ws/ros2_ws/install/realsense2_description/share/realsense2_description/environment/ament_prefix_path.sh
+[0.548s] -- Symlinking: /home/aiv/YongJun_ws/ros2_ws/install/realsense2_description/share/realsense2_description/environment/ament_prefix_path.dsv
+[0.550s] -- Symlinking: /home/aiv/YongJun_ws/ros2_ws/install/realsense2_description/share/realsense2_description/environment/path.sh
+[0.551s] -- Symlinking: /home/aiv/YongJun_ws/ros2_ws/install/realsense2_description/share/realsense2_description/environment/path.dsv
+[0.553s] -- Symlinking: /home/aiv/YongJun_ws/ros2_ws/install/realsense2_description/share/realsense2_description/local_setup.bash
+[0.554s] -- Symlinking: /home/aiv/YongJun_ws/ros2_ws/install/realsense2_description/share/realsense2_description/local_setup.sh
+[0.556s] -- Symlinking: /home/aiv/YongJun_ws/ros2_ws/install/realsense2_description/share/realsense2_description/local_setup.zsh
+[0.558s] -- Symlinking: /home/aiv/YongJun_ws/ros2_ws/install/realsense2_description/share/realsense2_description/local_setup.dsv
+[0.559s] -- Symlinking: /home/aiv/YongJun_ws/ros2_ws/install/realsense2_description/share/realsense2_description/package.dsv
+[0.561s] -- Symlinking: /home/aiv/YongJun_ws/ros2_ws/install/realsense2_description/share/ament_index/resource_index/packages/realsense2_description
+[0.562s] -- Symlinking: /home/aiv/YongJun_ws/ros2_ws/install/realsense2_description/share/realsense2_description/cmake/realsense2_descriptionConfig.cmake
+[0.564s] -- Symlinking: /home/aiv/YongJun_ws/ros2_ws/install/realsense2_description/share/realsense2_description/cmake/realsense2_descriptionConfig-version.cmake
+[0.565s] -- Symlinking: /home/aiv/YongJun_ws/ros2_ws/install/realsense2_description/share/realsense2_description/package.xml
+[0.571s] Invoked command in '/home/aiv/YongJun_ws/ros2_ws/build/realsense2_description' returned '0': AMENT_PREFIX_PATH=/home/aiv/YongJun_ws/ros2_ws/install/realsense2_camera_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/aiv/YongJun_ws/ros2_ws/install/realsense2_camera_msgs:/opt/ros/foxy LD_LIBRARY_PATH=/home/aiv/YongJun_ws/ros2_ws/install/realsense2_camera_msgs/lib:/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib/x86_64-linux-gnu:/opt/ros/foxy/lib:/usr/local/cuda-11.8/lib64 PYTHONPATH=/home/aiv/YongJun_ws/ros2_ws/install/realsense2_camera_msgs/lib/python3.8/site-packages:${PYTHONPATH} /home/aiv/.local/bin/cmake --install /home/aiv/YongJun_ws/ros2_ws/build/realsense2_description

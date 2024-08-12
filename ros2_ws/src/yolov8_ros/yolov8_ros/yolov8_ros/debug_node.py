@@ -47,7 +47,7 @@ class DebugNode(Node):
         self.cv_bridge = CvBridge()
 
         # pubs
-        self._dbg_pub = self.create_publisher(Image, "dbg_image", 10)
+        self._dbg_pub = self.create_publisher(Image, "image", 10)
 
         # self._bb_markers_pub = self.create_publisher(
         #     MarkerArray, "dgb_bb_markers", 10)

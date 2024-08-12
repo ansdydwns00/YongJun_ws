@@ -14,15 +14,18 @@
 # along with this program.  If not, see <https://www.gnu.org/licenses/>.
 
 
+import cv2
 import numpy as np
 from typing import List, Tuple
 
 import rclpy
-from rclpy.node import Node
 from rclpy.qos import QoSProfile
 from rclpy.qos import QoSHistoryPolicy
 from rclpy.qos import QoSDurabilityPolicy
 from rclpy.qos import QoSReliabilityPolicy
+from rclpy.lifecycle import LifecycleNode
+from rclpy.lifecycle import TransitionCallbackReturn
+from rclpy.lifecycle import LifecycleState
 
 import message_filters
 from cv_bridge import CvBridge
@@ -39,65 +42,97 @@ from yolov8_msgs.msg import KeyPoint3DArray
 from yolov8_msgs.msg import BoundingBox3D
 
 
-class Detect3DNode(Node):
+class Detect3DNode(LifecycleNode):
 
     def __init__(self) -> None:
         super().__init__("bbox3d_node")
 
         # parameters
         self.declare_parameter("target_frame", "base_link")
-        self.target_frame = self.get_parameter(
-            "target_frame").get_parameter_value().string_value
-
         self.declare_parameter("maximum_detection_threshold", 0.3)
-        self.maximum_detection_threshold = self.get_parameter(
-            "maximum_detection_threshold").get_parameter_value().double_value
-
         self.declare_parameter("depth_image_units_divisor", 1000)
-        self.depth_image_units_divisor = self.get_parameter(
-            "depth_image_units_divisor").get_parameter_value().integer_value
-
         self.declare_parameter("depth_image_reliability",
                                QoSReliabilityPolicy.BEST_EFFORT)
-        depth_image_qos_profile = QoSProfile(
-            reliability=self.get_parameter(
-                "depth_image_reliability").get_parameter_value().integer_value,
-            history=QoSHistoryPolicy.KEEP_LAST,
-            durability=QoSDurabilityPolicy.VOLATILE,
-            depth=1
-        )
-
         self.declare_parameter("depth_info_reliability",
                                QoSReliabilityPolicy.BEST_EFFORT)
-        depth_info_qos_profile = QoSProfile(
-            reliability=self.get_parameter(
-                "depth_info_reliability").get_parameter_value().integer_value,
-            history=QoSHistoryPolicy.KEEP_LAST,
-            durability=QoSDurabilityPolicy.VOLATILE,
-            depth=1
-        )
 
         # aux
         self.tf_buffer = Buffer()
-        self.tf_listener = TransformListener(self.tf_buffer, self)
         self.cv_bridge = CvBridge()
+
+    def on_configure(self, state: LifecycleState) -> TransitionCallbackReturn:
+        self.get_logger().info(f"Configuring {self.get_name()}")
+
+        self.target_frame = self.get_parameter(
+            "target_frame").get_parameter_value().string_value
+        self.maximum_detection_threshold = self.get_parameter(
+            "maximum_detection_threshold").get_parameter_value().double_value
+        self.depth_image_units_divisor = self.get_parameter(
+            "depth_image_units_divisor").get_parameter_value().integer_value
+        dimg_reliability = self.get_parameter(
+            "depth_image_reliability").get_parameter_value().integer_value
+
+        self.depth_image_qos_profile = QoSProfile(
+            reliability=dimg_reliability,
+            history=QoSHistoryPolicy.KEEP_LAST,
+            durability=QoSDurabilityPolicy.VOLATILE,
+            depth=1
+        )
+
+        dinfo_reliability = self.get_parameter(
+            "depth_info_reliability").get_parameter_value().integer_value
+
+        self.depth_info_qos_profile = QoSProfile(
+            reliability=dinfo_reliability,
+            history=QoSHistoryPolicy.KEEP_LAST,
+            durability=QoSDurabilityPolicy.VOLATILE,
+            depth=1
+        )
+        self.tf_listener = TransformListener(self.tf_buffer, self)
 
         # pubs
         self._pub = self.create_publisher(DetectionArray, "detections_3d", 10)
 
+        return TransitionCallbackReturn.SUCCESS
+
+    def on_activate(self, state: LifecycleState) -> TransitionCallbackReturn:
+        self.get_logger().info(f"Activating {self.get_name()}")
+
         # subs
         self.depth_sub = message_filters.Subscriber(
             self, Image, "depth_image",
-            qos_profile=depth_image_qos_profile)
+            qos_profile=self.depth_image_qos_profile)
         self.depth_info_sub = message_filters.Subscriber(
             self, CameraInfo, "depth_info",
-            qos_profile=depth_info_qos_profile)
+            qos_profile=self.depth_info_qos_profile)
         self.detections_sub = message_filters.Subscriber(
             self, DetectionArray, "detections")
 
         self._synchronizer = message_filters.ApproximateTimeSynchronizer(
             (self.depth_sub, self.depth_info_sub, self.detections_sub), 10, 0.5)
         self._synchronizer.registerCallback(self.on_detections)
+
+        return TransitionCallbackReturn.SUCCESS
+
+    def on_deactivate(self, state: LifecycleState) -> TransitionCallbackReturn:
+        self.get_logger().info(f"Deactivating {self.get_name()}")
+
+        self.destroy_subscription(self.depth_sub.sub)
+        self.destroy_subscription(self.depth_info_sub.sub)
+        self.destroy_subscription(self.detections_sub.sub)
+
+        del self._synchronizer
+
+        return TransitionCallbackReturn.SUCCESS
+
+    def on_cleanup(self, state: LifecycleState) -> TransitionCallbackReturn:
+        self.get_logger().info(f"Cleaning up {self.get_name()}")
+
+        del self.tf_listener
+
+        self.destroy_publisher(self._pub)
+
+        return TransitionCallbackReturn.SUCCESS
 
     def on_detections(
         self,
@@ -160,33 +195,50 @@ class Detect3DNode(Node):
         detection: Detection
     ) -> BoundingBox3D:
 
-        # crop depth image by the 2d BB
         center_x = int(detection.bbox.center.position.x)
         center_y = int(detection.bbox.center.position.y)
         size_x = int(detection.bbox.size.x)
         size_y = int(detection.bbox.size.y)
 
-        u_min = max(center_x - size_x // 2, 0)
-        u_max = min(center_x + size_x // 2, depth_image.shape[1] - 1)
-        v_min = max(center_y - size_y // 2, 0)
-        v_max = min(center_y + size_y // 2, depth_image.shape[0] - 1)
+        if detection.mask.data:
+            # crop depth image by mask
+            mask_array = np.array([[int(ele.x), int(ele.y)]
+                                   for ele in detection.mask.data])
+            mask = np.zeros(depth_image.shape[:2], dtype=np.uint8)
+            cv2.fillPoly(mask, [np.array(mask_array, dtype=np.int32)], 255)
+            roi = cv2.bitwise_and(depth_image, depth_image, mask=mask)
 
-        roi = depth_image[v_min:v_max, u_min:u_max] / \
-            self.depth_image_units_divisor  # convert to meters
+        else:
+            # crop depth image by the 2d BB
+            u_min = max(center_x - size_x // 2, 0)
+            u_max = min(center_x + size_x // 2, depth_image.shape[1] - 1)
+            v_min = max(center_y - size_y // 2, 0)
+            v_max = min(center_y + size_y // 2, depth_image.shape[0] - 1)
+
+            roi = depth_image[v_min:v_max, u_min:u_max]
+
+        roi = roi / self.depth_image_units_divisor  # convert to meters
         if not np.any(roi):
             return None
 
         # find the z coordinate on the 3D BB
-        bb_center_z_coord = depth_image[int(center_y)][int(
-            center_x)] / self.depth_image_units_divisor
+        if detection.mask.data:
+            roi = roi[roi > 0]
+            bb_center_z_coord = np.median(roi)
+
+        else:
+            bb_center_z_coord = depth_image[int(center_y)][int(
+                center_x)] / self.depth_image_units_divisor
+
         z_diff = np.abs(roi - bb_center_z_coord)
         mask_z = z_diff <= self.maximum_detection_threshold
         if not np.any(mask_z):
             return None
 
-        roi_threshold = roi[mask_z]
-        z_min, z_max = np.min(roi_threshold), np.max(roi_threshold)
+        roi = roi[mask_z]
+        z_min, z_max = np.min(roi), np.max(roi)
         z = (z_max + z_min) / 2
+
         if z == 0:
             return None
 
@@ -340,6 +392,8 @@ class Detect3DNode(Node):
 def main():
     rclpy.init()
     node = Detect3DNode()
+    node.trigger_configure()
+    node.trigger_activate()
     rclpy.spin(node)
     node.destroy_node()
     rclpy.shutdown()

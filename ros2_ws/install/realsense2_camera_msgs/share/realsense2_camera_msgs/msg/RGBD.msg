@@ -1,6 +1,1 @@
-# RGBD Message
-std_msgs/Header header
-sensor_msgs/CameraInfo rgb_camera_info
-sensor_msgs/CameraInfo depth_camera_info
-sensor_msgs/Image rgb
-sensor_msgs/Image depth
+/home/aiv/YongJun_ws/ros2_ws/src/realsense-ros/realsense2_camera_msgs/msg/RGBD.msg

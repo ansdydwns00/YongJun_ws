@@ -1,1 +1,0 @@
-/home/aiv/YongJun_ws/ros2_ws/build/zed_rgb_convert/ament_cmake_core/zed_rgb_convertConfig-version.cmake

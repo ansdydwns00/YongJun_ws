@@ -20,7 +20,7 @@ Node = ros2node("/IVL");
 % Create Subscribe Node
 % sub.LiDAR = ros2subscriber(Node,'/livox/lidar','sensor_msgs/PointCloud2');
 % sub.Cam = ros2subscriber(Node,'/camera/camera/color/image_raw','sensor_msgs/Image');
-sub.Yolo_img = ros2subscriber(Node,"/yolo/dbg_image","sensor_msgs/Image");
+sub.Yolo_img = ros2subscriber(Node,"/yolo/image","sensor_msgs/Image");
 sub.Yolo_track = ros2subscriber(Node,"/yolo/tracking","yolov8_msgs/DetectionArray",@helperCallbackYolo);
 
 % Create Publish Node

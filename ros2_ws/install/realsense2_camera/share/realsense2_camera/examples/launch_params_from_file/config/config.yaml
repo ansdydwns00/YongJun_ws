@@ -1,7 +1,1 @@
-enable_color: true
-rgb_camera.profile: 1280x720x15
-enable_depth: true
-align_depth.enable: true
-enable_sync: true
-publish_tf: true
-tf_publish_rate: 1.0
+/home/aiv/YongJun_ws/ros2_ws/src/realsense-ros/realsense2_camera/examples/launch_params_from_file/config/config.yaml

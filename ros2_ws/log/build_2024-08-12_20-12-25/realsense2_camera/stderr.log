@@ -1,0 +1,119 @@
+[33mCMake Warning at /opt/ros/foxy/share/ament_cmake_pytest/cmake/ament_add_pytest_test.cmake:77 (message):
+  The Python module 'pytest' was not found, pytests can not be run (e.g.  on
+  Ubuntu/Debian install the package 'python3-pytest')
+Call Stack (most recent call first):
+  CMakeLists.txt:338 (ament_add_pytest_test)
+
+[0m
+[33mCMake Warning at /opt/ros/foxy/share/ament_cmake_pytest/cmake/ament_add_pytest_test.cmake:77 (message):
+  The Python module 'pytest' was not found, pytests can not be run (e.g.  on
+  Ubuntu/Debian install the package 'python3-pytest')
+Call Stack (most recent call first):
+  CMakeLists.txt:338 (ament_add_pytest_test)
+
+[0m
+[33mCMake Warning at /opt/ros/foxy/share/ament_cmake_pytest/cmake/ament_add_pytest_test.cmake:77 (message):
+  The Python module 'pytest' was not found, pytests can not be run (e.g.  on
+  Ubuntu/Debian install the package 'python3-pytest')
+Call Stack (most recent call first):
+  CMakeLists.txt:338 (ament_add_pytest_test)
+
+[0m
+[33mCMake Warning at /opt/ros/foxy/share/ament_cmake_pytest/cmake/ament_add_pytest_test.cmake:77 (message):
+  The Python module 'pytest' was not found, pytests can not be run (e.g.  on
+  Ubuntu/Debian install the package 'python3-pytest')
+Call Stack (most recent call first):
+  CMakeLists.txt:338 (ament_add_pytest_test)
+
+[0m
+[33mCMake Warning at /opt/ros/foxy/share/ament_cmake_pytest/cmake/ament_add_pytest_test.cmake:77 (message):
+  The Python module 'pytest' was not found, pytests can not be run (e.g.  on
+  Ubuntu/Debian install the package 'python3-pytest')
+Call Stack (most recent call first):
+  CMakeLists.txt:338 (ament_add_pytest_test)
+
+[0m
+[33mCMake Warning at /opt/ros/foxy/share/ament_cmake_pytest/cmake/ament_add_pytest_test.cmake:77 (message):
+  The Python module 'pytest' was not found, pytests can not be run (e.g.  on
+  Ubuntu/Debian install the package 'python3-pytest')
+Call Stack (most recent call first):
+  CMakeLists.txt:338 (ament_add_pytest_test)
+
+[0m
+[33mCMake Warning at /opt/ros/foxy/share/ament_cmake_pytest/cmake/ament_add_pytest_test.cmake:77 (message):
+  The Python module 'pytest' was not found, pytests can not be run (e.g.  on
+  Ubuntu/Debian install the package 'python3-pytest')
+Call Stack (most recent call first):
+  CMakeLists.txt:338 (ament_add_pytest_test)
+
+[0m
+[33mCMake Warning at /opt/ros/foxy/share/ament_cmake_pytest/cmake/ament_add_pytest_test.cmake:77 (message):
+  The Python module 'pytest' was not found, pytests can not be run (e.g.  on
+  Ubuntu/Debian install the package 'python3-pytest')
+Call Stack (most recent call first):
+  CMakeLists.txt:338 (ament_add_pytest_test)
+
+[0m
+[33mCMake Warning at /opt/ros/foxy/share/ament_cmake_pytest/cmake/ament_add_pytest_test.cmake:77 (message):
+  The Python module 'pytest' was not found, pytests can not be run (e.g.  on
+  Ubuntu/Debian install the package 'python3-pytest')
+Call Stack (most recent call first):
+  CMakeLists.txt:338 (ament_add_pytest_test)
+
+[0m
+[33mCMake Warning at /opt/ros/foxy/share/ament_cmake_pytest/cmake/ament_add_pytest_test.cmake:77 (message):
+  The Python module 'pytest' was not found, pytests can not be run (e.g.  on
+  Ubuntu/Debian install the package 'python3-pytest')
+Call Stack (most recent call first):
+  CMakeLists.txt:367 (ament_add_pytest_test)
+
+[0m
+[33mCMake Warning at /opt/ros/foxy/share/ament_cmake_pytest/cmake/ament_add_pytest_test.cmake:77 (message):
+  The Python module 'pytest' was not found, pytests can not be run (e.g.  on
+  Ubuntu/Debian install the package 'python3-pytest')
+Call Stack (most recent call first):
+  CMakeLists.txt:367 (ament_add_pytest_test)
+
+[0m
+[33mCMake Warning at /opt/ros/foxy/share/ament_cmake_pytest/cmake/ament_add_pytest_test.cmake:77 (message):
+  The Python module 'pytest' was not found, pytests can not be run (e.g.  on
+  Ubuntu/Debian install the package 'python3-pytest')
+Call Stack (most recent call first):
+  CMakeLists.txt:367 (ament_add_pytest_test)
+
+[0m
+[33mCMake Warning at /opt/ros/foxy/share/ament_cmake_pytest/cmake/ament_add_pytest_test.cmake:77 (message):
+  The Python module 'pytest' was not found, pytests can not be run (e.g.  on
+  Ubuntu/Debian install the package 'python3-pytest')
+Call Stack (most recent call first):
+  CMakeLists.txt:367 (ament_add_pytest_test)
+
+[0m
+[33mCMake Warning at /opt/ros/foxy/share/ament_cmake_pytest/cmake/ament_add_pytest_test.cmake:77 (message):
+  The Python module 'pytest' was not found, pytests can not be run (e.g.  on
+  Ubuntu/Debian install the package 'python3-pytest')
+Call Stack (most recent call first):
+  CMakeLists.txt:367 (ament_add_pytest_test)
+
+[0m
+[33mCMake Warning at /opt/ros/foxy/share/ament_cmake_pytest/cmake/ament_add_pytest_test.cmake:77 (message):
+  The Python module 'pytest' was not found, pytests can not be run (e.g.  on
+  Ubuntu/Debian install the package 'python3-pytest')
+Call Stack (most recent call first):
+  CMakeLists.txt:367 (ament_add_pytest_test)
+
+[0m
+[33mCMake Warning at /opt/ros/foxy/share/ament_cmake_pytest/cmake/ament_add_pytest_test.cmake:77 (message):
+  The Python module 'pytest' was not found, pytests can not be run (e.g.  on
+  Ubuntu/Debian install the package 'python3-pytest')
+Call Stack (most recent call first):
+  CMakeLists.txt:367 (ament_add_pytest_test)
+
+[0m
+[33mCMake Warning at /opt/ros/foxy/share/ament_cmake_pytest/cmake/ament_add_pytest_test.cmake:77 (message):
+  The Python module 'pytest' was not found, pytests can not be run (e.g.  on
+  Ubuntu/Debian install the package 'python3-pytest')
+Call Stack (most recent call first):
+  CMakeLists.txt:367 (ament_add_pytest_test)
+
+[0m

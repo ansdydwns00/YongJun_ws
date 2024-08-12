@@ -1,0 +1,147 @@
+[0.413s] DEBUG:colcon:Command line arguments: ['/home/aiv/.matlab/R2024a/ros2/glnxa64/venv/bin/colcon', 'build', '--merge-install', '--cmake-args', '-DCMAKE_BUILD_TYPE=Release', '-DCMAKE_SHARED_LINKER_FLAGS=-Wl,-no-as-needed', '-DBUILD_TESTING=OFF', '-DALIAS_ROS2_TF2=1', '-DCMAKE_CXX_FLAGS_RELEASE=-O0', '-G', 'Ninja', '-DCMAKE_C_COMPILER=/usr/bin/gcc', '-DCMAKE_CXX_COMPILER=/usr/bin/g++']
+[0.413s] DEBUG:colcon:Parsed command line arguments: Namespace(log_base=None, log_level=None, verb_name='build', build_base='build', install_base='install', merge_install=True, symlink_install=False, test_result_base=None, continue_on_error=False, executor='parallel', parallel_workers=32, event_handlers=None, ignore_user_meta=False, metas=['./colcon.meta'], base_paths=['.'], packages_ignore=None, packages_ignore_regex=None, paths=None, packages_up_to=None, packages_up_to_regex=None, packages_above=None, packages_above_and_dependencies=None, packages_above_depth=None, packages_select_by_dep=None, packages_skip_by_dep=None, packages_skip_up_to=None, packages_select_build_failed=False, packages_skip_build_finished=False, packages_select_test_failures=False, packages_skip_test_passed=False, packages_select=None, packages_skip=None, packages_select_regex=None, packages_skip_regex=None, packages_start=None, packages_end=None, cmake_args=['-DCMAKE_BUILD_TYPE=Release', '-DCMAKE_SHARED_LINKER_FLAGS=-Wl,-no-as-needed', '-DBUILD_TESTING=OFF', '-DALIAS_ROS2_TF2=1', '-DCMAKE_CXX_FLAGS_RELEASE=-O0', '-G', 'Ninja', '-DCMAKE_C_COMPILER=/usr/bin/gcc', '-DCMAKE_CXX_COMPILER=/usr/bin/g++'], cmake_target=None, cmake_target_skip_unavailable=False, cmake_clean_cache=False, cmake_clean_first=False, cmake_force_configure=False, ament_cmake_args=None, catkin_cmake_args=None, catkin_skip_building_tests=False, verb_parser=<colcon_defaults.argument_parser.defaults.DefaultArgumentsDecorator object at 0x7fe8763c8e20>, verb_extension=<colcon_core.verb.build.BuildVerb object at 0x7fe8763cbfa0>, main=<bound method BuildVerb.main of <colcon_core.verb.build.BuildVerb object at 0x7fe8763cbfa0>>)
+[0.463s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) check parameters
+[0.463s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) check parameters
+[0.463s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) check parameters
+[0.463s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) check parameters
+[0.463s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) discover
+[0.463s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) discover
+[0.463s] INFO:colcon.colcon_core.package_discovery:Crawling recursively for packages in '/home/aiv/YongJun_ws/ros2_ws/src/yolov8_ros/matlab_msg_gen/glnxa64'
+[0.463s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ignore', 'ignore_ament_install']
+[0.463s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore'
+[0.463s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore_ament_install'
+[0.463s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_pkg']
+[0.463s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_pkg'
+[0.463s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_meta']
+[0.463s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_meta'
+[0.463s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ros']
+[0.463s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ros'
+[0.479s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['cmake', 'python']
+[0.479s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'cmake'
+[0.479s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python'
+[0.479s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['python_setup_py']
+[0.479s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python_setup_py'
+[0.479s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extensions ['ignore', 'ignore_ament_install']
+[0.479s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extension 'ignore'
+[0.479s] Level 1:colcon.colcon_core.package_identification:_identify(build) ignored
+[0.479s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extensions ['ignore', 'ignore_ament_install']
+[0.479s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extension 'ignore'
+[0.479s] Level 1:colcon.colcon_core.package_identification:_identify(install) ignored
+[0.479s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extensions ['ignore', 'ignore_ament_install']
+[0.479s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extension 'ignore'
+[0.479s] Level 1:colcon.colcon_core.package_identification:_identify(log) ignored
+[0.479s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['ignore', 'ignore_ament_install']
+[0.479s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ignore'
+[0.479s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ignore_ament_install'
+[0.479s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['colcon_pkg']
+[0.479s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'colcon_pkg'
+[0.479s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['colcon_meta']
+[0.479s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'colcon_meta'
+[0.479s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['ros']
+[0.479s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ros'
+[0.479s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['cmake', 'python']
+[0.479s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'cmake'
+[0.480s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'python'
+[0.480s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['python_setup_py']
+[0.480s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'python_setup_py'
+[0.480s] Level 1:colcon.colcon_core.package_identification:_identify(src/yolov8_msgs) by extensions ['ignore', 'ignore_ament_install']
+[0.480s] Level 1:colcon.colcon_core.package_identification:_identify(src/yolov8_msgs) by extension 'ignore'
+[0.480s] Level 1:colcon.colcon_core.package_identification:_identify(src/yolov8_msgs) by extension 'ignore_ament_install'
+[0.480s] Level 1:colcon.colcon_core.package_identification:_identify(src/yolov8_msgs) by extensions ['colcon_pkg']
+[0.480s] Level 1:colcon.colcon_core.package_identification:_identify(src/yolov8_msgs) by extension 'colcon_pkg'
+[0.480s] Level 1:colcon.colcon_core.package_identification:_identify(src/yolov8_msgs) by extensions ['colcon_meta']
+[0.480s] Level 1:colcon.colcon_core.package_identification:_identify(src/yolov8_msgs) by extension 'colcon_meta'
+[0.480s] Level 1:colcon.colcon_core.package_identification:_identify(src/yolov8_msgs) by extensions ['ros']
+[0.480s] Level 1:colcon.colcon_core.package_identification:_identify(src/yolov8_msgs) by extension 'ros'
+[0.482s] DEBUG:colcon.colcon_core.package_identification:Package 'src/yolov8_msgs' with type 'ros.ament_cmake' and name 'yolov8_msgs'
+[0.482s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) using defaults
+[0.482s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) discover
+[0.482s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) using defaults
+[0.482s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) discover
+[0.482s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) using defaults
+[0.515s] Level 5:colcon.colcon_core.verb:set package 'yolov8_msgs' build argument 'cmake_args' from command line to '['-DCMAKE_BUILD_TYPE=Release', '-DCMAKE_SHARED_LINKER_FLAGS=-Wl,-no-as-needed', '-DBUILD_TESTING=OFF', '-DALIAS_ROS2_TF2=1', '-DCMAKE_CXX_FLAGS_RELEASE=-O0', '-G', 'Ninja', '-DCMAKE_C_COMPILER=/usr/bin/gcc', '-DCMAKE_CXX_COMPILER=/usr/bin/g++']'
+[0.515s] Level 5:colcon.colcon_core.verb:set package 'yolov8_msgs' build argument 'cmake_target' from command line to 'None'
+[0.515s] Level 5:colcon.colcon_core.verb:set package 'yolov8_msgs' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.515s] Level 5:colcon.colcon_core.verb:set package 'yolov8_msgs' build argument 'cmake_clean_cache' from command line to 'False'
+[0.515s] Level 5:colcon.colcon_core.verb:set package 'yolov8_msgs' build argument 'cmake_clean_first' from command line to 'False'
+[0.515s] Level 5:colcon.colcon_core.verb:set package 'yolov8_msgs' build argument 'cmake_force_configure' from command line to 'False'
+[0.515s] Level 5:colcon.colcon_core.verb:set package 'yolov8_msgs' build argument 'ament_cmake_args' from command line to 'None'
+[0.515s] Level 5:colcon.colcon_core.verb:set package 'yolov8_msgs' build argument 'catkin_cmake_args' from command line to 'None'
+[0.515s] Level 5:colcon.colcon_core.verb:set package 'yolov8_msgs' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.515s] DEBUG:colcon.colcon_core.verb:Building package 'yolov8_msgs' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/aiv/YongJun_ws/ros2_ws/src/yolov8_ros/matlab_msg_gen/glnxa64/build/yolov8_msgs', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': ['-DCMAKE_BUILD_TYPE=Release', '-DCMAKE_SHARED_LINKER_FLAGS=-Wl,-no-as-needed', '-DBUILD_TESTING=OFF', '-DALIAS_ROS2_TF2=1', '-DCMAKE_CXX_FLAGS_RELEASE=-O0', '-G', 'Ninja', '-DCMAKE_C_COMPILER=/usr/bin/gcc', '-DCMAKE_CXX_COMPILER=/usr/bin/g++'], 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/aiv/YongJun_ws/ros2_ws/src/yolov8_ros/matlab_msg_gen/glnxa64/install', 'merge_install': True, 'path': '/home/aiv/YongJun_ws/ros2_ws/src/yolov8_ros/matlab_msg_gen/glnxa64/src/yolov8_msgs', 'symlink_install': False, 'test_result_base': None}
+[0.516s] INFO:colcon.colcon_core.executor:Executing jobs using 'parallel' executor
+[0.525s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete
+[0.526s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/aiv/YongJun_ws/ros2_ws/src/yolov8_ros/matlab_msg_gen/glnxa64/src/yolov8_msgs' with build type 'ament_cmake'
+[0.526s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/aiv/YongJun_ws/ros2_ws/src/yolov8_ros/matlab_msg_gen/glnxa64/src/yolov8_msgs'
+[0.533s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_core.shell.bat': Not used on non-Windows systems
+[0.533s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.533s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.550s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/aiv/YongJun_ws/ros2_ws/src/yolov8_ros/matlab_msg_gen/glnxa64/build/yolov8_msgs': PS1=(venv) VIRTUAL_ENV_PROMPT=(venv) /usr/local/MATLAB/R2024a/bin/glnxa64/cmake/bin/cmake /home/aiv/YongJun_ws/ros2_ws/src/yolov8_ros/matlab_msg_gen/glnxa64/src/yolov8_msgs -DCMAKE_BUILD_TYPE=Release -DCMAKE_SHARED_LINKER_FLAGS=-Wl,-no-as-needed -DBUILD_TESTING=OFF -DALIAS_ROS2_TF2=1 -DCMAKE_CXX_FLAGS_RELEASE=-O0 -G Ninja -DCMAKE_C_COMPILER=/usr/bin/gcc -DCMAKE_CXX_COMPILER=/usr/bin/g++ -DCMAKE_INSTALL_PREFIX=/home/aiv/YongJun_ws/ros2_ws/src/yolov8_ros/matlab_msg_gen/glnxa64/install
+[2.642s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/aiv/YongJun_ws/ros2_ws/src/yolov8_ros/matlab_msg_gen/glnxa64/build/yolov8_msgs' returned '0': PS1=(venv) VIRTUAL_ENV_PROMPT=(venv) /usr/local/MATLAB/R2024a/bin/glnxa64/cmake/bin/cmake /home/aiv/YongJun_ws/ros2_ws/src/yolov8_ros/matlab_msg_gen/glnxa64/src/yolov8_msgs -DCMAKE_BUILD_TYPE=Release -DCMAKE_SHARED_LINKER_FLAGS=-Wl,-no-as-needed -DBUILD_TESTING=OFF -DALIAS_ROS2_TF2=1 -DCMAKE_CXX_FLAGS_RELEASE=-O0 -G Ninja -DCMAKE_C_COMPILER=/usr/bin/gcc -DCMAKE_CXX_COMPILER=/usr/bin/g++ -DCMAKE_INSTALL_PREFIX=/home/aiv/YongJun_ws/ros2_ws/src/yolov8_ros/matlab_msg_gen/glnxa64/install
+[2.642s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/aiv/YongJun_ws/ros2_ws/src/yolov8_ros/matlab_msg_gen/glnxa64/build/yolov8_msgs': PS1=(venv) VIRTUAL_ENV_PROMPT=(venv) /usr/local/MATLAB/R2024a/bin/glnxa64/cmake/bin/cmake --build /home/aiv/YongJun_ws/ros2_ws/src/yolov8_ros/matlab_msg_gen/glnxa64/build/yolov8_msgs -- -j32 -l32
+[17.951s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/aiv/YongJun_ws/ros2_ws/src/yolov8_ros/matlab_msg_gen/glnxa64/build/yolov8_msgs' returned '0': PS1=(venv) VIRTUAL_ENV_PROMPT=(venv) /usr/local/MATLAB/R2024a/bin/glnxa64/cmake/bin/cmake --build /home/aiv/YongJun_ws/ros2_ws/src/yolov8_ros/matlab_msg_gen/glnxa64/build/yolov8_msgs -- -j32 -l32
+[17.964s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/aiv/YongJun_ws/ros2_ws/src/yolov8_ros/matlab_msg_gen/glnxa64/build/yolov8_msgs': PS1=(venv) VIRTUAL_ENV_PROMPT=(venv) /usr/local/MATLAB/R2024a/bin/glnxa64/cmake/bin/cmake --install /home/aiv/YongJun_ws/ros2_ws/src/yolov8_ros/matlab_msg_gen/glnxa64/build/yolov8_msgs
+[18.004s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(yolov8_msgs)
+[18.004s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/aiv/YongJun_ws/ros2_ws/src/yolov8_ros/matlab_msg_gen/glnxa64/build/yolov8_msgs' returned '0': PS1=(venv) VIRTUAL_ENV_PROMPT=(venv) /usr/local/MATLAB/R2024a/bin/glnxa64/cmake/bin/cmake --install /home/aiv/YongJun_ws/ros2_ws/src/yolov8_ros/matlab_msg_gen/glnxa64/build/yolov8_msgs
+[18.019s] Level 1:colcon.colcon_core.environment:checking '/home/aiv/YongJun_ws/ros2_ws/src/yolov8_ros/matlab_msg_gen/glnxa64/install' for CMake module files
+[18.019s] Level 1:colcon.colcon_core.environment:checking '/home/aiv/YongJun_ws/ros2_ws/src/yolov8_ros/matlab_msg_gen/glnxa64/install' for CMake config files
+[18.019s] Level 1:colcon.colcon_core.shell:create_environment_hook('yolov8_msgs', 'cmake_prefix_path')
+[18.023s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/aiv/YongJun_ws/ros2_ws/src/yolov8_ros/matlab_msg_gen/glnxa64/install/share/yolov8_msgs/hook/cmake_prefix_path.ps1'
+[18.024s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/aiv/YongJun_ws/ros2_ws/src/yolov8_ros/matlab_msg_gen/glnxa64/install/share/yolov8_msgs/hook/cmake_prefix_path.dsv'
+[18.024s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/aiv/YongJun_ws/ros2_ws/src/yolov8_ros/matlab_msg_gen/glnxa64/install/share/yolov8_msgs/hook/cmake_prefix_path.sh'
+[18.025s] Level 1:colcon.colcon_core.environment:checking '/home/aiv/YongJun_ws/ros2_ws/src/yolov8_ros/matlab_msg_gen/glnxa64/install/lib'
+[18.025s] Level 1:colcon.colcon_core.shell:create_environment_hook('yolov8_msgs', 'ld_library_path_lib')
+[18.029s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/aiv/YongJun_ws/ros2_ws/src/yolov8_ros/matlab_msg_gen/glnxa64/install/share/yolov8_msgs/hook/ld_library_path_lib.ps1'
+[18.029s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/aiv/YongJun_ws/ros2_ws/src/yolov8_ros/matlab_msg_gen/glnxa64/install/share/yolov8_msgs/hook/ld_library_path_lib.dsv'
+[18.029s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/aiv/YongJun_ws/ros2_ws/src/yolov8_ros/matlab_msg_gen/glnxa64/install/share/yolov8_msgs/hook/ld_library_path_lib.sh'
+[18.029s] Level 1:colcon.colcon_core.environment:checking '/home/aiv/YongJun_ws/ros2_ws/src/yolov8_ros/matlab_msg_gen/glnxa64/install/bin'
+[18.029s] Level 1:colcon.colcon_core.environment:checking '/home/aiv/YongJun_ws/ros2_ws/src/yolov8_ros/matlab_msg_gen/glnxa64/install/lib/pkgconfig/yolov8_msgs.pc'
+[18.030s] Level 1:colcon.colcon_core.environment:checking '/home/aiv/YongJun_ws/ros2_ws/src/yolov8_ros/matlab_msg_gen/glnxa64/install/lib/python3.10/site-packages'
+[18.030s] Level 1:colcon.colcon_core.environment:checking '/home/aiv/YongJun_ws/ros2_ws/src/yolov8_ros/matlab_msg_gen/glnxa64/install/bin'
+[18.034s] INFO:colcon.colcon_core.shell:Creating package script '/home/aiv/YongJun_ws/ros2_ws/src/yolov8_ros/matlab_msg_gen/glnxa64/install/share/yolov8_msgs/package.ps1'
+[18.035s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/aiv/YongJun_ws/ros2_ws/src/yolov8_ros/matlab_msg_gen/glnxa64/install/share/yolov8_msgs/package.dsv'
+[18.035s] INFO:colcon.colcon_core.shell:Creating package script '/home/aiv/YongJun_ws/ros2_ws/src/yolov8_ros/matlab_msg_gen/glnxa64/install/share/yolov8_msgs/package.sh'
+[18.036s] INFO:colcon.colcon_core.shell:Creating package script '/home/aiv/YongJun_ws/ros2_ws/src/yolov8_ros/matlab_msg_gen/glnxa64/install/share/yolov8_msgs/package.bash'
+[18.036s] INFO:colcon.colcon_core.shell:Creating package script '/home/aiv/YongJun_ws/ros2_ws/src/yolov8_ros/matlab_msg_gen/glnxa64/install/share/yolov8_msgs/package.zsh'
+[18.036s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/aiv/YongJun_ws/ros2_ws/src/yolov8_ros/matlab_msg_gen/glnxa64/install/share/colcon-core/packages/yolov8_msgs)
+[18.051s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(yolov8_msgs)
+[18.056s] Level 1:colcon.colcon_core.environment:checking '/home/aiv/YongJun_ws/ros2_ws/src/yolov8_ros/matlab_msg_gen/glnxa64/install' for CMake module files
+[18.056s] Level 1:colcon.colcon_core.environment:checking '/home/aiv/YongJun_ws/ros2_ws/src/yolov8_ros/matlab_msg_gen/glnxa64/install' for CMake config files
+[18.057s] Level 1:colcon.colcon_core.shell:create_environment_hook('yolov8_msgs', 'cmake_prefix_path')
+[18.061s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/aiv/YongJun_ws/ros2_ws/src/yolov8_ros/matlab_msg_gen/glnxa64/install/share/yolov8_msgs/hook/cmake_prefix_path.ps1'
+[18.061s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/aiv/YongJun_ws/ros2_ws/src/yolov8_ros/matlab_msg_gen/glnxa64/install/share/yolov8_msgs/hook/cmake_prefix_path.dsv'
+[18.061s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/aiv/YongJun_ws/ros2_ws/src/yolov8_ros/matlab_msg_gen/glnxa64/install/share/yolov8_msgs/hook/cmake_prefix_path.sh'
+[18.061s] Level 1:colcon.colcon_core.environment:checking '/home/aiv/YongJun_ws/ros2_ws/src/yolov8_ros/matlab_msg_gen/glnxa64/install/lib'
+[18.061s] Level 1:colcon.colcon_core.shell:create_environment_hook('yolov8_msgs', 'ld_library_path_lib')
+[18.065s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/aiv/YongJun_ws/ros2_ws/src/yolov8_ros/matlab_msg_gen/glnxa64/install/share/yolov8_msgs/hook/ld_library_path_lib.ps1'
+[18.065s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/aiv/YongJun_ws/ros2_ws/src/yolov8_ros/matlab_msg_gen/glnxa64/install/share/yolov8_msgs/hook/ld_library_path_lib.dsv'
+[18.066s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/aiv/YongJun_ws/ros2_ws/src/yolov8_ros/matlab_msg_gen/glnxa64/install/share/yolov8_msgs/hook/ld_library_path_lib.sh'
+[18.066s] Level 1:colcon.colcon_core.environment:checking '/home/aiv/YongJun_ws/ros2_ws/src/yolov8_ros/matlab_msg_gen/glnxa64/install/bin'
+[18.066s] Level 1:colcon.colcon_core.environment:checking '/home/aiv/YongJun_ws/ros2_ws/src/yolov8_ros/matlab_msg_gen/glnxa64/install/lib/pkgconfig/yolov8_msgs.pc'
+[18.066s] Level 1:colcon.colcon_core.environment:checking '/home/aiv/YongJun_ws/ros2_ws/src/yolov8_ros/matlab_msg_gen/glnxa64/install/lib/python3.10/site-packages'
+[18.066s] Level 1:colcon.colcon_core.environment:checking '/home/aiv/YongJun_ws/ros2_ws/src/yolov8_ros/matlab_msg_gen/glnxa64/install/bin'
+[18.070s] INFO:colcon.colcon_core.shell:Creating package script '/home/aiv/YongJun_ws/ros2_ws/src/yolov8_ros/matlab_msg_gen/glnxa64/install/share/yolov8_msgs/package.ps1'
+[18.070s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/aiv/YongJun_ws/ros2_ws/src/yolov8_ros/matlab_msg_gen/glnxa64/install/share/yolov8_msgs/package.dsv'
+[18.071s] INFO:colcon.colcon_core.shell:Creating package script '/home/aiv/YongJun_ws/ros2_ws/src/yolov8_ros/matlab_msg_gen/glnxa64/install/share/yolov8_msgs/package.sh'
+[18.071s] INFO:colcon.colcon_core.shell:Creating package script '/home/aiv/YongJun_ws/ros2_ws/src/yolov8_ros/matlab_msg_gen/glnxa64/install/share/yolov8_msgs/package.bash'
+[18.071s] INFO:colcon.colcon_core.shell:Creating package script '/home/aiv/YongJun_ws/ros2_ws/src/yolov8_ros/matlab_msg_gen/glnxa64/install/share/yolov8_msgs/package.zsh'
+[18.071s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/aiv/YongJun_ws/ros2_ws/src/yolov8_ros/matlab_msg_gen/glnxa64/install/share/colcon-core/packages/yolov8_msgs)
+[18.071s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:closing loop
+[18.071s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:loop closed
+[18.072s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete finished with '0'
+[18.072s] DEBUG:colcon.colcon_core.event_reactor:joining thread
+[18.076s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.notify2': 'notify2' not found
+[18.076s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.terminal_notifier': Not used on non-Darwin systems
+[18.076s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.win32': Not used on non-Windows systems
+[18.076s] INFO:colcon.colcon_notification.desktop_notification:Sending desktop notification using 'notify_send'
+[18.099s] DEBUG:colcon.colcon_core.event_reactor:joined thread
+[18.103s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/aiv/YongJun_ws/ros2_ws/src/yolov8_ros/matlab_msg_gen/glnxa64/install/local_setup.ps1'
+[18.104s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/aiv/YongJun_ws/ros2_ws/src/yolov8_ros/matlab_msg_gen/glnxa64/install/_local_setup_util_ps1.py'
+[18.104s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/aiv/YongJun_ws/ros2_ws/src/yolov8_ros/matlab_msg_gen/glnxa64/install/setup.ps1'
+[18.108s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/aiv/YongJun_ws/ros2_ws/src/yolov8_ros/matlab_msg_gen/glnxa64/install/local_setup.sh'
+[18.108s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/aiv/YongJun_ws/ros2_ws/src/yolov8_ros/matlab_msg_gen/glnxa64/install/_local_setup_util_sh.py'
+[18.109s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/aiv/YongJun_ws/ros2_ws/src/yolov8_ros/matlab_msg_gen/glnxa64/install/setup.sh'
+[18.112s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/aiv/YongJun_ws/ros2_ws/src/yolov8_ros/matlab_msg_gen/glnxa64/install/local_setup.bash'
+[18.112s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/aiv/YongJun_ws/ros2_ws/src/yolov8_ros/matlab_msg_gen/glnxa64/install/setup.bash'
+[18.116s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/aiv/YongJun_ws/ros2_ws/src/yolov8_ros/matlab_msg_gen/glnxa64/install/local_setup.zsh'
+[18.116s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/aiv/YongJun_ws/ros2_ws/src/yolov8_ros/matlab_msg_gen/glnxa64/install/setup.zsh'
