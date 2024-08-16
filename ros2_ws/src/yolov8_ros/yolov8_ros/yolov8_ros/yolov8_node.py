@@ -206,33 +206,33 @@ class Yolov8Node(Node):
 
         return masks_list
 
-    def parse_keypoints(self, results: Results) -> List[KeyPoint2DArray]:
+    # def parse_keypoints(self, results: Results) -> List[KeyPoint2DArray]:
 
-        keypoints_list = []
+    #     keypoints_list = []
 
-        points: Keypoints
-        for points in results.keypoints:
+    #     points: Keypoints
+    #     for points in results.keypoints:
 
-            msg_array = KeyPoint2DArray()
+    #         msg_array = KeyPoint2DArray()
 
-            if points.conf is None:
-                continue
+    #         if points.conf is None:
+    #             continue
 
-            for kp_id, (p, conf) in enumerate(zip(points.xy[0], points.conf[0])):
+    #         for kp_id, (p, conf) in enumerate(zip(points.xy[0], points.conf[0])):
 
-                if conf >= self.threshold:
-                    msg = KeyPoint2D()
+    #             if conf >= self.threshold:
+    #                 msg = KeyPoint2D()
 
-                    msg.id = kp_id + 1
-                    msg.point.x = float(p[0])
-                    msg.point.y = float(p[1])
-                    msg.score = float(conf)
+    #                 msg.id = kp_id + 1
+    #                 msg.point.x = float(p[0])
+    #                 msg.point.y = float(p[1])
+    #                 msg.score = float(conf)
 
-                    msg_array.data.append(msg)
+    #                 msg_array.data.append(msg)
 
-            keypoints_list.append(msg_array)
+    #         keypoints_list.append(msg_array)
 
-        return keypoints_list
+    #     return keypoints_list
 
     def image_cb(self, msg: Image) -> None:
 
@@ -256,8 +256,8 @@ class Yolov8Node(Node):
             if results.masks:
                 masks = self.parse_masks(results)
 
-            if results.keypoints:
-                keypoints = self.parse_keypoints(results)
+            # if results.keypoints:
+            #     keypoints = self.parse_keypoints(results)
 
             # create detection msgs
             detections_msg = DetectionArray()
@@ -276,8 +276,8 @@ class Yolov8Node(Node):
                 if results.masks:
                     aux_msg.mask = masks[i]
 
-                if results.keypoints:
-                    aux_msg.keypoints = keypoints[i]
+                # if results.keypoints:
+                #     aux_msg.keypoints = keypoints[i]
 
                 detections_msg.detections.append(aux_msg)
 
@@ -295,6 +295,7 @@ class Yolov8Node(Node):
         if "cuda" in self.device:
             self.get_logger().info("Clearing CUDA cache")
             torch.cuda.empty_cache()
+        
 
 def main():
     rclpy.init()

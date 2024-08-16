@@ -90,19 +90,19 @@ class DebugNode(Node):
 
         return cv_image
 
-    # def draw_mask(self, cv_image: np.array, detection: Detection, color: Tuple[int]) -> np.array:
+    def draw_mask(self, cv_image: np.array, detection: Detection, color: Tuple[int]) -> np.array:
 
-    #     mask_msg = detection.mask
-    #     mask_array = np.array([[int(ele.x), int(ele.y)]
-    #                           for ele in mask_msg.data])
+        mask_msg = detection.mask
+        mask_array = np.array([[int(ele.x), int(ele.y)]
+                              for ele in mask_msg.data])
 
-    #     if mask_msg.data:
-    #         layer = cv_image.copy()
-    #         layer = cv2.fillPoly(layer, pts=[mask_array], color=color)
-    #         cv2.addWeighted(cv_image, 0.4, layer, 0.6, 0, cv_image)
-    #         cv_image = cv2.polylines(cv_image, [mask_array], isClosed=True,
-    #                                  color=color, thickness=2, lineType=cv2.LINE_AA)
-    #     return cv_image
+        if mask_msg.data:
+            layer = cv_image.copy()
+            layer = cv2.fillPoly(layer, pts=[mask_array], color=color)
+            cv2.addWeighted(cv_image, 0.4, layer, 0.6, 0, cv_image)
+            cv_image = cv2.polylines(cv_image, [mask_array], isClosed=True,
+                                     color=color, thickness=2, lineType=cv2.LINE_AA)
+        return cv_image
 
     # def draw_keypoints(self, cv_image: np.array, detection: Detection) -> np.array:
 
@@ -202,8 +202,8 @@ class DebugNode(Node):
     def detections_cb(self, img_msg: Image, detection_msg: DetectionArray) -> None:
 
         cv_image = self.cv_bridge.imgmsg_to_cv2(img_msg)
-        # bb_marker_array = MarkerArray()
-        # kp_marker_array = MarkerArray()
+        bb_marker_array = MarkerArray()
+        kp_marker_array = MarkerArray()
 
         detection: Detection
         for detection in detection_msg.detections:
@@ -220,7 +220,7 @@ class DebugNode(Node):
             color = self._class_to_color[label]
 
             cv_image = self.draw_box(cv_image, detection, color)
-            # cv_image = self.draw_mask(cv_image, detection, color)
+            cv_image = self.draw_mask(cv_image, detection, color)
             # cv_image = self.draw_keypoints(cv_image, detection)
 
             # if detection.bbox3d.frame_id:

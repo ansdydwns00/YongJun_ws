@@ -1,0 +1,287 @@
+[0.000000] (-) TimerEvent: {}
+[0.000288] (-) JobUnselected: {'identifier': 'realsense2_camera'}
+[0.000435] (-) JobUnselected: {'identifier': 'realsense2_camera_msgs'}
+[0.000662] (-) JobUnselected: {'identifier': 'realsense2_description'}
+[0.000756] (-) JobUnselected: {'identifier': 'usb_cam'}
+[0.000783] (-) JobUnselected: {'identifier': 'yolov8_bringup'}
+[0.000815] (-) JobUnselected: {'identifier': 'yolov8_ros'}
+[0.000827] (yolov8_msgs) JobQueued: {'identifier': 'yolov8_msgs', 'dependencies': OrderedDict()}
+[0.000838] (yolov8_msgs) JobStarted: {'identifier': 'yolov8_msgs'}
+[0.006805] (yolov8_msgs) JobProgress: {'identifier': 'yolov8_msgs', 'progress': 'cmake'}
+[0.007434] (yolov8_msgs) JobProgress: {'identifier': 'yolov8_msgs', 'progress': 'build'}
+[0.007948] (yolov8_msgs) Command: {'cmd': ['/home/aiv/.local/bin/cmake', '--build', '/home/aiv/YongJun_ws/ros2_ws/build/yolov8_msgs', '--', '-j32', '-l32'], 'cwd': '/home/aiv/YongJun_ws/ros2_ws/build/yolov8_msgs', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'aiv'), ('LC_TIME', 'ko_KR.UTF-8'), ('SSH_AGENT_PID', '2214'), ('XDG_SESSION_TYPE', 'x11'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib/x86_64-linux-gnu:/opt/ros/foxy/lib:/usr/local/cuda-11.8/lib64:'), ('HOME', '/home/aiv'), ('OLDPWD', '/home/aiv'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('LC_MONETARY', 'ko_KR.UTF-8'), ('MANAGERPID', '2114'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('TERMINATOR_DBUS_NAME', 'net.tenshu.Terminator23558193cd9818af7fe4d2c2f5bd9d00f'), ('GIO_LAUNCHED_DESKTOP_FILE_PID', '10180'), ('IM_CONFIG_PHASE', '1'), ('ROS_DISTRO', 'foxy'), ('LOGNAME', 'aiv'), ('JOURNAL_STREAM', '8:73966'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'aiv'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('WINDOWPATH', '2'), ('PATH', '/opt/ros/foxy/bin:/usr/local/cuda-11.8/bin:/home/aiv/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/usr/local/bin'), ('SESSION_MANAGER', 'local/aiv:@/tmp/.ICE-unix/2249,unix/aiv:/tmp/.ICE-unix/2249'), ('INVOCATION_ID', '70e0cd35fa13441da2a6706ffdcf3717'), ('XDG_MENU_PREFIX', 'gnome-'), ('LC_ADDRESS', 'ko_KR.UTF-8'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':1'), ('TERMINATOR_DBUS_PATH', '/net/tenshu/Terminator2'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('LC_TELEPHONE', 'ko_KR.UTF-8'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/opt/ros/foxy'), ('SHELL', '/bin/bash'), ('LC_NAME', 'ko_KR.UTF-8'), ('TERMINATOR_UUID', 'urn:uuid:aad05b24-f198-4483-9e51-e6407f86362a'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'ko_KR.UTF-8'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('LC_IDENTIFICATION', 'ko_KR.UTF-8'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/aiv/YongJun_ws/ros2_ws/build/yolov8_msgs'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/foxy/lib/python3.8/site-packages'), ('LC_NUMERIC', 'ko_KR.UTF-8'), ('LC_PAPER', 'ko_KR.UTF-8'), ('COLCON', '1'), ('VTE_VERSION', '6003'), ('CMAKE_PREFIX_PATH', '/opt/ros/foxy')]), 'shell': False}
+[0.057397] (yolov8_msgs) StdoutLine: {'line': b'[  0%] Built target yolov8_msgs__cpp\n'}
+[0.065970] (yolov8_msgs) StdoutLine: {'line': b'[ 12%] Built target yolov8_msgs__rosidl_generator_c\n'}
+[0.079316] (yolov8_msgs) StdoutLine: {'line': b'[ 24%] Built target yolov8_msgs__rosidl_typesupport_c\n'}
+[0.080364] (yolov8_msgs) StdoutLine: {'line': b'[ 36%] Built target yolov8_msgs__rosidl_typesupport_cpp\n'}
+[0.080991] (yolov8_msgs) StdoutLine: {'line': b'[ 48%] Built target yolov8_msgs__rosidl_typesupport_introspection_cpp\n'}
+[0.082414] (yolov8_msgs) StdoutLine: {'line': b'[ 59%] Built target yolov8_msgs__rosidl_typesupport_fastrtps_cpp\n'}
+[0.082522] (yolov8_msgs) StdoutLine: {'line': b'[ 71%] Built target yolov8_msgs__rosidl_typesupport_introspection_c\n'}
+[0.099974] (yolov8_msgs) StdoutLine: {'line': b'[ 83%] Built target yolov8_msgs__rosidl_typesupport_fastrtps_c\n'}
+[0.100070] (-) TimerEvent: {}
+[0.106174] (yolov8_msgs) StdoutLine: {'line': b'[ 83%] Built target yolov8_msgs\n'}
+[0.112839] (yolov8_msgs) StdoutLine: {'line': b'[ 84%] Built target yolov8_msgs__py\n'}
+[0.128745] (yolov8_msgs) StdoutLine: {'line': b'[ 95%] Built target yolov8_msgs__python\n'}
+[0.136949] (yolov8_msgs) StdoutLine: {'line': b'[ 98%] Built target yolov8_msgs__rosidl_typesupport_fastrtps_c__pyext\n'}
+[0.137035] (yolov8_msgs) StdoutLine: {'line': b'[ 99%] Built target yolov8_msgs__rosidl_typesupport_introspection_c__pyext\n'}
+[0.137368] (yolov8_msgs) StdoutLine: {'line': b'[100%] Built target yolov8_msgs__rosidl_typesupport_c__pyext\n'}
+[0.143203] (yolov8_msgs) CommandEnded: {'returncode': 0}
+[0.200351] (-) TimerEvent: {}
+[0.285478] (yolov8_msgs) JobProgress: {'identifier': 'yolov8_msgs', 'progress': 'install'}
+[0.300539] (-) TimerEvent: {}
+[0.307394] (yolov8_msgs) Command: {'cmd': ['/home/aiv/.local/bin/cmake', '--install', '/home/aiv/YongJun_ws/ros2_ws/build/yolov8_msgs'], 'cwd': '/home/aiv/YongJun_ws/ros2_ws/build/yolov8_msgs', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'aiv'), ('LC_TIME', 'ko_KR.UTF-8'), ('SSH_AGENT_PID', '2214'), ('XDG_SESSION_TYPE', 'x11'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib/x86_64-linux-gnu:/opt/ros/foxy/lib:/usr/local/cuda-11.8/lib64:'), ('HOME', '/home/aiv'), ('OLDPWD', '/home/aiv'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('LC_MONETARY', 'ko_KR.UTF-8'), ('MANAGERPID', '2114'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('TERMINATOR_DBUS_NAME', 'net.tenshu.Terminator23558193cd9818af7fe4d2c2f5bd9d00f'), ('GIO_LAUNCHED_DESKTOP_FILE_PID', '10180'), ('IM_CONFIG_PHASE', '1'), ('ROS_DISTRO', 'foxy'), ('LOGNAME', 'aiv'), ('JOURNAL_STREAM', '8:73966'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'aiv'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('WINDOWPATH', '2'), ('PATH', '/opt/ros/foxy/bin:/usr/local/cuda-11.8/bin:/home/aiv/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/usr/local/bin'), ('SESSION_MANAGER', 'local/aiv:@/tmp/.ICE-unix/2249,unix/aiv:/tmp/.ICE-unix/2249'), ('INVOCATION_ID', '70e0cd35fa13441da2a6706ffdcf3717'), ('XDG_MENU_PREFIX', 'gnome-'), ('LC_ADDRESS', 'ko_KR.UTF-8'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':1'), ('TERMINATOR_DBUS_PATH', '/net/tenshu/Terminator2'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('LC_TELEPHONE', 'ko_KR.UTF-8'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/opt/ros/foxy'), ('SHELL', '/bin/bash'), ('LC_NAME', 'ko_KR.UTF-8'), ('TERMINATOR_UUID', 'urn:uuid:aad05b24-f198-4483-9e51-e6407f86362a'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'ko_KR.UTF-8'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('LC_IDENTIFICATION', 'ko_KR.UTF-8'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/aiv/YongJun_ws/ros2_ws/build/yolov8_msgs'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/foxy/lib/python3.8/site-packages'), ('LC_NUMERIC', 'ko_KR.UTF-8'), ('LC_PAPER', 'ko_KR.UTF-8'), ('COLCON', '1'), ('VTE_VERSION', '6003'), ('CMAKE_PREFIX_PATH', '/opt/ros/foxy')]), 'shell': False}
+[0.334090] (yolov8_msgs) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[0.335007] (yolov8_msgs) StdoutLine: {'line': b'-- Execute custom install script\n'}
+[0.335178] (yolov8_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/aiv/YongJun_ws/ros2_ws/install/yolov8_msgs/share/ament_index/resource_index/rosidl_interfaces/yolov8_msgs\n'}
+[0.335800] (yolov8_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/aiv/YongJun_ws/ros2_ws/install/yolov8_msgs/include/yolov8_msgs/msg/bounding_box2_d.h\n'}
+[0.335997] (yolov8_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/aiv/YongJun_ws/ros2_ws/install/yolov8_msgs/include/yolov8_msgs/msg/bounding_box3_d.h\n'}
+[0.336295] (yolov8_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/aiv/YongJun_ws/ros2_ws/install/yolov8_msgs/include/yolov8_msgs/msg/detail/bounding_box2_d__functions.h\n'}
+[0.336389] (yolov8_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/aiv/YongJun_ws/ros2_ws/install/yolov8_msgs/include/yolov8_msgs/msg/detail/bounding_box2_d__struct.h\n'}
+[0.336589] (yolov8_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/aiv/YongJun_ws/ros2_ws/install/yolov8_msgs/include/yolov8_msgs/msg/detail/bounding_box2_d__type_support.h\n'}
+[0.336688] (yolov8_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/aiv/YongJun_ws/ros2_ws/install/yolov8_msgs/include/yolov8_msgs/msg/detail/bounding_box3_d__functions.h\n'}
+[0.336787] (yolov8_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/aiv/YongJun_ws/ros2_ws/install/yolov8_msgs/include/yolov8_msgs/msg/detail/bounding_box3_d__struct.h\n'}
+[0.336869] (yolov8_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/aiv/YongJun_ws/ros2_ws/install/yolov8_msgs/include/yolov8_msgs/msg/detail/bounding_box3_d__type_support.h\n'}
+[0.336958] (yolov8_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/aiv/YongJun_ws/ros2_ws/install/yolov8_msgs/include/yolov8_msgs/msg/detail/detection__functions.h\n'}
+[0.337036] (yolov8_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/aiv/YongJun_ws/ros2_ws/install/yolov8_msgs/include/yolov8_msgs/msg/detail/detection__struct.h\n'}
+[0.337230] (yolov8_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/aiv/YongJun_ws/ros2_ws/install/yolov8_msgs/include/yolov8_msgs/msg/detail/detection__type_support.h\n'}
+[0.337415] (yolov8_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/aiv/YongJun_ws/ros2_ws/install/yolov8_msgs/include/yolov8_msgs/msg/detail/detection_array__functions.h\n'}
+[0.337515] (yolov8_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/aiv/YongJun_ws/ros2_ws/install/yolov8_msgs/include/yolov8_msgs/msg/detail/detection_array__struct.h\n'}
+[0.337603] (yolov8_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/aiv/YongJun_ws/ros2_ws/install/yolov8_msgs/include/yolov8_msgs/msg/detail/detection_array__type_support.h\n'}
+[0.337683] (yolov8_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/aiv/YongJun_ws/ros2_ws/install/yolov8_msgs/include/yolov8_msgs/msg/detail/key_point2_d__functions.h\n'}
+[0.337771] (yolov8_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/aiv/YongJun_ws/ros2_ws/install/yolov8_msgs/include/yolov8_msgs/msg/detail/key_point2_d__struct.h\n'}
+[0.337933] (yolov8_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/aiv/YongJun_ws/ros2_ws/install/yolov8_msgs/include/yolov8_msgs/msg/detail/key_point2_d__type_support.h\n'}
+[0.338020] (yolov8_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/aiv/YongJun_ws/ros2_ws/install/yolov8_msgs/include/yolov8_msgs/msg/detail/key_point2_d_array__functions.h\n'}
+[0.338096] (yolov8_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/aiv/YongJun_ws/ros2_ws/install/yolov8_msgs/include/yolov8_msgs/msg/detail/key_point2_d_array__struct.h\n'}
+[0.338145] (yolov8_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/aiv/YongJun_ws/ros2_ws/install/yolov8_msgs/include/yolov8_msgs/msg/detail/key_point2_d_array__type_support.h\n'}
+[0.338178] (yolov8_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/aiv/YongJun_ws/ros2_ws/install/yolov8_msgs/include/yolov8_msgs/msg/detail/key_point3_d__functions.h\n'}
+[0.338208] (yolov8_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/aiv/YongJun_ws/ros2_ws/install/yolov8_msgs/include/yolov8_msgs/msg/detail/key_point3_d__struct.h\n'}
+[0.338239] (yolov8_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/aiv/YongJun_ws/ros2_ws/install/yolov8_msgs/include/yolov8_msgs/msg/detail/key_point3_d__type_support.h\n'}
+[0.338311] (yolov8_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/aiv/YongJun_ws/ros2_ws/install/yolov8_msgs/include/yolov8_msgs/msg/detail/key_point3_d_array__functions.h\n'}
+[0.338343] (yolov8_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/aiv/YongJun_ws/ros2_ws/install/yolov8_msgs/include/yolov8_msgs/msg/detail/key_point3_d_array__struct.h\n'}
+[0.338379] (yolov8_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/aiv/YongJun_ws/ros2_ws/install/yolov8_msgs/include/yolov8_msgs/msg/detail/key_point3_d_array__type_support.h\n'}
+[0.338410] (yolov8_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/aiv/YongJun_ws/ros2_ws/install/yolov8_msgs/include/yolov8_msgs/msg/detail/mask__functions.h\n'}
+[0.338439] (yolov8_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/aiv/YongJun_ws/ros2_ws/install/yolov8_msgs/include/yolov8_msgs/msg/detail/mask__struct.h\n'}
+[0.338472] (yolov8_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/aiv/YongJun_ws/ros2_ws/install/yolov8_msgs/include/yolov8_msgs/msg/detail/mask__type_support.h\n'}
+[0.338504] (yolov8_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/aiv/YongJun_ws/ros2_ws/install/yolov8_msgs/include/yolov8_msgs/msg/detail/point2_d__functions.h\n'}
+[0.338535] (yolov8_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/aiv/YongJun_ws/ros2_ws/install/yolov8_msgs/include/yolov8_msgs/msg/detail/point2_d__struct.h\n'}
+[0.338702] (yolov8_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/aiv/YongJun_ws/ros2_ws/install/yolov8_msgs/include/yolov8_msgs/msg/detail/point2_d__type_support.h\n'}
+[0.338758] (yolov8_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/aiv/YongJun_ws/ros2_ws/install/yolov8_msgs/include/yolov8_msgs/msg/detail/pose2_d__functions.h\n'}
+[0.338794] (yolov8_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/aiv/YongJun_ws/ros2_ws/install/yolov8_msgs/include/yolov8_msgs/msg/detail/pose2_d__struct.h\n'}
+[0.338828] (yolov8_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/aiv/YongJun_ws/ros2_ws/install/yolov8_msgs/include/yolov8_msgs/msg/detail/pose2_d__type_support.h\n'}
+[0.338858] (yolov8_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/aiv/YongJun_ws/ros2_ws/install/yolov8_msgs/include/yolov8_msgs/msg/detail/vector2__functions.h\n'}
+[0.338893] (yolov8_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/aiv/YongJun_ws/ros2_ws/install/yolov8_msgs/include/yolov8_msgs/msg/detail/vector2__struct.h\n'}
+[0.338924] (yolov8_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/aiv/YongJun_ws/ros2_ws/install/yolov8_msgs/include/yolov8_msgs/msg/detail/vector2__type_support.h\n'}
+[0.338954] (yolov8_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/aiv/YongJun_ws/ros2_ws/install/yolov8_msgs/include/yolov8_msgs/msg/detection.h\n'}
+[0.338985] (yolov8_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/aiv/YongJun_ws/ros2_ws/install/yolov8_msgs/include/yolov8_msgs/msg/detection_array.h\n'}
+[0.339018] (yolov8_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/aiv/YongJun_ws/ros2_ws/install/yolov8_msgs/include/yolov8_msgs/msg/key_point2_d.h\n'}
+[0.339050] (yolov8_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/aiv/YongJun_ws/ros2_ws/install/yolov8_msgs/include/yolov8_msgs/msg/key_point2_d_array.h\n'}
+[0.339081] (yolov8_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/aiv/YongJun_ws/ros2_ws/install/yolov8_msgs/include/yolov8_msgs/msg/key_point3_d.h\n'}
+[0.339115] (yolov8_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/aiv/YongJun_ws/ros2_ws/install/yolov8_msgs/include/yolov8_msgs/msg/key_point3_d_array.h\n'}
+[0.339146] (yolov8_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/aiv/YongJun_ws/ros2_ws/install/yolov8_msgs/include/yolov8_msgs/msg/mask.h\n'}
+[0.339177] (yolov8_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/aiv/YongJun_ws/ros2_ws/install/yolov8_msgs/include/yolov8_msgs/msg/point2_d.h\n'}
+[0.339210] (yolov8_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/aiv/YongJun_ws/ros2_ws/install/yolov8_msgs/include/yolov8_msgs/msg/pose2_d.h\n'}
+[0.339242] (yolov8_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/aiv/YongJun_ws/ros2_ws/install/yolov8_msgs/include/yolov8_msgs/msg/rosidl_generator_c__visibility_control.h\n'}
+[0.339274] (yolov8_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/aiv/YongJun_ws/ros2_ws/install/yolov8_msgs/include/yolov8_msgs/msg/vector2.h\n'}
+[0.339450] (yolov8_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/aiv/YongJun_ws/ros2_ws/install/yolov8_msgs/share/yolov8_msgs/environment/library_path.sh\n'}
+[0.339547] (yolov8_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/aiv/YongJun_ws/ros2_ws/install/yolov8_msgs/share/yolov8_msgs/environment/library_path.dsv\n'}
+[0.339626] (yolov8_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/aiv/YongJun_ws/ros2_ws/install/yolov8_msgs/include/yolov8_msgs/msg/detail/bounding_box2_d__rosidl_typesupport_fastrtps_c.h\n'}
+[0.339705] (yolov8_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/aiv/YongJun_ws/ros2_ws/install/yolov8_msgs/include/yolov8_msgs/msg/detail/bounding_box3_d__rosidl_typesupport_fastrtps_c.h\n'}
+[0.339771] (yolov8_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/aiv/YongJun_ws/ros2_ws/install/yolov8_msgs/include/yolov8_msgs/msg/detail/detection__rosidl_typesupport_fastrtps_c.h\n'}
+[0.339837] (yolov8_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/aiv/YongJun_ws/ros2_ws/install/yolov8_msgs/include/yolov8_msgs/msg/detail/detection_array__rosidl_typesupport_fastrtps_c.h\n'}
+[0.339902] (yolov8_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/aiv/YongJun_ws/ros2_ws/install/yolov8_msgs/include/yolov8_msgs/msg/detail/key_point2_d__rosidl_typesupport_fastrtps_c.h\n'}
+[0.339980] (yolov8_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/aiv/YongJun_ws/ros2_ws/install/yolov8_msgs/include/yolov8_msgs/msg/detail/key_point2_d_array__rosidl_typesupport_fastrtps_c.h\n'}
+[0.340056] (yolov8_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/aiv/YongJun_ws/ros2_ws/install/yolov8_msgs/include/yolov8_msgs/msg/detail/key_point3_d__rosidl_typesupport_fastrtps_c.h\n'}
+[0.340122] (yolov8_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/aiv/YongJun_ws/ros2_ws/install/yolov8_msgs/include/yolov8_msgs/msg/detail/key_point3_d_array__rosidl_typesupport_fastrtps_c.h\n'}
+[0.340188] (yolov8_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/aiv/YongJun_ws/ros2_ws/install/yolov8_msgs/include/yolov8_msgs/msg/detail/mask__rosidl_typesupport_fastrtps_c.h\n'}
+[0.340253] (yolov8_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/aiv/YongJun_ws/ros2_ws/install/yolov8_msgs/include/yolov8_msgs/msg/detail/point2_d__rosidl_typesupport_fastrtps_c.h\n'}
+[0.340318] (yolov8_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/aiv/YongJun_ws/ros2_ws/install/yolov8_msgs/include/yolov8_msgs/msg/detail/pose2_d__rosidl_typesupport_fastrtps_c.h\n'}
+[0.340385] (yolov8_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/aiv/YongJun_ws/ros2_ws/install/yolov8_msgs/include/yolov8_msgs/msg/detail/vector2__rosidl_typesupport_fastrtps_c.h\n'}
+[0.340453] (yolov8_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/aiv/YongJun_ws/ros2_ws/install/yolov8_msgs/include/yolov8_msgs/msg/rosidl_typesupport_fastrtps_c__visibility_control.h\n'}
+[0.340533] (yolov8_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/aiv/YongJun_ws/ros2_ws/install/yolov8_msgs/lib/libyolov8_msgs__rosidl_typesupport_fastrtps_c.so\n'}
+[0.340619] (yolov8_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/aiv/YongJun_ws/ros2_ws/install/yolov8_msgs/include/yolov8_msgs/msg/detail/bounding_box2_d__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[0.340699] (yolov8_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/aiv/YongJun_ws/ros2_ws/install/yolov8_msgs/include/yolov8_msgs/msg/detail/bounding_box3_d__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[0.340782] (yolov8_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/aiv/YongJun_ws/ros2_ws/install/yolov8_msgs/include/yolov8_msgs/msg/detail/detection__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[0.340860] (yolov8_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/aiv/YongJun_ws/ros2_ws/install/yolov8_msgs/include/yolov8_msgs/msg/detail/detection_array__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[0.340936] (yolov8_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/aiv/YongJun_ws/ros2_ws/install/yolov8_msgs/include/yolov8_msgs/msg/detail/key_point2_d__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[0.341018] (yolov8_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/aiv/YongJun_ws/ros2_ws/install/yolov8_msgs/include/yolov8_msgs/msg/detail/key_point2_d_array__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[0.341098] (yolov8_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/aiv/YongJun_ws/ros2_ws/install/yolov8_msgs/include/yolov8_msgs/msg/detail/key_point3_d__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[0.341174] (yolov8_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/aiv/YongJun_ws/ros2_ws/install/yolov8_msgs/include/yolov8_msgs/msg/detail/key_point3_d_array__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[0.341239] (yolov8_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/aiv/YongJun_ws/ros2_ws/install/yolov8_msgs/include/yolov8_msgs/msg/detail/mask__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[0.341304] (yolov8_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/aiv/YongJun_ws/ros2_ws/install/yolov8_msgs/include/yolov8_msgs/msg/detail/point2_d__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[0.341385] (yolov8_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/aiv/YongJun_ws/ros2_ws/install/yolov8_msgs/include/yolov8_msgs/msg/detail/pose2_d__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[0.341453] (yolov8_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/aiv/YongJun_ws/ros2_ws/install/yolov8_msgs/include/yolov8_msgs/msg/detail/vector2__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[0.341518] (yolov8_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/aiv/YongJun_ws/ros2_ws/install/yolov8_msgs/include/yolov8_msgs/msg/rosidl_typesupport_fastrtps_cpp__visibility_control.h\n'}
+[0.341584] (yolov8_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/aiv/YongJun_ws/ros2_ws/install/yolov8_msgs/lib/libyolov8_msgs__rosidl_typesupport_fastrtps_cpp.so\n'}
+[0.341667] (yolov8_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/aiv/YongJun_ws/ros2_ws/install/yolov8_msgs/include/yolov8_msgs/msg/detail/bounding_box2_d__rosidl_typesupport_introspection_c.h\n'}
+[0.341748] (yolov8_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/aiv/YongJun_ws/ros2_ws/install/yolov8_msgs/include/yolov8_msgs/msg/detail/bounding_box3_d__rosidl_typesupport_introspection_c.h\n'}
+[0.341851] (yolov8_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/aiv/YongJun_ws/ros2_ws/install/yolov8_msgs/include/yolov8_msgs/msg/detail/detection__rosidl_typesupport_introspection_c.h\n'}
+[0.341930] (yolov8_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/aiv/YongJun_ws/ros2_ws/install/yolov8_msgs/include/yolov8_msgs/msg/detail/detection_array__rosidl_typesupport_introspection_c.h\n'}
+[0.342008] (yolov8_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/aiv/YongJun_ws/ros2_ws/install/yolov8_msgs/include/yolov8_msgs/msg/detail/key_point2_d__rosidl_typesupport_introspection_c.h\n'}
+[0.342101] (yolov8_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/aiv/YongJun_ws/ros2_ws/install/yolov8_msgs/include/yolov8_msgs/msg/detail/key_point2_d_array__rosidl_typesupport_introspection_c.h\n'}
+[0.342188] (yolov8_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/aiv/YongJun_ws/ros2_ws/install/yolov8_msgs/include/yolov8_msgs/msg/detail/key_point3_d__rosidl_typesupport_introspection_c.h\n'}
+[0.342266] (yolov8_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/aiv/YongJun_ws/ros2_ws/install/yolov8_msgs/include/yolov8_msgs/msg/detail/key_point3_d_array__rosidl_typesupport_introspection_c.h\n'}
+[0.342352] (yolov8_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/aiv/YongJun_ws/ros2_ws/install/yolov8_msgs/include/yolov8_msgs/msg/detail/mask__rosidl_typesupport_introspection_c.h\n'}
+[0.342419] (yolov8_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/aiv/YongJun_ws/ros2_ws/install/yolov8_msgs/include/yolov8_msgs/msg/detail/point2_d__rosidl_typesupport_introspection_c.h\n'}
+[0.342484] (yolov8_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/aiv/YongJun_ws/ros2_ws/install/yolov8_msgs/include/yolov8_msgs/msg/detail/pose2_d__rosidl_typesupport_introspection_c.h\n'}
+[0.342552] (yolov8_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/aiv/YongJun_ws/ros2_ws/install/yolov8_msgs/include/yolov8_msgs/msg/detail/vector2__rosidl_typesupport_introspection_c.h\n'}
+[0.342617] (yolov8_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/aiv/YongJun_ws/ros2_ws/install/yolov8_msgs/include/yolov8_msgs/msg/rosidl_typesupport_introspection_c__visibility_control.h\n'}
+[0.342895] (yolov8_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/aiv/YongJun_ws/ros2_ws/install/yolov8_msgs/include/yolov8_msgs/msg/bounding_box2_d.hpp\n'}
+[0.342974] (yolov8_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/aiv/YongJun_ws/ros2_ws/install/yolov8_msgs/include/yolov8_msgs/msg/bounding_box3_d.hpp\n'}
+[0.343059] (yolov8_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/aiv/YongJun_ws/ros2_ws/install/yolov8_msgs/include/yolov8_msgs/msg/detail/bounding_box2_d__builder.hpp\n'}
+[0.343136] (yolov8_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/aiv/YongJun_ws/ros2_ws/install/yolov8_msgs/include/yolov8_msgs/msg/detail/bounding_box2_d__struct.hpp\n'}
+[0.343220] (yolov8_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/aiv/YongJun_ws/ros2_ws/install/yolov8_msgs/include/yolov8_msgs/msg/detail/bounding_box2_d__traits.hpp\n'}
+[0.343297] (yolov8_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/aiv/YongJun_ws/ros2_ws/install/yolov8_msgs/include/yolov8_msgs/msg/detail/bounding_box2_d__type_support.hpp\n'}
+[0.343386] (yolov8_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/aiv/YongJun_ws/ros2_ws/install/yolov8_msgs/include/yolov8_msgs/msg/detail/bounding_box3_d__builder.hpp\n'}
+[0.343467] (yolov8_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/aiv/YongJun_ws/ros2_ws/install/yolov8_msgs/include/yolov8_msgs/msg/detail/bounding_box3_d__struct.hpp\n'}
+[0.343558] (yolov8_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/aiv/YongJun_ws/ros2_ws/install/yolov8_msgs/include/yolov8_msgs/msg/detail/bounding_box3_d__traits.hpp\n'}
+[0.343635] (yolov8_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/aiv/YongJun_ws/ros2_ws/install/yolov8_msgs/include/yolov8_msgs/msg/detail/bounding_box3_d__type_support.hpp\n'}
+[0.343715] (yolov8_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/aiv/YongJun_ws/ros2_ws/install/yolov8_msgs/include/yolov8_msgs/msg/detail/detection__builder.hpp\n'}
+[0.343792] (yolov8_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/aiv/YongJun_ws/ros2_ws/install/yolov8_msgs/include/yolov8_msgs/msg/detail/detection__struct.hpp\n'}
+[0.343875] (yolov8_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/aiv/YongJun_ws/ros2_ws/install/yolov8_msgs/include/yolov8_msgs/msg/detail/detection__traits.hpp\n'}
+[0.343953] (yolov8_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/aiv/YongJun_ws/ros2_ws/install/yolov8_msgs/include/yolov8_msgs/msg/detail/detection__type_support.hpp\n'}
+[0.344126] (yolov8_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/aiv/YongJun_ws/ros2_ws/install/yolov8_msgs/include/yolov8_msgs/msg/detail/detection_array__builder.hpp\n'}
+[0.344213] (yolov8_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/aiv/YongJun_ws/ros2_ws/install/yolov8_msgs/include/yolov8_msgs/msg/detail/detection_array__struct.hpp\n'}
+[0.344289] (yolov8_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/aiv/YongJun_ws/ros2_ws/install/yolov8_msgs/include/yolov8_msgs/msg/detail/detection_array__traits.hpp\n'}
+[0.344371] (yolov8_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/aiv/YongJun_ws/ros2_ws/install/yolov8_msgs/include/yolov8_msgs/msg/detail/detection_array__type_support.hpp\n'}
+[0.344457] (yolov8_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/aiv/YongJun_ws/ros2_ws/install/yolov8_msgs/include/yolov8_msgs/msg/detail/key_point2_d__builder.hpp\n'}
+[0.344533] (yolov8_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/aiv/YongJun_ws/ros2_ws/install/yolov8_msgs/include/yolov8_msgs/msg/detail/key_point2_d__struct.hpp\n'}
+[0.344615] (yolov8_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/aiv/YongJun_ws/ros2_ws/install/yolov8_msgs/include/yolov8_msgs/msg/detail/key_point2_d__traits.hpp\n'}
+[0.344697] (yolov8_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/aiv/YongJun_ws/ros2_ws/install/yolov8_msgs/include/yolov8_msgs/msg/detail/key_point2_d__type_support.hpp\n'}
+[0.344778] (yolov8_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/aiv/YongJun_ws/ros2_ws/install/yolov8_msgs/include/yolov8_msgs/msg/detail/key_point2_d_array__builder.hpp\n'}
+[0.344853] (yolov8_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/aiv/YongJun_ws/ros2_ws/install/yolov8_msgs/include/yolov8_msgs/msg/detail/key_point2_d_array__struct.hpp\n'}
+[0.344936] (yolov8_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/aiv/YongJun_ws/ros2_ws/install/yolov8_msgs/include/yolov8_msgs/msg/detail/key_point2_d_array__traits.hpp\n'}
+[0.345013] (yolov8_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/aiv/YongJun_ws/ros2_ws/install/yolov8_msgs/include/yolov8_msgs/msg/detail/key_point2_d_array__type_support.hpp\n'}
+[0.345098] (yolov8_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/aiv/YongJun_ws/ros2_ws/install/yolov8_msgs/include/yolov8_msgs/msg/detail/key_point3_d__builder.hpp\n'}
+[0.345175] (yolov8_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/aiv/YongJun_ws/ros2_ws/install/yolov8_msgs/include/yolov8_msgs/msg/detail/key_point3_d__struct.hpp\n'}
+[0.345259] (yolov8_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/aiv/YongJun_ws/ros2_ws/install/yolov8_msgs/include/yolov8_msgs/msg/detail/key_point3_d__traits.hpp\n'}
+[0.345336] (yolov8_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/aiv/YongJun_ws/ros2_ws/install/yolov8_msgs/include/yolov8_msgs/msg/detail/key_point3_d__type_support.hpp\n'}
+[0.345421] (yolov8_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/aiv/YongJun_ws/ros2_ws/install/yolov8_msgs/include/yolov8_msgs/msg/detail/key_point3_d_array__builder.hpp\n'}
+[0.345499] (yolov8_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/aiv/YongJun_ws/ros2_ws/install/yolov8_msgs/include/yolov8_msgs/msg/detail/key_point3_d_array__struct.hpp\n'}
+[0.345582] (yolov8_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/aiv/YongJun_ws/ros2_ws/install/yolov8_msgs/include/yolov8_msgs/msg/detail/key_point3_d_array__traits.hpp\n'}
+[0.345661] (yolov8_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/aiv/YongJun_ws/ros2_ws/install/yolov8_msgs/include/yolov8_msgs/msg/detail/key_point3_d_array__type_support.hpp\n'}
+[0.345745] (yolov8_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/aiv/YongJun_ws/ros2_ws/install/yolov8_msgs/include/yolov8_msgs/msg/detail/mask__builder.hpp\n'}
+[0.345827] (yolov8_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/aiv/YongJun_ws/ros2_ws/install/yolov8_msgs/include/yolov8_msgs/msg/detail/mask__struct.hpp\n'}
+[0.345905] (yolov8_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/aiv/YongJun_ws/ros2_ws/install/yolov8_msgs/include/yolov8_msgs/msg/detail/mask__traits.hpp\n'}
+[0.345987] (yolov8_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/aiv/YongJun_ws/ros2_ws/install/yolov8_msgs/include/yolov8_msgs/msg/detail/mask__type_support.hpp\n'}
+[0.346064] (yolov8_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/aiv/YongJun_ws/ros2_ws/install/yolov8_msgs/include/yolov8_msgs/msg/detail/point2_d__builder.hpp\n'}
+[0.346146] (yolov8_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/aiv/YongJun_ws/ros2_ws/install/yolov8_msgs/include/yolov8_msgs/msg/detail/point2_d__struct.hpp\n'}
+[0.346212] (yolov8_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/aiv/YongJun_ws/ros2_ws/install/yolov8_msgs/include/yolov8_msgs/msg/detail/point2_d__traits.hpp\n'}
+[0.346277] (yolov8_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/aiv/YongJun_ws/ros2_ws/install/yolov8_msgs/include/yolov8_msgs/msg/detail/point2_d__type_support.hpp\n'}
+[0.346342] (yolov8_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/aiv/YongJun_ws/ros2_ws/install/yolov8_msgs/include/yolov8_msgs/msg/detail/pose2_d__builder.hpp\n'}
+[0.346424] (yolov8_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/aiv/YongJun_ws/ros2_ws/install/yolov8_msgs/include/yolov8_msgs/msg/detail/pose2_d__struct.hpp\n'}
+[0.346509] (yolov8_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/aiv/YongJun_ws/ros2_ws/install/yolov8_msgs/include/yolov8_msgs/msg/detail/pose2_d__traits.hpp\n'}
+[0.346587] (yolov8_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/aiv/YongJun_ws/ros2_ws/install/yolov8_msgs/include/yolov8_msgs/msg/detail/pose2_d__type_support.hpp\n'}
+[0.346670] (yolov8_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/aiv/YongJun_ws/ros2_ws/install/yolov8_msgs/include/yolov8_msgs/msg/detail/vector2__builder.hpp\n'}
+[0.346747] (yolov8_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/aiv/YongJun_ws/ros2_ws/install/yolov8_msgs/include/yolov8_msgs/msg/detail/vector2__struct.hpp\n'}
+[0.346831] (yolov8_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/aiv/YongJun_ws/ros2_ws/install/yolov8_msgs/include/yolov8_msgs/msg/detail/vector2__traits.hpp\n'}
+[0.346909] (yolov8_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/aiv/YongJun_ws/ros2_ws/install/yolov8_msgs/include/yolov8_msgs/msg/detail/vector2__type_support.hpp\n'}
+[0.346987] (yolov8_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/aiv/YongJun_ws/ros2_ws/install/yolov8_msgs/include/yolov8_msgs/msg/detection.hpp\n'}
+[0.347065] (yolov8_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/aiv/YongJun_ws/ros2_ws/install/yolov8_msgs/include/yolov8_msgs/msg/detection_array.hpp\n'}
+[0.347132] (yolov8_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/aiv/YongJun_ws/ros2_ws/install/yolov8_msgs/include/yolov8_msgs/msg/key_point2_d.hpp\n'}
+[0.347208] (yolov8_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/aiv/YongJun_ws/ros2_ws/install/yolov8_msgs/include/yolov8_msgs/msg/key_point2_d_array.hpp\n'}
+[0.347284] (yolov8_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/aiv/YongJun_ws/ros2_ws/install/yolov8_msgs/include/yolov8_msgs/msg/key_point3_d.hpp\n'}
+[0.347364] (yolov8_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/aiv/YongJun_ws/ros2_ws/install/yolov8_msgs/include/yolov8_msgs/msg/key_point3_d_array.hpp\n'}
+[0.347431] (yolov8_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/aiv/YongJun_ws/ros2_ws/install/yolov8_msgs/include/yolov8_msgs/msg/mask.hpp\n'}
+[0.347643] (yolov8_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/aiv/YongJun_ws/ros2_ws/install/yolov8_msgs/include/yolov8_msgs/msg/point2_d.hpp\n'}
+[0.347703] (yolov8_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/aiv/YongJun_ws/ros2_ws/install/yolov8_msgs/include/yolov8_msgs/msg/pose2_d.hpp\n'}
+[0.347771] (yolov8_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/aiv/YongJun_ws/ros2_ws/install/yolov8_msgs/include/yolov8_msgs/msg/rosidl_generator_cpp__visibility_control.hpp\n'}
+[0.347843] (yolov8_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/aiv/YongJun_ws/ros2_ws/install/yolov8_msgs/include/yolov8_msgs/msg/vector2.hpp\n'}
+[0.347923] (yolov8_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/aiv/YongJun_ws/ros2_ws/install/yolov8_msgs/include/yolov8_msgs/msg/detail/bounding_box2_d__rosidl_typesupport_introspection_cpp.hpp\n'}
+[0.347961] (yolov8_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/aiv/YongJun_ws/ros2_ws/install/yolov8_msgs/include/yolov8_msgs/msg/detail/bounding_box3_d__rosidl_typesupport_introspection_cpp.hpp\n'}
+[0.348027] (yolov8_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/aiv/YongJun_ws/ros2_ws/install/yolov8_msgs/include/yolov8_msgs/msg/detail/detection__rosidl_typesupport_introspection_cpp.hpp\n'}
+[0.348065] (yolov8_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/aiv/YongJun_ws/ros2_ws/install/yolov8_msgs/include/yolov8_msgs/msg/detail/detection_array__rosidl_typesupport_introspection_cpp.hpp\n'}
+[0.348099] (yolov8_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/aiv/YongJun_ws/ros2_ws/install/yolov8_msgs/include/yolov8_msgs/msg/detail/key_point2_d__rosidl_typesupport_introspection_cpp.hpp\n'}
+[0.348153] (yolov8_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/aiv/YongJun_ws/ros2_ws/install/yolov8_msgs/include/yolov8_msgs/msg/detail/key_point2_d_array__rosidl_typesupport_introspection_cpp.hpp\n'}
+[0.348188] (yolov8_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/aiv/YongJun_ws/ros2_ws/install/yolov8_msgs/include/yolov8_msgs/msg/detail/key_point3_d__rosidl_typesupport_introspection_cpp.hpp\n'}
+[0.348221] (yolov8_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/aiv/YongJun_ws/ros2_ws/install/yolov8_msgs/include/yolov8_msgs/msg/detail/key_point3_d_array__rosidl_typesupport_introspection_cpp.hpp\n'}
+[0.348269] (yolov8_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/aiv/YongJun_ws/ros2_ws/install/yolov8_msgs/include/yolov8_msgs/msg/detail/mask__rosidl_typesupport_introspection_cpp.hpp\n'}
+[0.348300] (yolov8_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/aiv/YongJun_ws/ros2_ws/install/yolov8_msgs/include/yolov8_msgs/msg/detail/point2_d__rosidl_typesupport_introspection_cpp.hpp\n'}
+[0.348330] (yolov8_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/aiv/YongJun_ws/ros2_ws/install/yolov8_msgs/include/yolov8_msgs/msg/detail/pose2_d__rosidl_typesupport_introspection_cpp.hpp\n'}
+[0.348360] (yolov8_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/aiv/YongJun_ws/ros2_ws/install/yolov8_msgs/include/yolov8_msgs/msg/detail/vector2__rosidl_typesupport_introspection_cpp.hpp\n'}
+[0.348389] (yolov8_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/aiv/YongJun_ws/ros2_ws/install/yolov8_msgs/share/yolov8_msgs/environment/pythonpath.sh\n'}
+[0.348417] (yolov8_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/aiv/YongJun_ws/ros2_ws/install/yolov8_msgs/share/yolov8_msgs/environment/pythonpath.dsv\n'}
+[0.348446] (yolov8_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/aiv/YongJun_ws/ros2_ws/install/yolov8_msgs/lib/python3.8/site-packages/yolov8_msgs/__init__.py\n'}
+[0.348476] (yolov8_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/aiv/YongJun_ws/ros2_ws/install/yolov8_msgs/lib/python3.8/site-packages/yolov8_msgs/msg/__init__.py\n'}
+[0.348506] (yolov8_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/aiv/YongJun_ws/ros2_ws/install/yolov8_msgs/lib/python3.8/site-packages/yolov8_msgs/msg/_bounding_box2_d.py\n'}
+[0.348537] (yolov8_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/aiv/YongJun_ws/ros2_ws/install/yolov8_msgs/lib/python3.8/site-packages/yolov8_msgs/msg/_bounding_box3_d.py\n'}
+[0.348569] (yolov8_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/aiv/YongJun_ws/ros2_ws/install/yolov8_msgs/lib/python3.8/site-packages/yolov8_msgs/msg/_detection.py\n'}
+[0.348614] (yolov8_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/aiv/YongJun_ws/ros2_ws/install/yolov8_msgs/lib/python3.8/site-packages/yolov8_msgs/msg/_detection_array.py\n'}
+[0.348653] (yolov8_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/aiv/YongJun_ws/ros2_ws/install/yolov8_msgs/lib/python3.8/site-packages/yolov8_msgs/msg/_key_point2_d.py\n'}
+[0.348682] (yolov8_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/aiv/YongJun_ws/ros2_ws/install/yolov8_msgs/lib/python3.8/site-packages/yolov8_msgs/msg/_key_point2_d_array.py\n'}
+[0.348710] (yolov8_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/aiv/YongJun_ws/ros2_ws/install/yolov8_msgs/lib/python3.8/site-packages/yolov8_msgs/msg/_key_point3_d.py\n'}
+[0.348738] (yolov8_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/aiv/YongJun_ws/ros2_ws/install/yolov8_msgs/lib/python3.8/site-packages/yolov8_msgs/msg/_key_point3_d_array.py\n'}
+[0.348769] (yolov8_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/aiv/YongJun_ws/ros2_ws/install/yolov8_msgs/lib/python3.8/site-packages/yolov8_msgs/msg/_mask.py\n'}
+[0.348796] (yolov8_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/aiv/YongJun_ws/ros2_ws/install/yolov8_msgs/lib/python3.8/site-packages/yolov8_msgs/msg/_point2_d.py\n'}
+[0.348834] (yolov8_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/aiv/YongJun_ws/ros2_ws/install/yolov8_msgs/lib/python3.8/site-packages/yolov8_msgs/msg/_pose2_d.py\n'}
+[0.348864] (yolov8_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/aiv/YongJun_ws/ros2_ws/install/yolov8_msgs/lib/python3.8/site-packages/yolov8_msgs/msg/_vector2.py\n'}
+[0.348893] (yolov8_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/aiv/YongJun_ws/ros2_ws/install/yolov8_msgs/lib/python3.8/site-packages/yolov8_msgs/yolov8_msgs_s__rosidl_typesupport_fastrtps_c.cpython-38-x86_64-linux-gnu.so\n'}
+[0.348924] (yolov8_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/aiv/YongJun_ws/ros2_ws/install/yolov8_msgs/lib/python3.8/site-packages/yolov8_msgs/yolov8_msgs_s__rosidl_typesupport_introspection_c.cpython-38-x86_64-linux-gnu.so\n'}
+[0.348952] (yolov8_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/aiv/YongJun_ws/ros2_ws/install/yolov8_msgs/lib/python3.8/site-packages/yolov8_msgs/yolov8_msgs_s__rosidl_typesupport_c.cpython-38-x86_64-linux-gnu.so\n'}
+[0.349005] (yolov8_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/aiv/YongJun_ws/ros2_ws/install/yolov8_msgs/lib/libyolov8_msgs__python.so\n'}
+[0.349070] (yolov8_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/aiv/YongJun_ws/ros2_ws/install/yolov8_msgs/share/yolov8_msgs/msg/Point2D.idl\n'}
+[0.349158] (yolov8_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/aiv/YongJun_ws/ros2_ws/install/yolov8_msgs/share/yolov8_msgs/msg/Vector2.idl\n'}
+[0.349242] (yolov8_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/aiv/YongJun_ws/ros2_ws/install/yolov8_msgs/share/yolov8_msgs/msg/Pose2D.idl\n'}
+[0.349341] (yolov8_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/aiv/YongJun_ws/ros2_ws/install/yolov8_msgs/share/yolov8_msgs/msg/BoundingBox2D.idl\n'}
+[0.349403] (yolov8_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/aiv/YongJun_ws/ros2_ws/install/yolov8_msgs/share/yolov8_msgs/msg/BoundingBox3D.idl\n'}
+[0.349481] (yolov8_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/aiv/YongJun_ws/ros2_ws/install/yolov8_msgs/share/yolov8_msgs/msg/Mask.idl\n'}
+[0.349559] (yolov8_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/aiv/YongJun_ws/ros2_ws/install/yolov8_msgs/share/yolov8_msgs/msg/KeyPoint2D.idl\n'}
+[0.349637] (yolov8_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/aiv/YongJun_ws/ros2_ws/install/yolov8_msgs/share/yolov8_msgs/msg/KeyPoint2DArray.idl\n'}
+[0.349714] (yolov8_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/aiv/YongJun_ws/ros2_ws/install/yolov8_msgs/share/yolov8_msgs/msg/KeyPoint3D.idl\n'}
+[0.349790] (yolov8_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/aiv/YongJun_ws/ros2_ws/install/yolov8_msgs/share/yolov8_msgs/msg/KeyPoint3DArray.idl\n'}
+[0.349866] (yolov8_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/aiv/YongJun_ws/ros2_ws/install/yolov8_msgs/share/yolov8_msgs/msg/Detection.idl\n'}
+[0.349942] (yolov8_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/aiv/YongJun_ws/ros2_ws/install/yolov8_msgs/share/yolov8_msgs/msg/DetectionArray.idl\n'}
+[0.350020] (yolov8_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/aiv/YongJun_ws/ros2_ws/install/yolov8_msgs/share/yolov8_msgs/msg/Point2D.msg\n'}
+[0.350094] (yolov8_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/aiv/YongJun_ws/ros2_ws/install/yolov8_msgs/share/yolov8_msgs/msg/Vector2.msg\n'}
+[0.350169] (yolov8_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/aiv/YongJun_ws/ros2_ws/install/yolov8_msgs/share/yolov8_msgs/msg/Pose2D.msg\n'}
+[0.350243] (yolov8_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/aiv/YongJun_ws/ros2_ws/install/yolov8_msgs/share/yolov8_msgs/msg/BoundingBox2D.msg\n'}
+[0.350317] (yolov8_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/aiv/YongJun_ws/ros2_ws/install/yolov8_msgs/share/yolov8_msgs/msg/BoundingBox3D.msg\n'}
+[0.350391] (yolov8_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/aiv/YongJun_ws/ros2_ws/install/yolov8_msgs/share/yolov8_msgs/msg/Mask.msg\n'}
+[0.350465] (yolov8_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/aiv/YongJun_ws/ros2_ws/install/yolov8_msgs/share/yolov8_msgs/msg/KeyPoint2D.msg\n'}
+[0.350538] (yolov8_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/aiv/YongJun_ws/ros2_ws/install/yolov8_msgs/share/yolov8_msgs/msg/KeyPoint2DArray.msg\n'}
+[0.350612] (yolov8_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/aiv/YongJun_ws/ros2_ws/install/yolov8_msgs/share/yolov8_msgs/msg/KeyPoint3D.msg\n'}
+[0.350685] (yolov8_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/aiv/YongJun_ws/ros2_ws/install/yolov8_msgs/share/yolov8_msgs/msg/KeyPoint3DArray.msg\n'}
+[0.350758] (yolov8_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/aiv/YongJun_ws/ros2_ws/install/yolov8_msgs/share/yolov8_msgs/msg/Detection.msg\n'}
+[0.350830] (yolov8_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/aiv/YongJun_ws/ros2_ws/install/yolov8_msgs/share/yolov8_msgs/msg/DetectionArray.msg\n'}
+[0.350920] (yolov8_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/aiv/YongJun_ws/ros2_ws/install/yolov8_msgs/share/ament_index/resource_index/package_run_dependencies/yolov8_msgs\n'}
+[0.351003] (yolov8_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/aiv/YongJun_ws/ros2_ws/install/yolov8_msgs/share/ament_index/resource_index/parent_prefix_path/yolov8_msgs\n'}
+[0.351085] (yolov8_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/aiv/YongJun_ws/ros2_ws/install/yolov8_msgs/share/yolov8_msgs/environment/ament_prefix_path.sh\n'}
+[0.351161] (yolov8_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/aiv/YongJun_ws/ros2_ws/install/yolov8_msgs/share/yolov8_msgs/environment/ament_prefix_path.dsv\n'}
+[0.351257] (yolov8_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/aiv/YongJun_ws/ros2_ws/install/yolov8_msgs/share/yolov8_msgs/environment/path.sh\n'}
+[0.351312] (yolov8_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/aiv/YongJun_ws/ros2_ws/install/yolov8_msgs/share/yolov8_msgs/environment/path.dsv\n'}
+[0.351392] (yolov8_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/aiv/YongJun_ws/ros2_ws/install/yolov8_msgs/share/yolov8_msgs/local_setup.bash\n'}
+[0.351476] (yolov8_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/aiv/YongJun_ws/ros2_ws/install/yolov8_msgs/share/yolov8_msgs/local_setup.sh\n'}
+[0.351553] (yolov8_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/aiv/YongJun_ws/ros2_ws/install/yolov8_msgs/share/yolov8_msgs/local_setup.zsh\n'}
+[0.351626] (yolov8_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/aiv/YongJun_ws/ros2_ws/install/yolov8_msgs/share/yolov8_msgs/local_setup.dsv\n'}
+[0.351681] (yolov8_msgs) StdoutLine: {'line': b'-- Symlinking: /home/aiv/YongJun_ws/ros2_ws/install/yolov8_msgs/share/yolov8_msgs/package.dsv\n'}
+[0.353501] (yolov8_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/aiv/YongJun_ws/ros2_ws/install/yolov8_msgs/share/ament_index/resource_index/packages/yolov8_msgs\n'}
+[0.353588] (yolov8_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/aiv/YongJun_ws/ros2_ws/install/yolov8_msgs/share/yolov8_msgs/cmake/rosidl_cmake-extras.cmake\n'}
+[0.353648] (yolov8_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/aiv/YongJun_ws/ros2_ws/install/yolov8_msgs/share/yolov8_msgs/cmake/ament_cmake_export_dependencies-extras.cmake\n'}
+[0.353730] (yolov8_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/aiv/YongJun_ws/ros2_ws/install/yolov8_msgs/share/yolov8_msgs/cmake/ament_cmake_export_libraries-extras.cmake\n'}
+[0.353808] (yolov8_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/aiv/YongJun_ws/ros2_ws/install/yolov8_msgs/share/yolov8_msgs/cmake/ament_cmake_export_targets-extras.cmake\n'}
+[0.353887] (yolov8_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/aiv/YongJun_ws/ros2_ws/install/yolov8_msgs/share/yolov8_msgs/cmake/ament_cmake_export_include_directories-extras.cmake\n'}
+[0.353967] (yolov8_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/aiv/YongJun_ws/ros2_ws/install/yolov8_msgs/share/yolov8_msgs/cmake/rosidl_cmake_export_typesupport_libraries-extras.cmake\n'}
+[0.354055] (yolov8_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/aiv/YongJun_ws/ros2_ws/install/yolov8_msgs/share/yolov8_msgs/cmake/rosidl_cmake_export_typesupport_targets-extras.cmake\n'}
+[0.354123] (yolov8_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/aiv/YongJun_ws/ros2_ws/install/yolov8_msgs/share/yolov8_msgs/cmake/yolov8_msgsConfig.cmake\n'}
+[0.354177] (yolov8_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/aiv/YongJun_ws/ros2_ws/install/yolov8_msgs/share/yolov8_msgs/cmake/yolov8_msgsConfig-version.cmake\n'}
+[0.354254] (yolov8_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/aiv/YongJun_ws/ros2_ws/install/yolov8_msgs/share/yolov8_msgs/package.xml\n'}
+[0.354391] (yolov8_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/aiv/YongJun_ws/ros2_ws/install/yolov8_msgs/lib/libyolov8_msgs__rosidl_generator_c.so\n'}
+[0.354947] (yolov8_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/aiv/YongJun_ws/ros2_ws/install/yolov8_msgs/lib/libyolov8_msgs__rosidl_typesupport_introspection_c.so\n'}
+[0.355029] (yolov8_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/aiv/YongJun_ws/ros2_ws/install/yolov8_msgs/lib/libyolov8_msgs__rosidl_typesupport_c.so\n'}
+[0.355449] (yolov8_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/aiv/YongJun_ws/ros2_ws/install/yolov8_msgs/lib/libyolov8_msgs__rosidl_typesupport_introspection_cpp.so\n'}
+[0.355847] (yolov8_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/aiv/YongJun_ws/ros2_ws/install/yolov8_msgs/lib/libyolov8_msgs__rosidl_typesupport_cpp.so\n'}
+[0.378135] (yolov8_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/aiv/YongJun_ws/ros2_ws/install/yolov8_msgs/share/yolov8_msgs/cmake/yolov8_msgs__rosidl_generator_cExport.cmake\n'}
+[0.378233] (yolov8_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/aiv/YongJun_ws/ros2_ws/install/yolov8_msgs/share/yolov8_msgs/cmake/yolov8_msgs__rosidl_generator_cExport-noconfig.cmake\n'}
+[0.378271] (yolov8_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/aiv/YongJun_ws/ros2_ws/install/yolov8_msgs/share/yolov8_msgs/cmake/yolov8_msgs__rosidl_typesupport_introspection_cExport.cmake\n'}
+[0.378303] (yolov8_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/aiv/YongJun_ws/ros2_ws/install/yolov8_msgs/share/yolov8_msgs/cmake/yolov8_msgs__rosidl_typesupport_introspection_cExport-noconfig.cmake\n'}
+[0.378363] (yolov8_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/aiv/YongJun_ws/ros2_ws/install/yolov8_msgs/share/yolov8_msgs/cmake/yolov8_msgs__rosidl_typesupport_cExport.cmake\n'}
+[0.378412] (yolov8_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/aiv/YongJun_ws/ros2_ws/install/yolov8_msgs/share/yolov8_msgs/cmake/yolov8_msgs__rosidl_typesupport_cExport-noconfig.cmake\n'}
+[0.378469] (yolov8_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/aiv/YongJun_ws/ros2_ws/install/yolov8_msgs/share/yolov8_msgs/cmake/yolov8_msgs__rosidl_generator_cppExport.cmake\n'}
+[0.378542] (yolov8_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/aiv/YongJun_ws/ros2_ws/install/yolov8_msgs/share/yolov8_msgs/cmake/yolov8_msgs__rosidl_typesupport_introspection_cppExport.cmake\n'}
+[0.378599] (yolov8_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/aiv/YongJun_ws/ros2_ws/install/yolov8_msgs/share/yolov8_msgs/cmake/yolov8_msgs__rosidl_typesupport_introspection_cppExport-noconfig.cmake\n'}
+[0.378730] (yolov8_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/aiv/YongJun_ws/ros2_ws/install/yolov8_msgs/share/yolov8_msgs/cmake/yolov8_msgs__rosidl_typesupport_cppExport.cmake\n'}
+[0.378813] (yolov8_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/aiv/YongJun_ws/ros2_ws/install/yolov8_msgs/share/yolov8_msgs/cmake/yolov8_msgs__rosidl_typesupport_cppExport-noconfig.cmake\n'}
+[0.382150] (yolov8_msgs) CommandEnded: {'returncode': 0}
+[0.400664] (-) TimerEvent: {}
+[0.500867] (-) TimerEvent: {}
+[0.536278] (yolov8_msgs) JobEnded: {'identifier': 'yolov8_msgs', 'rc': 0}
+[0.536648] (-) EventReactorShutdown: {}

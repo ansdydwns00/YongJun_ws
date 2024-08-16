@@ -3,22 +3,21 @@ function helperDrawCuboid(ax, cuboids, color, dists, Ids, Cls)
     % 각 cuboid에 대해 반복
     for i = 1:size(cuboids, 1)
 
-        cuboid = cuboids(i, :);
+        cuboid = cuboids{i};
         dist = dists(i);
         id = Ids{i};
         class = Cls{i};
 
-        % Cuboid [x, y, z, length, width, height]
-        x = cuboid(1);
-        y = cuboid(2);
-        z = cuboid(3);
-        l = cuboid(4);
-        w = cuboid(5);
-        h = cuboid(6);
-        xr = cuboid(7);
-        yr = cuboid(8);
-        zr = cuboid(9);
-
+        % Cuboid [x_ctr, y_ctr, z_ctr, x_len, y_len, z_len, x_rot, y_rot, z_rot]
+        x_ctr = cuboid.Center(1);
+        y_ctr = cuboid.Center(2);
+        z_ctr = cuboid.Center(3);
+        x_len = cuboid.Dimensions(1);
+        y_len = cuboid.Dimensions(2);
+        z_len = cuboid.Dimensions(3);
+        x_rot = cuboid.Orientation(1);
+        y_rot = cuboid.Orientation(2);
+        z_rot = cuboid.Orientation(3);
 
    % 
    %         v(4)        v(3)
@@ -32,23 +31,23 @@ function helperDrawCuboid(ax, cuboids, color, dists, Ids, Cls)
    % 
 
         % Compute vertices
-        vertices = [x+l/2, y-w/2, z+h/2;                % front left up 
-                    x+l/2, y+w/2, z+h/2;                % front right up 
-                    x-l/2, y+w/2, z+h/2;                % back right up  
-                    x-l/2, y-w/2, z+h/2;                % back left up   
-                    x+l/2, y-w/2, z-h/2;                % front left down
-                    x+l/2, y+w/2, z-h/2;                % front right down
-                    x-l/2, y+w/2, z-h/2;                % back right down
-                    x-l/2, y-w/2, z-h/2];               % back left down
+        vertices = [x_ctr+x_len/2, y_ctr-y_len/2, z_ctr+z_len/2;                % front left up 
+                    x_ctr+x_len/2, y_ctr+y_len/2, z_ctr+z_len/2;                % front right up 
+                    x_ctr-x_len/2, y_ctr+y_len/2, z_ctr+z_len/2;                % back right up  
+                    x_ctr-x_len/2, y_ctr-y_len/2, z_ctr+z_len/2;                % back left up   
+                    x_ctr+x_len/2, y_ctr-y_len/2, z_ctr-z_len/2;                % front left down
+                    x_ctr+x_len/2, y_ctr+y_len/2, z_ctr-z_len/2;                % front right down
+                    x_ctr-x_len/2, y_ctr+y_len/2, z_ctr-z_len/2;                % back right down
+                    x_ctr-x_len/2, y_ctr-y_len/2, z_ctr-z_len/2];               % back left down
         
 
         % Translate vertices to the origin
-        vertices = vertices - [x, y, z];
+        vertices = vertices - [x_ctr, y_ctr, z_ctr];
 
         % Create rotation matrices
-        Rx = [1 0 0; 0 cosd(xr) -sind(xr); 0 sind(xr) cosd(xr)];
-        Ry = [cosd(yr) 0 sind(yr); 0 1 0; -sind(yr) 0 cosd(yr)];
-        Rz = [cosd(zr) -sind(zr) 0; sind(zr) cosd(zr) 0; 0 0 1];
+        Rx = [1 0 0; 0 cosd(x_rot) -sind(x_rot); 0 sind(x_rot) cosd(x_rot)];
+        Ry = [cosd(y_rot) 0 sind(y_rot); 0 1 0; -sind(y_rot) 0 cosd(y_rot)];
+        Rz = [cosd(z_rot) -sind(z_rot) 0; sind(z_rot) cosd(z_rot) 0; 0 0 1];
 
         % Combine rotation matrices
         R = Rz * Ry * Rx;
@@ -59,7 +58,7 @@ function helperDrawCuboid(ax, cuboids, color, dists, Ids, Cls)
         end
 
         % Translate vertices back to the original location
-        vertices = vertices + [x, y, z];
+        vertices = vertices + [x_ctr, y_ctr, z_ctr];
         
 
         % Index of the line connecting the vertices
@@ -87,6 +86,5 @@ function helperDrawCuboid(ax, cuboids, color, dists, Ids, Cls)
                  'FontSize', 8,...
                  'FontWeight', 'bold');
     end
-
 
 end

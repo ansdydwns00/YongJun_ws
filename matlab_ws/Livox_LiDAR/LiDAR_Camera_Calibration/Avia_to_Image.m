@@ -9,7 +9,7 @@ Avia_UDP = udpport("datagram","LocalPort",56001);
 Node = ros2node("/IVL");
 
 % lidarSub = ros2subscriber(Matlab,'/livox/lidar','sensor_msgs/PointCloud2');
-imageSub = ros2subscriber(Node,'/camera/camera/color/image_raw','sensor_msgs/Image');
+sub.Cam = ros2subscriber(Node,'/camera/camera/color/image_raw','sensor_msgs/Image');
 
 %% LiDAR/Camera(640x480) Calibration .mat  
 
@@ -42,7 +42,7 @@ lidarToCam = tform;
 camToLidar = invert(tform);
 
 % 카메라 칼리브레이션 파일 
-camParams = cameraIntrinsics([1.403085770877809e+03 1.402638897100132e+03],[9.542984572253220e+02 5.525375075192622e+02],[1080 1920],"RadialDistortion",[0.114560927009696 -0.206313798776597]);
+camParams = cameraIntrinsics([1.403085770877809e+03 1.402638897100132e+03],[9.652984572253220e+02 5.525375075192622e+02],[1080 1920],"RadialDistortion",[0.114560927009696 -0.206313798776597]);
 
 %%
 
@@ -50,7 +50,7 @@ camParams = cameraIntrinsics([1.403085770877809e+03 1.402638897100132e+03],[9.54
 frameCount = 1;
 
 % Set values for n frames
-frame_num = 6;
+frame_num = 1;
 
 % Flag for first Run
 reset_flag = single(0);
@@ -107,7 +107,7 @@ while true
             pointColors = colorRange(colorIndices, :);
            
             % subscribe image msg
-            imgMsg = receive(imageSub);
+            imgMsg = receive(sub.Cam);
             img = rosReadImage(imgMsg);
     
             [imPts,idx] = projectLidarPointsOnImage(ptCloud,camParams,lidarToCam);

@@ -1,0 +1,4 @@
+Invoking command in '/home/aiv/YongJun_ws/ros2_ws/build/yolov8_msgs': CMAKE_PREFIX_PATH=/opt/ros/foxy /home/aiv/.local/bin/cmake --build /home/aiv/YongJun_ws/ros2_ws/build/yolov8_msgs -- -j32 -l32
+Invoked command in '/home/aiv/YongJun_ws/ros2_ws/build/yolov8_msgs' returned '0': CMAKE_PREFIX_PATH=/opt/ros/foxy /home/aiv/.local/bin/cmake --build /home/aiv/YongJun_ws/ros2_ws/build/yolov8_msgs -- -j32 -l32
+Invoking command in '/home/aiv/YongJun_ws/ros2_ws/build/yolov8_msgs': CMAKE_PREFIX_PATH=/opt/ros/foxy /home/aiv/.local/bin/cmake --install /home/aiv/YongJun_ws/ros2_ws/build/yolov8_msgs
+Invoked command in '/home/aiv/YongJun_ws/ros2_ws/build/yolov8_msgs' returned '0': CMAKE_PREFIX_PATH=/opt/ros/foxy /home/aiv/.local/bin/cmake --install /home/aiv/YongJun_ws/ros2_ws/build/yolov8_msgs

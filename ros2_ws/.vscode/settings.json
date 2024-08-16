@@ -1,3 +1,17 @@
 {
-    "ros.distro": "foxy"
+    "ros.distro": "foxy",
+    "python.autoComplete.extraPaths": [
+        "/home/aiv/YongJun_ws/ros2_ws/build/yolov8_ros",
+        "/home/aiv/YongJun_ws/ros2_ws/install/yolov8_ros/lib/python3.8/site-packages",
+        "/home/aiv/YongJun_ws/ros2_ws/install/yolov8_msgs/lib/python3.8/site-packages",
+        "/home/aiv/YongJun_ws/ros2_ws/install/realsense2_camera_msgs/lib/python3.8/site-packages",
+        "/opt/ros/foxy/lib/python3.8/site-packages"
+    ],
+    "python.analysis.extraPaths": [
+        "/home/aiv/YongJun_ws/ros2_ws/build/yolov8_ros",
+        "/home/aiv/YongJun_ws/ros2_ws/install/yolov8_ros/lib/python3.8/site-packages",
+        "/home/aiv/YongJun_ws/ros2_ws/install/yolov8_msgs/lib/python3.8/site-packages",
+        "/home/aiv/YongJun_ws/ros2_ws/install/realsense2_camera_msgs/lib/python3.8/site-packages",
+        "/opt/ros/foxy/lib/python3.8/site-packages"
+    ]
 }

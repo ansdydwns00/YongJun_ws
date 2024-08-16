@@ -1,6 +1,6 @@
 function helperCallbackYolo(msg)
    
-    
+    % tic
     global g_id
     global g_cls
     global g_bboxes
@@ -27,6 +27,9 @@ function helperCallbackYolo(msg)
         g_cls{idx} = msg.detections(idx).class_name;
         
     end
-    
+
+    % if ~isempty(g_bboxes)
+    %     toc
+    % end
     
 end

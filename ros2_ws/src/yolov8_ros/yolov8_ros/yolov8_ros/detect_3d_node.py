@@ -1,19 +1,3 @@
-# Copyright (C) 2023  Miguel Ángel González Santamarta
-
-# This program is free software: you can redistribute it and/or modify
-# it under the terms of the GNU General Public License as published by
-# the Free Software Foundation, either version 3 of the License, or
-# (at your option) any later version.
-
-# This program is distributed in the hope that it will be useful,
-# but WITHOUT ANY WARRANTY; without even the implied warranty of
-# MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
-# GNU General Public License for more details.
-
-# You should have received a copy of the GNU General Public License
-# along with this program.  If not, see <https://www.gnu.org/licenses/>.
-
-
 import cv2
 import numpy as np
 from typing import List, Tuple
@@ -23,9 +7,7 @@ from rclpy.qos import QoSProfile
 from rclpy.qos import QoSHistoryPolicy
 from rclpy.qos import QoSDurabilityPolicy
 from rclpy.qos import QoSReliabilityPolicy
-from rclpy.lifecycle import LifecycleNode
-from rclpy.lifecycle import TransitionCallbackReturn
-from rclpy.lifecycle import LifecycleState
+from rclpy.node import Node
 
 import message_filters
 from cv_bridge import CvBridge
@@ -42,7 +24,7 @@ from yolov8_msgs.msg import KeyPoint3DArray
 from yolov8_msgs.msg import BoundingBox3D
 
 
-class Detect3DNode(LifecycleNode):
+class Detect3DNode(Node):
 
     def __init__(self) -> None:
         super().__init__("bbox3d_node")
@@ -59,9 +41,6 @@ class Detect3DNode(LifecycleNode):
         # aux
         self.tf_buffer = Buffer()
         self.cv_bridge = CvBridge()
-
-    def on_configure(self, state: LifecycleState) -> TransitionCallbackReturn:
-        self.get_logger().info(f"Configuring {self.get_name()}")
 
         self.target_frame = self.get_parameter(
             "target_frame").get_parameter_value().string_value
@@ -93,11 +72,6 @@ class Detect3DNode(LifecycleNode):
         # pubs
         self._pub = self.create_publisher(DetectionArray, "detections_3d", 10)
 
-        return TransitionCallbackReturn.SUCCESS
-
-    def on_activate(self, state: LifecycleState) -> TransitionCallbackReturn:
-        self.get_logger().info(f"Activating {self.get_name()}")
-
         # subs
         self.depth_sub = message_filters.Subscriber(
             self, Image, "depth_image",
@@ -111,28 +85,6 @@ class Detect3DNode(LifecycleNode):
         self._synchronizer = message_filters.ApproximateTimeSynchronizer(
             (self.depth_sub, self.depth_info_sub, self.detections_sub), 10, 0.5)
         self._synchronizer.registerCallback(self.on_detections)
-
-        return TransitionCallbackReturn.SUCCESS
-
-    def on_deactivate(self, state: LifecycleState) -> TransitionCallbackReturn:
-        self.get_logger().info(f"Deactivating {self.get_name()}")
-
-        self.destroy_subscription(self.depth_sub.sub)
-        self.destroy_subscription(self.depth_info_sub.sub)
-        self.destroy_subscription(self.detections_sub.sub)
-
-        del self._synchronizer
-
-        return TransitionCallbackReturn.SUCCESS
-
-    def on_cleanup(self, state: LifecycleState) -> TransitionCallbackReturn:
-        self.get_logger().info(f"Cleaning up {self.get_name()}")
-
-        del self.tf_listener
-
-        self.destroy_publisher(self._pub)
-
-        return TransitionCallbackReturn.SUCCESS
 
     def on_detections(
         self,
@@ -280,120 +232,94 @@ class Detect3DNode(LifecycleNode):
         px, py, fx, fy = k[2], k[5], k[0], k[4]
         x = z * (v - px) / fx
         y = z * (u - py) / fy
-        points_3d = np.dstack([x, y, z]).reshape(-1, 3) / \
-            self.depth_image_units_divisor  # convert to meters
+        keypoints_3d = np.vstack([x, y, z]).transpose()
 
-        # generate message
-        msg_array = KeyPoint3DArray()
-        for p, d in zip(points_3d, detection.keypoints.data):
-            if not np.isnan(p).any():
-                msg = KeyPoint3D()
-                msg.point.x = p[0]
-                msg.point.y = p[1]
-                msg.point.z = p[2]
-                msg.id = d.id
-                msg.score = d.score
-                msg_array.data.append(msg)
+        # build the 3d keypoints message
+        msg = KeyPoint3DArray()
+        msg.keypoints = []
+        for point in keypoints_3d:
+            kp = KeyPoint3D()
+            kp.point.x = float(point[0])
+            kp.point.y = float(point[1])
+            kp.point.z = float(point[2])
+            msg.keypoints.append(kp)
 
-        return msg_array
+        return msg
 
-    def get_transform(self, frame_id: str) -> Tuple[np.ndarray]:
-        # transform position from image frame to target_frame
-        rotation = None
-        translation = None
+    def get_transform(self, from_frame: str) -> Tuple[np.ndarray, np.ndarray]:
 
         try:
+            now = rclpy.time.Time()
             transform: TransformStamped = self.tf_buffer.lookup_transform(
-                self.target_frame,
-                frame_id,
-                rclpy.time.Time())
-
-            translation = np.array([transform.transform.translation.x,
-                                    transform.transform.translation.y,
-                                    transform.transform.translation.z])
-
-            rotation = np.array([transform.transform.rotation.w,
-                                 transform.transform.rotation.x,
-                                 transform.transform.rotation.y,
-                                 transform.transform.rotation.z])
-
-            return translation, rotation
+                self.target_frame, from_frame, now)
 
         except TransformException as ex:
-            self.get_logger().error(f"Could not transform: {ex}")
+            self.get_logger().warn(
+                f'Unable to find transform from {from_frame} to {self.target_frame}')
             return None
+
+        translation = transform.transform.translation
+        trans = np.array([translation.x, translation.y, translation.z])
+        rotation = transform.transform.rotation
+        quat = np.array([rotation.x, rotation.y, rotation.z, rotation.w])
+
+        return (trans, quat)
 
     @staticmethod
     def transform_3d_box(
-        bbox: BoundingBox3D,
-        translation: np.ndarray,
-        rotation: np.ndarray
+        bb3d: BoundingBox3D, trans: np.ndarray, quat: np.ndarray
     ) -> BoundingBox3D:
+        # convert box coordinates to quaternion
+        center_3d = np.array(
+            [bb3d.center.position.x, bb3d.center.position.y, bb3d.center.position.z, 1])
 
-        # position
-        position = Detect3DNode.qv_mult(
-            rotation,
-            np.array([bbox.center.position.x,
-                      bbox.center.position.y,
-                      bbox.center.position.z])
-        ) + translation
+        center_3d[:3] = Detect3DNode.quat_transform(
+            quat, center_3d[:3]) + trans[:3]
 
-        bbox.center.position.x = position[0]
-        bbox.center.position.y = position[1]
-        bbox.center.position.z = position[2]
+        bb3d.center.position.x = center_3d[0]
+        bb3d.center.position.y = center_3d[1]
+        bb3d.center.position.z = center_3d[2]
 
-        # size
-        size = Detect3DNode.qv_mult(
-            rotation,
-            np.array([bbox.size.x,
-                      bbox.size.y,
-                      bbox.size.z])
-        )
-
-        bbox.size.x = abs(size[0])
-        bbox.size.y = abs(size[1])
-        bbox.size.z = abs(size[2])
-
-        return bbox
+        return bb3d
 
     @staticmethod
     def transform_3d_keypoints(
-        keypoints: KeyPoint3DArray,
-        translation: np.ndarray,
-        rotation: np.ndarray,
+        keypoints3d: KeyPoint3DArray, trans: np.ndarray, quat: np.ndarray
     ) -> KeyPoint3DArray:
+        # convert keypoints to quaternion
+        for keypoint in keypoints3d.keypoints:
+            k = np.array([keypoint.point.x, keypoint.point.y, keypoint.point.z])
+            keypoint.point = Detect3DNode.quat_transform(quat, k) + trans[:3]
 
-        for point in keypoints.data:
-            position = Detect3DNode.qv_mult(
-                rotation,
-                np.array([
-                    point.point.x,
-                    point.point.y,
-                    point.point.z
-                ])
-            ) + translation
-
-            point.point.x = position[0]
-            point.point.y = position[1]
-            point.point.z = position[2]
-
-        return keypoints
+        return keypoints3d
 
     @staticmethod
-    def qv_mult(q: np.ndarray, v: np.ndarray) -> np.ndarray:
-        q = np.array(q, dtype=np.float64)
-        v = np.array(v, dtype=np.float64)
-        qvec = q[1:]
-        uv = np.cross(qvec, v)
-        uuv = np.cross(qvec, uv)
-        return v + 2 * (uv * q[0] + uuv)
+    def quat_transform(quat: np.ndarray, vec: np.ndarray) -> np.ndarray:
+        q = quat.copy()
+        u = vec.copy()
+        q_inv = np.array([q[0], -q[1], -q[2], -q[3]])
+        return Detect3DNode.quat_mult(Detect3DNode.quat_mult(q, u), q_inv)[:3]
+
+    @staticmethod
+    def quat_mult(q: np.ndarray, r: np.ndarray) -> np.ndarray:
+        return np.array(
+            [
+                r[0] * q[0] - r[1] * q[1] - r[2] * q[2] - r[3] * q[3],
+                r[0] * q[1] + r[1] * q[0] + r[2] * q[3] - r[3] * q[2],
+                r[0] * q[2] - r[1] * q[3] + r[2] * q[0] + r[3] * q[1],
+                r[0] * q[3] + r[1] * q[2] - r[2] * q[1] + r[3] * q[0],
+            ],
+            dtype=np.float64,
+        )
 
 
 def main():
     rclpy.init()
     node = Detect3DNode()
-    node.trigger_configure()
-    node.trigger_activate()
     rclpy.spin(node)
     node.destroy_node()
     rclpy.shutdown()
+
+
+if __name__ == "__main__":
+    main()

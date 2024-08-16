@@ -1,0 +1,26 @@
+{
+  "configurations": [
+    {
+      "browse": {
+        "databaseFilename": "${default}",
+        "limitSymbolsToIncludedHeaders": false
+      },
+      "includePath": [
+        "/home/aiv/YongJun_ws/ros2_ws/install/yolov8_msgs/include/**",
+        "/home/aiv/YongJun_ws/ros2_ws/install/usb_cam/include/**",
+        "/home/aiv/YongJun_ws/ros2_ws/install/realsense2_camera/include/**",
+        "/home/aiv/YongJun_ws/ros2_ws/install/realsense2_camera_msgs/include/**",
+        "/opt/ros/foxy/include/**",
+        "/home/aiv/YongJun_ws/ros2_ws/src/realsense-ros/realsense2_camera/include/**",
+        "/home/aiv/YongJun_ws/ros2_ws/src/sensor/usb_cam/include/**",
+        "/usr/include/**"
+      ],
+      "name": "ROS",
+      "intelliSenseMode": "gcc-x64",
+      "compilerPath": "/usr/bin/gcc",
+      "cStandard": "gnu11",
+      "cppStandard": "c++14"
+    }
+  ],
+  "version": 4
+}

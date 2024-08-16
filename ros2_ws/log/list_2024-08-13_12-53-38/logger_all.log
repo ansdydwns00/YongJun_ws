@@ -1,0 +1,189 @@
+[0.220s] colcon DEBUG Command line arguments: ['/usr/bin/colcon', 'list', '-p', '--base-paths', '/home/aiv/YongJun_ws/ros2_ws']
+[0.220s] colcon DEBUG Parsed command line arguments: Namespace(allow_overriding=[], base_paths=['/home/aiv/YongJun_ws/ros2_ws'], build_base='build', ignore_user_meta=False, log_base=None, log_level=None, main=<bound method ListVerb.main of <colcon_package_information.verb.list.ListVerb object at 0x7f300264cb20>>, metas=['./colcon.meta'], mixin=None, mixin_files=None, mixin_verb=('list',), names_only=False, packages_above=None, packages_above_and_dependencies=None, packages_above_depth=None, packages_end=None, packages_ignore=None, packages_ignore_regex=None, packages_select=None, packages_select_build_failed=False, packages_select_by_dep=None, packages_select_regex=None, packages_select_test_failures=False, packages_skip=None, packages_skip_build_finished=False, packages_skip_by_dep=None, packages_skip_regex=None, packages_skip_test_passed=False, packages_skip_up_to=None, packages_start=None, packages_up_to=None, packages_up_to_regex=None, paths=None, paths_only=True, topological_graph=False, topological_graph_density=False, topological_graph_dot=False, topological_graph_dot_cluster=False, topological_graph_dot_include_skipped=False, topological_graph_legend=False, topological_order=False, verb_extension=<colcon_package_information.verb.list.ListVerb object at 0x7f300264cb20>, verb_name='list', verb_parser=<colcon_mixin.mixin.mixin_argument.MixinArgumentDecorator object at 0x7f300265cb20>)
+[0.259s] colcon.colcon_core.package_discovery Level 1 discover_packages(colcon_meta) check parameters
+[0.259s] colcon.colcon_core.package_discovery Level 1 discover_packages(recursive) check parameters
+[0.259s] colcon.colcon_core.package_discovery Level 1 discover_packages(ignore) check parameters
+[0.259s] colcon.colcon_core.package_discovery Level 1 discover_packages(path) check parameters
+[0.259s] colcon.colcon_core.package_discovery Level 1 discover_packages(recursive) discover
+[0.259s] colcon.colcon_core.package_discovery INFO Crawling recursively for packages in '/home/aiv/YongJun_ws/ros2_ws'
+[0.259s] colcon.colcon_core.package_identification Level 1 _identify(/home/aiv/YongJun_ws/ros2_ws) by extensions ['ignore', 'ignore_ament_install']
+[0.259s] colcon.colcon_core.package_identification Level 1 _identify(/home/aiv/YongJun_ws/ros2_ws) by extension 'ignore'
+[0.259s] colcon.colcon_core.package_identification Level 1 _identify(/home/aiv/YongJun_ws/ros2_ws) by extension 'ignore_ament_install'
+[0.259s] colcon.colcon_core.package_identification Level 1 _identify(/home/aiv/YongJun_ws/ros2_ws) by extensions ['colcon_pkg']
+[0.259s] colcon.colcon_core.package_identification Level 1 _identify(/home/aiv/YongJun_ws/ros2_ws) by extension 'colcon_pkg'
+[0.259s] colcon.colcon_core.package_identification Level 1 _identify(/home/aiv/YongJun_ws/ros2_ws) by extensions ['colcon_meta']
+[0.259s] colcon.colcon_core.package_identification Level 1 _identify(/home/aiv/YongJun_ws/ros2_ws) by extension 'colcon_meta'
+[0.260s] colcon.colcon_core.package_identification Level 1 _identify(/home/aiv/YongJun_ws/ros2_ws) by extensions ['ros']
+[0.260s] colcon.colcon_core.package_identification Level 1 _identify(/home/aiv/YongJun_ws/ros2_ws) by extension 'ros'
+[0.271s] colcon.colcon_core.package_identification Level 1 _identify(/home/aiv/YongJun_ws/ros2_ws) by extensions ['cmake', 'python']
+[0.271s] colcon.colcon_core.package_identification Level 1 _identify(/home/aiv/YongJun_ws/ros2_ws) by extension 'cmake'
+[0.271s] colcon.colcon_core.package_identification Level 1 _identify(/home/aiv/YongJun_ws/ros2_ws) by extension 'python'
+[0.271s] colcon.colcon_core.package_identification Level 1 _identify(/home/aiv/YongJun_ws/ros2_ws) by extensions ['python_setup_py']
+[0.271s] colcon.colcon_core.package_identification Level 1 _identify(/home/aiv/YongJun_ws/ros2_ws) by extension 'python_setup_py'
+[0.271s] colcon.colcon_core.package_identification Level 1 _identify(/home/aiv/YongJun_ws/ros2_ws/build) by extensions ['ignore', 'ignore_ament_install']
+[0.272s] colcon.colcon_core.package_identification Level 1 _identify(/home/aiv/YongJun_ws/ros2_ws/build) by extension 'ignore'
+[0.272s] colcon.colcon_core.package_identification Level 1 _identify(/home/aiv/YongJun_ws/ros2_ws/build) ignored
+[0.272s] colcon.colcon_core.package_identification Level 1 _identify(/home/aiv/YongJun_ws/ros2_ws/install) by extensions ['ignore', 'ignore_ament_install']
+[0.272s] colcon.colcon_core.package_identification Level 1 _identify(/home/aiv/YongJun_ws/ros2_ws/install) by extension 'ignore'
+[0.272s] colcon.colcon_core.package_identification Level 1 _identify(/home/aiv/YongJun_ws/ros2_ws/install) ignored
+[0.272s] colcon.colcon_core.package_identification Level 1 _identify(/home/aiv/YongJun_ws/ros2_ws/log) by extensions ['ignore', 'ignore_ament_install']
+[0.272s] colcon.colcon_core.package_identification Level 1 _identify(/home/aiv/YongJun_ws/ros2_ws/log) by extension 'ignore'
+[0.272s] colcon.colcon_core.package_identification Level 1 _identify(/home/aiv/YongJun_ws/ros2_ws/log) ignored
+[0.272s] colcon.colcon_core.package_identification Level 1 _identify(/home/aiv/YongJun_ws/ros2_ws/src) by extensions ['ignore', 'ignore_ament_install']
+[0.272s] colcon.colcon_core.package_identification Level 1 _identify(/home/aiv/YongJun_ws/ros2_ws/src) by extension 'ignore'
+[0.272s] colcon.colcon_core.package_identification Level 1 _identify(/home/aiv/YongJun_ws/ros2_ws/src) by extension 'ignore_ament_install'
+[0.272s] colcon.colcon_core.package_identification Level 1 _identify(/home/aiv/YongJun_ws/ros2_ws/src) by extensions ['colcon_pkg']
+[0.272s] colcon.colcon_core.package_identification Level 1 _identify(/home/aiv/YongJun_ws/ros2_ws/src) by extension 'colcon_pkg'
+[0.272s] colcon.colcon_core.package_identification Level 1 _identify(/home/aiv/YongJun_ws/ros2_ws/src) by extensions ['colcon_meta']
+[0.272s] colcon.colcon_core.package_identification Level 1 _identify(/home/aiv/YongJun_ws/ros2_ws/src) by extension 'colcon_meta'
+[0.272s] colcon.colcon_core.package_identification Level 1 _identify(/home/aiv/YongJun_ws/ros2_ws/src) by extensions ['ros']
+[0.272s] colcon.colcon_core.package_identification Level 1 _identify(/home/aiv/YongJun_ws/ros2_ws/src) by extension 'ros'
+[0.272s] colcon.colcon_core.package_identification Level 1 _identify(/home/aiv/YongJun_ws/ros2_ws/src) by extensions ['cmake', 'python']
+[0.272s] colcon.colcon_core.package_identification Level 1 _identify(/home/aiv/YongJun_ws/ros2_ws/src) by extension 'cmake'
+[0.272s] colcon.colcon_core.package_identification Level 1 _identify(/home/aiv/YongJun_ws/ros2_ws/src) by extension 'python'
+[0.272s] colcon.colcon_core.package_identification Level 1 _identify(/home/aiv/YongJun_ws/ros2_ws/src) by extensions ['python_setup_py']
+[0.272s] colcon.colcon_core.package_identification Level 1 _identify(/home/aiv/YongJun_ws/ros2_ws/src) by extension 'python_setup_py'
+[0.272s] colcon.colcon_core.package_identification Level 1 _identify(/home/aiv/YongJun_ws/ros2_ws/src/realsense-ros) by extensions ['ignore', 'ignore_ament_install']
+[0.273s] colcon.colcon_core.package_identification Level 1 _identify(/home/aiv/YongJun_ws/ros2_ws/src/realsense-ros) by extension 'ignore'
+[0.273s] colcon.colcon_core.package_identification Level 1 _identify(/home/aiv/YongJun_ws/ros2_ws/src/realsense-ros) by extension 'ignore_ament_install'
+[0.273s] colcon.colcon_core.package_identification Level 1 _identify(/home/aiv/YongJun_ws/ros2_ws/src/realsense-ros) by extensions ['colcon_pkg']
+[0.273s] colcon.colcon_core.package_identification Level 1 _identify(/home/aiv/YongJun_ws/ros2_ws/src/realsense-ros) by extension 'colcon_pkg'
+[0.273s] colcon.colcon_core.package_identification Level 1 _identify(/home/aiv/YongJun_ws/ros2_ws/src/realsense-ros) by extensions ['colcon_meta']
+[0.273s] colcon.colcon_core.package_identification Level 1 _identify(/home/aiv/YongJun_ws/ros2_ws/src/realsense-ros) by extension 'colcon_meta'
+[0.273s] colcon.colcon_core.package_identification Level 1 _identify(/home/aiv/YongJun_ws/ros2_ws/src/realsense-ros) by extensions ['ros']
+[0.273s] colcon.colcon_core.package_identification Level 1 _identify(/home/aiv/YongJun_ws/ros2_ws/src/realsense-ros) by extension 'ros'
+[0.273s] colcon.colcon_core.package_identification Level 1 _identify(/home/aiv/YongJun_ws/ros2_ws/src/realsense-ros) by extensions ['cmake', 'python']
+[0.273s] colcon.colcon_core.package_identification Level 1 _identify(/home/aiv/YongJun_ws/ros2_ws/src/realsense-ros) by extension 'cmake'
+[0.273s] colcon.colcon_core.package_identification Level 1 _identify(/home/aiv/YongJun_ws/ros2_ws/src/realsense-ros) by extension 'python'
+[0.273s] colcon.colcon_core.package_identification Level 1 _identify(/home/aiv/YongJun_ws/ros2_ws/src/realsense-ros) by extensions ['python_setup_py']
+[0.273s] colcon.colcon_core.package_identification Level 1 _identify(/home/aiv/YongJun_ws/ros2_ws/src/realsense-ros) by extension 'python_setup_py'
+[0.273s] colcon.colcon_core.package_identification Level 1 _identify(/home/aiv/YongJun_ws/ros2_ws/src/realsense-ros/realsense2_camera) by extensions ['ignore', 'ignore_ament_install']
+[0.273s] colcon.colcon_core.package_identification Level 1 _identify(/home/aiv/YongJun_ws/ros2_ws/src/realsense-ros/realsense2_camera) by extension 'ignore'
+[0.273s] colcon.colcon_core.package_identification Level 1 _identify(/home/aiv/YongJun_ws/ros2_ws/src/realsense-ros/realsense2_camera) by extension 'ignore_ament_install'
+[0.273s] colcon.colcon_core.package_identification Level 1 _identify(/home/aiv/YongJun_ws/ros2_ws/src/realsense-ros/realsense2_camera) by extensions ['colcon_pkg']
+[0.273s] colcon.colcon_core.package_identification Level 1 _identify(/home/aiv/YongJun_ws/ros2_ws/src/realsense-ros/realsense2_camera) by extension 'colcon_pkg'
+[0.273s] colcon.colcon_core.package_identification Level 1 _identify(/home/aiv/YongJun_ws/ros2_ws/src/realsense-ros/realsense2_camera) by extensions ['colcon_meta']
+[0.273s] colcon.colcon_core.package_identification Level 1 _identify(/home/aiv/YongJun_ws/ros2_ws/src/realsense-ros/realsense2_camera) by extension 'colcon_meta'
+[0.273s] colcon.colcon_core.package_identification Level 1 _identify(/home/aiv/YongJun_ws/ros2_ws/src/realsense-ros/realsense2_camera) by extensions ['ros']
+[0.273s] colcon.colcon_core.package_identification Level 1 _identify(/home/aiv/YongJun_ws/ros2_ws/src/realsense-ros/realsense2_camera) by extension 'ros'
+[0.279s] colcon.colcon_core.package_identification DEBUG Package '/home/aiv/YongJun_ws/ros2_ws/src/realsense-ros/realsense2_camera' with type 'ros.ament_cmake' and name 'realsense2_camera'
+[0.279s] colcon.colcon_core.package_identification Level 1 _identify(/home/aiv/YongJun_ws/ros2_ws/src/realsense-ros/realsense2_camera_msgs) by extensions ['ignore', 'ignore_ament_install']
+[0.279s] colcon.colcon_core.package_identification Level 1 _identify(/home/aiv/YongJun_ws/ros2_ws/src/realsense-ros/realsense2_camera_msgs) by extension 'ignore'
+[0.279s] colcon.colcon_core.package_identification Level 1 _identify(/home/aiv/YongJun_ws/ros2_ws/src/realsense-ros/realsense2_camera_msgs) by extension 'ignore_ament_install'
+[0.279s] colcon.colcon_core.package_identification Level 1 _identify(/home/aiv/YongJun_ws/ros2_ws/src/realsense-ros/realsense2_camera_msgs) by extensions ['colcon_pkg']
+[0.279s] colcon.colcon_core.package_identification Level 1 _identify(/home/aiv/YongJun_ws/ros2_ws/src/realsense-ros/realsense2_camera_msgs) by extension 'colcon_pkg'
+[0.279s] colcon.colcon_core.package_identification Level 1 _identify(/home/aiv/YongJun_ws/ros2_ws/src/realsense-ros/realsense2_camera_msgs) by extensions ['colcon_meta']
+[0.279s] colcon.colcon_core.package_identification Level 1 _identify(/home/aiv/YongJun_ws/ros2_ws/src/realsense-ros/realsense2_camera_msgs) by extension 'colcon_meta'
+[0.279s] colcon.colcon_core.package_identification Level 1 _identify(/home/aiv/YongJun_ws/ros2_ws/src/realsense-ros/realsense2_camera_msgs) by extensions ['ros']
+[0.279s] colcon.colcon_core.package_identification Level 1 _identify(/home/aiv/YongJun_ws/ros2_ws/src/realsense-ros/realsense2_camera_msgs) by extension 'ros'
+[0.280s] colcon.colcon_core.package_identification DEBUG Package '/home/aiv/YongJun_ws/ros2_ws/src/realsense-ros/realsense2_camera_msgs' with type 'ros.ament_cmake' and name 'realsense2_camera_msgs'
+[0.280s] colcon.colcon_core.package_identification Level 1 _identify(/home/aiv/YongJun_ws/ros2_ws/src/realsense-ros/realsense2_description) by extensions ['ignore', 'ignore_ament_install']
+[0.280s] colcon.colcon_core.package_identification Level 1 _identify(/home/aiv/YongJun_ws/ros2_ws/src/realsense-ros/realsense2_description) by extension 'ignore'
+[0.280s] colcon.colcon_core.package_identification Level 1 _identify(/home/aiv/YongJun_ws/ros2_ws/src/realsense-ros/realsense2_description) by extension 'ignore_ament_install'
+[0.280s] colcon.colcon_core.package_identification Level 1 _identify(/home/aiv/YongJun_ws/ros2_ws/src/realsense-ros/realsense2_description) by extensions ['colcon_pkg']
+[0.280s] colcon.colcon_core.package_identification Level 1 _identify(/home/aiv/YongJun_ws/ros2_ws/src/realsense-ros/realsense2_description) by extension 'colcon_pkg'
+[0.280s] colcon.colcon_core.package_identification Level 1 _identify(/home/aiv/YongJun_ws/ros2_ws/src/realsense-ros/realsense2_description) by extensions ['colcon_meta']
+[0.280s] colcon.colcon_core.package_identification Level 1 _identify(/home/aiv/YongJun_ws/ros2_ws/src/realsense-ros/realsense2_description) by extension 'colcon_meta'
+[0.280s] colcon.colcon_core.package_identification Level 1 _identify(/home/aiv/YongJun_ws/ros2_ws/src/realsense-ros/realsense2_description) by extensions ['ros']
+[0.280s] colcon.colcon_core.package_identification Level 1 _identify(/home/aiv/YongJun_ws/ros2_ws/src/realsense-ros/realsense2_description) by extension 'ros'
+[0.281s] colcon.colcon_core.package_identification DEBUG Package '/home/aiv/YongJun_ws/ros2_ws/src/realsense-ros/realsense2_description' with type 'ros.ament_cmake' and name 'realsense2_description'
+[0.281s] colcon.colcon_core.package_identification Level 1 _identify(/home/aiv/YongJun_ws/ros2_ws/src/realsense-ros/scripts) by extensions ['ignore', 'ignore_ament_install']
+[0.281s] colcon.colcon_core.package_identification Level 1 _identify(/home/aiv/YongJun_ws/ros2_ws/src/realsense-ros/scripts) by extension 'ignore'
+[0.281s] colcon.colcon_core.package_identification Level 1 _identify(/home/aiv/YongJun_ws/ros2_ws/src/realsense-ros/scripts) by extension 'ignore_ament_install'
+[0.281s] colcon.colcon_core.package_identification Level 1 _identify(/home/aiv/YongJun_ws/ros2_ws/src/realsense-ros/scripts) by extensions ['colcon_pkg']
+[0.281s] colcon.colcon_core.package_identification Level 1 _identify(/home/aiv/YongJun_ws/ros2_ws/src/realsense-ros/scripts) by extension 'colcon_pkg'
+[0.281s] colcon.colcon_core.package_identification Level 1 _identify(/home/aiv/YongJun_ws/ros2_ws/src/realsense-ros/scripts) by extensions ['colcon_meta']
+[0.281s] colcon.colcon_core.package_identification Level 1 _identify(/home/aiv/YongJun_ws/ros2_ws/src/realsense-ros/scripts) by extension 'colcon_meta'
+[0.281s] colcon.colcon_core.package_identification Level 1 _identify(/home/aiv/YongJun_ws/ros2_ws/src/realsense-ros/scripts) by extensions ['ros']
+[0.281s] colcon.colcon_core.package_identification Level 1 _identify(/home/aiv/YongJun_ws/ros2_ws/src/realsense-ros/scripts) by extension 'ros'
+[0.281s] colcon.colcon_core.package_identification Level 1 _identify(/home/aiv/YongJun_ws/ros2_ws/src/realsense-ros/scripts) by extensions ['cmake', 'python']
+[0.281s] colcon.colcon_core.package_identification Level 1 _identify(/home/aiv/YongJun_ws/ros2_ws/src/realsense-ros/scripts) by extension 'cmake'
+[0.281s] colcon.colcon_core.package_identification Level 1 _identify(/home/aiv/YongJun_ws/ros2_ws/src/realsense-ros/scripts) by extension 'python'
+[0.281s] colcon.colcon_core.package_identification Level 1 _identify(/home/aiv/YongJun_ws/ros2_ws/src/realsense-ros/scripts) by extensions ['python_setup_py']
+[0.281s] colcon.colcon_core.package_identification Level 1 _identify(/home/aiv/YongJun_ws/ros2_ws/src/realsense-ros/scripts) by extension 'python_setup_py'
+[0.281s] colcon.colcon_core.package_identification Level 1 _identify(/home/aiv/YongJun_ws/ros2_ws/src/sensor) by extensions ['ignore', 'ignore_ament_install']
+[0.281s] colcon.colcon_core.package_identification Level 1 _identify(/home/aiv/YongJun_ws/ros2_ws/src/sensor) by extension 'ignore'
+[0.281s] colcon.colcon_core.package_identification Level 1 _identify(/home/aiv/YongJun_ws/ros2_ws/src/sensor) by extension 'ignore_ament_install'
+[0.281s] colcon.colcon_core.package_identification Level 1 _identify(/home/aiv/YongJun_ws/ros2_ws/src/sensor) by extensions ['colcon_pkg']
+[0.282s] colcon.colcon_core.package_identification Level 1 _identify(/home/aiv/YongJun_ws/ros2_ws/src/sensor) by extension 'colcon_pkg'
+[0.282s] colcon.colcon_core.package_identification Level 1 _identify(/home/aiv/YongJun_ws/ros2_ws/src/sensor) by extensions ['colcon_meta']
+[0.282s] colcon.colcon_core.package_identification Level 1 _identify(/home/aiv/YongJun_ws/ros2_ws/src/sensor) by extension 'colcon_meta'
+[0.282s] colcon.colcon_core.package_identification Level 1 _identify(/home/aiv/YongJun_ws/ros2_ws/src/sensor) by extensions ['ros']
+[0.282s] colcon.colcon_core.package_identification Level 1 _identify(/home/aiv/YongJun_ws/ros2_ws/src/sensor) by extension 'ros'
+[0.282s] colcon.colcon_core.package_identification Level 1 _identify(/home/aiv/YongJun_ws/ros2_ws/src/sensor) by extensions ['cmake', 'python']
+[0.282s] colcon.colcon_core.package_identification Level 1 _identify(/home/aiv/YongJun_ws/ros2_ws/src/sensor) by extension 'cmake'
+[0.282s] colcon.colcon_core.package_identification Level 1 _identify(/home/aiv/YongJun_ws/ros2_ws/src/sensor) by extension 'python'
+[0.282s] colcon.colcon_core.package_identification Level 1 _identify(/home/aiv/YongJun_ws/ros2_ws/src/sensor) by extensions ['python_setup_py']
+[0.282s] colcon.colcon_core.package_identification Level 1 _identify(/home/aiv/YongJun_ws/ros2_ws/src/sensor) by extension 'python_setup_py'
+[0.282s] colcon.colcon_core.package_identification Level 1 _identify(/home/aiv/YongJun_ws/ros2_ws/src/sensor/usb_cam) by extensions ['ignore', 'ignore_ament_install']
+[0.282s] colcon.colcon_core.package_identification Level 1 _identify(/home/aiv/YongJun_ws/ros2_ws/src/sensor/usb_cam) by extension 'ignore'
+[0.282s] colcon.colcon_core.package_identification Level 1 _identify(/home/aiv/YongJun_ws/ros2_ws/src/sensor/usb_cam) by extension 'ignore_ament_install'
+[0.282s] colcon.colcon_core.package_identification Level 1 _identify(/home/aiv/YongJun_ws/ros2_ws/src/sensor/usb_cam) by extensions ['colcon_pkg']
+[0.282s] colcon.colcon_core.package_identification Level 1 _identify(/home/aiv/YongJun_ws/ros2_ws/src/sensor/usb_cam) by extension 'colcon_pkg'
+[0.282s] colcon.colcon_core.package_identification Level 1 _identify(/home/aiv/YongJun_ws/ros2_ws/src/sensor/usb_cam) by extensions ['colcon_meta']
+[0.282s] colcon.colcon_core.package_identification Level 1 _identify(/home/aiv/YongJun_ws/ros2_ws/src/sensor/usb_cam) by extension 'colcon_meta'
+[0.282s] colcon.colcon_core.package_identification Level 1 _identify(/home/aiv/YongJun_ws/ros2_ws/src/sensor/usb_cam) by extensions ['ros']
+[0.282s] colcon.colcon_core.package_identification Level 1 _identify(/home/aiv/YongJun_ws/ros2_ws/src/sensor/usb_cam) by extension 'ros'
+[0.285s] colcon.colcon_core.package_identification DEBUG Package '/home/aiv/YongJun_ws/ros2_ws/src/sensor/usb_cam' with type 'ros.ament_cmake' and name 'usb_cam'
+[0.286s] colcon.colcon_core.package_identification Level 1 _identify(/home/aiv/YongJun_ws/ros2_ws/src/yolov8_ros) by extensions ['ignore', 'ignore_ament_install']
+[0.286s] colcon.colcon_core.package_identification Level 1 _identify(/home/aiv/YongJun_ws/ros2_ws/src/yolov8_ros) by extension 'ignore'
+[0.286s] colcon.colcon_core.package_identification Level 1 _identify(/home/aiv/YongJun_ws/ros2_ws/src/yolov8_ros) by extension 'ignore_ament_install'
+[0.286s] colcon.colcon_core.package_identification Level 1 _identify(/home/aiv/YongJun_ws/ros2_ws/src/yolov8_ros) by extensions ['colcon_pkg']
+[0.286s] colcon.colcon_core.package_identification Level 1 _identify(/home/aiv/YongJun_ws/ros2_ws/src/yolov8_ros) by extension 'colcon_pkg'
+[0.286s] colcon.colcon_core.package_identification Level 1 _identify(/home/aiv/YongJun_ws/ros2_ws/src/yolov8_ros) by extensions ['colcon_meta']
+[0.286s] colcon.colcon_core.package_identification Level 1 _identify(/home/aiv/YongJun_ws/ros2_ws/src/yolov8_ros) by extension 'colcon_meta'
+[0.286s] colcon.colcon_core.package_identification Level 1 _identify(/home/aiv/YongJun_ws/ros2_ws/src/yolov8_ros) by extensions ['ros']
+[0.286s] colcon.colcon_core.package_identification Level 1 _identify(/home/aiv/YongJun_ws/ros2_ws/src/yolov8_ros) by extension 'ros'
+[0.286s] colcon.colcon_core.package_identification Level 1 _identify(/home/aiv/YongJun_ws/ros2_ws/src/yolov8_ros) by extensions ['cmake', 'python']
+[0.286s] colcon.colcon_core.package_identification Level 1 _identify(/home/aiv/YongJun_ws/ros2_ws/src/yolov8_ros) by extension 'cmake'
+[0.286s] colcon.colcon_core.package_identification Level 1 _identify(/home/aiv/YongJun_ws/ros2_ws/src/yolov8_ros) by extension 'python'
+[0.286s] colcon.colcon_core.package_identification Level 1 _identify(/home/aiv/YongJun_ws/ros2_ws/src/yolov8_ros) by extensions ['python_setup_py']
+[0.286s] colcon.colcon_core.package_identification Level 1 _identify(/home/aiv/YongJun_ws/ros2_ws/src/yolov8_ros) by extension 'python_setup_py'
+[0.286s] colcon.colcon_core.package_identification Level 1 _identify(/home/aiv/YongJun_ws/ros2_ws/src/yolov8_ros/docs) by extensions ['ignore', 'ignore_ament_install']
+[0.286s] colcon.colcon_core.package_identification Level 1 _identify(/home/aiv/YongJun_ws/ros2_ws/src/yolov8_ros/docs) by extension 'ignore'
+[0.286s] colcon.colcon_core.package_identification Level 1 _identify(/home/aiv/YongJun_ws/ros2_ws/src/yolov8_ros/docs) by extension 'ignore_ament_install'
+[0.286s] colcon.colcon_core.package_identification Level 1 _identify(/home/aiv/YongJun_ws/ros2_ws/src/yolov8_ros/docs) by extensions ['colcon_pkg']
+[0.286s] colcon.colcon_core.package_identification Level 1 _identify(/home/aiv/YongJun_ws/ros2_ws/src/yolov8_ros/docs) by extension 'colcon_pkg'
+[0.286s] colcon.colcon_core.package_identification Level 1 _identify(/home/aiv/YongJun_ws/ros2_ws/src/yolov8_ros/docs) by extensions ['colcon_meta']
+[0.286s] colcon.colcon_core.package_identification Level 1 _identify(/home/aiv/YongJun_ws/ros2_ws/src/yolov8_ros/docs) by extension 'colcon_meta'
+[0.286s] colcon.colcon_core.package_identification Level 1 _identify(/home/aiv/YongJun_ws/ros2_ws/src/yolov8_ros/docs) by extensions ['ros']
+[0.286s] colcon.colcon_core.package_identification Level 1 _identify(/home/aiv/YongJun_ws/ros2_ws/src/yolov8_ros/docs) by extension 'ros'
+[0.286s] colcon.colcon_core.package_identification Level 1 _identify(/home/aiv/YongJun_ws/ros2_ws/src/yolov8_ros/docs) by extensions ['cmake', 'python']
+[0.286s] colcon.colcon_core.package_identification Level 1 _identify(/home/aiv/YongJun_ws/ros2_ws/src/yolov8_ros/docs) by extension 'cmake'
+[0.286s] colcon.colcon_core.package_identification Level 1 _identify(/home/aiv/YongJun_ws/ros2_ws/src/yolov8_ros/docs) by extension 'python'
+[0.286s] colcon.colcon_core.package_identification Level 1 _identify(/home/aiv/YongJun_ws/ros2_ws/src/yolov8_ros/docs) by extensions ['python_setup_py']
+[0.286s] colcon.colcon_core.package_identification Level 1 _identify(/home/aiv/YongJun_ws/ros2_ws/src/yolov8_ros/docs) by extension 'python_setup_py'
+[0.287s] colcon.colcon_core.package_identification Level 1 _identify(/home/aiv/YongJun_ws/ros2_ws/src/yolov8_ros/matlab_msg_gen) by extensions ['ignore', 'ignore_ament_install']
+[0.287s] colcon.colcon_core.package_identification Level 1 _identify(/home/aiv/YongJun_ws/ros2_ws/src/yolov8_ros/matlab_msg_gen) by extension 'ignore'
+[0.287s] colcon.colcon_core.package_identification Level 1 _identify(/home/aiv/YongJun_ws/ros2_ws/src/yolov8_ros/matlab_msg_gen) ignored
+[0.287s] colcon.colcon_core.package_identification Level 1 _identify(/home/aiv/YongJun_ws/ros2_ws/src/yolov8_ros/yolov8_bringup) by extensions ['ignore', 'ignore_ament_install']
+[0.287s] colcon.colcon_core.package_identification Level 1 _identify(/home/aiv/YongJun_ws/ros2_ws/src/yolov8_ros/yolov8_bringup) by extension 'ignore'
+[0.287s] colcon.colcon_core.package_identification Level 1 _identify(/home/aiv/YongJun_ws/ros2_ws/src/yolov8_ros/yolov8_bringup) by extension 'ignore_ament_install'
+[0.287s] colcon.colcon_core.package_identification Level 1 _identify(/home/aiv/YongJun_ws/ros2_ws/src/yolov8_ros/yolov8_bringup) by extensions ['colcon_pkg']
+[0.287s] colcon.colcon_core.package_identification Level 1 _identify(/home/aiv/YongJun_ws/ros2_ws/src/yolov8_ros/yolov8_bringup) by extension 'colcon_pkg'
+[0.287s] colcon.colcon_core.package_identification Level 1 _identify(/home/aiv/YongJun_ws/ros2_ws/src/yolov8_ros/yolov8_bringup) by extensions ['colcon_meta']
+[0.287s] colcon.colcon_core.package_identification Level 1 _identify(/home/aiv/YongJun_ws/ros2_ws/src/yolov8_ros/yolov8_bringup) by extension 'colcon_meta'
+[0.287s] colcon.colcon_core.package_identification Level 1 _identify(/home/aiv/YongJun_ws/ros2_ws/src/yolov8_ros/yolov8_bringup) by extensions ['ros']
+[0.287s] colcon.colcon_core.package_identification Level 1 _identify(/home/aiv/YongJun_ws/ros2_ws/src/yolov8_ros/yolov8_bringup) by extension 'ros'
+[0.287s] colcon.colcon_core.package_identification DEBUG Package '/home/aiv/YongJun_ws/ros2_ws/src/yolov8_ros/yolov8_bringup' with type 'ros.ament_cmake' and name 'yolov8_bringup'
+[0.287s] colcon.colcon_core.package_identification Level 1 _identify(/home/aiv/YongJun_ws/ros2_ws/src/yolov8_ros/yolov8_msgs) by extensions ['ignore', 'ignore_ament_install']
+[0.287s] colcon.colcon_core.package_identification Level 1 _identify(/home/aiv/YongJun_ws/ros2_ws/src/yolov8_ros/yolov8_msgs) by extension 'ignore'
+[0.287s] colcon.colcon_core.package_identification Level 1 _identify(/home/aiv/YongJun_ws/ros2_ws/src/yolov8_ros/yolov8_msgs) by extension 'ignore_ament_install'
+[0.287s] colcon.colcon_core.package_identification Level 1 _identify(/home/aiv/YongJun_ws/ros2_ws/src/yolov8_ros/yolov8_msgs) by extensions ['colcon_pkg']
+[0.288s] colcon.colcon_core.package_identification Level 1 _identify(/home/aiv/YongJun_ws/ros2_ws/src/yolov8_ros/yolov8_msgs) by extension 'colcon_pkg'
+[0.288s] colcon.colcon_core.package_identification Level 1 _identify(/home/aiv/YongJun_ws/ros2_ws/src/yolov8_ros/yolov8_msgs) by extensions ['colcon_meta']
+[0.288s] colcon.colcon_core.package_identification Level 1 _identify(/home/aiv/YongJun_ws/ros2_ws/src/yolov8_ros/yolov8_msgs) by extension 'colcon_meta'
+[0.288s] colcon.colcon_core.package_identification Level 1 _identify(/home/aiv/YongJun_ws/ros2_ws/src/yolov8_ros/yolov8_msgs) by extensions ['ros']
+[0.288s] colcon.colcon_core.package_identification Level 1 _identify(/home/aiv/YongJun_ws/ros2_ws/src/yolov8_ros/yolov8_msgs) by extension 'ros'
+[0.288s] colcon.colcon_core.package_identification DEBUG Package '/home/aiv/YongJun_ws/ros2_ws/src/yolov8_ros/yolov8_msgs' with type 'ros.ament_cmake' and name 'yolov8_msgs'
+[0.288s] colcon.colcon_core.package_identification Level 1 _identify(/home/aiv/YongJun_ws/ros2_ws/src/yolov8_ros/yolov8_ros) by extensions ['ignore', 'ignore_ament_install']
+[0.288s] colcon.colcon_core.package_identification Level 1 _identify(/home/aiv/YongJun_ws/ros2_ws/src/yolov8_ros/yolov8_ros) by extension 'ignore'
+[0.288s] colcon.colcon_core.package_identification Level 1 _identify(/home/aiv/YongJun_ws/ros2_ws/src/yolov8_ros/yolov8_ros) by extension 'ignore_ament_install'
+[0.288s] colcon.colcon_core.package_identification Level 1 _identify(/home/aiv/YongJun_ws/ros2_ws/src/yolov8_ros/yolov8_ros) by extensions ['colcon_pkg']
+[0.288s] colcon.colcon_core.package_identification Level 1 _identify(/home/aiv/YongJun_ws/ros2_ws/src/yolov8_ros/yolov8_ros) by extension 'colcon_pkg'
+[0.288s] colcon.colcon_core.package_identification Level 1 _identify(/home/aiv/YongJun_ws/ros2_ws/src/yolov8_ros/yolov8_ros) by extensions ['colcon_meta']
+[0.288s] colcon.colcon_core.package_identification Level 1 _identify(/home/aiv/YongJun_ws/ros2_ws/src/yolov8_ros/yolov8_ros) by extension 'colcon_meta'
+[0.288s] colcon.colcon_core.package_identification Level 1 _identify(/home/aiv/YongJun_ws/ros2_ws/src/yolov8_ros/yolov8_ros) by extensions ['ros']
+[0.288s] colcon.colcon_core.package_identification Level 1 _identify(/home/aiv/YongJun_ws/ros2_ws/src/yolov8_ros/yolov8_ros) by extension 'ros'
+[0.289s] colcon.colcon_core.package_identification DEBUG Package '/home/aiv/YongJun_ws/ros2_ws/src/yolov8_ros/yolov8_ros' with type 'ros.ament_python' and name 'yolov8_ros'
+[0.289s] colcon.colcon_core.package_discovery Level 1 discover_packages(recursive) using defaults
