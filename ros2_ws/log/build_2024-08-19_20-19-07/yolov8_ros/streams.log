@@ -1,0 +1,42 @@
+[0.769s] Invoking command in '/home/aiv/YongJun_ws/ros2_ws/build/yolov8_ros': CMAKE_PREFIX_PATH=/home/aiv/YongJun_ws/ros2_ws/install/yolov8_msgs:/home/aiv/YongJun_ws/ros2_ws/install/yolov8_bringup:/home/aiv/YongJun_ws/ros2_ws/install/usb_cam:/home/aiv/YongJun_ws/ros2_ws/install/realsense2_description:/home/aiv/YongJun_ws/ros2_ws/install/realsense2_camera:/home/aiv/YongJun_ws/ros2_ws/install/realsense2_camera_msgs LD_LIBRARY_PATH=/home/aiv/YongJun_ws/ros2_ws/install/yolov8_msgs/lib:/home/aiv/YongJun_ws/ros2_ws/install/usb_cam/lib:/home/aiv/YongJun_ws/ros2_ws/install/realsense2_camera/lib:/home/aiv/YongJun_ws/ros2_ws/install/realsense2_camera_msgs/lib:/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib/x86_64-linux-gnu:/opt/ros/foxy/lib:/usr/local/cuda-11.8/lib64 PYTHONPATH=/home/aiv/YongJun_ws/ros2_ws/build/yolov8_ros/prefix_override:/home/aiv/YongJun_ws/ros2_ws/install/yolov8_ros/lib/python3.8/site-packages:/home/aiv/YongJun_ws/ros2_ws/install/yolov8_msgs/lib/python3.8/site-packages:/home/aiv/YongJun_ws/ros2_ws/build/yolov8_ros:/home/aiv/YongJun_ws/ros2_ws/install/yolov8_ros/lib/python3.8/site-packages:/home/aiv/YongJun_ws/ros2_ws/install/realsense2_camera_msgs/lib/python3.8/site-packages:/opt/ros/foxy/lib/python3.8/site-packages /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py develop --editable --build-directory /home/aiv/YongJun_ws/ros2_ws/build/yolov8_ros/build --no-deps symlink_data
+[0.882s] /home/aiv/.local/lib/python3.8/site-packages/setuptools/_distutils/dist.py:268: UserWarning: Unknown distribution option: 'tests_require'
+[0.882s]   warnings.warn(msg)
+[1.024s] running develop
+[1.024s] /home/aiv/.local/lib/python3.8/site-packages/setuptools/command/develop.py:42: EasyInstallDeprecationWarning: easy_install command is deprecated.
+[1.024s] !!
+[1.024s] 
+[1.024s]         ********************************************************************************
+[1.024s]         Please avoid running ``setup.py`` and ``easy_install``.
+[1.024s]         Instead, use pypa/build, pypa/installer or other
+[1.024s]         standards-based tools.
+[1.024s] 
+[1.024s]         See https://github.com/pypa/setuptools/issues/917 for details.
+[1.024s]         ********************************************************************************
+[1.024s] 
+[1.024s] !!
+[1.024s]   easy_install.initialize_options(self)
+[1.194s] running egg_info
+[1.194s] creating yolov8_ros.egg-info
+[1.211s] writing yolov8_ros.egg-info/PKG-INFO
+[1.211s] writing dependency_links to yolov8_ros.egg-info/dependency_links.txt
+[1.211s] writing entry points to yolov8_ros.egg-info/entry_points.txt
+[1.211s] writing requirements to yolov8_ros.egg-info/requires.txt
+[1.211s] writing top-level names to yolov8_ros.egg-info/top_level.txt
+[1.212s] writing manifest file 'yolov8_ros.egg-info/SOURCES.txt'
+[1.250s] reading manifest file 'yolov8_ros.egg-info/SOURCES.txt'
+[1.250s] writing manifest file 'yolov8_ros.egg-info/SOURCES.txt'
+[1.293s] running build_ext
+[1.293s] Creating /home/aiv/YongJun_ws/ros2_ws/install/yolov8_ros/lib/python3.8/site-packages/yolov8-ros.egg-link (link to .)
+[1.293s] Installing debug_node script to /home/aiv/YongJun_ws/ros2_ws/install/yolov8_ros/lib/yolov8_ros
+[1.293s] Installing detect_3d_node script to /home/aiv/YongJun_ws/ros2_ws/install/yolov8_ros/lib/yolov8_ros
+[1.293s] Installing tracking_node script to /home/aiv/YongJun_ws/ros2_ws/install/yolov8_ros/lib/yolov8_ros
+[1.294s] Installing yolov8_node script to /home/aiv/YongJun_ws/ros2_ws/install/yolov8_ros/lib/yolov8_ros
+[1.294s] 
+[1.294s] Installed /home/aiv/YongJun_ws/ros2_ws/build/yolov8_ros
+[1.294s] running symlink_data
+[1.294s] creating /home/aiv/YongJun_ws/ros2_ws/install/yolov8_ros/share/ament_index
+[1.294s] creating /home/aiv/YongJun_ws/ros2_ws/install/yolov8_ros/share/ament_index/resource_index
+[1.294s] creating /home/aiv/YongJun_ws/ros2_ws/install/yolov8_ros/share/ament_index/resource_index/packages
+[1.294s] symbolically linking /home/aiv/YongJun_ws/ros2_ws/build/yolov8_ros/resource/yolov8_ros -> /home/aiv/YongJun_ws/ros2_ws/install/yolov8_ros/share/ament_index/resource_index/packages
+[1.294s] symbolically linking /home/aiv/YongJun_ws/ros2_ws/build/yolov8_ros/package.xml -> /home/aiv/YongJun_ws/ros2_ws/install/yolov8_ros/share/yolov8_ros
+[1.313s] Invoked command in '/home/aiv/YongJun_ws/ros2_ws/build/yolov8_ros' returned '0': CMAKE_PREFIX_PATH=/home/aiv/YongJun_ws/ros2_ws/install/yolov8_msgs:/home/aiv/YongJun_ws/ros2_ws/install/yolov8_bringup:/home/aiv/YongJun_ws/ros2_ws/install/usb_cam:/home/aiv/YongJun_ws/ros2_ws/install/realsense2_description:/home/aiv/YongJun_ws/ros2_ws/install/realsense2_camera:/home/aiv/YongJun_ws/ros2_ws/install/realsense2_camera_msgs LD_LIBRARY_PATH=/home/aiv/YongJun_ws/ros2_ws/install/yolov8_msgs/lib:/home/aiv/YongJun_ws/ros2_ws/install/usb_cam/lib:/home/aiv/YongJun_ws/ros2_ws/install/realsense2_camera/lib:/home/aiv/YongJun_ws/ros2_ws/install/realsense2_camera_msgs/lib:/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib/x86_64-linux-gnu:/opt/ros/foxy/lib:/usr/local/cuda-11.8/lib64 PYTHONPATH=/home/aiv/YongJun_ws/ros2_ws/build/yolov8_ros/prefix_override:/home/aiv/YongJun_ws/ros2_ws/install/yolov8_ros/lib/python3.8/site-packages:/home/aiv/YongJun_ws/ros2_ws/install/yolov8_msgs/lib/python3.8/site-packages:/home/aiv/YongJun_ws/ros2_ws/build/yolov8_ros:/home/aiv/YongJun_ws/ros2_ws/install/yolov8_ros/lib/python3.8/site-packages:/home/aiv/YongJun_ws/ros2_ws/install/realsense2_camera_msgs/lib/python3.8/site-packages:/opt/ros/foxy/lib/python3.8/site-packages /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py develop --editable --build-directory /home/aiv/YongJun_ws/ros2_ws/build/yolov8_ros/build --no-deps symlink_data

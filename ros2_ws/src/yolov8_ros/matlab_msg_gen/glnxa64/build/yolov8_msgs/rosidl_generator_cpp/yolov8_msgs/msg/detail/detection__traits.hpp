@@ -25,6 +25,8 @@
 #include "yolov8_msgs/msg/detail/key_point2_d_array__traits.hpp"
 // Member 'keypoints3d'
 #include "yolov8_msgs/msg/detail/key_point3_d_array__traits.hpp"
+// Member 'velocity'
+#include "yolov8_msgs/msg/detail/vector2__traits.hpp"
 
 namespace yolov8_msgs
 {
@@ -97,6 +99,13 @@ inline void to_flow_style_yaml(
   {
     out << "keypoints3d: ";
     to_flow_style_yaml(msg.keypoints3d, out);
+    out << ", ";
+  }
+
+  // member: velocity
+  {
+    out << "velocity: ";
+    to_flow_style_yaml(msg.velocity, out);
   }
   out << "}";
 }  // NOLINT(readability/fn_size)
@@ -188,6 +197,15 @@ inline void to_block_style_yaml(
     }
     out << "keypoints3d:\n";
     to_block_style_yaml(msg.keypoints3d, out, indentation + 2);
+  }
+
+  // member: velocity
+  {
+    if (indentation > 0) {
+      out << std::string(indentation, ' ');
+    }
+    out << "velocity:\n";
+    to_block_style_yaml(msg.velocity, out, indentation + 2);
   }
 }  // NOLINT(readability/fn_size)
 

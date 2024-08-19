@@ -25,6 +25,8 @@
 #include "yolov8_msgs/msg/detail/key_point2_d_array__functions.h"
 // Member `keypoints3d`
 #include "yolov8_msgs/msg/detail/key_point3_d_array__functions.h"
+// Member `velocity`
+#include "yolov8_msgs/msg/detail/vector2__functions.h"
 
 bool
 yolov8_msgs__msg__Detection__init(yolov8_msgs__msg__Detection * msg)
@@ -69,6 +71,11 @@ yolov8_msgs__msg__Detection__init(yolov8_msgs__msg__Detection * msg)
     yolov8_msgs__msg__Detection__fini(msg);
     return false;
   }
+  // velocity
+  if (!yolov8_msgs__msg__Vector2__init(&msg->velocity)) {
+    yolov8_msgs__msg__Detection__fini(msg);
+    return false;
+  }
   return true;
 }
 
@@ -94,6 +101,8 @@ yolov8_msgs__msg__Detection__fini(yolov8_msgs__msg__Detection * msg)
   yolov8_msgs__msg__KeyPoint2DArray__fini(&msg->keypoints);
   // keypoints3d
   yolov8_msgs__msg__KeyPoint3DArray__fini(&msg->keypoints3d);
+  // velocity
+  yolov8_msgs__msg__Vector2__fini(&msg->velocity);
 }
 
 bool
@@ -152,6 +161,12 @@ yolov8_msgs__msg__Detection__are_equal(const yolov8_msgs__msg__Detection * lhs, 
   {
     return false;
   }
+  // velocity
+  if (!yolov8_msgs__msg__Vector2__are_equal(
+      &(lhs->velocity), &(rhs->velocity)))
+  {
+    return false;
+  }
   return true;
 }
 
@@ -206,6 +221,12 @@ yolov8_msgs__msg__Detection__copy(
   // keypoints3d
   if (!yolov8_msgs__msg__KeyPoint3DArray__copy(
       &(input->keypoints3d), &(output->keypoints3d)))
+  {
+    return false;
+  }
+  // velocity
+  if (!yolov8_msgs__msg__Vector2__copy(
+      &(input->velocity), &(output->velocity)))
   {
     return false;
   }

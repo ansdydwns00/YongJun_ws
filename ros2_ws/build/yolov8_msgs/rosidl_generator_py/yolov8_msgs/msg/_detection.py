@@ -60,6 +60,10 @@ class Metaclass_Detection(type):
             if Mask.__class__._TYPE_SUPPORT is None:
                 Mask.__class__.__import_type_support__()
 
+            from yolov8_msgs.msg import Vector2
+            if Vector2.__class__._TYPE_SUPPORT is None:
+                Vector2.__class__.__import_type_support__()
+
     @classmethod
     def __prepare__(cls, name, bases, **kwargs):
         # list constant names here so that they appear in the help text of
@@ -82,6 +86,7 @@ class Detection(metaclass=Metaclass_Detection):
         '_mask',
         '_keypoints',
         '_keypoints3d',
+        '_velocity',
     ]
 
     _fields_and_field_types = {
@@ -94,6 +99,7 @@ class Detection(metaclass=Metaclass_Detection):
         'mask': 'yolov8_msgs/Mask',
         'keypoints': 'yolov8_msgs/KeyPoint2DArray',
         'keypoints3d': 'yolov8_msgs/KeyPoint3DArray',
+        'velocity': 'yolov8_msgs/Vector2',
     }
 
     SLOT_TYPES = (
@@ -106,6 +112,7 @@ class Detection(metaclass=Metaclass_Detection):
         rosidl_parser.definition.NamespacedType(['yolov8_msgs', 'msg'], 'Mask'),  # noqa: E501
         rosidl_parser.definition.NamespacedType(['yolov8_msgs', 'msg'], 'KeyPoint2DArray'),  # noqa: E501
         rosidl_parser.definition.NamespacedType(['yolov8_msgs', 'msg'], 'KeyPoint3DArray'),  # noqa: E501
+        rosidl_parser.definition.NamespacedType(['yolov8_msgs', 'msg'], 'Vector2'),  # noqa: E501
     )
 
     def __init__(self, **kwargs):
@@ -126,6 +133,8 @@ class Detection(metaclass=Metaclass_Detection):
         self.keypoints = kwargs.get('keypoints', KeyPoint2DArray())
         from yolov8_msgs.msg import KeyPoint3DArray
         self.keypoints3d = kwargs.get('keypoints3d', KeyPoint3DArray())
+        from yolov8_msgs.msg import Vector2
+        self.velocity = kwargs.get('velocity', Vector2())
 
     def __repr__(self):
         typename = self.__class__.__module__.split('.')
@@ -173,6 +182,8 @@ class Detection(metaclass=Metaclass_Detection):
         if self.keypoints != other.keypoints:
             return False
         if self.keypoints3d != other.keypoints3d:
+            return False
+        if self.velocity != other.velocity:
             return False
         return True
 
@@ -304,3 +315,17 @@ class Detection(metaclass=Metaclass_Detection):
                 isinstance(value, KeyPoint3DArray), \
                 "The 'keypoints3d' field must be a sub message of type 'KeyPoint3DArray'"
         self._keypoints3d = value
+
+    @property
+    def velocity(self):
+        """Message field 'velocity'."""
+        return self._velocity
+
+    @velocity.setter
+    def velocity(self, value):
+        if __debug__:
+            from yolov8_msgs.msg import Vector2
+            assert \
+                isinstance(value, Vector2), \
+                "The 'velocity' field must be a sub message of type 'Vector2'"
+        self._velocity = value

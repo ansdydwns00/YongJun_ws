@@ -25,6 +25,8 @@
 #include "yolov8_msgs/msg/detail/key_point2_d_array__struct.hpp"
 // Member 'keypoints3d'
 #include "yolov8_msgs/msg/detail/key_point3_d_array__struct.hpp"
+// Member 'velocity'
+#include "yolov8_msgs/msg/detail/vector2__struct.hpp"
 
 #ifndef _WIN32
 # define DEPRECATED__yolov8_msgs__msg__Detection __attribute__((deprecated))
@@ -49,7 +51,8 @@ struct Detection_
     bbox3d(_init),
     mask(_init),
     keypoints(_init),
-    keypoints3d(_init)
+    keypoints3d(_init),
+    velocity(_init)
   {
     if (rosidl_runtime_cpp::MessageInitialization::ALL == _init ||
       rosidl_runtime_cpp::MessageInitialization::ZERO == _init)
@@ -68,7 +71,8 @@ struct Detection_
     bbox3d(_alloc, _init),
     mask(_alloc, _init),
     keypoints(_alloc, _init),
-    keypoints3d(_alloc, _init)
+    keypoints3d(_alloc, _init),
+    velocity(_alloc, _init)
   {
     if (rosidl_runtime_cpp::MessageInitialization::ALL == _init ||
       rosidl_runtime_cpp::MessageInitialization::ZERO == _init)
@@ -108,6 +112,9 @@ struct Detection_
   using _keypoints3d_type =
     yolov8_msgs::msg::KeyPoint3DArray_<ContainerAllocator>;
   _keypoints3d_type keypoints3d;
+  using _velocity_type =
+    yolov8_msgs::msg::Vector2_<ContainerAllocator>;
+  _velocity_type velocity;
 
   // setters for named parameter idiom
   Type & set__class_id(
@@ -162,6 +169,12 @@ struct Detection_
     const yolov8_msgs::msg::KeyPoint3DArray_<ContainerAllocator> & _arg)
   {
     this->keypoints3d = _arg;
+    return *this;
+  }
+  Type & set__velocity(
+    const yolov8_msgs::msg::Vector2_<ContainerAllocator> & _arg)
+  {
+    this->velocity = _arg;
     return *this;
   }
 
@@ -232,6 +245,9 @@ struct Detection_
       return false;
     }
     if (this->keypoints3d != other.keypoints3d) {
+      return false;
+    }
+    if (this->velocity != other.velocity) {
       return false;
     }
     return true;

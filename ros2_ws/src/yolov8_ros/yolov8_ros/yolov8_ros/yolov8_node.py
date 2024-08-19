@@ -49,10 +49,10 @@ from yolov8_msgs.msg import DetectionArray
 
 # LifecycleNode
 class Yolov8Node(Node):
-
+    
     def __init__(self) -> None:
         super().__init__("yolov8_node")
-
+        
         # params
         self.declare_parameter("model_type", "YOLO")
         self.declare_parameter("model", "yolov8m.pt")
@@ -121,7 +121,7 @@ class Yolov8Node(Node):
         return response
 
     def parse_hypothesis(self, results: Results) -> List[Dict]:
-
+        
         hypothesis_list = []
 
         if results.boxes:
@@ -148,7 +148,7 @@ class Yolov8Node(Node):
     def parse_boxes(self, results: Results) -> List[BoundingBox2D]:
 
         boxes_list = []
-
+        
         if results.boxes:
             box_data: Boxes
             for box_data in results.boxes:
@@ -164,6 +164,7 @@ class Yolov8Node(Node):
 
                 # append msg
                 boxes_list.append(msg)
+                
 
         elif results.obb:
             for i in range(results.obb.cls.shape[0]):
@@ -176,7 +177,6 @@ class Yolov8Node(Node):
                 msg.center.theta = float(box[4])
                 msg.size.x = float(box[2])
                 msg.size.y = float(box[3])
-
                 # append msg
                 boxes_list.append(msg)
 
@@ -235,7 +235,7 @@ class Yolov8Node(Node):
     #     return keypoints_list
 
     def image_cb(self, msg: Image) -> None:
-
+        
         if self.enable:
 
             # convert image + predict
@@ -252,6 +252,8 @@ class Yolov8Node(Node):
             if results.boxes or results.obb:
                 hypothesis = self.parse_hypothesis(results)
                 boxes = self.parse_boxes(results)
+                
+                
 
             if results.masks:
                 masks = self.parse_masks(results)
@@ -284,7 +286,7 @@ class Yolov8Node(Node):
             # publish detections
             detections_msg.header = msg.header
             self._pub.publish(detections_msg)
-
+            
             del results
             del cv_image
             
@@ -298,11 +300,11 @@ class Yolov8Node(Node):
         
 
 def main():
+
     rclpy.init()
     node = Yolov8Node()
-    # node.trigger_configure()
-    # node.trigger_activate()
     rclpy.spin(node)
     node.on_shutdown()
     node.destroy_node()
     rclpy.shutdown()
+    

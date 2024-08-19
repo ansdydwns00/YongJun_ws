@@ -21,6 +21,8 @@
 #include "yolov8_msgs/msg/detail/key_point2_d_array__traits.hpp"
 // Member 'keypoints3d'
 #include "yolov8_msgs/msg/detail/key_point3_d_array__traits.hpp"
+// Member 'velocity'
+#include "yolov8_msgs/msg/detail/vector2__traits.hpp"
 
 namespace rosidl_generator_traits
 {

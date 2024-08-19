@@ -1,0 +1,433 @@
+[0.016s] Invoking command in '/home/aiv/YongJun_ws/ros2_ws/build/yolov8_msgs': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/aiv/YongJun_ws/ros2_ws/install/yolov8_ros:/opt/ros/foxy /home/aiv/.local/bin/cmake /home/aiv/YongJun_ws/ros2_ws/src/yolov8_ros/yolov8_msgs -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/aiv/YongJun_ws/ros2_ws/install/yolov8_msgs
+[0.078s] -- The C compiler identification is GNU 9.4.0
+[0.116s] -- The CXX compiler identification is GNU 9.4.0
+[0.125s] -- Detecting C compiler ABI info
+[0.161s] -- Detecting C compiler ABI info - done
+[0.167s] -- Check for working C compiler: /usr/bin/cc - skipped
+[0.167s] -- Detecting C compile features
+[0.168s] -- Detecting C compile features - done
+[0.171s] -- Detecting CXX compiler ABI info
+[0.212s] -- Detecting CXX compiler ABI info - done
+[0.220s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[0.220s] -- Detecting CXX compile features
+[0.220s] -- Detecting CXX compile features - done
+[0.222s] -- Found ament_cmake: 0.9.12 (/opt/ros/foxy/share/ament_cmake/cmake)
+[0.241s] -- Found PythonInterp: /usr/bin/python3 (found suitable version "3.8.10", minimum required is "3") 
+[0.241s] -- Using PYTHON_EXECUTABLE: /usr/bin/python3
+[0.384s] -- Override CMake install command with custom implementation using symlinks instead of copying resources
+[0.405s] -- Found rosidl_default_generators: 1.0.1 (/opt/ros/foxy/share/rosidl_default_generators/cmake)
+[0.408s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.413s] -- Found rosidl_adapter: 1.3.1 (/opt/ros/foxy/share/rosidl_adapter/cmake)
+[0.485s] -- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "1.1.1f")  
+[0.511s] -- Found FastRTPS: /opt/ros/foxy/include  
+[0.566s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.583s] -- Found std_msgs: 2.0.5 (/opt/ros/foxy/share/std_msgs/cmake)
+[0.604s] -- Found geometry_msgs: 2.0.5 (/opt/ros/foxy/share/geometry_msgs/cmake)
+[0.641s] -- Found PythonInterp: /usr/bin/python3 (found version "3.8.10") 
+[0.790s] -- Found ament_cmake_ros: 0.9.2 (/opt/ros/foxy/share/ament_cmake_ros/cmake)
+[0.953s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[1.023s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[1.042s] -- Found PythonInterp: /usr/bin/python3 (found suitable version "3.8.10", minimum required is "3.5") 
+[1.043s] -- Found python_cmake_module: 0.8.1 (/opt/ros/foxy/share/python_cmake_module/cmake)
+[1.063s] -- Found PythonLibs: /usr/lib/x86_64-linux-gnu/libpython3.8.so (found suitable version "3.8.10", minimum required is "3.5") 
+[1.063s] -- Using PYTHON_EXECUTABLE: /usr/bin/python3
+[1.063s] -- Using PYTHON_INCLUDE_DIRS: /usr/include/python3.8
+[1.063s] -- Using PYTHON_LIBRARIES: /usr/lib/x86_64-linux-gnu/libpython3.8.so
+[1.079s] -- Found PythonExtra: .so  
+[1.208s] -- Configuring done
+[1.249s] -- Generating done
+[1.251s] -- Build files have been written to: /home/aiv/YongJun_ws/ros2_ws/build/yolov8_msgs
+[1.261s] Invoked command in '/home/aiv/YongJun_ws/ros2_ws/build/yolov8_msgs' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/aiv/YongJun_ws/ros2_ws/install/yolov8_ros:/opt/ros/foxy /home/aiv/.local/bin/cmake /home/aiv/YongJun_ws/ros2_ws/src/yolov8_ros/yolov8_msgs -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/aiv/YongJun_ws/ros2_ws/install/yolov8_msgs
+[1.262s] Invoking command in '/home/aiv/YongJun_ws/ros2_ws/build/yolov8_msgs': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/aiv/YongJun_ws/ros2_ws/install/yolov8_ros:/opt/ros/foxy /home/aiv/.local/bin/cmake --build /home/aiv/YongJun_ws/ros2_ws/build/yolov8_msgs -- -j32 -l32
+[1.293s] [  1%] [34m[1mGenerating C code for ROS interfaces[0m
+[1.296s] [  1%] [34m[1mGenerating C++ code for ROS interfaces[0m
+[2.020s] [  1%] Built target yolov8_msgs__cpp
+[2.024s] [  2%] [34m[1mGenerating C++ type support dispatch for ROS interfaces[0m
+[2.026s] [  2%] [34m[1mGenerating C++ type support for eProsima Fast-RTPS[0m
+[2.026s] [  3%] [34m[1mGenerating C++ introspection for ROS interfaces[0m
+[2.065s] [  4%] [32mBuilding C object CMakeFiles/yolov8_msgs__rosidl_generator_c.dir/rosidl_generator_c/yolov8_msgs/msg/detail/point2_d__functions.c.o[0m
+[2.065s] [  5%] [32mBuilding C object CMakeFiles/yolov8_msgs__rosidl_generator_c.dir/rosidl_generator_c/yolov8_msgs/msg/detail/vector2__functions.c.o[0m
+[2.066s] [  5%] [32mBuilding C object CMakeFiles/yolov8_msgs__rosidl_generator_c.dir/rosidl_generator_c/yolov8_msgs/msg/detail/pose2_d__functions.c.o[0m
+[2.066s] [  6%] [32mBuilding C object CMakeFiles/yolov8_msgs__rosidl_generator_c.dir/rosidl_generator_c/yolov8_msgs/msg/detail/bounding_box2_d__functions.c.o[0m
+[2.066s] [  7%] [32mBuilding C object CMakeFiles/yolov8_msgs__rosidl_generator_c.dir/rosidl_generator_c/yolov8_msgs/msg/detail/bounding_box3_d__functions.c.o[0m
+[2.067s] [  8%] [32mBuilding C object CMakeFiles/yolov8_msgs__rosidl_generator_c.dir/rosidl_generator_c/yolov8_msgs/msg/detail/mask__functions.c.o[0m
+[2.067s] [  9%] [32mBuilding C object CMakeFiles/yolov8_msgs__rosidl_generator_c.dir/rosidl_generator_c/yolov8_msgs/msg/detail/key_point2_d__functions.c.o[0m
+[2.067s] [ 10%] [32mBuilding C object CMakeFiles/yolov8_msgs__rosidl_generator_c.dir/rosidl_generator_c/yolov8_msgs/msg/detail/key_point2_d_array__functions.c.o[0m
+[2.068s] [ 11%] [32mBuilding C object CMakeFiles/yolov8_msgs__rosidl_generator_c.dir/rosidl_generator_c/yolov8_msgs/msg/detail/key_point3_d__functions.c.o[0m
+[2.068s] [ 11%] [32mBuilding C object CMakeFiles/yolov8_msgs__rosidl_generator_c.dir/rosidl_generator_c/yolov8_msgs/msg/detail/key_point3_d_array__functions.c.o[0m
+[2.068s] [ 12%] [32mBuilding C object CMakeFiles/yolov8_msgs__rosidl_generator_c.dir/rosidl_generator_c/yolov8_msgs/msg/detail/detection__functions.c.o[0m
+[2.069s] [ 13%] [32mBuilding C object CMakeFiles/yolov8_msgs__rosidl_generator_c.dir/rosidl_generator_c/yolov8_msgs/msg/detail/detection_array__functions.c.o[0m
+[2.126s] [ 14%] [32m[1mLinking C shared library libyolov8_msgs__rosidl_generator_c.so[0m
+[2.151s] [ 14%] Built target yolov8_msgs__rosidl_generator_c
+[2.155s] [ 15%] [34m[1mGenerating C introspection for ROS interfaces[0m
+[2.157s] [ 16%] [34m[1mGenerating C type support dispatch for ROS interfaces[0m
+[2.930s] [ 17%] [32mBuilding C object CMakeFiles/yolov8_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/yolov8_msgs/msg/detail/point2_d__type_support.c.o[0m
+[2.931s] [ 18%] [32mBuilding C object CMakeFiles/yolov8_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/yolov8_msgs/msg/detail/vector2__type_support.c.o[0m
+[2.932s] [ 19%] [32mBuilding C object CMakeFiles/yolov8_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/yolov8_msgs/msg/detail/pose2_d__type_support.c.o[0m
+[2.932s] [ 19%] [32mBuilding C object CMakeFiles/yolov8_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/yolov8_msgs/msg/detail/bounding_box2_d__type_support.c.o[0m
+[2.932s] [ 20%] [32mBuilding C object CMakeFiles/yolov8_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/yolov8_msgs/msg/detail/bounding_box3_d__type_support.c.o[0m
+[2.933s] [ 21%] [32mBuilding C object CMakeFiles/yolov8_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/yolov8_msgs/msg/detail/key_point2_d__type_support.c.o[0m
+[2.933s] [ 22%] [32mBuilding C object CMakeFiles/yolov8_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/yolov8_msgs/msg/detail/mask__type_support.c.o[0m
+[2.934s] [ 24%] [32mBuilding C object CMakeFiles/yolov8_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/yolov8_msgs/msg/detail/key_point2_d_array__type_support.c.o[0m
+[2.935s] [ 24%] [32mBuilding C object CMakeFiles/yolov8_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/yolov8_msgs/msg/detail/key_point3_d__type_support.c.o[0m
+[2.935s] [ 25%] [32mBuilding C object CMakeFiles/yolov8_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/yolov8_msgs/msg/detail/key_point3_d_array__type_support.c.o[0m
+[2.935s] [ 25%] [32mBuilding C object CMakeFiles/yolov8_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/yolov8_msgs/msg/detail/detection__type_support.c.o[0m
+[2.936s] [ 26%] [32mBuilding C object CMakeFiles/yolov8_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/yolov8_msgs/msg/detail/detection_array__type_support.c.o[0m
+[2.975s] [ 27%] [32m[1mLinking C shared library libyolov8_msgs__rosidl_typesupport_introspection_c.so[0m
+[2.993s] [ 27%] Built target yolov8_msgs__rosidl_typesupport_introspection_c
+[3.011s] [ 28%] [32mBuilding CXX object CMakeFiles/yolov8_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/yolov8_msgs/msg/detail/vector2__type_support.cpp.o[0m
+[3.012s] [ 29%] [32mBuilding CXX object CMakeFiles/yolov8_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/yolov8_msgs/msg/detail/pose2_d__type_support.cpp.o[0m
+[3.012s] [ 29%] [32mBuilding CXX object CMakeFiles/yolov8_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/yolov8_msgs/msg/detail/point2_d__type_support.cpp.o[0m
+[3.012s] [ 30%] [32mBuilding CXX object CMakeFiles/yolov8_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/yolov8_msgs/msg/detail/bounding_box2_d__type_support.cpp.o[0m
+[3.013s] [ 32%] [32mBuilding CXX object CMakeFiles/yolov8_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/yolov8_msgs/msg/detail/mask__type_support.cpp.o[0m
+[3.014s] [ 32%] [32mBuilding CXX object CMakeFiles/yolov8_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/yolov8_msgs/msg/detail/bounding_box3_d__type_support.cpp.o[0m
+[3.014s] [ 32%] [32mBuilding CXX object CMakeFiles/yolov8_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/yolov8_msgs/msg/detail/key_point2_d__type_support.cpp.o[0m
+[3.015s] [ 33%] [32mBuilding CXX object CMakeFiles/yolov8_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/yolov8_msgs/msg/detail/key_point2_d_array__type_support.cpp.o[0m
+[3.015s] [ 34%] [32mBuilding CXX object CMakeFiles/yolov8_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/yolov8_msgs/msg/detail/key_point3_d__type_support.cpp.o[0m
+[3.016s] [ 35%] [32mBuilding CXX object CMakeFiles/yolov8_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/yolov8_msgs/msg/detail/key_point3_d_array__type_support.cpp.o[0m
+[3.017s] [ 36%] [32mBuilding CXX object CMakeFiles/yolov8_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/yolov8_msgs/msg/detail/detection__type_support.cpp.o[0m
+[3.017s] [ 37%] [32mBuilding CXX object CMakeFiles/yolov8_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/yolov8_msgs/msg/detail/detection_array__type_support.cpp.o[0m
+[3.034s] [ 38%] [32mBuilding CXX object CMakeFiles/yolov8_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/yolov8_msgs/msg/detail/dds_fastrtps/point2_d__type_support.cpp.o[0m
+[3.035s] [ 40%] [32mBuilding CXX object CMakeFiles/yolov8_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/yolov8_msgs/msg/detail/dds_fastrtps/vector2__type_support.cpp.o[0m
+[3.035s] [ 41%] [32mBuilding CXX object CMakeFiles/yolov8_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/yolov8_msgs/msg/detail/dds_fastrtps/pose2_d__type_support.cpp.o[0m
+[3.035s] [ 41%] [32mBuilding CXX object CMakeFiles/yolov8_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/yolov8_msgs/msg/detail/dds_fastrtps/bounding_box2_d__type_support.cpp.o[0m
+[3.035s] [ 42%] [32mBuilding CXX object CMakeFiles/yolov8_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/yolov8_msgs/msg/detail/dds_fastrtps/bounding_box3_d__type_support.cpp.o[0m
+[3.035s] [ 42%] [32mBuilding CXX object CMakeFiles/yolov8_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/yolov8_msgs/msg/detail/dds_fastrtps/mask__type_support.cpp.o[0m
+[3.036s] [ 43%] [32mBuilding CXX object CMakeFiles/yolov8_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/yolov8_msgs/msg/detail/dds_fastrtps/key_point2_d__type_support.cpp.o[0m
+[3.036s] [ 45%] [32mBuilding CXX object CMakeFiles/yolov8_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/yolov8_msgs/msg/detail/dds_fastrtps/key_point2_d_array__type_support.cpp.o[0m
+[3.036s] [ 45%] [32mBuilding CXX object CMakeFiles/yolov8_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/yolov8_msgs/msg/detail/dds_fastrtps/key_point3_d__type_support.cpp.o[0m
+[3.036s] [ 46%] [32mBuilding CXX object CMakeFiles/yolov8_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/yolov8_msgs/msg/detail/dds_fastrtps/detection__type_support.cpp.o[0m
+[3.040s] [ 46%] [32mBuilding CXX object CMakeFiles/yolov8_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/yolov8_msgs/msg/detail/dds_fastrtps/detection_array__type_support.cpp.o[0m
+[3.051s] [ 47%] [32mBuilding CXX object CMakeFiles/yolov8_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/yolov8_msgs/msg/detail/dds_fastrtps/key_point3_d_array__type_support.cpp.o[0m
+[3.101s] [ 48%] [32mBuilding CXX object CMakeFiles/yolov8_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/yolov8_msgs/msg/point2_d__type_support.cpp.o[0m
+[3.102s] [ 48%] [32mBuilding CXX object CMakeFiles/yolov8_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/yolov8_msgs/msg/vector2__type_support.cpp.o[0m
+[3.102s] [ 49%] [32mBuilding CXX object CMakeFiles/yolov8_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/yolov8_msgs/msg/pose2_d__type_support.cpp.o[0m
+[3.106s] [ 50%] [32mBuilding CXX object CMakeFiles/yolov8_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/yolov8_msgs/msg/bounding_box2_d__type_support.cpp.o[0m
+[3.118s] [ 51%] [32mBuilding CXX object CMakeFiles/yolov8_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/yolov8_msgs/msg/bounding_box3_d__type_support.cpp.o[0m
+[3.125s] [ 53%] [32mBuilding CXX object CMakeFiles/yolov8_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/yolov8_msgs/msg/mask__type_support.cpp.o[0m
+[3.126s] [ 53%] [32mBuilding CXX object CMakeFiles/yolov8_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/yolov8_msgs/msg/key_point2_d__type_support.cpp.o[0m
+[3.136s] [ 53%] [32mBuilding CXX object CMakeFiles/yolov8_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/yolov8_msgs/msg/key_point2_d_array__type_support.cpp.o[0m
+[3.138s] [ 54%] [32mBuilding CXX object CMakeFiles/yolov8_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/yolov8_msgs/msg/key_point3_d__type_support.cpp.o[0m
+[3.156s] [ 55%] [32mBuilding CXX object CMakeFiles/yolov8_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/yolov8_msgs/msg/key_point3_d_array__type_support.cpp.o[0m
+[3.159s] [ 56%] [32mBuilding CXX object CMakeFiles/yolov8_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/yolov8_msgs/msg/detection__type_support.cpp.o[0m
+[3.179s] [ 57%] [32mBuilding CXX object CMakeFiles/yolov8_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/yolov8_msgs/msg/detection_array__type_support.cpp.o[0m
+[3.218s] [ 58%] [32m[1mLinking CXX shared library libyolov8_msgs__rosidl_typesupport_c.so[0m
+[3.221s] [ 60%] [32mBuilding CXX object CMakeFiles/yolov8_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/yolov8_msgs/msg/vector2__type_support.cpp.o[0m
+[3.221s] [ 60%] [32mBuilding CXX object CMakeFiles/yolov8_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/yolov8_msgs/msg/point2_d__type_support.cpp.o[0m
+[3.227s] [ 61%] [32mBuilding CXX object CMakeFiles/yolov8_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/yolov8_msgs/msg/pose2_d__type_support.cpp.o[0m
+[3.232s] [ 62%] [32mBuilding CXX object CMakeFiles/yolov8_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/yolov8_msgs/msg/bounding_box2_d__type_support.cpp.o[0m
+[3.239s] [ 62%] [32mBuilding CXX object CMakeFiles/yolov8_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/yolov8_msgs/msg/bounding_box3_d__type_support.cpp.o[0m
+[3.258s] [ 63%] [32mBuilding CXX object CMakeFiles/yolov8_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/yolov8_msgs/msg/mask__type_support.cpp.o[0m
+[3.284s] [ 64%] [32mBuilding CXX object CMakeFiles/yolov8_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/yolov8_msgs/msg/key_point2_d__type_support.cpp.o[0m
+[3.305s] [ 64%] Built target yolov8_msgs__rosidl_typesupport_c
+[3.320s] [ 65%] [32mBuilding CXX object CMakeFiles/yolov8_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/yolov8_msgs/msg/key_point2_d_array__type_support.cpp.o[0m
+[3.356s] [ 66%] [32mBuilding CXX object CMakeFiles/yolov8_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/yolov8_msgs/msg/key_point3_d__type_support.cpp.o[0m
+[3.366s] [ 67%] [32mBuilding CXX object CMakeFiles/yolov8_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/yolov8_msgs/msg/key_point3_d_array__type_support.cpp.o[0m
+[3.431s] [ 67%] [32mBuilding CXX object CMakeFiles/yolov8_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/yolov8_msgs/msg/detection__type_support.cpp.o[0m
+[3.440s] [ 68%] [32mBuilding CXX object CMakeFiles/yolov8_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/yolov8_msgs/msg/detection_array__type_support.cpp.o[0m
+[3.560s] [ 69%] [32m[1mLinking CXX shared library libyolov8_msgs__rosidl_typesupport_introspection_cpp.so[0m
+[3.664s] [ 69%] Built target yolov8_msgs__rosidl_typesupport_introspection_cpp
+[3.692s] [ 70%] [32m[1mLinking CXX shared library libyolov8_msgs__rosidl_typesupport_fastrtps_cpp.so[0m
+[3.768s] [ 70%] Built target yolov8_msgs__rosidl_typesupport_fastrtps_cpp
+[3.772s] [ 71%] [34m[1mGenerating C type support for eProsima Fast-RTPS[0m
+[3.826s] [ 72%] [32m[1mLinking CXX shared library libyolov8_msgs__rosidl_typesupport_cpp.so[0m
+[3.849s] [ 72%] Built target yolov8_msgs__rosidl_typesupport_cpp
+[4.386s] [ 73%] [32mBuilding CXX object CMakeFiles/yolov8_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/yolov8_msgs/msg/detail/point2_d__type_support_c.cpp.o[0m
+[4.386s] [ 74%] [32mBuilding CXX object CMakeFiles/yolov8_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/yolov8_msgs/msg/detail/vector2__type_support_c.cpp.o[0m
+[4.386s] [ 74%] [32mBuilding CXX object CMakeFiles/yolov8_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/yolov8_msgs/msg/detail/pose2_d__type_support_c.cpp.o[0m
+[4.387s] [ 75%] [32mBuilding CXX object CMakeFiles/yolov8_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/yolov8_msgs/msg/detail/bounding_box2_d__type_support_c.cpp.o[0m
+[4.387s] [ 76%] [32mBuilding CXX object CMakeFiles/yolov8_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/yolov8_msgs/msg/detail/key_point2_d__type_support_c.cpp.o[0m
+[4.388s] [ 77%] [32mBuilding CXX object CMakeFiles/yolov8_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/yolov8_msgs/msg/detail/bounding_box3_d__type_support_c.cpp.o[0m
+[4.388s] [ 78%] [32mBuilding CXX object CMakeFiles/yolov8_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/yolov8_msgs/msg/detail/key_point2_d_array__type_support_c.cpp.o[0m
+[4.388s] [ 79%] [32mBuilding CXX object CMakeFiles/yolov8_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/yolov8_msgs/msg/detail/mask__type_support_c.cpp.o[0m
+[4.390s] [ 79%] [32mBuilding CXX object CMakeFiles/yolov8_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/yolov8_msgs/msg/detail/key_point3_d__type_support_c.cpp.o[0m
+[4.393s] [ 80%] [32mBuilding CXX object CMakeFiles/yolov8_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/yolov8_msgs/msg/detail/key_point3_d_array__type_support_c.cpp.o[0m
+[4.394s] [ 81%] [32mBuilding CXX object CMakeFiles/yolov8_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/yolov8_msgs/msg/detail/detection__type_support_c.cpp.o[0m
+[4.394s] [ 82%] [32mBuilding CXX object CMakeFiles/yolov8_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/yolov8_msgs/msg/detail/detection_array__type_support_c.cpp.o[0m
+[4.815s] [ 83%] [32m[1mLinking CXX shared library libyolov8_msgs__rosidl_typesupport_fastrtps_c.so[0m
+[4.870s] [ 83%] Built target yolov8_msgs__rosidl_typesupport_fastrtps_c
+[4.877s] [ 83%] Built target yolov8_msgs
+[4.884s] [ 84%] [34m[1mGenerating Python code for ROS interfaces[0m
+[6.098s] [ 84%] Built target yolov8_msgs__py
+[6.105s] [ 85%] [32mBuilding C object CMakeFiles/yolov8_msgs__python.dir/rosidl_generator_py/yolov8_msgs/msg/_point2_d_s.c.o[0m
+[6.105s] [ 86%] [32mBuilding C object CMakeFiles/yolov8_msgs__python.dir/rosidl_generator_py/yolov8_msgs/msg/_vector2_s.c.o[0m
+[6.106s] [ 87%] [32mBuilding C object CMakeFiles/yolov8_msgs__python.dir/rosidl_generator_py/yolov8_msgs/msg/_pose2_d_s.c.o[0m
+[6.106s] [ 88%] [32mBuilding C object CMakeFiles/yolov8_msgs__python.dir/rosidl_generator_py/yolov8_msgs/msg/_bounding_box2_d_s.c.o[0m
+[6.106s] [ 88%] [32mBuilding C object CMakeFiles/yolov8_msgs__python.dir/rosidl_generator_py/yolov8_msgs/msg/_bounding_box3_d_s.c.o[0m
+[6.107s] [ 89%] [32mBuilding C object CMakeFiles/yolov8_msgs__python.dir/rosidl_generator_py/yolov8_msgs/msg/_mask_s.c.o[0m
+[6.107s] [ 90%] [32mBuilding C object CMakeFiles/yolov8_msgs__python.dir/rosidl_generator_py/yolov8_msgs/msg/_key_point2_d_s.c.o[0m
+[6.108s] [ 91%] [32mBuilding C object CMakeFiles/yolov8_msgs__python.dir/rosidl_generator_py/yolov8_msgs/msg/_key_point2_d_array_s.c.o[0m
+[6.112s] [ 92%] [32mBuilding C object CMakeFiles/yolov8_msgs__python.dir/rosidl_generator_py/yolov8_msgs/msg/_key_point3_d_s.c.o[0m
+[6.112s] [ 93%] [32mBuilding C object CMakeFiles/yolov8_msgs__python.dir/rosidl_generator_py/yolov8_msgs/msg/_key_point3_d_array_s.c.o[0m
+[6.113s] [ 93%] [32mBuilding C object CMakeFiles/yolov8_msgs__python.dir/rosidl_generator_py/yolov8_msgs/msg/_detection_s.c.o[0m
+[6.113s] [ 94%] [32mBuilding C object CMakeFiles/yolov8_msgs__python.dir/rosidl_generator_py/yolov8_msgs/msg/_detection_array_s.c.o[0m
+[6.207s] [ 95%] [32m[1mLinking C shared library rosidl_generator_py/yolov8_msgs/libyolov8_msgs__python.so[0m
+[6.230s] [ 95%] Built target yolov8_msgs__python
+[6.236s] [ 96%] [32mBuilding C object CMakeFiles/yolov8_msgs__rosidl_typesupport_introspection_c__pyext.dir/rosidl_generator_py/yolov8_msgs/_yolov8_msgs_s.ep.rosidl_typesupport_introspection_c.c.o[0m
+[6.236s] [ 97%] [32mBuilding C object CMakeFiles/yolov8_msgs__rosidl_typesupport_fastrtps_c__pyext.dir/rosidl_generator_py/yolov8_msgs/_yolov8_msgs_s.ep.rosidl_typesupport_fastrtps_c.c.o[0m
+[6.236s] [ 97%] [32mBuilding C object CMakeFiles/yolov8_msgs__rosidl_typesupport_c__pyext.dir/rosidl_generator_py/yolov8_msgs/_yolov8_msgs_s.ep.rosidl_typesupport_c.c.o[0m
+[6.304s] [ 98%] [32m[1mLinking C shared library rosidl_generator_py/yolov8_msgs/yolov8_msgs_s__rosidl_typesupport_c.cpython-38-x86_64-linux-gnu.so[0m
+[6.304s] [ 99%] [32m[1mLinking CXX shared library rosidl_generator_py/yolov8_msgs/yolov8_msgs_s__rosidl_typesupport_fastrtps_c.cpython-38-x86_64-linux-gnu.so[0m
+[6.304s] [100%] [32m[1mLinking C shared library rosidl_generator_py/yolov8_msgs/yolov8_msgs_s__rosidl_typesupport_introspection_c.cpython-38-x86_64-linux-gnu.so[0m
+[6.322s] [100%] Built target yolov8_msgs__rosidl_typesupport_c__pyext
+[6.322s] [100%] Built target yolov8_msgs__rosidl_typesupport_introspection_c__pyext
+[6.342s] [100%] Built target yolov8_msgs__rosidl_typesupport_fastrtps_c__pyext
+[6.350s] Invoked command in '/home/aiv/YongJun_ws/ros2_ws/build/yolov8_msgs' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/aiv/YongJun_ws/ros2_ws/install/yolov8_ros:/opt/ros/foxy /home/aiv/.local/bin/cmake --build /home/aiv/YongJun_ws/ros2_ws/build/yolov8_msgs -- -j32 -l32
+[6.507s] Invoking command in '/home/aiv/YongJun_ws/ros2_ws/build/yolov8_msgs': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/aiv/YongJun_ws/ros2_ws/install/yolov8_ros:/opt/ros/foxy /home/aiv/.local/bin/cmake --install /home/aiv/YongJun_ws/ros2_ws/build/yolov8_msgs
+[6.526s] -- Install configuration: ""
+[6.526s] -- Execute custom install script
+[6.526s] -- Symlinking: /home/aiv/YongJun_ws/ros2_ws/install/yolov8_msgs/share/ament_index/resource_index/rosidl_interfaces/yolov8_msgs
+[6.529s] -- Symlinking: /home/aiv/YongJun_ws/ros2_ws/install/yolov8_msgs/include/yolov8_msgs/msg/bounding_box2_d.h
+[6.531s] -- Symlinking: /home/aiv/YongJun_ws/ros2_ws/install/yolov8_msgs/include/yolov8_msgs/msg/bounding_box3_d.h
+[6.533s] -- Symlinking: /home/aiv/YongJun_ws/ros2_ws/install/yolov8_msgs/include/yolov8_msgs/msg/detail/bounding_box2_d__functions.h
+[6.534s] -- Symlinking: /home/aiv/YongJun_ws/ros2_ws/install/yolov8_msgs/include/yolov8_msgs/msg/detail/bounding_box2_d__struct.h
+[6.536s] -- Symlinking: /home/aiv/YongJun_ws/ros2_ws/install/yolov8_msgs/include/yolov8_msgs/msg/detail/bounding_box2_d__type_support.h
+[6.537s] -- Symlinking: /home/aiv/YongJun_ws/ros2_ws/install/yolov8_msgs/include/yolov8_msgs/msg/detail/bounding_box3_d__functions.h
+[6.539s] -- Symlinking: /home/aiv/YongJun_ws/ros2_ws/install/yolov8_msgs/include/yolov8_msgs/msg/detail/bounding_box3_d__struct.h
+[6.541s] -- Symlinking: /home/aiv/YongJun_ws/ros2_ws/install/yolov8_msgs/include/yolov8_msgs/msg/detail/bounding_box3_d__type_support.h
+[6.542s] -- Symlinking: /home/aiv/YongJun_ws/ros2_ws/install/yolov8_msgs/include/yolov8_msgs/msg/detail/detection__functions.h
+[6.544s] -- Symlinking: /home/aiv/YongJun_ws/ros2_ws/install/yolov8_msgs/include/yolov8_msgs/msg/detail/detection__struct.h
+[6.545s] -- Symlinking: /home/aiv/YongJun_ws/ros2_ws/install/yolov8_msgs/include/yolov8_msgs/msg/detail/detection__type_support.h
+[6.547s] -- Symlinking: /home/aiv/YongJun_ws/ros2_ws/install/yolov8_msgs/include/yolov8_msgs/msg/detail/detection_array__functions.h
+[6.549s] -- Symlinking: /home/aiv/YongJun_ws/ros2_ws/install/yolov8_msgs/include/yolov8_msgs/msg/detail/detection_array__struct.h
+[6.550s] -- Symlinking: /home/aiv/YongJun_ws/ros2_ws/install/yolov8_msgs/include/yolov8_msgs/msg/detail/detection_array__type_support.h
+[6.552s] -- Symlinking: /home/aiv/YongJun_ws/ros2_ws/install/yolov8_msgs/include/yolov8_msgs/msg/detail/key_point2_d__functions.h
+[6.553s] -- Symlinking: /home/aiv/YongJun_ws/ros2_ws/install/yolov8_msgs/include/yolov8_msgs/msg/detail/key_point2_d__struct.h
+[6.555s] -- Symlinking: /home/aiv/YongJun_ws/ros2_ws/install/yolov8_msgs/include/yolov8_msgs/msg/detail/key_point2_d__type_support.h
+[6.557s] -- Symlinking: /home/aiv/YongJun_ws/ros2_ws/install/yolov8_msgs/include/yolov8_msgs/msg/detail/key_point2_d_array__functions.h
+[6.558s] -- Symlinking: /home/aiv/YongJun_ws/ros2_ws/install/yolov8_msgs/include/yolov8_msgs/msg/detail/key_point2_d_array__struct.h
+[6.560s] -- Symlinking: /home/aiv/YongJun_ws/ros2_ws/install/yolov8_msgs/include/yolov8_msgs/msg/detail/key_point2_d_array__type_support.h
+[6.562s] -- Symlinking: /home/aiv/YongJun_ws/ros2_ws/install/yolov8_msgs/include/yolov8_msgs/msg/detail/key_point3_d__functions.h
+[6.563s] -- Symlinking: /home/aiv/YongJun_ws/ros2_ws/install/yolov8_msgs/include/yolov8_msgs/msg/detail/key_point3_d__struct.h
+[6.565s] -- Symlinking: /home/aiv/YongJun_ws/ros2_ws/install/yolov8_msgs/include/yolov8_msgs/msg/detail/key_point3_d__type_support.h
+[6.566s] -- Symlinking: /home/aiv/YongJun_ws/ros2_ws/install/yolov8_msgs/include/yolov8_msgs/msg/detail/key_point3_d_array__functions.h
+[6.568s] -- Symlinking: /home/aiv/YongJun_ws/ros2_ws/install/yolov8_msgs/include/yolov8_msgs/msg/detail/key_point3_d_array__struct.h
+[6.570s] -- Symlinking: /home/aiv/YongJun_ws/ros2_ws/install/yolov8_msgs/include/yolov8_msgs/msg/detail/key_point3_d_array__type_support.h
+[6.571s] -- Symlinking: /home/aiv/YongJun_ws/ros2_ws/install/yolov8_msgs/include/yolov8_msgs/msg/detail/mask__functions.h
+[6.572s] -- Symlinking: /home/aiv/YongJun_ws/ros2_ws/install/yolov8_msgs/include/yolov8_msgs/msg/detail/mask__struct.h
+[6.574s] -- Symlinking: /home/aiv/YongJun_ws/ros2_ws/install/yolov8_msgs/include/yolov8_msgs/msg/detail/mask__type_support.h
+[6.575s] -- Symlinking: /home/aiv/YongJun_ws/ros2_ws/install/yolov8_msgs/include/yolov8_msgs/msg/detail/point2_d__functions.h
+[6.577s] -- Symlinking: /home/aiv/YongJun_ws/ros2_ws/install/yolov8_msgs/include/yolov8_msgs/msg/detail/point2_d__struct.h
+[6.578s] -- Symlinking: /home/aiv/YongJun_ws/ros2_ws/install/yolov8_msgs/include/yolov8_msgs/msg/detail/point2_d__type_support.h
+[6.580s] -- Symlinking: /home/aiv/YongJun_ws/ros2_ws/install/yolov8_msgs/include/yolov8_msgs/msg/detail/pose2_d__functions.h
+[6.581s] -- Symlinking: /home/aiv/YongJun_ws/ros2_ws/install/yolov8_msgs/include/yolov8_msgs/msg/detail/pose2_d__struct.h
+[6.583s] -- Symlinking: /home/aiv/YongJun_ws/ros2_ws/install/yolov8_msgs/include/yolov8_msgs/msg/detail/pose2_d__type_support.h
+[6.584s] -- Symlinking: /home/aiv/YongJun_ws/ros2_ws/install/yolov8_msgs/include/yolov8_msgs/msg/detail/vector2__functions.h
+[6.586s] -- Symlinking: /home/aiv/YongJun_ws/ros2_ws/install/yolov8_msgs/include/yolov8_msgs/msg/detail/vector2__struct.h
+[6.587s] -- Symlinking: /home/aiv/YongJun_ws/ros2_ws/install/yolov8_msgs/include/yolov8_msgs/msg/detail/vector2__type_support.h
+[6.589s] -- Symlinking: /home/aiv/YongJun_ws/ros2_ws/install/yolov8_msgs/include/yolov8_msgs/msg/detection.h
+[6.590s] -- Symlinking: /home/aiv/YongJun_ws/ros2_ws/install/yolov8_msgs/include/yolov8_msgs/msg/detection_array.h
+[6.592s] -- Symlinking: /home/aiv/YongJun_ws/ros2_ws/install/yolov8_msgs/include/yolov8_msgs/msg/key_point2_d.h
+[6.593s] -- Symlinking: /home/aiv/YongJun_ws/ros2_ws/install/yolov8_msgs/include/yolov8_msgs/msg/key_point2_d_array.h
+[6.595s] -- Symlinking: /home/aiv/YongJun_ws/ros2_ws/install/yolov8_msgs/include/yolov8_msgs/msg/key_point3_d.h
+[6.597s] -- Symlinking: /home/aiv/YongJun_ws/ros2_ws/install/yolov8_msgs/include/yolov8_msgs/msg/key_point3_d_array.h
+[6.599s] -- Symlinking: /home/aiv/YongJun_ws/ros2_ws/install/yolov8_msgs/include/yolov8_msgs/msg/mask.h
+[6.600s] -- Symlinking: /home/aiv/YongJun_ws/ros2_ws/install/yolov8_msgs/include/yolov8_msgs/msg/point2_d.h
+[6.602s] -- Symlinking: /home/aiv/YongJun_ws/ros2_ws/install/yolov8_msgs/include/yolov8_msgs/msg/pose2_d.h
+[6.603s] -- Symlinking: /home/aiv/YongJun_ws/ros2_ws/install/yolov8_msgs/include/yolov8_msgs/msg/rosidl_generator_c__visibility_control.h
+[6.605s] -- Symlinking: /home/aiv/YongJun_ws/ros2_ws/install/yolov8_msgs/include/yolov8_msgs/msg/vector2.h
+[6.607s] -- Symlinking: /home/aiv/YongJun_ws/ros2_ws/install/yolov8_msgs/share/yolov8_msgs/environment/library_path.sh
+[6.608s] -- Symlinking: /home/aiv/YongJun_ws/ros2_ws/install/yolov8_msgs/share/yolov8_msgs/environment/library_path.dsv
+[6.610s] -- Symlinking: /home/aiv/YongJun_ws/ros2_ws/install/yolov8_msgs/include/yolov8_msgs/msg/detail/bounding_box2_d__rosidl_typesupport_fastrtps_c.h
+[6.612s] -- Symlinking: /home/aiv/YongJun_ws/ros2_ws/install/yolov8_msgs/include/yolov8_msgs/msg/detail/bounding_box3_d__rosidl_typesupport_fastrtps_c.h
+[6.613s] -- Symlinking: /home/aiv/YongJun_ws/ros2_ws/install/yolov8_msgs/include/yolov8_msgs/msg/detail/detection__rosidl_typesupport_fastrtps_c.h
+[6.615s] -- Symlinking: /home/aiv/YongJun_ws/ros2_ws/install/yolov8_msgs/include/yolov8_msgs/msg/detail/detection_array__rosidl_typesupport_fastrtps_c.h
+[6.617s] -- Symlinking: /home/aiv/YongJun_ws/ros2_ws/install/yolov8_msgs/include/yolov8_msgs/msg/detail/key_point2_d__rosidl_typesupport_fastrtps_c.h
+[6.618s] -- Symlinking: /home/aiv/YongJun_ws/ros2_ws/install/yolov8_msgs/include/yolov8_msgs/msg/detail/key_point2_d_array__rosidl_typesupport_fastrtps_c.h
+[6.620s] -- Symlinking: /home/aiv/YongJun_ws/ros2_ws/install/yolov8_msgs/include/yolov8_msgs/msg/detail/key_point3_d__rosidl_typesupport_fastrtps_c.h
+[6.621s] -- Symlinking: /home/aiv/YongJun_ws/ros2_ws/install/yolov8_msgs/include/yolov8_msgs/msg/detail/key_point3_d_array__rosidl_typesupport_fastrtps_c.h
+[6.623s] -- Symlinking: /home/aiv/YongJun_ws/ros2_ws/install/yolov8_msgs/include/yolov8_msgs/msg/detail/mask__rosidl_typesupport_fastrtps_c.h
+[6.625s] -- Symlinking: /home/aiv/YongJun_ws/ros2_ws/install/yolov8_msgs/include/yolov8_msgs/msg/detail/point2_d__rosidl_typesupport_fastrtps_c.h
+[6.626s] -- Symlinking: /home/aiv/YongJun_ws/ros2_ws/install/yolov8_msgs/include/yolov8_msgs/msg/detail/pose2_d__rosidl_typesupport_fastrtps_c.h
+[6.628s] -- Symlinking: /home/aiv/YongJun_ws/ros2_ws/install/yolov8_msgs/include/yolov8_msgs/msg/detail/vector2__rosidl_typesupport_fastrtps_c.h
+[6.630s] -- Symlinking: /home/aiv/YongJun_ws/ros2_ws/install/yolov8_msgs/include/yolov8_msgs/msg/rosidl_typesupport_fastrtps_c__visibility_control.h
+[6.631s] -- Symlinking: /home/aiv/YongJun_ws/ros2_ws/install/yolov8_msgs/lib/libyolov8_msgs__rosidl_typesupport_fastrtps_c.so
+[6.633s] -- Symlinking: /home/aiv/YongJun_ws/ros2_ws/install/yolov8_msgs/include/yolov8_msgs/msg/detail/bounding_box2_d__rosidl_typesupport_fastrtps_cpp.hpp
+[6.635s] -- Symlinking: /home/aiv/YongJun_ws/ros2_ws/install/yolov8_msgs/include/yolov8_msgs/msg/detail/bounding_box3_d__rosidl_typesupport_fastrtps_cpp.hpp
+[6.637s] -- Symlinking: /home/aiv/YongJun_ws/ros2_ws/install/yolov8_msgs/include/yolov8_msgs/msg/detail/detection__rosidl_typesupport_fastrtps_cpp.hpp
+[6.638s] -- Symlinking: /home/aiv/YongJun_ws/ros2_ws/install/yolov8_msgs/include/yolov8_msgs/msg/detail/detection_array__rosidl_typesupport_fastrtps_cpp.hpp
+[6.640s] -- Symlinking: /home/aiv/YongJun_ws/ros2_ws/install/yolov8_msgs/include/yolov8_msgs/msg/detail/key_point2_d__rosidl_typesupport_fastrtps_cpp.hpp
+[6.642s] -- Symlinking: /home/aiv/YongJun_ws/ros2_ws/install/yolov8_msgs/include/yolov8_msgs/msg/detail/key_point2_d_array__rosidl_typesupport_fastrtps_cpp.hpp
+[6.643s] -- Symlinking: /home/aiv/YongJun_ws/ros2_ws/install/yolov8_msgs/include/yolov8_msgs/msg/detail/key_point3_d__rosidl_typesupport_fastrtps_cpp.hpp
+[6.645s] -- Symlinking: /home/aiv/YongJun_ws/ros2_ws/install/yolov8_msgs/include/yolov8_msgs/msg/detail/key_point3_d_array__rosidl_typesupport_fastrtps_cpp.hpp
+[6.646s] -- Symlinking: /home/aiv/YongJun_ws/ros2_ws/install/yolov8_msgs/include/yolov8_msgs/msg/detail/mask__rosidl_typesupport_fastrtps_cpp.hpp
+[6.648s] -- Symlinking: /home/aiv/YongJun_ws/ros2_ws/install/yolov8_msgs/include/yolov8_msgs/msg/detail/point2_d__rosidl_typesupport_fastrtps_cpp.hpp
+[6.649s] -- Symlinking: /home/aiv/YongJun_ws/ros2_ws/install/yolov8_msgs/include/yolov8_msgs/msg/detail/pose2_d__rosidl_typesupport_fastrtps_cpp.hpp
+[6.651s] -- Symlinking: /home/aiv/YongJun_ws/ros2_ws/install/yolov8_msgs/include/yolov8_msgs/msg/detail/vector2__rosidl_typesupport_fastrtps_cpp.hpp
+[6.653s] -- Symlinking: /home/aiv/YongJun_ws/ros2_ws/install/yolov8_msgs/include/yolov8_msgs/msg/rosidl_typesupport_fastrtps_cpp__visibility_control.h
+[6.654s] -- Symlinking: /home/aiv/YongJun_ws/ros2_ws/install/yolov8_msgs/lib/libyolov8_msgs__rosidl_typesupport_fastrtps_cpp.so
+[6.656s] -- Symlinking: /home/aiv/YongJun_ws/ros2_ws/install/yolov8_msgs/include/yolov8_msgs/msg/detail/bounding_box2_d__rosidl_typesupport_introspection_c.h
+[6.658s] -- Symlinking: /home/aiv/YongJun_ws/ros2_ws/install/yolov8_msgs/include/yolov8_msgs/msg/detail/bounding_box3_d__rosidl_typesupport_introspection_c.h
+[6.659s] -- Symlinking: /home/aiv/YongJun_ws/ros2_ws/install/yolov8_msgs/include/yolov8_msgs/msg/detail/detection__rosidl_typesupport_introspection_c.h
+[6.661s] -- Symlinking: /home/aiv/YongJun_ws/ros2_ws/install/yolov8_msgs/include/yolov8_msgs/msg/detail/detection_array__rosidl_typesupport_introspection_c.h
+[6.663s] -- Symlinking: /home/aiv/YongJun_ws/ros2_ws/install/yolov8_msgs/include/yolov8_msgs/msg/detail/key_point2_d__rosidl_typesupport_introspection_c.h
+[6.664s] -- Symlinking: /home/aiv/YongJun_ws/ros2_ws/install/yolov8_msgs/include/yolov8_msgs/msg/detail/key_point2_d_array__rosidl_typesupport_introspection_c.h
+[6.666s] -- Symlinking: /home/aiv/YongJun_ws/ros2_ws/install/yolov8_msgs/include/yolov8_msgs/msg/detail/key_point3_d__rosidl_typesupport_introspection_c.h
+[6.667s] -- Symlinking: /home/aiv/YongJun_ws/ros2_ws/install/yolov8_msgs/include/yolov8_msgs/msg/detail/key_point3_d_array__rosidl_typesupport_introspection_c.h
+[6.669s] -- Symlinking: /home/aiv/YongJun_ws/ros2_ws/install/yolov8_msgs/include/yolov8_msgs/msg/detail/mask__rosidl_typesupport_introspection_c.h
+[6.671s] -- Symlinking: /home/aiv/YongJun_ws/ros2_ws/install/yolov8_msgs/include/yolov8_msgs/msg/detail/point2_d__rosidl_typesupport_introspection_c.h
+[6.672s] -- Symlinking: /home/aiv/YongJun_ws/ros2_ws/install/yolov8_msgs/include/yolov8_msgs/msg/detail/pose2_d__rosidl_typesupport_introspection_c.h
+[6.674s] -- Symlinking: /home/aiv/YongJun_ws/ros2_ws/install/yolov8_msgs/include/yolov8_msgs/msg/detail/vector2__rosidl_typesupport_introspection_c.h
+[6.676s] -- Symlinking: /home/aiv/YongJun_ws/ros2_ws/install/yolov8_msgs/include/yolov8_msgs/msg/rosidl_typesupport_introspection_c__visibility_control.h
+[6.678s] -- Symlinking: /home/aiv/YongJun_ws/ros2_ws/install/yolov8_msgs/include/yolov8_msgs/msg/bounding_box2_d.hpp
+[6.680s] -- Symlinking: /home/aiv/YongJun_ws/ros2_ws/install/yolov8_msgs/include/yolov8_msgs/msg/bounding_box3_d.hpp
+[6.681s] -- Symlinking: /home/aiv/YongJun_ws/ros2_ws/install/yolov8_msgs/include/yolov8_msgs/msg/detail/bounding_box2_d__builder.hpp
+[6.683s] -- Symlinking: /home/aiv/YongJun_ws/ros2_ws/install/yolov8_msgs/include/yolov8_msgs/msg/detail/bounding_box2_d__struct.hpp
+[6.684s] -- Symlinking: /home/aiv/YongJun_ws/ros2_ws/install/yolov8_msgs/include/yolov8_msgs/msg/detail/bounding_box2_d__traits.hpp
+[6.686s] -- Symlinking: /home/aiv/YongJun_ws/ros2_ws/install/yolov8_msgs/include/yolov8_msgs/msg/detail/bounding_box2_d__type_support.hpp
+[6.688s] -- Symlinking: /home/aiv/YongJun_ws/ros2_ws/install/yolov8_msgs/include/yolov8_msgs/msg/detail/bounding_box3_d__builder.hpp
+[6.689s] -- Symlinking: /home/aiv/YongJun_ws/ros2_ws/install/yolov8_msgs/include/yolov8_msgs/msg/detail/bounding_box3_d__struct.hpp
+[6.691s] -- Symlinking: /home/aiv/YongJun_ws/ros2_ws/install/yolov8_msgs/include/yolov8_msgs/msg/detail/bounding_box3_d__traits.hpp
+[6.693s] -- Symlinking: /home/aiv/YongJun_ws/ros2_ws/install/yolov8_msgs/include/yolov8_msgs/msg/detail/bounding_box3_d__type_support.hpp
+[6.695s] -- Symlinking: /home/aiv/YongJun_ws/ros2_ws/install/yolov8_msgs/include/yolov8_msgs/msg/detail/detection__builder.hpp
+[6.696s] -- Symlinking: /home/aiv/YongJun_ws/ros2_ws/install/yolov8_msgs/include/yolov8_msgs/msg/detail/detection__struct.hpp
+[6.698s] -- Symlinking: /home/aiv/YongJun_ws/ros2_ws/install/yolov8_msgs/include/yolov8_msgs/msg/detail/detection__traits.hpp
+[6.700s] -- Symlinking: /home/aiv/YongJun_ws/ros2_ws/install/yolov8_msgs/include/yolov8_msgs/msg/detail/detection__type_support.hpp
+[6.702s] -- Symlinking: /home/aiv/YongJun_ws/ros2_ws/install/yolov8_msgs/include/yolov8_msgs/msg/detail/detection_array__builder.hpp
+[6.703s] -- Symlinking: /home/aiv/YongJun_ws/ros2_ws/install/yolov8_msgs/include/yolov8_msgs/msg/detail/detection_array__struct.hpp
+[6.705s] -- Symlinking: /home/aiv/YongJun_ws/ros2_ws/install/yolov8_msgs/include/yolov8_msgs/msg/detail/detection_array__traits.hpp
+[6.706s] -- Symlinking: /home/aiv/YongJun_ws/ros2_ws/install/yolov8_msgs/include/yolov8_msgs/msg/detail/detection_array__type_support.hpp
+[6.708s] -- Symlinking: /home/aiv/YongJun_ws/ros2_ws/install/yolov8_msgs/include/yolov8_msgs/msg/detail/key_point2_d__builder.hpp
+[6.710s] -- Symlinking: /home/aiv/YongJun_ws/ros2_ws/install/yolov8_msgs/include/yolov8_msgs/msg/detail/key_point2_d__struct.hpp
+[6.711s] -- Symlinking: /home/aiv/YongJun_ws/ros2_ws/install/yolov8_msgs/include/yolov8_msgs/msg/detail/key_point2_d__traits.hpp
+[6.713s] -- Symlinking: /home/aiv/YongJun_ws/ros2_ws/install/yolov8_msgs/include/yolov8_msgs/msg/detail/key_point2_d__type_support.hpp
+[6.714s] -- Symlinking: /home/aiv/YongJun_ws/ros2_ws/install/yolov8_msgs/include/yolov8_msgs/msg/detail/key_point2_d_array__builder.hpp
+[6.716s] -- Symlinking: /home/aiv/YongJun_ws/ros2_ws/install/yolov8_msgs/include/yolov8_msgs/msg/detail/key_point2_d_array__struct.hpp
+[6.718s] -- Symlinking: /home/aiv/YongJun_ws/ros2_ws/install/yolov8_msgs/include/yolov8_msgs/msg/detail/key_point2_d_array__traits.hpp
+[6.719s] -- Symlinking: /home/aiv/YongJun_ws/ros2_ws/install/yolov8_msgs/include/yolov8_msgs/msg/detail/key_point2_d_array__type_support.hpp
+[6.721s] -- Symlinking: /home/aiv/YongJun_ws/ros2_ws/install/yolov8_msgs/include/yolov8_msgs/msg/detail/key_point3_d__builder.hpp
+[6.722s] -- Symlinking: /home/aiv/YongJun_ws/ros2_ws/install/yolov8_msgs/include/yolov8_msgs/msg/detail/key_point3_d__struct.hpp
+[6.724s] -- Symlinking: /home/aiv/YongJun_ws/ros2_ws/install/yolov8_msgs/include/yolov8_msgs/msg/detail/key_point3_d__traits.hpp
+[6.726s] -- Symlinking: /home/aiv/YongJun_ws/ros2_ws/install/yolov8_msgs/include/yolov8_msgs/msg/detail/key_point3_d__type_support.hpp
+[6.727s] -- Symlinking: /home/aiv/YongJun_ws/ros2_ws/install/yolov8_msgs/include/yolov8_msgs/msg/detail/key_point3_d_array__builder.hpp
+[6.729s] -- Symlinking: /home/aiv/YongJun_ws/ros2_ws/install/yolov8_msgs/include/yolov8_msgs/msg/detail/key_point3_d_array__struct.hpp
+[6.731s] -- Symlinking: /home/aiv/YongJun_ws/ros2_ws/install/yolov8_msgs/include/yolov8_msgs/msg/detail/key_point3_d_array__traits.hpp
+[6.733s] -- Symlinking: /home/aiv/YongJun_ws/ros2_ws/install/yolov8_msgs/include/yolov8_msgs/msg/detail/key_point3_d_array__type_support.hpp
+[6.734s] -- Symlinking: /home/aiv/YongJun_ws/ros2_ws/install/yolov8_msgs/include/yolov8_msgs/msg/detail/mask__builder.hpp
+[6.736s] -- Symlinking: /home/aiv/YongJun_ws/ros2_ws/install/yolov8_msgs/include/yolov8_msgs/msg/detail/mask__struct.hpp
+[6.737s] -- Symlinking: /home/aiv/YongJun_ws/ros2_ws/install/yolov8_msgs/include/yolov8_msgs/msg/detail/mask__traits.hpp
+[6.739s] -- Symlinking: /home/aiv/YongJun_ws/ros2_ws/install/yolov8_msgs/include/yolov8_msgs/msg/detail/mask__type_support.hpp
+[6.740s] -- Symlinking: /home/aiv/YongJun_ws/ros2_ws/install/yolov8_msgs/include/yolov8_msgs/msg/detail/point2_d__builder.hpp
+[6.742s] -- Symlinking: /home/aiv/YongJun_ws/ros2_ws/install/yolov8_msgs/include/yolov8_msgs/msg/detail/point2_d__struct.hpp
+[6.744s] -- Symlinking: /home/aiv/YongJun_ws/ros2_ws/install/yolov8_msgs/include/yolov8_msgs/msg/detail/point2_d__traits.hpp
+[6.745s] -- Symlinking: /home/aiv/YongJun_ws/ros2_ws/install/yolov8_msgs/include/yolov8_msgs/msg/detail/point2_d__type_support.hpp
+[6.747s] -- Symlinking: /home/aiv/YongJun_ws/ros2_ws/install/yolov8_msgs/include/yolov8_msgs/msg/detail/pose2_d__builder.hpp
+[6.748s] -- Symlinking: /home/aiv/YongJun_ws/ros2_ws/install/yolov8_msgs/include/yolov8_msgs/msg/detail/pose2_d__struct.hpp
+[6.750s] -- Symlinking: /home/aiv/YongJun_ws/ros2_ws/install/yolov8_msgs/include/yolov8_msgs/msg/detail/pose2_d__traits.hpp
+[6.751s] -- Symlinking: /home/aiv/YongJun_ws/ros2_ws/install/yolov8_msgs/include/yolov8_msgs/msg/detail/pose2_d__type_support.hpp
+[6.753s] -- Symlinking: /home/aiv/YongJun_ws/ros2_ws/install/yolov8_msgs/include/yolov8_msgs/msg/detail/vector2__builder.hpp
+[6.755s] -- Symlinking: /home/aiv/YongJun_ws/ros2_ws/install/yolov8_msgs/include/yolov8_msgs/msg/detail/vector2__struct.hpp
+[6.756s] -- Symlinking: /home/aiv/YongJun_ws/ros2_ws/install/yolov8_msgs/include/yolov8_msgs/msg/detail/vector2__traits.hpp
+[6.758s] -- Symlinking: /home/aiv/YongJun_ws/ros2_ws/install/yolov8_msgs/include/yolov8_msgs/msg/detail/vector2__type_support.hpp
+[6.759s] -- Symlinking: /home/aiv/YongJun_ws/ros2_ws/install/yolov8_msgs/include/yolov8_msgs/msg/detection.hpp
+[6.761s] -- Symlinking: /home/aiv/YongJun_ws/ros2_ws/install/yolov8_msgs/include/yolov8_msgs/msg/detection_array.hpp
+[6.763s] -- Symlinking: /home/aiv/YongJun_ws/ros2_ws/install/yolov8_msgs/include/yolov8_msgs/msg/key_point2_d.hpp
+[6.764s] -- Symlinking: /home/aiv/YongJun_ws/ros2_ws/install/yolov8_msgs/include/yolov8_msgs/msg/key_point2_d_array.hpp
+[6.766s] -- Symlinking: /home/aiv/YongJun_ws/ros2_ws/install/yolov8_msgs/include/yolov8_msgs/msg/key_point3_d.hpp
+[6.768s] -- Symlinking: /home/aiv/YongJun_ws/ros2_ws/install/yolov8_msgs/include/yolov8_msgs/msg/key_point3_d_array.hpp
+[6.770s] -- Symlinking: /home/aiv/YongJun_ws/ros2_ws/install/yolov8_msgs/include/yolov8_msgs/msg/mask.hpp
+[6.771s] -- Symlinking: /home/aiv/YongJun_ws/ros2_ws/install/yolov8_msgs/include/yolov8_msgs/msg/point2_d.hpp
+[6.773s] -- Symlinking: /home/aiv/YongJun_ws/ros2_ws/install/yolov8_msgs/include/yolov8_msgs/msg/pose2_d.hpp
+[6.774s] -- Symlinking: /home/aiv/YongJun_ws/ros2_ws/install/yolov8_msgs/include/yolov8_msgs/msg/rosidl_generator_cpp__visibility_control.hpp
+[6.776s] -- Symlinking: /home/aiv/YongJun_ws/ros2_ws/install/yolov8_msgs/include/yolov8_msgs/msg/vector2.hpp
+[6.778s] -- Symlinking: /home/aiv/YongJun_ws/ros2_ws/install/yolov8_msgs/include/yolov8_msgs/msg/detail/bounding_box2_d__rosidl_typesupport_introspection_cpp.hpp
+[6.780s] -- Symlinking: /home/aiv/YongJun_ws/ros2_ws/install/yolov8_msgs/include/yolov8_msgs/msg/detail/bounding_box3_d__rosidl_typesupport_introspection_cpp.hpp
+[6.782s] -- Symlinking: /home/aiv/YongJun_ws/ros2_ws/install/yolov8_msgs/include/yolov8_msgs/msg/detail/detection__rosidl_typesupport_introspection_cpp.hpp
+[6.783s] -- Symlinking: /home/aiv/YongJun_ws/ros2_ws/install/yolov8_msgs/include/yolov8_msgs/msg/detail/detection_array__rosidl_typesupport_introspection_cpp.hpp
+[6.785s] -- Symlinking: /home/aiv/YongJun_ws/ros2_ws/install/yolov8_msgs/include/yolov8_msgs/msg/detail/key_point2_d__rosidl_typesupport_introspection_cpp.hpp
+[6.786s] -- Symlinking: /home/aiv/YongJun_ws/ros2_ws/install/yolov8_msgs/include/yolov8_msgs/msg/detail/key_point2_d_array__rosidl_typesupport_introspection_cpp.hpp
+[6.788s] -- Symlinking: /home/aiv/YongJun_ws/ros2_ws/install/yolov8_msgs/include/yolov8_msgs/msg/detail/key_point3_d__rosidl_typesupport_introspection_cpp.hpp
+[6.789s] -- Symlinking: /home/aiv/YongJun_ws/ros2_ws/install/yolov8_msgs/include/yolov8_msgs/msg/detail/key_point3_d_array__rosidl_typesupport_introspection_cpp.hpp
+[6.791s] -- Symlinking: /home/aiv/YongJun_ws/ros2_ws/install/yolov8_msgs/include/yolov8_msgs/msg/detail/mask__rosidl_typesupport_introspection_cpp.hpp
+[6.793s] -- Symlinking: /home/aiv/YongJun_ws/ros2_ws/install/yolov8_msgs/include/yolov8_msgs/msg/detail/point2_d__rosidl_typesupport_introspection_cpp.hpp
+[6.794s] -- Symlinking: /home/aiv/YongJun_ws/ros2_ws/install/yolov8_msgs/include/yolov8_msgs/msg/detail/pose2_d__rosidl_typesupport_introspection_cpp.hpp
+[6.796s] -- Symlinking: /home/aiv/YongJun_ws/ros2_ws/install/yolov8_msgs/include/yolov8_msgs/msg/detail/vector2__rosidl_typesupport_introspection_cpp.hpp
+[6.797s] -- Symlinking: /home/aiv/YongJun_ws/ros2_ws/install/yolov8_msgs/share/yolov8_msgs/environment/pythonpath.sh
+[6.799s] -- Symlinking: /home/aiv/YongJun_ws/ros2_ws/install/yolov8_msgs/share/yolov8_msgs/environment/pythonpath.dsv
+[6.801s] -- Symlinking: /home/aiv/YongJun_ws/ros2_ws/install/yolov8_msgs/lib/python3.8/site-packages/yolov8_msgs/__init__.py
+[6.803s] -- Symlinking: /home/aiv/YongJun_ws/ros2_ws/install/yolov8_msgs/lib/python3.8/site-packages/yolov8_msgs/msg/__init__.py
+[6.805s] -- Symlinking: /home/aiv/YongJun_ws/ros2_ws/install/yolov8_msgs/lib/python3.8/site-packages/yolov8_msgs/msg/_bounding_box2_d.py
+[6.807s] -- Symlinking: /home/aiv/YongJun_ws/ros2_ws/install/yolov8_msgs/lib/python3.8/site-packages/yolov8_msgs/msg/_bounding_box3_d.py
+[6.808s] -- Symlinking: /home/aiv/YongJun_ws/ros2_ws/install/yolov8_msgs/lib/python3.8/site-packages/yolov8_msgs/msg/_detection.py
+[6.810s] -- Symlinking: /home/aiv/YongJun_ws/ros2_ws/install/yolov8_msgs/lib/python3.8/site-packages/yolov8_msgs/msg/_detection_array.py
+[6.811s] -- Symlinking: /home/aiv/YongJun_ws/ros2_ws/install/yolov8_msgs/lib/python3.8/site-packages/yolov8_msgs/msg/_key_point2_d.py
+[6.813s] -- Symlinking: /home/aiv/YongJun_ws/ros2_ws/install/yolov8_msgs/lib/python3.8/site-packages/yolov8_msgs/msg/_key_point2_d_array.py
+[6.815s] -- Symlinking: /home/aiv/YongJun_ws/ros2_ws/install/yolov8_msgs/lib/python3.8/site-packages/yolov8_msgs/msg/_key_point3_d.py
+[6.816s] -- Symlinking: /home/aiv/YongJun_ws/ros2_ws/install/yolov8_msgs/lib/python3.8/site-packages/yolov8_msgs/msg/_key_point3_d_array.py
+[6.818s] -- Symlinking: /home/aiv/YongJun_ws/ros2_ws/install/yolov8_msgs/lib/python3.8/site-packages/yolov8_msgs/msg/_mask.py
+[6.819s] -- Symlinking: /home/aiv/YongJun_ws/ros2_ws/install/yolov8_msgs/lib/python3.8/site-packages/yolov8_msgs/msg/_point2_d.py
+[6.821s] -- Symlinking: /home/aiv/YongJun_ws/ros2_ws/install/yolov8_msgs/lib/python3.8/site-packages/yolov8_msgs/msg/_pose2_d.py
+[6.822s] -- Symlinking: /home/aiv/YongJun_ws/ros2_ws/install/yolov8_msgs/lib/python3.8/site-packages/yolov8_msgs/msg/_vector2.py
+[6.824s] -- Symlinking: /home/aiv/YongJun_ws/ros2_ws/install/yolov8_msgs/lib/python3.8/site-packages/yolov8_msgs/yolov8_msgs_s__rosidl_typesupport_fastrtps_c.cpython-38-x86_64-linux-gnu.so
+[6.826s] -- Symlinking: /home/aiv/YongJun_ws/ros2_ws/install/yolov8_msgs/lib/python3.8/site-packages/yolov8_msgs/yolov8_msgs_s__rosidl_typesupport_introspection_c.cpython-38-x86_64-linux-gnu.so
+[6.828s] -- Symlinking: /home/aiv/YongJun_ws/ros2_ws/install/yolov8_msgs/lib/python3.8/site-packages/yolov8_msgs/yolov8_msgs_s__rosidl_typesupport_c.cpython-38-x86_64-linux-gnu.so
+[6.830s] -- Symlinking: /home/aiv/YongJun_ws/ros2_ws/install/yolov8_msgs/lib/libyolov8_msgs__python.so
+[6.832s] -- Symlinking: /home/aiv/YongJun_ws/ros2_ws/install/yolov8_msgs/share/yolov8_msgs/msg/Point2D.idl
+[6.833s] -- Symlinking: /home/aiv/YongJun_ws/ros2_ws/install/yolov8_msgs/share/yolov8_msgs/msg/Vector2.idl
+[6.835s] -- Symlinking: /home/aiv/YongJun_ws/ros2_ws/install/yolov8_msgs/share/yolov8_msgs/msg/Pose2D.idl
+[6.837s] -- Symlinking: /home/aiv/YongJun_ws/ros2_ws/install/yolov8_msgs/share/yolov8_msgs/msg/BoundingBox2D.idl
+[6.839s] -- Symlinking: /home/aiv/YongJun_ws/ros2_ws/install/yolov8_msgs/share/yolov8_msgs/msg/BoundingBox3D.idl
+[6.840s] -- Symlinking: /home/aiv/YongJun_ws/ros2_ws/install/yolov8_msgs/share/yolov8_msgs/msg/Mask.idl
+[6.842s] -- Symlinking: /home/aiv/YongJun_ws/ros2_ws/install/yolov8_msgs/share/yolov8_msgs/msg/KeyPoint2D.idl
+[6.843s] -- Symlinking: /home/aiv/YongJun_ws/ros2_ws/install/yolov8_msgs/share/yolov8_msgs/msg/KeyPoint2DArray.idl
+[6.845s] -- Symlinking: /home/aiv/YongJun_ws/ros2_ws/install/yolov8_msgs/share/yolov8_msgs/msg/KeyPoint3D.idl
+[6.847s] -- Symlinking: /home/aiv/YongJun_ws/ros2_ws/install/yolov8_msgs/share/yolov8_msgs/msg/KeyPoint3DArray.idl
+[6.848s] -- Symlinking: /home/aiv/YongJun_ws/ros2_ws/install/yolov8_msgs/share/yolov8_msgs/msg/Detection.idl
+[6.850s] -- Symlinking: /home/aiv/YongJun_ws/ros2_ws/install/yolov8_msgs/share/yolov8_msgs/msg/DetectionArray.idl
+[6.851s] -- Symlinking: /home/aiv/YongJun_ws/ros2_ws/install/yolov8_msgs/share/yolov8_msgs/msg/Point2D.msg
+[6.853s] -- Symlinking: /home/aiv/YongJun_ws/ros2_ws/install/yolov8_msgs/share/yolov8_msgs/msg/Vector2.msg
+[6.855s] -- Symlinking: /home/aiv/YongJun_ws/ros2_ws/install/yolov8_msgs/share/yolov8_msgs/msg/Pose2D.msg
+[6.856s] -- Symlinking: /home/aiv/YongJun_ws/ros2_ws/install/yolov8_msgs/share/yolov8_msgs/msg/BoundingBox2D.msg
+[6.858s] -- Symlinking: /home/aiv/YongJun_ws/ros2_ws/install/yolov8_msgs/share/yolov8_msgs/msg/BoundingBox3D.msg
+[6.859s] -- Symlinking: /home/aiv/YongJun_ws/ros2_ws/install/yolov8_msgs/share/yolov8_msgs/msg/Mask.msg
+[6.861s] -- Symlinking: /home/aiv/YongJun_ws/ros2_ws/install/yolov8_msgs/share/yolov8_msgs/msg/KeyPoint2D.msg
+[6.863s] -- Symlinking: /home/aiv/YongJun_ws/ros2_ws/install/yolov8_msgs/share/yolov8_msgs/msg/KeyPoint2DArray.msg
+[6.864s] -- Symlinking: /home/aiv/YongJun_ws/ros2_ws/install/yolov8_msgs/share/yolov8_msgs/msg/KeyPoint3D.msg
+[6.866s] -- Symlinking: /home/aiv/YongJun_ws/ros2_ws/install/yolov8_msgs/share/yolov8_msgs/msg/KeyPoint3DArray.msg
+[6.868s] -- Symlinking: /home/aiv/YongJun_ws/ros2_ws/install/yolov8_msgs/share/yolov8_msgs/msg/Detection.msg
+[6.869s] -- Symlinking: /home/aiv/YongJun_ws/ros2_ws/install/yolov8_msgs/share/yolov8_msgs/msg/DetectionArray.msg
+[6.871s] -- Symlinking: /home/aiv/YongJun_ws/ros2_ws/install/yolov8_msgs/share/ament_index/resource_index/package_run_dependencies/yolov8_msgs
+[6.873s] -- Symlinking: /home/aiv/YongJun_ws/ros2_ws/install/yolov8_msgs/share/ament_index/resource_index/parent_prefix_path/yolov8_msgs
+[6.874s] -- Symlinking: /home/aiv/YongJun_ws/ros2_ws/install/yolov8_msgs/share/yolov8_msgs/environment/ament_prefix_path.sh
+[6.876s] -- Symlinking: /home/aiv/YongJun_ws/ros2_ws/install/yolov8_msgs/share/yolov8_msgs/environment/ament_prefix_path.dsv
+[6.878s] -- Symlinking: /home/aiv/YongJun_ws/ros2_ws/install/yolov8_msgs/share/yolov8_msgs/environment/path.sh
+[6.879s] -- Symlinking: /home/aiv/YongJun_ws/ros2_ws/install/yolov8_msgs/share/yolov8_msgs/environment/path.dsv
+[6.881s] -- Symlinking: /home/aiv/YongJun_ws/ros2_ws/install/yolov8_msgs/share/yolov8_msgs/local_setup.bash
+[6.883s] -- Symlinking: /home/aiv/YongJun_ws/ros2_ws/install/yolov8_msgs/share/yolov8_msgs/local_setup.sh
+[6.884s] -- Symlinking: /home/aiv/YongJun_ws/ros2_ws/install/yolov8_msgs/share/yolov8_msgs/local_setup.zsh
+[6.886s] -- Symlinking: /home/aiv/YongJun_ws/ros2_ws/install/yolov8_msgs/share/yolov8_msgs/local_setup.dsv
+[6.888s] -- Symlinking: /home/aiv/YongJun_ws/ros2_ws/install/yolov8_msgs/share/yolov8_msgs/package.dsv
+[6.889s] -- Symlinking: /home/aiv/YongJun_ws/ros2_ws/install/yolov8_msgs/share/ament_index/resource_index/packages/yolov8_msgs
+[6.891s] -- Symlinking: /home/aiv/YongJun_ws/ros2_ws/install/yolov8_msgs/share/yolov8_msgs/cmake/rosidl_cmake-extras.cmake
+[6.893s] -- Symlinking: /home/aiv/YongJun_ws/ros2_ws/install/yolov8_msgs/share/yolov8_msgs/cmake/ament_cmake_export_dependencies-extras.cmake
+[6.894s] -- Symlinking: /home/aiv/YongJun_ws/ros2_ws/install/yolov8_msgs/share/yolov8_msgs/cmake/ament_cmake_export_libraries-extras.cmake
+[6.896s] -- Symlinking: /home/aiv/YongJun_ws/ros2_ws/install/yolov8_msgs/share/yolov8_msgs/cmake/ament_cmake_export_targets-extras.cmake
+[6.898s] -- Symlinking: /home/aiv/YongJun_ws/ros2_ws/install/yolov8_msgs/share/yolov8_msgs/cmake/ament_cmake_export_include_directories-extras.cmake
+[6.899s] -- Symlinking: /home/aiv/YongJun_ws/ros2_ws/install/yolov8_msgs/share/yolov8_msgs/cmake/rosidl_cmake_export_typesupport_libraries-extras.cmake
+[6.901s] -- Symlinking: /home/aiv/YongJun_ws/ros2_ws/install/yolov8_msgs/share/yolov8_msgs/cmake/rosidl_cmake_export_typesupport_targets-extras.cmake
+[6.903s] -- Symlinking: /home/aiv/YongJun_ws/ros2_ws/install/yolov8_msgs/share/yolov8_msgs/cmake/yolov8_msgsConfig.cmake
+[6.905s] -- Symlinking: /home/aiv/YongJun_ws/ros2_ws/install/yolov8_msgs/share/yolov8_msgs/cmake/yolov8_msgsConfig-version.cmake
+[6.906s] -- Symlinking: /home/aiv/YongJun_ws/ros2_ws/install/yolov8_msgs/share/yolov8_msgs/package.xml
+[6.908s] -- Installing: /home/aiv/YongJun_ws/ros2_ws/install/yolov8_msgs/lib/libyolov8_msgs__rosidl_generator_c.so
+[6.908s] -- Set runtime path of "/home/aiv/YongJun_ws/ros2_ws/install/yolov8_msgs/lib/libyolov8_msgs__rosidl_generator_c.so" to ""
+[6.908s] -- Installing: /home/aiv/YongJun_ws/ros2_ws/install/yolov8_msgs/lib/libyolov8_msgs__rosidl_typesupport_introspection_c.so
+[6.908s] -- Set runtime path of "/home/aiv/YongJun_ws/ros2_ws/install/yolov8_msgs/lib/libyolov8_msgs__rosidl_typesupport_introspection_c.so" to ""
+[6.909s] -- Installing: /home/aiv/YongJun_ws/ros2_ws/install/yolov8_msgs/lib/libyolov8_msgs__rosidl_typesupport_c.so
+[6.909s] -- Set runtime path of "/home/aiv/YongJun_ws/ros2_ws/install/yolov8_msgs/lib/libyolov8_msgs__rosidl_typesupport_c.so" to ""
+[6.909s] -- Installing: /home/aiv/YongJun_ws/ros2_ws/install/yolov8_msgs/lib/libyolov8_msgs__rosidl_typesupport_introspection_cpp.so
+[6.909s] -- Set runtime path of "/home/aiv/YongJun_ws/ros2_ws/install/yolov8_msgs/lib/libyolov8_msgs__rosidl_typesupport_introspection_cpp.so" to ""
+[6.909s] -- Installing: /home/aiv/YongJun_ws/ros2_ws/install/yolov8_msgs/lib/libyolov8_msgs__rosidl_typesupport_cpp.so
+[6.909s] -- Set runtime path of "/home/aiv/YongJun_ws/ros2_ws/install/yolov8_msgs/lib/libyolov8_msgs__rosidl_typesupport_cpp.so" to ""
+[6.930s] Compiling '/home/aiv/YongJun_ws/ros2_ws/install/yolov8_msgs/lib/python3.8/site-packages/yolov8_msgs/__init__.py'...
+[6.933s] -- Installing: /home/aiv/YongJun_ws/ros2_ws/install/yolov8_msgs/share/yolov8_msgs/cmake/yolov8_msgs__rosidl_generator_cExport.cmake
+[6.933s] -- Installing: /home/aiv/YongJun_ws/ros2_ws/install/yolov8_msgs/share/yolov8_msgs/cmake/yolov8_msgs__rosidl_generator_cExport-noconfig.cmake
+[6.933s] -- Installing: /home/aiv/YongJun_ws/ros2_ws/install/yolov8_msgs/share/yolov8_msgs/cmake/yolov8_msgs__rosidl_typesupport_introspection_cExport.cmake
+[6.933s] -- Installing: /home/aiv/YongJun_ws/ros2_ws/install/yolov8_msgs/share/yolov8_msgs/cmake/yolov8_msgs__rosidl_typesupport_introspection_cExport-noconfig.cmake
+[6.933s] -- Installing: /home/aiv/YongJun_ws/ros2_ws/install/yolov8_msgs/share/yolov8_msgs/cmake/yolov8_msgs__rosidl_typesupport_cExport.cmake
+[6.934s] -- Installing: /home/aiv/YongJun_ws/ros2_ws/install/yolov8_msgs/share/yolov8_msgs/cmake/yolov8_msgs__rosidl_typesupport_cExport-noconfig.cmake
+[6.934s] -- Installing: /home/aiv/YongJun_ws/ros2_ws/install/yolov8_msgs/share/yolov8_msgs/cmake/yolov8_msgs__rosidl_generator_cppExport.cmake
+[6.934s] -- Installing: /home/aiv/YongJun_ws/ros2_ws/install/yolov8_msgs/share/yolov8_msgs/cmake/yolov8_msgs__rosidl_typesupport_introspection_cppExport.cmake
+[6.934s] -- Installing: /home/aiv/YongJun_ws/ros2_ws/install/yolov8_msgs/share/yolov8_msgs/cmake/yolov8_msgs__rosidl_typesupport_introspection_cppExport-noconfig.cmake
+[6.934s] -- Installing: /home/aiv/YongJun_ws/ros2_ws/install/yolov8_msgs/share/yolov8_msgs/cmake/yolov8_msgs__rosidl_typesupport_cppExport.cmake
+[6.934s] -- Installing: /home/aiv/YongJun_ws/ros2_ws/install/yolov8_msgs/share/yolov8_msgs/cmake/yolov8_msgs__rosidl_typesupport_cppExport-noconfig.cmake
+[6.938s] Invoked command in '/home/aiv/YongJun_ws/ros2_ws/build/yolov8_msgs' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/aiv/YongJun_ws/ros2_ws/install/yolov8_ros:/opt/ros/foxy /home/aiv/.local/bin/cmake --install /home/aiv/YongJun_ws/ros2_ws/build/yolov8_msgs

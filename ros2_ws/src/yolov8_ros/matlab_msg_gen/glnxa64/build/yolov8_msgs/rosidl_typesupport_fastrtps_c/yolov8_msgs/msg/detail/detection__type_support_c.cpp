@@ -41,6 +41,7 @@ extern "C"
 #include "yolov8_msgs/msg/detail/key_point2_d_array__functions.h"  // keypoints
 #include "yolov8_msgs/msg/detail/key_point3_d_array__functions.h"  // keypoints3d
 #include "yolov8_msgs/msg/detail/mask__functions.h"  // mask
+#include "yolov8_msgs/msg/detail/vector2__functions.h"  // velocity
 
 // forward declare type support functions
 size_t get_serialized_size_yolov8_msgs__msg__BoundingBox2D(
@@ -98,6 +99,17 @@ size_t max_serialized_size_yolov8_msgs__msg__Mask(
 
 const rosidl_message_type_support_t *
   ROSIDL_TYPESUPPORT_INTERFACE__MESSAGE_SYMBOL_NAME(rosidl_typesupport_fastrtps_c, yolov8_msgs, msg, Mask)();
+size_t get_serialized_size_yolov8_msgs__msg__Vector2(
+  const void * untyped_ros_message,
+  size_t current_alignment);
+
+size_t max_serialized_size_yolov8_msgs__msg__Vector2(
+  bool & full_bounded,
+  bool & is_plain,
+  size_t current_alignment);
+
+const rosidl_message_type_support_t *
+  ROSIDL_TYPESUPPORT_INTERFACE__MESSAGE_SYMBOL_NAME(rosidl_typesupport_fastrtps_c, yolov8_msgs, msg, Vector2)();
 
 
 using _Detection__ros_msg_type = yolov8_msgs__msg__Detection;
@@ -214,6 +226,20 @@ static bool _Detection__cdr_serialize(
       )()->data);
     if (!callbacks->cdr_serialize(
         &ros_message->keypoints3d, cdr))
+    {
+      return false;
+    }
+  }
+
+  // Field name: velocity
+  {
+    const message_type_support_callbacks_t * callbacks =
+      static_cast<const message_type_support_callbacks_t *>(
+      ROSIDL_TYPESUPPORT_INTERFACE__MESSAGE_SYMBOL_NAME(
+        rosidl_typesupport_fastrtps_c, yolov8_msgs, msg, Vector2
+      )()->data);
+    if (!callbacks->cdr_serialize(
+        &ros_message->velocity, cdr))
     {
       return false;
     }
@@ -343,6 +369,20 @@ static bool _Detection__cdr_deserialize(
     }
   }
 
+  // Field name: velocity
+  {
+    const message_type_support_callbacks_t * callbacks =
+      static_cast<const message_type_support_callbacks_t *>(
+      ROSIDL_TYPESUPPORT_INTERFACE__MESSAGE_SYMBOL_NAME(
+        rosidl_typesupport_fastrtps_c, yolov8_msgs, msg, Vector2
+      )()->data);
+    if (!callbacks->cdr_deserialize(
+        cdr, &ros_message->velocity))
+    {
+      return false;
+    }
+  }
+
   return true;
 }  // NOLINT(readability/fn_size)
 
@@ -400,6 +440,10 @@ size_t get_serialized_size_yolov8_msgs__msg__Detection(
 
   current_alignment += get_serialized_size_yolov8_msgs__msg__KeyPoint3DArray(
     &(ros_message->keypoints3d), current_alignment);
+  // field.name velocity
+
+  current_alignment += get_serialized_size_yolov8_msgs__msg__Vector2(
+    &(ros_message->velocity), current_alignment);
 
   return current_alignment - initial_alignment;
 }
@@ -535,6 +579,21 @@ size_t max_serialized_size_yolov8_msgs__msg__Detection(
       bool inner_is_plain;
       current_alignment +=
         max_serialized_size_yolov8_msgs__msg__KeyPoint3DArray(
+        inner_full_bounded, inner_is_plain, current_alignment);
+      full_bounded &= inner_full_bounded;
+      is_plain &= inner_is_plain;
+    }
+  }
+  // member: velocity
+  {
+    size_t array_size = 1;
+
+
+    for (size_t index = 0; index < array_size; ++index) {
+      bool inner_full_bounded;
+      bool inner_is_plain;
+      current_alignment +=
+        max_serialized_size_yolov8_msgs__msg__Vector2(
         inner_full_bounded, inner_is_plain, current_alignment);
       full_bounded &= inner_full_bounded;
       is_plain &= inner_is_plain;

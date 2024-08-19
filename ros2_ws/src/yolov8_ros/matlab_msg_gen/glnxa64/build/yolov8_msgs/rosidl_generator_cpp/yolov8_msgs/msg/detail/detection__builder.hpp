@@ -21,16 +21,32 @@ namespace msg
 namespace builder
 {
 
+class Init_Detection_velocity
+{
+public:
+  explicit Init_Detection_velocity(::yolov8_msgs::msg::Detection & msg)
+  : msg_(msg)
+  {}
+  ::yolov8_msgs::msg::Detection velocity(::yolov8_msgs::msg::Detection::_velocity_type arg)
+  {
+    msg_.velocity = std::move(arg);
+    return std::move(msg_);
+  }
+
+private:
+  ::yolov8_msgs::msg::Detection msg_;
+};
+
 class Init_Detection_keypoints3d
 {
 public:
   explicit Init_Detection_keypoints3d(::yolov8_msgs::msg::Detection & msg)
   : msg_(msg)
   {}
-  ::yolov8_msgs::msg::Detection keypoints3d(::yolov8_msgs::msg::Detection::_keypoints3d_type arg)
+  Init_Detection_velocity keypoints3d(::yolov8_msgs::msg::Detection::_keypoints3d_type arg)
   {
     msg_.keypoints3d = std::move(arg);
-    return std::move(msg_);
+    return Init_Detection_velocity(msg_);
   }
 
 private:

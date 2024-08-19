@@ -23,3 +23,6 @@ yolov8_msgs/KeyPoint2DArray keypoints
 
 # keypoints for human pose estimation
 yolov8_msgs/KeyPoint3DArray keypoints3d
+
+# velocity for object estimation using kalman filter
+yolov8_msgs/Vector2 velocity

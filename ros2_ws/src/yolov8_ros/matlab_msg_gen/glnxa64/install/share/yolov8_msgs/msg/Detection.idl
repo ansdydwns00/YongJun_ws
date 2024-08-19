@@ -7,6 +7,7 @@
 #include "yolov8_msgs/msg/KeyPoint2DArray.idl"
 #include "yolov8_msgs/msg/KeyPoint3DArray.idl"
 #include "yolov8_msgs/msg/Mask.idl"
+#include "yolov8_msgs/msg/Vector2.idl"
 
 module yolov8_msgs {
   module msg {
@@ -45,6 +46,10 @@ module yolov8_msgs {
       @verbatim (language="comment", text=
         "keypoints for human pose estimation")
       yolov8_msgs::msg::KeyPoint3DArray keypoints3d;
+
+      @verbatim (language="comment", text=
+        "velocity for object estimation using kalman filter")
+      yolov8_msgs::msg::Vector2 velocity;
     };
   };
 };

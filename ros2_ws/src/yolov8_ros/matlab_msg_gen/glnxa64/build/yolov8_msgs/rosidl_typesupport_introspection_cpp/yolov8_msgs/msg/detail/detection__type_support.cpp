@@ -37,7 +37,7 @@ void Detection_fini_function(void * message_memory)
   typed_message->~Detection();
 }
 
-static const ::rosidl_typesupport_introspection_cpp::MessageMember Detection_message_member_array[9] = {
+static const ::rosidl_typesupport_introspection_cpp::MessageMember Detection_message_member_array[10] = {
   {
     "class_id",  // name
     ::rosidl_typesupport_introspection_cpp::ROS_TYPE_INT32,  // type
@@ -190,13 +190,30 @@ static const ::rosidl_typesupport_introspection_cpp::MessageMember Detection_mes
     nullptr,  // fetch(index, &value) function pointer
     nullptr,  // assign(index, value) function pointer
     nullptr  // resize(index) function pointer
+  },
+  {
+    "velocity",  // name
+    ::rosidl_typesupport_introspection_cpp::ROS_TYPE_MESSAGE,  // type
+    0,  // upper bound of string
+    ::rosidl_typesupport_introspection_cpp::get_message_type_support_handle<yolov8_msgs::msg::Vector2>(),  // members of sub message
+    false,  // is array
+    0,  // array size
+    false,  // is upper bound
+    offsetof(yolov8_msgs::msg::Detection, velocity),  // bytes offset in struct
+    nullptr,  // default value
+    nullptr,  // size() function pointer
+    nullptr,  // get_const(index) function pointer
+    nullptr,  // get(index) function pointer
+    nullptr,  // fetch(index, &value) function pointer
+    nullptr,  // assign(index, value) function pointer
+    nullptr  // resize(index) function pointer
   }
 };
 
 static const ::rosidl_typesupport_introspection_cpp::MessageMembers Detection_message_members = {
   "yolov8_msgs::msg",  // message namespace
   "Detection",  // message name
-  9,  // number of fields
+  10,  // number of fields
   sizeof(yolov8_msgs::msg::Detection),
   Detection_message_member_array,  // message members
   Detection_init_function,  // function to initialize message memory (memory has to be allocated)

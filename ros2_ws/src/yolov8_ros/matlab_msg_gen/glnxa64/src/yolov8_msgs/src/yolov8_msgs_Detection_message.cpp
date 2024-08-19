@@ -120,11 +120,21 @@ class YOLOV8_MSGS_EXPORT ros2_yolov8_msgs_msg_Detection_common : public MATLABRO
     } catch (matlab::Exception&) {
         throw std::invalid_argument("Field 'keypoints3d' is wrong type; expected a struct.");
     }
+    try {
+        //velocity
+        const matlab::data::StructArray velocity_arr = arr["velocity"];
+        auto msgClassPtr_velocity = getCommonObject<yolov8_msgs::msg::Vector2>("ros2_yolov8_msgs_msg_Vector2_common",loader);
+        msgClassPtr_velocity->copy_from_struct(&msg->velocity,velocity_arr[0],loader);
+    } catch (matlab::data::InvalidFieldNameException&) {
+        throw std::invalid_argument("Field 'velocity' is missing.");
+    } catch (matlab::Exception&) {
+        throw std::invalid_argument("Field 'velocity' is wrong type; expected a struct.");
+    }
   }
   //----------------------------------------------------------------------------
   MDArray_T ros2_yolov8_msgs_msg_Detection_common::get_arr(MDFactory_T& factory, const yolov8_msgs::msg::Detection* msg,
        MultiLibLoader loader, size_t size) {
-    auto outArray = factory.createStructArray({size,1},{"MessageType","class_id","class_name","score","id","bbox","bbox3d","mask","keypoints","keypoints3d"});
+    auto outArray = factory.createStructArray({size,1},{"MessageType","class_id","class_name","score","id","bbox","bbox3d","mask","keypoints","keypoints3d","velocity"});
     for(size_t ctr = 0; ctr < size; ctr++){
     outArray[ctr]["MessageType"] = factory.createCharArray("yolov8_msgs/Detection");
     // class_id
@@ -159,6 +169,10 @@ class YOLOV8_MSGS_EXPORT ros2_yolov8_msgs_msg_Detection_common : public MATLABRO
     auto currentElement_keypoints3d = (msg + ctr)->keypoints3d;
     auto msgClassPtr_keypoints3d = getCommonObject<yolov8_msgs::msg::KeyPoint3DArray>("ros2_yolov8_msgs_msg_KeyPoint3DArray_common",loader);
     outArray[ctr]["keypoints3d"] = msgClassPtr_keypoints3d->get_arr(factory, &currentElement_keypoints3d, loader);
+    // velocity
+    auto currentElement_velocity = (msg + ctr)->velocity;
+    auto msgClassPtr_velocity = getCommonObject<yolov8_msgs::msg::Vector2>("ros2_yolov8_msgs_msg_Vector2_common",loader);
+    outArray[ctr]["velocity"] = msgClassPtr_velocity->get_arr(factory, &currentElement_velocity, loader);
     }
     return std::move(outArray);
   } 

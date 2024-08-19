@@ -31,6 +31,8 @@ extern "C"
 #include "yolov8_msgs/msg/detail/key_point2_d_array__struct.h"
 // Member 'keypoints3d'
 #include "yolov8_msgs/msg/detail/key_point3_d_array__struct.h"
+// Member 'velocity'
+#include "yolov8_msgs/msg/detail/vector2__struct.h"
 
 // Struct defined in msg/Detection in the package yolov8_msgs.
 typedef struct yolov8_msgs__msg__Detection
@@ -44,6 +46,7 @@ typedef struct yolov8_msgs__msg__Detection
   yolov8_msgs__msg__Mask mask;
   yolov8_msgs__msg__KeyPoint2DArray keypoints;
   yolov8_msgs__msg__KeyPoint3DArray keypoints3d;
+  yolov8_msgs__msg__Vector2 velocity;
 } yolov8_msgs__msg__Detection;
 
 // Struct for a sequence of yolov8_msgs__msg__Detection.

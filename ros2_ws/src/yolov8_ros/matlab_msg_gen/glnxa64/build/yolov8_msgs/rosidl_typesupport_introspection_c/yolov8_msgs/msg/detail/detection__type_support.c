@@ -36,6 +36,10 @@
 #include "yolov8_msgs/msg/key_point3_d_array.h"
 // Member `keypoints3d`
 #include "yolov8_msgs/msg/detail/key_point3_d_array__rosidl_typesupport_introspection_c.h"
+// Member `velocity`
+#include "yolov8_msgs/msg/vector2.h"
+// Member `velocity`
+#include "yolov8_msgs/msg/detail/vector2__rosidl_typesupport_introspection_c.h"
 
 #ifdef __cplusplus
 extern "C"
@@ -56,7 +60,7 @@ void yolov8_msgs__msg__Detection__rosidl_typesupport_introspection_c__Detection_
   yolov8_msgs__msg__Detection__fini(message_memory);
 }
 
-static rosidl_typesupport_introspection_c__MessageMember yolov8_msgs__msg__Detection__rosidl_typesupport_introspection_c__Detection_message_member_array[9] = {
+static rosidl_typesupport_introspection_c__MessageMember yolov8_msgs__msg__Detection__rosidl_typesupport_introspection_c__Detection_message_member_array[10] = {
   {
     "class_id",  // name
     rosidl_typesupport_introspection_c__ROS_TYPE_INT32,  // type
@@ -209,13 +213,30 @@ static rosidl_typesupport_introspection_c__MessageMember yolov8_msgs__msg__Detec
     NULL,  // fetch(index, &value) function pointer
     NULL,  // assign(index, value) function pointer
     NULL  // resize(index) function pointer
+  },
+  {
+    "velocity",  // name
+    rosidl_typesupport_introspection_c__ROS_TYPE_MESSAGE,  // type
+    0,  // upper bound of string
+    NULL,  // members of sub message (initialized later)
+    false,  // is array
+    0,  // array size
+    false,  // is upper bound
+    offsetof(yolov8_msgs__msg__Detection, velocity),  // bytes offset in struct
+    NULL,  // default value
+    NULL,  // size() function pointer
+    NULL,  // get_const(index) function pointer
+    NULL,  // get(index) function pointer
+    NULL,  // fetch(index, &value) function pointer
+    NULL,  // assign(index, value) function pointer
+    NULL  // resize(index) function pointer
   }
 };
 
 static const rosidl_typesupport_introspection_c__MessageMembers yolov8_msgs__msg__Detection__rosidl_typesupport_introspection_c__Detection_message_members = {
   "yolov8_msgs__msg",  // message namespace
   "Detection",  // message name
-  9,  // number of fields
+  10,  // number of fields
   sizeof(yolov8_msgs__msg__Detection),
   yolov8_msgs__msg__Detection__rosidl_typesupport_introspection_c__Detection_message_member_array,  // message members
   yolov8_msgs__msg__Detection__rosidl_typesupport_introspection_c__Detection_init_function,  // function to initialize message memory (memory has to be allocated)
@@ -243,6 +264,8 @@ ROSIDL_TYPESUPPORT_INTERFACE__MESSAGE_SYMBOL_NAME(rosidl_typesupport_introspecti
     ROSIDL_TYPESUPPORT_INTERFACE__MESSAGE_SYMBOL_NAME(rosidl_typesupport_introspection_c, yolov8_msgs, msg, KeyPoint2DArray)();
   yolov8_msgs__msg__Detection__rosidl_typesupport_introspection_c__Detection_message_member_array[8].members_ =
     ROSIDL_TYPESUPPORT_INTERFACE__MESSAGE_SYMBOL_NAME(rosidl_typesupport_introspection_c, yolov8_msgs, msg, KeyPoint3DArray)();
+  yolov8_msgs__msg__Detection__rosidl_typesupport_introspection_c__Detection_message_member_array[9].members_ =
+    ROSIDL_TYPESUPPORT_INTERFACE__MESSAGE_SYMBOL_NAME(rosidl_typesupport_introspection_c, yolov8_msgs, msg, Vector2)();
   if (!yolov8_msgs__msg__Detection__rosidl_typesupport_introspection_c__Detection_message_type_support_handle.typesupport_identifier) {
     yolov8_msgs__msg__Detection__rosidl_typesupport_introspection_c__Detection_message_type_support_handle.typesupport_identifier =
       rosidl_typesupport_introspection_c__identifier;

@@ -1,0 +1,263 @@
+[0.013s] Invoking command in '/home/aiv/YongJun_ws/ros2_ws/build/realsense2_camera': CMAKE_PREFIX_PATH=/home/aiv/YongJun_ws/ros2_ws/install/realsense2_camera_msgs:/home/aiv/YongJun_ws/ros2_ws/install/yolov8_bringup:/home/aiv/YongJun_ws/ros2_ws/install/yolov8_msgs:/home/aiv/YongJun_ws/ros2_ws/install/usb_cam:/home/aiv/YongJun_ws/ros2_ws/install/realsense2_description:/home/aiv/YongJun_ws/ros2_ws/install/realsense2_camera:/home/aiv/YongJun_ws/ros2_ws/install/yolov8_ros:/opt/ros/foxy LD_LIBRARY_PATH=/home/aiv/YongJun_ws/ros2_ws/install/realsense2_camera_msgs/lib:/home/aiv/YongJun_ws/ros2_ws/install/yolov8_msgs/lib:/home/aiv/YongJun_ws/ros2_ws/install/usb_cam/lib:/home/aiv/YongJun_ws/ros2_ws/install/realsense2_camera/lib:/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib/x86_64-linux-gnu:/opt/ros/foxy/lib:/usr/local/cuda-11.8/lib64 PYTHONPATH=/home/aiv/YongJun_ws/ros2_ws/install/realsense2_camera_msgs/lib/python3.8/site-packages:/home/aiv/YongJun_ws/ros2_ws/build/yolov8_ros:/home/aiv/YongJun_ws/ros2_ws/install/yolov8_ros/lib/python3.8/site-packages:/home/aiv/YongJun_ws/ros2_ws/install/yolov8_msgs/lib/python3.8/site-packages:/opt/ros/foxy/lib/python3.8/site-packages /home/aiv/.local/bin/cmake /home/aiv/YongJun_ws/ros2_ws/src/realsense-ros/realsense2_camera -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/aiv/YongJun_ws/ros2_ws/install/realsense2_camera
+[0.069s] -- The C compiler identification is GNU 9.4.0
+[0.108s] -- The CXX compiler identification is GNU 9.4.0
+[0.115s] -- Detecting C compiler ABI info
+[0.154s] -- Detecting C compiler ABI info - done
+[0.162s] -- Check for working C compiler: /usr/bin/cc - skipped
+[0.163s] -- Detecting C compile features
+[0.163s] -- Detecting C compile features - done
+[0.166s] -- Detecting CXX compiler ABI info
+[0.210s] -- Detecting CXX compiler ABI info - done
+[0.221s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[0.221s] -- Detecting CXX compile features
+[0.222s] -- Detecting CXX compile features - done
+[0.223s] -- Create Release Build.
+[0.225s] -- Found ament_cmake: 0.9.12 (/opt/ros/foxy/share/ament_cmake/cmake)
+[0.244s] -- Found PythonInterp: /usr/bin/python3 (found suitable version "3.8.10", minimum required is "3") 
+[0.244s] -- Using PYTHON_EXECUTABLE: /usr/bin/python3
+[0.384s] -- Override CMake install command with custom implementation using symlinks instead of copying resources
+[0.400s] -- Found builtin_interfaces: 1.0.0 (/opt/ros/foxy/share/builtin_interfaces/cmake)
+[0.420s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.424s] -- Found rosidl_adapter: 1.3.1 (/opt/ros/foxy/share/rosidl_adapter/cmake)
+[0.480s] -- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "1.1.1f")  
+[0.501s] -- Found FastRTPS: /opt/ros/foxy/include  
+[0.555s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.573s] -- Found cv_bridge: 3.0.7 (/opt/ros/foxy/share/cv_bridge/cmake)
+[0.678s] -- Found image_transport: 2.4.0 (/opt/ros/foxy/share/image_transport/cmake)
+[0.719s] -- Found rmw_implementation_cmake: 1.0.4 (/opt/ros/foxy/share/rmw_implementation_cmake/cmake)
+[0.720s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[0.721s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+[0.771s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Failed
+[0.771s] -- Looking for pthread_create in pthreads
+[0.806s] -- Looking for pthread_create in pthreads - not found
+[0.806s] -- Looking for pthread_create in pthread
+[0.843s] -- Looking for pthread_create in pthread - found
+[0.844s] -- Found Threads: TRUE  
+[0.966s] -- Found rclcpp_components: 2.4.3 (/opt/ros/foxy/share/rclcpp_components/cmake)
+[0.997s] -- Found realsense2_camera_msgs: 4.55.1 (/home/aiv/YongJun_ws/ros2_ws/install/realsense2_camera_msgs/share/realsense2_camera_msgs/cmake)
+[1.082s] -- Found nav_msgs: 2.0.5 (/opt/ros/foxy/share/nav_msgs/cmake)
+[1.129s] -- Found tf2_ros: 0.13.14 (/opt/ros/foxy/share/tf2_ros/cmake)
+[1.311s] -- Found diagnostic_updater: 3.1.2 (/opt/ros/foxy/share/diagnostic_updater/cmake)
+[1.352s] -- Found OpenCV: /usr (found version "4.2.0") found components: core 
+[1.354s] -- Build for ROS2 Foxy
+[1.376s] -- Found ament_cmake_gtest: 0.9.12 (/opt/ros/foxy/share/ament_cmake_gtest/cmake)
+[1.377s] -- Found gtest sources under '/opt/ros/foxy/src/gtest_vendor': C++ tests using 'Google Test' will be built
+[1.379s] -- Check if compiler accepts -pthread
+[1.416s] -- Check if compiler accepts -pthread - yes
+[1.419s] -- Found ament_cmake_pytest: 0.9.12 (/opt/ros/foxy/share/ament_cmake_pytest/cmake)
+[2.457s] [33mCMake Warning at /opt/ros/foxy/share/ament_cmake_pytest/cmake/ament_add_pytest_test.cmake:77 (message):
+[2.457s]   The Python module 'pytest' was not found, pytests can not be run (e.g.  on
+[2.457s]   Ubuntu/Debian install the package 'python3-pytest')
+[2.457s] Call Stack (most recent call first):
+[2.457s]   CMakeLists.txt:338 (ament_add_pytest_test)
+[2.457s] 
+[2.457s] [0m
+[3.384s] [33mCMake Warning at /opt/ros/foxy/share/ament_cmake_pytest/cmake/ament_add_pytest_test.cmake:77 (message):
+[3.384s]   The Python module 'pytest' was not found, pytests can not be run (e.g.  on
+[3.384s]   Ubuntu/Debian install the package 'python3-pytest')
+[3.384s] Call Stack (most recent call first):
+[3.384s]   CMakeLists.txt:338 (ament_add_pytest_test)
+[3.384s] 
+[3.384s] [0m
+[4.311s] [33mCMake Warning at /opt/ros/foxy/share/ament_cmake_pytest/cmake/ament_add_pytest_test.cmake:77 (message):
+[4.311s]   The Python module 'pytest' was not found, pytests can not be run (e.g.  on
+[4.311s]   Ubuntu/Debian install the package 'python3-pytest')
+[4.311s] Call Stack (most recent call first):
+[4.311s]   CMakeLists.txt:338 (ament_add_pytest_test)
+[4.311s] 
+[4.311s] [0m
+[5.228s] [33mCMake Warning at /opt/ros/foxy/share/ament_cmake_pytest/cmake/ament_add_pytest_test.cmake:77 (message):
+[5.228s]   The Python module 'pytest' was not found, pytests can not be run (e.g.  on
+[5.229s]   Ubuntu/Debian install the package 'python3-pytest')
+[5.229s] Call Stack (most recent call first):
+[5.229s]   CMakeLists.txt:338 (ament_add_pytest_test)
+[5.229s] 
+[5.229s] [0m
+[6.143s] [33mCMake Warning at /opt/ros/foxy/share/ament_cmake_pytest/cmake/ament_add_pytest_test.cmake:77 (message):
+[6.143s]   The Python module 'pytest' was not found, pytests can not be run (e.g.  on
+[6.143s]   Ubuntu/Debian install the package 'python3-pytest')
+[6.143s] Call Stack (most recent call first):
+[6.143s]   CMakeLists.txt:338 (ament_add_pytest_test)
+[6.143s] 
+[6.143s] [0m
+[7.046s] [33mCMake Warning at /opt/ros/foxy/share/ament_cmake_pytest/cmake/ament_add_pytest_test.cmake:77 (message):
+[7.046s]   The Python module 'pytest' was not found, pytests can not be run (e.g.  on
+[7.046s]   Ubuntu/Debian install the package 'python3-pytest')
+[7.046s] Call Stack (most recent call first):
+[7.046s]   CMakeLists.txt:338 (ament_add_pytest_test)
+[7.046s] 
+[7.046s] [0m
+[7.951s] [33mCMake Warning at /opt/ros/foxy/share/ament_cmake_pytest/cmake/ament_add_pytest_test.cmake:77 (message):
+[7.951s]   The Python module 'pytest' was not found, pytests can not be run (e.g.  on
+[7.951s]   Ubuntu/Debian install the package 'python3-pytest')
+[7.951s] Call Stack (most recent call first):
+[7.951s]   CMakeLists.txt:338 (ament_add_pytest_test)
+[7.951s] 
+[7.951s] [0m
+[8.857s] [33mCMake Warning at /opt/ros/foxy/share/ament_cmake_pytest/cmake/ament_add_pytest_test.cmake:77 (message):
+[8.857s]   The Python module 'pytest' was not found, pytests can not be run (e.g.  on
+[8.857s]   Ubuntu/Debian install the package 'python3-pytest')
+[8.857s] Call Stack (most recent call first):
+[8.857s]   CMakeLists.txt:338 (ament_add_pytest_test)
+[8.857s] 
+[8.857s] [0m
+[9.768s] [33mCMake Warning at /opt/ros/foxy/share/ament_cmake_pytest/cmake/ament_add_pytest_test.cmake:77 (message):
+[9.768s]   The Python module 'pytest' was not found, pytests can not be run (e.g.  on
+[9.768s]   Ubuntu/Debian install the package 'python3-pytest')
+[9.768s] Call Stack (most recent call first):
+[9.768s]   CMakeLists.txt:338 (ament_add_pytest_test)
+[9.768s] 
+[9.768s] [0m
+[10.006s] -- rs_device_info:
+[10.006s] -- Device Name                   Serial Number       Firmware Version
+[10.006s] Intel RealSense D435          215222076456        5.16.0.1
+[10.006s] 
+[10.006s] -- D455 device found
+[10.941s] [33mCMake Warning at /opt/ros/foxy/share/ament_cmake_pytest/cmake/ament_add_pytest_test.cmake:77 (message):
+[10.941s]   The Python module 'pytest' was not found, pytests can not be run (e.g.  on
+[10.941s]   Ubuntu/Debian install the package 'python3-pytest')
+[10.941s] Call Stack (most recent call first):
+[10.941s]   CMakeLists.txt:367 (ament_add_pytest_test)
+[10.941s] 
+[10.941s] [0m
+[11.850s] [33mCMake Warning at /opt/ros/foxy/share/ament_cmake_pytest/cmake/ament_add_pytest_test.cmake:77 (message):
+[11.850s]   The Python module 'pytest' was not found, pytests can not be run (e.g.  on
+[11.851s]   Ubuntu/Debian install the package 'python3-pytest')
+[11.851s] Call Stack (most recent call first):
+[11.851s]   CMakeLists.txt:367 (ament_add_pytest_test)
+[11.851s] 
+[11.851s] [0m
+[12.767s] [33mCMake Warning at /opt/ros/foxy/share/ament_cmake_pytest/cmake/ament_add_pytest_test.cmake:77 (message):
+[12.767s]   The Python module 'pytest' was not found, pytests can not be run (e.g.  on
+[12.767s]   Ubuntu/Debian install the package 'python3-pytest')
+[12.767s] Call Stack (most recent call first):
+[12.767s]   CMakeLists.txt:367 (ament_add_pytest_test)
+[12.767s] 
+[12.768s] [0m
+[13.671s] [33mCMake Warning at /opt/ros/foxy/share/ament_cmake_pytest/cmake/ament_add_pytest_test.cmake:77 (message):
+[13.671s]   The Python module 'pytest' was not found, pytests can not be run (e.g.  on
+[13.671s]   Ubuntu/Debian install the package 'python3-pytest')
+[13.671s] Call Stack (most recent call first):
+[13.671s]   CMakeLists.txt:367 (ament_add_pytest_test)
+[13.671s] 
+[13.671s] [0m
+[14.588s] [33mCMake Warning at /opt/ros/foxy/share/ament_cmake_pytest/cmake/ament_add_pytest_test.cmake:77 (message):
+[14.588s]   The Python module 'pytest' was not found, pytests can not be run (e.g.  on
+[14.588s]   Ubuntu/Debian install the package 'python3-pytest')
+[14.588s] Call Stack (most recent call first):
+[14.588s]   CMakeLists.txt:367 (ament_add_pytest_test)
+[14.588s] 
+[14.588s] [0m
+[15.508s] [33mCMake Warning at /opt/ros/foxy/share/ament_cmake_pytest/cmake/ament_add_pytest_test.cmake:77 (message):
+[15.508s]   The Python module 'pytest' was not found, pytests can not be run (e.g.  on
+[15.508s]   Ubuntu/Debian install the package 'python3-pytest')
+[15.508s] Call Stack (most recent call first):
+[15.508s]   CMakeLists.txt:367 (ament_add_pytest_test)
+[15.508s] 
+[15.508s] [0m
+[16.429s] [33mCMake Warning at /opt/ros/foxy/share/ament_cmake_pytest/cmake/ament_add_pytest_test.cmake:77 (message):
+[16.429s]   The Python module 'pytest' was not found, pytests can not be run (e.g.  on
+[16.429s]   Ubuntu/Debian install the package 'python3-pytest')
+[16.429s] Call Stack (most recent call first):
+[16.429s]   CMakeLists.txt:367 (ament_add_pytest_test)
+[16.429s] 
+[16.429s] [0m
+[17.330s] [33mCMake Warning at /opt/ros/foxy/share/ament_cmake_pytest/cmake/ament_add_pytest_test.cmake:77 (message):
+[17.330s]   The Python module 'pytest' was not found, pytests can not be run (e.g.  on
+[17.330s]   Ubuntu/Debian install the package 'python3-pytest')
+[17.330s] Call Stack (most recent call first):
+[17.330s]   CMakeLists.txt:367 (ament_add_pytest_test)
+[17.330s] 
+[17.330s] [0m
+[17.374s] -- Configuring done
+[17.398s] -- Generating done
+[17.399s] -- Build files have been written to: /home/aiv/YongJun_ws/ros2_ws/build/realsense2_camera
+[17.410s] Invoked command in '/home/aiv/YongJun_ws/ros2_ws/build/realsense2_camera' returned '0': CMAKE_PREFIX_PATH=/home/aiv/YongJun_ws/ros2_ws/install/realsense2_camera_msgs:/home/aiv/YongJun_ws/ros2_ws/install/yolov8_bringup:/home/aiv/YongJun_ws/ros2_ws/install/yolov8_msgs:/home/aiv/YongJun_ws/ros2_ws/install/usb_cam:/home/aiv/YongJun_ws/ros2_ws/install/realsense2_description:/home/aiv/YongJun_ws/ros2_ws/install/realsense2_camera:/home/aiv/YongJun_ws/ros2_ws/install/yolov8_ros:/opt/ros/foxy LD_LIBRARY_PATH=/home/aiv/YongJun_ws/ros2_ws/install/realsense2_camera_msgs/lib:/home/aiv/YongJun_ws/ros2_ws/install/yolov8_msgs/lib:/home/aiv/YongJun_ws/ros2_ws/install/usb_cam/lib:/home/aiv/YongJun_ws/ros2_ws/install/realsense2_camera/lib:/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib/x86_64-linux-gnu:/opt/ros/foxy/lib:/usr/local/cuda-11.8/lib64 PYTHONPATH=/home/aiv/YongJun_ws/ros2_ws/install/realsense2_camera_msgs/lib/python3.8/site-packages:/home/aiv/YongJun_ws/ros2_ws/build/yolov8_ros:/home/aiv/YongJun_ws/ros2_ws/install/yolov8_ros/lib/python3.8/site-packages:/home/aiv/YongJun_ws/ros2_ws/install/yolov8_msgs/lib/python3.8/site-packages:/opt/ros/foxy/lib/python3.8/site-packages /home/aiv/.local/bin/cmake /home/aiv/YongJun_ws/ros2_ws/src/realsense-ros/realsense2_camera -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/aiv/YongJun_ws/ros2_ws/install/realsense2_camera
+[17.411s] Invoking command in '/home/aiv/YongJun_ws/ros2_ws/build/realsense2_camera': CMAKE_PREFIX_PATH=/home/aiv/YongJun_ws/ros2_ws/install/realsense2_camera_msgs:/home/aiv/YongJun_ws/ros2_ws/install/yolov8_bringup:/home/aiv/YongJun_ws/ros2_ws/install/yolov8_msgs:/home/aiv/YongJun_ws/ros2_ws/install/usb_cam:/home/aiv/YongJun_ws/ros2_ws/install/realsense2_description:/home/aiv/YongJun_ws/ros2_ws/install/realsense2_camera:/home/aiv/YongJun_ws/ros2_ws/install/yolov8_ros:/opt/ros/foxy LD_LIBRARY_PATH=/home/aiv/YongJun_ws/ros2_ws/install/realsense2_camera_msgs/lib:/home/aiv/YongJun_ws/ros2_ws/install/yolov8_msgs/lib:/home/aiv/YongJun_ws/ros2_ws/install/usb_cam/lib:/home/aiv/YongJun_ws/ros2_ws/install/realsense2_camera/lib:/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib/x86_64-linux-gnu:/opt/ros/foxy/lib:/usr/local/cuda-11.8/lib64 PYTHONPATH=/home/aiv/YongJun_ws/ros2_ws/install/realsense2_camera_msgs/lib/python3.8/site-packages:/home/aiv/YongJun_ws/ros2_ws/build/yolov8_ros:/home/aiv/YongJun_ws/ros2_ws/install/yolov8_ros/lib/python3.8/site-packages:/home/aiv/YongJun_ws/ros2_ws/install/yolov8_msgs/lib/python3.8/site-packages:/opt/ros/foxy/lib/python3.8/site-packages /home/aiv/.local/bin/cmake --build /home/aiv/YongJun_ws/ros2_ws/build/realsense2_camera -- -j32 -l32
+[17.446s] [  4%] [32mBuilding CXX object gtest/CMakeFiles/gtest_main.dir/src/gtest_main.cc.o[0m
+[17.446s] [  9%] [32mBuilding CXX object CMakeFiles/realsense2_camera_node.dir/rclcpp_components/node_main_realsense2_camera_node.cpp.o[0m
+[17.446s] [ 13%] [32mBuilding CXX object gtest/CMakeFiles/gtest.dir/src/gtest-all.cc.o[0m
+[17.447s] [ 18%] [32mBuilding CXX object CMakeFiles/realsense2_camera.dir/src/realsense_node_factory.cpp.o[0m
+[17.447s] [ 22%] [32mBuilding CXX object CMakeFiles/realsense2_camera.dir/src/base_realsense_node.cpp.o[0m
+[17.448s] [ 27%] [32mBuilding CXX object CMakeFiles/realsense2_camera.dir/src/parameters.cpp.o[0m
+[17.448s] [ 31%] [32mBuilding CXX object CMakeFiles/realsense2_camera.dir/src/rs_node_setup.cpp.o[0m
+[17.448s] [ 36%] [32mBuilding CXX object CMakeFiles/realsense2_camera.dir/src/ros_sensor.cpp.o[0m
+[17.448s] [ 40%] [32mBuilding CXX object CMakeFiles/realsense2_camera.dir/src/dynamic_params.cpp.o[0m
+[17.449s] [ 45%] [32mBuilding CXX object CMakeFiles/realsense2_camera.dir/src/ros_utils.cpp.o[0m
+[17.450s] [ 50%] [32mBuilding CXX object CMakeFiles/realsense2_camera.dir/src/named_filter.cpp.o[0m
+[17.450s] [ 59%] [32mBuilding CXX object CMakeFiles/realsense2_camera.dir/src/sensor_params.cpp.o[0m
+[17.450s] [ 59%] [32mBuilding CXX object CMakeFiles/realsense2_camera.dir/src/profile_manager.cpp.o[0m
+[17.451s] [ 63%] [32mBuilding CXX object CMakeFiles/realsense2_camera.dir/src/image_publisher.cpp.o[0m
+[17.452s] [ 68%] [32mBuilding CXX object CMakeFiles/realsense2_camera.dir/src/tfs.cpp.o[0m
+[17.453s] [ 72%] [32mBuilding CXX object CMakeFiles/realsense2_camera.dir/src/ros_param_backend.cpp.o[0m
+[18.001s] [ 77%] [32m[1mLinking CXX static library libgtest_main.a[0m
+[18.019s] [ 77%] Built target gtest_main
+[20.283s] [ 81%] [32m[1mLinking CXX executable realsense2_camera_node[0m
+[20.407s] [ 81%] Built target realsense2_camera_node
+[23.245s] [ 86%] [32m[1mLinking CXX static library libgtest.a[0m
+[23.259s] [ 86%] Built target gtest
+[23.266s] [ 90%] [32mBuilding CXX object CMakeFiles/gtest_template.dir/test/gtest_template.cpp.o[0m
+[23.778s] [ 95%] [32m[1mLinking CXX executable gtest_template[0m
+[23.831s] [ 95%] Built target gtest_template
+[26.405s] [100%] [32m[1mLinking CXX shared library librealsense2_camera.so[0m
+[26.763s] [100%] Built target realsense2_camera
+[26.776s] Invoked command in '/home/aiv/YongJun_ws/ros2_ws/build/realsense2_camera' returned '0': CMAKE_PREFIX_PATH=/home/aiv/YongJun_ws/ros2_ws/install/realsense2_camera_msgs:/home/aiv/YongJun_ws/ros2_ws/install/yolov8_bringup:/home/aiv/YongJun_ws/ros2_ws/install/yolov8_msgs:/home/aiv/YongJun_ws/ros2_ws/install/usb_cam:/home/aiv/YongJun_ws/ros2_ws/install/realsense2_description:/home/aiv/YongJun_ws/ros2_ws/install/realsense2_camera:/home/aiv/YongJun_ws/ros2_ws/install/yolov8_ros:/opt/ros/foxy LD_LIBRARY_PATH=/home/aiv/YongJun_ws/ros2_ws/install/realsense2_camera_msgs/lib:/home/aiv/YongJun_ws/ros2_ws/install/yolov8_msgs/lib:/home/aiv/YongJun_ws/ros2_ws/install/usb_cam/lib:/home/aiv/YongJun_ws/ros2_ws/install/realsense2_camera/lib:/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib/x86_64-linux-gnu:/opt/ros/foxy/lib:/usr/local/cuda-11.8/lib64 PYTHONPATH=/home/aiv/YongJun_ws/ros2_ws/install/realsense2_camera_msgs/lib/python3.8/site-packages:/home/aiv/YongJun_ws/ros2_ws/build/yolov8_ros:/home/aiv/YongJun_ws/ros2_ws/install/yolov8_ros/lib/python3.8/site-packages:/home/aiv/YongJun_ws/ros2_ws/install/yolov8_msgs/lib/python3.8/site-packages:/opt/ros/foxy/lib/python3.8/site-packages /home/aiv/.local/bin/cmake --build /home/aiv/YongJun_ws/ros2_ws/build/realsense2_camera -- -j32 -l32
+[26.847s] Invoking command in '/home/aiv/YongJun_ws/ros2_ws/build/realsense2_camera': CMAKE_PREFIX_PATH=/home/aiv/YongJun_ws/ros2_ws/install/realsense2_camera_msgs:/home/aiv/YongJun_ws/ros2_ws/install/yolov8_bringup:/home/aiv/YongJun_ws/ros2_ws/install/yolov8_msgs:/home/aiv/YongJun_ws/ros2_ws/install/usb_cam:/home/aiv/YongJun_ws/ros2_ws/install/realsense2_description:/home/aiv/YongJun_ws/ros2_ws/install/realsense2_camera:/home/aiv/YongJun_ws/ros2_ws/install/yolov8_ros:/opt/ros/foxy LD_LIBRARY_PATH=/home/aiv/YongJun_ws/ros2_ws/install/realsense2_camera_msgs/lib:/home/aiv/YongJun_ws/ros2_ws/install/yolov8_msgs/lib:/home/aiv/YongJun_ws/ros2_ws/install/usb_cam/lib:/home/aiv/YongJun_ws/ros2_ws/install/realsense2_camera/lib:/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib/x86_64-linux-gnu:/opt/ros/foxy/lib:/usr/local/cuda-11.8/lib64 PYTHONPATH=/home/aiv/YongJun_ws/ros2_ws/install/realsense2_camera_msgs/lib/python3.8/site-packages:/home/aiv/YongJun_ws/ros2_ws/build/yolov8_ros:/home/aiv/YongJun_ws/ros2_ws/install/yolov8_ros/lib/python3.8/site-packages:/home/aiv/YongJun_ws/ros2_ws/install/yolov8_msgs/lib/python3.8/site-packages:/opt/ros/foxy/lib/python3.8/site-packages /home/aiv/.local/bin/cmake --install /home/aiv/YongJun_ws/ros2_ws/build/realsense2_camera
+[26.884s] -- Install configuration: "Release"
+[26.884s] -- Execute custom install script
+[26.884s] -- Symlinking: /home/aiv/YongJun_ws/ros2_ws/install/realsense2_camera/lib/realsense2_camera/realsense2_camera_node
+[26.888s] -- Symlinking: /home/aiv/YongJun_ws/ros2_ws/install/realsense2_camera/lib/librealsense2_camera.so
+[26.891s] -- Symlinking: /home/aiv/YongJun_ws/ros2_ws/install/realsense2_camera/include/base_realsense_node.h
+[26.894s] -- Symlinking: /home/aiv/YongJun_ws/ros2_ws/install/realsense2_camera/include/constants.h
+[26.897s] -- Symlinking: /home/aiv/YongJun_ws/ros2_ws/install/realsense2_camera/include/dynamic_params.h
+[26.900s] -- Symlinking: /home/aiv/YongJun_ws/ros2_ws/install/realsense2_camera/include/gl_window.h
+[26.903s] -- Symlinking: /home/aiv/YongJun_ws/ros2_ws/install/realsense2_camera/include/image_publisher.h
+[26.906s] -- Symlinking: /home/aiv/YongJun_ws/ros2_ws/install/realsense2_camera/include/named_filter.h
+[26.909s] -- Symlinking: /home/aiv/YongJun_ws/ros2_ws/install/realsense2_camera/include/profile_manager.h
+[26.912s] -- Symlinking: /home/aiv/YongJun_ws/ros2_ws/install/realsense2_camera/include/realsense_node_factory.h
+[26.915s] -- Symlinking: /home/aiv/YongJun_ws/ros2_ws/install/realsense2_camera/include/ros_param_backend.h
+[26.918s] -- Symlinking: /home/aiv/YongJun_ws/ros2_ws/install/realsense2_camera/include/ros_sensor.h
+[26.921s] -- Symlinking: /home/aiv/YongJun_ws/ros2_ws/install/realsense2_camera/include/ros_utils.h
+[26.924s] -- Symlinking: /home/aiv/YongJun_ws/ros2_ws/install/realsense2_camera/include/sensor_params.h
+[26.927s] -- Symlinking: /home/aiv/YongJun_ws/ros2_ws/install/realsense2_camera/share/realsense2_camera/launch/default.rviz
+[26.930s] -- Symlinking: /home/aiv/YongJun_ws/ros2_ws/install/realsense2_camera/share/realsense2_camera/launch/rs_intra_process_demo_launch.py
+[26.934s] -- Symlinking: /home/aiv/YongJun_ws/ros2_ws/install/realsense2_camera/share/realsense2_camera/launch/rs_launch.py
+[26.937s] -- Symlinking: /home/aiv/YongJun_ws/ros2_ws/install/realsense2_camera/share/realsense2_camera/launch/rs_multi_camera_launch.py
+[26.941s] -- Symlinking: /home/aiv/YongJun_ws/ros2_ws/install/realsense2_camera/share/realsense2_camera/examples/align_depth/README.md
+[26.944s] -- Symlinking: /home/aiv/YongJun_ws/ros2_ws/install/realsense2_camera/share/realsense2_camera/examples/align_depth/rs_align_depth_launch.py
+[26.947s] -- Symlinking: /home/aiv/YongJun_ws/ros2_ws/install/realsense2_camera/share/realsense2_camera/examples/dual_camera/README.md
+[26.951s] -- Symlinking: /home/aiv/YongJun_ws/ros2_ws/install/realsense2_camera/share/realsense2_camera/examples/dual_camera/rs_dual_camera_launch.py
+[26.954s] -- Symlinking: /home/aiv/YongJun_ws/ros2_ws/install/realsense2_camera/share/realsense2_camera/examples/dual_camera/rviz/dual_camera_pointcloud.rviz
+[26.957s] -- Symlinking: /home/aiv/YongJun_ws/ros2_ws/install/realsense2_camera/share/realsense2_camera/examples/launch_from_rosbag/README.md
+[26.960s] -- Symlinking: /home/aiv/YongJun_ws/ros2_ws/install/realsense2_camera/share/realsense2_camera/examples/launch_from_rosbag/rs_launch_from_rosbag.py
+[26.964s] -- Symlinking: /home/aiv/YongJun_ws/ros2_ws/install/realsense2_camera/share/realsense2_camera/examples/launch_params_from_file/README.md
+[26.967s] -- Symlinking: /home/aiv/YongJun_ws/ros2_ws/install/realsense2_camera/share/realsense2_camera/examples/launch_params_from_file/config/config.yaml
+[26.970s] -- Symlinking: /home/aiv/YongJun_ws/ros2_ws/install/realsense2_camera/share/realsense2_camera/examples/launch_params_from_file/rs_launch_get_params_from_yaml.py
+[26.973s] -- Symlinking: /home/aiv/YongJun_ws/ros2_ws/install/realsense2_camera/share/realsense2_camera/examples/pointcloud/README.md
+[26.976s] -- Symlinking: /home/aiv/YongJun_ws/ros2_ws/install/realsense2_camera/share/realsense2_camera/examples/pointcloud/rs_d405_pointcloud_launch.py
+[26.979s] -- Symlinking: /home/aiv/YongJun_ws/ros2_ws/install/realsense2_camera/share/realsense2_camera/examples/pointcloud/rs_d455_pointcloud_launch.py
+[26.981s] -- Symlinking: /home/aiv/YongJun_ws/ros2_ws/install/realsense2_camera/share/realsense2_camera/examples/pointcloud/rs_pointcloud_launch.py
+[26.984s] -- Symlinking: /home/aiv/YongJun_ws/ros2_ws/install/realsense2_camera/share/realsense2_camera/examples/pointcloud/rviz/pointcloud.rviz
+[26.987s] -- Symlinking: /home/aiv/YongJun_ws/ros2_ws/install/realsense2_camera/share/realsense2_camera/examples/pointcloud/rviz/urdf_pointcloud.rviz
+[26.990s] -- Symlinking: /home/aiv/YongJun_ws/ros2_ws/install/realsense2_camera/share/realsense2_camera/environment/library_path.sh
+[26.993s] -- Symlinking: /home/aiv/YongJun_ws/ros2_ws/install/realsense2_camera/share/realsense2_camera/environment/library_path.dsv
+[26.996s] -- Symlinking: /home/aiv/YongJun_ws/ros2_ws/install/realsense2_camera/share/ament_index/resource_index/package_run_dependencies/realsense2_camera
+[26.999s] -- Symlinking: /home/aiv/YongJun_ws/ros2_ws/install/realsense2_camera/share/ament_index/resource_index/parent_prefix_path/realsense2_camera
+[27.002s] -- Symlinking: /home/aiv/YongJun_ws/ros2_ws/install/realsense2_camera/share/realsense2_camera/environment/ament_prefix_path.sh
+[27.005s] -- Symlinking: /home/aiv/YongJun_ws/ros2_ws/install/realsense2_camera/share/realsense2_camera/environment/ament_prefix_path.dsv
+[27.008s] -- Symlinking: /home/aiv/YongJun_ws/ros2_ws/install/realsense2_camera/share/realsense2_camera/environment/path.sh
+[27.011s] -- Symlinking: /home/aiv/YongJun_ws/ros2_ws/install/realsense2_camera/share/realsense2_camera/environment/path.dsv
+[27.014s] -- Symlinking: /home/aiv/YongJun_ws/ros2_ws/install/realsense2_camera/share/realsense2_camera/local_setup.bash
+[27.016s] -- Symlinking: /home/aiv/YongJun_ws/ros2_ws/install/realsense2_camera/share/realsense2_camera/local_setup.sh
+[27.019s] -- Symlinking: /home/aiv/YongJun_ws/ros2_ws/install/realsense2_camera/share/realsense2_camera/local_setup.zsh
+[27.022s] -- Symlinking: /home/aiv/YongJun_ws/ros2_ws/install/realsense2_camera/share/realsense2_camera/local_setup.dsv
+[27.025s] -- Symlinking: /home/aiv/YongJun_ws/ros2_ws/install/realsense2_camera/share/realsense2_camera/package.dsv
+[27.028s] -- Symlinking: /home/aiv/YongJun_ws/ros2_ws/install/realsense2_camera/share/ament_index/resource_index/packages/realsense2_camera
+[27.031s] -- Symlinking: /home/aiv/YongJun_ws/ros2_ws/install/realsense2_camera/share/ament_index/resource_index/rclcpp_components/realsense2_camera
+[27.034s] -- Symlinking: /home/aiv/YongJun_ws/ros2_ws/install/realsense2_camera/share/realsense2_camera/cmake/ament_cmake_export_include_directories-extras.cmake
+[27.036s] -- Symlinking: /home/aiv/YongJun_ws/ros2_ws/install/realsense2_camera/share/realsense2_camera/cmake/ament_cmake_export_libraries-extras.cmake
+[27.039s] -- Symlinking: /home/aiv/YongJun_ws/ros2_ws/install/realsense2_camera/share/realsense2_camera/cmake/ament_cmake_export_dependencies-extras.cmake
+[27.041s] -- Symlinking: /home/aiv/YongJun_ws/ros2_ws/install/realsense2_camera/share/realsense2_camera/cmake/realsense2_cameraConfig.cmake
+[27.044s] -- Symlinking: /home/aiv/YongJun_ws/ros2_ws/install/realsense2_camera/share/realsense2_camera/cmake/realsense2_cameraConfig-version.cmake
+[27.047s] -- Symlinking: /home/aiv/YongJun_ws/ros2_ws/install/realsense2_camera/share/realsense2_camera/package.xml
+[27.056s] Invoked command in '/home/aiv/YongJun_ws/ros2_ws/build/realsense2_camera' returned '0': CMAKE_PREFIX_PATH=/home/aiv/YongJun_ws/ros2_ws/install/realsense2_camera_msgs:/home/aiv/YongJun_ws/ros2_ws/install/yolov8_bringup:/home/aiv/YongJun_ws/ros2_ws/install/yolov8_msgs:/home/aiv/YongJun_ws/ros2_ws/install/usb_cam:/home/aiv/YongJun_ws/ros2_ws/install/realsense2_description:/home/aiv/YongJun_ws/ros2_ws/install/realsense2_camera:/home/aiv/YongJun_ws/ros2_ws/install/yolov8_ros:/opt/ros/foxy LD_LIBRARY_PATH=/home/aiv/YongJun_ws/ros2_ws/install/realsense2_camera_msgs/lib:/home/aiv/YongJun_ws/ros2_ws/install/yolov8_msgs/lib:/home/aiv/YongJun_ws/ros2_ws/install/usb_cam/lib:/home/aiv/YongJun_ws/ros2_ws/install/realsense2_camera/lib:/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib/x86_64-linux-gnu:/opt/ros/foxy/lib:/usr/local/cuda-11.8/lib64 PYTHONPATH=/home/aiv/YongJun_ws/ros2_ws/install/realsense2_camera_msgs/lib/python3.8/site-packages:/home/aiv/YongJun_ws/ros2_ws/build/yolov8_ros:/home/aiv/YongJun_ws/ros2_ws/install/yolov8_ros/lib/python3.8/site-packages:/home/aiv/YongJun_ws/ros2_ws/install/yolov8_msgs/lib/python3.8/site-packages:/opt/ros/foxy/lib/python3.8/site-packages /home/aiv/.local/bin/cmake --install /home/aiv/YongJun_ws/ros2_ws/build/realsense2_camera

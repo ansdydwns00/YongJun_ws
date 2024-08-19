@@ -131,6 +131,29 @@ max_serialized_size_KeyPoint3DArray(
 }  // namespace msg
 }  // namespace yolov8_msgs
 
+namespace yolov8_msgs
+{
+namespace msg
+{
+namespace typesupport_fastrtps_cpp
+{
+bool cdr_serialize(
+  const yolov8_msgs::msg::Vector2 &,
+  eprosima::fastcdr::Cdr &);
+bool cdr_deserialize(
+  eprosima::fastcdr::Cdr &,
+  yolov8_msgs::msg::Vector2 &);
+size_t get_serialized_size(
+  const yolov8_msgs::msg::Vector2 &,
+  size_t current_alignment);
+size_t
+max_serialized_size_Vector2(
+  bool & full_bounded,
+  size_t current_alignment);
+}  // namespace typesupport_fastrtps_cpp
+}  // namespace msg
+}  // namespace yolov8_msgs
+
 
 namespace yolov8_msgs
 {
@@ -175,6 +198,10 @@ cdr_serialize(
   yolov8_msgs::msg::typesupport_fastrtps_cpp::cdr_serialize(
     ros_message.keypoints3d,
     cdr);
+  // Member: velocity
+  yolov8_msgs::msg::typesupport_fastrtps_cpp::cdr_serialize(
+    ros_message.velocity,
+    cdr);
   return true;
 }
 
@@ -215,6 +242,10 @@ cdr_deserialize(
   // Member: keypoints3d
   yolov8_msgs::msg::typesupport_fastrtps_cpp::cdr_deserialize(
     cdr, ros_message.keypoints3d);
+
+  // Member: velocity
+  yolov8_msgs::msg::typesupport_fastrtps_cpp::cdr_deserialize(
+    cdr, ros_message.velocity);
 
   return true;
 }
@@ -277,6 +308,11 @@ get_serialized_size(
   current_alignment +=
     yolov8_msgs::msg::typesupport_fastrtps_cpp::get_serialized_size(
     ros_message.keypoints3d, current_alignment);
+  // Member: velocity
+
+  current_alignment +=
+    yolov8_msgs::msg::typesupport_fastrtps_cpp::get_serialized_size(
+    ros_message.velocity, current_alignment);
 
   return current_alignment - initial_alignment;
 }
@@ -392,6 +428,18 @@ max_serialized_size_Detection(
     for (size_t index = 0; index < array_size; ++index) {
       current_alignment +=
         yolov8_msgs::msg::typesupport_fastrtps_cpp::max_serialized_size_KeyPoint3DArray(
+        full_bounded, current_alignment);
+    }
+  }
+
+  // Member: velocity
+  {
+    size_t array_size = 1;
+
+
+    for (size_t index = 0; index < array_size; ++index) {
+      current_alignment +=
+        yolov8_msgs::msg::typesupport_fastrtps_cpp::max_serialized_size_Vector2(
         full_bounded, current_alignment);
     }
   }

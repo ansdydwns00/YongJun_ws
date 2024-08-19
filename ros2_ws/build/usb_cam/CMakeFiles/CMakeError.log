@@ -1,22 +1,22 @@
 Performing C SOURCE FILE Test CMAKE_HAVE_LIBC_PTHREAD failed with the following output:
-Change Dir: /home/aiv/YongJun_ws/ros2_ws/build/usb_cam/CMakeFiles/CMakeScratch/TryCompile-ceUwzt
+Change Dir: /home/aiv/YongJun_ws/ros2_ws/build/usb_cam/CMakeFiles/CMakeScratch/TryCompile-8686Bn
 
-Run Build Command(s):/usr/bin/make -f Makefile cmTC_5e6d4/fast && /usr/bin/make  -f CMakeFiles/cmTC_5e6d4.dir/build.make CMakeFiles/cmTC_5e6d4.dir/build
-make[1]: Entering directory '/home/aiv/YongJun_ws/ros2_ws/build/usb_cam/CMakeFiles/CMakeScratch/TryCompile-ceUwzt'
-Building C object CMakeFiles/cmTC_5e6d4.dir/src.c.o
-/usr/bin/cc -DCMAKE_HAVE_LIBC_PTHREAD   -o CMakeFiles/cmTC_5e6d4.dir/src.c.o -c /home/aiv/YongJun_ws/ros2_ws/build/usb_cam/CMakeFiles/CMakeScratch/TryCompile-ceUwzt/src.c
-Linking C executable cmTC_5e6d4
-/home/aiv/.local/lib/python3.8/site-packages/cmake/data/bin/cmake -E cmake_link_script CMakeFiles/cmTC_5e6d4.dir/link.txt --verbose=1
-/usr/bin/cc CMakeFiles/cmTC_5e6d4.dir/src.c.o -o cmTC_5e6d4 
-/usr/bin/ld: CMakeFiles/cmTC_5e6d4.dir/src.c.o: in function `main':
+Run Build Command(s):/usr/bin/make -f Makefile cmTC_22a1d/fast && /usr/bin/make  -f CMakeFiles/cmTC_22a1d.dir/build.make CMakeFiles/cmTC_22a1d.dir/build
+make[1]: Entering directory '/home/aiv/YongJun_ws/ros2_ws/build/usb_cam/CMakeFiles/CMakeScratch/TryCompile-8686Bn'
+Building C object CMakeFiles/cmTC_22a1d.dir/src.c.o
+/usr/bin/cc -DCMAKE_HAVE_LIBC_PTHREAD   -o CMakeFiles/cmTC_22a1d.dir/src.c.o -c /home/aiv/YongJun_ws/ros2_ws/build/usb_cam/CMakeFiles/CMakeScratch/TryCompile-8686Bn/src.c
+Linking C executable cmTC_22a1d
+/home/aiv/.local/lib/python3.8/site-packages/cmake/data/bin/cmake -E cmake_link_script CMakeFiles/cmTC_22a1d.dir/link.txt --verbose=1
+/usr/bin/cc CMakeFiles/cmTC_22a1d.dir/src.c.o -o cmTC_22a1d 
+/usr/bin/ld: CMakeFiles/cmTC_22a1d.dir/src.c.o: in function `main':
 src.c:(.text+0x46): undefined reference to `pthread_create'
 /usr/bin/ld: src.c:(.text+0x52): undefined reference to `pthread_detach'
 /usr/bin/ld: src.c:(.text+0x5e): undefined reference to `pthread_cancel'
 /usr/bin/ld: src.c:(.text+0x6f): undefined reference to `pthread_join'
 collect2: error: ld returned 1 exit status
-make[1]: *** [CMakeFiles/cmTC_5e6d4.dir/build.make:99: cmTC_5e6d4] Error 1
-make[1]: Leaving directory '/home/aiv/YongJun_ws/ros2_ws/build/usb_cam/CMakeFiles/CMakeScratch/TryCompile-ceUwzt'
-make: *** [Makefile:127: cmTC_5e6d4/fast] Error 2
+make[1]: *** [CMakeFiles/cmTC_22a1d.dir/build.make:99: cmTC_22a1d] Error 1
+make[1]: Leaving directory '/home/aiv/YongJun_ws/ros2_ws/build/usb_cam/CMakeFiles/CMakeScratch/TryCompile-8686Bn'
+make: *** [Makefile:127: cmTC_22a1d/fast] Error 2
 
 
 Source file was:
@@ -42,20 +42,20 @@ int main(void)
 
 
 Determining if the function pthread_create exists in the pthreads failed with the following output:
-Change Dir: /home/aiv/YongJun_ws/ros2_ws/build/usb_cam/CMakeFiles/CMakeScratch/TryCompile-iPh91q
+Change Dir: /home/aiv/YongJun_ws/ros2_ws/build/usb_cam/CMakeFiles/CMakeScratch/TryCompile-vzih0l
 
-Run Build Command(s):/usr/bin/make -f Makefile cmTC_518ba/fast && /usr/bin/make  -f CMakeFiles/cmTC_518ba.dir/build.make CMakeFiles/cmTC_518ba.dir/build
-make[1]: Entering directory '/home/aiv/YongJun_ws/ros2_ws/build/usb_cam/CMakeFiles/CMakeScratch/TryCompile-iPh91q'
-Building C object CMakeFiles/cmTC_518ba.dir/CheckFunctionExists.c.o
-/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=pthread_create -o CMakeFiles/cmTC_518ba.dir/CheckFunctionExists.c.o -c /home/aiv/YongJun_ws/ros2_ws/build/usb_cam/CMakeFiles/CMakeScratch/TryCompile-iPh91q/CheckFunctionExists.c
-Linking C executable cmTC_518ba
-/home/aiv/.local/lib/python3.8/site-packages/cmake/data/bin/cmake -E cmake_link_script CMakeFiles/cmTC_518ba.dir/link.txt --verbose=1
-/usr/bin/cc  -DCHECK_FUNCTION_EXISTS=pthread_create CMakeFiles/cmTC_518ba.dir/CheckFunctionExists.c.o -o cmTC_518ba  -lpthreads 
+Run Build Command(s):/usr/bin/make -f Makefile cmTC_eaedf/fast && /usr/bin/make  -f CMakeFiles/cmTC_eaedf.dir/build.make CMakeFiles/cmTC_eaedf.dir/build
+make[1]: Entering directory '/home/aiv/YongJun_ws/ros2_ws/build/usb_cam/CMakeFiles/CMakeScratch/TryCompile-vzih0l'
+Building C object CMakeFiles/cmTC_eaedf.dir/CheckFunctionExists.c.o
+/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=pthread_create -o CMakeFiles/cmTC_eaedf.dir/CheckFunctionExists.c.o -c /home/aiv/YongJun_ws/ros2_ws/build/usb_cam/CMakeFiles/CMakeScratch/TryCompile-vzih0l/CheckFunctionExists.c
+Linking C executable cmTC_eaedf
+/home/aiv/.local/lib/python3.8/site-packages/cmake/data/bin/cmake -E cmake_link_script CMakeFiles/cmTC_eaedf.dir/link.txt --verbose=1
+/usr/bin/cc  -DCHECK_FUNCTION_EXISTS=pthread_create CMakeFiles/cmTC_eaedf.dir/CheckFunctionExists.c.o -o cmTC_eaedf  -lpthreads 
 /usr/bin/ld: cannot find -lpthreads
 collect2: error: ld returned 1 exit status
-make[1]: *** [CMakeFiles/cmTC_518ba.dir/build.make:99: cmTC_518ba] Error 1
-make[1]: Leaving directory '/home/aiv/YongJun_ws/ros2_ws/build/usb_cam/CMakeFiles/CMakeScratch/TryCompile-iPh91q'
-make: *** [Makefile:127: cmTC_518ba/fast] Error 2
+make[1]: *** [CMakeFiles/cmTC_eaedf.dir/build.make:99: cmTC_eaedf] Error 1
+make[1]: Leaving directory '/home/aiv/YongJun_ws/ros2_ws/build/usb_cam/CMakeFiles/CMakeScratch/TryCompile-vzih0l'
+make: *** [Makefile:127: cmTC_eaedf/fast] Error 2
 
 
 

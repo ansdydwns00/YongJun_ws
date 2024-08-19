@@ -21,7 +21,7 @@ from launch.actions import DeclareLaunchArgument
 
 
 def generate_launch_description():
-
+    
     #
     # ARGS
     #
@@ -59,7 +59,7 @@ def generate_launch_description():
     threshold = LaunchConfiguration("threshold")
     threshold_cmd = DeclareLaunchArgument(
         "threshold",
-        default_value="0.5",
+        default_value="0.01",
         description="Minimum probability of a detection to be published")
 
     input_image_topic = LaunchConfiguration("input_image_topic")
@@ -125,7 +125,7 @@ def generate_launch_description():
     )
 
     ld = LaunchDescription()
-
+    
     ld.add_action(model_type_cmd)
     ld.add_action(model_cmd)
     ld.add_action(tracker_cmd)
@@ -135,9 +135,9 @@ def generate_launch_description():
     ld.add_action(input_image_topic_cmd)
     ld.add_action(image_reliability_cmd)
     ld.add_action(namespace_cmd)
-
+    
     ld.add_action(detector_node_cmd)
     ld.add_action(tracking_node_cmd)
     ld.add_action(debug_node_cmd)
-
+    
     return ld

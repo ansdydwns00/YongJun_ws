@@ -29,6 +29,8 @@ bool yolov8_msgs__msg__key_point2_d_array__convert_from_py(PyObject * _pymsg, vo
 PyObject * yolov8_msgs__msg__key_point2_d_array__convert_to_py(void * raw_ros_message);
 bool yolov8_msgs__msg__key_point3_d_array__convert_from_py(PyObject * _pymsg, void * _ros_message);
 PyObject * yolov8_msgs__msg__key_point3_d_array__convert_to_py(void * raw_ros_message);
+bool yolov8_msgs__msg__vector2__convert_from_py(PyObject * _pymsg, void * _ros_message);
+PyObject * yolov8_msgs__msg__vector2__convert_to_py(void * raw_ros_message);
 
 ROSIDL_GENERATOR_C_EXPORT
 bool yolov8_msgs__msg__detection__convert_from_py(PyObject * _pymsg, void * _ros_message)
@@ -161,6 +163,17 @@ bool yolov8_msgs__msg__detection__convert_from_py(PyObject * _pymsg, void * _ros
       return false;
     }
     if (!yolov8_msgs__msg__key_point3_d_array__convert_from_py(field, &ros_message->keypoints3d)) {
+      Py_DECREF(field);
+      return false;
+    }
+    Py_DECREF(field);
+  }
+  {  // velocity
+    PyObject * field = PyObject_GetAttrString(_pymsg, "velocity");
+    if (!field) {
+      return false;
+    }
+    if (!yolov8_msgs__msg__vector2__convert_from_py(field, &ros_message->velocity)) {
       Py_DECREF(field);
       return false;
     }
@@ -308,6 +321,20 @@ PyObject * yolov8_msgs__msg__detection__convert_to_py(void * raw_ros_message)
     }
     {
       int rc = PyObject_SetAttrString(_pymessage, "keypoints3d", field);
+      Py_DECREF(field);
+      if (rc) {
+        return NULL;
+      }
+    }
+  }
+  {  // velocity
+    PyObject * field = NULL;
+    field = yolov8_msgs__msg__vector2__convert_to_py(&ros_message->velocity);
+    if (!field) {
+      return NULL;
+    }
+    {
+      int rc = PyObject_SetAttrString(_pymessage, "velocity", field);
       Py_DECREF(field);
       if (rc) {
         return NULL;
