@@ -5,7 +5,7 @@ function ptCld = helperPtCldProcessing(pt,roi,gridStep)
     ptCld = select(pt, indices);
     
     % pointCloud Downsampling
-    % ptCld = pcdownsample(ptCld,"gridAverage",gridStep);
+    ptCld = pcdownsample(ptCld,"gridAverage",gridStep);
     
     % Remove ground plane
     % groundPtsIndex = segmentGroundSMRF(ptCld,'SlopeThreshold',0.15,'ElevationThreshold',0.1,'ElevationScale',1.25);

@@ -87,10 +87,10 @@ l_vy = [];
 roi = [5, 10, -4, 4, -2, 2];     
 
 % Downsample
-gridStep = 0.01;
+gridStep = 0.1;
 
 % Cluster distance 
-clusterThreshold = 0.3;   
+clusterThreshold = 0.2;   
 
 %-----------------------------------------------------------------------------------%
 
@@ -157,7 +157,7 @@ while true
             helperDrawCuboid(player.Axes, Model,'red', Distances, l_id, l_cls, l_vx, l_vy)
             
             l_img = insertObjectAnnotation(g_img,"rectangle",g_bboxes,strcat({'ID:'},string(g_id)', {', Class:'},string(g_cls)'));
-            % ,{', Vel:'},string(round(sqrt(l_vx^2+l_vy^2),2)))
+            
             if ~isempty(g_bboxes)
                 l_img = insertShape(l_img,"filled-circle",[g_bboxes(:,1)+g_bboxes(:,3)/2, g_bboxes(:,2)+g_bboxes(:,4)/2,repmat(5,size(g_bboxes,1),1)],"ShapeColor","red");
             end

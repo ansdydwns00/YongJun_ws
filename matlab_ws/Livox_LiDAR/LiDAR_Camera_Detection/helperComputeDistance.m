@@ -2,10 +2,13 @@ function [Distances, Model, l_id, l_cls] = helperComputeDistance(bboxes, l_id, l
 
     Distances = [];
     Model = {};
-    
+    epsilon = 0.11;
+    MinPts = 10;
+    del_idx = [];
+
     if ~isempty(bboxes) && ~isempty(ptCld.Location)
 
-        [bboxesLidar, indicies, bboxesUsed] = bboxCameraToLidar(bboxes, ptCld, cameraParams, CamToLidar, 'ClusterThreshold', clusterThreshold,'MaxDetectionRange',[2,60]);  
+        [bboxesLidar, indicies, bboxesUsed] = bboxCameraToLidar(bboxes, ptCld, cameraParams, CamToLidar, 'ClusterThreshold', clusterThreshold,'MaxDetectionRange',[5,60]);  
         
         % [0 0 0 0 0 0 0 0 0] value remove
         idx_del = all(bboxesLidar == 0, 2);
@@ -14,13 +17,19 @@ function [Distances, Model, l_id, l_cls] = helperComputeDistance(bboxes, l_id, l
         indicies(~bboxesUsed,:) = [];
         l_id(~bboxesUsed') = [];
         l_cls(~bboxesUsed') = [];
-
-        if ~isempty(bboxesLidar)
-    
+        
+        if ~isempty(bboxesLidar) && (size(bboxesLidar,1) == size(indicies,1))
+            
             numLidarDetections = size(bboxesLidar,1);
       
             for i = 1:numLidarDetections
+                
+                pt = select(ptCld,indicies{i});
+                
+                [~,del_idx] = sortrows(pt.Location(:,1));
 
+                indicies{i}(del_idx(end-15:end,:)) = [];
+                
                 % Create cuboidModel
                 model = pcfitcuboid(ptCld,indicies{i});
                 Model{i} = model;

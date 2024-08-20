@@ -84,7 +84,7 @@ class STrack(BaseTrack):
         self.angle = xywh[4] if len(xywh) == 6 else None
 
         self.prev_mean = None
-        self.velocity = np.zeros(2,dtype=np.float32)
+        self.velocity = np.zeros(2,dtype=np.float64)
         
 
     def predict(self):
@@ -98,7 +98,8 @@ class STrack(BaseTrack):
         # Calculate velocity based on previous state
         if self.mean is not None:
             prev_mean = getattr(self, 'prev_mean', self.mean)
-            self.velocity = self.mean[:2] - prev_mean[:2]
+            position_delta = self.mean[4:6] - prev_mean[4:6]
+            self.velocity = [position_delta[0], position_delta[1]]
         self.prev_mean = self.mean
 
     @staticmethod
@@ -198,8 +199,10 @@ class STrack(BaseTrack):
          # Update previous mean and velocity
         if self.prev_mean is not None:
             prev_mean = getattr(self, 'prev_mean', self.mean)
-            self.velocity = self.mean[:2] - prev_mean[:2]
+            position_delta = self.mean[4:6] - prev_mean[4:6]
+            self.velocity = [position_delta[0], position_delta[1]]
         self.prev_mean = self.mean
+
 
 
     def convert_coords(self, tlwh):
