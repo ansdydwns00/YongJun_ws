@@ -1,0 +1,31 @@
+// generated from rosidl_adapter/resource/msg.idl.em
+// with input from vision_msgs/msg/Classification2D.msg
+// generated code does not contain a copyright notice
+
+#include "sensor_msgs/msg/Image.idl"
+#include "std_msgs/msg/Header.idl"
+#include "vision_msgs/msg/ObjectHypothesis.idl"
+
+module vision_msgs {
+  module msg {
+    @verbatim (language="comment", text=
+      "Defines a 2D classification result." "\n"
+      "" "\n"
+      "This result does not contain any position information. It is designed for" "\n"
+      "  classifiers, which simply provide class probabilities given a source image.")
+    struct Classification2D {
+      std_msgs::msg::Header header;
+
+      @verbatim (language="comment", text=
+        "A list of class probabilities. This list need not provide a probability for" "\n"
+        "  every possible class, just ones that are nonzero, or above some" "\n"
+        "  user-defined threshold.")
+      sequence<vision_msgs::msg::ObjectHypothesis> results;
+
+      @verbatim (language="comment", text=
+        "The 2D data that generated these results (i.e. region proposal cropped out of" "\n"
+        "  the image). Not required for all use cases, so it may be empty.")
+      sensor_msgs::msg::Image source_img;
+    };
+  };
+};

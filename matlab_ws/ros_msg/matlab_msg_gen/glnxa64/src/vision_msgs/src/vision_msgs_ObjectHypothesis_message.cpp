@@ -35,13 +35,13 @@ class VISION_MSGS_EXPORT ros2_vision_msgs_msg_ObjectHypothesis_common : public M
   void ros2_vision_msgs_msg_ObjectHypothesis_common::copy_from_struct(vision_msgs::msg::ObjectHypothesis* msg, const matlab::data::Struct& arr,
                MultiLibLoader loader) {
     try {
-        //class_id
-        const matlab::data::CharArray class_id_arr = arr["class_id"];
-        msg->class_id = class_id_arr.toAscii();
+        //id
+        const matlab::data::CharArray id_arr = arr["id"];
+        msg->id = id_arr.toAscii();
     } catch (matlab::data::InvalidFieldNameException&) {
-        throw std::invalid_argument("Field 'class_id' is missing.");
+        throw std::invalid_argument("Field 'id' is missing.");
     } catch (matlab::Exception&) {
-        throw std::invalid_argument("Field 'class_id' is wrong type; expected a string.");
+        throw std::invalid_argument("Field 'id' is wrong type; expected a string.");
     }
     try {
         //score
@@ -56,12 +56,12 @@ class VISION_MSGS_EXPORT ros2_vision_msgs_msg_ObjectHypothesis_common : public M
   //----------------------------------------------------------------------------
   MDArray_T ros2_vision_msgs_msg_ObjectHypothesis_common::get_arr(MDFactory_T& factory, const vision_msgs::msg::ObjectHypothesis* msg,
        MultiLibLoader loader, size_t size) {
-    auto outArray = factory.createStructArray({size,1},{"MessageType","class_id","score"});
+    auto outArray = factory.createStructArray({size,1},{"MessageType","id","score"});
     for(size_t ctr = 0; ctr < size; ctr++){
     outArray[ctr]["MessageType"] = factory.createCharArray("vision_msgs/ObjectHypothesis");
-    // class_id
-    auto currentElement_class_id = (msg + ctr)->class_id;
-    outArray[ctr]["class_id"] = factory.createCharArray(currentElement_class_id);
+    // id
+    auto currentElement_id = (msg + ctr)->id;
+    outArray[ctr]["id"] = factory.createCharArray(currentElement_id);
     // score
     auto currentElement_score = (msg + ctr)->score;
     outArray[ctr]["score"] = factory.createScalar(currentElement_score);

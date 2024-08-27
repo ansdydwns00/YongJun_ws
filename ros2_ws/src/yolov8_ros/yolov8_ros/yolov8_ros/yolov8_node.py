@@ -206,34 +206,6 @@ class Yolov8Node(Node):
 
         return masks_list
 
-    # def parse_keypoints(self, results: Results) -> List[KeyPoint2DArray]:
-
-    #     keypoints_list = []
-
-    #     points: Keypoints
-    #     for points in results.keypoints:
-
-    #         msg_array = KeyPoint2DArray()
-
-    #         if points.conf is None:
-    #             continue
-
-    #         for kp_id, (p, conf) in enumerate(zip(points.xy[0], points.conf[0])):
-
-    #             if conf >= self.threshold:
-    #                 msg = KeyPoint2D()
-
-    #                 msg.id = kp_id + 1
-    #                 msg.point.x = float(p[0])
-    #                 msg.point.y = float(p[1])
-    #                 msg.score = float(conf)
-
-    #                 msg_array.data.append(msg)
-
-    #         keypoints_list.append(msg_array)
-
-    #     return keypoints_list
-
     def image_cb(self, msg: Image) -> None:
         
         if self.enable:
@@ -253,35 +225,32 @@ class Yolov8Node(Node):
                 hypothesis = self.parse_hypothesis(results)
                 boxes = self.parse_boxes(results)
                 
-                
-
             if results.masks:
                 masks = self.parse_masks(results)
-
-            # if results.keypoints:
-            #     keypoints = self.parse_keypoints(results)
 
             # create detection msgs
             detections_msg = DetectionArray()
 
+            # Specify classes to keep
+            classes_to_keep = {0,2,3,4,7,72}   # 0:person, 2:car, 3: motorcycle, 4: airplane, 7: truck
+
+
             for i in range(len(results)):
+                
+                if hypothesis[i]["class_id"] in classes_to_keep:
+                    aux_msg = Detection()
 
-                aux_msg = Detection()
+                    if results.boxes or results.obb:
+                        aux_msg.class_id = hypothesis[i]["class_id"]
+                        aux_msg.class_name = hypothesis[i]["class_name"]
+                        aux_msg.score = hypothesis[i]["score"]
 
-                if results.boxes or results.obb:
-                    aux_msg.class_id = hypothesis[i]["class_id"]
-                    aux_msg.class_name = hypothesis[i]["class_name"]
-                    aux_msg.score = hypothesis[i]["score"]
+                        aux_msg.bbox = boxes[i]
 
-                    aux_msg.bbox = boxes[i]
+                    if results.masks:
+                        aux_msg.mask = masks[i]
 
-                if results.masks:
-                    aux_msg.mask = masks[i]
-
-                # if results.keypoints:
-                #     aux_msg.keypoints = keypoints[i]
-
-                detections_msg.detections.append(aux_msg)
+                    detections_msg.detections.append(aux_msg)
 
             # publish detections
             detections_msg.header = msg.header

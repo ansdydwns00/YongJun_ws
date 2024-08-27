@@ -8,7 +8,7 @@ from .basetrack import TrackState
 from .byte_tracker import BYTETracker, STrack
 from .utils import matching
 from .utils.gmc import GMC
-from .utils.kalman_filter import KalmanFilterXYWH
+from .utils.kalman_filter import KalmanFilterXYAH
 
 
 class BOTrack(STrack):
@@ -45,7 +45,7 @@ class BOTrack(STrack):
         >>> bo_track.update(new_track, frame_id=2)
     """
 
-    shared_kalman = KalmanFilterXYWH()
+    shared_kalman = KalmanFilterXYAH()
 
     def __init__(self, tlwh, score, cls, feat=None, feat_history=50):
         """
@@ -196,7 +196,7 @@ class BOTSORT(BYTETracker):
 
     def get_kalmanfilter(self):
         """Returns an instance of KalmanFilterXYWH for predicting and updating object states in the tracking process."""
-        return KalmanFilterXYWH()
+        return KalmanFilterXYAH()
 
     def init_track(self, dets, scores, cls, img=None):
         """Initialize object tracks using detection bounding boxes, scores, class labels, and optional ReID features."""

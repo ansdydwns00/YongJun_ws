@@ -37,16 +37,32 @@ private:
   ::vision_msgs::msg::ObjectHypothesisWithPose msg_;
 };
 
-class Init_ObjectHypothesisWithPose_hypothesis
+class Init_ObjectHypothesisWithPose_score
 {
 public:
-  Init_ObjectHypothesisWithPose_hypothesis()
+  explicit Init_ObjectHypothesisWithPose_score(::vision_msgs::msg::ObjectHypothesisWithPose & msg)
+  : msg_(msg)
+  {}
+  Init_ObjectHypothesisWithPose_pose score(::vision_msgs::msg::ObjectHypothesisWithPose::_score_type arg)
+  {
+    msg_.score = std::move(arg);
+    return Init_ObjectHypothesisWithPose_pose(msg_);
+  }
+
+private:
+  ::vision_msgs::msg::ObjectHypothesisWithPose msg_;
+};
+
+class Init_ObjectHypothesisWithPose_id
+{
+public:
+  Init_ObjectHypothesisWithPose_id()
   : msg_(::rosidl_runtime_cpp::MessageInitialization::SKIP)
   {}
-  Init_ObjectHypothesisWithPose_pose hypothesis(::vision_msgs::msg::ObjectHypothesisWithPose::_hypothesis_type arg)
+  Init_ObjectHypothesisWithPose_score id(::vision_msgs::msg::ObjectHypothesisWithPose::_id_type arg)
   {
-    msg_.hypothesis = std::move(arg);
-    return Init_ObjectHypothesisWithPose_pose(msg_);
+    msg_.id = std::move(arg);
+    return Init_ObjectHypothesisWithPose_score(msg_);
   }
 
 private:
@@ -64,7 +80,7 @@ template<>
 inline
 auto build<::vision_msgs::msg::ObjectHypothesisWithPose>()
 {
-  return vision_msgs::msg::builder::Init_ObjectHypothesisWithPose_hypothesis();
+  return vision_msgs::msg::builder::Init_ObjectHypothesisWithPose_id();
 }
 
 }  // namespace vision_msgs

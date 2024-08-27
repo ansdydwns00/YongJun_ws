@@ -1,10 +1,18 @@
 {
   "package_name": "vision_msgs",
   "non_idl_tuples": [
+    "/home/aiv/YongJun_ws/matlab_ws/ros_msg/matlab_msg_gen/glnxa64/src/vision_msgs:msg/BoundingBox2D.msg",
+    "/home/aiv/YongJun_ws/matlab_ws/ros_msg/matlab_msg_gen/glnxa64/src/vision_msgs:msg/BoundingBox2DArray.msg",
     "/home/aiv/YongJun_ws/matlab_ws/ros_msg/matlab_msg_gen/glnxa64/src/vision_msgs:msg/BoundingBox3D.msg",
+    "/home/aiv/YongJun_ws/matlab_ws/ros_msg/matlab_msg_gen/glnxa64/src/vision_msgs:msg/BoundingBox3DArray.msg",
+    "/home/aiv/YongJun_ws/matlab_ws/ros_msg/matlab_msg_gen/glnxa64/src/vision_msgs:msg/Classification2D.msg",
+    "/home/aiv/YongJun_ws/matlab_ws/ros_msg/matlab_msg_gen/glnxa64/src/vision_msgs:msg/Classification3D.msg",
+    "/home/aiv/YongJun_ws/matlab_ws/ros_msg/matlab_msg_gen/glnxa64/src/vision_msgs:msg/Detection2D.msg",
+    "/home/aiv/YongJun_ws/matlab_ws/ros_msg/matlab_msg_gen/glnxa64/src/vision_msgs:msg/Detection2DArray.msg",
     "/home/aiv/YongJun_ws/matlab_ws/ros_msg/matlab_msg_gen/glnxa64/src/vision_msgs:msg/Detection3D.msg",
     "/home/aiv/YongJun_ws/matlab_ws/ros_msg/matlab_msg_gen/glnxa64/src/vision_msgs:msg/Detection3DArray.msg",
     "/home/aiv/YongJun_ws/matlab_ws/ros_msg/matlab_msg_gen/glnxa64/src/vision_msgs:msg/ObjectHypothesis.msg",
-    "/home/aiv/YongJun_ws/matlab_ws/ros_msg/matlab_msg_gen/glnxa64/src/vision_msgs:msg/ObjectHypothesisWithPose.msg"
+    "/home/aiv/YongJun_ws/matlab_ws/ros_msg/matlab_msg_gen/glnxa64/src/vision_msgs:msg/ObjectHypothesisWithPose.msg",
+    "/home/aiv/YongJun_ws/matlab_ws/ros_msg/matlab_msg_gen/glnxa64/src/vision_msgs:msg/VisionInfo.msg"
   ]
 }

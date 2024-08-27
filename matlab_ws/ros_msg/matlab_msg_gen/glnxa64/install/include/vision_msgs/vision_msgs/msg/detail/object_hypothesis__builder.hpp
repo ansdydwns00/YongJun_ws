@@ -37,15 +37,15 @@ private:
   ::vision_msgs::msg::ObjectHypothesis msg_;
 };
 
-class Init_ObjectHypothesis_class_id
+class Init_ObjectHypothesis_id
 {
 public:
-  Init_ObjectHypothesis_class_id()
+  Init_ObjectHypothesis_id()
   : msg_(::rosidl_runtime_cpp::MessageInitialization::SKIP)
   {}
-  Init_ObjectHypothesis_score class_id(::vision_msgs::msg::ObjectHypothesis::_class_id_type arg)
+  Init_ObjectHypothesis_score id(::vision_msgs::msg::ObjectHypothesis::_id_type arg)
   {
-    msg_.class_id = std::move(arg);
+    msg_.id = std::move(arg);
     return Init_ObjectHypothesis_score(msg_);
   }
 
@@ -64,7 +64,7 @@ template<>
 inline
 auto build<::vision_msgs::msg::ObjectHypothesis>()
 {
-  return vision_msgs::msg::builder::Init_ObjectHypothesis_class_id();
+  return vision_msgs::msg::builder::Init_ObjectHypothesis_id();
 }
 
 }  // namespace vision_msgs

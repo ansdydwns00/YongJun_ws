@@ -33,7 +33,7 @@ typedef struct vision_msgs__msg__BoundingBox3D
 {
   /// The 3D position and orientation of the bounding box center
   geometry_msgs__msg__Pose center;
-  /// The total size of the bounding box, in meters, surrounding the object's center
+  /// The size of the bounding box, in meters, surrounding the object's center
   ///   pose.
   geometry_msgs__msg__Vector3 size;
 } vision_msgs__msg__BoundingBox3D;

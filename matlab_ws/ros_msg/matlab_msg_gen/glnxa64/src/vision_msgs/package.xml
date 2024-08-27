@@ -13,6 +13,7 @@
   <depend>geometry_msgs</depend>
   <depend>rclcpp</depend>
   <depend>rcutils</depend>
+  <depend>sensor_msgs</depend>
   <depend>std_msgs</depend>
   <test_depend>ament_lint_auto</test_depend>
   <test_depend>ament_lint_common</test_depend>
@@ -21,4 +22,4 @@
     <build_type>ament_cmake</build_type>
   </export>
 </package>
-<!-- Generated on Thu Aug 08 16:26:44 2024 -->
+<!-- Generated on Tue Aug 27 16:54:05 2024 -->

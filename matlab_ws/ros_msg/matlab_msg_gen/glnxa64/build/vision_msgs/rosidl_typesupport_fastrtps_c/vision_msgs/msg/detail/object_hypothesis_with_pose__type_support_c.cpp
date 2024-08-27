@@ -35,7 +35,8 @@ extern "C"
 #endif
 
 #include "geometry_msgs/msg/detail/pose_with_covariance__functions.h"  // pose
-#include "vision_msgs/msg/detail/object_hypothesis__functions.h"  // hypothesis
+#include "rosidl_runtime_c/string.h"  // id
+#include "rosidl_runtime_c/string_functions.h"  // id
 
 // forward declare type support functions
 ROSIDL_TYPESUPPORT_FASTRTPS_C_IMPORT_vision_msgs
@@ -52,17 +53,6 @@ size_t max_serialized_size_geometry_msgs__msg__PoseWithCovariance(
 ROSIDL_TYPESUPPORT_FASTRTPS_C_IMPORT_vision_msgs
 const rosidl_message_type_support_t *
   ROSIDL_TYPESUPPORT_INTERFACE__MESSAGE_SYMBOL_NAME(rosidl_typesupport_fastrtps_c, geometry_msgs, msg, PoseWithCovariance)();
-size_t get_serialized_size_vision_msgs__msg__ObjectHypothesis(
-  const void * untyped_ros_message,
-  size_t current_alignment);
-
-size_t max_serialized_size_vision_msgs__msg__ObjectHypothesis(
-  bool & full_bounded,
-  bool & is_plain,
-  size_t current_alignment);
-
-const rosidl_message_type_support_t *
-  ROSIDL_TYPESUPPORT_INTERFACE__MESSAGE_SYMBOL_NAME(rosidl_typesupport_fastrtps_c, vision_msgs, msg, ObjectHypothesis)();
 
 
 using _ObjectHypothesisWithPose__ros_msg_type = vision_msgs__msg__ObjectHypothesisWithPose;
@@ -76,18 +66,23 @@ static bool _ObjectHypothesisWithPose__cdr_serialize(
     return false;
   }
   const _ObjectHypothesisWithPose__ros_msg_type * ros_message = static_cast<const _ObjectHypothesisWithPose__ros_msg_type *>(untyped_ros_message);
-  // Field name: hypothesis
+  // Field name: id
   {
-    const message_type_support_callbacks_t * callbacks =
-      static_cast<const message_type_support_callbacks_t *>(
-      ROSIDL_TYPESUPPORT_INTERFACE__MESSAGE_SYMBOL_NAME(
-        rosidl_typesupport_fastrtps_c, vision_msgs, msg, ObjectHypothesis
-      )()->data);
-    if (!callbacks->cdr_serialize(
-        &ros_message->hypothesis, cdr))
-    {
+    const rosidl_runtime_c__String * str = &ros_message->id;
+    if (str->capacity == 0 || str->capacity <= str->size) {
+      fprintf(stderr, "string capacity not greater than size\n");
       return false;
     }
+    if (str->data[str->size] != '\0') {
+      fprintf(stderr, "string not null-terminated\n");
+      return false;
+    }
+    cdr << str->data;
+  }
+
+  // Field name: score
+  {
+    cdr << ros_message->score;
   }
 
   // Field name: pose
@@ -116,18 +111,25 @@ static bool _ObjectHypothesisWithPose__cdr_deserialize(
     return false;
   }
   _ObjectHypothesisWithPose__ros_msg_type * ros_message = static_cast<_ObjectHypothesisWithPose__ros_msg_type *>(untyped_ros_message);
-  // Field name: hypothesis
+  // Field name: id
   {
-    const message_type_support_callbacks_t * callbacks =
-      static_cast<const message_type_support_callbacks_t *>(
-      ROSIDL_TYPESUPPORT_INTERFACE__MESSAGE_SYMBOL_NAME(
-        rosidl_typesupport_fastrtps_c, vision_msgs, msg, ObjectHypothesis
-      )()->data);
-    if (!callbacks->cdr_deserialize(
-        cdr, &ros_message->hypothesis))
-    {
+    std::string tmp;
+    cdr >> tmp;
+    if (!ros_message->id.data) {
+      rosidl_runtime_c__String__init(&ros_message->id);
+    }
+    bool succeeded = rosidl_runtime_c__String__assign(
+      &ros_message->id,
+      tmp.c_str());
+    if (!succeeded) {
+      fprintf(stderr, "failed to assign string into field 'id'\n");
       return false;
     }
+  }
+
+  // Field name: score
+  {
+    cdr >> ros_message->score;
   }
 
   // Field name: pose
@@ -161,10 +163,16 @@ size_t get_serialized_size_vision_msgs__msg__ObjectHypothesisWithPose(
   (void)padding;
   (void)wchar_size;
 
-  // field.name hypothesis
-
-  current_alignment += get_serialized_size_vision_msgs__msg__ObjectHypothesis(
-    &(ros_message->hypothesis), current_alignment);
+  // field.name id
+  current_alignment += padding +
+    eprosima::fastcdr::Cdr::alignment(current_alignment, padding) +
+    (ros_message->id.size + 1);
+  // field.name score
+  {
+    size_t item_size = sizeof(ros_message->score);
+    current_alignment += item_size +
+      eprosima::fastcdr::Cdr::alignment(current_alignment, item_size);
+  }
   // field.name pose
 
   current_alignment += get_serialized_size_geometry_msgs__msg__PoseWithCovariance(
@@ -196,20 +204,24 @@ size_t max_serialized_size_vision_msgs__msg__ObjectHypothesisWithPose(
   full_bounded = true;
   is_plain = true;
 
-  // member: hypothesis
+  // member: id
   {
     size_t array_size = 1;
 
-
+    full_bounded = false;
+    is_plain = false;
     for (size_t index = 0; index < array_size; ++index) {
-      bool inner_full_bounded;
-      bool inner_is_plain;
-      current_alignment +=
-        max_serialized_size_vision_msgs__msg__ObjectHypothesis(
-        inner_full_bounded, inner_is_plain, current_alignment);
-      full_bounded &= inner_full_bounded;
-      is_plain &= inner_is_plain;
+      current_alignment += padding +
+        eprosima::fastcdr::Cdr::alignment(current_alignment, padding) +
+        1;
     }
+  }
+  // member: score
+  {
+    size_t array_size = 1;
+
+    current_alignment += array_size * sizeof(uint64_t) +
+      eprosima::fastcdr::Cdr::alignment(current_alignment, sizeof(uint64_t));
   }
   // member: pose
   {

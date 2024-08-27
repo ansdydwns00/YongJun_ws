@@ -7,10 +7,12 @@ from ..utils.ops import xywh2ltwh
 from .basetrack import BaseTrack, TrackState
 from .utils import matching
 from .utils.kalman_filter import KalmanFilterXYAH
-
+# ExtendedKalmanFilterXYAH
+# KalmanFilterXYAH
 # STrack 클래스는 BaseTrack을 상속받아 정의된 클래스
 # 객체 추적 알고리즘의 한 부분으로, 객체의 위치를 추적하고 관리하는 역할
 # 특히 칼만 필터를 이용해 객체의 상태를 예측하고 업데이트하는 데 중점을 둔다 
+
 class STrack(BaseTrack):
     """
     Single object tracking representation that uses Kalman filtering for state estimation.
@@ -98,7 +100,7 @@ class STrack(BaseTrack):
         # Calculate velocity based on previous state
         if self.mean is not None:
             prev_mean = getattr(self, 'prev_mean', self.mean)
-            position_delta = self.mean[4:6] - prev_mean[4:6]
+            position_delta = self.mean[5:7] - prev_mean[5:7]
             self.velocity = [position_delta[0], position_delta[1]]
         self.prev_mean = self.mean
 
@@ -199,7 +201,7 @@ class STrack(BaseTrack):
          # Update previous mean and velocity
         if self.prev_mean is not None:
             prev_mean = getattr(self, 'prev_mean', self.mean)
-            position_delta = self.mean[4:6] - prev_mean[4:6]
+            position_delta = self.mean[5:7] - prev_mean[5:7]
             self.velocity = [position_delta[0], position_delta[1]]
         self.prev_mean = self.mean
 

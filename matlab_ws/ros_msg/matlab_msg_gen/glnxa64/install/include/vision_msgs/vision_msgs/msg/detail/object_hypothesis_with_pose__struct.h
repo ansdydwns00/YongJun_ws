@@ -18,25 +18,28 @@ extern "C"
 // Constants defined in the message
 
 // Include directives for member types
-// Member 'hypothesis'
-#include "vision_msgs/msg/detail/object_hypothesis__struct.h"
+// Member 'id'
+#include "rosidl_runtime_c/string.h"
 // Member 'pose'
 #include "geometry_msgs/msg/detail/pose_with_covariance__struct.h"
 
 /// Struct defined in msg/ObjectHypothesisWithPose in the package vision_msgs.
 /**
-  * An object hypothesis that contains pose information.
-  * If you would like to define an array of ObjectHypothesisWithPose messages,
-  *   please see the Detection2D or Detection3D message types.
+  * An object hypothesis that contains position information.
  */
 typedef struct vision_msgs__msg__ObjectHypothesisWithPose
 {
-  /// The object hypothesis (ID and score).
-  vision_msgs__msg__ObjectHypothesis hypothesis;
+  /// The unique ID of the object class. To get additional information about
+  ///   this ID, such as its human-readable class name, listeners should perform a
+  ///   lookup in a metadata database. See vision_msgs/VisionInfo.msg for more detail.
+  rosidl_runtime_c__String id;
+  /// The probability or confidence value of the detected object. By convention,
+  ///   this value should lie in the range.
+  double score;
   /// The 6D pose of the object hypothesis. This pose should be
-  ///   defined as the pose of some fixed reference point on the object, such as
-  ///   the geometric center of the bounding box, the center of mass of the
-  ///   object or the origin of a reference mesh of the object.
+  ///   defined as the pose of some fixed reference point on the object, such a
+  ///   the geometric center of the bounding box or the center of mass of the
+  ///   object.
   /// Note that this pose is not stamped; frame information can be defined by
   ///   parent messages.
   /// Also note that different classes predicted for the same input data may have

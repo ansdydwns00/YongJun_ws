@@ -12,8 +12,8 @@
 
 
 // Include directives for member types
-// Member `hypothesis`
-#include "vision_msgs/msg/detail/object_hypothesis__functions.h"
+// Member `id`
+#include "rosidl_runtime_c/string_functions.h"
 // Member `pose`
 #include "geometry_msgs/msg/detail/pose_with_covariance__functions.h"
 
@@ -23,11 +23,12 @@ vision_msgs__msg__ObjectHypothesisWithPose__init(vision_msgs__msg__ObjectHypothe
   if (!msg) {
     return false;
   }
-  // hypothesis
-  if (!vision_msgs__msg__ObjectHypothesis__init(&msg->hypothesis)) {
+  // id
+  if (!rosidl_runtime_c__String__init(&msg->id)) {
     vision_msgs__msg__ObjectHypothesisWithPose__fini(msg);
     return false;
   }
+  // score
   // pose
   if (!geometry_msgs__msg__PoseWithCovariance__init(&msg->pose)) {
     vision_msgs__msg__ObjectHypothesisWithPose__fini(msg);
@@ -42,8 +43,9 @@ vision_msgs__msg__ObjectHypothesisWithPose__fini(vision_msgs__msg__ObjectHypothe
   if (!msg) {
     return;
   }
-  // hypothesis
-  vision_msgs__msg__ObjectHypothesis__fini(&msg->hypothesis);
+  // id
+  rosidl_runtime_c__String__fini(&msg->id);
+  // score
   // pose
   geometry_msgs__msg__PoseWithCovariance__fini(&msg->pose);
 }
@@ -54,10 +56,14 @@ vision_msgs__msg__ObjectHypothesisWithPose__are_equal(const vision_msgs__msg__Ob
   if (!lhs || !rhs) {
     return false;
   }
-  // hypothesis
-  if (!vision_msgs__msg__ObjectHypothesis__are_equal(
-      &(lhs->hypothesis), &(rhs->hypothesis)))
+  // id
+  if (!rosidl_runtime_c__String__are_equal(
+      &(lhs->id), &(rhs->id)))
   {
+    return false;
+  }
+  // score
+  if (lhs->score != rhs->score) {
     return false;
   }
   // pose
@@ -77,12 +83,14 @@ vision_msgs__msg__ObjectHypothesisWithPose__copy(
   if (!input || !output) {
     return false;
   }
-  // hypothesis
-  if (!vision_msgs__msg__ObjectHypothesis__copy(
-      &(input->hypothesis), &(output->hypothesis)))
+  // id
+  if (!rosidl_runtime_c__String__copy(
+      &(input->id), &(output->id)))
   {
     return false;
   }
+  // score
+  output->score = input->score;
   // pose
   if (!geometry_msgs__msg__PoseWithCovariance__copy(
       &(input->pose), &(output->pose)))

@@ -18,7 +18,9 @@
 #include "vision_msgs/msg/detail/object_hypothesis_with_pose__functions.h"
 // Member `bbox`
 #include "vision_msgs/msg/detail/bounding_box3_d__functions.h"
-// Member `id`
+// Member `source_cloud`
+#include "sensor_msgs/msg/detail/point_cloud2__functions.h"
+// Member `tracking_id`
 #include "rosidl_runtime_c/string_functions.h"
 
 bool
@@ -42,8 +44,14 @@ vision_msgs__msg__Detection3D__init(vision_msgs__msg__Detection3D * msg)
     vision_msgs__msg__Detection3D__fini(msg);
     return false;
   }
-  // id
-  if (!rosidl_runtime_c__String__init(&msg->id)) {
+  // source_cloud
+  if (!sensor_msgs__msg__PointCloud2__init(&msg->source_cloud)) {
+    vision_msgs__msg__Detection3D__fini(msg);
+    return false;
+  }
+  // is_tracking
+  // tracking_id
+  if (!rosidl_runtime_c__String__init(&msg->tracking_id)) {
     vision_msgs__msg__Detection3D__fini(msg);
     return false;
   }
@@ -62,8 +70,11 @@ vision_msgs__msg__Detection3D__fini(vision_msgs__msg__Detection3D * msg)
   vision_msgs__msg__ObjectHypothesisWithPose__Sequence__fini(&msg->results);
   // bbox
   vision_msgs__msg__BoundingBox3D__fini(&msg->bbox);
-  // id
-  rosidl_runtime_c__String__fini(&msg->id);
+  // source_cloud
+  sensor_msgs__msg__PointCloud2__fini(&msg->source_cloud);
+  // is_tracking
+  // tracking_id
+  rosidl_runtime_c__String__fini(&msg->tracking_id);
 }
 
 bool
@@ -90,9 +101,19 @@ vision_msgs__msg__Detection3D__are_equal(const vision_msgs__msg__Detection3D * l
   {
     return false;
   }
-  // id
+  // source_cloud
+  if (!sensor_msgs__msg__PointCloud2__are_equal(
+      &(lhs->source_cloud), &(rhs->source_cloud)))
+  {
+    return false;
+  }
+  // is_tracking
+  if (lhs->is_tracking != rhs->is_tracking) {
+    return false;
+  }
+  // tracking_id
   if (!rosidl_runtime_c__String__are_equal(
-      &(lhs->id), &(rhs->id)))
+      &(lhs->tracking_id), &(rhs->tracking_id)))
   {
     return false;
   }
@@ -125,9 +146,17 @@ vision_msgs__msg__Detection3D__copy(
   {
     return false;
   }
-  // id
+  // source_cloud
+  if (!sensor_msgs__msg__PointCloud2__copy(
+      &(input->source_cloud), &(output->source_cloud)))
+  {
+    return false;
+  }
+  // is_tracking
+  output->is_tracking = input->is_tracking;
+  // tracking_id
   if (!rosidl_runtime_c__String__copy(
-      &(input->id), &(output->id)))
+      &(input->tracking_id), &(output->tracking_id)))
   {
     return false;
   }

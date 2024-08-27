@@ -37,16 +37,33 @@ void ObjectHypothesisWithPose_fini_function(void * message_memory)
   typed_message->~ObjectHypothesisWithPose();
 }
 
-static const ::rosidl_typesupport_introspection_cpp::MessageMember ObjectHypothesisWithPose_message_member_array[2] = {
+static const ::rosidl_typesupport_introspection_cpp::MessageMember ObjectHypothesisWithPose_message_member_array[3] = {
   {
-    "hypothesis",  // name
-    ::rosidl_typesupport_introspection_cpp::ROS_TYPE_MESSAGE,  // type
+    "id",  // name
+    ::rosidl_typesupport_introspection_cpp::ROS_TYPE_STRING,  // type
     0,  // upper bound of string
-    ::rosidl_typesupport_introspection_cpp::get_message_type_support_handle<vision_msgs::msg::ObjectHypothesis>(),  // members of sub message
+    nullptr,  // members of sub message
     false,  // is array
     0,  // array size
     false,  // is upper bound
-    offsetof(vision_msgs::msg::ObjectHypothesisWithPose, hypothesis),  // bytes offset in struct
+    offsetof(vision_msgs::msg::ObjectHypothesisWithPose, id),  // bytes offset in struct
+    nullptr,  // default value
+    nullptr,  // size() function pointer
+    nullptr,  // get_const(index) function pointer
+    nullptr,  // get(index) function pointer
+    nullptr,  // fetch(index, &value) function pointer
+    nullptr,  // assign(index, value) function pointer
+    nullptr  // resize(index) function pointer
+  },
+  {
+    "score",  // name
+    ::rosidl_typesupport_introspection_cpp::ROS_TYPE_DOUBLE,  // type
+    0,  // upper bound of string
+    nullptr,  // members of sub message
+    false,  // is array
+    0,  // array size
+    false,  // is upper bound
+    offsetof(vision_msgs::msg::ObjectHypothesisWithPose, score),  // bytes offset in struct
     nullptr,  // default value
     nullptr,  // size() function pointer
     nullptr,  // get_const(index) function pointer
@@ -77,7 +94,7 @@ static const ::rosidl_typesupport_introspection_cpp::MessageMember ObjectHypothe
 static const ::rosidl_typesupport_introspection_cpp::MessageMembers ObjectHypothesisWithPose_message_members = {
   "vision_msgs::msg",  // message namespace
   "ObjectHypothesisWithPose",  // message name
-  2,  // number of fields
+  3,  // number of fields
   sizeof(vision_msgs::msg::ObjectHypothesisWithPose),
   ObjectHypothesisWithPose_message_member_array,  // message members
   ObjectHypothesisWithPose_init_function,  // function to initialize message memory (memory has to be allocated)

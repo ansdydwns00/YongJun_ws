@@ -1,0 +1,30 @@
+function [data, info] = boundingBox2DArray
+%BoundingBox2DArray gives an empty data for vision_msgs/BoundingBox2DArray
+% Copyright 2019-2021 The MathWorks, Inc.
+data = struct();
+data.MessageType = 'vision_msgs/BoundingBox2DArray';
+[data.header, info.header] = ros.internal.ros2.messages.std_msgs.header;
+info.header.MLdataType = 'struct';
+[data.boxes, info.boxes] = ros.internal.ros2.custommessages.vision_msgs.boundingBox2D;
+info.boxes.MLdataType = 'struct';
+info.boxes.MaxLen = NaN;
+info.boxes.MinLen = 0;
+info.MessageType = 'vision_msgs/BoundingBox2DArray';
+info.constant = 0;
+info.default = 0;
+info.maxstrlen = NaN;
+info.MaxLen = 1;
+info.MinLen = 1;
+info.MatPath = cell(1,12);
+info.MatPath{1} = 'header';
+info.MatPath{2} = 'header.stamp';
+info.MatPath{3} = 'header.stamp.sec';
+info.MatPath{4} = 'header.stamp.nanosec';
+info.MatPath{5} = 'header.frame_id';
+info.MatPath{6} = 'boxes';
+info.MatPath{7} = 'boxes.center';
+info.MatPath{8} = 'boxes.center.x';
+info.MatPath{9} = 'boxes.center.y';
+info.MatPath{10} = 'boxes.center.theta';
+info.MatPath{11} = 'boxes.size_x';
+info.MatPath{12} = 'boxes.size_y';

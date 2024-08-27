@@ -69,19 +69,38 @@ class VISION_MSGS_EXPORT ros2_vision_msgs_msg_Detection3D_common : public MATLAB
         throw std::invalid_argument("Field 'bbox' is wrong type; expected a struct.");
     }
     try {
-        //id
-        const matlab::data::CharArray id_arr = arr["id"];
-        msg->id = id_arr.toAscii();
+        //source_cloud
+        const matlab::data::StructArray source_cloud_arr = arr["source_cloud"];
+        auto msgClassPtr_source_cloud = getCommonObject<sensor_msgs::msg::PointCloud2>("ros2_sensor_msgs_msg_PointCloud2_common",loader);
+        msgClassPtr_source_cloud->copy_from_struct(&msg->source_cloud,source_cloud_arr[0],loader);
     } catch (matlab::data::InvalidFieldNameException&) {
-        throw std::invalid_argument("Field 'id' is missing.");
+        throw std::invalid_argument("Field 'source_cloud' is missing.");
     } catch (matlab::Exception&) {
-        throw std::invalid_argument("Field 'id' is wrong type; expected a string.");
+        throw std::invalid_argument("Field 'source_cloud' is wrong type; expected a struct.");
+    }
+    try {
+        //is_tracking
+        const matlab::data::TypedArray<bool> is_tracking_arr = arr["is_tracking"];
+        msg->is_tracking = is_tracking_arr[0];
+    } catch (matlab::data::InvalidFieldNameException&) {
+        throw std::invalid_argument("Field 'is_tracking' is missing.");
+    } catch (matlab::Exception&) {
+        throw std::invalid_argument("Field 'is_tracking' is wrong type; expected a logical.");
+    }
+    try {
+        //tracking_id
+        const matlab::data::CharArray tracking_id_arr = arr["tracking_id"];
+        msg->tracking_id = tracking_id_arr.toAscii();
+    } catch (matlab::data::InvalidFieldNameException&) {
+        throw std::invalid_argument("Field 'tracking_id' is missing.");
+    } catch (matlab::Exception&) {
+        throw std::invalid_argument("Field 'tracking_id' is wrong type; expected a string.");
     }
   }
   //----------------------------------------------------------------------------
   MDArray_T ros2_vision_msgs_msg_Detection3D_common::get_arr(MDFactory_T& factory, const vision_msgs::msg::Detection3D* msg,
        MultiLibLoader loader, size_t size) {
-    auto outArray = factory.createStructArray({size,1},{"MessageType","header","results","bbox","id"});
+    auto outArray = factory.createStructArray({size,1},{"MessageType","header","results","bbox","source_cloud","is_tracking","tracking_id"});
     for(size_t ctr = 0; ctr < size; ctr++){
     outArray[ctr]["MessageType"] = factory.createCharArray("vision_msgs/Detection3D");
     // header
@@ -96,9 +115,16 @@ class VISION_MSGS_EXPORT ros2_vision_msgs_msg_Detection3D_common : public MATLAB
     auto currentElement_bbox = (msg + ctr)->bbox;
     auto msgClassPtr_bbox = getCommonObject<vision_msgs::msg::BoundingBox3D>("ros2_vision_msgs_msg_BoundingBox3D_common",loader);
     outArray[ctr]["bbox"] = msgClassPtr_bbox->get_arr(factory, &currentElement_bbox, loader);
-    // id
-    auto currentElement_id = (msg + ctr)->id;
-    outArray[ctr]["id"] = factory.createCharArray(currentElement_id);
+    // source_cloud
+    auto currentElement_source_cloud = (msg + ctr)->source_cloud;
+    auto msgClassPtr_source_cloud = getCommonObject<sensor_msgs::msg::PointCloud2>("ros2_sensor_msgs_msg_PointCloud2_common",loader);
+    outArray[ctr]["source_cloud"] = msgClassPtr_source_cloud->get_arr(factory, &currentElement_source_cloud, loader);
+    // is_tracking
+    auto currentElement_is_tracking = (msg + ctr)->is_tracking;
+    outArray[ctr]["is_tracking"] = factory.createScalar(currentElement_is_tracking);
+    // tracking_id
+    auto currentElement_tracking_id = (msg + ctr)->tracking_id;
+    outArray[ctr]["tracking_id"] = factory.createCharArray(currentElement_tracking_id);
     }
     return std::move(outArray);
   } 

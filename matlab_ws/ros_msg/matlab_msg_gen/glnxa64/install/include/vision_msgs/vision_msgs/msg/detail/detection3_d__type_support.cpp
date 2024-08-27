@@ -82,7 +82,7 @@ void resize_function__Detection3D__results(void * untyped_member, size_t size)
   member->resize(size);
 }
 
-static const ::rosidl_typesupport_introspection_cpp::MessageMember Detection3D_message_member_array[4] = {
+static const ::rosidl_typesupport_introspection_cpp::MessageMember Detection3D_message_member_array[6] = {
   {
     "header",  // name
     ::rosidl_typesupport_introspection_cpp::ROS_TYPE_MESSAGE,  // type
@@ -135,14 +135,48 @@ static const ::rosidl_typesupport_introspection_cpp::MessageMember Detection3D_m
     nullptr  // resize(index) function pointer
   },
   {
-    "id",  // name
+    "source_cloud",  // name
+    ::rosidl_typesupport_introspection_cpp::ROS_TYPE_MESSAGE,  // type
+    0,  // upper bound of string
+    ::rosidl_typesupport_introspection_cpp::get_message_type_support_handle<sensor_msgs::msg::PointCloud2>(),  // members of sub message
+    false,  // is array
+    0,  // array size
+    false,  // is upper bound
+    offsetof(vision_msgs::msg::Detection3D, source_cloud),  // bytes offset in struct
+    nullptr,  // default value
+    nullptr,  // size() function pointer
+    nullptr,  // get_const(index) function pointer
+    nullptr,  // get(index) function pointer
+    nullptr,  // fetch(index, &value) function pointer
+    nullptr,  // assign(index, value) function pointer
+    nullptr  // resize(index) function pointer
+  },
+  {
+    "is_tracking",  // name
+    ::rosidl_typesupport_introspection_cpp::ROS_TYPE_BOOLEAN,  // type
+    0,  // upper bound of string
+    nullptr,  // members of sub message
+    false,  // is array
+    0,  // array size
+    false,  // is upper bound
+    offsetof(vision_msgs::msg::Detection3D, is_tracking),  // bytes offset in struct
+    nullptr,  // default value
+    nullptr,  // size() function pointer
+    nullptr,  // get_const(index) function pointer
+    nullptr,  // get(index) function pointer
+    nullptr,  // fetch(index, &value) function pointer
+    nullptr,  // assign(index, value) function pointer
+    nullptr  // resize(index) function pointer
+  },
+  {
+    "tracking_id",  // name
     ::rosidl_typesupport_introspection_cpp::ROS_TYPE_STRING,  // type
     0,  // upper bound of string
     nullptr,  // members of sub message
     false,  // is array
     0,  // array size
     false,  // is upper bound
-    offsetof(vision_msgs::msg::Detection3D, id),  // bytes offset in struct
+    offsetof(vision_msgs::msg::Detection3D, tracking_id),  // bytes offset in struct
     nullptr,  // default value
     nullptr,  // size() function pointer
     nullptr,  // get_const(index) function pointer
@@ -156,7 +190,7 @@ static const ::rosidl_typesupport_introspection_cpp::MessageMember Detection3D_m
 static const ::rosidl_typesupport_introspection_cpp::MessageMembers Detection3D_message_members = {
   "vision_msgs::msg",  // message namespace
   "Detection3D",  // message name
-  4,  // number of fields
+  6,  // number of fields
   sizeof(vision_msgs::msg::Detection3D),
   Detection3D_message_member_array,  // message members
   Detection3D_init_function,  // function to initialize message memory (memory has to be allocated)

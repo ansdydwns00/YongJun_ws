@@ -15,8 +15,6 @@
 #include "rosidl_runtime_cpp/traits.hpp"
 
 // Include directives for member types
-// Member 'hypothesis'
-#include "vision_msgs/msg/detail/object_hypothesis__traits.hpp"
 // Member 'pose'
 #include "geometry_msgs/msg/detail/pose_with_covariance__traits.hpp"
 
@@ -31,10 +29,17 @@ inline void to_flow_style_yaml(
   std::ostream & out)
 {
   out << "{";
-  // member: hypothesis
+  // member: id
   {
-    out << "hypothesis: ";
-    to_flow_style_yaml(msg.hypothesis, out);
+    out << "id: ";
+    rosidl_generator_traits::value_to_yaml(msg.id, out);
+    out << ", ";
+  }
+
+  // member: score
+  {
+    out << "score: ";
+    rosidl_generator_traits::value_to_yaml(msg.score, out);
     out << ", ";
   }
 
@@ -50,13 +55,24 @@ inline void to_block_style_yaml(
   const ObjectHypothesisWithPose & msg,
   std::ostream & out, size_t indentation = 0)
 {
-  // member: hypothesis
+  // member: id
   {
     if (indentation > 0) {
       out << std::string(indentation, ' ');
     }
-    out << "hypothesis:\n";
-    to_block_style_yaml(msg.hypothesis, out, indentation + 2);
+    out << "id: ";
+    rosidl_generator_traits::value_to_yaml(msg.id, out);
+    out << "\n";
+  }
+
+  // member: score
+  {
+    if (indentation > 0) {
+      out << std::string(indentation, ' ');
+    }
+    out << "score: ";
+    rosidl_generator_traits::value_to_yaml(msg.score, out);
+    out << "\n";
   }
 
   // member: pose
@@ -115,11 +131,11 @@ inline const char * name<vision_msgs::msg::ObjectHypothesisWithPose>()
 
 template<>
 struct has_fixed_size<vision_msgs::msg::ObjectHypothesisWithPose>
-  : std::integral_constant<bool, has_fixed_size<geometry_msgs::msg::PoseWithCovariance>::value && has_fixed_size<vision_msgs::msg::ObjectHypothesis>::value> {};
+  : std::integral_constant<bool, false> {};
 
 template<>
 struct has_bounded_size<vision_msgs::msg::ObjectHypothesisWithPose>
-  : std::integral_constant<bool, has_bounded_size<geometry_msgs::msg::PoseWithCovariance>::value && has_bounded_size<vision_msgs::msg::ObjectHypothesis>::value> {};
+  : std::integral_constant<bool, false> {};
 
 template<>
 struct is_message<vision_msgs::msg::ObjectHypothesisWithPose>

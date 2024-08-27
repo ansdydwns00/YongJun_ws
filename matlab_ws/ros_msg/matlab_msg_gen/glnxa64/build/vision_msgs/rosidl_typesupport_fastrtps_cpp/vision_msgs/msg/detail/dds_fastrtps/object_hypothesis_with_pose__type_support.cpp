@@ -16,30 +16,6 @@
 
 
 // forward declaration of message dependencies and their conversion functions
-namespace vision_msgs
-{
-namespace msg
-{
-namespace typesupport_fastrtps_cpp
-{
-bool cdr_serialize(
-  const vision_msgs::msg::ObjectHypothesis &,
-  eprosima::fastcdr::Cdr &);
-bool cdr_deserialize(
-  eprosima::fastcdr::Cdr &,
-  vision_msgs::msg::ObjectHypothesis &);
-size_t get_serialized_size(
-  const vision_msgs::msg::ObjectHypothesis &,
-  size_t current_alignment);
-size_t
-max_serialized_size_ObjectHypothesis(
-  bool & full_bounded,
-  bool & is_plain,
-  size_t current_alignment);
-}  // namespace typesupport_fastrtps_cpp
-}  // namespace msg
-}  // namespace vision_msgs
-
 namespace geometry_msgs
 {
 namespace msg
@@ -80,10 +56,10 @@ cdr_serialize(
   const vision_msgs::msg::ObjectHypothesisWithPose & ros_message,
   eprosima::fastcdr::Cdr & cdr)
 {
-  // Member: hypothesis
-  vision_msgs::msg::typesupport_fastrtps_cpp::cdr_serialize(
-    ros_message.hypothesis,
-    cdr);
+  // Member: id
+  cdr << ros_message.id;
+  // Member: score
+  cdr << ros_message.score;
   // Member: pose
   geometry_msgs::msg::typesupport_fastrtps_cpp::cdr_serialize(
     ros_message.pose,
@@ -97,9 +73,11 @@ cdr_deserialize(
   eprosima::fastcdr::Cdr & cdr,
   vision_msgs::msg::ObjectHypothesisWithPose & ros_message)
 {
-  // Member: hypothesis
-  vision_msgs::msg::typesupport_fastrtps_cpp::cdr_deserialize(
-    cdr, ros_message.hypothesis);
+  // Member: id
+  cdr >> ros_message.id;
+
+  // Member: score
+  cdr >> ros_message.score;
 
   // Member: pose
   geometry_msgs::msg::typesupport_fastrtps_cpp::cdr_deserialize(
@@ -121,11 +99,16 @@ get_serialized_size(
   (void)padding;
   (void)wchar_size;
 
-  // Member: hypothesis
-
-  current_alignment +=
-    vision_msgs::msg::typesupport_fastrtps_cpp::get_serialized_size(
-    ros_message.hypothesis, current_alignment);
+  // Member: id
+  current_alignment += padding +
+    eprosima::fastcdr::Cdr::alignment(current_alignment, padding) +
+    (ros_message.id.size() + 1);
+  // Member: score
+  {
+    size_t item_size = sizeof(ros_message.score);
+    current_alignment += item_size +
+      eprosima::fastcdr::Cdr::alignment(current_alignment, item_size);
+  }
   // Member: pose
 
   current_alignment +=
@@ -153,20 +136,25 @@ max_serialized_size_ObjectHypothesisWithPose(
   is_plain = true;
 
 
-  // Member: hypothesis
+  // Member: id
   {
     size_t array_size = 1;
 
-
+    full_bounded = false;
+    is_plain = false;
     for (size_t index = 0; index < array_size; ++index) {
-      bool inner_full_bounded;
-      bool inner_is_plain;
-      current_alignment +=
-        vision_msgs::msg::typesupport_fastrtps_cpp::max_serialized_size_ObjectHypothesis(
-        inner_full_bounded, inner_is_plain, current_alignment);
-      full_bounded &= inner_full_bounded;
-      is_plain &= inner_is_plain;
+      current_alignment += padding +
+        eprosima::fastcdr::Cdr::alignment(current_alignment, padding) +
+        1;
     }
+  }
+
+  // Member: score
+  {
+    size_t array_size = 1;
+
+    current_alignment += array_size * sizeof(uint64_t) +
+      eprosima::fastcdr::Cdr::alignment(current_alignment, sizeof(uint64_t));
   }
 
   // Member: pose

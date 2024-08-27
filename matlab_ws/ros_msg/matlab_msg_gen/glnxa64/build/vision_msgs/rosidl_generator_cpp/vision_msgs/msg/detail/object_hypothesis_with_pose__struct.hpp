@@ -16,8 +16,6 @@
 
 
 // Include directives for member types
-// Member 'hypothesis'
-#include "vision_msgs/msg/detail/object_hypothesis__struct.hpp"
 // Member 'pose'
 #include "geometry_msgs/msg/detail/pose_with_covariance__struct.hpp"
 
@@ -40,32 +38,50 @@ struct ObjectHypothesisWithPose_
   using Type = ObjectHypothesisWithPose_<ContainerAllocator>;
 
   explicit ObjectHypothesisWithPose_(rosidl_runtime_cpp::MessageInitialization _init = rosidl_runtime_cpp::MessageInitialization::ALL)
-  : hypothesis(_init),
-    pose(_init)
+  : pose(_init)
   {
-    (void)_init;
+    if (rosidl_runtime_cpp::MessageInitialization::ALL == _init ||
+      rosidl_runtime_cpp::MessageInitialization::ZERO == _init)
+    {
+      this->id = "";
+      this->score = 0.0;
+    }
   }
 
   explicit ObjectHypothesisWithPose_(const ContainerAllocator & _alloc, rosidl_runtime_cpp::MessageInitialization _init = rosidl_runtime_cpp::MessageInitialization::ALL)
-  : hypothesis(_alloc, _init),
+  : id(_alloc),
     pose(_alloc, _init)
   {
-    (void)_init;
+    if (rosidl_runtime_cpp::MessageInitialization::ALL == _init ||
+      rosidl_runtime_cpp::MessageInitialization::ZERO == _init)
+    {
+      this->id = "";
+      this->score = 0.0;
+    }
   }
 
   // field types and members
-  using _hypothesis_type =
-    vision_msgs::msg::ObjectHypothesis_<ContainerAllocator>;
-  _hypothesis_type hypothesis;
+  using _id_type =
+    std::basic_string<char, std::char_traits<char>, typename std::allocator_traits<ContainerAllocator>::template rebind_alloc<char>>;
+  _id_type id;
+  using _score_type =
+    double;
+  _score_type score;
   using _pose_type =
     geometry_msgs::msg::PoseWithCovariance_<ContainerAllocator>;
   _pose_type pose;
 
   // setters for named parameter idiom
-  Type & set__hypothesis(
-    const vision_msgs::msg::ObjectHypothesis_<ContainerAllocator> & _arg)
+  Type & set__id(
+    const std::basic_string<char, std::char_traits<char>, typename std::allocator_traits<ContainerAllocator>::template rebind_alloc<char>> & _arg)
   {
-    this->hypothesis = _arg;
+    this->id = _arg;
+    return *this;
+  }
+  Type & set__score(
+    const double & _arg)
+  {
+    this->score = _arg;
     return *this;
   }
   Type & set__pose(
@@ -117,7 +133,10 @@ struct ObjectHypothesisWithPose_
   // comparison operators
   bool operator==(const ObjectHypothesisWithPose_ & other) const
   {
-    if (this->hypothesis != other.hypothesis) {
+    if (this->id != other.id) {
+      return false;
+    }
+    if (this->score != other.score) {
       return false;
     }
     if (this->pose != other.pose) {

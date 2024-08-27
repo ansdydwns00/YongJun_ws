@@ -39,14 +39,14 @@ void ObjectHypothesis_fini_function(void * message_memory)
 
 static const ::rosidl_typesupport_introspection_cpp::MessageMember ObjectHypothesis_message_member_array[2] = {
   {
-    "class_id",  // name
+    "id",  // name
     ::rosidl_typesupport_introspection_cpp::ROS_TYPE_STRING,  // type
     0,  // upper bound of string
     nullptr,  // members of sub message
     false,  // is array
     0,  // array size
     false,  // is upper bound
-    offsetof(vision_msgs::msg::ObjectHypothesis, class_id),  // bytes offset in struct
+    offsetof(vision_msgs::msg::ObjectHypothesis, id),  // bytes offset in struct
     nullptr,  // default value
     nullptr,  // size() function pointer
     nullptr,  // get_const(index) function pointer

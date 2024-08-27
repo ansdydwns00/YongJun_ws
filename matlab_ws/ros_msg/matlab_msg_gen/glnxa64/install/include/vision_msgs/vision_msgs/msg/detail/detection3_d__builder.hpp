@@ -21,16 +21,48 @@ namespace msg
 namespace builder
 {
 
-class Init_Detection3D_id
+class Init_Detection3D_tracking_id
 {
 public:
-  explicit Init_Detection3D_id(::vision_msgs::msg::Detection3D & msg)
+  explicit Init_Detection3D_tracking_id(::vision_msgs::msg::Detection3D & msg)
   : msg_(msg)
   {}
-  ::vision_msgs::msg::Detection3D id(::vision_msgs::msg::Detection3D::_id_type arg)
+  ::vision_msgs::msg::Detection3D tracking_id(::vision_msgs::msg::Detection3D::_tracking_id_type arg)
   {
-    msg_.id = std::move(arg);
+    msg_.tracking_id = std::move(arg);
     return std::move(msg_);
+  }
+
+private:
+  ::vision_msgs::msg::Detection3D msg_;
+};
+
+class Init_Detection3D_is_tracking
+{
+public:
+  explicit Init_Detection3D_is_tracking(::vision_msgs::msg::Detection3D & msg)
+  : msg_(msg)
+  {}
+  Init_Detection3D_tracking_id is_tracking(::vision_msgs::msg::Detection3D::_is_tracking_type arg)
+  {
+    msg_.is_tracking = std::move(arg);
+    return Init_Detection3D_tracking_id(msg_);
+  }
+
+private:
+  ::vision_msgs::msg::Detection3D msg_;
+};
+
+class Init_Detection3D_source_cloud
+{
+public:
+  explicit Init_Detection3D_source_cloud(::vision_msgs::msg::Detection3D & msg)
+  : msg_(msg)
+  {}
+  Init_Detection3D_is_tracking source_cloud(::vision_msgs::msg::Detection3D::_source_cloud_type arg)
+  {
+    msg_.source_cloud = std::move(arg);
+    return Init_Detection3D_is_tracking(msg_);
   }
 
 private:
@@ -43,10 +75,10 @@ public:
   explicit Init_Detection3D_bbox(::vision_msgs::msg::Detection3D & msg)
   : msg_(msg)
   {}
-  Init_Detection3D_id bbox(::vision_msgs::msg::Detection3D::_bbox_type arg)
+  Init_Detection3D_source_cloud bbox(::vision_msgs::msg::Detection3D::_bbox_type arg)
   {
     msg_.bbox = std::move(arg);
-    return Init_Detection3D_id(msg_);
+    return Init_Detection3D_source_cloud(msg_);
   }
 
 private:

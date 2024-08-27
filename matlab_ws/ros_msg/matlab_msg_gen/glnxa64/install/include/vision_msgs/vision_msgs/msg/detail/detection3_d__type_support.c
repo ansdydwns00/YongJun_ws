@@ -25,7 +25,11 @@
 #include "vision_msgs/msg/bounding_box3_d.h"
 // Member `bbox`
 #include "vision_msgs/msg/detail/bounding_box3_d__rosidl_typesupport_introspection_c.h"
-// Member `id`
+// Member `source_cloud`
+#include "sensor_msgs/msg/point_cloud2.h"
+// Member `source_cloud`
+#include "sensor_msgs/msg/detail/point_cloud2__rosidl_typesupport_introspection_c.h"
+// Member `tracking_id`
 #include "rosidl_runtime_c/string_functions.h"
 
 #ifdef __cplusplus
@@ -102,7 +106,7 @@ bool vision_msgs__msg__Detection3D__rosidl_typesupport_introspection_c__resize_f
   return vision_msgs__msg__ObjectHypothesisWithPose__Sequence__init(member, size);
 }
 
-static rosidl_typesupport_introspection_c__MessageMember vision_msgs__msg__Detection3D__rosidl_typesupport_introspection_c__Detection3D_message_member_array[4] = {
+static rosidl_typesupport_introspection_c__MessageMember vision_msgs__msg__Detection3D__rosidl_typesupport_introspection_c__Detection3D_message_member_array[6] = {
   {
     "header",  // name
     rosidl_typesupport_introspection_c__ROS_TYPE_MESSAGE,  // type
@@ -155,14 +159,48 @@ static rosidl_typesupport_introspection_c__MessageMember vision_msgs__msg__Detec
     NULL  // resize(index) function pointer
   },
   {
-    "id",  // name
+    "source_cloud",  // name
+    rosidl_typesupport_introspection_c__ROS_TYPE_MESSAGE,  // type
+    0,  // upper bound of string
+    NULL,  // members of sub message (initialized later)
+    false,  // is array
+    0,  // array size
+    false,  // is upper bound
+    offsetof(vision_msgs__msg__Detection3D, source_cloud),  // bytes offset in struct
+    NULL,  // default value
+    NULL,  // size() function pointer
+    NULL,  // get_const(index) function pointer
+    NULL,  // get(index) function pointer
+    NULL,  // fetch(index, &value) function pointer
+    NULL,  // assign(index, value) function pointer
+    NULL  // resize(index) function pointer
+  },
+  {
+    "is_tracking",  // name
+    rosidl_typesupport_introspection_c__ROS_TYPE_BOOLEAN,  // type
+    0,  // upper bound of string
+    NULL,  // members of sub message
+    false,  // is array
+    0,  // array size
+    false,  // is upper bound
+    offsetof(vision_msgs__msg__Detection3D, is_tracking),  // bytes offset in struct
+    NULL,  // default value
+    NULL,  // size() function pointer
+    NULL,  // get_const(index) function pointer
+    NULL,  // get(index) function pointer
+    NULL,  // fetch(index, &value) function pointer
+    NULL,  // assign(index, value) function pointer
+    NULL  // resize(index) function pointer
+  },
+  {
+    "tracking_id",  // name
     rosidl_typesupport_introspection_c__ROS_TYPE_STRING,  // type
     0,  // upper bound of string
     NULL,  // members of sub message
     false,  // is array
     0,  // array size
     false,  // is upper bound
-    offsetof(vision_msgs__msg__Detection3D, id),  // bytes offset in struct
+    offsetof(vision_msgs__msg__Detection3D, tracking_id),  // bytes offset in struct
     NULL,  // default value
     NULL,  // size() function pointer
     NULL,  // get_const(index) function pointer
@@ -176,7 +214,7 @@ static rosidl_typesupport_introspection_c__MessageMember vision_msgs__msg__Detec
 static const rosidl_typesupport_introspection_c__MessageMembers vision_msgs__msg__Detection3D__rosidl_typesupport_introspection_c__Detection3D_message_members = {
   "vision_msgs__msg",  // message namespace
   "Detection3D",  // message name
-  4,  // number of fields
+  6,  // number of fields
   sizeof(vision_msgs__msg__Detection3D),
   vision_msgs__msg__Detection3D__rosidl_typesupport_introspection_c__Detection3D_message_member_array,  // message members
   vision_msgs__msg__Detection3D__rosidl_typesupport_introspection_c__Detection3D_init_function,  // function to initialize message memory (memory has to be allocated)
@@ -200,6 +238,8 @@ ROSIDL_TYPESUPPORT_INTERFACE__MESSAGE_SYMBOL_NAME(rosidl_typesupport_introspecti
     ROSIDL_TYPESUPPORT_INTERFACE__MESSAGE_SYMBOL_NAME(rosidl_typesupport_introspection_c, vision_msgs, msg, ObjectHypothesisWithPose)();
   vision_msgs__msg__Detection3D__rosidl_typesupport_introspection_c__Detection3D_message_member_array[2].members_ =
     ROSIDL_TYPESUPPORT_INTERFACE__MESSAGE_SYMBOL_NAME(rosidl_typesupport_introspection_c, vision_msgs, msg, BoundingBox3D)();
+  vision_msgs__msg__Detection3D__rosidl_typesupport_introspection_c__Detection3D_message_member_array[3].members_ =
+    ROSIDL_TYPESUPPORT_INTERFACE__MESSAGE_SYMBOL_NAME(rosidl_typesupport_introspection_c, sensor_msgs, msg, PointCloud2)();
   if (!vision_msgs__msg__Detection3D__rosidl_typesupport_introspection_c__Detection3D_message_type_support_handle.typesupport_identifier) {
     vision_msgs__msg__Detection3D__rosidl_typesupport_introspection_c__Detection3D_message_type_support_handle.typesupport_identifier =
       rosidl_typesupport_introspection_c__identifier;

@@ -21,6 +21,8 @@
 #include "vision_msgs/msg/detail/object_hypothesis_with_pose__traits.hpp"
 // Member 'bbox'
 #include "vision_msgs/msg/detail/bounding_box3_d__traits.hpp"
+// Member 'source_cloud'
+#include "sensor_msgs/msg/detail/point_cloud2__traits.hpp"
 
 namespace vision_msgs
 {
@@ -65,10 +67,24 @@ inline void to_flow_style_yaml(
     out << ", ";
   }
 
-  // member: id
+  // member: source_cloud
   {
-    out << "id: ";
-    rosidl_generator_traits::value_to_yaml(msg.id, out);
+    out << "source_cloud: ";
+    to_flow_style_yaml(msg.source_cloud, out);
+    out << ", ";
+  }
+
+  // member: is_tracking
+  {
+    out << "is_tracking: ";
+    rosidl_generator_traits::value_to_yaml(msg.is_tracking, out);
+    out << ", ";
+  }
+
+  // member: tracking_id
+  {
+    out << "tracking_id: ";
+    rosidl_generator_traits::value_to_yaml(msg.tracking_id, out);
   }
   out << "}";
 }  // NOLINT(readability/fn_size)
@@ -114,13 +130,32 @@ inline void to_block_style_yaml(
     to_block_style_yaml(msg.bbox, out, indentation + 2);
   }
 
-  // member: id
+  // member: source_cloud
   {
     if (indentation > 0) {
       out << std::string(indentation, ' ');
     }
-    out << "id: ";
-    rosidl_generator_traits::value_to_yaml(msg.id, out);
+    out << "source_cloud:\n";
+    to_block_style_yaml(msg.source_cloud, out, indentation + 2);
+  }
+
+  // member: is_tracking
+  {
+    if (indentation > 0) {
+      out << std::string(indentation, ' ');
+    }
+    out << "is_tracking: ";
+    rosidl_generator_traits::value_to_yaml(msg.is_tracking, out);
+    out << "\n";
+  }
+
+  // member: tracking_id
+  {
+    if (indentation > 0) {
+      out << std::string(indentation, ' ');
+    }
+    out << "tracking_id: ";
+    rosidl_generator_traits::value_to_yaml(msg.tracking_id, out);
     out << "\n";
   }
 }  // NOLINT(readability/fn_size)

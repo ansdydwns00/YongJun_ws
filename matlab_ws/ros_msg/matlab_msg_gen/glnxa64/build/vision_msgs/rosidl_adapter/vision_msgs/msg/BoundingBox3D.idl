@@ -17,7 +17,7 @@ module vision_msgs {
       geometry_msgs::msg::Pose center;
 
       @verbatim (language="comment", text=
-        "The total size of the bounding box, in meters, surrounding the object's center" "\n"
+        "The size of the bounding box, in meters, surrounding the object's center" "\n"
         "  pose.")
       geometry_msgs::msg::Vector3 size;
     };

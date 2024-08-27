@@ -1,6 +1,6 @@
 function helperCallbackImage(msg)
     
-    % tic
+    
     global g_img
 
     g_img = [];

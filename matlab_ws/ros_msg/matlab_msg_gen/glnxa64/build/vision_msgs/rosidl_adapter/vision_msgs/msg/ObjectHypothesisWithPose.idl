@@ -3,24 +3,29 @@
 // generated code does not contain a copyright notice
 
 #include "geometry_msgs/msg/PoseWithCovariance.idl"
-#include "vision_msgs/msg/ObjectHypothesis.idl"
 
 module vision_msgs {
   module msg {
     @verbatim (language="comment", text=
-      "An object hypothesis that contains pose information." "\n"
-      "If you would like to define an array of ObjectHypothesisWithPose messages," "\n"
-      "  please see the Detection2D or Detection3D message types.")
+      "An object hypothesis that contains position information.")
     struct ObjectHypothesisWithPose {
       @verbatim (language="comment", text=
-        "The object hypothesis (ID and score).")
-      vision_msgs::msg::ObjectHypothesis hypothesis;
+        "The unique ID of the object class. To get additional information about" "\n"
+        "  this ID, such as its human-readable class name, listeners should perform a" "\n"
+        "  lookup in a metadata database. See vision_msgs/VisionInfo.msg for more detail.")
+      string id;
+
+      @verbatim (language="comment", text=
+        "The probability or confidence value of the detected object. By convention," "\n"
+        "  this value should lie in the range.")
+      @unit (value="0-1")
+      double score;
 
       @verbatim (language="comment", text=
         "The 6D pose of the object hypothesis. This pose should be" "\n"
-        "  defined as the pose of some fixed reference point on the object, such as" "\n"
-        "  the geometric center of the bounding box, the center of mass of the" "\n"
-        "  object or the origin of a reference mesh of the object." "\n"
+        "  defined as the pose of some fixed reference point on the object, such a" "\n"
+        "  the geometric center of the bounding box or the center of mass of the" "\n"
+        "  object." "\n"
         "Note that this pose is not stamped; frame information can be defined by" "\n"
         "  parent messages." "\n"
         "Also note that different classes predicted for the same input data may have" "\n"

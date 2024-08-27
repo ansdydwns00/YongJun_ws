@@ -88,6 +88,30 @@ max_serialized_size_BoundingBox3D(
 }  // namespace msg
 }  // namespace vision_msgs
 
+namespace sensor_msgs
+{
+namespace msg
+{
+namespace typesupport_fastrtps_cpp
+{
+bool cdr_serialize(
+  const sensor_msgs::msg::PointCloud2 &,
+  eprosima::fastcdr::Cdr &);
+bool cdr_deserialize(
+  eprosima::fastcdr::Cdr &,
+  sensor_msgs::msg::PointCloud2 &);
+size_t get_serialized_size(
+  const sensor_msgs::msg::PointCloud2 &,
+  size_t current_alignment);
+size_t
+max_serialized_size_PointCloud2(
+  bool & full_bounded,
+  bool & is_plain,
+  size_t current_alignment);
+}  // namespace typesupport_fastrtps_cpp
+}  // namespace msg
+}  // namespace sensor_msgs
+
 
 namespace vision_msgs
 {
@@ -122,8 +146,14 @@ cdr_serialize(
   vision_msgs::msg::typesupport_fastrtps_cpp::cdr_serialize(
     ros_message.bbox,
     cdr);
-  // Member: id
-  cdr << ros_message.id;
+  // Member: source_cloud
+  sensor_msgs::msg::typesupport_fastrtps_cpp::cdr_serialize(
+    ros_message.source_cloud,
+    cdr);
+  // Member: is_tracking
+  cdr << (ros_message.is_tracking ? true : false);
+  // Member: tracking_id
+  cdr << ros_message.tracking_id;
   return true;
 }
 
@@ -153,8 +183,19 @@ cdr_deserialize(
   vision_msgs::msg::typesupport_fastrtps_cpp::cdr_deserialize(
     cdr, ros_message.bbox);
 
-  // Member: id
-  cdr >> ros_message.id;
+  // Member: source_cloud
+  sensor_msgs::msg::typesupport_fastrtps_cpp::cdr_deserialize(
+    cdr, ros_message.source_cloud);
+
+  // Member: is_tracking
+  {
+    uint8_t tmp;
+    cdr >> tmp;
+    ros_message.is_tracking = tmp ? true : false;
+  }
+
+  // Member: tracking_id
+  cdr >> ros_message.tracking_id;
 
   return true;
 }
@@ -195,10 +236,21 @@ get_serialized_size(
   current_alignment +=
     vision_msgs::msg::typesupport_fastrtps_cpp::get_serialized_size(
     ros_message.bbox, current_alignment);
-  // Member: id
+  // Member: source_cloud
+
+  current_alignment +=
+    sensor_msgs::msg::typesupport_fastrtps_cpp::get_serialized_size(
+    ros_message.source_cloud, current_alignment);
+  // Member: is_tracking
+  {
+    size_t item_size = sizeof(ros_message.is_tracking);
+    current_alignment += item_size +
+      eprosima::fastcdr::Cdr::alignment(current_alignment, item_size);
+  }
+  // Member: tracking_id
   current_alignment += padding +
     eprosima::fastcdr::Cdr::alignment(current_alignment, padding) +
-    (ros_message.id.size() + 1);
+    (ros_message.tracking_id.size() + 1);
 
   return current_alignment - initial_alignment;
 }
@@ -273,7 +325,30 @@ max_serialized_size_Detection3D(
     }
   }
 
-  // Member: id
+  // Member: source_cloud
+  {
+    size_t array_size = 1;
+
+
+    for (size_t index = 0; index < array_size; ++index) {
+      bool inner_full_bounded;
+      bool inner_is_plain;
+      current_alignment +=
+        sensor_msgs::msg::typesupport_fastrtps_cpp::max_serialized_size_PointCloud2(
+        inner_full_bounded, inner_is_plain, current_alignment);
+      full_bounded &= inner_full_bounded;
+      is_plain &= inner_is_plain;
+    }
+  }
+
+  // Member: is_tracking
+  {
+    size_t array_size = 1;
+
+    current_alignment += array_size * sizeof(uint8_t);
+  }
+
+  // Member: tracking_id
   {
     size_t array_size = 1;
 

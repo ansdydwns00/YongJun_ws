@@ -38,35 +38,35 @@ struct ObjectHypothesis_
     if (rosidl_runtime_cpp::MessageInitialization::ALL == _init ||
       rosidl_runtime_cpp::MessageInitialization::ZERO == _init)
     {
-      this->class_id = "";
+      this->id = "";
       this->score = 0.0;
     }
   }
 
   explicit ObjectHypothesis_(const ContainerAllocator & _alloc, rosidl_runtime_cpp::MessageInitialization _init = rosidl_runtime_cpp::MessageInitialization::ALL)
-  : class_id(_alloc)
+  : id(_alloc)
   {
     if (rosidl_runtime_cpp::MessageInitialization::ALL == _init ||
       rosidl_runtime_cpp::MessageInitialization::ZERO == _init)
     {
-      this->class_id = "";
+      this->id = "";
       this->score = 0.0;
     }
   }
 
   // field types and members
-  using _class_id_type =
+  using _id_type =
     std::basic_string<char, std::char_traits<char>, typename std::allocator_traits<ContainerAllocator>::template rebind_alloc<char>>;
-  _class_id_type class_id;
+  _id_type id;
   using _score_type =
     double;
   _score_type score;
 
   // setters for named parameter idiom
-  Type & set__class_id(
+  Type & set__id(
     const std::basic_string<char, std::char_traits<char>, typename std::allocator_traits<ContainerAllocator>::template rebind_alloc<char>> & _arg)
   {
-    this->class_id = _arg;
+    this->id = _arg;
     return *this;
   }
   Type & set__score(
@@ -118,7 +118,7 @@ struct ObjectHypothesis_
   // comparison operators
   bool operator==(const ObjectHypothesis_ & other) const
   {
-    if (this->class_id != other.class_id) {
+    if (this->id != other.id) {
       return false;
     }
     if (this->score != other.score) {

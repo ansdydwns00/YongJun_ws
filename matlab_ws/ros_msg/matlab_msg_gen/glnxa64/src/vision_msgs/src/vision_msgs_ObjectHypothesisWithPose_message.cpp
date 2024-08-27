@@ -35,14 +35,22 @@ class VISION_MSGS_EXPORT ros2_vision_msgs_msg_ObjectHypothesisWithPose_common : 
   void ros2_vision_msgs_msg_ObjectHypothesisWithPose_common::copy_from_struct(vision_msgs::msg::ObjectHypothesisWithPose* msg, const matlab::data::Struct& arr,
                MultiLibLoader loader) {
     try {
-        //hypothesis
-        const matlab::data::StructArray hypothesis_arr = arr["hypothesis"];
-        auto msgClassPtr_hypothesis = getCommonObject<vision_msgs::msg::ObjectHypothesis>("ros2_vision_msgs_msg_ObjectHypothesis_common",loader);
-        msgClassPtr_hypothesis->copy_from_struct(&msg->hypothesis,hypothesis_arr[0],loader);
+        //id
+        const matlab::data::CharArray id_arr = arr["id"];
+        msg->id = id_arr.toAscii();
     } catch (matlab::data::InvalidFieldNameException&) {
-        throw std::invalid_argument("Field 'hypothesis' is missing.");
+        throw std::invalid_argument("Field 'id' is missing.");
     } catch (matlab::Exception&) {
-        throw std::invalid_argument("Field 'hypothesis' is wrong type; expected a struct.");
+        throw std::invalid_argument("Field 'id' is wrong type; expected a string.");
+    }
+    try {
+        //score
+        const matlab::data::TypedArray<double> score_arr = arr["score"];
+        msg->score = score_arr[0];
+    } catch (matlab::data::InvalidFieldNameException&) {
+        throw std::invalid_argument("Field 'score' is missing.");
+    } catch (matlab::Exception&) {
+        throw std::invalid_argument("Field 'score' is wrong type; expected a double.");
     }
     try {
         //pose
@@ -58,13 +66,15 @@ class VISION_MSGS_EXPORT ros2_vision_msgs_msg_ObjectHypothesisWithPose_common : 
   //----------------------------------------------------------------------------
   MDArray_T ros2_vision_msgs_msg_ObjectHypothesisWithPose_common::get_arr(MDFactory_T& factory, const vision_msgs::msg::ObjectHypothesisWithPose* msg,
        MultiLibLoader loader, size_t size) {
-    auto outArray = factory.createStructArray({size,1},{"MessageType","hypothesis","pose"});
+    auto outArray = factory.createStructArray({size,1},{"MessageType","id","score","pose"});
     for(size_t ctr = 0; ctr < size; ctr++){
     outArray[ctr]["MessageType"] = factory.createCharArray("vision_msgs/ObjectHypothesisWithPose");
-    // hypothesis
-    auto currentElement_hypothesis = (msg + ctr)->hypothesis;
-    auto msgClassPtr_hypothesis = getCommonObject<vision_msgs::msg::ObjectHypothesis>("ros2_vision_msgs_msg_ObjectHypothesis_common",loader);
-    outArray[ctr]["hypothesis"] = msgClassPtr_hypothesis->get_arr(factory, &currentElement_hypothesis, loader);
+    // id
+    auto currentElement_id = (msg + ctr)->id;
+    outArray[ctr]["id"] = factory.createCharArray(currentElement_id);
+    // score
+    auto currentElement_score = (msg + ctr)->score;
+    outArray[ctr]["score"] = factory.createScalar(currentElement_score);
     // pose
     auto currentElement_pose = (msg + ctr)->pose;
     auto msgClassPtr_pose = getCommonObject<geometry_msgs::msg::PoseWithCovariance>("ros2_geometry_msgs_msg_PoseWithCovariance_common",loader);

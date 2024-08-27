@@ -12,7 +12,7 @@
 
 
 // Include directives for member types
-// Member `class_id`
+// Member `id`
 #include "rosidl_runtime_c/string_functions.h"
 
 bool
@@ -21,8 +21,8 @@ vision_msgs__msg__ObjectHypothesis__init(vision_msgs__msg__ObjectHypothesis * ms
   if (!msg) {
     return false;
   }
-  // class_id
-  if (!rosidl_runtime_c__String__init(&msg->class_id)) {
+  // id
+  if (!rosidl_runtime_c__String__init(&msg->id)) {
     vision_msgs__msg__ObjectHypothesis__fini(msg);
     return false;
   }
@@ -36,8 +36,8 @@ vision_msgs__msg__ObjectHypothesis__fini(vision_msgs__msg__ObjectHypothesis * ms
   if (!msg) {
     return;
   }
-  // class_id
-  rosidl_runtime_c__String__fini(&msg->class_id);
+  // id
+  rosidl_runtime_c__String__fini(&msg->id);
   // score
 }
 
@@ -47,9 +47,9 @@ vision_msgs__msg__ObjectHypothesis__are_equal(const vision_msgs__msg__ObjectHypo
   if (!lhs || !rhs) {
     return false;
   }
-  // class_id
+  // id
   if (!rosidl_runtime_c__String__are_equal(
-      &(lhs->class_id), &(rhs->class_id)))
+      &(lhs->id), &(rhs->id)))
   {
     return false;
   }
@@ -68,9 +68,9 @@ vision_msgs__msg__ObjectHypothesis__copy(
   if (!input || !output) {
     return false;
   }
-  // class_id
+  // id
   if (!rosidl_runtime_c__String__copy(
-      &(input->class_id), &(output->class_id)))
+      &(input->id), &(output->id)))
   {
     return false;
   }

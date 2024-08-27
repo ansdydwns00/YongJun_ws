@@ -32,8 +32,8 @@ cdr_serialize(
   const vision_msgs::msg::ObjectHypothesis & ros_message,
   eprosima::fastcdr::Cdr & cdr)
 {
-  // Member: class_id
-  cdr << ros_message.class_id;
+  // Member: id
+  cdr << ros_message.id;
   // Member: score
   cdr << ros_message.score;
   return true;
@@ -45,8 +45,8 @@ cdr_deserialize(
   eprosima::fastcdr::Cdr & cdr,
   vision_msgs::msg::ObjectHypothesis & ros_message)
 {
-  // Member: class_id
-  cdr >> ros_message.class_id;
+  // Member: id
+  cdr >> ros_message.id;
 
   // Member: score
   cdr >> ros_message.score;
@@ -67,10 +67,10 @@ get_serialized_size(
   (void)padding;
   (void)wchar_size;
 
-  // Member: class_id
+  // Member: id
   current_alignment += padding +
     eprosima::fastcdr::Cdr::alignment(current_alignment, padding) +
-    (ros_message.class_id.size() + 1);
+    (ros_message.id.size() + 1);
   // Member: score
   {
     size_t item_size = sizeof(ros_message.score);
@@ -99,7 +99,7 @@ max_serialized_size_ObjectHypothesis(
   is_plain = true;
 
 
-  // Member: class_id
+  // Member: id
   {
     size_t array_size = 1;
 

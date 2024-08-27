@@ -25,10 +25,10 @@ inline void to_flow_style_yaml(
   std::ostream & out)
 {
   out << "{";
-  // member: class_id
+  // member: id
   {
-    out << "class_id: ";
-    rosidl_generator_traits::value_to_yaml(msg.class_id, out);
+    out << "id: ";
+    rosidl_generator_traits::value_to_yaml(msg.id, out);
     out << ", ";
   }
 
@@ -44,13 +44,13 @@ inline void to_block_style_yaml(
   const ObjectHypothesis & msg,
   std::ostream & out, size_t indentation = 0)
 {
-  // member: class_id
+  // member: id
   {
     if (indentation > 0) {
       out << std::string(indentation, ' ');
     }
-    out << "class_id: ";
-    rosidl_generator_traits::value_to_yaml(msg.class_id, out);
+    out << "id: ";
+    rosidl_generator_traits::value_to_yaml(msg.id, out);
     out << "\n";
   }
 

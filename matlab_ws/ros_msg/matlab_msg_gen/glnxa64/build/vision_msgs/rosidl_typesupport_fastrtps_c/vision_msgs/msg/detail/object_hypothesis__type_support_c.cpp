@@ -34,8 +34,8 @@ extern "C"
 {
 #endif
 
-#include "rosidl_runtime_c/string.h"  // class_id
-#include "rosidl_runtime_c/string_functions.h"  // class_id
+#include "rosidl_runtime_c/string.h"  // id
+#include "rosidl_runtime_c/string_functions.h"  // id
 
 // forward declare type support functions
 
@@ -51,9 +51,9 @@ static bool _ObjectHypothesis__cdr_serialize(
     return false;
   }
   const _ObjectHypothesis__ros_msg_type * ros_message = static_cast<const _ObjectHypothesis__ros_msg_type *>(untyped_ros_message);
-  // Field name: class_id
+  // Field name: id
   {
-    const rosidl_runtime_c__String * str = &ros_message->class_id;
+    const rosidl_runtime_c__String * str = &ros_message->id;
     if (str->capacity == 0 || str->capacity <= str->size) {
       fprintf(stderr, "string capacity not greater than size\n");
       return false;
@@ -82,18 +82,18 @@ static bool _ObjectHypothesis__cdr_deserialize(
     return false;
   }
   _ObjectHypothesis__ros_msg_type * ros_message = static_cast<_ObjectHypothesis__ros_msg_type *>(untyped_ros_message);
-  // Field name: class_id
+  // Field name: id
   {
     std::string tmp;
     cdr >> tmp;
-    if (!ros_message->class_id.data) {
-      rosidl_runtime_c__String__init(&ros_message->class_id);
+    if (!ros_message->id.data) {
+      rosidl_runtime_c__String__init(&ros_message->id);
     }
     bool succeeded = rosidl_runtime_c__String__assign(
-      &ros_message->class_id,
+      &ros_message->id,
       tmp.c_str());
     if (!succeeded) {
-      fprintf(stderr, "failed to assign string into field 'class_id'\n");
+      fprintf(stderr, "failed to assign string into field 'id'\n");
       return false;
     }
   }
@@ -120,10 +120,10 @@ size_t get_serialized_size_vision_msgs__msg__ObjectHypothesis(
   (void)padding;
   (void)wchar_size;
 
-  // field.name class_id
+  // field.name id
   current_alignment += padding +
     eprosima::fastcdr::Cdr::alignment(current_alignment, padding) +
-    (ros_message->class_id.size + 1);
+    (ros_message->id.size + 1);
   // field.name score
   {
     size_t item_size = sizeof(ros_message->score);
@@ -157,7 +157,7 @@ size_t max_serialized_size_vision_msgs__msg__ObjectHypothesis(
   full_bounded = true;
   is_plain = true;
 
-  // member: class_id
+  // member: id
   {
     size_t array_size = 1;
 

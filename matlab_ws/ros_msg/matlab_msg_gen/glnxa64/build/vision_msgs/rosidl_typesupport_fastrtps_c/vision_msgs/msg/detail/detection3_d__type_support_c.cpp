@@ -34,13 +34,28 @@ extern "C"
 {
 #endif
 
-#include "rosidl_runtime_c/string.h"  // id
-#include "rosidl_runtime_c/string_functions.h"  // id
+#include "rosidl_runtime_c/string.h"  // tracking_id
+#include "rosidl_runtime_c/string_functions.h"  // tracking_id
+#include "sensor_msgs/msg/detail/point_cloud2__functions.h"  // source_cloud
 #include "std_msgs/msg/detail/header__functions.h"  // header
 #include "vision_msgs/msg/detail/bounding_box3_d__functions.h"  // bbox
 #include "vision_msgs/msg/detail/object_hypothesis_with_pose__functions.h"  // results
 
 // forward declare type support functions
+ROSIDL_TYPESUPPORT_FASTRTPS_C_IMPORT_vision_msgs
+size_t get_serialized_size_sensor_msgs__msg__PointCloud2(
+  const void * untyped_ros_message,
+  size_t current_alignment);
+
+ROSIDL_TYPESUPPORT_FASTRTPS_C_IMPORT_vision_msgs
+size_t max_serialized_size_sensor_msgs__msg__PointCloud2(
+  bool & full_bounded,
+  bool & is_plain,
+  size_t current_alignment);
+
+ROSIDL_TYPESUPPORT_FASTRTPS_C_IMPORT_vision_msgs
+const rosidl_message_type_support_t *
+  ROSIDL_TYPESUPPORT_INTERFACE__MESSAGE_SYMBOL_NAME(rosidl_typesupport_fastrtps_c, sensor_msgs, msg, PointCloud2)();
 ROSIDL_TYPESUPPORT_FASTRTPS_C_IMPORT_vision_msgs
 size_t get_serialized_size_std_msgs__msg__Header(
   const void * untyped_ros_message,
@@ -137,9 +152,28 @@ static bool _Detection3D__cdr_serialize(
     }
   }
 
-  // Field name: id
+  // Field name: source_cloud
   {
-    const rosidl_runtime_c__String * str = &ros_message->id;
+    const message_type_support_callbacks_t * callbacks =
+      static_cast<const message_type_support_callbacks_t *>(
+      ROSIDL_TYPESUPPORT_INTERFACE__MESSAGE_SYMBOL_NAME(
+        rosidl_typesupport_fastrtps_c, sensor_msgs, msg, PointCloud2
+      )()->data);
+    if (!callbacks->cdr_serialize(
+        &ros_message->source_cloud, cdr))
+    {
+      return false;
+    }
+  }
+
+  // Field name: is_tracking
+  {
+    cdr << (ros_message->is_tracking ? true : false);
+  }
+
+  // Field name: tracking_id
+  {
+    const rosidl_runtime_c__String * str = &ros_message->tracking_id;
     if (str->capacity == 0 || str->capacity <= str->size) {
       fprintf(stderr, "string capacity not greater than size\n");
       return false;
@@ -218,18 +252,39 @@ static bool _Detection3D__cdr_deserialize(
     }
   }
 
-  // Field name: id
+  // Field name: source_cloud
+  {
+    const message_type_support_callbacks_t * callbacks =
+      static_cast<const message_type_support_callbacks_t *>(
+      ROSIDL_TYPESUPPORT_INTERFACE__MESSAGE_SYMBOL_NAME(
+        rosidl_typesupport_fastrtps_c, sensor_msgs, msg, PointCloud2
+      )()->data);
+    if (!callbacks->cdr_deserialize(
+        cdr, &ros_message->source_cloud))
+    {
+      return false;
+    }
+  }
+
+  // Field name: is_tracking
+  {
+    uint8_t tmp;
+    cdr >> tmp;
+    ros_message->is_tracking = tmp ? true : false;
+  }
+
+  // Field name: tracking_id
   {
     std::string tmp;
     cdr >> tmp;
-    if (!ros_message->id.data) {
-      rosidl_runtime_c__String__init(&ros_message->id);
+    if (!ros_message->tracking_id.data) {
+      rosidl_runtime_c__String__init(&ros_message->tracking_id);
     }
     bool succeeded = rosidl_runtime_c__String__assign(
-      &ros_message->id,
+      &ros_message->tracking_id,
       tmp.c_str());
     if (!succeeded) {
-      fprintf(stderr, "failed to assign string into field 'id'\n");
+      fprintf(stderr, "failed to assign string into field 'tracking_id'\n");
       return false;
     }
   }
@@ -271,10 +326,20 @@ size_t get_serialized_size_vision_msgs__msg__Detection3D(
 
   current_alignment += get_serialized_size_vision_msgs__msg__BoundingBox3D(
     &(ros_message->bbox), current_alignment);
-  // field.name id
+  // field.name source_cloud
+
+  current_alignment += get_serialized_size_sensor_msgs__msg__PointCloud2(
+    &(ros_message->source_cloud), current_alignment);
+  // field.name is_tracking
+  {
+    size_t item_size = sizeof(ros_message->is_tracking);
+    current_alignment += item_size +
+      eprosima::fastcdr::Cdr::alignment(current_alignment, item_size);
+  }
+  // field.name tracking_id
   current_alignment += padding +
     eprosima::fastcdr::Cdr::alignment(current_alignment, padding) +
-    (ros_message->id.size + 1);
+    (ros_message->tracking_id.size + 1);
 
   return current_alignment - initial_alignment;
 }
@@ -351,7 +416,28 @@ size_t max_serialized_size_vision_msgs__msg__Detection3D(
       is_plain &= inner_is_plain;
     }
   }
-  // member: id
+  // member: source_cloud
+  {
+    size_t array_size = 1;
+
+
+    for (size_t index = 0; index < array_size; ++index) {
+      bool inner_full_bounded;
+      bool inner_is_plain;
+      current_alignment +=
+        max_serialized_size_sensor_msgs__msg__PointCloud2(
+        inner_full_bounded, inner_is_plain, current_alignment);
+      full_bounded &= inner_full_bounded;
+      is_plain &= inner_is_plain;
+    }
+  }
+  // member: is_tracking
+  {
+    size_t array_size = 1;
+
+    current_alignment += array_size * sizeof(uint8_t);
+  }
+  // member: tracking_id
   {
     size_t array_size = 1;
 

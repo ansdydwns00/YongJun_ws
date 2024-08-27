@@ -27,6 +27,7 @@ find_package( console_bridge REQUIRED)
 find_package( geometry_msgs REQUIRED)
 find_package( rclcpp REQUIRED)
 find_package( rcutils REQUIRED)
+find_package( sensor_msgs REQUIRED)
 find_package( std_msgs REQUIRED)
 include_directories("/usr/local/MATLAB/R2024a/extern/include")
 include_directories("/usr/local/MATLAB/R2024a/extern/include/MatlabDataArray")
@@ -37,11 +38,19 @@ set (CMAKE_BUILD_WITH_INSTALL_RPATH true)
 set (CMAKE_INSTALL_RPATH "${CMAKE_INSTALL_PREFIX}/lib")
 set (CMAKE_INSTALL_RPATH_USE_LINK_PATH TRUE)
 set(msg_files
+  "msg/BoundingBox2D.msg"
+  "msg/BoundingBox2DArray.msg"
   "msg/BoundingBox3D.msg"
+  "msg/BoundingBox3DArray.msg"
+  "msg/Classification2D.msg"
+  "msg/Classification3D.msg"
+  "msg/Detection2D.msg"
+  "msg/Detection2DArray.msg"
   "msg/Detection3D.msg"
   "msg/Detection3DArray.msg"
   "msg/ObjectHypothesis.msg"
   "msg/ObjectHypothesisWithPose.msg"
+  "msg/VisionInfo.msg"
 )
 set(srv_files
 )
@@ -53,6 +62,7 @@ rosidl_generate_interfaces(${PROJECT_NAME}
   ${action_files}
   DEPENDENCIES 
   geometry_msgs
+  sensor_msgs
   std_msgs
 )
 link_directories("/usr/local/MATLAB/R2024a/extern/bin/glnxa64")
@@ -60,11 +70,19 @@ link_directories("/usr/local/MATLAB/R2024a/extern/bin/glnxa64")
 add_library(
     vision_msgs_matlab 
     SHARED
+    src/vision_msgs_BoundingBox2D_message.cpp
+    src/vision_msgs_BoundingBox2DArray_message.cpp
     src/vision_msgs_BoundingBox3D_message.cpp
+    src/vision_msgs_BoundingBox3DArray_message.cpp
+    src/vision_msgs_Classification2D_message.cpp
+    src/vision_msgs_Classification3D_message.cpp
+    src/vision_msgs_Detection2D_message.cpp
+    src/vision_msgs_Detection2DArray_message.cpp
     src/vision_msgs_Detection3D_message.cpp
     src/vision_msgs_Detection3DArray_message.cpp
     src/vision_msgs_ObjectHypothesis_message.cpp
     src/vision_msgs_ObjectHypothesisWithPose_message.cpp
+    src/vision_msgs_VisionInfo_message.cpp
 )
 if(CMAKE_COMPILER_IS_GNUCXX OR CMAKE_CXX_COMPILER_ID MATCHES "Clang")
 target_compile_options(vision_msgs_matlab PUBLIC 
@@ -87,6 +105,7 @@ ament_target_dependencies(
   "geometry_msgs"
   "rclcpp"
   "rcutils"
+  "sensor_msgs"
   "std_msgs"
 )
 rosidl_get_typesupport_target(cpp_typesupport_target "${PROJECT_NAME}" "rosidl_typesupport_cpp")
@@ -127,4 +146,4 @@ add_custom_command(
 				   )				   
 endforeach(file_i)
 ament_package()
-# Generated on Thu Aug 08 16:26:44 2024
+# Generated on Tue Aug 27 16:54:05 2024

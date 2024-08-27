@@ -13,7 +13,7 @@
 
 
 // Include directives for member types
-// Member `class_id`
+// Member `id`
 #include "rosidl_runtime_c/string_functions.h"
 
 #ifdef __cplusplus
@@ -37,14 +37,14 @@ void vision_msgs__msg__ObjectHypothesis__rosidl_typesupport_introspection_c__Obj
 
 static rosidl_typesupport_introspection_c__MessageMember vision_msgs__msg__ObjectHypothesis__rosidl_typesupport_introspection_c__ObjectHypothesis_message_member_array[2] = {
   {
-    "class_id",  // name
+    "id",  // name
     rosidl_typesupport_introspection_c__ROS_TYPE_STRING,  // type
     0,  // upper bound of string
     NULL,  // members of sub message
     false,  // is array
     0,  // array size
     false,  // is upper bound
-    offsetof(vision_msgs__msg__ObjectHypothesis, class_id),  // bytes offset in struct
+    offsetof(vision_msgs__msg__ObjectHypothesis, id),  // bytes offset in struct
     NULL,  // default value
     NULL,  // size() function pointer
     NULL,  // get_const(index) function pointer

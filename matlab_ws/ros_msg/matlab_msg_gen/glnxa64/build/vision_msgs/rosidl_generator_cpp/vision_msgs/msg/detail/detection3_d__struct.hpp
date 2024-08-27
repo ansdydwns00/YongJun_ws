@@ -22,6 +22,8 @@
 #include "vision_msgs/msg/detail/object_hypothesis_with_pose__struct.hpp"
 // Member 'bbox'
 #include "vision_msgs/msg/detail/bounding_box3_d__struct.hpp"
+// Member 'source_cloud'
+#include "sensor_msgs/msg/detail/point_cloud2__struct.hpp"
 
 #ifndef _WIN32
 # define DEPRECATED__vision_msgs__msg__Detection3D __attribute__((deprecated))
@@ -43,24 +45,28 @@ struct Detection3D_
 
   explicit Detection3D_(rosidl_runtime_cpp::MessageInitialization _init = rosidl_runtime_cpp::MessageInitialization::ALL)
   : header(_init),
-    bbox(_init)
+    bbox(_init),
+    source_cloud(_init)
   {
     if (rosidl_runtime_cpp::MessageInitialization::ALL == _init ||
       rosidl_runtime_cpp::MessageInitialization::ZERO == _init)
     {
-      this->id = "";
+      this->is_tracking = false;
+      this->tracking_id = "";
     }
   }
 
   explicit Detection3D_(const ContainerAllocator & _alloc, rosidl_runtime_cpp::MessageInitialization _init = rosidl_runtime_cpp::MessageInitialization::ALL)
   : header(_alloc, _init),
     bbox(_alloc, _init),
-    id(_alloc)
+    source_cloud(_alloc, _init),
+    tracking_id(_alloc)
   {
     if (rosidl_runtime_cpp::MessageInitialization::ALL == _init ||
       rosidl_runtime_cpp::MessageInitialization::ZERO == _init)
     {
-      this->id = "";
+      this->is_tracking = false;
+      this->tracking_id = "";
     }
   }
 
@@ -74,9 +80,15 @@ struct Detection3D_
   using _bbox_type =
     vision_msgs::msg::BoundingBox3D_<ContainerAllocator>;
   _bbox_type bbox;
-  using _id_type =
+  using _source_cloud_type =
+    sensor_msgs::msg::PointCloud2_<ContainerAllocator>;
+  _source_cloud_type source_cloud;
+  using _is_tracking_type =
+    bool;
+  _is_tracking_type is_tracking;
+  using _tracking_id_type =
     std::basic_string<char, std::char_traits<char>, typename std::allocator_traits<ContainerAllocator>::template rebind_alloc<char>>;
-  _id_type id;
+  _tracking_id_type tracking_id;
 
   // setters for named parameter idiom
   Type & set__header(
@@ -97,10 +109,22 @@ struct Detection3D_
     this->bbox = _arg;
     return *this;
   }
-  Type & set__id(
+  Type & set__source_cloud(
+    const sensor_msgs::msg::PointCloud2_<ContainerAllocator> & _arg)
+  {
+    this->source_cloud = _arg;
+    return *this;
+  }
+  Type & set__is_tracking(
+    const bool & _arg)
+  {
+    this->is_tracking = _arg;
+    return *this;
+  }
+  Type & set__tracking_id(
     const std::basic_string<char, std::char_traits<char>, typename std::allocator_traits<ContainerAllocator>::template rebind_alloc<char>> & _arg)
   {
-    this->id = _arg;
+    this->tracking_id = _arg;
     return *this;
   }
 
@@ -155,7 +179,13 @@ struct Detection3D_
     if (this->bbox != other.bbox) {
       return false;
     }
-    if (this->id != other.id) {
+    if (this->source_cloud != other.source_cloud) {
+      return false;
+    }
+    if (this->is_tracking != other.is_tracking) {
+      return false;
+    }
+    if (this->tracking_id != other.tracking_id) {
       return false;
     }
     return true;
