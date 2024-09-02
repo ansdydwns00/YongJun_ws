@@ -100,7 +100,7 @@ class STrack(BaseTrack):
         # Calculate velocity based on previous state
         if self.mean is not None:
             prev_mean = getattr(self, 'prev_mean', self.mean)
-            position_delta = self.mean[5:7] - prev_mean[5:7]
+            position_delta = self.mean[4:6] - prev_mean[4:6]
             self.velocity = [position_delta[0], position_delta[1]]
         self.prev_mean = self.mean
 
@@ -201,7 +201,7 @@ class STrack(BaseTrack):
          # Update previous mean and velocity
         if self.prev_mean is not None:
             prev_mean = getattr(self, 'prev_mean', self.mean)
-            position_delta = self.mean[5:7] - prev_mean[5:7]
+            position_delta = self.mean[4:6] - prev_mean[4:6]
             self.velocity = [position_delta[0], position_delta[1]]
         self.prev_mean = self.mean
 

@@ -5,7 +5,7 @@ function [Distances, Velocity, Model, l_id, l_cls] = helperComputeDistance(bboxe
 
     Model = {};
     
-    if length(varargin) == 2
+    if nargin == 9
         
         if ~isempty(bboxes) && ~isempty(ptCld.Location)
              
@@ -50,10 +50,14 @@ function [Distances, Velocity, Model, l_id, l_cls] = helperComputeDistance(bboxe
                     end
                     
                     % Calculate the object velocity
-                    vel = (invert(CamToLidar).R)*[varargin{1}(i); varargin{2}(i); 0];
-                    Velocity(i,:) = (floor(sqrt(vel(1)^2+vel(2)^2)*10)/10)/(1/30);
-    
-                    % fprintf("%f %f\n",floor(sqrt(varargin{1}(i)^2+varargin{2}(i)^2)*10)/10, Velocity(i,:));
+                    vel = [varargin{1}(i); varargin{2}(i)];
+                    Velocity(i,:) = (round(sqrt(vel(1)^2+vel(2)^2),3))/(1/30);
+                    
+                    % tmp = (CamToLidar.R)*([varargin{1}(i); varargin{2}(i);0]);
+                    % tmp = tmp/(1/30);
+                    % Velocity(i,:) = round(sqrt(tmp(1)^2+tmp(2)^2),3);
+                    % fprintf("%f\n",round(sqrt(tmp(1)^2+tmp(2)^2),3));
+                    
                 end
     
                 Model = Model';

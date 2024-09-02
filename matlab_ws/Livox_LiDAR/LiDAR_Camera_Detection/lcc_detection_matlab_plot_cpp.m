@@ -5,22 +5,16 @@ clear; clc
 Avia_UDP = udpport("datagram","LocalPort",56001);
 
 %% ROS Node 
-
-
-
 global g_id
 global g_cls
 global g_bboxes
 global g_img
-global g_vx
-global g_vy
 
 g_id = {};
 g_cls = {};
 g_bboxes = [];
 g_img = [];
-g_vx = [];
-g_vy = [];
+
 
 % Create a node for connection between MATLAB and ROS2
 Node = ros2node("/IVL");
@@ -32,7 +26,7 @@ sub.Cam = ros2subscriber(Node,'/camera/camera/color/image_raw','sensor_msgs/Imag
 sub.Yolo = ros2subscriber(Node,"/yolo/detections","vision_msgs/Detection3DArray",@helperCallbackYolocpp,"Reliability","besteffort");
 
 %% 
-
+clear helperComputeVelocity_test
 
 
 %-----------------------------------------------------------------------------------%
@@ -40,7 +34,7 @@ sub.Yolo = ros2subscriber(Node,"/yolo/detections","vision_msgs/Detection3DArray"
 %-----------------------------------------------------------------------------------%
 
 % Load LiDAR-Camera Calibration parameter
-load("lcc_params_1920.mat");
+load("lcc_params_640.mat");
 % 
 % % 라이다 카메라 칼리브레이션 파일
 lidarToCam = tform;              
@@ -74,8 +68,6 @@ l_bboxes = [];
 l_id = [];
 l_cls = [];
 l_img = [];
-l_vx = [];
-l_vy = [];
 %-----------------------------------------------------------------------------------%
 
 
@@ -102,9 +94,6 @@ clusterThreshold = 0.2;
 %-----------------------------------------------------------------------------------%
 % Set values for frame count 
 frameCount = 1;
-
-% Set values for n frames
-frame_num = 1;
 
 % Flag for first Run
 reset_flag = single(0);
@@ -141,15 +130,16 @@ while true
         l_bboxes = g_bboxes;
         l_id = g_id;
         l_cls = g_cls;
-        l_vx = g_vx;
-        l_vy = g_vy;
 
-        [Distances, Velocity, Model, l_id, l_cls] = helperComputeDistance(l_bboxes, l_id, l_cls, ptCloud_ps, camParams, camToLidar, clusterThreshold);          
+        % Calculate Object Distance & Velocity
+        [Model, ModelInfo] = helperComputeDistance_test(l_bboxes, l_id, l_cls, ptCloud_ps, camParams, camToLidar, clusterThreshold);          
+        VelocityInfo = helperComputeVelocity_test(ModelInfo);
+          
         
         % Display detection results
         view(player,ptCloud)
         helperDeleteCuboid(player.Axes)
-        helperDrawCuboid(player.Axes, Model,'red', Distances, l_id, l_cls)
+        helperDrawCuboid_test(player.Axes, Model,'red', ModelInfo, VelocityInfo)
         
         l_img = insertObjectAnnotation(g_img,"rectangle",g_bboxes,strcat({'ID:'},string(g_id)', {', Class:'},string(g_cls)'));
         
@@ -157,10 +147,10 @@ while true
             l_img = insertShape(l_img,"filled-circle",[g_bboxes(:,1)+g_bboxes(:,3)/2, g_bboxes(:,2)+g_bboxes(:,4)/2,repmat(5,size(g_bboxes,1),1)],"ShapeColor","red");
         end
 
-        vPlayer.step(l_img)
 
-       frameCount = frameCount + 1;
-       flush(Avia_UDP);
+        vPlayer.step(l_img)
+        frameCount = frameCount + 1;
+        flush(Avia_UDP);
     end    
     
     reset_flag = single(1);

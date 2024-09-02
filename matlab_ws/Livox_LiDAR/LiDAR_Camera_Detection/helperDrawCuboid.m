@@ -1,6 +1,6 @@
 function helperDrawCuboid(ax, cuboids, color, dists, Ids, Cls, varargin)
 
-    if length(varargin) == 2
+    if nargin == 7
         if length(cuboids) == length(dists)
             % 각 cuboid에 대해 반복
             for i = 1:size(cuboids, 1)

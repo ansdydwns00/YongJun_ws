@@ -110,7 +110,7 @@ while true
             imgMsg = receive(sub.Cam);
             img = rosReadImage(imgMsg);
     
-            [imPts,idx] = projectLidarPointsOnImage(ptCloud,camParams,lidarToCam);
+            [imPts,idx] = projectLidarPointsOnImage(ptCloud,camParams,tform);
 
             imshow(img);
             hold on
