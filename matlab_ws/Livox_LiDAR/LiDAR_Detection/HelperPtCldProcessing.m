@@ -8,8 +8,7 @@ function ptCld = HelperPtCldProcessing(pt,roi,gridStep)
     ptCld = pcdownsample(ptCld,"gridAverage",gridStep);
     
     % Remove ground plane
-    groundPtsIndex = segmentGroundSMRF(ptCld,'SlopeThreshold',0.15,'ElevationThreshold',0.1,'ElevationScale',1.25);
-    ptCld = select(ptCld,~groundPtsIndex);
+    % groundPtsIndex = segmentGroundSMRF(ptCld,'SlopeThreshold',0.15,'ElevationThreshold',0.1,'ElevationScale',1.25);
+    % ptCld = select(ptCld,~groundPtsIndex);
     
-    % ptCld = pcdenoise(ptCld);
 end

@@ -27,19 +27,25 @@ function HelperCallbackPCDet(msg)
         x_len = msg.detections(i).bbox.size.x;
         y_len = msg.detections(i).bbox.size.y;
         z_len = msg.detections(i).bbox.size.z; 
-
+        
+        % [w x y z] sequence
         quat = [msg.detections(i).bbox.center.orientation.w,msg.detections(i).bbox.center.orientation.x,...
                 msg.detections(i).bbox.center.orientation.y,msg.detections(i).bbox.center.orientation.z];
+        
+        % [z y x] sequence
+        euler = quat2eul(quat);
 
-        euler = quat2eul(quat,"XYZ");
-
-        x_rot = euler(1);
+        x_rot = euler(3);
         y_rot = euler(2);
-        z_rot = euler(3);
+        z_rot = euler(1);
 
-        bbox_tmp(i,:) = [x_ctr,y_ctr,z_ctr,x_len,y_len,z_len,x_rot,y_rot,z_rot];
-        id_tmp{i} = msg.detections(i).id;
-        cls_tmp{i} = msg.detections(i).results.hypothesis.class_id;
+
+        bbox_tmp(i,:) = [x_ctr, y_ctr, z_ctr,...
+                         x_len, y_len, z_len,...
+                         x_rot, y_rot, z_rot];
+        
+        id_tmp{i} = msg.detections(i).tracking_id;
+        cls_tmp{i} = msg.detections(i).results.id;
     end
 
     G_bbox = bbox_tmp;

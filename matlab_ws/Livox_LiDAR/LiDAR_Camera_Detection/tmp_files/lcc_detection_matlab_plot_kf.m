@@ -26,11 +26,12 @@ g_img = [];
 Node = ros2node("/IVL");
 
 % Create Subscribe Node
-
 sub.Cam = ros2subscriber(Node,'/camera/camera/color/image_raw','sensor_msgs/Image',@helperCallbackImage);
 % sub.Yolo_img = ros2subscriber(Node,"/yolo/image","sensor_msgs/Image");
 sub.Yolo_track = ros2subscriber(Node,"/yolo/tracking","yolov8_msgs/DetectionArray",@helperCallbackYolo);
 
+% Create Publish Node
+pub.lr_detections = ros2publisher(Node,"/lr_detections","vision_msgs/Detection3DArray");
 %% 
 
 
@@ -92,7 +93,6 @@ gridStep = 0.1;
 
 % Cluster distance 
 clusterThreshold = 0.5;   
-
 %-----------------------------------------------------------------------------------%
 
 
@@ -103,18 +103,14 @@ clusterThreshold = 0.5;
 % Set values for frame count 
 frameCount = 1;
 
-% Set values for n frames
-frame_num = 1;
-
 % Flag for first Run
 reset_flag = single(0);
-
+                      
+flush(Avia_UDP);
 %-----------------------------------------------------------------------------------%
 
 
 
-                      
-flush(Avia_UDP);
 while true
     
     % Read 1 packet datagram
@@ -140,7 +136,8 @@ while true
         l_cls = g_cls;
         l_vx = g_vx;
         l_vy = g_vy;
-
+        
+        
         [Distances, Velocity, Model, l_id, l_cls] = helperComputeDistance(l_bboxes, l_id, l_cls, ptCloud_ps, camParams, camToLidar, clusterThreshold, l_vx, l_vy);          
         
         % Display detection results

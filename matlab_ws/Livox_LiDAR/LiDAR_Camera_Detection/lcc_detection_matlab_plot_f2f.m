@@ -22,18 +22,17 @@ g_img = [];
 Node = ros2node("/IVL");
 
 % Create Subscribe Node
-
 sub.Cam = ros2subscriber(Node,'/camera/camera/color/image_raw','sensor_msgs/Image',@helperCallbackImage);
 % sub.Yolo_img = ros2subscriber(Node,"/yolo/image","sensor_msgs/Image");
 sub.Yolo_track = ros2subscriber(Node,"/yolo/tracking","yolov8_msgs/DetectionArray",@helperCallbackYolo);
 
-pub.lr_detection = ros2publisher(Node,"/lr_detections","vision_msgs/Detection3DArray");
-
+% Create Publish Node
+pub.lr_detections = ros2publisher(Node,"/lr_detections","vision_msgs/Detection3DArray");
 %% 
 % Remove memory cache
-clear helperComputeVelocity_test 
-clear helperComputeVelocity_test 
-clear helperDrawCuboid_test
+clear helperComputeVelocity
+clear helperComputeVelocity
+clear helperDrawCuboid
 clear helperDeleteCuboid
 
 
@@ -58,10 +57,10 @@ camToLidar = invert(tform);
 
 %-----------------------------------------------------------------------------------%
 %-----------------------------------Visualization-----------------------------------%
-%--------------------------------------------0--------------------------------------%
+%-----------------------------------------------------------------------------------%
 % Set x,y,z range of pcplayer
-xmin = 0;      xmax = 10;
-ymin = -5;     ymax = 5;
+xmin = 0;      xmax = 50;
+ymin = -10;     ymax = 10;
 zmin = -2;     zmax = 3;
 
 % pointCloud viewer
@@ -86,13 +85,13 @@ l_img = [];
 %------------------------------Clustering Parameter---------------------------------%
 %-----------------------------------------------------------------------------------%
 % ROI 설정
-roi = [3, 10, -4, 4, -2, 2];     
+roi = [3, 50, -10, 10, -2, 2];     
 
 % Downsample
 gridStep = 0.1;
 
 % Cluster distance 
-clusterThreshold = 0.9;   
+clusterThreshold = 0.5;   
 
 %-----------------------------------------------------------------------------------%
 
@@ -136,12 +135,18 @@ while true
         l_id = g_id;
         l_cls = g_cls;
         
+
+        %-----------------------------------------------------------------------------------%
+        %-------------------------------Object Detection Info-------------------------------%
+        %-----------------------------------------------------------------------------------%
         % Calculate Object Distance & Velocity
-        [Model, ModelInfo] = helperComputeDistance_test(l_bboxes, l_id, l_cls, ptCloud_ps, camParams, camToLidar, clusterThreshold);          
-        [VelocityInfo,OrientInfo] = helperComputeVelocity_test(ModelInfo);
-
+        [Model, ModelInfo] = helperComputeDistance(l_bboxes, l_id, l_cls, ptCloud_ps, camParams, camToLidar, clusterThreshold);          
+        [VelocityInfo,OrientInfo,~] = helperComputeVelocity(ModelInfo);
         
-
+        
+        % Publish ROS2 message
+        % detectionArrayMsg = helperPublishROS2msg(ModelInfo, VelocityInfo, OrientInfo, vel_flag);
+        % send(pub.lr_detections, detectionArrayMsg);
 
 
         %-----------------------------------------------------------------------------------%
@@ -150,7 +155,7 @@ while true
         % Display detection results
         view(player,ptCloud)
         helperDeleteCuboid(player.Axes)
-        helperDrawCuboid_test(player.Axes, Model,'red', ModelInfo, VelocityInfo,OrientInfo)
+        helperDrawCuboid(player.Axes, Model,'red', ModelInfo, VelocityInfo, OrientInfo)
         
         l_img = insertObjectAnnotation(g_img,"rectangle",g_bboxes,strcat({'ID:'},string(g_id)', {', Class:'},string(g_cls)'));
         

@@ -5,7 +5,7 @@ function detectionArrayMsg = helperPublishROS2msg(modelInfo,velInfo,orienInfo,ve
 
     isObjectDetected = ~isempty(modelInfo);
 
-    if isObjectDetected && vel_flag == true
+    if isObjectDetected && vel_flag == true 
         numObjDetections = size(modelInfo.Distance,1);
         
         % detectionArrayMsg = ros2message("vision_msgs/Detection3DArray");

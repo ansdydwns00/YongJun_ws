@@ -1,6 +1,6 @@
 %% ptCloud to bin file
 
-fld = fopen("a2.bin",'w');
+fld = fopen("a3.bin",'w');
 
 xyzi_point = [ptCloud.Location ptCloud.Intensity]';
 
@@ -8,7 +8,7 @@ fwrite(fld,xyzi_point,'single');
 fclose(fld);
 %% 
 
-a = fopen('000008.bin');
+a = fopen('ttest.bin');
 b = single(fread(a,[4 inf],'single')');
 
 k = pointCloud(b(:,1:3),"Intensity",b(:,4));
