@@ -22,9 +22,9 @@ Avia_UDP = udpport("datagram","LocalPort",56001);
 %% Visualization using 250*n messages
 
 % Setting point cloud viewer parameter
-xmin = 0;  xmax = 60;
-ymin = -40; ymax = 40;
-zmin = -2; zmax = 10;
+xmin = 0;      xmax = 50;
+ymin = -10;     ymax = 10;
+zmin = -2;     zmax = 3;
 
 player = pcplayer([xmin xmax],[ymin ymax],[zmin zmax],"MarkerSize",10,"ColorSource","X");
 
@@ -33,7 +33,7 @@ player = pcplayer([xmin xmax],[ymin ymax],[zmin zmax],"MarkerSize",10,"ColorSour
 frameCount = 1;
 
 % Set values for n frames
-frame_num = 6;
+frame_num = 1;
 
 %
 frameBin = 1;

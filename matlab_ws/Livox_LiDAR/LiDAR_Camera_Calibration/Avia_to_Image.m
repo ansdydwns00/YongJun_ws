@@ -6,10 +6,13 @@ Avia_UDP = udpport("datagram","LocalPort",56001);
 
 %% Node 
 
+global g_img
+g_img = [];
+
 Node = ros2node("/IVL");
 
 % lidarSub = ros2subscriber(Matlab,'/livox/lidar','sensor_msgs/PointCloud2');
-sub.Cam = ros2subscriber(Node,'/camera/camera/color/image_raw','sensor_msgs/Image');
+sub.Cam = ros2subscriber(Node,'/camera/camera/color/image_raw','sensor_msgs/Image',@helperCallbackImage);
 
 %% LiDAR/Camera(640x480) Calibration .mat  
 
@@ -46,6 +49,8 @@ camParams = cameraIntrinsics([1.403085770877809e+03 1.402638897100132e+03],[9.65
 
 %%
 
+vPlayer = vision.DeployableVideoPlayer;
+
 % Set values for frame count 
 frameCount = 1;
 
@@ -65,9 +70,11 @@ roi = [0, 10, -4, 4, -1, 5];
 % Downsample
 gridStep = 0.1;
 
+colormap jet;
+colorRange = jet(256);
 
-flush(Avia_UDP,"input")
 
+flush(Avia_UDP)
 while true
     
     % Read 1 packet
@@ -95,9 +102,7 @@ while true
             
             % Create Colormap of Pointcloud
             heights = ptCloud.Location(:,1);
-            colormap jet;
-            colorRange = jet(256);
-            
+           
             minHeight = min(heights); % 최소 높이 값
             maxHeight = max(heights); % 최대 높이 값
             normalizedHeights = (heights - minHeight) / (maxHeight - minHeight); % 높이 값을 0과 1 사이로 정규화
@@ -107,21 +112,26 @@ while true
             pointColors = colorRange(colorIndices, :);
            
             % subscribe image msg
-            imgMsg = receive(sub.Cam);
-            img = rosReadImage(imgMsg);
-    
-            [imPts,idx] = projectLidarPointsOnImage(ptCloud,camParams,tform);
+            % imgMsg = receive(sub.Cam);
+            % img = g_img;
 
-            imshow(img);
-            hold on
-            scatter(imPts(:,1), imPts(:,2),4, pointColors(idx), 'filled');
-            hold off
-    
+            [imPts,idx] = projectLidarPointsOnImage(ptCloud,camParams,tform);
+            
+            l_img = insertShape(g_img,"filled-circle",[imPts(:,1), imPts(:,2), repmat(2,size(imPts,1), 1)],"ShapeColor",pointColors(idx,:,:));
+            
+            % imshow(g_img);
+            % hold on
+            % scatter(imPts(:,1), imPts(:,2),4, pointColors(idx), 'filled');
+            % hold off
+            
+            
+
             xyzPointsBuffer = [];
             xyzIntensityBuffer = [];
         
         end
-
+        
+       vPlayer.step(l_img)
        frameCount = frameCount + 1;
        flush(Avia_UDP)
     end    

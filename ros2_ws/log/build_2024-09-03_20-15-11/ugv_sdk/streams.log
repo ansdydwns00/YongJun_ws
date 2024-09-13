@@ -1,0 +1,126 @@
+[0.006s] Invoking command in '/home/aiv/YongJun_ws/ros2_ws/build/ugv_sdk': /home/aiv/.local/bin/cmake /home/aiv/YongJun_ws/ros2_ws/src/ugv_sdk -DCATKIN_INSTALL_INTO_PREFIX_ROOT=0 -DCATKIN_SYMLINK_INSTALL=ON -DCMAKE_INSTALL_PREFIX=/home/aiv/YongJun_ws/ros2_ws/install/ugv_sdk
+[0.091s] -- The C compiler identification is GNU 9.4.0
+[0.159s] -- The CXX compiler identification is GNU 9.4.0
+[0.171s] -- Detecting C compiler ABI info
+[0.223s] -- Detecting C compiler ABI info - done
+[0.233s] -- Check for working C compiler: /usr/bin/cc - skipped
+[0.233s] -- Detecting C compile features
+[0.234s] -- Detecting C compile features - done
+[0.238s] -- Detecting CXX compiler ABI info
+[0.286s] -- Detecting CXX compiler ABI info - done
+[0.292s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[0.293s] -- Detecting CXX compile features
+[0.293s] -- Detecting CXX compile features - done
+[0.293s] -- Build package with cmake
+[0.293s] -- Setting build type to 'Release' as none was specified.
+[0.293s] -- Tests will not be built
+[0.296s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+[0.343s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Failed
+[0.344s] -- Looking for pthread_create in pthreads
+[0.382s] -- Looking for pthread_create in pthreads - not found
+[0.382s] -- Looking for pthread_create in pthread
+[0.430s] -- Looking for pthread_create in pthread - found
+[0.431s] -- Found Threads: TRUE  
+[0.434s] -- Project will be installed to /home/aiv/YongJun_ws/ros2_ws/install/ugv_sdk with 'make install'
+[0.434s] --  - To install LIB components to /home/aiv/YongJun_ws/ros2_ws/install/ugv_sdk/lib
+[0.434s] --  - To install BIN components to /home/aiv/YongJun_ws/ros2_ws/install/ugv_sdk/bin
+[0.434s] --  - To install INCLUDE components to /home/aiv/YongJun_ws/ros2_ws/install/ugv_sdk/include
+[0.434s] --  - To install CMAKE components to /home/aiv/YongJun_ws/ros2_ws/install/ugv_sdk/share/cmake/ugv_sdk
+[0.444s] -- Configuring done
+[0.455s] -- Generating done
+[0.456s] [33mCMake Warning:
+[0.456s]   Manually-specified variables were not used by the project:
+[0.456s] 
+[0.456s]     CATKIN_INSTALL_INTO_PREFIX_ROOT
+[0.456s]     CATKIN_SYMLINK_INSTALL
+[0.456s] 
+[0.456s] [0m
+[0.456s] -- Build files have been written to: /home/aiv/YongJun_ws/ros2_ws/build/ugv_sdk
+[0.462s] Invoked command in '/home/aiv/YongJun_ws/ros2_ws/build/ugv_sdk' returned '0': /home/aiv/.local/bin/cmake /home/aiv/YongJun_ws/ros2_ws/src/ugv_sdk -DCATKIN_INSTALL_INTO_PREFIX_ROOT=0 -DCATKIN_SYMLINK_INSTALL=ON -DCMAKE_INSTALL_PREFIX=/home/aiv/YongJun_ws/ros2_ws/install/ugv_sdk
+[0.462s] Invoking command in '/home/aiv/YongJun_ws/ros2_ws/build/ugv_sdk': /home/aiv/.local/bin/cmake --build /home/aiv/YongJun_ws/ros2_ws/build/ugv_sdk -- -j32 -l32
+[0.499s] [  3%] [32mBuilding CXX object CMakeFiles/ugv_sdk.dir/src/async_port/async_serial.cpp.o[0m
+[0.499s] [  7%] [32mBuilding CXX object CMakeFiles/ugv_sdk.dir/src/async_port/async_can.cpp.o[0m
+[0.500s] [ 10%] [32mBuilding CXX object CMakeFiles/ugv_sdk.dir/src/utilities/protocol_detector.cpp.o[0m
+[0.500s] [ 14%] [32mBuilding CXX object CMakeFiles/ugv_sdk.dir/src/mobile_robot/scout_robot.cpp.o[0m
+[0.500s] [ 17%] [32mBuilding CXX object CMakeFiles/ugv_sdk.dir/src/mobile_robot/hunter_robot.cpp.o[0m
+[0.500s] [ 21%] [32mBuilding CXX object CMakeFiles/ugv_sdk.dir/src/mobile_robot/bunker_robot.cpp.o[0m
+[0.501s] [ 25%] [32mBuilding CXX object CMakeFiles/ugv_sdk.dir/src/mobile_robot/ranger_robot.cpp.o[0m
+[0.501s] [ 28%] [32mBuilding CXX object CMakeFiles/ugv_sdk.dir/src/mobile_robot/titan_robot.cpp.o[0m
+[0.501s] [ 32%] [32mBuilding C object CMakeFiles/ugv_sdk.dir/src/protocol_v2/agilex_msg_parser_v2.c.o[0m
+[0.501s] [ 35%] [32mBuilding CXX object CMakeFiles/ugv_sdk.dir/src/protocol_v2/protocol_v2_parser.cpp.o[0m
+[0.502s] [ 39%] [32mBuilding C object CMakeFiles/ugv_sdk.dir/src/protocol_v1/agilex_msg_parser_v1.c.o[0m
+[2.519s] [ 42%] [32m[1mLinking CXX static library lib/libugv_sdk.a[0m
+[2.534s] [ 42%] Built target ugv_sdk
+[2.540s] [ 46%] [32mBuilding CXX object sample/scout_demo/CMakeFiles/demo_scout_robot.dir/scout_robot_demo.cpp.o[0m
+[2.540s] [ 53%] [32mBuilding CXX object sample/tracer_demo/CMakeFiles/demo_tracer_robot.dir/tracer_robot_demo.cpp.o[0m
+[2.540s] [ 50%] [32mBuilding CXX object sample/scout_demo/CMakeFiles/demo_scout_mini_omni_robot.dir/scout_mini_omni_demo.cpp.o[0m
+[2.541s] [ 57%] [32mBuilding CXX object sample/bunker_demo/CMakeFiles/demo_bunker_robot.dir/bunker_robot_demo.cpp.o[0m
+[2.541s] [ 60%] [32mBuilding CXX object sample/ranger_demo/CMakeFiles/demo_ranger_robot.dir/ranger_robot_demo.cpp.o[0m
+[2.541s] [ 64%] [32mBuilding CXX object sample/utils_demo/CMakeFiles/demo_protocol_detector.dir/demo_protocol_detector.cpp.o[0m
+[2.541s] [ 67%] [32mBuilding CXX object sample/hunter_demo/CMakeFiles/demo_hunter_robot.dir/hunter_robot_demo.cpp.o[0m
+[2.541s] [ 71%] [32mBuilding CXX object sample/utils_demo/CMakeFiles/demo_robot_version.dir/demo_robot_version.cpp.o[0m
+[2.789s] [ 75%] [32m[1mLinking CXX executable ../../bin/demo_bunker_robot[0m
+[2.838s] [ 75%] Built target demo_bunker_robot
+[3.456s] [ 78%] [32m[1mLinking CXX executable ../../bin/demo_protocol_detector[0m
+[3.486s] [ 82%] [32m[1mLinking CXX executable ../../bin/demo_robot_version[0m
+[3.504s] [ 82%] Built target demo_protocol_detector
+[3.507s] [ 85%] [32m[1mLinking CXX executable ../../bin/demo_hunter_robot[0m
+[3.529s] [ 89%] [32m[1mLinking CXX executable ../../bin/demo_scout_mini_omni_robot[0m
+[3.534s] [ 92%] [32m[1mLinking CXX executable ../../bin/demo_scout_robot[0m
+[3.536s] [ 92%] Built target demo_robot_version
+[3.555s] [ 92%] Built target demo_hunter_robot
+[3.573s] [ 96%] [32m[1mLinking CXX executable ../../bin/demo_ranger_robot[0m
+[3.576s] [ 96%] Built target demo_scout_mini_omni_robot
+[3.580s] [ 96%] Built target demo_scout_robot
+[3.616s] [ 96%] Built target demo_ranger_robot
+[3.689s] [100%] [32m[1mLinking CXX executable ../../bin/demo_tracer_robot[0m
+[3.732s] [100%] Built target demo_tracer_robot
+[3.738s] Invoked command in '/home/aiv/YongJun_ws/ros2_ws/build/ugv_sdk' returned '0': /home/aiv/.local/bin/cmake --build /home/aiv/YongJun_ws/ros2_ws/build/ugv_sdk -- -j32 -l32
+[3.873s] Invoking command in '/home/aiv/YongJun_ws/ros2_ws/build/ugv_sdk': /home/aiv/.local/bin/cmake --install /home/aiv/YongJun_ws/ros2_ws/build/ugv_sdk
+[3.893s] -- Install configuration: "Release"
+[3.893s] -- Installing: /home/aiv/YongJun_ws/ros2_ws/install/ugv_sdk/lib/libugv_sdk.a
+[3.894s] -- Installing: /home/aiv/YongJun_ws/ros2_ws/install/ugv_sdk/include/ugv_sdk
+[3.894s] -- Installing: /home/aiv/YongJun_ws/ros2_ws/install/ugv_sdk/include/ugv_sdk/utilities
+[3.894s] -- Installing: /home/aiv/YongJun_ws/ros2_ws/install/ugv_sdk/include/ugv_sdk/utilities/protocol_detector.hpp
+[3.894s] -- Installing: /home/aiv/YongJun_ws/ros2_ws/install/ugv_sdk/include/ugv_sdk/mobile_robot
+[3.894s] -- Installing: /home/aiv/YongJun_ws/ros2_ws/install/ugv_sdk/include/ugv_sdk/mobile_robot/hunter_robot.hpp
+[3.894s] -- Installing: /home/aiv/YongJun_ws/ros2_ws/install/ugv_sdk/include/ugv_sdk/mobile_robot/scout_robot.hpp
+[3.894s] -- Installing: /home/aiv/YongJun_ws/ros2_ws/install/ugv_sdk/include/ugv_sdk/mobile_robot/tracer_robot.hpp
+[3.894s] -- Installing: /home/aiv/YongJun_ws/ros2_ws/install/ugv_sdk/include/ugv_sdk/mobile_robot/titan_robot.hpp
+[3.895s] -- Installing: /home/aiv/YongJun_ws/ros2_ws/install/ugv_sdk/include/ugv_sdk/mobile_robot/ranger_robot.hpp
+[3.895s] -- Installing: /home/aiv/YongJun_ws/ros2_ws/install/ugv_sdk/include/ugv_sdk/mobile_robot/bunker_robot.hpp
+[3.895s] -- Installing: /home/aiv/YongJun_ws/ros2_ws/install/ugv_sdk/include/ugv_sdk/details
+[3.895s] -- Installing: /home/aiv/YongJun_ws/ros2_ws/install/ugv_sdk/include/ugv_sdk/details/protocol_v1
+[3.895s] -- Installing: /home/aiv/YongJun_ws/ros2_ws/install/ugv_sdk/include/ugv_sdk/details/protocol_v1/protocol_v1_parser.hpp
+[3.895s] -- Installing: /home/aiv/YongJun_ws/ros2_ws/install/ugv_sdk/include/ugv_sdk/details/protocol_v1/agilex_msg_parser_v1.h
+[3.895s] -- Installing: /home/aiv/YongJun_ws/ros2_ws/install/ugv_sdk/include/ugv_sdk/details/protocol_v1/robot_limits.hpp
+[3.895s] -- Installing: /home/aiv/YongJun_ws/ros2_ws/install/ugv_sdk/include/ugv_sdk/details/robot_base
+[3.895s] -- Installing: /home/aiv/YongJun_ws/ros2_ws/install/ugv_sdk/include/ugv_sdk/details/robot_base/titan_base.hpp
+[3.895s] -- Installing: /home/aiv/YongJun_ws/ros2_ws/install/ugv_sdk/include/ugv_sdk/details/robot_base/ranger_base.hpp
+[3.895s] -- Installing: /home/aiv/YongJun_ws/ros2_ws/install/ugv_sdk/include/ugv_sdk/details/robot_base/scout_base.hpp
+[3.895s] -- Installing: /home/aiv/YongJun_ws/ros2_ws/install/ugv_sdk/include/ugv_sdk/details/robot_base/tracer_base.hpp
+[3.895s] -- Installing: /home/aiv/YongJun_ws/ros2_ws/install/ugv_sdk/include/ugv_sdk/details/robot_base/agilex_base.hpp
+[3.895s] -- Installing: /home/aiv/YongJun_ws/ros2_ws/install/ugv_sdk/include/ugv_sdk/details/robot_base/bunker_base.hpp
+[3.895s] -- Installing: /home/aiv/YongJun_ws/ros2_ws/install/ugv_sdk/include/ugv_sdk/details/robot_base/hunter_base.hpp
+[3.895s] -- Installing: /home/aiv/YongJun_ws/ros2_ws/install/ugv_sdk/include/ugv_sdk/details/protocol_v2
+[3.895s] -- Installing: /home/aiv/YongJun_ws/ros2_ws/install/ugv_sdk/include/ugv_sdk/details/protocol_v2/protocol_v2_parser.hpp
+[3.895s] -- Installing: /home/aiv/YongJun_ws/ros2_ws/install/ugv_sdk/include/ugv_sdk/details/interface
+[3.895s] -- Installing: /home/aiv/YongJun_ws/ros2_ws/install/ugv_sdk/include/ugv_sdk/details/interface/ranger_interface.hpp
+[3.895s] -- Installing: /home/aiv/YongJun_ws/ros2_ws/install/ugv_sdk/include/ugv_sdk/details/interface/agilex_message.h
+[3.895s] -- Installing: /home/aiv/YongJun_ws/ros2_ws/install/ugv_sdk/include/ugv_sdk/details/interface/tracer_interface.hpp
+[3.895s] -- Installing: /home/aiv/YongJun_ws/ros2_ws/install/ugv_sdk/include/ugv_sdk/details/interface/robot_common_interface.hpp
+[3.895s] -- Installing: /home/aiv/YongJun_ws/ros2_ws/install/ugv_sdk/include/ugv_sdk/details/interface/hunter_interface.hpp
+[3.895s] -- Installing: /home/aiv/YongJun_ws/ros2_ws/install/ugv_sdk/include/ugv_sdk/details/interface/titan_interface.hpp
+[3.896s] -- Installing: /home/aiv/YongJun_ws/ros2_ws/install/ugv_sdk/include/ugv_sdk/details/interface/bunker_interface.hpp
+[3.896s] -- Installing: /home/aiv/YongJun_ws/ros2_ws/install/ugv_sdk/include/ugv_sdk/details/interface/agilex_types.h
+[3.896s] -- Installing: /home/aiv/YongJun_ws/ros2_ws/install/ugv_sdk/include/ugv_sdk/details/interface/scout_interface.hpp
+[3.896s] -- Installing: /home/aiv/YongJun_ws/ros2_ws/install/ugv_sdk/include/ugv_sdk/details/async_port
+[3.896s] -- Installing: /home/aiv/YongJun_ws/ros2_ws/install/ugv_sdk/include/ugv_sdk/details/async_port/async_serial.hpp
+[3.896s] -- Installing: /home/aiv/YongJun_ws/ros2_ws/install/ugv_sdk/include/ugv_sdk/details/async_port/async_can.hpp
+[3.896s] -- Installing: /home/aiv/YongJun_ws/ros2_ws/install/ugv_sdk/include/ugv_sdk/details/async_port/ring_buffer.hpp
+[3.896s] -- Installing: /home/aiv/YongJun_ws/ros2_ws/install/ugv_sdk/include/ugv_sdk/details/parser_base.hpp
+[3.896s] -- Installing: /home/aiv/YongJun_ws/ros2_ws/install/ugv_sdk/lib/cmake/ugv_sdk/ugv_sdkTargets.cmake
+[3.896s] -- Installing: /home/aiv/YongJun_ws/ros2_ws/install/ugv_sdk/lib/cmake/ugv_sdk/ugv_sdkTargets-release.cmake
+[3.896s] -- Installing: /home/aiv/YongJun_ws/ros2_ws/install/ugv_sdk/lib/cmake/ugv_sdk/ugv_sdkConfig.cmake
+[3.896s] -- Installing: /home/aiv/YongJun_ws/ros2_ws/install/ugv_sdk/lib/cmake/ugv_sdk/ugv_sdkConfigVersion.cmake
+[3.899s] Invoked command in '/home/aiv/YongJun_ws/ros2_ws/build/ugv_sdk' returned '0': /home/aiv/.local/bin/cmake --install /home/aiv/YongJun_ws/ros2_ws/build/ugv_sdk

@@ -1,0 +1,47 @@
+-- The C compiler identification is GNU 9.4.0
+-- The CXX compiler identification is GNU 9.4.0
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - done
+-- Check for working C compiler: /usr/bin/cc - skipped
+-- Detecting C compile features
+-- Detecting C compile features - done
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Check for working CXX compiler: /usr/bin/c++ - skipped
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+-- Found ament_cmake: 0.9.12 (/opt/ros/foxy/share/ament_cmake/cmake)
+-- Found PythonInterp: /usr/bin/python3 (found suitable version "3.8.10", minimum required is "3") 
+-- Using PYTHON_EXECUTABLE: /usr/bin/python3
+-- Override CMake install command with custom implementation using symlinks instead of copying resources
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /home/aiv/YongJun_ws/ros2_ws/build/scout_description
+-- Install configuration: ""
+-- Execute custom install script
+-- Symlinking: /home/aiv/YongJun_ws/ros2_ws/install/scout_description/share/scout_description//launch/scout_base_description.launch.py
+-- Symlinking: /home/aiv/YongJun_ws/ros2_ws/install/scout_description/share/scout_description//urdf/generate_urdf.sh
+-- Symlinking: /home/aiv/YongJun_ws/ros2_ws/install/scout_description/share/scout_description//urdf/scout_v2.urdf
+-- Symlinking: /home/aiv/YongJun_ws/ros2_ws/install/scout_description/share/scout_description//urdf/scout_v2.xacro
+-- Symlinking: /home/aiv/YongJun_ws/ros2_ws/install/scout_description/share/scout_description//urdf/scout_wheel_type1.xacro
+-- Symlinking: /home/aiv/YongJun_ws/ros2_ws/install/scout_description/share/scout_description//urdf/scout_wheel_type2.xacro
+-- Symlinking: /home/aiv/YongJun_ws/ros2_ws/install/scout_description/share/scout_description//meshes/base_link.dae
+-- Symlinking: /home/aiv/YongJun_ws/ros2_ws/install/scout_description/share/scout_description//meshes/base_link_full.dae
+-- Symlinking: /home/aiv/YongJun_ws/ros2_ws/install/scout_description/share/scout_description//meshes/hokuyo.dae
+-- Symlinking: /home/aiv/YongJun_ws/ros2_ws/install/scout_description/share/scout_description//meshes/wheel_type1.dae
+-- Symlinking: /home/aiv/YongJun_ws/ros2_ws/install/scout_description/share/scout_description//meshes/wheel_type2.dae
+-- Symlinking: /home/aiv/YongJun_ws/ros2_ws/install/scout_description/share/ament_index/resource_index/package_run_dependencies/scout_description
+-- Symlinking: /home/aiv/YongJun_ws/ros2_ws/install/scout_description/share/ament_index/resource_index/parent_prefix_path/scout_description
+-- Symlinking: /home/aiv/YongJun_ws/ros2_ws/install/scout_description/share/scout_description/environment/ament_prefix_path.sh
+-- Symlinking: /home/aiv/YongJun_ws/ros2_ws/install/scout_description/share/scout_description/environment/ament_prefix_path.dsv
+-- Symlinking: /home/aiv/YongJun_ws/ros2_ws/install/scout_description/share/scout_description/environment/path.sh
+-- Symlinking: /home/aiv/YongJun_ws/ros2_ws/install/scout_description/share/scout_description/environment/path.dsv
+-- Symlinking: /home/aiv/YongJun_ws/ros2_ws/install/scout_description/share/scout_description/local_setup.bash
+-- Symlinking: /home/aiv/YongJun_ws/ros2_ws/install/scout_description/share/scout_description/local_setup.sh
+-- Symlinking: /home/aiv/YongJun_ws/ros2_ws/install/scout_description/share/scout_description/local_setup.zsh
+-- Symlinking: /home/aiv/YongJun_ws/ros2_ws/install/scout_description/share/scout_description/local_setup.dsv
+-- Symlinking: /home/aiv/YongJun_ws/ros2_ws/install/scout_description/share/scout_description/package.dsv
+-- Symlinking: /home/aiv/YongJun_ws/ros2_ws/install/scout_description/share/ament_index/resource_index/packages/scout_description
+-- Symlinking: /home/aiv/YongJun_ws/ros2_ws/install/scout_description/share/scout_description/cmake/scout_descriptionConfig.cmake
+-- Symlinking: /home/aiv/YongJun_ws/ros2_ws/install/scout_description/share/scout_description/cmake/scout_descriptionConfig-version.cmake
+-- Symlinking: /home/aiv/YongJun_ws/ros2_ws/install/scout_description/share/scout_description/package.xml

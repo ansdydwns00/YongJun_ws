@@ -1,0 +1,6 @@
+Invoking command in '/home/aiv/YongJun_ws/ros2_ws/build/scout_msgs': CMAKE_PREFIX_PATH=/opt/ros/foxy /home/aiv/.local/bin/cmake /home/aiv/YongJun_ws/ros2_ws/src/scout_ros2/scout_msgs -DCMAKE_INSTALL_PREFIX=/home/aiv/YongJun_ws/ros2_ws/install/scout_msgs
+Invoked command in '/home/aiv/YongJun_ws/ros2_ws/build/scout_msgs' returned '0': CMAKE_PREFIX_PATH=/opt/ros/foxy /home/aiv/.local/bin/cmake /home/aiv/YongJun_ws/ros2_ws/src/scout_ros2/scout_msgs -DCMAKE_INSTALL_PREFIX=/home/aiv/YongJun_ws/ros2_ws/install/scout_msgs
+Invoking command in '/home/aiv/YongJun_ws/ros2_ws/build/scout_msgs': CMAKE_PREFIX_PATH=/opt/ros/foxy /home/aiv/.local/bin/cmake --build /home/aiv/YongJun_ws/ros2_ws/build/scout_msgs -- -j32 -l32
+Invoked command in '/home/aiv/YongJun_ws/ros2_ws/build/scout_msgs' returned '0': CMAKE_PREFIX_PATH=/opt/ros/foxy /home/aiv/.local/bin/cmake --build /home/aiv/YongJun_ws/ros2_ws/build/scout_msgs -- -j32 -l32
+Invoking command in '/home/aiv/YongJun_ws/ros2_ws/build/scout_msgs': CMAKE_PREFIX_PATH=/opt/ros/foxy /home/aiv/.local/bin/cmake --install /home/aiv/YongJun_ws/ros2_ws/build/scout_msgs
+Invoked command in '/home/aiv/YongJun_ws/ros2_ws/build/scout_msgs' returned '0': CMAKE_PREFIX_PATH=/opt/ros/foxy /home/aiv/.local/bin/cmake --install /home/aiv/YongJun_ws/ros2_ws/build/scout_msgs

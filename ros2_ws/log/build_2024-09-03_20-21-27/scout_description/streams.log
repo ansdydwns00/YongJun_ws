@@ -1,0 +1,53 @@
+[0.021s] Invoking command in '/home/aiv/YongJun_ws/ros2_ws/build/scout_description': CMAKE_PREFIX_PATH=/home/aiv/YongJun_ws/ros2_ws/install/yolov8_bringup:/home/aiv/YongJun_ws/ros2_ws/install/yolov8_msgs:/home/aiv/YongJun_ws/ros2_ws/install/usb_cam:/home/aiv/YongJun_ws/ros2_ws/install/yolov8_ros:/opt/ros/foxy:/home/aiv/YongJun_ws/ros2_ws/install/ugv_sdk:/home/aiv/YongJun_ws/ros2_ws/install/realsense2_description:/home/aiv/YongJun_ws/ros2_ws/install/realsense2_camera:/home/aiv/YongJun_ws/ros2_ws/install/realsense2_camera_msgs /home/aiv/.local/bin/cmake /home/aiv/YongJun_ws/ros2_ws/src/scout_ros2/scout_description -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/aiv/YongJun_ws/ros2_ws/install/scout_description
+[0.086s] -- The C compiler identification is GNU 9.4.0
+[0.128s] -- The CXX compiler identification is GNU 9.4.0
+[0.135s] -- Detecting C compiler ABI info
+[0.174s] -- Detecting C compiler ABI info - done
+[0.182s] -- Check for working C compiler: /usr/bin/cc - skipped
+[0.182s] -- Detecting C compile features
+[0.183s] -- Detecting C compile features - done
+[0.185s] -- Detecting CXX compiler ABI info
+[0.233s] -- Detecting CXX compiler ABI info - done
+[0.241s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[0.241s] -- Detecting CXX compile features
+[0.241s] -- Detecting CXX compile features - done
+[0.244s] -- Found ament_cmake: 0.9.12 (/opt/ros/foxy/share/ament_cmake/cmake)
+[0.263s] -- Found PythonInterp: /usr/bin/python3 (found suitable version "3.8.10", minimum required is "3") 
+[0.263s] -- Using PYTHON_EXECUTABLE: /usr/bin/python3
+[0.440s] -- Override CMake install command with custom implementation using symlinks instead of copying resources
+[0.499s] -- Configuring done
+[0.501s] -- Generating done
+[0.501s] -- Build files have been written to: /home/aiv/YongJun_ws/ros2_ws/build/scout_description
+[0.509s] Invoked command in '/home/aiv/YongJun_ws/ros2_ws/build/scout_description' returned '0': CMAKE_PREFIX_PATH=/home/aiv/YongJun_ws/ros2_ws/install/yolov8_bringup:/home/aiv/YongJun_ws/ros2_ws/install/yolov8_msgs:/home/aiv/YongJun_ws/ros2_ws/install/usb_cam:/home/aiv/YongJun_ws/ros2_ws/install/yolov8_ros:/opt/ros/foxy:/home/aiv/YongJun_ws/ros2_ws/install/ugv_sdk:/home/aiv/YongJun_ws/ros2_ws/install/realsense2_description:/home/aiv/YongJun_ws/ros2_ws/install/realsense2_camera:/home/aiv/YongJun_ws/ros2_ws/install/realsense2_camera_msgs /home/aiv/.local/bin/cmake /home/aiv/YongJun_ws/ros2_ws/src/scout_ros2/scout_description -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/aiv/YongJun_ws/ros2_ws/install/scout_description
+[0.510s] Invoking command in '/home/aiv/YongJun_ws/ros2_ws/build/scout_description': CMAKE_PREFIX_PATH=/home/aiv/YongJun_ws/ros2_ws/install/yolov8_bringup:/home/aiv/YongJun_ws/ros2_ws/install/yolov8_msgs:/home/aiv/YongJun_ws/ros2_ws/install/usb_cam:/home/aiv/YongJun_ws/ros2_ws/install/yolov8_ros:/opt/ros/foxy:/home/aiv/YongJun_ws/ros2_ws/install/ugv_sdk:/home/aiv/YongJun_ws/ros2_ws/install/realsense2_description:/home/aiv/YongJun_ws/ros2_ws/install/realsense2_camera:/home/aiv/YongJun_ws/ros2_ws/install/realsense2_camera_msgs /home/aiv/.local/bin/cmake --build /home/aiv/YongJun_ws/ros2_ws/build/scout_description -- -j32 -l32
+[0.541s] Invoked command in '/home/aiv/YongJun_ws/ros2_ws/build/scout_description' returned '0': CMAKE_PREFIX_PATH=/home/aiv/YongJun_ws/ros2_ws/install/yolov8_bringup:/home/aiv/YongJun_ws/ros2_ws/install/yolov8_msgs:/home/aiv/YongJun_ws/ros2_ws/install/usb_cam:/home/aiv/YongJun_ws/ros2_ws/install/yolov8_ros:/opt/ros/foxy:/home/aiv/YongJun_ws/ros2_ws/install/ugv_sdk:/home/aiv/YongJun_ws/ros2_ws/install/realsense2_description:/home/aiv/YongJun_ws/ros2_ws/install/realsense2_camera:/home/aiv/YongJun_ws/ros2_ws/install/realsense2_camera_msgs /home/aiv/.local/bin/cmake --build /home/aiv/YongJun_ws/ros2_ws/build/scout_description -- -j32 -l32
+[0.577s] Invoking command in '/home/aiv/YongJun_ws/ros2_ws/build/scout_description': CMAKE_PREFIX_PATH=/home/aiv/YongJun_ws/ros2_ws/install/yolov8_bringup:/home/aiv/YongJun_ws/ros2_ws/install/yolov8_msgs:/home/aiv/YongJun_ws/ros2_ws/install/usb_cam:/home/aiv/YongJun_ws/ros2_ws/install/yolov8_ros:/opt/ros/foxy:/home/aiv/YongJun_ws/ros2_ws/install/ugv_sdk:/home/aiv/YongJun_ws/ros2_ws/install/realsense2_description:/home/aiv/YongJun_ws/ros2_ws/install/realsense2_camera:/home/aiv/YongJun_ws/ros2_ws/install/realsense2_camera_msgs /home/aiv/.local/bin/cmake --install /home/aiv/YongJun_ws/ros2_ws/build/scout_description
+[0.597s] -- Install configuration: ""
+[0.597s] -- Execute custom install script
+[0.599s] -- Symlinking: /home/aiv/YongJun_ws/ros2_ws/install/scout_description/share/scout_description//launch/scout_base_description.launch.py
+[0.600s] -- Symlinking: /home/aiv/YongJun_ws/ros2_ws/install/scout_description/share/scout_description//urdf/generate_urdf.sh
+[0.602s] -- Symlinking: /home/aiv/YongJun_ws/ros2_ws/install/scout_description/share/scout_description//urdf/scout_v2.urdf
+[0.603s] -- Symlinking: /home/aiv/YongJun_ws/ros2_ws/install/scout_description/share/scout_description//urdf/scout_v2.xacro
+[0.605s] -- Symlinking: /home/aiv/YongJun_ws/ros2_ws/install/scout_description/share/scout_description//urdf/scout_wheel_type1.xacro
+[0.607s] -- Symlinking: /home/aiv/YongJun_ws/ros2_ws/install/scout_description/share/scout_description//urdf/scout_wheel_type2.xacro
+[0.609s] -- Symlinking: /home/aiv/YongJun_ws/ros2_ws/install/scout_description/share/scout_description//meshes/base_link.dae
+[0.610s] -- Symlinking: /home/aiv/YongJun_ws/ros2_ws/install/scout_description/share/scout_description//meshes/base_link_full.dae
+[0.612s] -- Symlinking: /home/aiv/YongJun_ws/ros2_ws/install/scout_description/share/scout_description//meshes/hokuyo.dae
+[0.613s] -- Symlinking: /home/aiv/YongJun_ws/ros2_ws/install/scout_description/share/scout_description//meshes/wheel_type1.dae
+[0.615s] -- Symlinking: /home/aiv/YongJun_ws/ros2_ws/install/scout_description/share/scout_description//meshes/wheel_type2.dae
+[0.617s] -- Symlinking: /home/aiv/YongJun_ws/ros2_ws/install/scout_description/share/ament_index/resource_index/package_run_dependencies/scout_description
+[0.619s] -- Symlinking: /home/aiv/YongJun_ws/ros2_ws/install/scout_description/share/ament_index/resource_index/parent_prefix_path/scout_description
+[0.621s] -- Symlinking: /home/aiv/YongJun_ws/ros2_ws/install/scout_description/share/scout_description/environment/ament_prefix_path.sh
+[0.622s] -- Symlinking: /home/aiv/YongJun_ws/ros2_ws/install/scout_description/share/scout_description/environment/ament_prefix_path.dsv
+[0.624s] -- Symlinking: /home/aiv/YongJun_ws/ros2_ws/install/scout_description/share/scout_description/environment/path.sh
+[0.626s] -- Symlinking: /home/aiv/YongJun_ws/ros2_ws/install/scout_description/share/scout_description/environment/path.dsv
+[0.627s] -- Symlinking: /home/aiv/YongJun_ws/ros2_ws/install/scout_description/share/scout_description/local_setup.bash
+[0.629s] -- Symlinking: /home/aiv/YongJun_ws/ros2_ws/install/scout_description/share/scout_description/local_setup.sh
+[0.631s] -- Symlinking: /home/aiv/YongJun_ws/ros2_ws/install/scout_description/share/scout_description/local_setup.zsh
+[0.632s] -- Symlinking: /home/aiv/YongJun_ws/ros2_ws/install/scout_description/share/scout_description/local_setup.dsv
+[0.634s] -- Symlinking: /home/aiv/YongJun_ws/ros2_ws/install/scout_description/share/scout_description/package.dsv
+[0.636s] -- Symlinking: /home/aiv/YongJun_ws/ros2_ws/install/scout_description/share/ament_index/resource_index/packages/scout_description
+[0.638s] -- Symlinking: /home/aiv/YongJun_ws/ros2_ws/install/scout_description/share/scout_description/cmake/scout_descriptionConfig.cmake
+[0.640s] -- Symlinking: /home/aiv/YongJun_ws/ros2_ws/install/scout_description/share/scout_description/cmake/scout_descriptionConfig-version.cmake
+[0.642s] -- Symlinking: /home/aiv/YongJun_ws/ros2_ws/install/scout_description/share/scout_description/package.xml
+[0.887s] Invoked command in '/home/aiv/YongJun_ws/ros2_ws/build/scout_description' returned '0': CMAKE_PREFIX_PATH=/home/aiv/YongJun_ws/ros2_ws/install/yolov8_bringup:/home/aiv/YongJun_ws/ros2_ws/install/yolov8_msgs:/home/aiv/YongJun_ws/ros2_ws/install/usb_cam:/home/aiv/YongJun_ws/ros2_ws/install/yolov8_ros:/opt/ros/foxy:/home/aiv/YongJun_ws/ros2_ws/install/ugv_sdk:/home/aiv/YongJun_ws/ros2_ws/install/realsense2_description:/home/aiv/YongJun_ws/ros2_ws/install/realsense2_camera:/home/aiv/YongJun_ws/ros2_ws/install/realsense2_camera_msgs /home/aiv/.local/bin/cmake --install /home/aiv/YongJun_ws/ros2_ws/build/scout_description

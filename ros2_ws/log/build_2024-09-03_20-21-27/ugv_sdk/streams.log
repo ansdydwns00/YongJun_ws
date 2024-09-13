@@ -1,0 +1,59 @@
+[0.023s] Invoking command in '/home/aiv/YongJun_ws/ros2_ws/build/ugv_sdk': /home/aiv/.local/bin/cmake --build /home/aiv/YongJun_ws/ros2_ws/build/ugv_sdk -- -j32 -l32
+[0.070s] [ 42%] Built target ugv_sdk
+[0.083s] [ 50%] Built target demo_bunker_robot
+[0.086s] [ 57%] Built target demo_robot_version
+[0.086s] [ 64%] Built target demo_tracer_robot
+[0.086s] [ 71%] Built target demo_scout_mini_omni_robot
+[0.087s] [ 78%] Built target demo_hunter_robot
+[0.088s] [ 85%] Built target demo_ranger_robot
+[0.089s] [ 92%] Built target demo_scout_robot
+[0.090s] [100%] Built target demo_protocol_detector
+[0.100s] Invoked command in '/home/aiv/YongJun_ws/ros2_ws/build/ugv_sdk' returned '0': /home/aiv/.local/bin/cmake --build /home/aiv/YongJun_ws/ros2_ws/build/ugv_sdk -- -j32 -l32
+[0.236s] Invoking command in '/home/aiv/YongJun_ws/ros2_ws/build/ugv_sdk': /home/aiv/.local/bin/cmake --install /home/aiv/YongJun_ws/ros2_ws/build/ugv_sdk
+[0.256s] -- Install configuration: "Release"
+[0.257s] -- Up-to-date: /home/aiv/YongJun_ws/ros2_ws/install/ugv_sdk/lib/libugv_sdk.a
+[0.257s] -- Up-to-date: /home/aiv/YongJun_ws/ros2_ws/install/ugv_sdk/include/ugv_sdk
+[0.257s] -- Up-to-date: /home/aiv/YongJun_ws/ros2_ws/install/ugv_sdk/include/ugv_sdk/utilities
+[0.257s] -- Up-to-date: /home/aiv/YongJun_ws/ros2_ws/install/ugv_sdk/include/ugv_sdk/utilities/protocol_detector.hpp
+[0.257s] -- Up-to-date: /home/aiv/YongJun_ws/ros2_ws/install/ugv_sdk/include/ugv_sdk/mobile_robot
+[0.258s] -- Up-to-date: /home/aiv/YongJun_ws/ros2_ws/install/ugv_sdk/include/ugv_sdk/mobile_robot/hunter_robot.hpp
+[0.258s] -- Up-to-date: /home/aiv/YongJun_ws/ros2_ws/install/ugv_sdk/include/ugv_sdk/mobile_robot/scout_robot.hpp
+[0.258s] -- Up-to-date: /home/aiv/YongJun_ws/ros2_ws/install/ugv_sdk/include/ugv_sdk/mobile_robot/tracer_robot.hpp
+[0.258s] -- Up-to-date: /home/aiv/YongJun_ws/ros2_ws/install/ugv_sdk/include/ugv_sdk/mobile_robot/titan_robot.hpp
+[0.258s] -- Up-to-date: /home/aiv/YongJun_ws/ros2_ws/install/ugv_sdk/include/ugv_sdk/mobile_robot/ranger_robot.hpp
+[0.258s] -- Up-to-date: /home/aiv/YongJun_ws/ros2_ws/install/ugv_sdk/include/ugv_sdk/mobile_robot/bunker_robot.hpp
+[0.258s] -- Up-to-date: /home/aiv/YongJun_ws/ros2_ws/install/ugv_sdk/include/ugv_sdk/details
+[0.258s] -- Up-to-date: /home/aiv/YongJun_ws/ros2_ws/install/ugv_sdk/include/ugv_sdk/details/protocol_v1
+[0.258s] -- Up-to-date: /home/aiv/YongJun_ws/ros2_ws/install/ugv_sdk/include/ugv_sdk/details/protocol_v1/protocol_v1_parser.hpp
+[0.258s] -- Up-to-date: /home/aiv/YongJun_ws/ros2_ws/install/ugv_sdk/include/ugv_sdk/details/protocol_v1/agilex_msg_parser_v1.h
+[0.258s] -- Up-to-date: /home/aiv/YongJun_ws/ros2_ws/install/ugv_sdk/include/ugv_sdk/details/protocol_v1/robot_limits.hpp
+[0.258s] -- Up-to-date: /home/aiv/YongJun_ws/ros2_ws/install/ugv_sdk/include/ugv_sdk/details/robot_base
+[0.258s] -- Up-to-date: /home/aiv/YongJun_ws/ros2_ws/install/ugv_sdk/include/ugv_sdk/details/robot_base/titan_base.hpp
+[0.259s] -- Up-to-date: /home/aiv/YongJun_ws/ros2_ws/install/ugv_sdk/include/ugv_sdk/details/robot_base/ranger_base.hpp
+[0.259s] -- Up-to-date: /home/aiv/YongJun_ws/ros2_ws/install/ugv_sdk/include/ugv_sdk/details/robot_base/scout_base.hpp
+[0.259s] -- Up-to-date: /home/aiv/YongJun_ws/ros2_ws/install/ugv_sdk/include/ugv_sdk/details/robot_base/tracer_base.hpp
+[0.259s] -- Up-to-date: /home/aiv/YongJun_ws/ros2_ws/install/ugv_sdk/include/ugv_sdk/details/robot_base/agilex_base.hpp
+[0.259s] -- Up-to-date: /home/aiv/YongJun_ws/ros2_ws/install/ugv_sdk/include/ugv_sdk/details/robot_base/bunker_base.hpp
+[0.259s] -- Up-to-date: /home/aiv/YongJun_ws/ros2_ws/install/ugv_sdk/include/ugv_sdk/details/robot_base/hunter_base.hpp
+[0.259s] -- Up-to-date: /home/aiv/YongJun_ws/ros2_ws/install/ugv_sdk/include/ugv_sdk/details/protocol_v2
+[0.259s] -- Up-to-date: /home/aiv/YongJun_ws/ros2_ws/install/ugv_sdk/include/ugv_sdk/details/protocol_v2/protocol_v2_parser.hpp
+[0.259s] -- Up-to-date: /home/aiv/YongJun_ws/ros2_ws/install/ugv_sdk/include/ugv_sdk/details/interface
+[0.259s] -- Up-to-date: /home/aiv/YongJun_ws/ros2_ws/install/ugv_sdk/include/ugv_sdk/details/interface/ranger_interface.hpp
+[0.260s] -- Up-to-date: /home/aiv/YongJun_ws/ros2_ws/install/ugv_sdk/include/ugv_sdk/details/interface/agilex_message.h
+[0.260s] -- Up-to-date: /home/aiv/YongJun_ws/ros2_ws/install/ugv_sdk/include/ugv_sdk/details/interface/tracer_interface.hpp
+[0.260s] -- Up-to-date: /home/aiv/YongJun_ws/ros2_ws/install/ugv_sdk/include/ugv_sdk/details/interface/robot_common_interface.hpp
+[0.260s] -- Up-to-date: /home/aiv/YongJun_ws/ros2_ws/install/ugv_sdk/include/ugv_sdk/details/interface/hunter_interface.hpp
+[0.260s] -- Up-to-date: /home/aiv/YongJun_ws/ros2_ws/install/ugv_sdk/include/ugv_sdk/details/interface/titan_interface.hpp
+[0.260s] -- Up-to-date: /home/aiv/YongJun_ws/ros2_ws/install/ugv_sdk/include/ugv_sdk/details/interface/bunker_interface.hpp
+[0.260s] -- Up-to-date: /home/aiv/YongJun_ws/ros2_ws/install/ugv_sdk/include/ugv_sdk/details/interface/agilex_types.h
+[0.260s] -- Up-to-date: /home/aiv/YongJun_ws/ros2_ws/install/ugv_sdk/include/ugv_sdk/details/interface/scout_interface.hpp
+[0.260s] -- Up-to-date: /home/aiv/YongJun_ws/ros2_ws/install/ugv_sdk/include/ugv_sdk/details/async_port
+[0.260s] -- Up-to-date: /home/aiv/YongJun_ws/ros2_ws/install/ugv_sdk/include/ugv_sdk/details/async_port/async_serial.hpp
+[0.260s] -- Up-to-date: /home/aiv/YongJun_ws/ros2_ws/install/ugv_sdk/include/ugv_sdk/details/async_port/async_can.hpp
+[0.260s] -- Up-to-date: /home/aiv/YongJun_ws/ros2_ws/install/ugv_sdk/include/ugv_sdk/details/async_port/ring_buffer.hpp
+[0.261s] -- Up-to-date: /home/aiv/YongJun_ws/ros2_ws/install/ugv_sdk/include/ugv_sdk/details/parser_base.hpp
+[0.261s] -- Up-to-date: /home/aiv/YongJun_ws/ros2_ws/install/ugv_sdk/lib/cmake/ugv_sdk/ugv_sdkTargets.cmake
+[0.261s] -- Up-to-date: /home/aiv/YongJun_ws/ros2_ws/install/ugv_sdk/lib/cmake/ugv_sdk/ugv_sdkTargets-release.cmake
+[0.261s] -- Up-to-date: /home/aiv/YongJun_ws/ros2_ws/install/ugv_sdk/lib/cmake/ugv_sdk/ugv_sdkConfig.cmake
+[0.261s] -- Up-to-date: /home/aiv/YongJun_ws/ros2_ws/install/ugv_sdk/lib/cmake/ugv_sdk/ugv_sdkConfigVersion.cmake
+[0.263s] Invoked command in '/home/aiv/YongJun_ws/ros2_ws/build/ugv_sdk' returned '0': /home/aiv/.local/bin/cmake --install /home/aiv/YongJun_ws/ros2_ws/build/ugv_sdk

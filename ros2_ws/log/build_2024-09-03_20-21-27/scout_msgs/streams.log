@@ -1,0 +1,269 @@
+[0.026s] Invoking command in '/home/aiv/YongJun_ws/ros2_ws/build/scout_msgs': CMAKE_PREFIX_PATH=/home/aiv/YongJun_ws/ros2_ws/install/yolov8_bringup:/home/aiv/YongJun_ws/ros2_ws/install/yolov8_msgs:/home/aiv/YongJun_ws/ros2_ws/install/usb_cam:/home/aiv/YongJun_ws/ros2_ws/install/yolov8_ros:/opt/ros/foxy:/home/aiv/YongJun_ws/ros2_ws/install/ugv_sdk:/home/aiv/YongJun_ws/ros2_ws/install/realsense2_description:/home/aiv/YongJun_ws/ros2_ws/install/realsense2_camera:/home/aiv/YongJun_ws/ros2_ws/install/realsense2_camera_msgs /home/aiv/.local/bin/cmake /home/aiv/YongJun_ws/ros2_ws/src/scout_ros2/scout_msgs -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/aiv/YongJun_ws/ros2_ws/install/scout_msgs
+[0.079s] -- The C compiler identification is GNU 9.4.0
+[0.124s] -- The CXX compiler identification is GNU 9.4.0
+[0.132s] -- Detecting C compiler ABI info
+[0.170s] -- Detecting C compiler ABI info - done
+[0.177s] -- Check for working C compiler: /usr/bin/cc - skipped
+[0.177s] -- Detecting C compile features
+[0.177s] -- Detecting C compile features - done
+[0.182s] -- Detecting CXX compiler ABI info
+[0.227s] -- Detecting CXX compiler ABI info - done
+[0.236s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[0.238s] -- Detecting CXX compile features
+[0.239s] -- Detecting CXX compile features - done
+[0.241s] -- Found ament_cmake: 0.9.12 (/opt/ros/foxy/share/ament_cmake/cmake)
+[0.266s] -- Found PythonInterp: /usr/bin/python3 (found suitable version "3.8.10", minimum required is "3") 
+[0.267s] -- Using PYTHON_EXECUTABLE: /usr/bin/python3
+[0.440s] -- Override CMake install command with custom implementation using symlinks instead of copying resources
+[0.460s] -- Found builtin_interfaces: 1.0.0 (/opt/ros/foxy/share/builtin_interfaces/cmake)
+[0.486s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.491s] -- Found rosidl_adapter: 1.3.1 (/opt/ros/foxy/share/rosidl_adapter/cmake)
+[0.551s] -- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "1.1.1f")  
+[0.574s] -- Found FastRTPS: /opt/ros/foxy/include  
+[0.634s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.653s] -- Found rosidl_default_generators: 1.0.1 (/opt/ros/foxy/share/rosidl_default_generators/cmake)
+[0.662s] -- Found std_msgs: 2.0.5 (/opt/ros/foxy/share/std_msgs/cmake)
+[0.690s] -- Found PythonInterp: /usr/bin/python3 (found version "3.8.10") 
+[0.806s] -- Found ament_cmake_ros: 0.9.2 (/opt/ros/foxy/share/ament_cmake_ros/cmake)
+[0.924s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.963s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.981s] -- Found PythonInterp: /usr/bin/python3 (found suitable version "3.8.10", minimum required is "3.5") 
+[0.982s] -- Found python_cmake_module: 0.8.1 (/opt/ros/foxy/share/python_cmake_module/cmake)
+[1.002s] -- Found PythonLibs: /usr/lib/x86_64-linux-gnu/libpython3.8.so (found suitable version "3.8.10", minimum required is "3.5") 
+[1.003s] -- Using PYTHON_EXECUTABLE: /usr/bin/python3
+[1.003s] -- Using PYTHON_INCLUDE_DIRS: /usr/include/python3.8
+[1.003s] -- Using PYTHON_LIBRARIES: /usr/lib/x86_64-linux-gnu/libpython3.8.so
+[1.018s] -- Found PythonExtra: .so  
+[1.243s] -- Found ament_lint_auto: 0.9.8 (/opt/ros/foxy/share/ament_lint_auto/cmake)
+[1.261s] -- Added test 'copyright' to check source files copyright and LICENSE
+[1.262s] -- Added test 'lint_cmake' to check CMake code style
+[1.263s] -- Added test 'xmllint' to check XML markup files
+[1.265s] -- Configuring done
+[1.294s] -- Generating done
+[1.296s] -- Build files have been written to: /home/aiv/YongJun_ws/ros2_ws/build/scout_msgs
+[1.304s] Invoked command in '/home/aiv/YongJun_ws/ros2_ws/build/scout_msgs' returned '0': CMAKE_PREFIX_PATH=/home/aiv/YongJun_ws/ros2_ws/install/yolov8_bringup:/home/aiv/YongJun_ws/ros2_ws/install/yolov8_msgs:/home/aiv/YongJun_ws/ros2_ws/install/usb_cam:/home/aiv/YongJun_ws/ros2_ws/install/yolov8_ros:/opt/ros/foxy:/home/aiv/YongJun_ws/ros2_ws/install/ugv_sdk:/home/aiv/YongJun_ws/ros2_ws/install/realsense2_description:/home/aiv/YongJun_ws/ros2_ws/install/realsense2_camera:/home/aiv/YongJun_ws/ros2_ws/install/realsense2_camera_msgs /home/aiv/.local/bin/cmake /home/aiv/YongJun_ws/ros2_ws/src/scout_ros2/scout_msgs -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/aiv/YongJun_ws/ros2_ws/install/scout_msgs
+[1.305s] Invoking command in '/home/aiv/YongJun_ws/ros2_ws/build/scout_msgs': CMAKE_PREFIX_PATH=/home/aiv/YongJun_ws/ros2_ws/install/yolov8_bringup:/home/aiv/YongJun_ws/ros2_ws/install/yolov8_msgs:/home/aiv/YongJun_ws/ros2_ws/install/usb_cam:/home/aiv/YongJun_ws/ros2_ws/install/yolov8_ros:/opt/ros/foxy:/home/aiv/YongJun_ws/ros2_ws/install/ugv_sdk:/home/aiv/YongJun_ws/ros2_ws/install/realsense2_description:/home/aiv/YongJun_ws/ros2_ws/install/realsense2_camera:/home/aiv/YongJun_ws/ros2_ws/install/realsense2_camera_msgs /home/aiv/.local/bin/cmake --build /home/aiv/YongJun_ws/ros2_ws/build/scout_msgs -- -j32 -l32
+[1.334s] [  1%] [34m[1mGenerating C code for ROS interfaces[0m
+[1.337s] [  3%] [34m[1mGenerating C++ code for ROS interfaces[0m
+[1.670s] [  3%] Built target scout_msgs__cpp
+[1.673s] [  4%] [34m[1mGenerating C++ type support dispatch for ROS interfaces[0m
+[1.673s] [  6%] [34m[1mGenerating C++ type support for eProsima Fast-RTPS[0m
+[1.673s] [  7%] [34m[1mGenerating C++ introspection for ROS interfaces[0m
+[1.685s] [  9%] [32mBuilding C object CMakeFiles/scout_msgs__rosidl_generator_c.dir/rosidl_generator_c/scout_msgs/msg/detail/scout_actuator_state__functions.c.o[0m
+[1.685s] [ 11%] [32mBuilding C object CMakeFiles/scout_msgs__rosidl_generator_c.dir/rosidl_generator_c/scout_msgs/msg/detail/scout_light_cmd__functions.c.o[0m
+[1.685s] [ 12%] [32mBuilding C object CMakeFiles/scout_msgs__rosidl_generator_c.dir/rosidl_generator_c/scout_msgs/msg/detail/scout_rc_state__functions.c.o[0m
+[1.685s] [ 14%] [32mBuilding C object CMakeFiles/scout_msgs__rosidl_generator_c.dir/rosidl_generator_c/scout_msgs/msg/detail/scout_light_state__functions.c.o[0m
+[1.686s] [ 15%] [32mBuilding C object CMakeFiles/scout_msgs__rosidl_generator_c.dir/rosidl_generator_c/scout_msgs/msg/detail/scout_status__functions.c.o[0m
+[1.729s] [ 17%] [32m[1mLinking C shared library libscout_msgs__rosidl_generator_c.so[0m
+[1.747s] [ 17%] Built target scout_msgs__rosidl_generator_c
+[1.751s] [ 19%] [34m[1mGenerating C introspection for ROS interfaces[0m
+[1.751s] [ 20%] [34m[1mGenerating C type support dispatch for ROS interfaces[0m
+[1.957s] [ 22%] [32mBuilding CXX object CMakeFiles/scout_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/scout_msgs/msg/scout_actuator_state__type_support.cpp.o[0m
+[1.958s] [ 23%] [32mBuilding CXX object CMakeFiles/scout_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/scout_msgs/msg/scout_light_cmd__type_support.cpp.o[0m
+[1.958s] [ 25%] [32mBuilding CXX object CMakeFiles/scout_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/scout_msgs/msg/scout_light_state__type_support.cpp.o[0m
+[1.959s] [ 28%] [32mBuilding CXX object CMakeFiles/scout_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/scout_msgs/msg/scout_rc_state__type_support.cpp.o[0m
+[1.959s] [ 28%] [32mBuilding CXX object CMakeFiles/scout_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/scout_msgs/msg/scout_status__type_support.cpp.o[0m
+[1.983s] [ 30%] [32mBuilding CXX object CMakeFiles/scout_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/scout_msgs/msg/detail/scout_actuator_state__type_support.cpp.o[0m
+[1.984s] [ 31%] [32mBuilding CXX object CMakeFiles/scout_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/scout_msgs/msg/detail/scout_light_cmd__type_support.cpp.o[0m
+[1.985s] [ 33%] [32mBuilding CXX object CMakeFiles/scout_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/scout_msgs/msg/detail/scout_light_state__type_support.cpp.o[0m
+[1.985s] [ 34%] [32mBuilding CXX object CMakeFiles/scout_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/scout_msgs/msg/detail/scout_rc_state__type_support.cpp.o[0m
+[1.985s] [ 36%] [32mBuilding CXX object CMakeFiles/scout_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/scout_msgs/msg/detail/scout_status__type_support.cpp.o[0m
+[2.015s] [ 38%] [32mBuilding CXX object CMakeFiles/scout_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/scout_msgs/msg/detail/dds_fastrtps/scout_actuator_state__type_support.cpp.o[0m
+[2.016s] [ 41%] [32mBuilding CXX object CMakeFiles/scout_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/scout_msgs/msg/detail/dds_fastrtps/scout_light_cmd__type_support.cpp.o[0m
+[2.017s] [ 41%] [32mBuilding CXX object CMakeFiles/scout_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/scout_msgs/msg/detail/dds_fastrtps/scout_light_state__type_support.cpp.o[0m
+[2.017s] [ 42%] [32mBuilding CXX object CMakeFiles/scout_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/scout_msgs/msg/detail/dds_fastrtps/scout_rc_state__type_support.cpp.o[0m
+[2.017s] [ 44%] [32mBuilding CXX object CMakeFiles/scout_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/scout_msgs/msg/detail/dds_fastrtps/scout_status__type_support.cpp.o[0m
+[2.055s] [ 46%] [32mBuilding CXX object CMakeFiles/scout_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/scout_msgs/msg/scout_actuator_state__type_support.cpp.o[0m
+[2.055s] [ 47%] [32mBuilding CXX object CMakeFiles/scout_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/scout_msgs/msg/scout_light_cmd__type_support.cpp.o[0m
+[2.056s] [ 49%] [32mBuilding CXX object CMakeFiles/scout_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/scout_msgs/msg/scout_light_state__type_support.cpp.o[0m
+[2.056s] [ 50%] [32mBuilding CXX object CMakeFiles/scout_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/scout_msgs/msg/scout_rc_state__type_support.cpp.o[0m
+[2.057s] [ 52%] [32mBuilding CXX object CMakeFiles/scout_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/scout_msgs/msg/scout_status__type_support.cpp.o[0m
+[2.088s] [ 53%] [32m[1mLinking CXX shared library libscout_msgs__rosidl_typesupport_c.so[0m
+[2.110s] [ 53%] Built target scout_msgs__rosidl_typesupport_c
+[2.114s] [ 55%] [32mBuilding C object CMakeFiles/scout_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/scout_msgs/msg/detail/scout_actuator_state__type_support.c.o[0m
+[2.116s] [ 57%] [32mBuilding C object CMakeFiles/scout_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/scout_msgs/msg/detail/scout_light_cmd__type_support.c.o[0m
+[2.116s] [ 58%] [32mBuilding C object CMakeFiles/scout_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/scout_msgs/msg/detail/scout_light_state__type_support.c.o[0m
+[2.116s] [ 60%] [32mBuilding C object CMakeFiles/scout_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/scout_msgs/msg/detail/scout_rc_state__type_support.c.o[0m
+[2.117s] [ 61%] [32mBuilding C object CMakeFiles/scout_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/scout_msgs/msg/detail/scout_status__type_support.c.o[0m
+[2.154s] [ 63%] [32m[1mLinking C shared library libscout_msgs__rosidl_typesupport_introspection_c.so[0m
+[2.171s] [ 63%] Built target scout_msgs__rosidl_typesupport_introspection_c
+[2.280s] [ 65%] [32m[1mLinking CXX shared library libscout_msgs__rosidl_typesupport_introspection_cpp.so[0m
+[2.293s] [ 66%] [32m[1mLinking CXX shared library libscout_msgs__rosidl_typesupport_cpp.so[0m
+[2.313s] [ 66%] Built target scout_msgs__rosidl_typesupport_cpp
+[2.322s] [ 66%] Built target scout_msgs__rosidl_typesupport_introspection_cpp
+[2.388s] [ 68%] [32m[1mLinking CXX shared library libscout_msgs__rosidl_typesupport_fastrtps_cpp.so[0m
+[2.436s] [ 68%] Built target scout_msgs__rosidl_typesupport_fastrtps_cpp
+[2.439s] [ 69%] [34m[1mGenerating C type support for eProsima Fast-RTPS[0m
+[2.759s] [ 71%] [32mBuilding CXX object CMakeFiles/scout_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/scout_msgs/msg/detail/scout_actuator_state__type_support_c.cpp.o[0m
+[2.759s] [ 73%] [32mBuilding CXX object CMakeFiles/scout_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/scout_msgs/msg/detail/scout_light_cmd__type_support_c.cpp.o[0m
+[2.759s] [ 74%] [32mBuilding CXX object CMakeFiles/scout_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/scout_msgs/msg/detail/scout_light_state__type_support_c.cpp.o[0m
+[2.759s] [ 76%] [32mBuilding CXX object CMakeFiles/scout_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/scout_msgs/msg/detail/scout_rc_state__type_support_c.cpp.o[0m
+[2.759s] [ 77%] [32mBuilding CXX object CMakeFiles/scout_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/scout_msgs/msg/detail/scout_status__type_support_c.cpp.o[0m
+[2.952s] [ 79%] [32m[1mLinking CXX shared library libscout_msgs__rosidl_typesupport_fastrtps_c.so[0m
+[2.999s] [ 79%] Built target scout_msgs__rosidl_typesupport_fastrtps_c
+[3.006s] [ 79%] Built target scout_msgs
+[3.012s] [ 80%] [34m[1mGenerating Python code for ROS interfaces[0m
+[3.634s] [ 80%] Built target scout_msgs__py
+[3.640s] [ 82%] [32mBuilding C object CMakeFiles/scout_msgs__python.dir/rosidl_generator_py/scout_msgs/msg/_scout_actuator_state_s.c.o[0m
+[3.640s] [ 84%] [32mBuilding C object CMakeFiles/scout_msgs__python.dir/rosidl_generator_py/scout_msgs/msg/_scout_light_cmd_s.c.o[0m
+[3.640s] [ 85%] [32mBuilding C object CMakeFiles/scout_msgs__python.dir/rosidl_generator_py/scout_msgs/msg/_scout_light_state_s.c.o[0m
+[3.640s] [ 87%] [32mBuilding C object CMakeFiles/scout_msgs__python.dir/rosidl_generator_py/scout_msgs/msg/_scout_rc_state_s.c.o[0m
+[3.641s] [ 88%] [32mBuilding C object CMakeFiles/scout_msgs__python.dir/rosidl_generator_py/scout_msgs/msg/_scout_status_s.c.o[0m
+[3.703s] [ 90%] [32m[1mLinking C shared library rosidl_generator_py/scout_msgs/libscout_msgs__python.so[0m
+[3.723s] [ 90%] Built target scout_msgs__python
+[3.729s] [ 92%] [32mBuilding C object CMakeFiles/scout_msgs__rosidl_typesupport_fastrtps_c__pyext.dir/rosidl_generator_py/scout_msgs/_scout_msgs_s.ep.rosidl_typesupport_fastrtps_c.c.o[0m
+[3.729s] [ 93%] [32mBuilding C object CMakeFiles/scout_msgs__rosidl_typesupport_introspection_c__pyext.dir/rosidl_generator_py/scout_msgs/_scout_msgs_s.ep.rosidl_typesupport_introspection_c.c.o[0m
+[3.730s] [ 95%] [32mBuilding C object CMakeFiles/scout_msgs__rosidl_typesupport_c__pyext.dir/rosidl_generator_py/scout_msgs/_scout_msgs_s.ep.rosidl_typesupport_c.c.o[0m
+[3.780s] [100%] [32m[1mLinking C shared library rosidl_generator_py/scout_msgs/scout_msgs_s__rosidl_typesupport_introspection_c.cpython-38-x86_64-linux-gnu.so[0m
+[3.780s] [100%] [32m[1mLinking C shared library rosidl_generator_py/scout_msgs/scout_msgs_s__rosidl_typesupport_c.cpython-38-x86_64-linux-gnu.so[0m
+[3.780s] [100%] [32m[1mLinking CXX shared library rosidl_generator_py/scout_msgs/scout_msgs_s__rosidl_typesupport_fastrtps_c.cpython-38-x86_64-linux-gnu.so[0m
+[3.796s] [100%] Built target scout_msgs__rosidl_typesupport_c__pyext
+[3.796s] [100%] Built target scout_msgs__rosidl_typesupport_introspection_c__pyext
+[3.813s] [100%] Built target scout_msgs__rosidl_typesupport_fastrtps_c__pyext
+[3.821s] Invoked command in '/home/aiv/YongJun_ws/ros2_ws/build/scout_msgs' returned '0': CMAKE_PREFIX_PATH=/home/aiv/YongJun_ws/ros2_ws/install/yolov8_bringup:/home/aiv/YongJun_ws/ros2_ws/install/yolov8_msgs:/home/aiv/YongJun_ws/ros2_ws/install/usb_cam:/home/aiv/YongJun_ws/ros2_ws/install/yolov8_ros:/opt/ros/foxy:/home/aiv/YongJun_ws/ros2_ws/install/ugv_sdk:/home/aiv/YongJun_ws/ros2_ws/install/realsense2_description:/home/aiv/YongJun_ws/ros2_ws/install/realsense2_camera:/home/aiv/YongJun_ws/ros2_ws/install/realsense2_camera_msgs /home/aiv/.local/bin/cmake --build /home/aiv/YongJun_ws/ros2_ws/build/scout_msgs -- -j32 -l32
+[3.961s] Invoking command in '/home/aiv/YongJun_ws/ros2_ws/build/scout_msgs': CMAKE_PREFIX_PATH=/home/aiv/YongJun_ws/ros2_ws/install/yolov8_bringup:/home/aiv/YongJun_ws/ros2_ws/install/yolov8_msgs:/home/aiv/YongJun_ws/ros2_ws/install/usb_cam:/home/aiv/YongJun_ws/ros2_ws/install/yolov8_ros:/opt/ros/foxy:/home/aiv/YongJun_ws/ros2_ws/install/ugv_sdk:/home/aiv/YongJun_ws/ros2_ws/install/realsense2_description:/home/aiv/YongJun_ws/ros2_ws/install/realsense2_camera:/home/aiv/YongJun_ws/ros2_ws/install/realsense2_camera_msgs /home/aiv/.local/bin/cmake --install /home/aiv/YongJun_ws/ros2_ws/build/scout_msgs
+[3.987s] -- Install configuration: ""
+[3.988s] -- Execute custom install script
+[3.988s] -- Symlinking: /home/aiv/YongJun_ws/ros2_ws/install/scout_msgs/share/ament_index/resource_index/rosidl_interfaces/scout_msgs
+[3.990s] -- Symlinking: /home/aiv/YongJun_ws/ros2_ws/install/scout_msgs/include/scout_msgs/msg/detail/scout_actuator_state__functions.h
+[3.992s] -- Symlinking: /home/aiv/YongJun_ws/ros2_ws/install/scout_msgs/include/scout_msgs/msg/detail/scout_actuator_state__struct.h
+[3.994s] -- Symlinking: /home/aiv/YongJun_ws/ros2_ws/install/scout_msgs/include/scout_msgs/msg/detail/scout_actuator_state__type_support.h
+[3.997s] -- Symlinking: /home/aiv/YongJun_ws/ros2_ws/install/scout_msgs/include/scout_msgs/msg/detail/scout_light_cmd__functions.h
+[3.999s] -- Symlinking: /home/aiv/YongJun_ws/ros2_ws/install/scout_msgs/include/scout_msgs/msg/detail/scout_light_cmd__struct.h
+[4.002s] -- Symlinking: /home/aiv/YongJun_ws/ros2_ws/install/scout_msgs/include/scout_msgs/msg/detail/scout_light_cmd__type_support.h
+[4.004s] -- Symlinking: /home/aiv/YongJun_ws/ros2_ws/install/scout_msgs/include/scout_msgs/msg/detail/scout_light_state__functions.h
+[4.007s] -- Symlinking: /home/aiv/YongJun_ws/ros2_ws/install/scout_msgs/include/scout_msgs/msg/detail/scout_light_state__struct.h
+[4.009s] -- Symlinking: /home/aiv/YongJun_ws/ros2_ws/install/scout_msgs/include/scout_msgs/msg/detail/scout_light_state__type_support.h
+[4.012s] -- Symlinking: /home/aiv/YongJun_ws/ros2_ws/install/scout_msgs/include/scout_msgs/msg/detail/scout_rc_state__functions.h
+[4.015s] -- Symlinking: /home/aiv/YongJun_ws/ros2_ws/install/scout_msgs/include/scout_msgs/msg/detail/scout_rc_state__struct.h
+[4.017s] -- Symlinking: /home/aiv/YongJun_ws/ros2_ws/install/scout_msgs/include/scout_msgs/msg/detail/scout_rc_state__type_support.h
+[4.020s] -- Symlinking: /home/aiv/YongJun_ws/ros2_ws/install/scout_msgs/include/scout_msgs/msg/detail/scout_status__functions.h
+[4.022s] -- Symlinking: /home/aiv/YongJun_ws/ros2_ws/install/scout_msgs/include/scout_msgs/msg/detail/scout_status__struct.h
+[4.024s] -- Symlinking: /home/aiv/YongJun_ws/ros2_ws/install/scout_msgs/include/scout_msgs/msg/detail/scout_status__type_support.h
+[4.027s] -- Symlinking: /home/aiv/YongJun_ws/ros2_ws/install/scout_msgs/include/scout_msgs/msg/rosidl_generator_c__visibility_control.h
+[4.029s] -- Symlinking: /home/aiv/YongJun_ws/ros2_ws/install/scout_msgs/include/scout_msgs/msg/scout_actuator_state.h
+[4.032s] -- Symlinking: /home/aiv/YongJun_ws/ros2_ws/install/scout_msgs/include/scout_msgs/msg/scout_light_cmd.h
+[4.034s] -- Symlinking: /home/aiv/YongJun_ws/ros2_ws/install/scout_msgs/include/scout_msgs/msg/scout_light_state.h
+[4.037s] -- Symlinking: /home/aiv/YongJun_ws/ros2_ws/install/scout_msgs/include/scout_msgs/msg/scout_rc_state.h
+[4.040s] -- Symlinking: /home/aiv/YongJun_ws/ros2_ws/install/scout_msgs/include/scout_msgs/msg/scout_status.h
+[4.042s] -- Symlinking: /home/aiv/YongJun_ws/ros2_ws/install/scout_msgs/share/scout_msgs/environment/library_path.sh
+[4.045s] -- Symlinking: /home/aiv/YongJun_ws/ros2_ws/install/scout_msgs/share/scout_msgs/environment/library_path.dsv
+[4.048s] -- Symlinking: /home/aiv/YongJun_ws/ros2_ws/install/scout_msgs/include/scout_msgs/msg/detail/scout_actuator_state__rosidl_typesupport_fastrtps_c.h
+[4.051s] -- Symlinking: /home/aiv/YongJun_ws/ros2_ws/install/scout_msgs/include/scout_msgs/msg/detail/scout_light_cmd__rosidl_typesupport_fastrtps_c.h
+[4.053s] -- Symlinking: /home/aiv/YongJun_ws/ros2_ws/install/scout_msgs/include/scout_msgs/msg/detail/scout_light_state__rosidl_typesupport_fastrtps_c.h
+[4.056s] -- Symlinking: /home/aiv/YongJun_ws/ros2_ws/install/scout_msgs/include/scout_msgs/msg/detail/scout_rc_state__rosidl_typesupport_fastrtps_c.h
+[4.058s] -- Symlinking: /home/aiv/YongJun_ws/ros2_ws/install/scout_msgs/include/scout_msgs/msg/detail/scout_status__rosidl_typesupport_fastrtps_c.h
+[4.061s] -- Symlinking: /home/aiv/YongJun_ws/ros2_ws/install/scout_msgs/include/scout_msgs/msg/rosidl_typesupport_fastrtps_c__visibility_control.h
+[4.064s] -- Symlinking: /home/aiv/YongJun_ws/ros2_ws/install/scout_msgs/lib/libscout_msgs__rosidl_typesupport_fastrtps_c.so
+[4.067s] -- Symlinking: /home/aiv/YongJun_ws/ros2_ws/install/scout_msgs/include/scout_msgs/msg/detail/scout_actuator_state__rosidl_typesupport_fastrtps_cpp.hpp
+[4.069s] -- Symlinking: /home/aiv/YongJun_ws/ros2_ws/install/scout_msgs/include/scout_msgs/msg/detail/scout_light_cmd__rosidl_typesupport_fastrtps_cpp.hpp
+[4.072s] -- Symlinking: /home/aiv/YongJun_ws/ros2_ws/install/scout_msgs/include/scout_msgs/msg/detail/scout_light_state__rosidl_typesupport_fastrtps_cpp.hpp
+[4.074s] -- Symlinking: /home/aiv/YongJun_ws/ros2_ws/install/scout_msgs/include/scout_msgs/msg/detail/scout_rc_state__rosidl_typesupport_fastrtps_cpp.hpp
+[4.077s] -- Symlinking: /home/aiv/YongJun_ws/ros2_ws/install/scout_msgs/include/scout_msgs/msg/detail/scout_status__rosidl_typesupport_fastrtps_cpp.hpp
+[4.079s] -- Symlinking: /home/aiv/YongJun_ws/ros2_ws/install/scout_msgs/include/scout_msgs/msg/rosidl_typesupport_fastrtps_cpp__visibility_control.h
+[4.082s] -- Symlinking: /home/aiv/YongJun_ws/ros2_ws/install/scout_msgs/lib/libscout_msgs__rosidl_typesupport_fastrtps_cpp.so
+[4.085s] -- Symlinking: /home/aiv/YongJun_ws/ros2_ws/install/scout_msgs/include/scout_msgs/msg/detail/scout_actuator_state__rosidl_typesupport_introspection_c.h
+[4.087s] -- Symlinking: /home/aiv/YongJun_ws/ros2_ws/install/scout_msgs/include/scout_msgs/msg/detail/scout_light_cmd__rosidl_typesupport_introspection_c.h
+[4.089s] -- Symlinking: /home/aiv/YongJun_ws/ros2_ws/install/scout_msgs/include/scout_msgs/msg/detail/scout_light_state__rosidl_typesupport_introspection_c.h
+[4.092s] -- Symlinking: /home/aiv/YongJun_ws/ros2_ws/install/scout_msgs/include/scout_msgs/msg/detail/scout_rc_state__rosidl_typesupport_introspection_c.h
+[4.094s] -- Symlinking: /home/aiv/YongJun_ws/ros2_ws/install/scout_msgs/include/scout_msgs/msg/detail/scout_status__rosidl_typesupport_introspection_c.h
+[4.097s] -- Symlinking: /home/aiv/YongJun_ws/ros2_ws/install/scout_msgs/include/scout_msgs/msg/rosidl_typesupport_introspection_c__visibility_control.h
+[4.100s] -- Symlinking: /home/aiv/YongJun_ws/ros2_ws/install/scout_msgs/include/scout_msgs/msg/detail/scout_actuator_state__builder.hpp
+[4.102s] -- Symlinking: /home/aiv/YongJun_ws/ros2_ws/install/scout_msgs/include/scout_msgs/msg/detail/scout_actuator_state__struct.hpp
+[4.105s] -- Symlinking: /home/aiv/YongJun_ws/ros2_ws/install/scout_msgs/include/scout_msgs/msg/detail/scout_actuator_state__traits.hpp
+[4.107s] -- Symlinking: /home/aiv/YongJun_ws/ros2_ws/install/scout_msgs/include/scout_msgs/msg/detail/scout_actuator_state__type_support.hpp
+[4.110s] -- Symlinking: /home/aiv/YongJun_ws/ros2_ws/install/scout_msgs/include/scout_msgs/msg/detail/scout_light_cmd__builder.hpp
+[4.112s] -- Symlinking: /home/aiv/YongJun_ws/ros2_ws/install/scout_msgs/include/scout_msgs/msg/detail/scout_light_cmd__struct.hpp
+[4.115s] -- Symlinking: /home/aiv/YongJun_ws/ros2_ws/install/scout_msgs/include/scout_msgs/msg/detail/scout_light_cmd__traits.hpp
+[4.117s] -- Symlinking: /home/aiv/YongJun_ws/ros2_ws/install/scout_msgs/include/scout_msgs/msg/detail/scout_light_cmd__type_support.hpp
+[4.119s] -- Symlinking: /home/aiv/YongJun_ws/ros2_ws/install/scout_msgs/include/scout_msgs/msg/detail/scout_light_state__builder.hpp
+[4.122s] -- Symlinking: /home/aiv/YongJun_ws/ros2_ws/install/scout_msgs/include/scout_msgs/msg/detail/scout_light_state__struct.hpp
+[4.124s] -- Symlinking: /home/aiv/YongJun_ws/ros2_ws/install/scout_msgs/include/scout_msgs/msg/detail/scout_light_state__traits.hpp
+[4.127s] -- Symlinking: /home/aiv/YongJun_ws/ros2_ws/install/scout_msgs/include/scout_msgs/msg/detail/scout_light_state__type_support.hpp
+[4.129s] -- Symlinking: /home/aiv/YongJun_ws/ros2_ws/install/scout_msgs/include/scout_msgs/msg/detail/scout_rc_state__builder.hpp
+[4.132s] -- Symlinking: /home/aiv/YongJun_ws/ros2_ws/install/scout_msgs/include/scout_msgs/msg/detail/scout_rc_state__struct.hpp
+[4.134s] -- Symlinking: /home/aiv/YongJun_ws/ros2_ws/install/scout_msgs/include/scout_msgs/msg/detail/scout_rc_state__traits.hpp
+[4.137s] -- Symlinking: /home/aiv/YongJun_ws/ros2_ws/install/scout_msgs/include/scout_msgs/msg/detail/scout_rc_state__type_support.hpp
+[4.139s] -- Symlinking: /home/aiv/YongJun_ws/ros2_ws/install/scout_msgs/include/scout_msgs/msg/detail/scout_status__builder.hpp
+[4.142s] -- Symlinking: /home/aiv/YongJun_ws/ros2_ws/install/scout_msgs/include/scout_msgs/msg/detail/scout_status__struct.hpp
+[4.144s] -- Symlinking: /home/aiv/YongJun_ws/ros2_ws/install/scout_msgs/include/scout_msgs/msg/detail/scout_status__traits.hpp
+[4.147s] -- Symlinking: /home/aiv/YongJun_ws/ros2_ws/install/scout_msgs/include/scout_msgs/msg/detail/scout_status__type_support.hpp
+[4.149s] -- Symlinking: /home/aiv/YongJun_ws/ros2_ws/install/scout_msgs/include/scout_msgs/msg/rosidl_generator_cpp__visibility_control.hpp
+[4.152s] -- Symlinking: /home/aiv/YongJun_ws/ros2_ws/install/scout_msgs/include/scout_msgs/msg/scout_actuator_state.hpp
+[4.154s] -- Symlinking: /home/aiv/YongJun_ws/ros2_ws/install/scout_msgs/include/scout_msgs/msg/scout_light_cmd.hpp
+[4.157s] -- Symlinking: /home/aiv/YongJun_ws/ros2_ws/install/scout_msgs/include/scout_msgs/msg/scout_light_state.hpp
+[4.159s] -- Symlinking: /home/aiv/YongJun_ws/ros2_ws/install/scout_msgs/include/scout_msgs/msg/scout_rc_state.hpp
+[4.162s] -- Symlinking: /home/aiv/YongJun_ws/ros2_ws/install/scout_msgs/include/scout_msgs/msg/scout_status.hpp
+[4.164s] -- Symlinking: /home/aiv/YongJun_ws/ros2_ws/install/scout_msgs/include/scout_msgs/msg/detail/scout_actuator_state__rosidl_typesupport_introspection_cpp.hpp
+[4.167s] -- Symlinking: /home/aiv/YongJun_ws/ros2_ws/install/scout_msgs/include/scout_msgs/msg/detail/scout_light_cmd__rosidl_typesupport_introspection_cpp.hpp
+[4.169s] -- Symlinking: /home/aiv/YongJun_ws/ros2_ws/install/scout_msgs/include/scout_msgs/msg/detail/scout_light_state__rosidl_typesupport_introspection_cpp.hpp
+[4.172s] -- Symlinking: /home/aiv/YongJun_ws/ros2_ws/install/scout_msgs/include/scout_msgs/msg/detail/scout_rc_state__rosidl_typesupport_introspection_cpp.hpp
+[4.174s] -- Symlinking: /home/aiv/YongJun_ws/ros2_ws/install/scout_msgs/include/scout_msgs/msg/detail/scout_status__rosidl_typesupport_introspection_cpp.hpp
+[4.177s] -- Symlinking: /home/aiv/YongJun_ws/ros2_ws/install/scout_msgs/share/scout_msgs/environment/pythonpath.sh
+[4.179s] -- Symlinking: /home/aiv/YongJun_ws/ros2_ws/install/scout_msgs/share/scout_msgs/environment/pythonpath.dsv
+[4.182s] -- Symlinking: /home/aiv/YongJun_ws/ros2_ws/install/scout_msgs/lib/python3.8/site-packages/scout_msgs/__init__.py
+[4.185s] -- Symlinking: /home/aiv/YongJun_ws/ros2_ws/install/scout_msgs/lib/python3.8/site-packages/scout_msgs/msg/__init__.py
+[4.187s] -- Symlinking: /home/aiv/YongJun_ws/ros2_ws/install/scout_msgs/lib/python3.8/site-packages/scout_msgs/msg/_scout_actuator_state.py
+[4.190s] -- Symlinking: /home/aiv/YongJun_ws/ros2_ws/install/scout_msgs/lib/python3.8/site-packages/scout_msgs/msg/_scout_light_cmd.py
+[4.192s] -- Symlinking: /home/aiv/YongJun_ws/ros2_ws/install/scout_msgs/lib/python3.8/site-packages/scout_msgs/msg/_scout_light_state.py
+[4.195s] -- Symlinking: /home/aiv/YongJun_ws/ros2_ws/install/scout_msgs/lib/python3.8/site-packages/scout_msgs/msg/_scout_rc_state.py
+[4.197s] -- Symlinking: /home/aiv/YongJun_ws/ros2_ws/install/scout_msgs/lib/python3.8/site-packages/scout_msgs/msg/_scout_status.py
+[4.200s] -- Symlinking: /home/aiv/YongJun_ws/ros2_ws/install/scout_msgs/lib/python3.8/site-packages/scout_msgs/scout_msgs_s__rosidl_typesupport_fastrtps_c.cpython-38-x86_64-linux-gnu.so
+[4.202s] -- Symlinking: /home/aiv/YongJun_ws/ros2_ws/install/scout_msgs/lib/python3.8/site-packages/scout_msgs/scout_msgs_s__rosidl_typesupport_introspection_c.cpython-38-x86_64-linux-gnu.so
+[4.205s] -- Symlinking: /home/aiv/YongJun_ws/ros2_ws/install/scout_msgs/lib/python3.8/site-packages/scout_msgs/scout_msgs_s__rosidl_typesupport_c.cpython-38-x86_64-linux-gnu.so
+[4.208s] -- Symlinking: /home/aiv/YongJun_ws/ros2_ws/install/scout_msgs/lib/libscout_msgs__python.so
+[4.210s] -- Symlinking: /home/aiv/YongJun_ws/ros2_ws/install/scout_msgs/share/scout_msgs/msg/ScoutActuatorState.idl
+[4.213s] -- Symlinking: /home/aiv/YongJun_ws/ros2_ws/install/scout_msgs/share/scout_msgs/msg/ScoutLightCmd.idl
+[4.215s] -- Symlinking: /home/aiv/YongJun_ws/ros2_ws/install/scout_msgs/share/scout_msgs/msg/ScoutLightState.idl
+[4.218s] -- Symlinking: /home/aiv/YongJun_ws/ros2_ws/install/scout_msgs/share/scout_msgs/msg/ScoutRCState.idl
+[4.221s] -- Symlinking: /home/aiv/YongJun_ws/ros2_ws/install/scout_msgs/share/scout_msgs/msg/ScoutStatus.idl
+[4.223s] -- Symlinking: /home/aiv/YongJun_ws/ros2_ws/install/scout_msgs/share/scout_msgs/msg/ScoutActuatorState.msg
+[4.226s] -- Symlinking: /home/aiv/YongJun_ws/ros2_ws/install/scout_msgs/share/scout_msgs/msg/ScoutLightCmd.msg
+[4.228s] -- Symlinking: /home/aiv/YongJun_ws/ros2_ws/install/scout_msgs/share/scout_msgs/msg/ScoutLightState.msg
+[4.231s] -- Symlinking: /home/aiv/YongJun_ws/ros2_ws/install/scout_msgs/share/scout_msgs/msg/ScoutRCState.msg
+[4.233s] -- Symlinking: /home/aiv/YongJun_ws/ros2_ws/install/scout_msgs/share/scout_msgs/msg/ScoutStatus.msg
+[4.236s] -- Symlinking: /home/aiv/YongJun_ws/ros2_ws/install/scout_msgs/share/ament_index/resource_index/package_run_dependencies/scout_msgs
+[4.239s] -- Symlinking: /home/aiv/YongJun_ws/ros2_ws/install/scout_msgs/share/ament_index/resource_index/parent_prefix_path/scout_msgs
+[4.241s] -- Symlinking: /home/aiv/YongJun_ws/ros2_ws/install/scout_msgs/share/scout_msgs/environment/ament_prefix_path.sh
+[4.244s] -- Symlinking: /home/aiv/YongJun_ws/ros2_ws/install/scout_msgs/share/scout_msgs/environment/ament_prefix_path.dsv
+[4.246s] -- Symlinking: /home/aiv/YongJun_ws/ros2_ws/install/scout_msgs/share/scout_msgs/environment/path.sh
+[4.249s] -- Symlinking: /home/aiv/YongJun_ws/ros2_ws/install/scout_msgs/share/scout_msgs/environment/path.dsv
+[4.251s] -- Symlinking: /home/aiv/YongJun_ws/ros2_ws/install/scout_msgs/share/scout_msgs/local_setup.bash
+[4.254s] -- Symlinking: /home/aiv/YongJun_ws/ros2_ws/install/scout_msgs/share/scout_msgs/local_setup.sh
+[4.257s] -- Symlinking: /home/aiv/YongJun_ws/ros2_ws/install/scout_msgs/share/scout_msgs/local_setup.zsh
+[4.259s] -- Symlinking: /home/aiv/YongJun_ws/ros2_ws/install/scout_msgs/share/scout_msgs/local_setup.dsv
+[4.262s] -- Symlinking: /home/aiv/YongJun_ws/ros2_ws/install/scout_msgs/share/scout_msgs/package.dsv
+[4.264s] -- Symlinking: /home/aiv/YongJun_ws/ros2_ws/install/scout_msgs/share/ament_index/resource_index/packages/scout_msgs
+[4.267s] -- Symlinking: /home/aiv/YongJun_ws/ros2_ws/install/scout_msgs/share/scout_msgs/cmake/rosidl_cmake-extras.cmake
+[4.269s] -- Symlinking: /home/aiv/YongJun_ws/ros2_ws/install/scout_msgs/share/scout_msgs/cmake/ament_cmake_export_dependencies-extras.cmake
+[4.272s] -- Symlinking: /home/aiv/YongJun_ws/ros2_ws/install/scout_msgs/share/scout_msgs/cmake/ament_cmake_export_libraries-extras.cmake
+[4.275s] -- Symlinking: /home/aiv/YongJun_ws/ros2_ws/install/scout_msgs/share/scout_msgs/cmake/ament_cmake_export_targets-extras.cmake
+[4.277s] -- Symlinking: /home/aiv/YongJun_ws/ros2_ws/install/scout_msgs/share/scout_msgs/cmake/ament_cmake_export_include_directories-extras.cmake
+[4.280s] -- Symlinking: /home/aiv/YongJun_ws/ros2_ws/install/scout_msgs/share/scout_msgs/cmake/rosidl_cmake_export_typesupport_libraries-extras.cmake
+[4.282s] -- Symlinking: /home/aiv/YongJun_ws/ros2_ws/install/scout_msgs/share/scout_msgs/cmake/rosidl_cmake_export_typesupport_targets-extras.cmake
+[4.285s] -- Symlinking: /home/aiv/YongJun_ws/ros2_ws/install/scout_msgs/share/scout_msgs/cmake/scout_msgsConfig.cmake
+[4.287s] -- Symlinking: /home/aiv/YongJun_ws/ros2_ws/install/scout_msgs/share/scout_msgs/cmake/scout_msgsConfig-version.cmake
+[4.290s] -- Symlinking: /home/aiv/YongJun_ws/ros2_ws/install/scout_msgs/share/scout_msgs/package.xml
+[4.292s] -- Installing: /home/aiv/YongJun_ws/ros2_ws/install/scout_msgs/lib/libscout_msgs__rosidl_generator_c.so
+[4.292s] -- Set runtime path of "/home/aiv/YongJun_ws/ros2_ws/install/scout_msgs/lib/libscout_msgs__rosidl_generator_c.so" to ""
+[4.293s] -- Installing: /home/aiv/YongJun_ws/ros2_ws/install/scout_msgs/lib/libscout_msgs__rosidl_typesupport_introspection_c.so
+[4.293s] -- Set runtime path of "/home/aiv/YongJun_ws/ros2_ws/install/scout_msgs/lib/libscout_msgs__rosidl_typesupport_introspection_c.so" to ""
+[4.293s] -- Installing: /home/aiv/YongJun_ws/ros2_ws/install/scout_msgs/lib/libscout_msgs__rosidl_typesupport_c.so
+[4.293s] -- Set runtime path of "/home/aiv/YongJun_ws/ros2_ws/install/scout_msgs/lib/libscout_msgs__rosidl_typesupport_c.so" to ""
+[4.293s] -- Installing: /home/aiv/YongJun_ws/ros2_ws/install/scout_msgs/lib/libscout_msgs__rosidl_typesupport_introspection_cpp.so
+[4.293s] -- Set runtime path of "/home/aiv/YongJun_ws/ros2_ws/install/scout_msgs/lib/libscout_msgs__rosidl_typesupport_introspection_cpp.so" to ""
+[4.293s] -- Installing: /home/aiv/YongJun_ws/ros2_ws/install/scout_msgs/lib/libscout_msgs__rosidl_typesupport_cpp.so
+[4.293s] -- Set runtime path of "/home/aiv/YongJun_ws/ros2_ws/install/scout_msgs/lib/libscout_msgs__rosidl_typesupport_cpp.so" to ""
+[4.319s] Compiling '/home/aiv/YongJun_ws/ros2_ws/install/scout_msgs/lib/python3.8/site-packages/scout_msgs/__init__.py'...
+[4.322s] -- Installing: /home/aiv/YongJun_ws/ros2_ws/install/scout_msgs/share/scout_msgs/cmake/scout_msgs__rosidl_generator_cExport.cmake
+[4.322s] -- Installing: /home/aiv/YongJun_ws/ros2_ws/install/scout_msgs/share/scout_msgs/cmake/scout_msgs__rosidl_generator_cExport-noconfig.cmake
+[4.322s] -- Installing: /home/aiv/YongJun_ws/ros2_ws/install/scout_msgs/share/scout_msgs/cmake/scout_msgs__rosidl_typesupport_introspection_cExport.cmake
+[4.322s] -- Installing: /home/aiv/YongJun_ws/ros2_ws/install/scout_msgs/share/scout_msgs/cmake/scout_msgs__rosidl_typesupport_introspection_cExport-noconfig.cmake
+[4.322s] -- Installing: /home/aiv/YongJun_ws/ros2_ws/install/scout_msgs/share/scout_msgs/cmake/scout_msgs__rosidl_typesupport_cExport.cmake
+[4.322s] -- Installing: /home/aiv/YongJun_ws/ros2_ws/install/scout_msgs/share/scout_msgs/cmake/scout_msgs__rosidl_typesupport_cExport-noconfig.cmake
+[4.322s] -- Installing: /home/aiv/YongJun_ws/ros2_ws/install/scout_msgs/share/scout_msgs/cmake/scout_msgs__rosidl_generator_cppExport.cmake
+[4.322s] -- Installing: /home/aiv/YongJun_ws/ros2_ws/install/scout_msgs/share/scout_msgs/cmake/scout_msgs__rosidl_typesupport_introspection_cppExport.cmake
+[4.322s] -- Installing: /home/aiv/YongJun_ws/ros2_ws/install/scout_msgs/share/scout_msgs/cmake/scout_msgs__rosidl_typesupport_introspection_cppExport-noconfig.cmake
+[4.322s] -- Installing: /home/aiv/YongJun_ws/ros2_ws/install/scout_msgs/share/scout_msgs/cmake/scout_msgs__rosidl_typesupport_cppExport.cmake
+[4.322s] -- Installing: /home/aiv/YongJun_ws/ros2_ws/install/scout_msgs/share/scout_msgs/cmake/scout_msgs__rosidl_typesupport_cppExport-noconfig.cmake
+[4.326s] Invoked command in '/home/aiv/YongJun_ws/ros2_ws/build/scout_msgs' returned '0': CMAKE_PREFIX_PATH=/home/aiv/YongJun_ws/ros2_ws/install/yolov8_bringup:/home/aiv/YongJun_ws/ros2_ws/install/yolov8_msgs:/home/aiv/YongJun_ws/ros2_ws/install/usb_cam:/home/aiv/YongJun_ws/ros2_ws/install/yolov8_ros:/opt/ros/foxy:/home/aiv/YongJun_ws/ros2_ws/install/ugv_sdk:/home/aiv/YongJun_ws/ros2_ws/install/realsense2_description:/home/aiv/YongJun_ws/ros2_ws/install/realsense2_camera:/home/aiv/YongJun_ws/ros2_ws/install/realsense2_camera_msgs /home/aiv/.local/bin/cmake --install /home/aiv/YongJun_ws/ros2_ws/build/scout_msgs

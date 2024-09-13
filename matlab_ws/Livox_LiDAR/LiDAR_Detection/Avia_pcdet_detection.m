@@ -9,6 +9,8 @@ Avia_UDP = udpport("datagram","LocalPort",56001);
 global G_bbox
 global G_id
 global G_cls
+global vehiclePose
+
 
 % Create a node for connection between MATLAB and ROS2
 Pub_Node = ros2node("/IVL_Pub");
@@ -21,8 +23,14 @@ pub.LiDAR = ros2publisher(Pub_Node,"/livox/lidar","sensor_msgs/PointCloud2");
 % Create Subscribe Node
 sub.lr_detection = ros2subscriber(Sub_Node,"/lr_detections","vision_msgs/Detection3DArray",@HelperCallbackPCDet);
 
-
 %% Main 
+vehiclePose = [0 0 0];
+
+% Remove memory cache
+clear HelperComputeDistance
+clear HelperComputeVelocity
+clear HelperDrawCuboid
+clear HelperDeleteCuboid
 
 %-----------------------------------------------------------------------------------%
 %-----------------------------------Visualization-----------------------------------%
@@ -86,13 +94,13 @@ while true
         % Preprocessing point clound (ROI, Downsampling, remove ground)
         if ~isempty(ptCloud.Location)
 
-            ptCloud = HelperPtCldProcessing(ptCloud,roi,gridStep); 
+            ptCloud_ps = HelperPtCldProcessing(ptCloud,roi,gridStep); 
             
             % Sending point cloud msg to ROS2 
             msg_LiDAR = ros2message(pub.LiDAR);
             msg_LiDAR.header.frame_id = 'map';
-            msg_LiDAR = rosWriteXYZ(msg_LiDAR,(ptCloud.Location));
-            msg_LiDAR = rosWriteIntensity(msg_LiDAR,(ptCloud.Intensity));
+            msg_LiDAR = rosWriteXYZ(msg_LiDAR,(ptCloud_ps.Location));
+            msg_LiDAR = rosWriteIntensity(msg_LiDAR,(ptCloud_ps.Intensity));
             send(pub.LiDAR,msg_LiDAR);
         end
         
@@ -107,7 +115,7 @@ while true
         [Model, ModelInfo] = HelperComputeDistance(L_bbox, L_id, L_cls, ptCloud);
 
         % Calculate Object Velocity
-        [VelocityInfo, OrientInfo, ~] = HelperComputeVelocity(ModelInfo);
+        [VelocityInfo, OrientInfo, ~] = HelperComputeVelocity(ModelInfo,vehiclePose);
 
 
         %-----------------------------------------------------------------------------------%

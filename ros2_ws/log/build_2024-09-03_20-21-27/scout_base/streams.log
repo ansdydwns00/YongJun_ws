@@ -1,0 +1,84 @@
+[0.014s] Invoking command in '/home/aiv/YongJun_ws/ros2_ws/build/scout_base': AMENT_PREFIX_PATH=/home/aiv/YongJun_ws/ros2_ws/install/scout_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/aiv/YongJun_ws/ros2_ws/install/yolov8_ros:/opt/ros/foxy:/home/aiv/YongJun_ws/ros2_ws/install/ugv_sdk:/home/aiv/YongJun_ws/ros2_ws/install/scout_msgs:/home/aiv/YongJun_ws/ros2_ws/install/yolov8_bringup:/home/aiv/YongJun_ws/ros2_ws/install/yolov8_msgs:/home/aiv/YongJun_ws/ros2_ws/install/usb_cam:/home/aiv/YongJun_ws/ros2_ws/install/realsense2_description:/home/aiv/YongJun_ws/ros2_ws/install/realsense2_camera:/home/aiv/YongJun_ws/ros2_ws/install/realsense2_camera_msgs LD_LIBRARY_PATH=/home/aiv/YongJun_ws/ros2_ws/install/scout_msgs/lib:/home/aiv/YongJun_ws/ros2_ws/install/yolov8_msgs/lib:/home/aiv/YongJun_ws/ros2_ws/install/usb_cam/lib:/home/aiv/YongJun_ws/ros2_ws/install/realsense2_camera/lib:/home/aiv/YongJun_ws/ros2_ws/install/realsense2_camera_msgs/lib:/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib/x86_64-linux-gnu:/opt/ros/foxy/lib:/usr/local/cuda-11.8/lib64 PYTHONPATH=/home/aiv/YongJun_ws/ros2_ws/install/scout_msgs/lib/python3.8/site-packages:${PYTHONPATH} /home/aiv/.local/bin/cmake /home/aiv/YongJun_ws/ros2_ws/src/scout_ros2/scout_base -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/aiv/YongJun_ws/ros2_ws/install/scout_base
+[0.079s] -- The C compiler identification is GNU 9.4.0
+[0.125s] -- The CXX compiler identification is GNU 9.4.0
+[0.132s] -- Detecting C compiler ABI info
+[0.172s] -- Detecting C compiler ABI info - done
+[0.181s] -- Check for working C compiler: /usr/bin/cc - skipped
+[0.181s] -- Detecting C compile features
+[0.181s] -- Detecting C compile features - done
+[0.184s] -- Detecting CXX compiler ABI info
+[0.238s] -- Detecting CXX compiler ABI info - done
+[0.249s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[0.249s] -- Detecting CXX compile features
+[0.249s] -- Detecting CXX compile features - done
+[0.251s] -- Found ament_cmake: 0.9.12 (/opt/ros/foxy/share/ament_cmake/cmake)
+[0.270s] -- Found PythonInterp: /usr/bin/python3 (found suitable version "3.8.10", minimum required is "3") 
+[0.270s] -- Using PYTHON_EXECUTABLE: /usr/bin/python3
+[0.434s] -- Override CMake install command with custom implementation using symlinks instead of copying resources
+[0.457s] -- Found rclcpp: 2.4.3 (/opt/ros/foxy/share/rclcpp/cmake)
+[0.492s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.497s] -- Found rosidl_adapter: 1.3.1 (/opt/ros/foxy/share/rosidl_adapter/cmake)
+[0.552s] -- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "1.1.1f")  
+[0.575s] -- Found FastRTPS: /opt/ros/foxy/include  
+[0.627s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.665s] -- Found rmw_implementation_cmake: 1.0.4 (/opt/ros/foxy/share/rmw_implementation_cmake/cmake)
+[0.666s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[0.666s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+[0.711s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Failed
+[0.711s] -- Looking for pthread_create in pthreads
+[0.751s] -- Looking for pthread_create in pthreads - not found
+[0.751s] -- Looking for pthread_create in pthread
+[0.803s] -- Looking for pthread_create in pthread - found
+[0.804s] -- Found Threads: TRUE  
+[0.907s] -- Found geometry_msgs: 2.0.5 (/opt/ros/foxy/share/geometry_msgs/cmake)
+[0.929s] -- Found nav_msgs: 2.0.5 (/opt/ros/foxy/share/nav_msgs/cmake)
+[0.974s] -- Found sensor_msgs: 2.0.5 (/opt/ros/foxy/share/sensor_msgs/cmake)
+[1.020s] -- Found tf2: 0.13.14 (/opt/ros/foxy/share/tf2/cmake)
+[1.028s] -- Found tf2_ros: 0.13.14 (/opt/ros/foxy/share/tf2_ros/cmake)
+[1.242s] -- Found scout_msgs: 0.1.0 (/home/aiv/YongJun_ws/ros2_ws/install/scout_msgs/share/scout_msgs/cmake)
+[1.268s] -- Found ament_lint_auto: 0.9.8 (/opt/ros/foxy/share/ament_lint_auto/cmake)
+[1.319s] -- Added test 'copyright' to check source files copyright and LICENSE
+[1.320s] -- Added test 'cppcheck' to perform static code analysis on C / C++ code
+[1.320s] -- Configured cppcheck include dirs: /home/aiv/YongJun_ws/ros2_ws/src/scout_ros2/scout_base/include
+[1.320s] -- Configured cppcheck exclude dirs and/or files: 
+[1.320s] -- Added test 'cpplint' to check C / C++ code against the Google style
+[1.320s] -- Configured cpplint exclude dirs and/or files: 
+[1.321s] -- Added test 'flake8' to check Python code syntax and style conventions
+[1.321s] -- Added test 'lint_cmake' to check CMake code style
+[1.321s] -- Added test 'pep257' to check Python code against some of the style conventions in PEP 257
+[1.322s] -- Added test 'uncrustify' to check C / C++ code style
+[1.322s] -- Configured uncrustify additional arguments: 
+[1.322s] -- Added test 'xmllint' to check XML markup files
+[1.323s] -- Configuring done
+[1.332s] -- Generating done
+[1.333s] -- Build files have been written to: /home/aiv/YongJun_ws/ros2_ws/build/scout_base
+[1.342s] Invoked command in '/home/aiv/YongJun_ws/ros2_ws/build/scout_base' returned '0': AMENT_PREFIX_PATH=/home/aiv/YongJun_ws/ros2_ws/install/scout_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/aiv/YongJun_ws/ros2_ws/install/yolov8_ros:/opt/ros/foxy:/home/aiv/YongJun_ws/ros2_ws/install/ugv_sdk:/home/aiv/YongJun_ws/ros2_ws/install/scout_msgs:/home/aiv/YongJun_ws/ros2_ws/install/yolov8_bringup:/home/aiv/YongJun_ws/ros2_ws/install/yolov8_msgs:/home/aiv/YongJun_ws/ros2_ws/install/usb_cam:/home/aiv/YongJun_ws/ros2_ws/install/realsense2_description:/home/aiv/YongJun_ws/ros2_ws/install/realsense2_camera:/home/aiv/YongJun_ws/ros2_ws/install/realsense2_camera_msgs LD_LIBRARY_PATH=/home/aiv/YongJun_ws/ros2_ws/install/scout_msgs/lib:/home/aiv/YongJun_ws/ros2_ws/install/yolov8_msgs/lib:/home/aiv/YongJun_ws/ros2_ws/install/usb_cam/lib:/home/aiv/YongJun_ws/ros2_ws/install/realsense2_camera/lib:/home/aiv/YongJun_ws/ros2_ws/install/realsense2_camera_msgs/lib:/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib/x86_64-linux-gnu:/opt/ros/foxy/lib:/usr/local/cuda-11.8/lib64 PYTHONPATH=/home/aiv/YongJun_ws/ros2_ws/install/scout_msgs/lib/python3.8/site-packages:${PYTHONPATH} /home/aiv/.local/bin/cmake /home/aiv/YongJun_ws/ros2_ws/src/scout_ros2/scout_base -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/aiv/YongJun_ws/ros2_ws/install/scout_base
+[1.344s] Invoking command in '/home/aiv/YongJun_ws/ros2_ws/build/scout_base': AMENT_PREFIX_PATH=/home/aiv/YongJun_ws/ros2_ws/install/scout_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/aiv/YongJun_ws/ros2_ws/install/yolov8_ros:/opt/ros/foxy:/home/aiv/YongJun_ws/ros2_ws/install/ugv_sdk:/home/aiv/YongJun_ws/ros2_ws/install/scout_msgs:/home/aiv/YongJun_ws/ros2_ws/install/yolov8_bringup:/home/aiv/YongJun_ws/ros2_ws/install/yolov8_msgs:/home/aiv/YongJun_ws/ros2_ws/install/usb_cam:/home/aiv/YongJun_ws/ros2_ws/install/realsense2_description:/home/aiv/YongJun_ws/ros2_ws/install/realsense2_camera:/home/aiv/YongJun_ws/ros2_ws/install/realsense2_camera_msgs LD_LIBRARY_PATH=/home/aiv/YongJun_ws/ros2_ws/install/scout_msgs/lib:/home/aiv/YongJun_ws/ros2_ws/install/yolov8_msgs/lib:/home/aiv/YongJun_ws/ros2_ws/install/usb_cam/lib:/home/aiv/YongJun_ws/ros2_ws/install/realsense2_camera/lib:/home/aiv/YongJun_ws/ros2_ws/install/realsense2_camera_msgs/lib:/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib/x86_64-linux-gnu:/opt/ros/foxy/lib:/usr/local/cuda-11.8/lib64 PYTHONPATH=/home/aiv/YongJun_ws/ros2_ws/install/scout_msgs/lib/python3.8/site-packages:${PYTHONPATH} /home/aiv/.local/bin/cmake --build /home/aiv/YongJun_ws/ros2_ws/build/scout_base -- -j32 -l32
+[1.382s] [ 33%] [32mBuilding CXX object CMakeFiles/scout_base_node.dir/src/scout_base_ros.cpp.o[0m
+[1.382s] [ 66%] [32mBuilding CXX object CMakeFiles/scout_base_node.dir/src/scout_base_node.cpp.o[0m
+[6.470s] [100%] [32m[1mLinking CXX executable scout_base_node[0m
+[6.727s] [100%] Built target scout_base_node
+[6.741s] Invoked command in '/home/aiv/YongJun_ws/ros2_ws/build/scout_base' returned '0': AMENT_PREFIX_PATH=/home/aiv/YongJun_ws/ros2_ws/install/scout_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/aiv/YongJun_ws/ros2_ws/install/yolov8_ros:/opt/ros/foxy:/home/aiv/YongJun_ws/ros2_ws/install/ugv_sdk:/home/aiv/YongJun_ws/ros2_ws/install/scout_msgs:/home/aiv/YongJun_ws/ros2_ws/install/yolov8_bringup:/home/aiv/YongJun_ws/ros2_ws/install/yolov8_msgs:/home/aiv/YongJun_ws/ros2_ws/install/usb_cam:/home/aiv/YongJun_ws/ros2_ws/install/realsense2_description:/home/aiv/YongJun_ws/ros2_ws/install/realsense2_camera:/home/aiv/YongJun_ws/ros2_ws/install/realsense2_camera_msgs LD_LIBRARY_PATH=/home/aiv/YongJun_ws/ros2_ws/install/scout_msgs/lib:/home/aiv/YongJun_ws/ros2_ws/install/yolov8_msgs/lib:/home/aiv/YongJun_ws/ros2_ws/install/usb_cam/lib:/home/aiv/YongJun_ws/ros2_ws/install/realsense2_camera/lib:/home/aiv/YongJun_ws/ros2_ws/install/realsense2_camera_msgs/lib:/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib/x86_64-linux-gnu:/opt/ros/foxy/lib:/usr/local/cuda-11.8/lib64 PYTHONPATH=/home/aiv/YongJun_ws/ros2_ws/install/scout_msgs/lib/python3.8/site-packages:${PYTHONPATH} /home/aiv/.local/bin/cmake --build /home/aiv/YongJun_ws/ros2_ws/build/scout_base -- -j32 -l32
+[6.782s] Invoking command in '/home/aiv/YongJun_ws/ros2_ws/build/scout_base': AMENT_PREFIX_PATH=/home/aiv/YongJun_ws/ros2_ws/install/scout_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/aiv/YongJun_ws/ros2_ws/install/yolov8_ros:/opt/ros/foxy:/home/aiv/YongJun_ws/ros2_ws/install/ugv_sdk:/home/aiv/YongJun_ws/ros2_ws/install/scout_msgs:/home/aiv/YongJun_ws/ros2_ws/install/yolov8_bringup:/home/aiv/YongJun_ws/ros2_ws/install/yolov8_msgs:/home/aiv/YongJun_ws/ros2_ws/install/usb_cam:/home/aiv/YongJun_ws/ros2_ws/install/realsense2_description:/home/aiv/YongJun_ws/ros2_ws/install/realsense2_camera:/home/aiv/YongJun_ws/ros2_ws/install/realsense2_camera_msgs LD_LIBRARY_PATH=/home/aiv/YongJun_ws/ros2_ws/install/scout_msgs/lib:/home/aiv/YongJun_ws/ros2_ws/install/yolov8_msgs/lib:/home/aiv/YongJun_ws/ros2_ws/install/usb_cam/lib:/home/aiv/YongJun_ws/ros2_ws/install/realsense2_camera/lib:/home/aiv/YongJun_ws/ros2_ws/install/realsense2_camera_msgs/lib:/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib/x86_64-linux-gnu:/opt/ros/foxy/lib:/usr/local/cuda-11.8/lib64 PYTHONPATH=/home/aiv/YongJun_ws/ros2_ws/install/scout_msgs/lib/python3.8/site-packages:${PYTHONPATH} /home/aiv/.local/bin/cmake --install /home/aiv/YongJun_ws/ros2_ws/build/scout_base
+[6.805s] -- Install configuration: ""
+[6.806s] -- Execute custom install script
+[6.806s] -- Symlinking: /home/aiv/YongJun_ws/ros2_ws/install/scout_base/lib/scout_base/scout_base_node
+[6.809s] -- Symlinking: /home/aiv/YongJun_ws/ros2_ws/install/scout_base/share/scout_base//launch/scout_base.launch.py
+[6.811s] -- Symlinking: /home/aiv/YongJun_ws/ros2_ws/install/scout_base/share/scout_base//launch/scout_mini_base.launch.py
+[6.814s] -- Symlinking: /home/aiv/YongJun_ws/ros2_ws/install/scout_base/share/scout_base//launch/scout_mini_omni_base.launch.py
+[6.816s] -- Symlinking: /home/aiv/YongJun_ws/ros2_ws/install/scout_base/share/ament_index/resource_index/package_run_dependencies/scout_base
+[6.819s] -- Symlinking: /home/aiv/YongJun_ws/ros2_ws/install/scout_base/share/ament_index/resource_index/parent_prefix_path/scout_base
+[6.821s] -- Symlinking: /home/aiv/YongJun_ws/ros2_ws/install/scout_base/share/scout_base/environment/ament_prefix_path.sh
+[6.824s] -- Symlinking: /home/aiv/YongJun_ws/ros2_ws/install/scout_base/share/scout_base/environment/ament_prefix_path.dsv
+[6.826s] -- Symlinking: /home/aiv/YongJun_ws/ros2_ws/install/scout_base/share/scout_base/environment/path.sh
+[6.829s] -- Symlinking: /home/aiv/YongJun_ws/ros2_ws/install/scout_base/share/scout_base/environment/path.dsv
+[6.832s] -- Symlinking: /home/aiv/YongJun_ws/ros2_ws/install/scout_base/share/scout_base/local_setup.bash
+[6.834s] -- Symlinking: /home/aiv/YongJun_ws/ros2_ws/install/scout_base/share/scout_base/local_setup.sh
+[6.837s] -- Symlinking: /home/aiv/YongJun_ws/ros2_ws/install/scout_base/share/scout_base/local_setup.zsh
+[6.839s] -- Symlinking: /home/aiv/YongJun_ws/ros2_ws/install/scout_base/share/scout_base/local_setup.dsv
+[6.842s] -- Symlinking: /home/aiv/YongJun_ws/ros2_ws/install/scout_base/share/scout_base/package.dsv
+[6.844s] -- Symlinking: /home/aiv/YongJun_ws/ros2_ws/install/scout_base/share/ament_index/resource_index/packages/scout_base
+[6.847s] -- Symlinking: /home/aiv/YongJun_ws/ros2_ws/install/scout_base/share/scout_base/cmake/scout_baseConfig.cmake
+[6.849s] -- Symlinking: /home/aiv/YongJun_ws/ros2_ws/install/scout_base/share/scout_base/cmake/scout_baseConfig-version.cmake
+[6.852s] -- Symlinking: /home/aiv/YongJun_ws/ros2_ws/install/scout_base/share/scout_base/package.xml
+[6.859s] Invoked command in '/home/aiv/YongJun_ws/ros2_ws/build/scout_base' returned '0': AMENT_PREFIX_PATH=/home/aiv/YongJun_ws/ros2_ws/install/scout_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/aiv/YongJun_ws/ros2_ws/install/yolov8_ros:/opt/ros/foxy:/home/aiv/YongJun_ws/ros2_ws/install/ugv_sdk:/home/aiv/YongJun_ws/ros2_ws/install/scout_msgs:/home/aiv/YongJun_ws/ros2_ws/install/yolov8_bringup:/home/aiv/YongJun_ws/ros2_ws/install/yolov8_msgs:/home/aiv/YongJun_ws/ros2_ws/install/usb_cam:/home/aiv/YongJun_ws/ros2_ws/install/realsense2_description:/home/aiv/YongJun_ws/ros2_ws/install/realsense2_camera:/home/aiv/YongJun_ws/ros2_ws/install/realsense2_camera_msgs LD_LIBRARY_PATH=/home/aiv/YongJun_ws/ros2_ws/install/scout_msgs/lib:/home/aiv/YongJun_ws/ros2_ws/install/yolov8_msgs/lib:/home/aiv/YongJun_ws/ros2_ws/install/usb_cam/lib:/home/aiv/YongJun_ws/ros2_ws/install/realsense2_camera/lib:/home/aiv/YongJun_ws/ros2_ws/install/realsense2_camera_msgs/lib:/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib/x86_64-linux-gnu:/opt/ros/foxy/lib:/usr/local/cuda-11.8/lib64 PYTHONPATH=/home/aiv/YongJun_ws/ros2_ws/install/scout_msgs/lib/python3.8/site-packages:${PYTHONPATH} /home/aiv/.local/bin/cmake --install /home/aiv/YongJun_ws/ros2_ws/build/scout_base

@@ -1,0 +1,1 @@
+/home/aiv/YongJun_ws/ros2_ws/src/scout_ros2/scout_base/launch/scout_base.launch.py
