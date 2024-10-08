@@ -160,7 +160,7 @@ while true
         % Display detection results
         view(player,ptCloud)
         HelperDeleteCuboid_KF(player.Axes)
-        HelperDrawCuboid_KF(player.Axes, Model, ModelInfo, VelocityInfo, OrientInfo, 'red');
+        HelperDrawCuboid_KF(player.Axes, Model, ModelInfo, VelocityInfo, OrientInfo);
         
         flush(Avia_UDP);
     end    

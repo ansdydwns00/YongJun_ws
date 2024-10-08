@@ -1,4 +1,4 @@
-function HelperDrawCuboid_KF(ax, cuboids, modelInfo, velInfo, orientInfo, color)
+function HelperDrawCuboid_KF(ax, cuboids, modelInfo, velInfo, orientInfo)
     
     
 
@@ -23,11 +23,25 @@ for i = 1:size(cuboids, 1)
     RzCache(:, :, i) = [cos(z_rot) -sin(z_rot) 0; sin(z_rot) cos(z_rot) 0; 0 0 1];
 end
 
+% Define colors for different classes
+classColors = containers.Map();
+classColors('1') = 'r';         % Red for cars
+classColors('2') = 'y';  % Green for pedestrians
+classColors('3') = 'b';     % Blue for cyclists
+classColors('Default') = 'g';     % Yellow as default
+
 for i = 1:size(cuboids, 1)
     cuboid = cuboids{i};
     dist = modelInfo.Distance(i);
     id = modelInfo.ID{i};
     class = modelInfo.Class{i};
+    
+    % Select color based on the class
+    if isKey(classColors, class)
+        cuboidColor = classColors(class);
+    else
+        cuboidColor = classColors('Default');
+    end
 
     % Cuboid center and length
     x_ctr = cuboid.Center(1);
@@ -63,7 +77,7 @@ for i = 1:size(cuboids, 1)
     for j = 1:size(edges, 1)
         line(ax, 'XData', vertices(edges(j,:), 1), ...
                  'YData', vertices(edges(j,:), 2), ...
-                 'ZData', vertices(edges(j,:), 3), 'Color', color, 'Linewidth', 1);
+                 'ZData', vertices(edges(j,:), 3), 'Color', cuboidColor, 'Linewidth', 1);
     end
 
     % Notation distance and velocity

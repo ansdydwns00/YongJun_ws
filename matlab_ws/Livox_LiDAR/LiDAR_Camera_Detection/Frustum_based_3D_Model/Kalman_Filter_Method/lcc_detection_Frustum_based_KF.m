@@ -30,10 +30,6 @@ sub.lr_detection = ros2subscriber(Sub_Node,"/lr_detections","vision_msgs/Detecti
 pub.LiDAR = ros2publisher(Node,"/livox/lidar","sensor_msgs/PointCloud2");
 
 %% 
-
-% Remove memory cache
-
-
 %-----------------------------------------------------------------------------------%
 %-------------------------------Calibration Parameter-------------------------------%
 %-----------------------------------------------------------------------------------%
@@ -175,7 +171,7 @@ while true
             % Display detection results
             view(player,ptCloud)
             HelperDeleteCuboid_KF(player.Axes)
-            HelperDrawCuboid_KF(player.Axes, Model, ModelInfo, VelocityInfo, OrientInfo, 'red');
+            HelperDrawCuboid_KF(player.Axes, Model, ModelInfo, VelocityInfo, OrientInfo);
 
             xyzPointsBuffer = [];
             xyzIntensityBuffer = [];

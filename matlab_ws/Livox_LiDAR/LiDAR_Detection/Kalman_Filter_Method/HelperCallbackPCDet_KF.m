@@ -1,5 +1,5 @@
 function HelperCallbackPCDet_KF(msg)
-    
+    tic
     global G_bbox
     global G_id
     global G_cls
@@ -56,7 +56,8 @@ function HelperCallbackPCDet_KF(msg)
         
 
         vel_tmp(i,:) = [msg.detections(i).results.pose.pose.position.x,...
-                        msg.detections(i).results.pose.pose.position.y,];
+                        msg.detections(i).results.pose.pose.position.y,...
+                        msg.detections(i).results.pose.pose.position.z];
 
         isTracking_tmp{i} = msg.detections(i).is_tracking;
     end
@@ -66,4 +67,5 @@ function HelperCallbackPCDet_KF(msg)
     G_cls = cls_tmp';
     G_vel = vel_tmp;
     G_isTracking = isTracking_tmp';
+    toc
 end

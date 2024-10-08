@@ -174,7 +174,7 @@ while true
             % Display detection results
             view(player,ptCloud)
             HelperDeleteCuboid_TF(player.Axes)
-            HelperDrawCuboid_TF(player.Axes, Model, 'red', ModelInfo, VelocityInfo, OrientInfo);
+            HelperDrawCuboid_TF(player.Axes, Model, ModelInfo, VelocityInfo, OrientInfo);
 
             xyzPointsBuffer = [];
             xyzIntensityBuffer = [];

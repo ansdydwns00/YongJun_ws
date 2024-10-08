@@ -6,8 +6,8 @@ function [VelocityInfo, OrientInfo] = HelperComputeVelocity_KF(ModelInfo)
 
     for i = 1:size(ModelInfo.Obj_Vel,1)
     
-        vx = ModelInfo.Obj_Vel(i,1)/(1/15);
-        vy = ModelInfo.Obj_Vel(i,2)/(1/15);
+        vx = ModelInfo.Obj_Vel(i,1);
+        vy = ModelInfo.Obj_Vel(i,2);
         
         vel = floor(sqrt(vx^2 + vy^2) * 10) / 10;
 
